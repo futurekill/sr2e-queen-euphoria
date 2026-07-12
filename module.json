@@ -1,0 +1,67 @@
+{
+  "id": "sr2e-queen-euphoria",
+  "title": "Shadowrun 2E: Queen Euphoria",
+  "description": "The Queen Euphoria adventure (FASA 7304), modernized to the Shadowrun 2nd Edition system: cast, insect Hive, the Strice Matrix host, GM journals, and scenes, ready to import.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "sr2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.30.0"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "James Candalino"
+    }
+  ],
+  "packs": [
+    {
+      "name": "queen-euphoria",
+      "label": "Queen Euphoria (Adventure)",
+      "path": "packs/queen-euphoria",
+      "type": "Adventure",
+      "system": "sr2e",
+      "ownership": { "PLAYER": "NONE", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "qe-actors",
+      "label": "Queen Euphoria — Cast",
+      "path": "packs/qe-actors",
+      "type": "Actor",
+      "system": "sr2e"
+    },
+    {
+      "name": "qe-journals",
+      "label": "Queen Euphoria — GM Journals",
+      "path": "packs/qe-journals",
+      "type": "JournalEntry",
+      "system": "sr2e",
+      "ownership": { "PLAYER": "NONE", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "qe-scenes",
+      "label": "Queen Euphoria — Scenes",
+      "path": "packs/qe-scenes",
+      "type": "Scene",
+      "system": "sr2e"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Queen Euphoria",
+      "sorting": "m",
+      "packs": ["queen-euphoria", "qe-actors", "qe-journals", "qe-scenes"]
+    }
+  ],
+  "url": "https://github.com/futurekill/sr2e-queen-euphoria",
+  "flags": {}
+}

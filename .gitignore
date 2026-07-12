@@ -1,0 +1,13 @@
+node_modules/
+package-lock.json
+
+# Working extraction area — OCR text and page renders derived from the source
+# PDF. Local planning material only; never committed or shipped.
+_work/
+
+# packs/ is the LevelDB build output — rebuilt locally (npm run build-packs) and
+# in release CI from packs-src/ (the sole tracked source of truth). Ignoring it
+# avoids committing churning generated databases.
+packs/
+
+.DS_Store

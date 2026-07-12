@@ -1,0 +1,94 @@
+# GitHub Actions workflow for releasing the Double Exposure adventure module.
+#
+# USAGE:
+#   1. Bump "version" in module.json
+#   2. Tag and push: git tag v0.1.0 && git push origin v0.1.0
+#   3. The workflow (re)builds packs from packs-src/, then publishes a GitHub
+#      Release with module.json (URLs baked in) and the installable zip.
+
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+env:
+  MODULE_ID: sr2e-double-exposure
+  REPO: futurekill/sr2e-double-exposure
+
+jobs:
+  release:
+    name: Build & Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract version from tag
+        id: version
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          echo "version=${TAG#v}" >> "$GITHUB_OUTPUT"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies & build packs
+        run: |
+          npm install --no-audit --no-fund
+          npm run build-packs
+          ls -1 packs/
+
+      - name: Update module.json
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          TAG="${{ steps.version.outputs.tag }}"
+          jq \
+            --arg ver "$VERSION" \
+            --arg manifest "https://github.com/${{ env.REPO }}/releases/latest/download/module.json" \
+            --arg download "https://github.com/${{ env.REPO }}/releases/download/${TAG}/${{ env.MODULE_ID }}.zip" \
+            --arg url "https://github.com/${{ env.REPO }}" \
+            --arg changelog "https://github.com/${{ env.REPO }}/releases/tag/${TAG}" \
+            '.version = $ver | .manifest = $manifest | .download = $download | .url = $url | .changelog = $changelog' \
+            module.json > module.json.tmp && mv module.json.tmp module.json
+          jq '{version, manifest, download}' module.json
+
+      - name: Package module zip
+        run: |
+          mkdir -p staging/${{ env.MODULE_ID }}
+          rsync -av \
+            --exclude='.git' --exclude='.github' --exclude='staging' \
+            --exclude='node_modules' --exclude='.gitignore' --exclude='*.md' \
+            --exclude='docs' --exclude='package.json' --exclude='package-lock.json' \
+            --exclude='packs-src' --exclude='tools' --exclude='_work' \
+            ./ staging/${{ env.MODULE_ID }}/
+          cd staging && zip -r ../${{ env.MODULE_ID }}.zip ${{ env.MODULE_ID }}/ && cd ..
+          unzip -l ${{ env.MODULE_ID }}.zip | head -20
+
+      - name: Extract release notes from commit message
+        id: notes
+        run: |
+          TAG="${{ steps.version.outputs.tag }}"
+          echo "subject=$(git log -1 --format='%s' "${TAG}")" >> "$GITHUB_OUTPUT"
+          git log -1 --format='%b' "${TAG}" > /tmp/release_notes.txt
+
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ steps.version.outputs.tag }}
+          name: "${{ steps.notes.outputs.subject }}"
+          bodyFile: /tmp/release_notes.txt
+          artifacts: |
+            module.json
+            ${{ env.MODULE_ID }}.zip
+          artifactContentType: application/zip
+          prerelease: ${{ contains(steps.version.outputs.version, 'alpha') || contains(steps.version.outputs.version, 'beta') || contains(steps.version.outputs.version, 'rc') }}
+          draft: false

@@ -1,0 +1,64 @@
+# Queen Euphoria Module — Development Notes
+
+A FoundryVTT **V13** content module packaging the *Queen Euphoria* adventure
+(FASA 7304) for the **Shadowrun 2nd Edition system** (`sr2e`). Separate package
+from the system: its own repo, its own packs, no shared code. It depends on the
+system via `module.json` → `relationships.systems` (sr2e ≥ 0.30.0), so its
+actors use the system's data models and sheets.
+
+The sibling system repo lives at `../sr2e-foundryvtt`; the reference content
+module is `../sr2e-double-exposure` (DE). Read the system's `CLAUDE.md` for the
+data-model contract. **DE is a reference, not a template to clone** — its ids,
+prose, and one stat block (Hive Queen Essence 10, silently clamped by the NPC
+model's `max:6`) are DE-specific; re-derive everything from QE's own printed
+values. The full locked plan is `PLAN.md` (grilled + 4 Codex rounds → APPROVED).
+
+## Source material
+Queen Euphoria is **1st Edition** (©1990) — this module **modernizes it to
+SR2E** (attributes carry 1:1; skills, gear, spells, decking, and rewards are
+rebuilt to SR2E with a cited conversion each — see `docs/CONVERSION.md`). The
+PDF is a **scanned image** (no text layer). Extraction lives in `_work/`
+(git-ignored, never shipped): `_work/pages/pg-NN.png` (150dpi renders) +
+`_work/queen-euphoria-ocr.txt` (tesseract OCR). Book page N ≈ PDF page N
+(offset ≈ 0 — QE TOC book p.7 = PDF pg-07). OCR is noisy — **read the page
+render to verify any stat block** before transcribing.
+
+## Authoring conventions
+- **Cast** are `npc` actors (principals: Craft, Euphoria, Carrone; plus
+  mechanically-opposed recurring NPCs — bodyguards, Osprey, Stone, security,
+  Lone Star). Craft's actor type (npc vs character) is decided by an in-Foundry
+  capability test (does the sheet roll his spells/drain?) before generation.
+- **Insect Hive** — re-derived from QE p.54–55, NOT DE's ants: **Soldier** and
+  **Worker** ant spirits only (the Queen is a non-combat set-piece), **True Form**
+  and **Flesh Form** variants; astral init **+5** (not DE's +10); armor **2×Force**;
+  Immunity to Normal Weapons vs ranged; melee attackers use **Willpower** not
+  weapon skill. Model as `npc` + `race:"spirit"`. Two schema traps: `essence` is
+  `max:6` (store true Force-Essence in the bio, keep the field ≤6); baking the
+  manifest/astral init bonus into `reaction` also inflates dodge/defense — prefer
+  an init-only field, else keep Reaction true and note the bonus. Mark Immunity /
+  ranged-armor / Willpower-melee as **MANUAL** GM rules in the bio + journal.
+- **Strice Matrix** — convert the printed system map (QE p.34) to **one** `host`
+  actor (multi-node hosts are unsupported) at one representative Security Code;
+  copy each printed IC rating directly (Trace-and-Dump 3, Tar Pit 4, Barrier 3/4,
+  Scramble 3); the IC→host link lives on each IC's `system.hostUuid`
+  (`Actor.<stableId>`). Per-node operation TNs / success thresholds / Reaction
+  Time are MANUAL (linked IC inherit the one host code). Prototype the
+  Adventure-import UUID resolution early (Phase-1 gate).
+- **Journals** — original GM prep (paraphrase + page refs), never verbatim book
+  text; reward table converted to SR2E in Picking Up The Pieces.
+- **Handouts** — wholly original short copy (no scanned art, no reproduced layout).
+- **Scenes** — plain labeled placeholder grids (no walls/lighting/geometry until
+  real maps exist; those are Phase 2).
+
+## Build workflow
+`packs-src/` (per-document JSON) is the source of truth; `packs/` is the LevelDB
+build (**git-ignored** — rebuilt locally and in release CI). Generators emit the
+JSON, then `npm run build-packs [name]`. `tools/build-packs.mjs` splits journal
+`pages`; `tools/extract-packs.mjs` re-nests them (fixed here — DE's omitted it).
+After copying any DE tooling, grep for leftover `double-exposure` / `de-` / DE
+prose and fail if any remain.
+
+## Copyright
+*Queen Euphoria* / *Shadowrun* are © FASA and rights holders. This module is for
+the owner's **personal** table use from a PDF they own, not for distribution.
+Keep `_work/` out of git; original copy only in journals/handouts.
