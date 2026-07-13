@@ -156,6 +156,84 @@ const INSECT_RULES = "<p><strong>MANUAL rules (QE p.54 — the sheet does NOT en
   + "(magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> "
   + "(attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p>";
 
+// --- Strice Foods Matrix host + IC (QE p.34) ------------------------------
+// One host at a representative Security Code; each printed IC keeps its rating.
+// IC link to the host by system.hostUuid = "Actor.<hostId>"; on Adventure import
+// Foundry preserves the embedded _id, so the link resolves to the imported host.
+const STRICE_HOST_ID = idFor("host:Strice Foods Host");
+
+function hostActor(h) {
+  const _id = idFor("host:" + h.name);
+  const img = h.img ?? "icons/svg/computer.svg";
+  return {
+    _id, name: h.name, type: "host", img,
+    system: {
+      securityCode: h.securityCode, systemRating: h.systemRating, attempts: 0, alert: "none",
+      subsystems: { access: h.systemRating, control: h.systemRating, index: h.systemRating, files: h.systemRating, slave: h.systemRating },
+      securityValueOverride: 0, notes: h.notes ?? ""
+    },
+    items: [], effects: [], folder: null, sort: 0, flags: {},
+    _stats: { ...STATS, systemId: "sr2e", systemVersion: "0.1.0", createdTime: 1784000000000, modifiedTime: 1784000000000 },
+    prototypeToken: {
+      name: h.name, displayName: 20, actorLink: true, width: 2, height: 2,
+      texture: { src: img, anchorX: 0.5, anchorY: 0.5, fit: "contain", scaleX: 1, scaleY: 1, tint: "#ffffff", alphaThreshold: 0.75 },
+      disposition: -1, displayBars: 0
+    },
+    ownership: { default: 0 }, _key: `!actors!${_id}`
+  };
+}
+
+function icActor(ic) {
+  const _id = idFor("ic:" + ic.name);
+  const img = ic.img ?? "icons/svg/terror.svg";
+  const r = ic.rating;
+  return {
+    _id, name: ic.name, type: "ic", img,
+    system: {
+      icType: ic.icType, rating: r, hostUuid: `Actor.${STRICE_HOST_ID}`,
+      securityCode: "orange", alert: "none",
+      bod: r, evasion: r, masking: r, sensor: r, attack: r,
+      conditionMonitor: { value: 0, max: r * 2 },
+      // Reaction Time = Orange base (7, SR2E p.169) + rating; the system re-derives
+      // this from the linked host's Security Code at runtime.
+      initiative: { base: 7 + r, dice: 1, value: 7 + r },
+      specialAbilities: ic.abilities ?? [], notes: ic.notes ?? ""
+    },
+    items: [], effects: [], folder: null, sort: 0, flags: {},
+    _stats: { ...STATS, systemId: "sr2e", systemVersion: "0.1.0", createdTime: 1784000000000, modifiedTime: 1784000000000 },
+    prototypeToken: {
+      // IC (like the host) are singleton actors — linked tokens keep damage/state
+      // in sync with the sidebar actor and the host alert-propagation hook.
+      name: ic.name, displayName: 20, actorLink: true, width: 1, height: 1,
+      texture: { src: img, anchorX: 0.5, anchorY: 0.5, fit: "contain", scaleX: 1, scaleY: 1, tint: "#ffffff", alphaThreshold: 0.75 },
+      disposition: -1, displayBars: 20, bar1: { attribute: "conditionMonitor" }
+    },
+    ownership: { default: 0 }, _key: `!actors!${_id}`
+  };
+}
+
+const STRICE_HOST = {
+  name: "Strice Foods Host",
+  securityCode: "orange", systemRating: 4,
+  notes: "<p>Strice Foods' \"low-cost\" corporate system (QE p.34). Modelled as one SR2E host at a representative Security Code <strong>Orange-4</strong> (the CPU tier). The SR1 system map's per-node color-codes drive MANUAL operation TNs / success thresholds the GM applies as the decker moves between nodes:</p>"
+    + "<ul>"
+    + "<li><strong>SAN</strong> (gateway, #2206 / 312-1752) — Red-5, Access 5: a tougher initial Access/Logon test than the host baseline.</li>"
+    + "<li><strong>SPU-1</strong> — Orange-3: <em>Trace-and-Dump 3</em> IC.</li>"
+    + "<li><strong>CPU</strong> — Orange-4: <em>Barrier 3</em> + <em>Tar Pit 4</em> IC.</li>"
+    + "<li><strong>DS-1</strong> — Orange-3, Barrier 4: purchase orders — the MegaMedia deal (1,280,000¥ for Euphoria's three appearances) and Knight Errant expenditures. 4 files × 70 Mp = <strong>28,000¥</strong> fenced.</li>"
+    + "<li><strong>DS-2</strong> — Orange-5, Scramble 3: Accounts Receivable. 3 files × 80 Mp = <strong>60,000¥</strong>.</li>"
+    + "<li><strong>DS-3</strong> — Green-3: Seattle retailer/distributor list. 2 files × 40 Mp = <strong>4,000¥</strong>.</li>"
+    + "</ul>"
+    + "<p><strong>Trigger:</strong> an external alert shuts the whole system down within two minutes; any Trace result prints at Burroughs' terminal, and he calls Lone Star (immediately if he's in-office by day, otherwise next morning). No vital clues live here — the run is for paydata and the MegaMedia/Craft trail. <em>Defending IC below link to this host via system.hostUuid.</em></p>"
+};
+
+const STRICE_IC = [
+  { name: "Strice Trace-and-Dump IC (SPU)", icType: "gray", rating: 3, abilities: ["Trace", "Dump"], notes: "<p>SPU-1, Orange-3. Traces the intruder and dumps them from the host on success (QE p.34).</p>" },
+  { name: "Strice Tar Pit IC (CPU)", icType: "black", rating: 4, abilities: ["Tar Pit"], notes: "<p>CPU, Orange-4. Appears as a mouth that swallows a decker's utility, then spits it back to poison all copies of the utility (QE p.34).</p>" },
+  { name: "Strice Barrier IC (DS-1)", icType: "white", rating: 4, abilities: ["Barrier"], notes: "<p>DS-1, Orange-3 / Barrier 4. A shimmering field guarding the purchase-order datastore (QE p.34).</p>" },
+  { name: "Strice Scramble IC (DS-2)", icType: "white", rating: 3, abilities: ["Scramble"], notes: "<p>DS-2, Orange-5 / Scramble 3. Lights up at the datastore exit and scrambles the Accounts-Receivable files if not defeated (QE p.34).</p>" }
+];
+
 // ---------------------------------------------------------------------------
 // CAST — Queen Euphoria (FASA 7304). See docs/CAST-STATS.md.
 // ---------------------------------------------------------------------------
@@ -280,9 +358,11 @@ const CAST = [
 ];
 
 let n = 0;
-for (const c of CAST) {
-  const doc = actor(c);
-  writeFileSync(`${DIR}/${safeName(c.name)}_${doc._id}.json`, JSON.stringify(doc, null, 2) + "\n");
+function emit(doc, name) {
+  writeFileSync(`${DIR}/${safeName(name)}_${doc._id}.json`, JSON.stringify(doc, null, 2) + "\n");
   n++;
 }
-console.log(`wrote ${n} cast actor(s)`);
+for (const c of CAST) emit(actor(c), c.name);
+emit(hostActor(STRICE_HOST), STRICE_HOST.name);
+for (const ic of STRICE_IC) emit(icActor(ic), ic.name);
+console.log(`wrote ${n} actor(s) (${CAST.length} cast + 1 host + ${STRICE_IC.length} IC)`);

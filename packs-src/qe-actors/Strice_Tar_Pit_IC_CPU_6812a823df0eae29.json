@@ -1,0 +1,73 @@
+{
+  "_id": "6812a823df0eae29",
+  "name": "Strice Tar Pit IC (CPU)",
+  "type": "ic",
+  "img": "icons/svg/terror.svg",
+  "system": {
+    "icType": "black",
+    "rating": 4,
+    "hostUuid": "Actor.613124d3b87809ff",
+    "securityCode": "orange",
+    "alert": "none",
+    "bod": 4,
+    "evasion": 4,
+    "masking": 4,
+    "sensor": 4,
+    "attack": 4,
+    "conditionMonitor": {
+      "value": 0,
+      "max": 8
+    },
+    "initiative": {
+      "base": 11,
+      "dice": 1,
+      "value": 11
+    },
+    "specialAbilities": [
+      "Tar Pit"
+    ],
+    "notes": "<p>CPU, Orange-4. Appears as a mouth that swallows a decker's utility, then spits it back to poison all copies of the utility (QE p.34).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Strice Tar Pit IC (CPU)",
+    "displayName": 20,
+    "actorLink": true,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/terror.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "conditionMonitor"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!6812a823df0eae29"
+}
