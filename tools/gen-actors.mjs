@@ -67,7 +67,9 @@ function spellItem(s) {
 
 const WEAPONS = {
   aresPredator: { name: "Ares Predator", type: "firearm", skill: "firearms", dmg: "9M", modes: "sa", ammo: [15, "pistol"], ranges: [5, 20, 40, 60], conceal: 5, cost: 450, avail: "4/5 days", notes: "Heavy pistol (SR2E p.94)." },
-  ceska120:     { name: "Ceska vz/120", type: "firearm", skill: "firearms", dmg: "6L", modes: "sa", ammo: [18, "pistol"], ranges: [5, 15, 30, 50], conceal: 8, cost: 200, avail: "4/4 days", notes: "Light pistol, high concealability (SR2E p.94)." }
+  ceska120:     { name: "Ceska vz/120", type: "firearm", skill: "firearms", dmg: "6L", modes: "sa", ammo: [18, "pistol"], ranges: [5, 15, 30, 50], conceal: 8, cost: 200, avail: "4/4 days", notes: "Light pistol, high concealability (SR2E p.94)." },
+  uzi3:         { name: "Uzi III", type: "firearm", skill: "firearms", dmg: "6M", modes: "bf", ammo: [24, "smg"], ranges: [10, 40, 80, 150], conceal: 5, cost: 600, avail: "6/8 days", notes: "SMG (SR2E p.94)." },
+  knife:        { name: "Knife", type: "melee", skill: "armed_combat", dmg: "4L", modes: "", ammo: null, ranges: null, conceal: 8, reach: 0, cost: 30, avail: "Legal", notes: "Blade." }
 };
 
 function weaponItem(key) {
@@ -309,6 +311,53 @@ const CAST = [
       { name: "Firearms", rating: 3 },
       { name: "Negotiation", rating: 5 }
     ]
+  },
+  // --- Representative combatants (QE has no printed stat blocks for these; SR2
+  // professional-NPC numbers, scaled to their role — GM adjusts as needed) ---
+  {
+    name: "Euphoria's Bodyguard",
+    pro: 3, threat: 3, essence: 5, disposition: 0, armorName: "Armor Jacket", armor: [5, 3],
+    weapons: ["ceska120"],
+    bio: "<p>One of Euphoria's private security detail — the professionals slaughtered by Craft's Soldiers at the penthouse (their bodies are the horror the runners find). Also usable as her live guards during Act 1. Cyberware: smartlink + boosted reflexes (Reaction/Initiative as printed). Representative professional bodyguard.</p>",
+    attrs: { body: 4, qui: 4, str: 4, cha: 3, int: 3, wil: 3 },
+    reaction: 5, initDice: 2,
+    skills: [ { name: "Armed Combat", rating: 3 }, { name: "Firearms", rating: 4 }, { name: "Unarmed Combat", rating: 3 }, { name: "Stealth", rating: 3 } ]
+  },
+  {
+    name: "Corporate / Venue Security",
+    pro: 2, threat: 2, essence: 6, disposition: -1, armorName: "Armor Jacket", armor: [5, 3],
+    weapons: ["ceska120"],
+    bio: "<p>Uniformed Strice Foods / venue security — gate guards and patrols at the corporate and MegaMedia locations. Representative professional guard; run in numbers.</p>",
+    attrs: { body: 4, qui: 3, str: 3, cha: 3, int: 3, wil: 3 },
+    reaction: 3, initDice: 1,
+    skills: [ { name: "Armed Combat", rating: 2 }, { name: "Firearms", rating: 3 }, { name: "Unarmed Combat", rating: 2 } ]
+  },
+  {
+    name: "Lone Star Officer",
+    pro: 3, threat: 3, essence: 6, disposition: -1, armorName: "Armor Jacket", armor: [5, 3],
+    weapons: ["aresPredator"],
+    bio: "<p>Lone Star patrol response — summoned if a Strice Matrix alert Traces the decker, or if a scene goes loud. Representative officer.</p>",
+    attrs: { body: 4, qui: 4, str: 4, cha: 3, int: 3, wil: 3 },
+    reaction: 4, initDice: 1,
+    skills: [ { name: "Armed Combat", rating: 3 }, { name: "Firearms", rating: 4 }, { name: "Ground Vehicles", attr: "reaction", rating: 3 } ]
+  },
+  {
+    name: "Osprey (Craft's muscle)",
+    pro: 3, threat: 3, essence: 5, disposition: -1, armorName: "Armor Jacket", armor: [5, 3],
+    weapons: ["uzi3", "knife"],
+    bio: "<p>Hired muscle in Craft's orbit (Legwork, QE p.59). Representative heavy — a street samurai type guarding the Magic Crafts shop or the Hive approaches. GM: rename/adjust to the individual.</p>",
+    attrs: { body: 5, qui: 4, str: 5, cha: 3, int: 3, wil: 4 },
+    reaction: 4, initDice: 2,
+    skills: [ { name: "Armed Combat", rating: 4 }, { name: "Firearms", rating: 4 }, { name: "Stealth", rating: 3 }, { name: "Unarmed Combat", rating: 4 } ]
+  },
+  {
+    name: "Stone (Craft's muscle)",
+    pro: 3, threat: 3, essence: 5, disposition: -1, armorName: "Armor Jacket", armor: [5, 3],
+    weapons: ["uzi3"],
+    bio: "<p>Hired muscle in Craft's orbit (Legwork, QE p.59). Representative heavy. GM: rename/adjust to the individual.</p>",
+    attrs: { body: 5, qui: 4, str: 5, cha: 3, int: 3, wil: 4 },
+    reaction: 4, initDice: 1,
+    skills: [ { name: "Armed Combat", rating: 4 }, { name: "Firearms", rating: 4 }, { name: "Unarmed Combat", rating: 3 } ]
   },
   {
     name: "Soldier Ant Spirit (True Form, Force 4)",

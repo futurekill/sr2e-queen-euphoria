@@ -1,0 +1,348 @@
+{
+  "_id": "aa475a33eae13547",
+  "name": "The Adventure — Scene Prep",
+  "pages": [
+    {
+      "_id": "46108e4f430da5c9",
+      "name": "ACT 1 — The Job: Wake Up Call / Off and Running (p.8–10)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The hook.</strong> A Fixer (e.g. Diablo) puts the team in front of a Johnson working — deniably — for <strong>Ludivenko</strong>. The job pays well and sounds simple: make simstar <strong>Euphoria</strong> <em>vanish</em> for a while, before her first public appearance promoting Strice Foods' <em>Amber Gel</em>. It's a snatch-and-hold, not a hit; the client wants her embarrassed and off the schedule, not hurt.</p> <p><strong>GM notes.</strong> Don't reveal Ludivenko or the Amber Gel angle yet. Let the team do the legwork to case Euphoria — reclusive, guarded, and at Pacific Towers / her studio. This is a straightforward run whose whole point is the later twist: everything the team learns about Euphoria here pays off when they're hired to <em>find</em> her in Act 2.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "3488b3ec70daff4a",
+      "name": "ACT 1 — To Catch A Star / Holding Euphoria / Payday (p.13–24)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The grab.</strong> Pacific Towers and the surrounding scenes let the team scout and then take Euphoria (<em>To Catch A Star</em>). She is arrogant and uncooperative but not a fighter (see her stat block). The team holds her (<em>Holding Euphoria</em>) until the client's window passes, then hands her back and collects (<em>Payday</em>). Ludivenko gets its sabotaged launch; the runners get paid and move on.</p> <p><strong>GM notes.</strong> Keep it clean — the tone here is a caper, in deliberate contrast to the horror of Act 2. Note who the team is and how they operate; Ludivenko later sells that description to MegaMedia. Map: <em>Pacific Towers</em>.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "49019635f57590be",
+      "name": "ACT 2 — The Twist: Meeting Carrone (p.28–29)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The hire.</strong> Weeks later, <strong>Robert Carrone</strong> — MegaMedia VP and Euphoria's manager — hires the <em>same team</em> to find and recover Euphoria after her <em>second</em> disappearance. The twist: Ludivenko tipped MegaMedia about who pulled the first kidnapping, so Carrone is hiring the very runners who took her before — half to use their knowledge of her, half because he suspects they're involved again.</p> <p><strong>GM notes.</strong> Carrone is calm, ruthless, and watching them. He won't volunteer that he knows about Act 1 unless the players force it; play the tension. He is the paymaster and information broker for the hunt. This time Euphoria was taken for real — by Craft's Hive.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "717a88647be93751",
+      "name": "Missing Again — Euphoria's Penthouse (p.30–33)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Tell it to them straight.</strong> The penthouse is a slaughterhouse. Euphoria's bodyguards have been torn apart in ways nothing Human could manage — chitin gouges, dissolved tissue, the reek of formic acid. The home simsense studio is wrecked.</p> <p><strong>The key clue.</strong> Searching the studio turns up the <strong>simsense recording</strong> Euphoria was making at the moment of the attack (a Perception or Electronics test to notice the rig kept running). Played back, it shows — in first person — something monstrous breaking in, killing the guards, and seizing her. A sharp viewer catches glimpses that point toward an <strong>insect spirit</strong> and, faintly, the Ant motif.</p> <p><strong>GM notes.</strong> This scene sells the horror and hands the players their thread: this was not a normal snatch. Map: <em>Euphoria's Penthouse</em>.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "dd3199250d43d9e6",
+      "name": "Legwork — Dossiers (p.56–61)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Legwork around Strice Foods, Ludivenko, and MegaMedia fills in the corporate triangle behind both abductions. Key names:</p> <ul> <li><strong>Vincent Burroughs</strong> — the Strice Foods exec who secretly buys Craft's substance to make Amber Gel, and who tells Craft to \"take care of\" Euphoria (a social contact / journal dossier, not a combatant).</li> <li><strong>Solomon Daniels</strong> — Craft's Fixer, who offered him the run that restarted his shadow career.</li> <li><strong>Osprey</strong> and <strong>Stone</strong> — muscle in Craft's orbit (representative combatant actors are in the Cast compendium).</li> <li><strong>Ludivenko / Strice / MegaMedia</strong> — the corps; Ludivenko is the hidden hand behind Act 1.</li> </ul> <p><strong>Rewards funnel.</strong> The paydata trail (see Hacking Strice) links Amber Gel to a mysterious supplier and to Craft's talismonger shop, <strong>Magic Crafts</strong> — the door to the Hive.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "af1ee63409f969f7",
+      "name": "Hacking Strice (p.34)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>If the team decks Strice Foods, run it against the <strong>Strice Foods Host</strong> actor (see the Cast compendium) and its IC. The system holds no vital clue, but it is profitable and it ties Amber Gel to Craft: purchase-order records (DS-1) show the plant receives only jars, blue coloring, and low-grade nutrisoy — no way to make a stuffer from that alone — plus the MegaMedia payment (1,280,000¥ for Euphoria's three appearances) and Knight Errant security expenditures. A rent memo or payment can point at <strong>Magic Crafts</strong> and Craft.</p> <p><strong>Paydata:</strong> DS-1 4×70 Mp (~28,000¥), DS-2 3×80 Mp (~60,000¥), DS-3 2×40 Mp (~4,000¥). <strong>Trap:</strong> an external alert shuts the whole system down within two minutes; a Trace prints at Burroughs' terminal and he calls Lone Star. Per-node Security Codes and TNs are documented on the host actor's notes.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "a31a3443089acb2b",
+      "name": "The Magic Shop — Magic Crafts (p.39–40)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Craft's talismonger shop.</strong> The trail leads here. Craft appears (when present) as a filthy, unkempt man reeking of regurgitation, his behavior swinging between the affable merchant and the Ant-crazed shaman. The shop is a front and a bolthole; astral traces, ritual materials, and the smell of the Hive are all present to a careful investigator.</p> <p><strong>GM notes.</strong> Craft is a dangerous full magician (Sorcery 6 / Conjuring 5, Ant totem) — see his stat block. Do not let the team corner him easily; he would rather flee to the Hive with his prize than fight to the death in his shop. Map: <em>Magic Crafts Shop</em>.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "b96bec15ab93a839",
+      "name": "A MegaMedia Production (p.41–42)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A MegaMedia studio scene — pressure from the corp, a public-appearance angle, or a staged event tied to the Amber Gel promotion. Use it to raise the stakes and the clock, and to give social characters room to work. Map: <em>MegaMedia Studio</em>.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "372ed61650ea6b96",
+      "name": "Audience With The Queen — The Hive (p.43–52)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The climax.</strong> The team descends into Craft's Hive to free Euphoria before her metamorphosis completes. It is a nest of chambers, cocoons, and larvae, defended by <strong>Soldier</strong> and <strong>Worker</strong> ant spirits (true and flesh forms — see the Insect Spirits primer and the Cast compendium). Craft is here, at the height of his madness, summoning his Queen.</p> <p><strong>Euphoria</strong> is cocooned and mid-metamorphosis; every round of delay is a round closer to losing her. Freeing her is a matter of cutting her loose and getting out — through the Hive's defenders.</p> <p><strong>GM notes.</strong> Workers scream to summon Soldiers and throw themselves at attackers near the cocoons or the Queen. Remember the manual insect rules (Immunity to Normal Weapons vs ranged, armor 2×Force, Willpower melee defense). Map: <em>The Hive</em>.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!aa475a33eae13547"
+}

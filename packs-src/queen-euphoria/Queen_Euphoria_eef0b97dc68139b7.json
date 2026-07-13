@@ -1,0 +1,6271 @@
+{
+  "_id": "eef0b97dc68139b7",
+  "name": "Queen Euphoria",
+  "img": "modules/sr2e-queen-euphoria/assets/scenes/The_Hive.png",
+  "description": "<p>A Shadowrun 2nd Edition adventure (FASA 7304), modernized to the sr2e system. The megasimsense star Euphoria has been kidnapped by an Ant-totem shaman building an insect Hive, and the runners are hired to recover her before her metamorphosis completes. Importing this adventure adds its cast, the insect Hive, the Strice Foods Matrix host and IC, GM journals, and scenes to your world.</p>",
+  "caption": "Queen Euphoria (FASA 7304) — SR2E",
+  "folders": [],
+  "actors": [
+    {
+      "_id": "adf7c8acc476c171",
+      "name": "Corporate / Venue Security",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Corporate_Venue_Security.png",
+      "system": {
+        "biography": "<p>Uniformed Strice Foods / venue security — gate guards and patrols at the corporate and MegaMedia locations. Representative professional guard; run in numbers.</p>",
+        "race": "human",
+        "professionalRating": 2,
+        "body": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "strength": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "essence": {
+          "value": 6,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 3,
+          "mod": 0,
+          "value": 3
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 3,
+          "dice": 1,
+          "mod": 0,
+          "value": 3
+        },
+        "threatRating": 2,
+        "nuyen": 0,
+        "movement": {
+          "walk": 3,
+          "run": 9
+        }
+      },
+      "items": [
+        {
+          "_id": "0ec7b30c546665ea",
+          "name": "Armed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 2,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "ce187687879e8569",
+          "name": "Firearms",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "b1f560d94c979412",
+          "name": "Unarmed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 2,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "b72e63183dafde15",
+          "name": "Ceska vz/120",
+          "type": "weapon",
+          "img": "icons/svg/target.svg",
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "6L",
+            "damageType": "physical",
+            "concealability": 8,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": true,
+              "bf": false,
+              "fa": false
+            },
+            "ammo": {
+              "current": 18,
+              "max": 18,
+              "type": "pistol"
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 5,
+              "medium": 15,
+              "long": 30,
+              "extreme": 50
+            },
+            "cost": 200,
+            "availability": "4/4 days",
+            "legality": "Restricted",
+            "equipped": true,
+            "notes": "Light pistol, high concealability (SR2E p.94)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "d434823f585354f1",
+          "name": "Armor Jacket",
+          "type": "armor",
+          "img": "icons/svg/shield.svg",
+          "system": {
+            "ballistic": 5,
+            "impact": 3,
+            "concealability": 0,
+            "weight": 0,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "notes": "Worn armor (Queen Euphoria stat block)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        }
+      ],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Corporate / Venue Security",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Corporate_Venue_Security.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "b5363a843c6735ae",
+      "name": "Craft (Thomas Dorin)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Craft_Thomas_Dorin.png",
+      "system": {
+        "biography": "<p>Ant-totem shaman and the adventure's villain. Former Coyote shaman turned talismonger — he runs the <strong>Magic Crafts</strong> shop and took a run from his Fixer, Solomon Daniels. Under the Ant totem he is crazed with power, and his psychotic fixation on the simstar Euphoria drives the plot: he means to make her his \"Queen.\"</p><p><strong>Totem:</strong> Ant — the book grants it no special mechanical benefits; the shamanic bond is roleplay/flavour.</p><p><strong>Focus:</strong> Sleep Spell Focus (Force 2) — bond it to the Sleep spell for +2 dice when casting Sleep.</p><p><em>Cast of Characters, Queen Euphoria p.62.</em></p>",
+        "race": "human",
+        "professionalRating": 4,
+        "body": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "strength": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 6,
+          "mod": 0,
+          "value": 6,
+          "racial": 0
+        },
+        "essence": {
+          "value": 6,
+          "max": 6
+        },
+        "magic": {
+          "value": 6,
+          "max": 6,
+          "tradition": "shamanic",
+          "type": "full_magician",
+          "totem": "Ant"
+        },
+        "reaction": {
+          "base": 4,
+          "mod": 0,
+          "value": 4
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 4,
+          "dice": 1,
+          "mod": 0,
+          "value": 4
+        },
+        "threatRating": 6,
+        "nuyen": 0,
+        "movement": {
+          "walk": 3,
+          "run": 9
+        }
+      },
+      "items": [
+        {
+          "_id": "66431ec830e28117",
+          "name": "Conjuring",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 5,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": true,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "c7e5685c18374e5a",
+          "name": "Sorcery",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "willpower",
+            "rating": 6,
+            "concentration": {
+              "name": "Spellcasting",
+              "rating": 6
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": true,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "98ea98df538aa6ae",
+          "name": "Firearms",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 4,
+            "concentration": {
+              "name": "Pistols",
+              "rating": 4
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "cbc871a857a37a2f",
+          "name": "Etiquette (Corporate)",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 1,
+            "concentration": {
+              "name": "Corporate",
+              "rating": 1
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "3df1c834a1dc5c6b",
+          "name": "Etiquette (Street)",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 4,
+            "concentration": {
+              "name": "Street",
+              "rating": 4
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "b89cb84a193ed36a",
+          "name": "Magic Theory",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "intelligence",
+            "rating": 6,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "641c4a79a9aa38ad",
+          "name": "Negotiation",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "1515a7946b9ee61e",
+          "name": "Stealth",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 4,
+            "concentration": {
+              "name": "Urban",
+              "rating": 4
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "b75089f6c656353a",
+          "name": "Unarmed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "bed6399b0bf7028a",
+          "name": "Evaluate Magical Goods",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "knowledge",
+            "linkedAttribute": "intelligence",
+            "rating": 5,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "f92b3d07452cd5f9",
+          "name": "Metalworking",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "knowledge",
+            "linkedAttribute": "intelligence",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "973e25f7996fcf70",
+          "name": "Woodworking",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "knowledge",
+            "linkedAttribute": "intelligence",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "b41a409ed8a1be1f",
+          "name": "Mana Bolt",
+          "type": "spell",
+          "img": "icons/svg/daze.svg",
+          "system": {
+            "category": "combat",
+            "subcategory": "",
+            "type": "mana",
+            "range": "los",
+            "duration": "instant",
+            "force": 5,
+            "drainCode": "(F / 2)S",
+            "target": "Willpower (R)",
+            "damageCode": "S",
+            "isAreaEffect": false,
+            "isVoluntary": false,
+            "notes": "A powerful bolt of magical energy that causes Physical damage.",
+            "sustaining": false,
+            "sustainedForce": 0,
+            "spellLocked": false,
+            "quickened": false,
+            "quickeningKarma": 0
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "5560d932bf0c99a9",
+          "name": "Sleep",
+          "type": "spell",
+          "img": "icons/svg/daze.svg",
+          "system": {
+            "category": "combat",
+            "subcategory": "",
+            "type": "mana",
+            "range": "los",
+            "duration": "instant",
+            "force": 5,
+            "drainCode": "((F / 2) - 1)S",
+            "target": "Willpower (R)",
+            "damageCode": "M",
+            "isAreaEffect": true,
+            "isVoluntary": false,
+            "notes": "Bonded Sleep Spell Focus (Force 2) adds 2 dice when casting Sleep.",
+            "sustaining": false,
+            "sustainedForce": 0,
+            "spellLocked": false,
+            "quickened": false,
+            "quickeningKarma": 0
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "78dccc31e40e4a2f",
+          "name": "Clairvoyance",
+          "type": "spell",
+          "img": "icons/svg/daze.svg",
+          "system": {
+            "category": "detection",
+            "subcategory": "",
+            "type": "mana",
+            "range": "limited",
+            "duration": "sustained",
+            "force": 4,
+            "drainCode": "(F / 2)M",
+            "target": "4",
+            "damageCode": "",
+            "isAreaEffect": false,
+            "isVoluntary": true,
+            "notes": "A hypersense spell requiring a voluntary subject. The magician can see distant scenes as if present, to the range of the new sense. The magician must concentrate to use this sense, and while using it, cannot use physical vision. A magician cannot cast spells at a target seen using the clairvoyance spell. This spell does not translate sound.",
+            "sustaining": false,
+            "sustainedForce": 0,
+            "spellLocked": false,
+            "quickened": false,
+            "quickeningKarma": 0
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "082201250dcae3ad",
+          "name": "Confusion",
+          "type": "spell",
+          "img": "icons/svg/daze.svg",
+          "system": {
+            "category": "illusion",
+            "subcategory": "",
+            "type": "mana",
+            "range": "los",
+            "duration": "sustained",
+            "force": 5,
+            "drainCode": "(F / 2)S",
+            "target": "Willpower (R)",
+            "damageCode": "",
+            "isAreaEffect": true,
+            "isVoluntary": false,
+            "notes": "This is an area-effect spell similar to the chaos spell, except that the confusion spell does not affect technological systems. Visual illusions ﬁll the affected area, making it a place of shifting forms, dazzling lights, and pools of shadow. Those who fail to resist suffer a distraction (+1 to all target numbers) for every two successes remaining after reductions from the Spell Resistance Test.",
+            "sustaining": false,
+            "sustainedForce": 0,
+            "spellLocked": false,
+            "quickened": false,
+            "quickeningKarma": 0
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "5c746e30a196be60",
+          "name": "Mask",
+          "type": "spell",
+          "img": "icons/svg/daze.svg",
+          "system": {
+            "category": "illusion",
+            "subcategory": "",
+            "type": "mana",
+            "range": "touch",
+            "duration": "sustained",
+            "force": 6,
+            "drainCode": "(F / 2)L",
+            "target": "4",
+            "damageCode": "",
+            "isAreaEffect": false,
+            "isVoluntary": true,
+            "notes": "This spell requires that the magician touch a voluntary subject. The subject assumes some physical appearance (same basic size and shape) chosen by the caster. The number of successes becomes the target number for Perception Tests by observers. This spell does not work through technological devices.",
+            "sustaining": false,
+            "sustainedForce": 0,
+            "spellLocked": false,
+            "quickened": false,
+            "quickeningKarma": 0
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "2edb3e43e7963710",
+          "name": "Stimulation",
+          "type": "spell",
+          "img": "icons/svg/daze.svg",
+          "system": {
+            "category": "illusion",
+            "subcategory": "",
+            "type": "mana",
+            "range": "los",
+            "duration": "sustained",
+            "force": 4,
+            "drainCode": "((F / 2) + 1)L",
+            "target": "4",
+            "damageCode": "",
+            "isAreaEffect": false,
+            "isVoluntary": true,
+            "notes": "The voluntary subject experiences a full sensory illusion of whatever type the spellcaster desires. This is usually a luxury spell bought by the rich and jaded, seeking sensations they cannot ﬁnd in the real world. Successes measure the pleasure of the subject.",
+            "sustaining": false,
+            "sustainedForce": 0,
+            "spellLocked": false,
+            "quickened": false,
+            "quickeningKarma": 0
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "980aea95114f1097",
+          "name": "Armor",
+          "type": "spell",
+          "img": "icons/svg/daze.svg",
+          "system": {
+            "category": "manipulation",
+            "subcategory": "transformation",
+            "type": "physical",
+            "range": "limited",
+            "duration": "sustained",
+            "force": 6,
+            "drainCode": "((F / 2) + 2)M",
+            "target": "4",
+            "damageCode": "",
+            "isAreaEffect": false,
+            "isVoluntary": true,
+            "notes": "A voluntary subject is required. The magician gives the subject built-in armor, knitting his tissues into tougher compounds. Treat one-half the successes made in the Spell Success Test as the Dermal Armor Rating (add to Body) for as long as the spell is maintained.",
+            "sustaining": false,
+            "sustainedForce": 0,
+            "spellLocked": false,
+            "quickened": false,
+            "quickeningKarma": 0
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "33bc27d5f5d6cccb",
+          "name": "Levitate Person",
+          "type": "spell",
+          "img": "icons/svg/daze.svg",
+          "system": {
+            "category": "manipulation",
+            "subcategory": "telekinetic",
+            "type": "physical",
+            "range": "los",
+            "duration": "sustained",
+            "force": 4,
+            "drainCode": "((F / 2) + 1)M",
+            "target": "4",
+            "damageCode": "",
+            "isAreaEffect": false,
+            "isVoluntary": false,
+            "notes": "",
+            "sustaining": false,
+            "sustainedForce": 0,
+            "spellLocked": false,
+            "quickened": false,
+            "quickeningKarma": 0
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "626cbd800e16d855",
+          "name": "Ares Predator",
+          "type": "weapon",
+          "img": "icons/svg/target.svg",
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "9M",
+            "damageType": "physical",
+            "concealability": 5,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": true,
+              "bf": false,
+              "fa": false
+            },
+            "ammo": {
+              "current": 15,
+              "max": 15,
+              "type": "pistol"
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 5,
+              "medium": 20,
+              "long": 40,
+              "extreme": 60
+            },
+            "cost": 450,
+            "availability": "4/5 days",
+            "legality": "Restricted",
+            "equipped": true,
+            "notes": "Heavy pistol (SR2E p.94)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "c581f22fd8f47d56",
+          "name": "Real Leather Clothing",
+          "type": "armor",
+          "img": "icons/svg/shield.svg",
+          "system": {
+            "ballistic": 0,
+            "impact": 2,
+            "concealability": 0,
+            "weight": 0,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "notes": "Worn armor (Queen Euphoria stat block)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        }
+      ],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Craft (Thomas Dorin)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Craft_Thomas_Dorin.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "07633edb47f6c337",
+      "name": "Euphoria (Amanda Lockhart)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Euphoria_Amanda_Lockhart.png",
+      "system": {
+        "biography": "<p>Megasimsense star and the adventure's abductee. Arrogant 21-year-old recluse, daughter of two trideo stars, discovered/managed by Robert Carrone. Her sim-rig kept recording during the kidnapping — the recording is the key clue at her penthouse.</p><p><strong>Cyberware:</strong> Datajack; Sense Link (with internal transmitter). (Essence 5.)</p><p><em>Cast of Characters, Queen Euphoria p.63.</em></p>",
+        "race": "human",
+        "professionalRating": 2,
+        "body": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "strength": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 6,
+          "mod": 0,
+          "value": 6,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "essence": {
+          "value": 5,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 4,
+          "mod": 0,
+          "value": 4
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 4,
+          "dice": 1,
+          "mod": 0,
+          "value": 4
+        },
+        "threatRating": 2,
+        "nuyen": 0,
+        "movement": {
+          "walk": 4,
+          "run": 12
+        }
+      },
+      "items": [
+        {
+          "_id": "a30a8bbd106c8b47",
+          "name": "Electronics",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "intelligence",
+            "rating": 3,
+            "concentration": {
+              "name": "Simsense Equipment",
+              "rating": 3
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "b3481a3b6144ced4",
+          "name": "Etiquette (Corporate)",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 2,
+            "concentration": {
+              "name": "Corporate",
+              "rating": 2
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "e41fc56d292f251b",
+          "name": "Etiquette (Media)",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 3,
+            "concentration": {
+              "name": "Media",
+              "rating": 3
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "d4e3c2472c90e133",
+          "name": "Etiquette (Street)",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 1,
+            "concentration": {
+              "name": "Street",
+              "rating": 1
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "31b664558d33afcb",
+          "name": "Negotiation",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 2,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "37ca4403cb9791e7",
+          "name": "Acting",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "knowledge",
+            "linkedAttribute": "charisma",
+            "rating": 5,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "3cee7512f081c495",
+          "name": "Dance",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "knowledge",
+            "linkedAttribute": "quickness",
+            "rating": 2,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "8be9f93e0e146357",
+          "name": "Simsense Acting",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "knowledge",
+            "linkedAttribute": "charisma",
+            "rating": 6,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "c0dd901c7568a673",
+          "name": "Long Coat",
+          "type": "armor",
+          "img": "icons/svg/shield.svg",
+          "system": {
+            "ballistic": 4,
+            "impact": 2,
+            "concealability": 0,
+            "weight": 0,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "notes": "Worn armor (Queen Euphoria stat block)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        }
+      ],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Euphoria (Amanda Lockhart)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Euphoria_Amanda_Lockhart.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": 0,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "04e23b7806026164",
+      "name": "Euphoria's Bodyguard",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Euphoria_s_Bodyguard.png",
+      "system": {
+        "biography": "<p>One of Euphoria's private security detail — the professionals slaughtered by Craft's Soldiers at the penthouse (their bodies are the horror the runners find). Also usable as her live guards during Act 1. Cyberware: smartlink + boosted reflexes (Reaction/Initiative as printed). Representative professional bodyguard.</p>",
+        "race": "human",
+        "professionalRating": 3,
+        "body": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "strength": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "essence": {
+          "value": 5,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 3,
+          "mod": 2,
+          "value": 5
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 5,
+          "dice": 2,
+          "mod": 0,
+          "value": 5
+        },
+        "threatRating": 3,
+        "nuyen": 0,
+        "movement": {
+          "walk": 4,
+          "run": 12
+        }
+      },
+      "items": [
+        {
+          "_id": "0753bb17d734cb84",
+          "name": "Armed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "98ea98df538aa6ae",
+          "name": "Firearms",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "b75089f6c656353a",
+          "name": "Unarmed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "e3189c5c5974f210",
+          "name": "Stealth",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "b72e63183dafde15",
+          "name": "Ceska vz/120",
+          "type": "weapon",
+          "img": "icons/svg/target.svg",
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "6L",
+            "damageType": "physical",
+            "concealability": 8,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": true,
+              "bf": false,
+              "fa": false
+            },
+            "ammo": {
+              "current": 18,
+              "max": 18,
+              "type": "pistol"
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 5,
+              "medium": 15,
+              "long": 30,
+              "extreme": 50
+            },
+            "cost": 200,
+            "availability": "4/4 days",
+            "legality": "Restricted",
+            "equipped": true,
+            "notes": "Light pistol, high concealability (SR2E p.94)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "d434823f585354f1",
+          "name": "Armor Jacket",
+          "type": "armor",
+          "img": "icons/svg/shield.svg",
+          "system": {
+            "ballistic": 5,
+            "impact": 3,
+            "concealability": 0,
+            "weight": 0,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "notes": "Worn armor (Queen Euphoria stat block)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        }
+      ],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Euphoria's Bodyguard",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Euphoria_s_Bodyguard.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": 0,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "ef2a8ee358b3f451",
+      "name": "Hive Queen (set-piece)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Hive_Queen_set_piece.png",
+      "system": {
+        "biography": "<p><strong>Non-combat set-piece.</strong> Queen Euphoria states the Queen Spirit \"does not actually appear in the adventure\" — Craft's Hive is still forming and the Queen has not yet been summoned. This actor exists only as a display token for the climax at the Hive (the cocooned Euphoria awaiting metamorphosis); it is not statted for a fight.</p><p>If a GM extends the adventure and needs the Queen in play, she is an extremely high-Force insect Queen spirit — scale her to the group and see the DE Hive Queen (Force 10) for a worked example. Attributes below are nominal placeholders (Force ~10); armor 2×Force.</p><p><strong>MANUAL rules (QE p.54 — the sheet does NOT enforce these):</strong> Immunity to Normal Weapons vs <em>all ranged</em> attacks (firearms etc., not spells); \"armor\" = 2×Force. A mundane weapon in melee attacks with <strong>Willpower</strong>, not weapon skill (magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> (attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p>",
+        "race": "spirit",
+        "professionalRating": 5,
+        "body": {
+          "base": 15,
+          "mod": 0,
+          "value": 15,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 16,
+          "mod": 0,
+          "value": 16,
+          "racial": 0
+        },
+        "strength": {
+          "base": 10,
+          "mod": 0,
+          "value": 10,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 10,
+          "mod": 0,
+          "value": 10,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 10,
+          "mod": 0,
+          "value": 10,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 10,
+          "mod": 0,
+          "value": 10,
+          "racial": 0
+        },
+        "essence": {
+          "value": 6,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 13,
+          "mod": -3,
+          "value": 10
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 12,
+          "impact": 12
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 10,
+          "dice": 1,
+          "mod": 0,
+          "value": 10
+        },
+        "threatRating": 10,
+        "nuyen": 0,
+        "movement": {
+          "walk": 16,
+          "run": 48
+        }
+      },
+      "items": [],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Hive Queen (set-piece)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Hive_Queen_set_piece.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "f139ed747f2833e6",
+      "name": "Lone Star Officer",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Lone_Star_Officer.png",
+      "system": {
+        "biography": "<p>Lone Star patrol response — summoned if a Strice Matrix alert Traces the decker, or if a scene goes loud. Representative officer.</p>",
+        "race": "human",
+        "professionalRating": 3,
+        "body": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "strength": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "essence": {
+          "value": 6,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 3,
+          "mod": 1,
+          "value": 4
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 4,
+          "dice": 1,
+          "mod": 0,
+          "value": 4
+        },
+        "threatRating": 3,
+        "nuyen": 0,
+        "movement": {
+          "walk": 4,
+          "run": 12
+        }
+      },
+      "items": [
+        {
+          "_id": "0753bb17d734cb84",
+          "name": "Armed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "98ea98df538aa6ae",
+          "name": "Firearms",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "1a413a5e21bf7d8a",
+          "name": "Ground Vehicles",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "reaction",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "626cbd800e16d855",
+          "name": "Ares Predator",
+          "type": "weapon",
+          "img": "icons/svg/target.svg",
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "9M",
+            "damageType": "physical",
+            "concealability": 5,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": true,
+              "bf": false,
+              "fa": false
+            },
+            "ammo": {
+              "current": 15,
+              "max": 15,
+              "type": "pistol"
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 5,
+              "medium": 20,
+              "long": 40,
+              "extreme": 60
+            },
+            "cost": 450,
+            "availability": "4/5 days",
+            "legality": "Restricted",
+            "equipped": true,
+            "notes": "Heavy pistol (SR2E p.94)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "d434823f585354f1",
+          "name": "Armor Jacket",
+          "type": "armor",
+          "img": "icons/svg/shield.svg",
+          "system": {
+            "ballistic": 5,
+            "impact": 3,
+            "concealability": 0,
+            "weight": 0,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "notes": "Worn armor (Queen Euphoria stat block)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        }
+      ],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Lone Star Officer",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Lone_Star_Officer.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "1dece01022748b01",
+      "name": "Osprey (Craft's muscle)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Osprey_Craft_s_muscle.png",
+      "system": {
+        "biography": "<p>Hired muscle in Craft's orbit (Legwork, QE p.59). Representative heavy — a street samurai type guarding the Magic Crafts shop or the Hive approaches. GM: rename/adjust to the individual.</p>",
+        "race": "human",
+        "professionalRating": 3,
+        "body": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "strength": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "essence": {
+          "value": 5,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 3,
+          "mod": 1,
+          "value": 4
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 4,
+          "dice": 2,
+          "mod": 0,
+          "value": 4
+        },
+        "threatRating": 3,
+        "nuyen": 0,
+        "movement": {
+          "walk": 4,
+          "run": 12
+        }
+      },
+      "items": [
+        {
+          "_id": "e3892996973dd271",
+          "name": "Armed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "98ea98df538aa6ae",
+          "name": "Firearms",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "e3189c5c5974f210",
+          "name": "Stealth",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "6c382c426c206cda",
+          "name": "Unarmed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "d93079b47833e59f",
+          "name": "Uzi III",
+          "type": "weapon",
+          "img": "icons/svg/target.svg",
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "6M",
+            "damageType": "physical",
+            "concealability": 5,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": false,
+              "bf": true,
+              "fa": false
+            },
+            "ammo": {
+              "current": 24,
+              "max": 24,
+              "type": "smg"
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 10,
+              "medium": 40,
+              "long": 80,
+              "extreme": 150
+            },
+            "cost": 600,
+            "availability": "6/8 days",
+            "legality": "Restricted",
+            "equipped": true,
+            "notes": "SMG (SR2E p.94)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "c3e10a891e2eebb4",
+          "name": "Knife",
+          "type": "weapon",
+          "img": "icons/svg/sword.svg",
+          "system": {
+            "weaponType": "melee",
+            "skill": "armed_combat",
+            "damageCode": "4L",
+            "damageType": "physical",
+            "concealability": 8,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": false,
+              "bf": false,
+              "fa": false
+            },
+            "ammo": {
+              "current": 0,
+              "max": 0,
+              "type": ""
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 0,
+              "medium": 0,
+              "long": 0,
+              "extreme": 0
+            },
+            "cost": 30,
+            "availability": "Legal",
+            "legality": "Restricted",
+            "equipped": true,
+            "notes": "Blade."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "d434823f585354f1",
+          "name": "Armor Jacket",
+          "type": "armor",
+          "img": "icons/svg/shield.svg",
+          "system": {
+            "ballistic": 5,
+            "impact": 3,
+            "concealability": 0,
+            "weight": 0,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "notes": "Worn armor (Queen Euphoria stat block)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        }
+      ],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Osprey (Craft's muscle)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Osprey_Craft_s_muscle.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "5e033754c9d374b4",
+      "name": "Robert Carrone",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Robert_Carrone.png",
+      "system": {
+        "biography": "<p>MegaMedia vice-president and Euphoria's former manager — the Johnson who hires the runners to find her. Born corp man, calm, ruthless, loyal to MegaMedia only until a better deal appears.</p><p><strong>Cyberware:</strong> Datajack; Display Link; Headware Memory (30 Mp). (Essence 5.4.)</p><p><strong>Gear:</strong> Pocket Secretary, Wristphone with vidscreen.</p><p><em>Cast of Characters, Queen Euphoria p.64.</em></p>",
+        "race": "human",
+        "professionalRating": 3,
+        "body": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "strength": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "essence": {
+          "value": 5.4,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 4,
+          "mod": 0,
+          "value": 4
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 4,
+          "dice": 1,
+          "mod": 0,
+          "value": 4
+        },
+        "threatRating": 3,
+        "nuyen": 0,
+        "movement": {
+          "walk": 4,
+          "run": 12
+        }
+      },
+      "items": [
+        {
+          "_id": "59810fe82e081a0d",
+          "name": "Etiquette (Corporate)",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 6,
+            "concentration": {
+              "name": "Corporate",
+              "rating": 6
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "37b9a1deda964d64",
+          "name": "Etiquette (Media)",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 5,
+            "concentration": {
+              "name": "Media",
+              "rating": 5
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "ce187687879e8569",
+          "name": "Firearms",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "94dc0c0adfae5b76",
+          "name": "Negotiation",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 5,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "b72e63183dafde15",
+          "name": "Ceska vz/120",
+          "type": "weapon",
+          "img": "icons/svg/target.svg",
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "6L",
+            "damageType": "physical",
+            "concealability": 8,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": true,
+              "bf": false,
+              "fa": false
+            },
+            "ammo": {
+              "current": 18,
+              "max": 18,
+              "type": "pistol"
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 5,
+              "medium": 15,
+              "long": 30,
+              "extreme": 50
+            },
+            "cost": 200,
+            "availability": "4/4 days",
+            "legality": "Restricted",
+            "equipped": true,
+            "notes": "Light pistol, high concealability (SR2E p.94)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "d0fd0468ba864329",
+          "name": "Armor Clothing",
+          "type": "armor",
+          "img": "icons/svg/shield.svg",
+          "system": {
+            "ballistic": 3,
+            "impact": 0,
+            "concealability": 0,
+            "weight": 0,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "notes": "Worn armor (Queen Euphoria stat block)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        }
+      ],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Robert Carrone",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Robert_Carrone.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": 0,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "5ca2bfcd68b562a5",
+      "name": "Soldier Ant Spirit (Flesh Form, Force 4)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Soldier_Ant_Spirit_Flesh_Form_Force_4.png",
+      "system": {
+        "biography": "<p>A soldier ant spirit inhabiting a human host — a gruesome human/giant-ant hybrid, permanently bound to the body (a Dual Being that cannot astrally project). <strong>Flesh Form rule:</strong> a Soldier adds its Force to the host's Physical attributes; Mental attributes are the spirit's True-Form values. (Representative host below: Physical 3 + Force 4 = 7.)</p><p><strong>MANUAL rules (QE p.54 — the sheet does NOT enforce these):</strong> Immunity to Normal Weapons vs <em>all ranged</em> attacks (firearms etc., not spells); \"armor\" = 2×Force. A mundane weapon in melee attacks with <strong>Willpower</strong>, not weapon skill (magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> (attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p><p><em>Insects Among Us, Queen Euphoria p.54. Scale the host's Physical attributes to the individual it possesses.</em></p>",
+        "race": "spirit",
+        "professionalRating": 4,
+        "body": {
+          "base": 7,
+          "mod": 0,
+          "value": 7,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 7,
+          "mod": 0,
+          "value": 7,
+          "racial": 0
+        },
+        "strength": {
+          "base": 7,
+          "mod": 0,
+          "value": 7,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "essence": {
+          "value": 4,
+          "max": 4
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 5,
+          "mod": 0,
+          "value": 5
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 8,
+          "impact": 8
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 5,
+          "dice": 1,
+          "mod": 0,
+          "value": 5
+        },
+        "threatRating": 4,
+        "nuyen": 0,
+        "movement": {
+          "walk": 7,
+          "run": 21
+        }
+      },
+      "items": [],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Soldier Ant Spirit (Flesh Form, Force 4)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Soldier_Ant_Spirit_Flesh_Form_Force_4.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "68c86edeb4715b6b",
+      "name": "Soldier Ant Spirit (True Form, Force 4)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Soldier_Ant_Spirit_True_Form_Force_4.png",
+      "system": {
+        "biography": "<p>An insect spirit soldier in its true form — a roughly man-sized, chitin-armoured ant-horror that exists to protect the Queen. Aggressive, fearless, terrifying. Attributes scale with Force (here F = 4); manifest Reaction = Force.</p><p><strong>MANUAL rules (QE p.54 — the sheet does NOT enforce these):</strong> Immunity to Normal Weapons vs <em>all ranged</em> attacks (firearms etc., not spells); \"armor\" = 2×Force. A mundane weapon in melee attacks with <strong>Willpower</strong>, not weapon skill (magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> (attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p><p><em>Insects Among Us, Queen Euphoria p.54.</em></p>",
+        "race": "spirit",
+        "professionalRating": 4,
+        "body": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 16,
+          "mod": 0,
+          "value": 16,
+          "racial": 0
+        },
+        "strength": {
+          "base": 8,
+          "mod": 0,
+          "value": 8,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "essence": {
+          "value": 4,
+          "max": 4
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 10,
+          "mod": -6,
+          "value": 4
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 8,
+          "impact": 8
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 4,
+          "dice": 1,
+          "mod": 0,
+          "value": 4
+        },
+        "threatRating": 4,
+        "nuyen": 0,
+        "movement": {
+          "walk": 16,
+          "run": 48
+        }
+      },
+      "items": [],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Soldier Ant Spirit (True Form, Force 4)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Soldier_Ant_Spirit_True_Form_Force_4.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "2b6a986a58820472",
+      "name": "Stone (Craft's muscle)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Stone_Craft_s_muscle.png",
+      "system": {
+        "biography": "<p>Hired muscle in Craft's orbit (Legwork, QE p.59). Representative heavy. GM: rename/adjust to the individual.</p>",
+        "race": "human",
+        "professionalRating": 3,
+        "body": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "strength": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "essence": {
+          "value": 5,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 3,
+          "mod": 1,
+          "value": 4
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 4,
+          "dice": 1,
+          "mod": 0,
+          "value": 4
+        },
+        "threatRating": 3,
+        "nuyen": 0,
+        "movement": {
+          "walk": 4,
+          "run": 12
+        }
+      },
+      "items": [
+        {
+          "_id": "e3892996973dd271",
+          "name": "Armed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "98ea98df538aa6ae",
+          "name": "Firearms",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "b75089f6c656353a",
+          "name": "Unarmed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "d93079b47833e59f",
+          "name": "Uzi III",
+          "type": "weapon",
+          "img": "icons/svg/target.svg",
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "6M",
+            "damageType": "physical",
+            "concealability": 5,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": false,
+              "bf": true,
+              "fa": false
+            },
+            "ammo": {
+              "current": 24,
+              "max": 24,
+              "type": "smg"
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 10,
+              "medium": 40,
+              "long": 80,
+              "extreme": 150
+            },
+            "cost": 600,
+            "availability": "6/8 days",
+            "legality": "Restricted",
+            "equipped": true,
+            "notes": "SMG (SR2E p.94)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "_id": "d434823f585354f1",
+          "name": "Armor Jacket",
+          "type": "armor",
+          "img": "icons/svg/shield.svg",
+          "system": {
+            "ballistic": 5,
+            "impact": 3,
+            "concealability": 0,
+            "weight": 0,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "notes": "Worn armor (Queen Euphoria stat block)."
+          },
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
+        }
+      ],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Stone (Craft's muscle)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Stone_Craft_s_muscle.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "8a26e7df5c0982a8",
+      "name": "Strice Barrier IC (DS-1)",
+      "type": "ic",
+      "img": "icons/svg/terror.svg",
+      "system": {
+        "icType": "white",
+        "rating": 4,
+        "hostUuid": "Actor.613124d3b87809ff",
+        "securityCode": "orange",
+        "alert": "none",
+        "bod": 4,
+        "evasion": 4,
+        "masking": 4,
+        "sensor": 4,
+        "attack": 4,
+        "conditionMonitor": {
+          "value": 0,
+          "max": 8
+        },
+        "initiative": {
+          "base": 11,
+          "dice": 1,
+          "value": 11
+        },
+        "specialAbilities": [
+          "Barrier"
+        ],
+        "notes": "<p>DS-1, Orange-3 / Barrier 4. A shimmering field guarding the purchase-order datastore (QE p.34).</p>"
+      },
+      "items": [],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Strice Barrier IC (DS-1)",
+        "displayName": 20,
+        "actorLink": true,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "icons/svg/terror.svg",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "613124d3b87809ff",
+      "name": "Strice Foods Host",
+      "type": "host",
+      "img": "icons/svg/computer.svg",
+      "system": {
+        "securityCode": "orange",
+        "systemRating": 4,
+        "attempts": 0,
+        "alert": "none",
+        "subsystems": {
+          "access": 4,
+          "control": 4,
+          "index": 4,
+          "files": 4,
+          "slave": 4
+        },
+        "securityValueOverride": 0,
+        "notes": "<p>Strice Foods' \"low-cost\" corporate system (QE p.34). Modelled as one SR2E host at a representative Security Code <strong>Orange-4</strong> (the CPU tier). The SR1 system map's per-node color-codes drive MANUAL operation TNs / success thresholds the GM applies as the decker moves between nodes:</p><ul><li><strong>SAN</strong> (gateway, #2206 / 312-1752) — Red-5, Access 5: a tougher initial Access/Logon test than the host baseline.</li><li><strong>SPU-1</strong> — Orange-3: <em>Trace-and-Dump 3</em> IC.</li><li><strong>CPU</strong> — Orange-4: <em>Barrier 3</em> + <em>Tar Pit 4</em> IC.</li><li><strong>DS-1</strong> — Orange-3, Barrier 4: purchase orders — the MegaMedia deal (1,280,000¥ for Euphoria's three appearances) and Knight Errant expenditures. 4 files × 70 Mp = <strong>28,000¥</strong> fenced.</li><li><strong>DS-2</strong> — Orange-5, Scramble 3: Accounts Receivable. 3 files × 80 Mp = <strong>60,000¥</strong>.</li><li><strong>DS-3</strong> — Green-3: Seattle retailer/distributor list. 2 files × 40 Mp = <strong>4,000¥</strong>.</li></ul><p><strong>Trigger:</strong> an external alert shuts the whole system down within two minutes; any Trace result prints at Burroughs' terminal, and he calls Lone Star (immediately if he's in-office by day, otherwise next morning). No vital clues live here — the run is for paydata and the MegaMedia/Craft trail. <em>Defending IC below link to this host via system.hostUuid.</em></p>"
+      },
+      "items": [],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Strice Foods Host",
+        "displayName": 20,
+        "actorLink": true,
+        "width": 2,
+        "height": 2,
+        "texture": {
+          "src": "icons/svg/computer.svg",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "disposition": -1,
+        "displayBars": 0
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "e377a04489c95550",
+      "name": "Strice Scramble IC (DS-2)",
+      "type": "ic",
+      "img": "icons/svg/terror.svg",
+      "system": {
+        "icType": "white",
+        "rating": 3,
+        "hostUuid": "Actor.613124d3b87809ff",
+        "securityCode": "orange",
+        "alert": "none",
+        "bod": 3,
+        "evasion": 3,
+        "masking": 3,
+        "sensor": 3,
+        "attack": 3,
+        "conditionMonitor": {
+          "value": 0,
+          "max": 6
+        },
+        "initiative": {
+          "base": 10,
+          "dice": 1,
+          "value": 10
+        },
+        "specialAbilities": [
+          "Scramble"
+        ],
+        "notes": "<p>DS-2, Orange-5 / Scramble 3. Lights up at the datastore exit and scrambles the Accounts-Receivable files if not defeated (QE p.34).</p>"
+      },
+      "items": [],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Strice Scramble IC (DS-2)",
+        "displayName": 20,
+        "actorLink": true,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "icons/svg/terror.svg",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "6812a823df0eae29",
+      "name": "Strice Tar Pit IC (CPU)",
+      "type": "ic",
+      "img": "icons/svg/terror.svg",
+      "system": {
+        "icType": "black",
+        "rating": 4,
+        "hostUuid": "Actor.613124d3b87809ff",
+        "securityCode": "orange",
+        "alert": "none",
+        "bod": 4,
+        "evasion": 4,
+        "masking": 4,
+        "sensor": 4,
+        "attack": 4,
+        "conditionMonitor": {
+          "value": 0,
+          "max": 8
+        },
+        "initiative": {
+          "base": 11,
+          "dice": 1,
+          "value": 11
+        },
+        "specialAbilities": [
+          "Tar Pit"
+        ],
+        "notes": "<p>CPU, Orange-4. Appears as a mouth that swallows a decker's utility, then spits it back to poison all copies of the utility (QE p.34).</p>"
+      },
+      "items": [],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Strice Tar Pit IC (CPU)",
+        "displayName": 20,
+        "actorLink": true,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "icons/svg/terror.svg",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "0490c4c216bb2588",
+      "name": "Strice Trace-and-Dump IC (SPU)",
+      "type": "ic",
+      "img": "icons/svg/terror.svg",
+      "system": {
+        "icType": "gray",
+        "rating": 3,
+        "hostUuid": "Actor.613124d3b87809ff",
+        "securityCode": "orange",
+        "alert": "none",
+        "bod": 3,
+        "evasion": 3,
+        "masking": 3,
+        "sensor": 3,
+        "attack": 3,
+        "conditionMonitor": {
+          "value": 0,
+          "max": 6
+        },
+        "initiative": {
+          "base": 10,
+          "dice": 1,
+          "value": 10
+        },
+        "specialAbilities": [
+          "Trace",
+          "Dump"
+        ],
+        "notes": "<p>SPU-1, Orange-3. Traces the intruder and dumps them from the host on success (QE p.34).</p>"
+      },
+      "items": [],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Strice Trace-and-Dump IC (SPU)",
+        "displayName": 20,
+        "actorLink": true,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "icons/svg/terror.svg",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "96c308d2b016c4f9",
+      "name": "Worker Ant Spirit (Flesh Form, Force 3)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Worker_Ant_Spirit_Flesh_Form_Force_3.png",
+      "system": {
+        "biography": "<p>A worker ant spirit inhabiting a human host — a Dual Being that cannot astrally project. <strong>Flesh Form rule:</strong> a Worker reduces the host's Physical attributes by 1; Mental attributes are the spirit's True-Form values. (Representative host below: Physical 3 − 1 = 2.) Still a poor combatant that screeches and self-sacrifices to protect the Hive.</p><p><strong>MANUAL rules (QE p.54 — the sheet does NOT enforce these):</strong> Immunity to Normal Weapons vs <em>all ranged</em> attacks (firearms etc., not spells); \"armor\" = 2×Force. A mundane weapon in melee attacks with <strong>Willpower</strong>, not weapon skill (magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> (attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p><p><em>Insects Among Us, Queen Euphoria p.54. Scale the host's Physical attributes to the individual it possesses.</em></p>",
+        "race": "spirit",
+        "professionalRating": 3,
+        "body": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "strength": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 1,
+          "mod": 0,
+          "value": 1,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "essence": {
+          "value": 3,
+          "max": 3
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 1,
+          "mod": 0,
+          "value": 1
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 6,
+          "impact": 6
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 1,
+          "dice": 1,
+          "mod": 0,
+          "value": 1
+        },
+        "threatRating": 2,
+        "nuyen": 0,
+        "movement": {
+          "walk": 2,
+          "run": 6
+        }
+      },
+      "items": [],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Worker Ant Spirit (Flesh Form, Force 3)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Worker_Ant_Spirit_Flesh_Form_Force_3.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "e6c0660fae6813ab",
+      "name": "Worker Ant Spirit (True Form, Force 3)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/Worker_Ant_Spirit_True_Form_Force_3.png",
+      "system": {
+        "biography": "<p>An insect spirit worker in its true form — the colony's labour caste, tending cocoons and larvae. Cowardly and ineffective in combat: when attacked it emits a piercing screech to warn the Hive, and it will throw itself in the path of an attack to protect the cocoons or the Queen. Attributes scale with Force (here F = 3); manifest Reaction = Force.</p><p><strong>MANUAL rules (QE p.54 — the sheet does NOT enforce these):</strong> Immunity to Normal Weapons vs <em>all ranged</em> attacks (firearms etc., not spells); \"armor\" = 2×Force. A mundane weapon in melee attacks with <strong>Willpower</strong>, not weapon skill (magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> (attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p><p><em>Insects Among Us, Queen Euphoria p.54.</em></p>",
+        "race": "spirit",
+        "professionalRating": 3,
+        "body": {
+          "base": 1,
+          "mod": 0,
+          "value": 1,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 9,
+          "mod": 0,
+          "value": 9,
+          "racial": 0
+        },
+        "strength": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 1,
+          "mod": 0,
+          "value": 1,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 3,
+          "mod": 0,
+          "value": 3,
+          "racial": 0
+        },
+        "essence": {
+          "value": 3,
+          "max": 3
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 5,
+          "mod": -2,
+          "value": 3
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 6,
+          "impact": 6
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 3,
+          "dice": 1,
+          "mod": 0,
+          "value": 3
+        },
+        "threatRating": 2,
+        "nuyen": 0,
+        "movement": {
+          "walk": 9,
+          "run": 27
+        }
+      },
+      "items": [],
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "prototypeToken": {
+        "name": "Worker Ant Spirit (True Form, Force 3)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/Worker_Ant_Spirit_True_Form_Force_3.png",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": -1,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "_id": "2da198f96cff19cf",
+      "name": "Euphoria's Penthouse",
+      "navigation": true,
+      "navName": "",
+      "active": false,
+      "width": 1600,
+      "height": 1200,
+      "padding": 0.25,
+      "backgroundColor": "#15151f",
+      "background": {
+        "src": "modules/sr2e-queen-euphoria/assets/scenes/Euphoria_s_Penthouse.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0
+      },
+      "foreground": null,
+      "foregroundElevation": null,
+      "thumb": null,
+      "grid": {
+        "type": 1,
+        "size": 100,
+        "style": "solidLines",
+        "thickness": 1,
+        "color": "#000000",
+        "alpha": 0.2,
+        "distance": 1,
+        "units": "m"
+      },
+      "initial": null,
+      "tokenVision": false,
+      "fog": {
+        "exploration": false,
+        "reset": 0,
+        "overlay": null
+      },
+      "globalLight": {
+        "enabled": true
+      },
+      "darkness": 0,
+      "environment": {},
+      "drawings": [],
+      "tokens": [],
+      "lights": [],
+      "notes": [],
+      "sounds": [],
+      "regions": [],
+      "templates": [],
+      "tiles": [],
+      "walls": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "00dc26593c511f39",
+      "name": "Magic Crafts Shop",
+      "navigation": true,
+      "navName": "",
+      "active": false,
+      "width": 1600,
+      "height": 1200,
+      "padding": 0.25,
+      "backgroundColor": "#15151f",
+      "background": {
+        "src": "modules/sr2e-queen-euphoria/assets/scenes/Magic_Crafts_Shop.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0
+      },
+      "foreground": null,
+      "foregroundElevation": null,
+      "thumb": null,
+      "grid": {
+        "type": 1,
+        "size": 100,
+        "style": "solidLines",
+        "thickness": 1,
+        "color": "#000000",
+        "alpha": 0.2,
+        "distance": 1,
+        "units": "m"
+      },
+      "initial": null,
+      "tokenVision": false,
+      "fog": {
+        "exploration": false,
+        "reset": 0,
+        "overlay": null
+      },
+      "globalLight": {
+        "enabled": true
+      },
+      "darkness": 0,
+      "environment": {},
+      "drawings": [],
+      "tokens": [],
+      "lights": [],
+      "notes": [],
+      "sounds": [],
+      "regions": [],
+      "templates": [],
+      "tiles": [],
+      "walls": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "28de9521eb497f13",
+      "name": "MegaMedia Office",
+      "navigation": true,
+      "navName": "",
+      "active": false,
+      "width": 1600,
+      "height": 1200,
+      "padding": 0.25,
+      "backgroundColor": "#15151f",
+      "background": {
+        "src": "modules/sr2e-queen-euphoria/assets/scenes/MegaMedia_Office.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0
+      },
+      "foreground": null,
+      "foregroundElevation": null,
+      "thumb": null,
+      "grid": {
+        "type": 1,
+        "size": 100,
+        "style": "solidLines",
+        "thickness": 1,
+        "color": "#000000",
+        "alpha": 0.2,
+        "distance": 1,
+        "units": "m"
+      },
+      "initial": null,
+      "tokenVision": false,
+      "fog": {
+        "exploration": false,
+        "reset": 0,
+        "overlay": null
+      },
+      "globalLight": {
+        "enabled": true
+      },
+      "darkness": 0,
+      "environment": {},
+      "drawings": [],
+      "tokens": [],
+      "lights": [],
+      "notes": [],
+      "sounds": [],
+      "regions": [],
+      "templates": [],
+      "tiles": [],
+      "walls": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "547b2a3a2dc3de67",
+      "name": "MegaMedia Studio",
+      "navigation": true,
+      "navName": "",
+      "active": false,
+      "width": 1600,
+      "height": 1200,
+      "padding": 0.25,
+      "backgroundColor": "#15151f",
+      "background": {
+        "src": "modules/sr2e-queen-euphoria/assets/scenes/MegaMedia_Studio.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0
+      },
+      "foreground": null,
+      "foregroundElevation": null,
+      "thumb": null,
+      "grid": {
+        "type": 1,
+        "size": 100,
+        "style": "solidLines",
+        "thickness": 1,
+        "color": "#000000",
+        "alpha": 0.2,
+        "distance": 1,
+        "units": "m"
+      },
+      "initial": null,
+      "tokenVision": false,
+      "fog": {
+        "exploration": false,
+        "reset": 0,
+        "overlay": null
+      },
+      "globalLight": {
+        "enabled": true
+      },
+      "darkness": 0,
+      "environment": {},
+      "drawings": [],
+      "tokens": [],
+      "lights": [],
+      "notes": [],
+      "sounds": [],
+      "regions": [],
+      "templates": [],
+      "tiles": [],
+      "walls": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "b5945ccec665af5c",
+      "name": "Pacific Towers",
+      "navigation": true,
+      "navName": "",
+      "active": false,
+      "width": 1600,
+      "height": 1200,
+      "padding": 0.25,
+      "backgroundColor": "#15151f",
+      "background": {
+        "src": "modules/sr2e-queen-euphoria/assets/scenes/Pacific_Towers.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0
+      },
+      "foreground": null,
+      "foregroundElevation": null,
+      "thumb": null,
+      "grid": {
+        "type": 1,
+        "size": 100,
+        "style": "solidLines",
+        "thickness": 1,
+        "color": "#000000",
+        "alpha": 0.2,
+        "distance": 1,
+        "units": "m"
+      },
+      "initial": null,
+      "tokenVision": false,
+      "fog": {
+        "exploration": false,
+        "reset": 0,
+        "overlay": null
+      },
+      "globalLight": {
+        "enabled": true
+      },
+      "darkness": 0,
+      "environment": {},
+      "drawings": [],
+      "tokens": [],
+      "lights": [],
+      "notes": [],
+      "sounds": [],
+      "regions": [],
+      "templates": [],
+      "tiles": [],
+      "walls": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "f03dc7ba4cfcbccf",
+      "name": "The Hive",
+      "navigation": true,
+      "navName": "",
+      "active": false,
+      "width": 1600,
+      "height": 1200,
+      "padding": 0.25,
+      "backgroundColor": "#15151f",
+      "background": {
+        "src": "modules/sr2e-queen-euphoria/assets/scenes/The_Hive.png",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0
+      },
+      "foreground": null,
+      "foregroundElevation": null,
+      "thumb": null,
+      "grid": {
+        "type": 1,
+        "size": 100,
+        "style": "solidLines",
+        "thickness": 1,
+        "color": "#000000",
+        "alpha": 0.2,
+        "distance": 1,
+        "units": "m"
+      },
+      "initial": null,
+      "tokenVision": false,
+      "fog": {
+        "exploration": false,
+        "reset": 0,
+        "overlay": null
+      },
+      "globalLight": {
+        "enabled": true
+      },
+      "darkness": 0,
+      "environment": {},
+      "drawings": [],
+      "tokens": [],
+      "lights": [],
+      "notes": [],
+      "sounds": [],
+      "regions": [],
+      "templates": [],
+      "tiles": [],
+      "walls": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      }
+    }
+  ],
+  "journal": [
+    {
+      "_id": "5aafaf3688d42a39",
+      "name": "GM Overview — Queen Euphoria",
+      "pages": [
+        {
+          "_id": "901131200f0c69e6",
+          "name": "The Premise",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><em>Queen Euphoria</em> (FASA 7304) is a Shadowrun adventure set in the Tacoma, Puyallup, and Redmond districts of 2050s Seattle, here <strong>modernized to Shadowrun 2nd Edition</strong>. The megasimsense star <strong>Euphoria</strong> has been kidnapped — twice — and the runners are hired to find and recover her. Behind the abductions is something far worse than a media stunt: an <strong>insect-spirit Hive</strong> in the making.</p> <p>The adventure uses a <strong>decision-tree</strong> structure: the team can reach the same encounters by different routes depending on their choices, and can miss planned scenes entirely. Read the whole thing first — key groundwork is laid early.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "c777bb48f08da439",
+          "name": "Plot Synopsis (GM Eyes Only)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>Thomas Dorin</strong>, streetname <strong>Craft</strong>, is an Ant-totem shaman quietly building a <strong>Hive</strong> in preparation for a Queen Spirit he has not yet summoned. He discovers that the secretion of his Hive's Worker ants, mixed with food thickeners, makes a cheap, mildly addictive stuffer. To fund the Hive he offers the substance to <strong>Vincent Burroughs</strong> of <strong>Strice Foods</strong>, who — desperate for a corporate win and not knowing the true source — turns it into the wildly successful junk food <strong>Amber Gel</strong>.</p> <p>To promote Amber Gel, Strice hires reclusive megasimstar <strong>Euphoria</strong> for a series of public appearances. Rival <strong>Ludivenko</strong> wants to spoil the launch and arranges (through a Fixer and a team of shadowrunners) to make Euphoria <em>disappear</em> before the first appearance. She is recovered — but Ludivenko then cuts a copycat deal for its own product, <strong>Blue Bacosoy</strong>.</p> <p>Fearing the fiasco plus Ludivenko's competition, Burroughs tells Craft to \"take care of Euphoria.\" The near-mad shaman — psychotically fixated on the star — instead seizes his chance to make her his <strong>Queen</strong>. Craft's Soldiers raid Euphoria's penthouse during a home-studio simsense recording session, slaughter her bodyguards, and take her to the Hive to begin the Queen-summoning and place her in a cocoon for metamorphosis. Unknown to Craft, her sim-rig kept recording throughout.</p> <p>With Euphoria gone again, <strong>MegaMedia</strong> puts her former manager, now VP, <strong>Robert Carrone</strong>, in charge of getting her back. Carrone hires the runners. The clock is the cocoon: the players must find and free Euphoria before her metamorphosis completes.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "ff40dfd8bab4cb40",
+          "name": "How the Adventure Runs (Two Acts)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p>The adventure runs in <strong>two acts</strong> with a twist between them:</p> <p><strong>Act 1 — The Job (p.8–24).</strong> A Fixer puts the team in front of a Johnson working for <strong>Ludivenko</strong>. The job: make simstar <strong>Euphoria</strong> <em>disappear</em> before her first Amber Gel appearance — a kidnapping, not a hit. The runners case her, grab her (<em>To Catch A Star</em>), hold her (<em>Holding Euphoria</em>), and get paid (<em>Payday</em>). As far as they know, that's the run.</p> <p><strong>Act 2 — The Hunt (p.25+).</strong> Later, Craft's Soldiers take Euphoria from her penthouse for real. MegaMedia — tipped by Ludivenko about who pulled the first job — has <strong>Robert Carrone</strong> hire the <em>same team</em> to find her, half-suspecting they're involved again. The twist: the runners are hired to rescue someone they themselves kidnapped weeks ago, for a client who doesn't fully trust them. From the penthouse the trail runs through Strice Foods (physical and Matrix), Craft's <strong>Magic Crafts</strong> shop, MegaMedia, and finally the <strong>Hive</strong>.</p> <p>Each scene follows the standard SR2 format: <strong>Tell It To Them Straight</strong> (read-aloud), <strong>Behind The Scenes</strong>, and GM notes. Cast stats (and the Strice host + IC) are in the <em>Queen Euphoria — Cast</em> compendium; placeholder maps are in <em>Queen Euphoria — Scenes</em>.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "75b33e371313a21a",
+      "name": "Insect Spirits in SR2E — GM Primer",
+      "pages": [
+        {
+          "_id": "731feb909de64322",
+          "name": "Running the Ant Spirits",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p>The Hive fields two castes — <strong>Soldier</strong> and <strong>Worker</strong> ant spirits — each in a <strong>True Form</strong> (a man-sized ant-horror) or a <strong>Flesh Form</strong> (inhabiting a human host; a dual being that cannot astrally project). The <strong>Queen</strong> is a non-combat set-piece; she has not yet been fully summoned.</p> <p>These actors are ordinary <code>npc</code> spirits — the sheet does <strong>not</strong> automate the special rules. Apply them by hand:</p> <ul> <li><strong>Immunity to Normal Weapons</strong> vs all <em>ranged</em> attacks (firearms and the like — <em>not</em> spells). Bullets simply do not hurt a manifested ant.</li> <li><strong>\"Armor\" = 2 × Force</strong> against everything else.</li> <li>A mundane weapon in <strong>melee</strong> attacks with <strong>Willpower</strong>, not the attacker's weapon skill (magic and Vulnerability attacks are exempt).</li> <li>In <strong>astral space</strong> stats derive from Force with a <strong>+5 Initiative</strong> bonus; the spirit can attack and defend but uses no powers.</li> <li>Defeat one by destroying its physical body, <strong>banishing</strong> it, or beating it in <strong>astral combat</strong>.</li> </ul> <p><strong>Flesh Form:</strong> a Soldier <em>adds</em> its Force to the host's Physical attributes; a Worker <em>reduces</em> the host's Physical by 1; both take the spirit's True-Form Mental attributes. Workers are cowards — they screech to warn the Hive and hurl themselves in the path of an attack to protect the cocoons or the Queen.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "3340a69d849f6182",
+      "name": "Picking Up The Pieces (p.53)",
+      "pages": [
+        {
+          "_id": "db533a444bde119e",
+          "name": "Resolution & Payment",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>Success</strong> is freeing Euphoria before her metamorphosis completes and getting her out of the Hive alive. MegaMedia (Carrone) pays the agreed fee; a clean, quiet recovery earns a bonus and a powerful media contact. If the team also cracked the Amber Gel / Craft / Strice conspiracy, they hold leverage worth selling — or worth keeping their heads down over.</p> <p><strong>Partial or failed</strong> outcomes: if Euphoria is lost, transformed, or the story goes public the wrong way, MegaMedia's gratitude curdles and Carrone looks for someone to blame. Ludivenko, Strice, and Lone Star all have reasons to remember the team.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "3751b1573e7666f2",
+          "name": "Awarding Karma (SR2E)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p>Award Karma per SR2 <strong>p.199</strong>. This is a horror-tinged run, so aim for a <strong>team award of about 6–8</strong> total, then add small individual awards on top — <em>not</em> a bonus for every plot beat. Use the milestones below to <em>place</em> that team total, not to sum it:</p> <ul> <li><strong>Survived the adventure:</strong> the baseline team award (≈1–2).</li> <li><strong>Solved the mystery</strong> (penthouse simsense clue → Amber Gel / Craft / Strice trail): ≈2.</li> <li><strong>Achieved the objective</strong> — freed Euphoria before her metamorphosis completed: ≈3–4. A clean, quiet extraction is the top of that band; losing or transforming her drops it toward 0.</li> <li><strong>Defeating or banishing Craft</strong> and surviving the Hive folds into the objective award rather than stacking on it.</li> </ul> <p>Then add <strong>individual</strong> awards (≈1–3 each, SR2 p.199) for good roleplaying, clever solutions, and personal heroics. Nuyen is the negotiated MegaMedia fee plus any Strice paydata fenced. (Note: \"Threat/Professional Rating\" is an NPC stat, not a Karma award — don't add it here.)</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "5b2c5890bfa5a163",
+      "name": "Player Handouts",
+      "pages": [
+        {
+          "_id": "78430b87e76f1854",
+          "name": "Newsnet — Successful Recovery",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<blockquote><p><strong>KSAF NEWSNET —</strong> Simsense superstar <strong>Euphoria</strong> was recovered unharmed today after what MegaMedia Entertainment calls \"a private security matter.\" The megastar's spokesperson thanked \"the professionals who brought her home\" and confirmed she is resting in seclusion. MegaMedia declined to comment on rumors linking the incident to the snack-food maker <strong>Strice Foods</strong> and its runaway hit <em>Amber Gel</em>.</p></blockquote> <p><em>Hand out on a clean rescue.</em></p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "98d86f0ac405f6d2",
+          "name": "Newsnet — Failed Recovery",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<blockquote><p><strong>KSAF NEWSNET —</strong> Fans held a candlelight vigil outside MegaMedia Tower tonight after the entertainment giant confirmed that simstar <strong>Euphoria</strong> \"remains missing and is presumed lost.\" No group has claimed responsibility. Sources hint at a botched private recovery operation; MegaMedia would say only that \"every effort was made.\" Meanwhile <em>Amber Gel</em> sales continue to climb.</p></blockquote> <p><em>Hand out if Euphoria is lost or transformed.</em></p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "bf9f113ac66ad357",
+          "name": "The Simsense Recording (penthouse clue)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><em>Playback, first person, Euphoria's point of view:</em> the studio lights, a joke half-spoken — then the wall gives way. Something huge and <strong>wrong</strong> comes through: chitin, too many angles, a smell like an anthill and acid. Screams that are cut short. The recording jars, tilts, and a clawed, glistening limb fills the frame before everything lurches and goes to static.</p> <p><em>Hand out (edited) when the team recovers and plays the penthouse simchip.</em></p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "aa475a33eae13547",
+      "name": "The Adventure — Scene Prep",
+      "pages": [
+        {
+          "_id": "46108e4f430da5c9",
+          "name": "ACT 1 — The Job: Wake Up Call / Off and Running (p.8–10)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>The hook.</strong> A Fixer (e.g. Diablo) puts the team in front of a Johnson working — deniably — for <strong>Ludivenko</strong>. The job pays well and sounds simple: make simstar <strong>Euphoria</strong> <em>vanish</em> for a while, before her first public appearance promoting Strice Foods' <em>Amber Gel</em>. It's a snatch-and-hold, not a hit; the client wants her embarrassed and off the schedule, not hurt.</p> <p><strong>GM notes.</strong> Don't reveal Ludivenko or the Amber Gel angle yet. Let the team do the legwork to case Euphoria — reclusive, guarded, and at Pacific Towers / her studio. This is a straightforward run whose whole point is the later twist: everything the team learns about Euphoria here pays off when they're hired to <em>find</em> her in Act 2.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "3488b3ec70daff4a",
+          "name": "ACT 1 — To Catch A Star / Holding Euphoria / Payday (p.13–24)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>The grab.</strong> Pacific Towers and the surrounding scenes let the team scout and then take Euphoria (<em>To Catch A Star</em>). She is arrogant and uncooperative but not a fighter (see her stat block). The team holds her (<em>Holding Euphoria</em>) until the client's window passes, then hands her back and collects (<em>Payday</em>). Ludivenko gets its sabotaged launch; the runners get paid and move on.</p> <p><strong>GM notes.</strong> Keep it clean — the tone here is a caper, in deliberate contrast to the horror of Act 2. Note who the team is and how they operate; Ludivenko later sells that description to MegaMedia. Map: <em>Pacific Towers</em>.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "49019635f57590be",
+          "name": "ACT 2 — The Twist: Meeting Carrone (p.28–29)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>The hire.</strong> Weeks later, <strong>Robert Carrone</strong> — MegaMedia VP and Euphoria's manager — hires the <em>same team</em> to find and recover Euphoria after her <em>second</em> disappearance. The twist: Ludivenko tipped MegaMedia about who pulled the first kidnapping, so Carrone is hiring the very runners who took her before — half to use their knowledge of her, half because he suspects they're involved again.</p> <p><strong>GM notes.</strong> Carrone is calm, ruthless, and watching them. He won't volunteer that he knows about Act 1 unless the players force it; play the tension. He is the paymaster and information broker for the hunt. This time Euphoria was taken for real — by Craft's Hive.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "717a88647be93751",
+          "name": "Missing Again — Euphoria's Penthouse (p.30–33)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>Tell it to them straight.</strong> The penthouse is a slaughterhouse. Euphoria's bodyguards have been torn apart in ways nothing Human could manage — chitin gouges, dissolved tissue, the reek of formic acid. The home simsense studio is wrecked.</p> <p><strong>The key clue.</strong> Searching the studio turns up the <strong>simsense recording</strong> Euphoria was making at the moment of the attack (a Perception or Electronics test to notice the rig kept running). Played back, it shows — in first person — something monstrous breaking in, killing the guards, and seizing her. A sharp viewer catches glimpses that point toward an <strong>insect spirit</strong> and, faintly, the Ant motif.</p> <p><strong>GM notes.</strong> This scene sells the horror and hands the players their thread: this was not a normal snatch. Map: <em>Euphoria's Penthouse</em>.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "dd3199250d43d9e6",
+          "name": "Legwork — Dossiers (p.56–61)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p>Legwork around Strice Foods, Ludivenko, and MegaMedia fills in the corporate triangle behind both abductions. Key names:</p> <ul> <li><strong>Vincent Burroughs</strong> — the Strice Foods exec who secretly buys Craft's substance to make Amber Gel, and who tells Craft to \"take care of\" Euphoria (a social contact / journal dossier, not a combatant).</li> <li><strong>Solomon Daniels</strong> — Craft's Fixer, who offered him the run that restarted his shadow career.</li> <li><strong>Osprey</strong> and <strong>Stone</strong> — muscle in Craft's orbit (representative combatant actors are in the Cast compendium).</li> <li><strong>Ludivenko / Strice / MegaMedia</strong> — the corps; Ludivenko is the hidden hand behind Act 1.</li> </ul> <p><strong>Rewards funnel.</strong> The paydata trail (see Hacking Strice) links Amber Gel to a mysterious supplier and to Craft's talismonger shop, <strong>Magic Crafts</strong> — the door to the Hive.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "af1ee63409f969f7",
+          "name": "Hacking Strice (p.34)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p>If the team decks Strice Foods, run it against the <strong>Strice Foods Host</strong> actor (see the Cast compendium) and its IC. The system holds no vital clue, but it is profitable and it ties Amber Gel to Craft: purchase-order records (DS-1) show the plant receives only jars, blue coloring, and low-grade nutrisoy — no way to make a stuffer from that alone — plus the MegaMedia payment (1,280,000¥ for Euphoria's three appearances) and Knight Errant security expenditures. A rent memo or payment can point at <strong>Magic Crafts</strong> and Craft.</p> <p><strong>Paydata:</strong> DS-1 4×70 Mp (~28,000¥), DS-2 3×80 Mp (~60,000¥), DS-3 2×40 Mp (~4,000¥). <strong>Trap:</strong> an external alert shuts the whole system down within two minutes; a Trace prints at Burroughs' terminal and he calls Lone Star. Per-node Security Codes and TNs are documented on the host actor's notes.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "a31a3443089acb2b",
+          "name": "The Magic Shop — Magic Crafts (p.39–40)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>Craft's talismonger shop.</strong> The trail leads here. Craft appears (when present) as a filthy, unkempt man reeking of regurgitation, his behavior swinging between the affable merchant and the Ant-crazed shaman. The shop is a front and a bolthole; astral traces, ritual materials, and the smell of the Hive are all present to a careful investigator.</p> <p><strong>GM notes.</strong> Craft is a dangerous full magician (Sorcery 6 / Conjuring 5, Ant totem) — see his stat block. Do not let the team corner him easily; he would rather flee to the Hive with his prize than fight to the death in his shop. Map: <em>Magic Crafts Shop</em>.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "b96bec15ab93a839",
+          "name": "A MegaMedia Production (p.41–42)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p>A MegaMedia studio scene — pressure from the corp, a public-appearance angle, or a staged event tied to the Amber Gel promotion. Use it to raise the stakes and the clock, and to give social characters room to work. Map: <em>MegaMedia Studio</em>.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "372ed61650ea6b96",
+          "name": "Audience With The Queen — The Hive (p.43–52)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>The climax.</strong> The team descends into Craft's Hive to free Euphoria before her metamorphosis completes. It is a nest of chambers, cocoons, and larvae, defended by <strong>Soldier</strong> and <strong>Worker</strong> ant spirits (true and flesh forms — see the Insect Spirits primer and the Cast compendium). Craft is here, at the height of his madness, summoning his Queen.</p> <p><strong>Euphoria</strong> is cocooned and mid-metamorphosis; every round of delay is a round closer to losing her. Freeing her is a matter of cutting her loose and getting out — through the Hive's defenders.</p> <p><strong>GM notes.</strong> Workers scream to summon Soldiers and throw themselves at attackers near the cocoons or the Queen. Remember the manual insect rules (Immunity to Normal Weapons vs ranged, armor 2×Force, Willpower melee defense). Map: <em>The Hive</em>.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "items": [],
+  "cards": [],
+  "macros": [],
+  "playlists": [],
+  "tables": [],
+  "combats": [],
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!adventures!eef0b97dc68139b7"
+}

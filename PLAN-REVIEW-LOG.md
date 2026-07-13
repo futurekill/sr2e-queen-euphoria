@@ -91,3 +91,12 @@ Proof: `node tools/gen-actors.mjs && npm run build-packs qe-actors` → 8 docs, 
 
 ### Codex review — Strice host + IC (thread 019f5bea)
 Findings: (M) IC prototypes had actorLink:false, defeating the system's singleton-IC design + host alert-propagation (iterates world actors) → set actorLink:true. (L) IC initiative source = rating only; runtime derives icReactionBase(orange=7)+rating → set base/value = 7+rating for accurate pack data. Confirmed CORRECT: one-host Orange-4 reduction faithful (per-node codes MANUAL), all 4 IC type/rating mappings (gray/black/white/white, 3/4/4/3), schema conformance, and the Adventure-import UUID gate (Actor.<deterministic hostId> resolves; Foundry preserves bundled ids). Both fixes applied.
+
+### Codex review — journals + Adventure bundle (thread 019f5bea)
+Confirmed CORRECT: JournalEntry/page schema (V13), build-packs page splitting, Adventure assembly + _key stripping, the bundled IC→host UUID resolves (host in same adventure.actors), the Insect Spirits primer (rules-faithful), scene scope.
+Findings + Claude's responses:
+- (HIGH) Karma table over-awarded (~8-16/runner) + cited wrong page → REWROTE per SR2 p.199 as a ~6-8 team target with milestones as placement guidance, removed the Threat-Rating conflation.
+- (HIGH) journals skipped Act 1 (the runners themselves pull the FIRST Ludivenko kidnapping; Carrone hires the SAME team for the second) → REWROTE the overview "How the Adventure Runs" as two acts + added ACT 1 (The Job) and ACT 2 (The Twist: Meeting Carrone) scene-prep pages; retitled the old Carrone page to Legwork dossiers.
+- (MED) missing core combatants → ADDED 5 representative actors (Euphoria's Bodyguard, Corporate/Venue Security, Lone Star Officer, Osprey, Stone).
+- (MED) per-scene journal depth < full inventory → deferred to Phase 2 (the plan's Phase-1 subset is met: 18 pages, core combatants, single host, plain scenes, Adventure bundle).
+Rebuild: 18 actors / 5 journals (18 pages) / 6 scenes / 1 Adventure; all packs valid.

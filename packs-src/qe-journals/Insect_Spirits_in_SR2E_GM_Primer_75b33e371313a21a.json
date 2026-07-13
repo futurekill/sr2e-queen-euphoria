@@ -1,0 +1,60 @@
+{
+  "_id": "75b33e371313a21a",
+  "name": "Insect Spirits in SR2E — GM Primer",
+  "pages": [
+    {
+      "_id": "731feb909de64322",
+      "name": "Running the Ant Spirits",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The Hive fields two castes — <strong>Soldier</strong> and <strong>Worker</strong> ant spirits — each in a <strong>True Form</strong> (a man-sized ant-horror) or a <strong>Flesh Form</strong> (inhabiting a human host; a dual being that cannot astrally project). The <strong>Queen</strong> is a non-combat set-piece; she has not yet been fully summoned.</p> <p>These actors are ordinary <code>npc</code> spirits — the sheet does <strong>not</strong> automate the special rules. Apply them by hand:</p> <ul> <li><strong>Immunity to Normal Weapons</strong> vs all <em>ranged</em> attacks (firearms and the like — <em>not</em> spells). Bullets simply do not hurt a manifested ant.</li> <li><strong>\"Armor\" = 2 × Force</strong> against everything else.</li> <li>A mundane weapon in <strong>melee</strong> attacks with <strong>Willpower</strong>, not the attacker's weapon skill (magic and Vulnerability attacks are exempt).</li> <li>In <strong>astral space</strong> stats derive from Force with a <strong>+5 Initiative</strong> bonus; the spirit can attack and defend but uses no powers.</li> <li>Defeat one by destroying its physical body, <strong>banishing</strong> it, or beating it in <strong>astral combat</strong>.</li> </ul> <p><strong>Flesh Form:</strong> a Soldier <em>adds</em> its Force to the host's Physical attributes; a Worker <em>reduces</em> the host's Physical by 1; both take the spirit's True-Form Mental attributes. Workers are cowards — they screech to warn the Hive and hurl themselves in the path of an attack to protect the cocoons or the Queen.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!75b33e371313a21a"
+}

@@ -1,0 +1,132 @@
+{
+  "_id": "5b2c5890bfa5a163",
+  "name": "Player Handouts",
+  "pages": [
+    {
+      "_id": "78430b87e76f1854",
+      "name": "Newsnet — Successful Recovery",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<blockquote><p><strong>KSAF NEWSNET —</strong> Simsense superstar <strong>Euphoria</strong> was recovered unharmed today after what MegaMedia Entertainment calls \"a private security matter.\" The megastar's spokesperson thanked \"the professionals who brought her home\" and confirmed she is resting in seclusion. MegaMedia declined to comment on rumors linking the incident to the snack-food maker <strong>Strice Foods</strong> and its runaway hit <em>Amber Gel</em>.</p></blockquote> <p><em>Hand out on a clean rescue.</em></p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "98d86f0ac405f6d2",
+      "name": "Newsnet — Failed Recovery",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<blockquote><p><strong>KSAF NEWSNET —</strong> Fans held a candlelight vigil outside MegaMedia Tower tonight after the entertainment giant confirmed that simstar <strong>Euphoria</strong> \"remains missing and is presumed lost.\" No group has claimed responsibility. Sources hint at a botched private recovery operation; MegaMedia would say only that \"every effort was made.\" Meanwhile <em>Amber Gel</em> sales continue to climb.</p></blockquote> <p><em>Hand out if Euphoria is lost or transformed.</em></p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "bf9f113ac66ad357",
+      "name": "The Simsense Recording (penthouse clue)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Playback, first person, Euphoria's point of view:</em> the studio lights, a joke half-spoken — then the wall gives way. Something huge and <strong>wrong</strong> comes through: chitin, too many angles, a smell like an anthill and acid. Screams that are cut short. The recording jars, tilts, and a clawed, glistening limb fills the frame before everything lurches and goes to static.</p> <p><em>Hand out (edited) when the team recovers and plays the penthouse simchip.</em></p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!5b2c5890bfa5a163"
+}
