@@ -69,3 +69,22 @@ Plan is sound enough to implement; single-host Matrix abstraction clearly identi
 
 ### Claude's response
 ACCEPTED both nits (non-blocking): rewrote the parenthetical to "printed IC ratings are copied directly; per-node codes drive the manual operation thresholds and Reaction Time"; relabelled the map-art out-of-scope bullet. Plan CONVERGED — APPROVED after 4 rounds.
+
+## Act 3 — Build (gen-actors.mjs)
+Claude wrote tools/gen-actors.mjs (7→8 npc actors: Craft/Euphoria/Carrone + Soldier/Worker ant × True/Flesh + Hive Queen set-piece) from docs/CAST-STATS.md, mirroring DE's generator. Codex (blocked from --yolo writes by auto-mode; used read-only instead) reviewed the generator + emitted JSON.
+
+### Codex review — 9 findings (thread 019f5bea)
+1. HIGH ants used DE combat numbers (armor F/2F, reaction F+10) not QE's rules (armor 2×Force, +5 astral only).
+2. HIGH Craft's spells used hand-typed defaults, not the system's canonical spell definitions (wrong drain/area/target).
+3. HIGH 4 concentrations encoded as specializations (+4 vs +2).
+4. MED essence max written from printed value (Euphoria 5/5) instead of max 6 for cybered humans.
+5. MED Craft magic.type "shaman" (noncanonical) vs "full_magician"; Sleep focus bio-only.
+6. MED magical skills (Conjuring/Sorcery) marked isMagical:false.
+7. MED cyberware biography-only, not items.
+8. LOW Queen display actor absent.
+9. LOW some DE fields omitted (safe defaults); confirmed QE ×3 run is correct (not DE's ×5).
+
+### Claude's response (arbiter)
+ACCEPTED 1,2,3,4,5(type),6,8: ants → armor [2F,2F] + reaction=Force; spells → loaded from ../sr2e-foundryvtt/packs-src/spells canonical defs (force overridden); spec→conc; essence max 6 for humans / =Force for spirits; magic.type full_magician; isMagical on Conjuring+Sorcery; added Hive Queen set-piece.
+KEPT AS-IS with reason: #5 Sleep focus stays bio-only (system foci add to EVERY spell — a Sleep-only focus item would be wrong); #7 cyberware bio-only (DE precedent; NPC essence is static/authoritative, so items add nothing mechanically); #9 omitted fields default safely. Concentration +2 (vs book's flat rating) accepted as the SR2E modernization.
+Proof: `node tools/gen-actors.mjs && npm run build-packs qe-actors` → 8 docs, pack builds, `npm run validate` clean.

@@ -1,0 +1,155 @@
+{
+  "_id": "ef2a8ee358b3f451",
+  "name": "Hive Queen (set-piece)",
+  "type": "npc",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/Hive_Queen_set_piece.png",
+  "system": {
+    "biography": "<p><strong>Non-combat set-piece.</strong> Queen Euphoria states the Queen Spirit \"does not actually appear in the adventure\" — Craft's Hive is still forming and the Queen has not yet been summoned. This actor exists only as a display token for the climax at the Hive (the cocooned Euphoria awaiting metamorphosis); it is not statted for a fight.</p><p>If a GM extends the adventure and needs the Queen in play, she is an extremely high-Force insect Queen spirit — scale her to the group and see the DE Hive Queen (Force 10) for a worked example. Attributes below are nominal placeholders (Force ~10); armor 2×Force.</p><p><strong>MANUAL rules (QE p.54 — the sheet does NOT enforce these):</strong> Immunity to Normal Weapons vs <em>all ranged</em> attacks (firearms etc., not spells); \"armor\" = 2×Force. A mundane weapon in melee attacks with <strong>Willpower</strong>, not weapon skill (magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> (attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p>",
+    "race": "spirit",
+    "professionalRating": 5,
+    "body": {
+      "base": 15,
+      "mod": 0,
+      "value": 15,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 16,
+      "mod": 0,
+      "value": 16,
+      "racial": 0
+    },
+    "strength": {
+      "base": 10,
+      "mod": 0,
+      "value": 10,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 10,
+      "mod": 0,
+      "value": 10,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 10,
+      "mod": 0,
+      "value": 10,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 10,
+      "mod": 0,
+      "value": 10,
+      "racial": 0
+    },
+    "essence": {
+      "value": 6,
+      "max": 6
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 13,
+      "mod": -3,
+      "value": 10
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 12,
+      "impact": 12
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 10,
+      "dice": 1,
+      "mod": 0,
+      "value": 10
+    },
+    "threatRating": 10,
+    "nuyen": 0,
+    "movement": {
+      "walk": 16,
+      "run": 48
+    }
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Hive Queen (set-piece)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/Hive_Queen_set_piece.png",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!ef2a8ee358b3f451"
+}

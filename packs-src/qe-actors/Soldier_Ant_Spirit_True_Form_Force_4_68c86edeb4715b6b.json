@@ -1,0 +1,155 @@
+{
+  "_id": "68c86edeb4715b6b",
+  "name": "Soldier Ant Spirit (True Form, Force 4)",
+  "type": "npc",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/Soldier_Ant_Spirit_True_Form_Force_4.png",
+  "system": {
+    "biography": "<p>An insect spirit soldier in its true form — a roughly man-sized, chitin-armoured ant-horror that exists to protect the Queen. Aggressive, fearless, terrifying. Attributes scale with Force (here F = 4); manifest Reaction = Force.</p><p><strong>MANUAL rules (QE p.54 — the sheet does NOT enforce these):</strong> Immunity to Normal Weapons vs <em>all ranged</em> attacks (firearms etc., not spells); \"armor\" = 2×Force. A mundane weapon in melee attacks with <strong>Willpower</strong>, not weapon skill (magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> (attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p><p><em>Insects Among Us, Queen Euphoria p.54.</em></p>",
+    "race": "spirit",
+    "professionalRating": 4,
+    "body": {
+      "base": 5,
+      "mod": 0,
+      "value": 5,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 16,
+      "mod": 0,
+      "value": 16,
+      "racial": 0
+    },
+    "strength": {
+      "base": 8,
+      "mod": 0,
+      "value": 8,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 4,
+      "mod": 0,
+      "value": 4,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 4,
+      "mod": 0,
+      "value": 4,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 4,
+      "mod": 0,
+      "value": 4,
+      "racial": 0
+    },
+    "essence": {
+      "value": 4,
+      "max": 4
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 10,
+      "mod": -6,
+      "value": 4
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 8,
+      "impact": 8
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 4,
+      "dice": 1,
+      "mod": 0,
+      "value": 4
+    },
+    "threatRating": 4,
+    "nuyen": 0,
+    "movement": {
+      "walk": 16,
+      "run": 48
+    }
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Soldier Ant Spirit (True Form, Force 4)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/Soldier_Ant_Spirit_True_Form_Force_4.png",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!68c86edeb4715b6b"
+}

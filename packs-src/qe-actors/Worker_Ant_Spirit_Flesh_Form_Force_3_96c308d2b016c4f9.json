@@ -1,0 +1,155 @@
+{
+  "_id": "96c308d2b016c4f9",
+  "name": "Worker Ant Spirit (Flesh Form, Force 3)",
+  "type": "npc",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/Worker_Ant_Spirit_Flesh_Form_Force_3.png",
+  "system": {
+    "biography": "<p>A worker ant spirit inhabiting a human host — a Dual Being that cannot astrally project. <strong>Flesh Form rule:</strong> a Worker reduces the host's Physical attributes by 1; Mental attributes are the spirit's True-Form values. (Representative host below: Physical 3 − 1 = 2.) Still a poor combatant that screeches and self-sacrifices to protect the Hive.</p><p><strong>MANUAL rules (QE p.54 — the sheet does NOT enforce these):</strong> Immunity to Normal Weapons vs <em>all ranged</em> attacks (firearms etc., not spells); \"armor\" = 2×Force. A mundane weapon in melee attacks with <strong>Willpower</strong>, not weapon skill (magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> (attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p><p><em>Insects Among Us, Queen Euphoria p.54. Scale the host's Physical attributes to the individual it possesses.</em></p>",
+    "race": "spirit",
+    "professionalRating": 3,
+    "body": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "strength": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 3,
+      "mod": 0,
+      "value": 3,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 1,
+      "mod": 0,
+      "value": 1,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 3,
+      "mod": 0,
+      "value": 3,
+      "racial": 0
+    },
+    "essence": {
+      "value": 3,
+      "max": 3
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 1,
+      "mod": 0,
+      "value": 1
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 6,
+      "impact": 6
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 1,
+      "dice": 1,
+      "mod": 0,
+      "value": 1
+    },
+    "threatRating": 2,
+    "nuyen": 0,
+    "movement": {
+      "walk": 2,
+      "run": 6
+    }
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Worker Ant Spirit (Flesh Form, Force 3)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/Worker_Ant_Spirit_Flesh_Form_Force_3.png",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!96c308d2b016c4f9"
+}
