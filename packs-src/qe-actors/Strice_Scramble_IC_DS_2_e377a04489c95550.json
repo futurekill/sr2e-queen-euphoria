@@ -2,7 +2,7 @@
   "_id": "e377a04489c95550",
   "name": "Strice Scramble IC (DS-2)",
   "type": "ic",
-  "img": "icons/svg/terror.svg",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/strice-scramble-ic-ds-2.webp",
   "system": {
     "icType": "white",
     "rating": 3,
@@ -51,15 +51,16 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "icons/svg/terror.svg",
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/strice-scramble-ic-ds-2.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "fit": "contain",
+      "fit": "cover",
       "scaleX": 1,
       "scaleY": 1,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
+    "lockRotation": true,
     "disposition": -1,
     "displayBars": 20,
     "bar1": {

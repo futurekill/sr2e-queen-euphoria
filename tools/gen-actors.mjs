@@ -28,7 +28,8 @@ const SKILL_ATTR = {
 const STATS = { coreVersion: "13.351", systemId: null, systemVersion: null, createdTime: null, modifiedTime: null, lastModifiedBy: null, compendiumSource: null, duplicateSource: null, exportSource: null };
 
 const safeName = (s) => s.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_|_$/g, "");
-const portraitPath = (name) => `modules/sr2e-queen-euphoria/assets/portraits/${safeName(name)}.png`;
+const slugName = (s) => s.toLowerCase().replace(/['’()]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const portraitPath = (name) => `modules/sr2e-queen-euphoria/assets/portraits/${slugName(name)}.webp`;
 
 function attr(base, mod = 0) {
   return { base, mod, value: Math.max(1, base + mod), racial: 0 };
@@ -142,8 +143,8 @@ function actor(n) {
     _stats: { ...STATS, systemId: "sr2e", systemVersion: "0.1.0", createdTime: 1784000000000, modifiedTime: 1784000000000 },
     prototypeToken: {
       name: n.name, displayName: 20, actorLink: false, width: 1, height: 1,
-      texture: { src: img, anchorX: 0.5, anchorY: 0.5, offsetX: 0, offsetY: 0, fit: "contain", scaleX: 1, scaleY: 1, rotation: 0, tint: "#ffffff", alphaThreshold: 0.75 },
-      lockRotation: false, rotation: 0, alpha: 1, disposition: n.disposition ?? -1, displayBars: 20,
+      texture: { src: img, anchorX: 0.5, anchorY: 0.5, offsetX: 0, offsetY: 0, fit: "cover", scaleX: 1, scaleY: 1, rotation: 0, tint: "#ffffff", alphaThreshold: 0.75 },
+      lockRotation: true, rotation: 0, alpha: 1, disposition: n.disposition ?? -1, displayBars: 20,
       bar1: { attribute: "conditionMonitor.physical" }, bar2: { attribute: "conditionMonitor.stun" }
     },
     ownership: { default: 0 }, _key: `!actors!${_id}`
@@ -187,7 +188,7 @@ function hostActor(h) {
 
 function icActor(ic) {
   const _id = idFor("ic:" + ic.name);
-  const img = ic.img ?? "icons/svg/terror.svg";
+  const img = ic.img ?? portraitPath(ic.name);
   const r = ic.rating;
   return {
     _id, name: ic.name, type: "ic", img,
@@ -207,8 +208,8 @@ function icActor(ic) {
       // IC (like the host) are singleton actors — linked tokens keep damage/state
       // in sync with the sidebar actor and the host alert-propagation hook.
       name: ic.name, displayName: 20, actorLink: true, width: 1, height: 1,
-      texture: { src: img, anchorX: 0.5, anchorY: 0.5, fit: "contain", scaleX: 1, scaleY: 1, tint: "#ffffff", alphaThreshold: 0.75 },
-      disposition: -1, displayBars: 20, bar1: { attribute: "conditionMonitor" }
+      texture: { src: img, anchorX: 0.5, anchorY: 0.5, fit: "cover", scaleX: 1, scaleY: 1, tint: "#ffffff", alphaThreshold: 0.75 },
+      lockRotation: true, disposition: -1, displayBars: 20, bar1: { attribute: "conditionMonitor" }
     },
     ownership: { default: 0 }, _key: `!actors!${_id}`
   };

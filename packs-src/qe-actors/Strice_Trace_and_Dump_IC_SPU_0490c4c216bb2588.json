@@ -2,7 +2,7 @@
   "_id": "0490c4c216bb2588",
   "name": "Strice Trace-and-Dump IC (SPU)",
   "type": "ic",
-  "img": "icons/svg/terror.svg",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/strice-trace-and-dump-ic-spu.webp",
   "system": {
     "icType": "gray",
     "rating": 3,
@@ -52,15 +52,16 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "icons/svg/terror.svg",
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/strice-trace-and-dump-ic-spu.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "fit": "contain",
+      "fit": "cover",
       "scaleX": 1,
       "scaleY": 1,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
+    "lockRotation": true,
     "disposition": -1,
     "displayBars": 20,
     "bar1": {
