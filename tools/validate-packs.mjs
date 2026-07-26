@@ -1,4 +1,4 @@
-// Pre-flight validator for the Double Exposure packs (QA-PLAN §0). Runs with no
+// Pre-flight validator for the Queen Euphoria packs (QA-PLAN §0). Runs with no
 // Foundry: checks every packs-src/*/*.json document for valid JSON, required
 // keys, correct _key form, and duplicate _ids; reports per-pack counts. Exits
 // non-zero if anything fails. Run: `node tools/validate-packs.mjs`.

@@ -1,4 +1,4 @@
-# GitHub Actions workflow for releasing the Double Exposure adventure module.
+# GitHub Actions workflow for releasing the Queen Euphoria adventure module.
 #
 # USAGE:
 #   1. Bump "version" in module.json
@@ -17,8 +17,8 @@ permissions:
   contents: write
 
 env:
-  MODULE_ID: sr2e-double-exposure
-  REPO: futurekill/sr2e-double-exposure
+  MODULE_ID: sr2e-queen-euphoria
+  REPO: futurekill/sr2e-queen-euphoria
 
 jobs:
   release:
