@@ -1138,18 +1138,421 @@
         }
       ],
       "bio": "<p>Strice Foods facility guards \u2014 better equipped than the Pacific Towers rent-a-cops, with Armor Vests With Plates, Uzis and stun batons.</p><p>The stun baton's printed <em>\"+ Special\"</em> is a stun effect beyond its damage code; GM adjudicates.</p><p><em>Queen Euphoria p.25. No actor previously existed \u2014 neither the Seco LD 120 nor the stun baton appeared anywhere in the module.</em></p>"
+    },
+    {
+      "_id": "96c308d2b016c4f9",
+      "name": "Flesh Form Worker (Force 1)",
+      "type": "npc",
+      "source": "printed",
+      "page": 47,
+      "art": "worker-ant-spirit-flesh-form-force-3.webp",
+      "race": "spirit",
+      "pro": 1,
+      "threat": 1,
+      "essence": 1,
+      "$essenceNote": "Printed as (1)A. The number fits under the schema's max of 6 exactly as printed; only the 'A' qualifier is unrepresentable and it is noted in the bio.",
+      "disposition": -1,
+      "attrs": {
+        "body": 2,
+        "qui": 2,
+        "str": 2,
+        "cha": 1,
+        "int": 1,
+        "wil": 1
+      },
+      "$charismaNote": "Charisma is printed as an em-dash (not given). Set to Force as a modeled placeholder so the data model has a legal value \u2014 it drives nothing mechanical for these critters.",
+      "reaction": 1,
+      "initDice": 1,
+      "insectAttack": {
+        "sr1": "None",
+        "sr2": "None",
+        "special": false
+      },
+      "powers": [
+        "Enhanced Senses (Smell)"
+      ],
+      "weaknesses": [
+        "Reduced Senses (Sight)"
+      ],
+      "bio": "<p>The colony's labour caste in a human host \u2014 tending cocoons and larvae. <strong>It has no printed attack at all</strong> and is not a combatant: it screeches to warn the Hive and will throw itself in front of a blow to protect the cocoons or the Queen.</p><p><strong>This replaces the old 'Worker Ant Spirit (Flesh Form, Force 3)'.</strong> The printed Worker is Force 1, so an existing token becomes weaker than the GM expected, not stronger.</p><p><strong>Manual rules the sheet does not enforce.</strong> Powers and Weaknesses are not fields on the NPC data model, so they live here as prose. Switching these to <code>spirit</code> actors would be worse \u2014 <code>SpiritData.prepareDerivedData</code> recomputes attributes from Force and would overwrite the printed table this whole audit exists to restore.</p><p><strong>Astral:</strong> add <strong>+5 Initiative</strong> when acting astrally (the printed Reaction shows this as the bracketed second value). It is deliberately NOT baked into <code>reaction</code>, which would also inflate dodge and defence.</p><p><strong>Attack:</strong> None Physical (printed SR1 <code>None</code>, converted by p.283 method B \u2014 no SR2 item is an ant's mandibles, so the staging digit folds into Power).</p><p><strong>Powers:</strong> Enhanced Senses (Smell).<br><strong>Weaknesses:</strong> Reduced Senses (Sight).</p><p><em>Queen Euphoria p.47, transcribed from a 300 dpi render.</em></p>"
+    },
+    {
+      "_id": "5ca2bfcd68b562a5",
+      "name": "Flesh Form Soldiers (Force 3)",
+      "type": "npc",
+      "source": "printed",
+      "page": 49,
+      "art": "soldier-ant-spirit-flesh-form-force-4.webp",
+      "race": "spirit",
+      "pro": 3,
+      "threat": 3,
+      "essence": 3,
+      "$essenceNote": "Printed as (3)A. The number fits under the schema's max of 6 exactly as printed; only the 'A' qualifier is unrepresentable and it is noted in the bio.",
+      "disposition": -1,
+      "attrs": {
+        "body": 6,
+        "qui": 6,
+        "str": 6,
+        "cha": 3,
+        "int": 1,
+        "wil": 2
+      },
+      "$charismaNote": "Charisma is printed as an em-dash (not given). Set to Force as a modeled placeholder so the data model has a legal value \u2014 it drives nothing mechanical for these critters.",
+      "reaction": 3,
+      "initDice": 1,
+      "skills": [
+        {
+          "name": "Unarmed Combat",
+          "rating": 3
+        }
+      ],
+      "insectAttack": {
+        "sr1": "6M2",
+        "sr2": "8M",
+        "special": false
+      },
+      "powers": [
+        "Enhanced Senses (Smell)",
+        "Pain Resistance"
+      ],
+      "weaknesses": [],
+      "bio": "<p>A soldier spirit inhabiting a human host \u2014 a human/giant-ant hybrid, permanently bound to the body and unable to project astrally. <strong>Note it fights with an ordinary Unarmed Combat 3</strong>, not Willpower; the Willpower rule was a Double Exposure assumption the printed block contradicts.</p><p><strong>No armour.</strong> Flesh Forms have none printed \u2014 armour appears only on the True Forms.</p><p>Replaces 'Soldier Ant Spirit (Flesh Form, Force 4)'; no Force 4 Soldier is printed.</p><p><strong>Manual rules the sheet does not enforce.</strong> Powers and Weaknesses are not fields on the NPC data model, so they live here as prose. Switching these to <code>spirit</code> actors would be worse \u2014 <code>SpiritData.prepareDerivedData</code> recomputes attributes from Force and would overwrite the printed table this whole audit exists to restore.</p><p><strong>Astral:</strong> add <strong>+5 Initiative</strong> when acting astrally (the printed Reaction shows this as the bracketed second value). It is deliberately NOT baked into <code>reaction</code>, which would also inflate dodge and defence.</p><p><strong>Attack:</strong> 8M Physical (printed SR1 <code>6M2</code>, converted by p.283 method B \u2014 no SR2 item is an ant's mandibles, so the staging digit folds into Power).</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Pain Resistance.<br><strong>Weaknesses:</strong> None printed.</p><p><em>Queen Euphoria p.49, transcribed from a 300 dpi render.</em></p>"
+    },
+    {
+      "_id": "FLESHSOLDIER5-NEW",
+      "name": "Flesh Form Soldiers (Force 5)",
+      "type": "npc",
+      "source": "printed",
+      "page": 50,
+      "art": "soldier-ant-spirit-flesh-form-force-4.webp",
+      "race": "spirit",
+      "pro": 5,
+      "threat": 5,
+      "essence": 5,
+      "$essenceNote": "Printed as (5)A. The number fits under the schema's max of 6 exactly as printed; only the 'A' qualifier is unrepresentable and it is noted in the bio.",
+      "disposition": -1,
+      "attrs": {
+        "body": 8,
+        "qui": 8,
+        "str": 8,
+        "cha": 5,
+        "int": 3,
+        "wil": 2
+      },
+      "$charismaNote": "Charisma is printed as an em-dash (not given). Set to Force as a modeled placeholder so the data model has a legal value \u2014 it drives nothing mechanical for these critters.",
+      "reaction": 5,
+      "initDice": 1,
+      "skills": [
+        {
+          "name": "Unarmed Combat",
+          "rating": 3
+        }
+      ],
+      "insectAttack": {
+        "sr1": "8M2",
+        "sr2": "10M",
+        "special": false
+      },
+      "powers": [
+        "Enhanced Senses (Smell)",
+        "Pain Resistance"
+      ],
+      "weaknesses": [],
+      "bio": "<p>The heavier Flesh Soldier. Same shape as the Force 3 version and considerably more dangerous \u2014 Body, Quickness and Strength all 8, hitting at 10M.</p><p><strong>Manual rules the sheet does not enforce.</strong> Powers and Weaknesses are not fields on the NPC data model, so they live here as prose. Switching these to <code>spirit</code> actors would be worse \u2014 <code>SpiritData.prepareDerivedData</code> recomputes attributes from Force and would overwrite the printed table this whole audit exists to restore.</p><p><strong>Astral:</strong> add <strong>+5 Initiative</strong> when acting astrally (the printed Reaction shows this as the bracketed second value). It is deliberately NOT baked into <code>reaction</code>, which would also inflate dodge and defence.</p><p><strong>Attack:</strong> 10M Physical (printed SR1 <code>8M2</code>, converted by p.283 method B \u2014 no SR2 item is an ant's mandibles, so the staging digit folds into Power).</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Pain Resistance.<br><strong>Weaknesses:</strong> None printed.</p><p><em>Queen Euphoria p.50, transcribed from a 300 dpi render.</em></p>"
+    },
+    {
+      "_id": "68c86edeb4715b6b",
+      "name": "True Form Soldiers (Force 3)",
+      "type": "npc",
+      "source": "printed",
+      "page": 51,
+      "art": "soldier-ant-spirit-true-form-force-4.webp",
+      "race": "spirit",
+      "pro": 3,
+      "threat": 3,
+      "essence": 3,
+      "$essenceNote": "Printed as (3)A. The number fits under the schema's max of 6 exactly as printed; only the 'A' qualifier is unrepresentable and it is noted in the bio.",
+      "disposition": -1,
+      "attrs": {
+        "body": 4,
+        "qui": 7,
+        "str": 7,
+        "cha": 3,
+        "int": 1,
+        "wil": 2
+      },
+      "$charismaNote": "Charisma is printed as an em-dash (not given). Set to Force as a modeled placeholder so the data model has a legal value \u2014 it drives nothing mechanical for these critters.",
+      "reaction": 6,
+      "initDice": 1,
+      "armor": [
+        3,
+        3
+      ],
+      "insectAttack": {
+        "sr1": "7M2",
+        "sr2": "9M",
+        "special": true
+      },
+      "powers": [
+        "Enhanced Senses (Smell)",
+        "Manifestation",
+        "Paralyzing Touch",
+        "Venom"
+      ],
+      "weaknesses": [
+        "Reduced Senses (Sight)",
+        "Vulnerability (Insecticide)"
+      ],
+      "bio": "<p>A soldier in its true form \u2014 a roughly man-sized chitin-armoured ant-horror that exists to protect the Queen. Aggressive, fearless, terrifying.</p><p><strong>Armour 3/3 \u2014 Force \u00d71, not 2\u00d7Force.</strong> The doubled figure was a Double Exposure assumption; doubling would make every True Form twice as tough as printed.</p><p><strong>Paralyzing Touch and Venom are easy to lose</strong> \u2014 OCR truncates the Powers line, and they only appear on the render.</p><p><strong>Vulnerability to insecticide is the intended route to winning the climax.</strong></p><p>Printed identically at p.38 and p.51 \u2014 a duplicate printing, not two variants. Replaces 'Soldier Ant Spirit (True Form, Force 4)'.</p><p><strong>Manual rules the sheet does not enforce.</strong> Powers and Weaknesses are not fields on the NPC data model, so they live here as prose. Switching these to <code>spirit</code> actors would be worse \u2014 <code>SpiritData.prepareDerivedData</code> recomputes attributes from Force and would overwrite the printed table this whole audit exists to restore.</p><p><strong>Astral:</strong> add <strong>+5 Initiative</strong> when acting astrally (the printed Reaction shows this as the bracketed second value). It is deliberately NOT baked into <code>reaction</code>, which would also inflate dodge and defence.</p><p><strong>Attack:</strong> 9M Physical + Special (printed SR1 <code>7M2</code>, converted by p.283 method B \u2014 no SR2 item is an ant's mandibles, so the staging digit folds into Power).</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Manifestation, Paralyzing Touch, Venom.<br><strong>Weaknesses:</strong> Reduced Senses (Sight), Vulnerability (Insecticide).</p><p><em>Queen Euphoria p.51, transcribed from a 300 dpi render.</em></p>"
+    },
+    {
+      "_id": "TRUESOLDIER5-NEW",
+      "name": "True Form Soldiers (Force 5)",
+      "type": "npc",
+      "source": "printed",
+      "page": 52,
+      "art": "soldier-ant-spirit-true-form-force-4.webp",
+      "race": "spirit",
+      "pro": 5,
+      "threat": 5,
+      "essence": 5,
+      "$essenceNote": "Printed as (5)A. The number fits under the schema's max of 6 exactly as printed; only the 'A' qualifier is unrepresentable and it is noted in the bio.",
+      "disposition": -1,
+      "attrs": {
+        "body": 6,
+        "qui": 9,
+        "str": 9,
+        "cha": 5,
+        "int": 3,
+        "wil": 2
+      },
+      "$charismaNote": "Charisma is printed as an em-dash (not given). Set to Force as a modeled placeholder so the data model has a legal value \u2014 it drives nothing mechanical for these critters.",
+      "reaction": 10,
+      "initDice": 1,
+      "armor": [
+        5,
+        5
+      ],
+      "insectAttack": {
+        "sr1": "9M2",
+        "sr2": "11M",
+        "special": true
+      },
+      "powers": [
+        "Enhanced Senses (Smell)",
+        "Manifestation",
+        "Paralyzing Touch",
+        "Venom"
+      ],
+      "weaknesses": [
+        "Reduced Senses (Sight)",
+        "Vulnerability (Insecticide)"
+      ],
+      "bio": "<p>The Hive's heaviest printed guardian: Quickness and Strength 9, Armour 5/5, hitting at 11M with Paralyzing Touch and Venom. Printed Reaction 10 (15).</p><p><strong>Manual rules the sheet does not enforce.</strong> Powers and Weaknesses are not fields on the NPC data model, so they live here as prose. Switching these to <code>spirit</code> actors would be worse \u2014 <code>SpiritData.prepareDerivedData</code> recomputes attributes from Force and would overwrite the printed table this whole audit exists to restore.</p><p><strong>Astral:</strong> add <strong>+5 Initiative</strong> when acting astrally (the printed Reaction shows this as the bracketed second value). It is deliberately NOT baked into <code>reaction</code>, which would also inflate dodge and defence.</p><p><strong>Attack:</strong> 11M Physical + Special (printed SR1 <code>9M2</code>, converted by p.283 method B \u2014 no SR2 item is an ant's mandibles, so the staging digit folds into Power).</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Manifestation, Paralyzing Touch, Venom.<br><strong>Weaknesses:</strong> Reduced Senses (Sight), Vulnerability (Insecticide).</p><p><em>Queen Euphoria p.52, transcribed from a 300 dpi render.</em></p>"
+    },
+    {
+      "_id": "ef2a8ee358b3f451",
+      "name": "Hive Queen (set-piece)",
+      "type": "npc",
+      "source": "modeled",
+      "derivedFrom": "Not a printed stat block. Queen Euphoria states the Queen Spirit \"does not actually appear in the adventure\" \u2014 Craft's Hive is still forming and she has not been summoned. This actor exists only as a display token for the climax.",
+      "art": "hive-queen-set-piece.webp",
+      "race": "spirit",
+      "pro": 5,
+      "threat": 10,
+      "essence": 6,
+      "disposition": -1,
+      "attrs": {
+        "body": 15,
+        "qui": 16,
+        "str": 10,
+        "cha": 10,
+        "int": 10,
+        "wil": 10
+      },
+      "reaction": 10,
+      "initDice": 1,
+      "armor": [
+        10,
+        10
+      ],
+      "bio": "<p><strong>Non-combat set-piece.</strong> The book is explicit that the Queen does not appear \u2014 the Hive is still forming. This actor is the cocooned-Euphoria tableau at the climax, not a statted opponent.</p><p>If a GM extends the adventure and needs her in play, she is a very high-Force insect Queen; scale her to the group. The attributes below are <strong>nominal placeholders at roughly Force 10</strong> and are explicitly NOT transcribed from anything \u2014 armour is Force \u00d71 to match the printed True Forms rather than the 2\u00d7Force figure the module previously used.</p>"
+    },
+    {
+      "_id": "FIREELEM5-NEW",
+      "$idNote": "Net-new. Assign a permanent random id on first generation.",
+      "name": "Fire Elemental (Force 5)",
+      "type": "spirit",
+      "source": "modeled",
+      "derivedFrom": "Stone's printed Notes line, Queen Euphoria p.21: \"Stone has three Elementals bound \u2014 Fire Force 5 (Spell Defense), Fire Force 4 (Combat Spells), Earth Force 5.\" Force and element are printed; everything else is derived by the system from Force.",
+      "art": "systems/sr2e/assets/spirit_portraits/fire-1.webp",
+      "$artNote": "Reuses the sr2e system's spirit portraits \u2014 no new art needed.",
+      "spiritType": "elemental",
+      "domain": "fire",
+      "force": 5,
+      "services": 0,
+      "maxServices": 0,
+      "disposition": -1,
+      "bio": "<p>One of three elementals bound to <strong>Stone (Alexander Cross)</strong>, assigned to <strong>Spell Defense</strong>.</p><p><strong>No mechanical link to Stone.</strong> <code>boundSpirits</code> is a field on <code>CharacterData</code> and Stone is an <code>npc</code>, so the binding is recorded in prose on both sheets rather than faked with a link the data model cannot hold.</p><p><strong>Services are 0 / unknown.</strong> The page gives an <em>assignment</em>, not a service count \u2014 GM sets this. No invented number is presented as printed.</p><p>Unlike the insects, these are real <code>spirit</code> actors: the system derives elemental attributes from Force per the SR2 Critter Statistics Table (p.234\u2013235), which is correct here because Queen Euphoria prints no elemental attributes to preserve.</p><p><em>Queen Euphoria p.21.</em></p>"
+    },
+    {
+      "_id": "FIREELEM4-NEW",
+      "$idNote": "Net-new. Assign a permanent random id on first generation.",
+      "name": "Fire Elemental (Force 4)",
+      "type": "spirit",
+      "source": "modeled",
+      "derivedFrom": "Stone's printed Notes line, Queen Euphoria p.21: \"Stone has three Elementals bound \u2014 Fire Force 5 (Spell Defense), Fire Force 4 (Combat Spells), Earth Force 5.\" Force and element are printed; everything else is derived by the system from Force.",
+      "art": "systems/sr2e/assets/spirit_portraits/fire-2.webp",
+      "$artNote": "Reuses the sr2e system's spirit portraits \u2014 no new art needed.",
+      "spiritType": "elemental",
+      "domain": "fire",
+      "force": 4,
+      "services": 0,
+      "maxServices": 0,
+      "disposition": -1,
+      "bio": "<p>One of three elementals bound to <strong>Stone (Alexander Cross)</strong>, bound to him for <strong>Combat Spells</strong>.</p><p><strong>No mechanical link to Stone.</strong> <code>boundSpirits</code> is a field on <code>CharacterData</code> and Stone is an <code>npc</code>, so the binding is recorded in prose on both sheets rather than faked with a link the data model cannot hold.</p><p><strong>Services are 0 / unknown.</strong> The page gives an <em>assignment</em>, not a service count \u2014 GM sets this. No invented number is presented as printed.</p><p>Unlike the insects, these are real <code>spirit</code> actors: the system derives elemental attributes from Force per the SR2 Critter Statistics Table (p.234\u2013235), which is correct here because Queen Euphoria prints no elemental attributes to preserve.</p><p><em>Queen Euphoria p.21.</em></p>"
+    },
+    {
+      "_id": "EARTHELEM5-NEW",
+      "$idNote": "Net-new. Assign a permanent random id on first generation.",
+      "name": "Earth Elemental (Force 5)",
+      "type": "spirit",
+      "source": "modeled",
+      "derivedFrom": "Stone's printed Notes line, Queen Euphoria p.21: \"Stone has three Elementals bound \u2014 Fire Force 5 (Spell Defense), Fire Force 4 (Combat Spells), Earth Force 5.\" Force and element are printed; everything else is derived by the system from Force.",
+      "art": "systems/sr2e/assets/spirit_portraits/earth-1.webp",
+      "$artNote": "Reuses the sr2e system's spirit portraits \u2014 no new art needed.",
+      "spiritType": "elemental",
+      "domain": "earth",
+      "force": 5,
+      "services": 0,
+      "maxServices": 0,
+      "disposition": -1,
+      "bio": "<p>One of three elementals bound to <strong>Stone (Alexander Cross)</strong>, bound, no assignment printed.</p><p><strong>No mechanical link to Stone.</strong> <code>boundSpirits</code> is a field on <code>CharacterData</code> and Stone is an <code>npc</code>, so the binding is recorded in prose on both sheets rather than faked with a link the data model cannot hold.</p><p><strong>Services are 0 / unknown.</strong> The page gives an <em>assignment</em>, not a service count \u2014 GM sets this. No invented number is presented as printed.</p><p>Unlike the insects, these are real <code>spirit</code> actors: the system derives elemental attributes from Force per the SR2 Critter Statistics Table (p.234\u2013235), which is correct here because Queen Euphoria prints no elemental attributes to preserve.</p><p><em>Queen Euphoria p.21.</em></p>"
+    },
+    {
+      "_id": "613124d3b87809ff",
+      "name": "Strice Foods Host",
+      "type": "host",
+      "source": "modeled",
+      "derivedFrom": "The printed SR1 system map at Queen Euphoria p.34. SR2E has no multi-node host, so the six printed nodes collapse to ONE host at a representative Security Code (Orange-4, the CPU tier). Each node's own colour-code drives MANUAL operation TNs the GM applies as the decker moves \u2014 recorded in the notes below. Each IC keeps its printed rating exactly.",
+      "art": "strice-foods-host.webp",
+      "securityCode": "orange",
+      "systemRating": 4,
+      "notes": "<p>Strice Foods' deliberately low-cost corporate system (QE p.34), modelled as one SR2E host at <strong>Orange-4</strong>. The SR1 map's per-node codes are MANUAL:</p><ul><li><strong>SAN</strong> (gateway, #2206 / 312-1752) \u2014 Red-5, Access 5: a tougher Logon than the host baseline.</li><li><strong>SPU-1</strong> \u2014 Orange-3: <em>Trace-and-Dump 3</em>.</li><li><strong>CPU</strong> \u2014 Orange-4: <em>Barrier 3</em> + <em>Tar Pit 4</em>.</li><li><strong>DS-1</strong> \u2014 Orange-3, Barrier 4: purchase orders \u2014 the MegaMedia deal (1,280,000\u00a5 for Euphoria's three appearances) and Knight Errant expenditures. 4 files \u00d7 70 Mp = <strong>28,000\u00a5</strong> fenced.</li><li><strong>DS-2</strong> \u2014 Orange-5, Scramble 3: Accounts Receivable. 3 files \u00d7 80 Mp = <strong>60,000\u00a5</strong>.</li><li><strong>DS-3</strong> \u2014 Green-3: Seattle retailer/distributor list. 2 files \u00d7 40 Mp = <strong>4,000\u00a5</strong>.</li></ul><p><strong>Trigger:</strong> an external alert shuts the system down within two minutes. Any Trace result prints at <strong>Vincent Burroughs'</strong> terminal and he calls Lone Star \u2014 immediately if he is in-office by day, otherwise next morning. No vital clue lives here; the run is for paydata and the MegaMedia/Craft trail.</p>"
+    },
+    {
+      "_id": "0490c4c216bb2588",
+      "name": "Strice Trace-and-Dump IC (SPU)",
+      "type": "ic",
+      "source": "printed",
+      "page": 34,
+      "$sourceNote": "The IC RATINGS are printed on the p.34 system map and are copied exactly. Everything else about the host is modeled \u2014 see the host entry.",
+      "art": "strice-trace-and-dump-ic-spu.webp",
+      "icType": "gray",
+      "rating": 3,
+      "abilities": [
+        "Trace",
+        "Dump"
+      ],
+      "hostId": "613124d3b87809ff",
+      "notes": "<p>SPU-1, Orange-3. Traces the intruder and dumps them from the host on success. (QE p.34.)</p>"
+    },
+    {
+      "_id": "6812a823df0eae29",
+      "name": "Strice Tar Pit IC (CPU)",
+      "type": "ic",
+      "source": "printed",
+      "page": 34,
+      "$sourceNote": "The IC RATINGS are printed on the p.34 system map and are copied exactly. Everything else about the host is modeled \u2014 see the host entry.",
+      "art": "strice-tar-pit-ic-cpu.webp",
+      "icType": "black",
+      "rating": 4,
+      "abilities": [
+        "Tar Pit"
+      ],
+      "hostId": "613124d3b87809ff",
+      "notes": "<p>CPU, Orange-4. A mouth that swallows a decker's utility, then spits it back to poison all copies of it. (QE p.34.)</p>"
+    },
+    {
+      "_id": "8a26e7df5c0982a8",
+      "name": "Strice Barrier IC (DS-1)",
+      "type": "ic",
+      "source": "printed",
+      "page": 34,
+      "$sourceNote": "The IC RATINGS are printed on the p.34 system map and are copied exactly. Everything else about the host is modeled \u2014 see the host entry.",
+      "art": "strice-barrier-ic-ds-1.webp",
+      "icType": "white",
+      "rating": 4,
+      "abilities": [
+        "Barrier"
+      ],
+      "hostId": "613124d3b87809ff",
+      "notes": "<p>DS-1, Orange-3 / Barrier 4. A shimmering field guarding the purchase-order datastore. (QE p.34.)</p>"
+    },
+    {
+      "_id": "e377a04489c95550",
+      "name": "Strice Scramble IC (DS-2)",
+      "type": "ic",
+      "source": "printed",
+      "page": 34,
+      "$sourceNote": "The IC RATINGS are printed on the p.34 system map and are copied exactly. Everything else about the host is modeled \u2014 see the host entry.",
+      "art": "strice-scramble-ic-ds-2.webp",
+      "icType": "white",
+      "rating": 3,
+      "abilities": [
+        "Scramble"
+      ],
+      "hostId": "613124d3b87809ff",
+      "notes": "<p>DS-2, Orange-5 / Scramble 3. Lights up at the datastore exit and scrambles the Accounts-Receivable files if not defeated. (QE p.34.)</p>"
+    },
+    {
+      "_id": "NIGHTSKY-NEW",
+      "$idNote": "Net-new. Assign a permanent random id on first generation.",
+      "name": "Mitsubishi Nightsky",
+      "type": "vehicle",
+      "source": "modeled",
+      "derivedFrom": "Method A: ../sr2e-foundryvtt/packs-src/vehicles/Mitsubishi_Nightsky_3e1504a3e35e4aeb.json, copied whole. QE p.16 prints the SR1 stats; they are superseded.",
+      "sysVehicle": "Mitsubishi Nightsky",
+      "art": "$fromSystem",
+      "disposition": 0,
+      "notes": "<p><strong>Euphoria's limousine</strong> \u2014 one Knight Errant guard drives it. QE p.16 is explicit that <em>\"this particular Nightsky has no concealed weaponry.\"</em></p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across \u2014 the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The \u00d73 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p>"
+    },
+    {
+      "_id": "AMERICAR-NEW",
+      "$idNote": "Net-new. Assign a permanent random id on first generation.",
+      "name": "Ford Americar (Knight Errant security variant)",
+      "type": "vehicle",
+      "source": "modeled",
+      "derivedFrom": "Method A: ../sr2e-foundryvtt/packs-src/vehicles/Ford_Americar_b429b498168d47a9.json, copied whole. The security variant adds only the printed two-way radio.",
+      "sysVehicle": "Ford Americar",
+      "art": "$fromSystem",
+      "disposition": 0,
+      "gear": [
+        {
+          "name": "Two-Way Radio",
+          "notes": "The only equipment the printed security variant adds (QE p.16)."
+        }
+      ],
+      "notes": "<p><strong>The escort car.</strong> Two Knight Errant guards precede Euphoria's Nightsky in this.</p><p><strong>Price note:</strong> this carries the SR2 catalogue's <strong>20,000\u00a5</strong>, not QE's printed 80,000\u00a5 \u2014 taking the catalogue entry whole means taking its price. Ruled acceptable 2026-08-03 (\"I don't know that the price really matters in this case\").</p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across \u2014 the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The \u00d73 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p>"
+    },
+    {
+      "_id": "WASP-NEW",
+      "$idNote": "Net-new. Assign a permanent random id on first generation.",
+      "name": "Northrup PRC-42D Wasp",
+      "type": "vehicle",
+      "source": "modeled",
+      "derivedFrom": "Method A for the chassis (../sr2e-foundryvtt/packs-src/vehicles/Northrup_PRC_42B_Wasp_b33a9832e56d2aaa.json) PLUS two printed deltas, because the D variant does NOT exist in SR2.",
+      "sysVehicle": "Northrup PRC-42B Wasp",
+      "art": "$fromSystem",
+      "disposition": -1,
+      "overrides": {
+        "armor": 3
+      },
+      "$armorNote": "THE ONE PLACE THE \u00d73 RULE STILL APPLIES. The PRC-42D is not in SR2, so its printed Armor 1 converts by core p.283 to Armor 3 \u2014 QE explicitly names the armour as Ares Armorflex. The other two vehicles take their catalogue armour instead, because method A supersedes there.",
+      "weapons": [
+        "lmg"
+      ],
+      "notes": "<p><strong>Armed helicopter</strong> \u2014 a variant of the standard Wasp with Ares Armorflex vehicle armour.</p><p><strong>Armament:</strong> one Light Machine Gun under the nose, 100 rounds (Belt, internal), Laser Sight, <strong>rigged for automatic 6 shots with no Recoil Modifier</strong>.</p><p><strong>Pilot:</strong> QE p.16 says <em>\"use the Knight Errant Security Guard above, but substitute Rotor for Car at the same value\"</em> \u2014 so the p.19 block with <strong>Rotor 3</strong>. That is a note, not a separate actor.</p><p><strong>Conversion:</strong> chassis by method A from the 42B; Armor 1 \u2192 3 by the \u00d73 rule, which applies here and only here; the LMG by method A (7S). Method B would have given 8S \u2014 recorded in the audit as the one weapon where the two methods disagree.</p>"
     }
-  ],
-  "$remaining": [
-    "STILL TO ADD in the next pass \u2014 the insects, the elementals, the Matrix documents",
-    "and the vehicles. Listed here so the roster arithmetic stays checkable:",
-    "  insects (5): Flesh Worker F1 (p.47, id 96c308d2b016c4f9),",
-    "    Flesh Soldiers F3 (p.49, id 5ca2bfcd68b562a5), Flesh Soldiers F5 (p.50, NEW),",
-    "    True Soldiers F3 (p.51, id 68c86edeb4715b6b), True Soldiers F5 (p.52, NEW)",
-    "  Hive Queen set-piece (1): id ef2a8ee358b3f451, modeled \u2014 does not appear in play",
-    "  elementals (3): Fire F5, Fire F4, Earth F5 \u2014 modeled from Stone's printed notes",
-    "  Matrix (5): host 613124d3b87809ff + 4 IC, modeled from the p.34 system map",
-    "  vehicles (3): Nightsky, Americar, PRC-42D Wasp \u2014 method A from the system pack",
-    "Total when complete: 11 here + 17 remaining = 28 actors."
   ]
 }
