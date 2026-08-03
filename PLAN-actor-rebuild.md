@@ -163,8 +163,13 @@ Americar** and **Northrup PRC-42B Wasp**, each with a portrait. So these are
 | Ford Americar | H4 S45/135 B3 **A1** Sig2 Pilot2 80,000¥ | H4 S105 B3 **A0** Sig2 Pilot0 20,000¥ | SR2 entry + security variant |
 | Northrup PRC-42**D** Wasp | H3 S65/100 B1 **A1** Sig5 Pilot0 340,000¥ | **42B**: H3 S130 B2 **A0** Sig3 Pilot0 122,000¥ | 42B chassis + **Armor 3** + LMG |
 
-**This corrects the flat "all three go Armor 1 → 3" stated when the ruling
-landed.** The ×3 rule converts SR1 armour that is actually being carried over;
+*(Ruled by futurekill 2026-08-03 — see Risks #1. This is a superseding ruling,
+not an inference: method A changes more than armour, so it was put back to the
+user rather than decided in the plan.)*
+
+**This supersedes the flat "all three go Armor 1 → 3" stated when the first
+ruling landed.** The ×3 rule converts SR1 armour that is actually being carried
+over;
 after a method-A substitution nothing is carried over, and the SR2 entry already
 prints SR2-scale armour. Applying ×3 *and* substituting would double-count. So:
 
@@ -206,8 +211,16 @@ shipped the same way. Three actors, one cause.
    name → `data-action="castSpell"`, Force, a **sustain toggle** →
    `data-action="toggleSustain"`, and edit;
 2. `npc-sheet.hbs` — a **Foci** fieldset (name, type, Force, bonded state, edit);
-3. the NPC sheet's action map — add `castSpell: onCastSpell` **and
-   `toggleSustain`**.
+3. `actor-sheet.mjs:1134` — the NPC `_prepareContext` computes `skills`,
+   `weapons`, `gear` and `spells` but **not `foci`**; add
+   `context.foci = actor.items.filter(i => i.type === "focus")`, or the fieldset
+   renders empty and Craft's focus stays unreachable;
+4. the NPC sheet's action map — register **`castSpell: SHARED_ACTIONS.castSpell`**
+   and **`toggleSustain: SHARED_ACTIONS.toggleSustain`**. *Not* `onCastSpell`:
+   that name is never exported from `sheet-actions.mjs` and never imported by
+   `actor-sheet.mjs:4`, and `toggleSustain` is an inline function on
+   `SHARED_ACTIONS` (`sheet-actions.mjs:3164`) with no standalone binding at all.
+   `SHARED_ACTIONS` *is* already imported.
 
 Both fieldsets render only when the actor has such items, so no existing NPC
 sheet changes appearance.
@@ -245,7 +258,10 @@ active bonded spell focus into **every** spell, because `FocusData` does not bin
 a focus to a category. Shipping it active would therefore hand Craft +2 on Mana
 Bolt as well, which the page does not grant. So it ships `bonded: true,
 active: false`, exactly as a player's would, and the GM activates it when he
-casts Sleep. His bio and the encounter journal both say so.
+casts Sleep — **and deactivates it afterwards**, since the bonus is global while
+active. That instruction goes in **Craft's biography only**; encounter journals
+are out of scope in this plan (see Out of scope), so promising it there would be
+the same contradiction Round 2 removed from the Powers/Weaknesses section.
 
 **Magic pools are transcribed, not derived.** `NPCData.prepareDerivedData`
 derives the combat pool but deliberately leaves `dicePools.magic` alone, so the
@@ -318,7 +334,16 @@ Beyond "stats match the data file":
   needs proving — Stone's shipped data is Osprey's, so every item he owns is
   wrong and must go, not merge.)
 - **Craft's spells are castable from his sheet** — the regression that motivated
-  the Step 5 change, and the one thing no stat comparison would have caught;
+  the Step 5 change, and the one thing no stat comparison would have caught.
+  Initiating a cast is not enough on its own, so also prove the two features that
+  Step 5 newly depends on:
+  - a sustained spell cast by an NPC can be **dropped again**, and the Active
+    Effects `setSustaining(true)` copied onto him are **gone** afterwards
+    (`item.mjs:1051` is the only cleanup path — if the toggle is missing or
+    mis-registered, the effects survive and silently keep modifying him);
+  - **activating Craft's Sleep focus adds +2 dice and deactivating removes it** —
+    which also demonstrates the global-bonus caveat that made `active: false` the
+    right shipping default.
 - prototype token dimensions/disposition, actor type, and ownership unchanged
   where not deliberately altered.
 
@@ -337,12 +362,38 @@ Beyond "stats match the data file":
 
 ## Risks / open questions
 
-1. ~~Vehicle armour~~ — **RULED (futurekill, 2026-08-02): apply the conversion
-   rules; we are building for SR2, so all the updates apply.** Core p.283,
-   verified at 300 dpi: *"Multiply the Vehicle Armor Ratings… by 3 to make the
-   values compatible with the SRII rules. Also, divide the armor cost by 3, and
-   multiply the maximum allowed by 3."* All three QE vehicles print Armor 1, so
-   each becomes **Armor 3**.
+1. ~~Vehicle armour~~ — **RULED TWICE. The second ruling supersedes the first.**
+
+   **First (2026-08-02):** *"apply the conversion rules; we are building for SR2,
+   so all the updates apply."* Core p.283, verified at 300 dpi: *"Multiply the
+   Vehicle Armor Ratings… by 3 to make the values compatible with the SRII rules.
+   Also, divide the armor cost by 3, and multiply the maximum allowed by 3."*
+   Read literally, all three QE vehicles print Armor 1 and each becomes Armor 3.
+
+   **Then the vehicles turned out to already exist** in
+   `../sr2e-foundryvtt/packs-src/vehicles/` — Mitsubishi Nightsky, Ford Americar
+   and Northrup PRC-42B Wasp, with portraits. That opens **method A**
+   (substitute the real SR2 item), which is what the module already did for
+   Craft's Predator. But method A changes Body, Speed, Signature, Pilot and cost
+   as well as armour, so it **supersedes** the armour ruling rather than
+   implementing it. Codex flagged exactly that, correctly, and it was put back to
+   futurekill instead of being decided here.
+
+   **Second (2026-08-03) — RULED: use the SR2 compendium entries.** Chosen for
+   consistency with how every weapon in the module was converted. Therefore:
+
+   - **Nightsky** → SR2 entry: H4 S120 B4 **Armor 2** Sig2 Pilot0, 250,000¥.
+   - **Americar** → SR2 entry: H4 S105 B3 **Armor 0** Sig2 Pilot0, **20,000¥**
+     (not QE's 80,000¥ — the SR2 catalogue price comes with the substitution).
+   - **PRC-42D Wasp** → the D variant is **not** in SR2, so it is the one vehicle
+     where the ×3 armour ruling still applies: 42B chassis, printed **Armor 1 →
+     3** (QE names the armour Ares Armorflex), plus the nose LMG (`5S3` → **8S**).
+
+   So the ×3 rule survives on exactly one of the three, and **the earlier "all
+   three become Armor 3" is superseded.** QE's adventure-specific facts remain as
+   deltas on top: the Nightsky *"has no concealed weaponry"*, the Americar is the
+   security variant with a two-way radio, and the Wasp's pilot is the p.19 Knight
+   Errant block with Car 3 → Rotor 3.
 2. ~~Lone Star attributes~~ — **RULED: use SR2's own stats.** SR2 core p.205
    prints a **Corporate Security Guard** archetype: Body 4, Quickness 3,
    Strength 3, Charisma 2, Intelligence 2, Willpower 2, Essence 6, Reaction 2,
