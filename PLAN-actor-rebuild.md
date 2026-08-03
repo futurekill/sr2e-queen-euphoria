@@ -299,7 +299,24 @@ Unchanged from Round 2, and still true:
 - **Essence: store the exact printed number.** 1, 3 and 5 all fit under `max: 6`;
   only the `A` qualifier is unrepresentable, and that goes in the bio.
 
-### Step 6 — Existing worlds: a separate, non-destructive procedure
+### Step 6 — Existing worlds — **NOT NEEDED (ruled 2026-08-03)**
+
+futurekill has **never imported any QE actor**, so there is nothing in the world
+to overwrite and nothing bound to a v0.2.0 id. The entire hazard below is
+conditional on a prior import, so `docs/UPGRADING.md` and the report macro are
+**not being written** — they would be ceremony for a migration that cannot occur.
+
+The module is personal-use, so no other world is at risk either.
+
+**What still matters, and is already done:** ids are pinned regardless. That costs
+nothing now and means the *first* import establishes the identities permanently,
+so any future re-import updates in place instead of duplicating. Revisit the
+procedure below only if the module is ever shared or if a world has been built on
+an earlier import.
+
+<details><summary>Original Step 6, retained for that case</summary>
+
+#### Existing worlds: a separate, non-destructive procedure
 
 Installing a module update does **not** rewrite world documents. Pinned ids make
 a re-import *update in place* rather than duplicate, which is necessary but not
@@ -311,10 +328,12 @@ sufficient. Re-import matches purely on `_id` (`prepareImport` partitions on
   from Queen Euphoria;
 - **GM edits to a matching actor are overwritten**, not merged.
 
-`docs/UPGRADING.md` must therefore tell the GM to **duplicate or export any
-actor they have edited before re-importing**, and to run the report macro first
-to see exactly which world actors and tokens match by id and name. The macro
-lists the retired `e6c0660fae6813ab` too. It reports; it never deletes.
+`docs/UPGRADING.md` would therefore tell the GM to **duplicate or export any
+actor they have edited before re-importing**, and to run a report macro first to
+see exactly which world actors and tokens match by id and name — including the
+retired `e6c0660fae6813ab`. It would report; never delete.
+
+</details>
 
 ### Step 7 — Verification
 

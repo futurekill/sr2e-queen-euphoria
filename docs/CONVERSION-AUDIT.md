@@ -584,6 +584,40 @@ different generic LMG, this row should be re-checked.
 off a 300 dpi render, per the standing rule — the text layer turns `S` into `5`,
 which would silently convert a Serious wound into a Power of 5.
 
+## The spell conversion table
+
+p.283 says spell codes must be translated to their second-edition versions, and
+that turned out to need more than renaming: **SR2 merged spells that SR1 printed
+separately.** Four entries needed a decision.
+
+| printed in QE | carried by | → SR2 | why |
+|---|---|---|---|
+| Increase Strength +2 | Stone p.21 | **Increase [Attribute]** | SR1 printed one spell per attribute; SR2 generalised them. The attribute and +2 are recorded in the item notes, since the generic spell has no attribute field. |
+| Treat Severe Wounds | Stone p.21 | **Treat** | SR1 printed a Treat per wound level; SR2 collapsed them into one whose drain scales instead — `(F ÷ 2)W`. |
+| Detox Deadly Toxin | Pride p.26 | **Detox** | Same collapse as Treat. |
+| **Petrify** | Stone p.21 | **custom, kept** | See below. |
+
+### Petrify has no SR2 equivalent
+
+Checked the core rulebook and **Grimoire 2nd edition**: both contain only
+**"Petrifying Gaze"**, and only as a *critter power* (basilisk, cockatrice).
+There is no Petrify spell in second edition.
+
+That leaves the same choice p.283 poses for weapons, one tier up. Dropping it
+would remove **one of Stone's three fetish-bound Manipulation spells** and
+materially change the encounter — he has exactly six expendable fetishes and
+three spells that need them, which is a resource the GM is meant to play against.
+So it is **kept as a QE-local custom spell**, built on the SR1 printing and
+flagged as derived on the item's own sheet.
+
+Its drain and target are modelled on **Control Thoughts**, the nearest comparable
+SR2 Manipulation spell in power class — both `((F ÷ 2) + 2)D`, limited range,
+resisted. Target is **Body** rather than Willpower, since petrifaction acts on
+the body. This is explicitly *derived, not printed*, and the item says so.
+
+This is the spell equivalent of weapon method B, and it is the only one needed:
+every other spell in the adventure resolved to a real SR2 entry.
+
 ## Transcription complete
 
 Every printed stat block in the adventure has now been read from a 300 dpi
