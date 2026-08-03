@@ -167,7 +167,10 @@ const STRICE_HOST_ID = idFor("host:Strice Foods Host");
 
 function hostActor(h) {
   const _id = idFor("host:" + h.name);
-  const img = h.img ?? "icons/svg/computer.svg";
+  // Same portrait convention as every other actor. This defaulted to a generic
+  // Foundry icon, which is why the host was the one document in the module with
+  // no art while all four IC that link to it had portraits.
+  const img = h.img ?? portraitPath(h.name);
   return {
     _id, name: h.name, type: "host", img,
     system: {

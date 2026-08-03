@@ -4448,7 +4448,7 @@
       "_id": "613124d3b87809ff",
       "name": "Strice Foods Host",
       "type": "host",
-      "img": "icons/svg/computer.svg",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/strice-foods-host.webp",
       "system": {
         "securityCode": "orange",
         "systemRating": 4,
@@ -4487,7 +4487,7 @@
         "width": 2,
         "height": 2,
         "texture": {
-          "src": "icons/svg/computer.svg",
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/strice-foods-host.webp",
           "anchorX": 0.5,
           "anchorY": 0.5,
           "fit": "contain",
