@@ -15,13 +15,32 @@ values. The full locked plan is `PLAN.md` (grilled + 4 Codex rounds → APPROVED
 
 ## Source material
 Queen Euphoria is **1st Edition** (©1990) — this module **modernizes it to
-SR2E** (attributes carry 1:1; skills, gear, spells, decking, and rewards are
-rebuilt to SR2E with a cited conversion each — see `docs/CONVERSION.md`). The
-PDF is a **scanned image** (no text layer). Extraction lives in `_work/`
-(git-ignored, never shipped): `_work/pages/pg-NN.png` (150dpi renders) +
-`_work/queen-euphoria-ocr.txt` (tesseract OCR). Book page N ≈ PDF page N
-(offset ≈ 0 — QE TOC book p.7 = PDF pg-07). OCR is noisy — **read the page
-render to verify any stat block** before transcribing.
+SR2E**. The official conversion procedure is the core rulebook's **UPDATING
+ADVENTURES** section (SRII book p.283): recalculate Threat Ratings per SRII,
+translate weapon and spell codes to their 2nd-ed versions, and for a unique SR1
+three-digit Damage Code either substitute a comparable SR2 item **or** add the
+staging digit to Power (`4M3 → 7M`). Findings and per-item decisions live in
+`docs/CONVERSION-AUDIT.md`.
+
+**The source PDF was replaced on 2026-08-02** with the owner's purchased
+DriveThruRPG copy (watermarked "James Candalino (Order #52723605)"),
+`../Shadowrun 1e - Queen Euphoria {FASA7304}.pdf`. Two things changed, and both
+invalidate the old workflow:
+
+- **It has a real text layer.** `pdftotext -layout` works directly; the old
+  tesseract OCR pass is obsolete. Verified against a 300dpi render of book p.19
+  — every attribute and damage code matched exactly.
+- **The page offset is now +2, not 0.** Book folio N = PDF page N+2
+  (book p.19 = PDF 21). 71 pages, folios 2–65. Any citation written before this
+  date assumed offset 0 and must be re-checked.
+
+Still true: **verify any number on the render before trusting it.** The text
+layer is itself OCR-derived and mangles digits — observed `"t 5 (clip)"` for
+`15 (clip)` and `"t ,000 nuyen"` for `1,000 nuyen`. Prose is reliable; digits
+are not. `_work/` (git-ignored, never shipped) holds the page renders.
+
+**The printed maps carry a `□ = 1 meter` scale legend**, so scene dimensions are
+derivable directly from the floorplans — count grid squares, don't estimate.
 
 ## Authoring conventions
 - **Cast** are `npc` actors (principals: Craft, Euphoria, Carrone; plus

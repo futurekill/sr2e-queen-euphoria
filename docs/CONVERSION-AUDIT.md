@@ -1,8 +1,14 @@
 # Queen Euphoria — conversion audit
 
-Working record of checking every shipped actor against the **printed page
-render** (never the OCR — `_work/queen-euphoria-ocr.txt` mangles exactly the
-digits that matter) and against the core rulebook's official conversion rules.
+Working record of checking every shipped actor against the printed page and the
+core rulebook's official conversion rules.
+
+> **Source changed 2026-08-02.** The scan was replaced with the owner's
+> purchased copy, which has a **real text layer** — sweep with
+> `_work/text/pNN.txt` (folio-named) instead of the old tesseract OCR. The PDF
+> page offset is now **+2** (book p.19 = PDF 21). Digits still need a render
+> check: the text layer renders `15 (clip)` as `t 5 (clip)`. Everything below
+> was verified from 300dpi renders and re-confirmed against the new text layer.
 
 **Status: IN PROGRESS.** Pages verified so far are listed below; the rest are
 still to do. Do not treat an unlisted page as clean.
