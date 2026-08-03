@@ -114,15 +114,19 @@ the fuller gear list (adds the H&K MP-5TX and specifies two grenades)**. Both ar
 cited deliberately because each carries something the other omits.
 Also: Osprey (p.20); Stone (p.21); Lone Star Officer (p.14 gear).
 
-**Add — 11 definitions, but only 8 NET-NEW documents.** The distinction matters
-because three of the definitions reuse retained ids and therefore *replace*
-existing actors rather than adding to the roster:
+**Add — 14 definitions, of which 11 are NET-NEW documents.** The distinction
+matters because three of the definitions reuse retained ids and therefore
+*replace* existing actors rather than adding to the roster:
 
 - *reuse a retained id* (3): Flesh Worker F1, Flesh Soldiers F3, True Soldiers F3
   — see the legacy mapping in Step 2;
-- *net-new documents* (8): Pride, Vincent Burroughs, The Strice Boys, Flesh
+- *net-new, non-vehicle* (8): Pride, Vincent Burroughs, The Strice Boys, Flesh
   Soldiers F5, True Soldiers F5, and Stone's three bound elementals (Fire F5,
-  Fire F4, Earth F5) — plus the **3 vehicles** above, for 11 new documents total.
+  Fire F4, Earth F5);
+- *net-new vehicles* (3): Mitsubishi Nightsky, Ford Americar, Northrup PRC-42D
+  Wasp — see the vehicles subsection below.
+
+3 + 8 + 3 = 14 definitions, 11 of them new documents.
 
   **Pride's block is now fully transcribed** (audit re-read 2026-08-03). The
   first crop stopped short and lost **Body 6**, **Armed Combat 4** and three
@@ -130,7 +134,8 @@ existing actors rather than adding to the roster:
   a Lion-totem full magician with Magic 6 and a printed **Magic Pool of 4**, so he
   depends on the Step 5 sheet fix exactly as Craft and Stone do.
 
-**Final roster: 28 actors** (18 shipped − 1 retired + 8 net-new + **3 vehicles**).
+**Final roster: 28 actors** (18 shipped − 1 retired + 11 net-new, of which 3 are
+the vehicles).
 The vehicles were absent from the Round-2 count only because they were blocked on
 the armour ruling; that ruling has landed, so they are in.
 
@@ -176,7 +181,9 @@ prints SR2-scale armour. Applying ×3 *and* substituting would double-count. So:
 - **Nightsky, Americar** — take the SR2 entry wholesale (Armor 2 and 0 as
   printed there). QE deltas on top: the Nightsky *"has no concealed weaponry"*
   and carries the autopilot the adventure gives it; the Americar is the security
-  variant with a two-way radio and QE's 80,000¥ price.
+  variant, which adds only the **two-way radio** — its price is the SR2
+  catalogue's **20,000¥**, not QE's 80,000¥, because the substitution takes the
+  catalogue entry whole.
 - **PRC-42D Wasp** — the D variant is **not** in SR2, so the ×3 rule does apply
   to it: printed **Armor 1 → 3** (QE explicitly calls the armour Ares Armorflex).
   Built on the 42B chassis, renamed, plus the printed **LMG under the nose
