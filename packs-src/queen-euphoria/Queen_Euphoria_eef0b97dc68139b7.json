@@ -10939,6 +10939,78 @@
             "attenuation": false
           },
           "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            174,
+            4,
+            174,
+            177
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            401,
+            4,
+            401,
+            170
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            171,
+            167,
+            408,
+            167
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
         }
       ],
       "folder": null,

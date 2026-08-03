@@ -1,14 +1,14 @@
 {
   "$comment": [
     "Scene manifest. Dimensions are MEASURED from the printed floorplans, never",
-    "estimated — see docs/SCENE-SPEC.md for the method and the per-map arithmetic.",
+    "estimated \u2014 see docs/SCENE-SPEC.md for the method and the per-map arithmetic.",
     "",
     "widthM/heightM are metres. The generator multiplies by 100 to get scene pixels,",
     "because the estate convention is 100 px/cell at 1 m. A battle map that is not",
     "real-scale is a picture of a map, not a map: ranges, movement and blast radii",
     "all silently break.",
     "",
-    "_id is pinned for the same reason it is on actors — Adventure import matches on",
+    "_id is pinned for the same reason it is on actors \u2014 Adventure import matches on",
     "_id alone, so a changed id is a different document.",
     "",
     "source 'printed' carries the folio it was measured from. source 'invented' means",
@@ -33,7 +33,7 @@
     },
     {
       "_id": "2c6ea531f81cb6ce",
-      "name": "Pacific Towers — Lobby",
+      "name": "Pacific Towers \u2014 Lobby",
       "source": "printed",
       "folio": 14,
       "widthM": 27,
@@ -42,24 +42,55 @@
       "art": "pacific-towers-lobby.webp",
       "nav": true,
       "rooms": "Front entrance and guard station (four sets of double doors, computer terminal, PANICBUTTON alarm, camera, visitor-verification speaker), bar, private meeting room, lecture room doubling as a small theatre, store, garden courtyard, storeroom, men's and women's restrooms with sauna and shower, pool. Three elevators.",
-      "notes": "<p>The building where Euphoria lives. <strong>Four Lone Star officers</strong> respond to the PANICBUTTON within five minutes; the alarm can be cancelled inside five minutes with a memorised code.</p><p>The desk guard keeps a loaded <strong>Enfield AS7 shotgun</strong> behind the desk. The courier on duty will not fight — average human, all 3s.</p><p>Elevators are thumbprint-locked and auto-select the resident's floor; bypassing needs an Electronics (5) Test, base time five minutes.</p>"
+      "notes": "<p>The building where Euphoria lives. <strong>Four Lone Star officers</strong> respond to the PANICBUTTON within five minutes; the alarm can be cancelled inside five minutes with a memorised code.</p><p>The desk guard keeps a loaded <strong>Enfield AS7 shotgun</strong> behind the desk. The courier on duty will not fight \u2014 average human, all 3s.</p><p>Elevators are thumbprint-locked and auto-select the resident's floor; bypassing needs an Electronics (5) Test, base time five minutes.</p>"
     },
     {
       "_id": "2749f185b382f009",
-      "name": "Royal Meadows — Flat",
+      "name": "Royal Meadows \u2014 Flat",
       "source": "printed",
       "folio": 12,
       "widthM": 8,
       "heightM": 3,
-      "measuredBy": "legend square (128 x 129 px — no grid is drawn on this plan)",
+      "measuredBy": "legend square (128 x 129 px \u2014 no grid is drawn on this plan)",
       "art": "royal-meadows-flat.webp",
       "nav": true,
       "rooms": "Living room / kitchenette (two plastic-covered chairs, couch, imitation-wood tables, microwave, refrigerator, cupboards, sink), bedroom (two double beds squeezed side by side, imitation-wood dresser, plastic mirror), closet, bathroom (shower stall, toilet, sink).",
-      "notes": "<p><strong>Where Euphoria is held.</strong> A cheap rented flat supplied by Ludivenko — dehydrated food in the cupboards, women's clothing still in plastic wrap in the dresser and closet.</p><p>Only 24 m², and that is correct: the book says the units are packed with people and crowded with extra beds. Play it cramped.</p><p>Details that matter if the runners search: one chair will break if sat on, the refrigerator's freezer does not work, the sink's water filters are foul, and the hot water faucet does not work.</p><p>If the runners annoy the manager it costs about <strong>100¥</strong> to calm him down.</p>"
+      "notes": "<p><strong>Where Euphoria is held.</strong> A cheap rented flat supplied by Ludivenko \u2014 dehydrated food in the cupboards, women's clothing still in plastic wrap in the dresser and closet.</p><p>Only 24 m\u00b2, and that is correct: the book says the units are packed with people and crowded with extra beds. Play it cramped.</p><p>Details that matter if the runners search: one chair will break if sat on, the refrigerator's freezer does not work, the sink's water filters are foul, and the hot water faucet does not work.</p><p>If the runners annoy the manager it costs about <strong>100\u00a5</strong> to calm him down.</p>",
+      "interior": [
+        {
+          "seg": [
+            1.74,
+            0.04,
+            1.74,
+            1.77
+          ],
+          "$note": "bathroom west wall"
+        },
+        {
+          "seg": [
+            4.01,
+            0.04,
+            4.01,
+            1.7
+          ],
+          "$note": "bathroom east wall"
+        },
+        {
+          "seg": [
+            1.71,
+            1.67,
+            4.08,
+            1.67
+          ],
+          "door": "door",
+          "$note": "bathroom south wall \u2014 the plan draws a door swing here, so it is emitted as a door rather than solid. The exact hinge position was not resolvable from the plan; adjust in Foundry if it matters."
+        }
+      ],
+      "$wallsNote": "Extracted by tools/extract-walls.py and verified against the render overlay. The detector also returned the two perimeter walls (already generated from the measured dimensions) and one false positive at x=6.64 \u2014 the kitchen counter edge. Those were dropped by hand. The bedroom/living divider is a ZIGZAG and an axis-aligned detector cannot see it; it is not included rather than approximated."
     },
     {
       "_id": "79290bce4cf94fb5",
-      "name": "Craft's Magic Shop — Upper Level",
+      "name": "Craft's Magic Shop \u2014 Upper Level",
       "source": "printed",
       "folio": 40,
       "widthM": 17,
@@ -68,24 +99,24 @@
       "art": "magic-shop-upper.webp",
       "nav": true,
       "rooms": "Main store area (1).",
-      "notes": "<p>The shopfront. Fetish material worth about <strong>2,500¥</strong> remains, and it is obvious at a glance the store has not been used for some time.</p><p>Two entrances — the main door and a back door to the alley. Both are closed and locked at <strong>Barrier Rating 5</strong>. The alley door's lock is in better condition and shows evidence of recent use.</p>"
+      "notes": "<p>The shopfront. Fetish material worth about <strong>2,500\u00a5</strong> remains, and it is obvious at a glance the store has not been used for some time.</p><p>Two entrances \u2014 the main door and a back door to the alley. Both are closed and locked at <strong>Barrier Rating 5</strong>. The alley door's lock is in better condition and shows evidence of recent use.</p>"
     },
     {
       "_id": "98d3967668684bfa",
-      "name": "Craft's Magic Shop — Lower Level",
+      "name": "Craft's Magic Shop \u2014 Lower Level",
       "source": "printed",
       "folio": 40,
       "widthM": 17,
       "heightM": 6,
-      "measuredBy": "grid period (41 px, both axes — same pitch as the upper level)",
+      "measuredBy": "grid period (41 px, both axes \u2014 same pitch as the upper level)",
       "art": "magic-shop-lower.webp",
       "nav": true,
       "rooms": "Living area (2), bathroom (3), bedroom (4).",
-      "notes": "<p>Where Craft lived before the Hive, and still uses as a private escape when he wants to be human for a while.</p><p><strong>The living area</strong> shows use in the past week: trideo, LiveSound audio, a simsense player and chips that turn out to be mainly Euphoria sims. A crude map of the Amber Gel facility — <strong>including its location</strong> — is here. Empty Amber Gel containers everywhere.</p><p><strong>The bedroom (4) is the source of the stench, and it is a crime scene.</strong> Walls covered in two- and three-dimensional photos and illustrations of Euphoria, many blood-splattered. Judging by the blood, at least one person and probably more have been killed here. Facsimiles of clothing Euphoria wore in her sims, wigs and hairpieces in her styles.</p><p>The bathroom has not been cleaned in months; hundreds of roaches scatter when the lights come on.</p>"
+      "notes": "<p>Where Craft lived before the Hive, and still uses as a private escape when he wants to be human for a while.</p><p><strong>The living area</strong> shows use in the past week: trideo, LiveSound audio, a simsense player and chips that turn out to be mainly Euphoria sims. A crude map of the Amber Gel facility \u2014 <strong>including its location</strong> \u2014 is here. Empty Amber Gel containers everywhere.</p><p><strong>The bedroom (4) is the source of the stench, and it is a crime scene.</strong> Walls covered in two- and three-dimensional photos and illustrations of Euphoria, many blood-splattered. Judging by the blood, at least one person and probably more have been killed here. Facsimiles of clothing Euphoria wore in her sims, wigs and hairpieces in her styles.</p><p>The bathroom has not been cleaned in months; hundreds of roaches scatter when the lights come on.</p>"
     },
     {
       "_id": "cf17d2b939a9b756",
-      "name": "The Hive — Main Level",
+      "name": "The Hive \u2014 Main Level",
       "source": "printed",
       "folio": 44,
       "widthM": 24,
@@ -94,11 +125,11 @@
       "art": "hive-main-level.webp",
       "nav": true,
       "rooms": "Main area with disused conventional food-production equipment (dusty, poorly maintained), loading dock, freight elevator, small group of empty abandoned offices, stairway up to the roof and down to the Lower Level.",
-      "notes": "<p>The Amber Gel facility. Barely used by the Hive and showing only general activity at the loading dock — trucks from Strice Foods load each morning, and the drums are already waiting for them. The only person the truckers ever see is <strong>Craft</strong>.</p><p>Lighting is whatever filters through the high green-tinted windows; the power is on, so the runners can switch the fluorescents on if they want. <strong>The stairway is unlit.</strong></p><p><strong>None of the doors are locked</strong> and all are easily operable. The freight elevator is conventional and fully operational, though its control panel shows physical damage.</p>"
+      "notes": "<p>The Amber Gel facility. Barely used by the Hive and showing only general activity at the loading dock \u2014 trucks from Strice Foods load each morning, and the drums are already waiting for them. The only person the truckers ever see is <strong>Craft</strong>.</p><p>Lighting is whatever filters through the high green-tinted windows; the power is on, so the runners can switch the fluorescents on if they want. <strong>The stairway is unlit.</strong></p><p><strong>None of the doors are locked</strong> and all are easily operable. The freight elevator is conventional and fully operational, though its control panel shows physical damage.</p>"
     },
     {
       "_id": "81d72ca327baf377",
-      "name": "The Hive — Lower Level",
+      "name": "The Hive \u2014 Lower Level",
       "source": "printed",
       "folio": 45,
       "widthM": 23,
@@ -108,31 +139,31 @@
       "nav": true,
       "dark": true,
       "rooms": "16 rooms. Room 1 elevator arrival; Room 8 stairway exit; Rooms 3, 14 and 15 are Worker rooms; Room 16 is the Hive Room. Rooms 2, 4-7 and 9-13 are as Room 1.",
-      "notes": "<p><strong>The climax.</strong> Dark — neither light nor power. The air is stale and reeks sweet and pungent. Anyone who notices such things will realise there are no normal insects or rodents on this level.</p><p>Rooms are dirty and debris-filled, some with crates of basic soy foods, full or waiting to be filled.</p><p><strong>Every wall here is Barrier Rating 3</strong>, and the book is explicit that Soldiers making an all-out attack <em>\"will use the thin walls to their advantage\"</em> — build the walls breakable, not as hard scene boundaries.</p><p><strong>Printed occupants:</strong> Room 3 — six Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 8 — two Flesh Form Workers (F1). Room 14 — four Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 15 — five Flesh Form Workers (F1) and a lone Flesh Form Soldier (<strong>F5</strong>). Room 16 — the Hive Room.</p>"
+      "notes": "<p><strong>The climax.</strong> Dark \u2014 neither light nor power. The air is stale and reeks sweet and pungent. Anyone who notices such things will realise there are no normal insects or rodents on this level.</p><p>Rooms are dirty and debris-filled, some with crates of basic soy foods, full or waiting to be filled.</p><p><strong>Every wall here is Barrier Rating 3</strong>, and the book is explicit that Soldiers making an all-out attack <em>\"will use the thin walls to their advantage\"</em> \u2014 build the walls breakable, not as hard scene boundaries.</p><p><strong>Printed occupants:</strong> Room 3 \u2014 six Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 8 \u2014 two Flesh Form Workers (F1). Room 14 \u2014 four Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 15 \u2014 five Flesh Form Workers (F1) and a lone Flesh Form Soldier (<strong>F5</strong>). Room 16 \u2014 the Hive Room.</p>"
     },
     {
       "_id": "e43f009012bab5dc",
-      "name": "MegaMedia — Carrone's Office",
+      "name": "MegaMedia \u2014 Carrone's Office",
       "source": "invented",
       "widthM": 12,
       "heightM": 9,
-      "measuredBy": "n/a — no floorplan is printed for this location",
+      "measuredBy": "n/a \u2014 no floorplan is printed for this location",
       "art": "megamedia-office.webp",
       "nav": true,
       "rooms": "Reception, corridor, Carrone's corner office with desk and window wall, small meeting area.",
-      "notes": "<p><strong>GM-invented layout.</strong> Queen Euphoria plays scenes at MegaMedia but prints no floorplan for it, so this map is original and carries no authority — resize or replace it freely.</p><p>Where <strong>Robert Carrone</strong> hires the runners.</p>"
+      "notes": "<p><strong>GM-invented layout.</strong> Queen Euphoria plays scenes at MegaMedia but prints no floorplan for it, so this map is original and carries no authority \u2014 resize or replace it freely.</p><p>Where <strong>Robert Carrone</strong> hires the runners.</p>"
     },
     {
       "_id": "a303b85826fd7a3e",
-      "name": "MegaMedia — Simsense Studio",
+      "name": "MegaMedia \u2014 Simsense Studio",
       "source": "invented",
       "widthM": 18,
       "heightM": 12,
-      "measuredBy": "n/a — no floorplan is printed for this location",
+      "measuredBy": "n/a \u2014 no floorplan is printed for this location",
       "art": "megamedia-studio.webp",
       "nav": true,
       "rooms": "Recording floor, control booth behind glass, equipment racks, green room.",
-      "notes": "<p><strong>GM-invented layout.</strong> No floorplan is printed for this location; the map is original and carries no authority.</p><p>Useful for the MegaMedia deal thread — the Strice host holds purchase orders showing <strong>1,280,000¥</strong> for Euphoria's three appearances.</p>"
+      "notes": "<p><strong>GM-invented layout.</strong> No floorplan is printed for this location; the map is original and carries no authority.</p><p>Useful for the MegaMedia deal thread \u2014 the Strice host holds purchase orders showing <strong>1,280,000\u00a5</strong> for Euphoria's three appearances.</p>"
     }
   ]
 }
