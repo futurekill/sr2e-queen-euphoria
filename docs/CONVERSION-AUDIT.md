@@ -509,6 +509,52 @@ magic pool**, so whatever the generator writes to `dicePools.magic` survives —
 which is what we want, because the printed blocks give the pool outright
 (Stone **Magic 7**, Pride **Magic 4**).
 
+## The weapon conversion table — every SR1 code, and which method it used
+
+p.283 sanctions exactly two methods and says each conversion should record which
+one it used. This is that record. **Method A wins almost everywhere**, because
+the system's own weapons pack turns out to carry SR2 entries for nearly every gun
+in the adventure — which is the whole point of A: prefer the real SR2 item over
+arithmetic on an SR1 code.
+
+| p. | carried by | printed (SR1) | → SR2 | method | note |
+|---|---|---|---|---|---|
+| 62 | Craft | Ares Predator `4M2` | **Ares Predator 9M** | A | already shipped correctly |
+| 19 | Knight Errant | Ares Predator II `6M2` | **Ares Predator 9M** | A | no separate "II" in SR2 |
+| 19 | Knight Errant | H&K MP-5TX `4M3` | **H&K HK227 7M** | A | A and B agree — B gives 7M too |
+| 19 | Knight Errant | Airfoil IPE Concussion Grenade `5M3` Stun | **Concussion Grenade 12M Stun** | A | ×2, and Throwing 3 finally matters |
+| 14 | Lone Star | Browning Max-Power `4M2` | **Browning Max-Power 9M** | A | same gun, SR2 stats |
+| 14, 25 | Lone Star, Strice Boys | Stun Baton `5L2` Stun + Special | **Stun Baton 6S** Stun | A | "+ Special" stays a GM note |
+| 15 | Pacific Towers | Ceska Black Scorpion `3M2` | **5M** | **B** | no SR2 Black Scorpion; 3+2 |
+| 20 | Osprey | Colt Manhunter `4M2` | **Colt Manhunter 9M** | A | |
+| 20 | Osprey | Monofilament Whip `6S4` | **Monofilament Whip 10S** | A | +2 Reach preserved |
+| 20 | Osprey | Explosive Ammunition `5M3` | ammo, not a weapon | — | modelled as ammo |
+| 21 | Stone | Browning Max-Power `4M2` + Silencer | **Browning Max-Power 9M** | A | silencer as accessory |
+| 21 | Stone | Staff `3M2` Stun, +2 Reach | **Staff (Str+2)M** Stun | A | |
+| 25 | Strice Boys | Uzi III `4M3` | **Uzi III 6M** | A | |
+| 25 | Strice Boys | Seco LD 120 `3M2` | **5M** | **B** | no SR2 Seco; 3+2 |
+| 26 | Pride | Browning Ultra-Power `6M2` | **Browning Max-Power 9M** | A | Ultra-Power is the SR1 name for it |
+| 26 | Pride | Spear `6S3`, +2 reach | **Pole Arm (Str)S** | A | |
+| 26 | Pride | Survival Knife `6L3` | **Combat Knife (Str+1)M** | A | |
+| 16 | Wasp | LMG `5S3` | **7S** | A | see the caveat below |
+| 38, 49–52 | the insects | `6M2` / `7M2` / `8M2` / `9M2` | **8M / 9M / 10M / 11M** | **B** | no SR2 item is "an ant's mandibles" |
+
+**Where method B was used, and why.** Only four times, and each is an item with
+no SR2 counterpart at all: the Ceska Black Scorpion, the Seco LD 120, and the
+insects' natural attacks. Everything else had a real SR2 entry to substitute.
+
+**The LMG caveat.** The two methods disagree here — A gives **7S** (the SR2 light
+machine gun) and B gives **8S** (`5S3` → 5+3). A wins under p.283's own
+preference ordering, so **7S** is what ships. Recording the disagreement because
+it is the one weapon where the choice is visible in play. Note also that the
+system's `Light_Machine_Gun_Generic_*.json` actually contains the *Ingram
+Valiant*, a filename/name mismatch filed separately; if that resolves to a
+different generic LMG, this row should be re-checked.
+
+**Damage codes were never read from the text layer.** Every SR1 code above came
+off a 300 dpi render, per the standing rule — the text layer turns `S` into `5`,
+which would silently convert a Serious wound into a Power of 5.
+
 ## Transcription complete
 
 Every printed stat block in the adventure has now been read from a 300 dpi
