@@ -10613,7 +10613,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p>The Hive fields two castes — <strong>Soldier</strong> and <strong>Worker</strong> ant spirits — each in a <strong>True Form</strong> (a man-sized ant-horror) or a <strong>Flesh Form</strong> (inhabiting a human host; a dual being that cannot astrally project). The <strong>Queen</strong> is a non-combat set-piece; she has not yet been fully summoned.</p> <p>These actors are ordinary <code>npc</code> spirits — the sheet does <strong>not</strong> automate the special rules. Apply them by hand:</p> <ul> <li><strong>Immunity to Normal Weapons</strong> vs all <em>ranged</em> attacks (firearms and the like — <em>not</em> spells). Bullets simply do not hurt a manifested ant.</li> <li><strong>\"Armor\" = 2 × Force</strong> against everything else.</li> <li>A mundane weapon in <strong>melee</strong> attacks with <strong>Willpower</strong>, not the attacker's weapon skill (magic and Vulnerability attacks are exempt).</li> <li>In <strong>astral space</strong> stats derive from Force with a <strong>+5 Initiative</strong> bonus; the spirit can attack and defend but uses no powers.</li> <li>Defeat one by destroying its physical body, <strong>banishing</strong> it, or beating it in <strong>astral combat</strong>.</li> </ul> <p><strong>Flesh Form:</strong> a Soldier <em>adds</em> its Force to the host's Physical attributes; a Worker <em>reduces</em> the host's Physical by 1; both take the spirit's True-Form Mental attributes. Workers are cowards — they screech to warn the Hive and hurl themselves in the path of an attack to protect the cocoons or the Queen.</p>"
+            "content": "<p><strong>This page was rewritten on 2026-08-03 and previously taught three rules the book does not contain.</strong> If you read the old version, discard it — the corrections are called out below, because each one changes the climax substantially.</p> <p>Queen Euphoria <em>prints full critter tables</em> for its insects (p.38, 47, 49–52). The actors in the Cast compendium are transcribed from them. There are <strong>five printed blocks</strong>, on a Flesh/True × Force axis:</p> <table><thead><tr><th>Block</th><th>B Q S / I W</th><th>Armour</th><th>Attack</th></tr></thead><tbody> <tr><td>Flesh Form Worker (F1)</td><td>2 2 2 / 1 1</td><td>none</td><td><strong>none</strong></td></tr> <tr><td>Flesh Form Soldiers (F3)</td><td>6 6 6 / 1 2</td><td>none</td><td>8M</td></tr> <tr><td>Flesh Form Soldiers (F5)</td><td>8 8 8 / 3 2</td><td>none</td><td>10M</td></tr> <tr><td>True Form Soldiers (F3)</td><td>4 7 7 / 1 2</td><td><strong>3/3</strong></td><td>9M + Special</td></tr> <tr><td>True Form Soldiers (F5)</td><td>6 9 9 / 3 2</td><td><strong>5/5</strong></td><td>11M + Special</td></tr> </tbody></table> <p>There is <strong>no True Form Worker</strong> and <strong>no Force 4 anything</strong>. Attack codes are the printed SR1 values converted by core p.283 method B.</p> <h3>The three corrections</h3> <ul> <li><strong>There is no Immunity to Normal Weapons.</strong> It is not among the printed Powers. The old primer said bullets simply do not hurt a manifested ant — they do, and the whole fight is balanced on that. The complete printed Powers list is Enhanced Senses (Smell), Pain Resistance, Manifestation, Paralyzing Touch and Venom.</li> <li><strong>Armour is Force × 1, and only on True Forms.</strong> Not 2 × Force, and <strong>Flesh Forms have no armour at all</strong>. Doubling made every True Form twice as tough as printed.</li> <li><strong>Melee uses ordinary skill.</strong> The Flesh Soldiers print <strong>Unarmed Combat 3</strong>. Attackers do not roll Willpower.</li> </ul> <p>All three came from Double Exposure's ants and were never true of this adventure's.</p> <h3>What the sheet does not automate</h3> <ul> <li><strong>Powers and Weaknesses are prose on each actor's bio</strong> — the NPC data model has no field for them. Read them before the fight.</li> <li><strong>Astral:</strong> +5 Initiative when acting astrally (the bracketed second Reaction on the printed block). Deliberately not baked into Reaction, which would also inflate dodge and defence.</li> <li><strong>Essence</strong> is printed with an <code>A</code> qualifier the model cannot store; the number itself is exact.</li> </ul> <h3>Weaknesses — how the runners are meant to win</h3> <p>The True Forms have <strong>Reduced Senses (Sight)</strong> and <strong>Vulnerability (Insecticide)</strong>. The Flesh Worker has Reduced Senses (Sight). <strong>The insecticide vulnerability is the intended route through the climax</strong> — an Amber Gel plant is exactly where a party would find some. Do not let it go unnoticed.</p> <p><strong>Flesh Form rule:</strong> a Soldier adds its Force to the host's Physical attributes; a Worker reduces the host's Physical by 1; both use the spirit's Mental attributes. Flesh Forms are dual beings and cannot astrally project. Workers are cowards — they screech to warn the Hive and throw themselves in front of attacks aimed at the cocoons or the Queen.</p> <p>Defeat one by destroying its physical body, <strong>banishing</strong> it, or beating it in <strong>astral combat</strong>. The <strong>Queen is a non-combat set-piece</strong> — the book says outright she does not appear.</p>"
           },
           "image": {},
           "video": {
@@ -10997,8 +10997,8 @@
           }
         },
         {
-          "_id": "717a88647be93751",
-          "name": "Missing Again — Euphoria's Penthouse (p.30–33)",
+          "_id": "1b27b487695a553c",
+          "name": "Missing Again — Euphoria's Condo (p.30–33)",
           "type": "text",
           "title": {
             "show": true,
@@ -11006,7 +11006,43 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><strong>Tell it to them straight.</strong> The penthouse is a slaughterhouse. Euphoria's bodyguards have been torn apart in ways nothing Human could manage — chitin gouges, dissolved tissue, the reek of formic acid. The home simsense studio is wrecked.</p> <p><strong>The key clue.</strong> Searching the studio turns up the <strong>simsense recording</strong> Euphoria was making at the moment of the attack (a Perception or Electronics test to notice the rig kept running). Played back, it shows — in first person — something monstrous breaking in, killing the guards, and seizing her. A sharp viewer catches glimpses that point toward an <strong>insect spirit</strong> and, faintly, the Ant motif.</p> <p><strong>GM notes.</strong> This scene sells the horror and hands the players their thread: this was not a normal snatch. Map: <em>Euphoria's Penthouse</em>.</p>"
+            "content": "<p><strong>Tell it to them straight.</strong> The penthouse is a slaughterhouse. Euphoria's bodyguards have been torn apart in ways nothing Human could manage — chitin gouges, dissolved tissue, the reek of formic acid. The home simsense studio is wrecked.</p> <p><strong>The key clue.</strong> Searching the studio turns up the <strong>simsense recording</strong> Euphoria was making at the moment of the attack (a Perception or Electronics test to notice the rig kept running). Played back, it shows — in first person — something monstrous breaking in, killing the guards, and seizing her. A sharp viewer catches glimpses that point toward an <strong>insect spirit</strong> and, faintly, the Ant motif.</p> <p><strong>GM notes.</strong> This scene sells the horror and hands the players their thread: this was not a normal snatch. Map: <em>Euphoria's Condo</em>.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "233fe0a8ef95e142",
+          "name": "Royal What? — Royal Meadows (p.12)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>Where Euphoria is actually being held</strong> in the early adventure — a cheap rented flat at Royal Meadows, supplied by <strong>Ludivenko</strong>. This location has a printed floorplan and, until this revision, had no scene in the module at all.</p> <p><strong>Play it cramped.</strong> The flat is <strong>8 × 3 metres</strong> — 24 m² for a living room/kitchenette, a bedroom with two double beds squeezed side by side, a closet and a bathroom. That is not a mistake in the map: the book says these units are packed with people and that the owners have accommodated the overcrowding by adding more beds. There is nowhere to take cover and nowhere to flank.</p> <p><strong>What a search turns up.</strong> The cupboards hold sealed dehydrated food, courtesy of Ludivenko. The dresser drawers and the closet hold women's clothing in average size, <em>still in plastic wrap</em> — bought for Euphoria, not by her. That detail alone tells the runners someone is keeping her here rather than hiding with her.</p> <p><strong>Texture for the squalor:</strong> one of the two chairs will break if anyone sits on it, the refrigerator's freezer does not work, the sink's water filters are disgusting, the living-room ceiling air filter badly needs changing, and the bathroom's hot water faucet does not work.</p> <p><strong>If the runners annoy the building manager</strong>, about <strong>100¥</strong> calms him down.</p> <p>Map: <em>Royal Meadows — Flat</em>.</p>"
           },
           "image": {},
           "video": {
@@ -11114,7 +11150,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><strong>Craft's talismonger shop.</strong> The trail leads here. Craft appears (when present) as a filthy, unkempt man reeking of regurgitation, his behavior swinging between the affable merchant and the Ant-crazed shaman. The shop is a front and a bolthole; astral traces, ritual materials, and the smell of the Hive are all present to a careful investigator.</p> <p><strong>GM notes.</strong> Craft is a dangerous full magician (Sorcery 6 / Conjuring 5, Ant totem) — see his stat block. Do not let the team corner him easily; he would rather flee to the Hive with his prize than fight to the death in his shop. Map: <em>Magic Crafts Shop</em>.</p>"
+            "content": "<p><strong>Craft's talismonger shop.</strong> The trail leads here. Craft appears (when present) as a filthy, unkempt man reeking of regurgitation, his behavior swinging between the affable merchant and the Ant-crazed shaman. The shop is a front and a bolthole; astral traces, ritual materials, and the smell of the Hive are all present to a careful investigator.</p> <p><strong>GM notes.</strong> Craft is a dangerous full magician (Sorcery 6 / Conjuring 5, Ant totem) — see his stat block. Do not let the team corner him easily; he would rather flee to the Hive with his prize than fight to the death in his shop. Map: <em>Craft's Magic Shop — Upper Level</em>.</p>"
           },
           "image": {},
           "video": {
@@ -11150,7 +11186,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p>A MegaMedia studio scene — pressure from the corp, a public-appearance angle, or a staged event tied to the Amber Gel promotion. Use it to raise the stakes and the clock, and to give social characters room to work. Map: <em>MegaMedia Studio</em>.</p>"
+            "content": "<p>A MegaMedia studio scene — pressure from the corp, a public-appearance angle, or a staged event tied to the Amber Gel promotion. Use it to raise the stakes and the clock, and to give social characters room to work. Map: <em>MegaMedia — Simsense Studio</em>.</p>"
           },
           "image": {},
           "video": {
@@ -11186,7 +11222,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><strong>The climax.</strong> The team descends into Craft's Hive to free Euphoria before her metamorphosis completes. It is a nest of chambers, cocoons, and larvae, defended by <strong>Soldier</strong> and <strong>Worker</strong> ant spirits (true and flesh forms — see the Insect Spirits primer and the Cast compendium). Craft is here, at the height of his madness, summoning his Queen.</p> <p><strong>Euphoria</strong> is cocooned and mid-metamorphosis; every round of delay is a round closer to losing her. Freeing her is a matter of cutting her loose and getting out — through the Hive's defenders.</p> <p><strong>GM notes.</strong> Workers scream to summon Soldiers and throw themselves at attackers near the cocoons or the Queen. Remember the manual insect rules (Immunity to Normal Weapons vs ranged, armor 2×Force, Willpower melee defense). Map: <em>The Hive</em>.</p>"
+            "content": "<p><strong>The climax.</strong> The team descends into Craft's Hive to free Euphoria before her metamorphosis completes. It is a nest of chambers, cocoons, and larvae, defended by <strong>Soldier</strong> and <strong>Worker</strong> ant spirits (true and flesh forms — see the Insect Spirits primer and the Cast compendium). Craft is here, at the height of his madness, summoning his Queen.</p> <p><strong>Euphoria</strong> is cocooned and mid-metamorphosis; every round of delay is a round closer to losing her. Freeing her is a matter of cutting her loose and getting out — through the Hive's defenders.</p> <p><strong>GM notes.</strong> Workers scream to summon Soldiers and throw themselves at attackers near the cocoons or the Queen. <strong>Read the Insect Spirits primer first</strong> — it was rewritten from the printed tables and three rules this module previously used were wrong (there is no Immunity to Normal Weapons, armour is Force × 1 and only on True Forms, and melee uses ordinary skill).</p> <p><strong>Maps:</strong> <em>The Hive — Main Level</em> (p.44) then <em>The Hive — Lower Level</em> (p.45). The Lower Level is <strong>dark: neither light nor power</strong>, and every internal wall is <strong>Barrier Rating 3</strong> — the book says Soldiers making an all-out attack will use the thin walls to their advantage, so let them come through walls.</p> <p><strong>Printed occupants of the Lower Level</strong> — place these rather than improvising:</p> <ul> <li><strong>Room 1</strong> — the elevator arrives here. Empty unless the Hive has been alerted.</li> <li><strong>Room 3</strong> — six Flesh Form Workers (F1), two Flesh Form Soldiers (F3).</li> <li><strong>Room 8</strong> — the stairway exits here. Two Flesh Form Workers (F1).</li> <li><strong>Room 14</strong> — four Flesh Form Workers (F1), two Flesh Form Soldiers (F3).</li> <li><strong>Room 15</strong> — five Flesh Form Workers (F1) and a lone Flesh Form Soldier (<strong>Force 5</strong>).</li> <li><strong>Room 16</strong> — the Hive Room. The climax.</li> <li>Rooms 2, 4–7 and 9–13 are as Room 1.</li> </ul>"
           },
           "image": {},
           "video": {
