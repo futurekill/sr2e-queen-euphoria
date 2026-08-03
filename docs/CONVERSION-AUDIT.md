@@ -225,9 +225,60 @@ The module's "Corporate / Venue Security" carries an Armor Jacket (5/3) and a
 Ceska vz/120 — different armour and a different weapon. Confirm on the render
 before changing anything.
 
-### Remaining pages — NOT YET AUDITED
+### pp.38, 47, 49–52 — THE INSECT SPIRITS — **the module's four are all invented**
 
-14, **16**, 25, 38, 42, 49, 50, **51**, 52.
+`docs/CAST-STATS.md` states: *"QE prints only the **rules** for its ants, not a
+manifest attribute table (p.55 is blank Hive condition-monitors). So model
+Soldier and Worker ant spirits Force-scaled."*
+
+**That is false.** The book prints full SR1 critter tables. Verified on the
+p.49 render:
+
+```
+FLESH FORM SOLDIERS (FORCE 3)
+  B  Q  S  C  I  W   E   M  R   Armor
+  6  6  6  —  1  2  (3)A  —  3   None
+Attacks: 6M2 Physical          Skills: Unarmed Combat 3
+Powers: Enhanced Senses (Smell), Pain Resistance    Weaknesses: None
+```
+
+The complete printed roster — **six blocks**, on a Flesh/True × Force axis:
+
+| page | block | Attacks | Powers | Weaknesses |
+|------|-------|---------|--------|------------|
+| 47 | **Flesh Form Worker (Force 1)** | None | Enhanced Senses (Smell) | Reduced Senses (Sight) |
+| 49 | **Flesh Form Soldiers (Force 3)** | 6M2 Physical | Enh. Senses, Pain Resistance | None |
+| 50 | **Flesh Form Soldiers (Force 5)** | 8M2 Physical | Enh. Senses, Pain Resistance | None |
+| 38 | **True Form Soldier (Force 3)** | 7M2 Physical + Special | Enh. Senses, Manifestation, Paralyzing | Reduced Senses (Sight), Vulnerability (insecticide) |
+| 51 | **True Form Soldiers (Force 3)** | 7M2 Physical + Special | as above | as above |
+| 52 | **True Form Soldiers (Force 5)** | 9M2 Physical + Special | as above | as above |
+
+Against the four shipped actors:
+
+| shipped | printed equivalent | verdict |
+|---------|--------------------|---------|
+| Soldier Ant Spirit (Flesh Form, **Force 4**) | Flesh Soldier is **Force 3 or 5** | Force 4 does not exist |
+| Soldier Ant Spirit (True Form, **Force 4**) | True Soldier is **Force 3 or 5** | Force 4 does not exist |
+| Worker Ant Spirit (Flesh Form, **Force 3**) | Worker is **Force 1** | wrong Force |
+| Worker Ant Spirit (True Form, **Force 3**) | *no True Form Worker is printed* | invented |
+
+Also missing from every shipped ant: the printed **attribute rows**, the
+**Attacks** damage codes, **Unarmed Combat 3**, the **Powers** and — mechanically
+important for the climax — the **Weaknesses** (Reduced Senses (Sight) and
+Vulnerability to insecticide, which is how the runners are meant to win).
+
+Fix: rebuild all of them from the printed tables, at the printed Forces, and
+add the Worker's Force-1 block. Note the Attacks codes are SR1 three-digit
+(6M2 / 7M2 / 8M2 / 9M2) so they need the p.283 treatment — no SR2 "comparable
+item" exists for an ant's mandibles, so method **B** (fold the staging digit):
+6M2→8M, 7M2→9M, 8M2→10M, 9M2→11M. Confirm each on its render first.
+
+### Remaining pages — attribute rows still to transcribe
+
+14, **16** (a rigged LMG vehicle, 5S3), 25 (a second security block: Armor Vest
+w/ Plates 4/3, Seco LD 120 3M2, Stun Baton 5L2 + Special, Uzi III 4M3),
+38/47/49/50/51/52 attribute rows (the text layer mangles the B Q S C I W E M R
+table — render each).
 
 (16 and 51 were absent from the first inventory — see the extraction gotcha
 above. Both carry a stat block that has never been checked.)
