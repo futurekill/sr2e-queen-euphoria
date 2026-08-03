@@ -60,6 +60,222 @@
       "c": [
         0,
         0,
+        800,
+        0
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        800,
+        0,
+        800,
+        240
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        800,
+        360,
+        800,
+        600
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        600,
+        800,
+        600
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        0,
+        0,
+        600
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        800,
+        0,
+        1100,
+        0
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1100,
+        0,
+        1100,
+        240
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1100,
+        360,
+        1100,
+        600
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        800,
+        600,
+        1100,
+        600
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1100,
+        0,
         1700,
         0
       ],
@@ -106,9 +322,9 @@
     {
       "_id": null,
       "c": [
-        1700,
+        1100,
         600,
-        0,
+        1700,
         600
       ],
       "light": 20,
@@ -130,16 +346,40 @@
     {
       "_id": null,
       "c": [
-        0,
-        600,
-        0,
-        0
+        800,
+        240,
+        800,
+        360
       ],
       "light": 20,
       "sight": 20,
       "sound": 20,
       "move": 20,
-      "door": 0,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1100,
+        240,
+        1100,
+        360
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
       "ds": 0,
       "doorSound": null,
       "dir": 0,
@@ -163,7 +403,7 @@
         "h": 6
       },
       "measuredBy": "grid period (41 px, both axes — same pitch as the upper level)",
-      "rooms": "Living area (2), bathroom (3), bedroom (4)."
+      "rooms": ""
     }
   },
   "_stats": {
@@ -181,5 +421,5 @@
     "default": 0
   },
   "_key": "!scenes!98d3967668684bfa",
-  "description": "<p>Where Craft lived before the Hive, and still uses as a private escape when he wants to be human for a while.</p><p><strong>The living area</strong> shows use in the past week: trideo, LiveSound audio, a simsense player and chips that turn out to be mainly Euphoria sims. A crude map of the Amber Gel facility — <strong>including its location</strong> — is here. Empty Amber Gel containers everywhere.</p><p><strong>The bedroom (4) is the source of the stench, and it is a crime scene.</strong> Walls covered in two- and three-dimensional photos and illustrations of Euphoria, many blood-splattered. Judging by the blood, at least one person and probably more have been killed here. Facsimiles of clothing Euphoria wore in her sims, wigs and hairpieces in her styles.</p><p>The bathroom has not been cleaned in months; hundreds of roaches scatter when the lights come on.</p><p><strong>Rooms:</strong> Living area (2), bathroom (3), bedroom (4).</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.40. Measured 17 × 6 m by grid period (41 px, both axes — same pitch as the upper level) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+  "description": "<p>Where Craft lived before the Hive, and still uses as a private escape when he wants to be human for a while.</p><p><strong>The living area</strong> shows use in the past week: trideo, LiveSound audio, a simsense player and chips that turn out to be mainly Euphoria sims. A crude map of the Amber Gel facility — <strong>including its location</strong> — is here. Empty Amber Gel containers everywhere.</p><p><strong>The bedroom (4) is the source of the stench, and it is a crime scene.</strong> Walls covered in two- and three-dimensional photos and illustrations of Euphoria, many blood-splattered. Judging by the blood, at least one person and probably more have been killed here. Facsimiles of clothing Euphoria wore in her sims, wigs and hairpieces in her styles.</p><p>The bathroom has not been cleaned in months; hundreds of roaches scatter when the lights come on.</p><p><strong>Rooms:</strong> —</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.40. Measured 17 × 6 m by grid period (41 px, both axes — same pitch as the upper level) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
 }

@@ -70,20 +70,75 @@ function wall(x1, y1, x2, y2, opts = {}) {
   };
 }
 
+// Rooms are authored, not traced. We keep what matters — the real scale and the
+// printed room list and adjacencies — and draw our own layout inside it, which is
+// both far more robust than extracting a scanned plan and squarely within the
+// module's "no reproduced layout" rule.
+//
+// Everything below derives from the SAME room rectangles that draw the floor, so
+// walls and art cannot drift apart.
+const key = (a, b, c, d) => [a, b, c, d].map(v => Math.round(v * 100)).join(",");
+
+/** Every room edge, deduplicated: a shared partition is emitted once, not twice. */
+function roomEdges(rooms) {
+  const seen = new Map();
+  for (const r of rooms) {
+    const { x, y, w, h } = r;
+    const edges = [
+      [x, y, x + w, y], [x + w, y, x + w, y + h],
+      [x, y + h, x + w, y + h], [x, y, x, y + h]
+    ];
+    for (const e of edges) {
+      const k = key(...e);
+      if (!seen.has(k)) seen.set(k, e);
+    }
+  }
+  return [...seen.values()];
+}
+
+/** Cut `door` out of any collinear wall it lies on, returning the leftovers. */
+function punch(segs, doors) {
+  let out = segs;
+  for (const d of doors) {
+    const [dx1, dy1, dx2, dy2] = d.seg;
+    const next = [];
+    for (const [x1, y1, x2, y2] of out) {
+      const vert = Math.abs(x1 - x2) < 0.01 && Math.abs(dx1 - dx2) < 0.01 && Math.abs(x1 - dx1) < 0.06;
+      const horiz = Math.abs(y1 - y2) < 0.01 && Math.abs(dy1 - dy2) < 0.01 && Math.abs(y1 - dy1) < 0.06;
+      if (!vert && !horiz) { next.push([x1, y1, x2, y2]); continue; }
+      const [a, b] = vert ? [Math.min(y1, y2), Math.max(y1, y2)] : [Math.min(x1, x2), Math.max(x1, x2)];
+      const [c, e] = vert ? [Math.min(dy1, dy2), Math.max(dy1, dy2)] : [Math.min(dx1, dx2), Math.max(dx1, dx2)];
+      if (e <= a || c >= b) { next.push([x1, y1, x2, y2]); continue; }   // no overlap
+      if (c > a) next.push(vert ? [x1, a, x1, c] : [a, y1, c, y1]);
+      if (e < b) next.push(vert ? [x1, e, x1, b] : [e, y1, b, y1]);
+    }
+    out = next;
+  }
+  return out;
+}
+
 function walls(s, W, H) {
   const M = PX_PER_M;
-  const out = [
-    wall(0, 0, W, 0), wall(W, 0, W, H), wall(W, H, 0, H), wall(0, H, 0, 0)
-  ];
-  for (const r of s.interior ?? []) {
-    const [x1, y1, x2, y2] = r.seg.map(v => v * M);
-    out.push(wall(x1, y1, x2, y2, {
-      door: r.door,
-      // A Barrier-3 partition should not behave like bedrock. Flagged so the GM
-      // can see which walls the book explicitly says are breakable.
-      flags: r.breakable ? { "sr2e-queen-euphoria": { barrierRating: r.barrier ?? 3, breakable: true } } : {}
+  const rooms = s.layout ?? [];
+  const doors = s.doors ?? [];
+
+  // Outer envelope always exists, even for a scene with no authored rooms yet.
+  let segs = rooms.length
+    ? roomEdges(rooms)
+    : [[0, 0, s.widthM, 0], [s.widthM, 0, s.widthM, s.heightM],
+       [0, s.heightM, s.widthM, s.heightM], [0, 0, 0, s.heightM]];
+  segs = punch(segs, doors);
+
+  const out = segs.map(([x1, y1, x2, y2]) =>
+    wall(x1 * M, y1 * M, x2 * M, y2 * M, {
+      // A Barrier-3 partition should not behave like bedrock. The Hive's Soldiers
+      // are meant to come through these, so they are flagged for the GM.
+      flags: s.breakableInterior ? { "sr2e-queen-euphoria": { barrierRating: 3, breakable: true } } : {}
     }));
-  }
+
+  for (const d of doors)
+    out.push(wall(...d.seg.map(v => v * M), { door: d.secret ? "secret" : "door" }));
+
   return out;
 }
 
@@ -161,6 +216,28 @@ function background(s) {
   for (let y = 5 * PX_PER_M; y < H; y += 5 * PX_PER_M)
     g += `<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="${line}" stroke-width="3"/>`;
 
+  // Rooms, drawn from the same rectangles the walls come from.
+  let rms = "";
+  for (const r of s.layout ?? []) {
+    const x = r.x * PX_PER_M, y = r.y * PX_PER_M, w = r.w * PX_PER_M, h = r.h * PX_PER_M;
+    // Fit the label to the room, not just to its short side: a 2 m bedroom and a
+    // 4.5 m living room otherwise get the same size text and the long name spills
+    // across the wall into its neighbour. 0.55em is a good average glyph width.
+    const lf = Math.max(14, Math.min(40,
+      Math.round(Math.min(h / 3, (w * 0.86) / (r.name.length * 0.55)))));
+    rms += `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${panel}" opacity="0.55"/>`
+         + `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="none" stroke="${ink}" stroke-width="5" opacity="0.8"/>`
+         + `<text x="${x + w/2}" y="${y + h/2 + lf/3}" fill="${ink}" opacity="0.9"
+                 font-family="Helvetica,Arial,sans-serif" font-size="${lf}" font-weight="bold"
+                 text-anchor="middle">${esc(r.name)}</text>`;
+  }
+  // Doorways as breaks in the wall ink, so the map reads the way it plays.
+  for (const d of s.doors ?? []) {
+    const [x1, y1, x2, y2] = d.seg.map(v => v * PX_PER_M);
+    rms += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${floor}" stroke-width="9"/>`
+         + `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${accent}" stroke-width="3" opacity="0.75"/>`;
+  }
+
   const fs = Math.max(28, Math.min(64, Math.round(Math.min(W, H) / 9)));
   const sub = Math.round(fs * 0.42);
   const tag = s.source === "printed"
@@ -171,13 +248,15 @@ function background(s) {
 `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
   <rect width="${W}" height="${H}" fill="${floor}"/>
   ${g}
+  ${rms}
   <rect x="12" y="12" width="${W-24}" height="${H-24}" fill="none" stroke="${panel}" stroke-width="8"/>
+  ${(s.layout ?? []).length ? "" : `
   <text x="${W/2}" y="${H/2 - sub}" fill="${ink}" font-family="Helvetica,Arial,sans-serif"
         font-size="${fs}" font-weight="bold" text-anchor="middle">${esc(s.name)}</text>
   <text x="${W/2}" y="${H/2 + sub}" fill="${accent}" font-family="Helvetica,Arial,sans-serif"
-        font-size="${sub}" text-anchor="middle">${esc(tag)}</text>
+        font-size="${sub}" text-anchor="middle">${esc(tag)}</text>`}
   <text x="${W/2}" y="${H - 26}" fill="${ink}" font-family="Helvetica,Arial,sans-serif"
-        font-size="${Math.round(sub*0.8)}" text-anchor="middle" opacity="0.65">1 square = 1 metre</text>
+        font-size="${Math.round(sub*0.8)}" text-anchor="middle" opacity="0.55">${esc(tag)} · 1 square = 1 metre</text>
 </svg>`;
 
   // rsvg-convert (librsvg), not ImageMagick's built-in SVG reader: the latter has

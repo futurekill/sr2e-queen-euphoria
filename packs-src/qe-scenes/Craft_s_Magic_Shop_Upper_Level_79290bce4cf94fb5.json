@@ -60,6 +60,150 @@
       "c": [
         0,
         0,
+        1200,
+        0
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1200,
+        0,
+        1200,
+        240
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1200,
+        360,
+        1200,
+        600
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        600,
+        1200,
+        600
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        0,
+        0,
+        240
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        360,
+        0,
+        600
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1200,
+        0,
         1700,
         0
       ],
@@ -85,7 +229,7 @@
         1700,
         0,
         1700,
-        600
+        240
       ],
       "light": 20,
       "sight": 20,
@@ -107,8 +251,8 @@
       "_id": null,
       "c": [
         1700,
-        600,
-        0,
+        360,
+        1700,
         600
       ],
       "light": 20,
@@ -130,16 +274,88 @@
     {
       "_id": null,
       "c": [
-        0,
+        1200,
         600,
-        0,
-        0
+        1700,
+        600
       ],
       "light": 20,
       "sight": 20,
       "sound": 20,
       "move": 20,
       "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1200,
+        240,
+        1200,
+        360
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        240,
+        0,
+        360
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1700,
+        240,
+        1700,
+        360
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
       "ds": 0,
       "doorSound": null,
       "dir": 0,
@@ -163,7 +379,7 @@
         "h": 6
       },
       "measuredBy": "grid period (41 px, both axes)",
-      "rooms": "Main store area (1)."
+      "rooms": ""
     }
   },
   "_stats": {
@@ -181,5 +397,5 @@
     "default": 0
   },
   "_key": "!scenes!79290bce4cf94fb5",
-  "description": "<p>The shopfront. Fetish material worth about <strong>2,500¥</strong> remains, and it is obvious at a glance the store has not been used for some time.</p><p>Two entrances — the main door and a back door to the alley. Both are closed and locked at <strong>Barrier Rating 5</strong>. The alley door's lock is in better condition and shows evidence of recent use.</p><p><strong>Rooms:</strong> Main store area (1).</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.40. Measured 17 × 6 m by grid period (41 px, both axes) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+  "description": "<p>The shopfront. Fetish material worth about <strong>2,500¥</strong> remains, and it is obvious at a glance the store has not been used for some time.</p><p>Two entrances — the main door and a back door to the alley. Both are closed and locked at <strong>Barrier Rating 5</strong>. The alley door's lock is in better condition and shows evidence of recent use.</p><p><strong>Rooms:</strong> —</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.40. Measured 17 × 6 m by grid period (41 px, both axes) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
 }

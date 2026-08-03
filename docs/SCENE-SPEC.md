@@ -104,33 +104,40 @@ is what the art has to satisfy; the metre figures are what the scene document
 must be set to regardless of what the art looks like.
 
 
-## Walls
+## Walls and room layout — authored, not traced
 
-**Perimeter walls are built on all nine scenes**, derived from the same measured
-dimensions as the background, so the two cannot drift apart. On the dark Hive
-Lower Level this also stops vision leaking past the building envelope.
+**Layouts are ours; the scale and the room list are the book's.** Each scene
+carries a `layout` of room rectangles in metres, and both the walls and the
+background art derive from those same rectangles — so they cannot drift apart.
+Doors are punched out of the wall runs and emitted as door walls, and the
+background draws the gap, so the map reads the way it plays.
 
-`gen-scenes.mjs` takes an optional per-scene `interior` list — wall segments in
-**metres**, with `door` and `breakable` flags — and emits them alongside the
-perimeter. The machinery is done; the segment data is not.
+This replaced an attempt to extract walls from the scanned plans automatically.
+That detector worked — after one inverted assumption, since walls are drawn
+heavy and furniture light, not the reverse — but it was the wrong goal. It could
+never see angled walls (Royal Meadows' bedroom divider is a zigzag), it returned
+furniture as false positives needing hand-culling on every scene, and what it
+worked so hard to reproduce was a layout the module is not allowed to ship.
 
-### Why interior walls were not auto-extracted
+Authoring at the printed scale keeps everything that matters for play — real
+distances, the printed rooms, the printed adjacencies — and discards only pixel
+fidelity we could not use. It is also far less code.
 
-The obvious approach is the one that worked for dimensions: profile the plan's
-dark pixels and call a column that is dark down most of its height a wall. It
-finds nothing. **Interior walls are broken by doorways**, so no interior wall is
-ever continuous down its full extent — at a threshold loose enough to catch them
-(0.55) the same test also catches bed and counter edges, and at a threshold tight
-enough to reject furniture (0.75+) only the perimeter survives. Verified on Royal
-Meadows: the loose pass returned eight candidate lines of which most are
-furniture, the tight pass returned exactly the two outer walls.
+### Laid out so far
 
-Extracting them properly needs **line-segment detection** (Hough or connected
-components) that can join collinear fragments across a door gap and report the
-gap as the door. That is a real piece of work, not a threshold tweak.
+| scene | rooms | walls | doors |
+|---|---|---|---|
+| Royal Meadows — Flat | 5 | 29 | 5 |
+| Magic Shop — Upper | 2 | 13 | 3 |
+| Magic Shop — Lower | 3 | 14 | 2 |
+| MegaMedia — Office | 4 | 22 | 3 |
+| MegaMedia — Studio | 4 | 23 | 3 |
 
-**Estimating the positions by eye was the other option and it was rejected.** A
-wall half a metre out of place is worse than no wall: it silently changes cover,
-line of sight and movement cost in a way nobody will question mid-fight, and the
-whole point of measuring these plans was to stop shipping numbers that came from
-somewhere other than the page.
+### Still perimeter-only
+
+Euphoria's Condo (14 rooms), Pacific Towers Lobby (10 areas), and both Hive
+levels — the big ones. The machinery is done, so what remains is turning each
+room key already recorded above into rectangles.
+
+The Hive Lower Level should get `breakableInterior: true`: its walls are Barrier
+Rating 3 and the book says the Soldiers will come through them.

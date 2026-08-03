@@ -60,6 +60,438 @@
       "c": [
         0,
         0,
+        200,
+        0
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        200,
+        0,
+        200,
+        180
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        200,
+        80,
+        200
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        160,
+        200,
+        200,
+        200
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        0,
+        0,
+        200
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        200,
+        260,
+        200,
+        300
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        300,
+        200,
+        300
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        200,
+        0,
+        300
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        200,
+        0,
+        350,
+        0
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        350,
+        0,
+        350,
+        160
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        200,
+        160,
+        240,
+        160
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        310,
+        160,
+        350,
+        160
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        200,
+        0,
+        200,
+        160
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        350,
+        160,
+        350,
+        180
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        350,
+        260,
+        350,
+        300
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        200,
+        300,
+        350,
+        300
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        200,
+        160,
+        200,
+        180
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        200,
+        260,
+        200,
+        300
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        350,
+        0,
         800,
         0
       ],
@@ -106,9 +538,9 @@
     {
       "_id": null,
       "c": [
-        800,
+        350,
         300,
-        0,
+        600,
         300
       ],
       "light": 20,
@@ -130,10 +562,34 @@
     {
       "_id": null,
       "c": [
-        0,
+        690,
         300,
+        800,
+        300
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        350,
         0,
-        0
+        350,
+        180
       ],
       "light": 20,
       "sight": 20,
@@ -154,10 +610,10 @@
     {
       "_id": null,
       "c": [
-        174,
-        4,
-        174,
-        177
+        350,
+        260,
+        350,
+        300
       ],
       "light": 20,
       "sight": 20,
@@ -178,16 +634,16 @@
     {
       "_id": null,
       "c": [
-        401,
-        4,
-        401,
-        170
+        200,
+        180,
+        200,
+        260
       ],
       "light": 20,
       "sight": 20,
       "sound": 20,
       "move": 20,
-      "door": 0,
+      "door": 1,
       "ds": 0,
       "doorSound": null,
       "dir": 0,
@@ -202,10 +658,82 @@
     {
       "_id": null,
       "c": [
-        171,
-        167,
-        408,
-        167
+        240,
+        160,
+        310,
+        160
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        350,
+        180,
+        350,
+        260
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        80,
+        200,
+        160,
+        200
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        600,
+        300,
+        690,
+        300
       ],
       "light": 20,
       "sight": 20,
@@ -235,7 +763,7 @@
         "h": 3
       },
       "measuredBy": "legend square (128 x 129 px — no grid is drawn on this plan)",
-      "rooms": "Living room / kitchenette (two plastic-covered chairs, couch, imitation-wood tables, microwave, refrigerator, cupboards, sink), bedroom (two double beds squeezed side by side, imitation-wood dresser, plastic mirror), closet, bathroom (shower stall, toilet, sink)."
+      "rooms": ""
     }
   },
   "_stats": {
@@ -253,5 +781,5 @@
     "default": 0
   },
   "_key": "!scenes!2749f185b382f009",
-  "description": "<p><strong>Where Euphoria is held.</strong> A cheap rented flat supplied by Ludivenko — dehydrated food in the cupboards, women's clothing still in plastic wrap in the dresser and closet.</p><p>Only 24 m², and that is correct: the book says the units are packed with people and crowded with extra beds. Play it cramped.</p><p>Details that matter if the runners search: one chair will break if sat on, the refrigerator's freezer does not work, the sink's water filters are foul, and the hot water faucet does not work.</p><p>If the runners annoy the manager it costs about <strong>100¥</strong> to calm him down.</p><p><strong>Rooms:</strong> Living room / kitchenette (two plastic-covered chairs, couch, imitation-wood tables, microwave, refrigerator, cupboards, sink), bedroom (two double beds squeezed side by side, imitation-wood dresser, plastic mirror), closet, bathroom (shower stall, toilet, sink).</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.12. Measured 8 × 3 m by legend square (128 x 129 px — no grid is drawn on this plan) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+  "description": "<p><strong>Where Euphoria is held.</strong> A cheap rented flat supplied by Ludivenko — dehydrated food in the cupboards, women's clothing still in plastic wrap in the dresser and closet.</p><p>Only 24 m², and that is correct: the book says the units are packed with people and crowded with extra beds. Play it cramped.</p><p>Details that matter if the runners search: one chair will break if sat on, the refrigerator's freezer does not work, the sink's water filters are foul, and the hot water faucet does not work.</p><p>If the runners annoy the manager it costs about <strong>100¥</strong> to calm him down.</p><p><strong>Rooms:</strong> —</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.12. Measured 8 × 3 m by legend square (128 x 129 px — no grid is drawn on this plan) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
 }

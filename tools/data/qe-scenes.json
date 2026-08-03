@@ -54,39 +54,87 @@
       "measuredBy": "legend square (128 x 129 px \u2014 no grid is drawn on this plan)",
       "art": "royal-meadows-flat.webp",
       "nav": true,
-      "rooms": "Living room / kitchenette (two plastic-covered chairs, couch, imitation-wood tables, microwave, refrigerator, cupboards, sink), bedroom (two double beds squeezed side by side, imitation-wood dresser, plastic mirror), closet, bathroom (shower stall, toilet, sink).",
       "notes": "<p><strong>Where Euphoria is held.</strong> A cheap rented flat supplied by Ludivenko \u2014 dehydrated food in the cupboards, women's clothing still in plastic wrap in the dresser and closet.</p><p>Only 24 m\u00b2, and that is correct: the book says the units are packed with people and crowded with extra beds. Play it cramped.</p><p>Details that matter if the runners search: one chair will break if sat on, the refrigerator's freezer does not work, the sink's water filters are foul, and the hot water faucet does not work.</p><p>If the runners annoy the manager it costs about <strong>100\u00a5</strong> to calm him down.</p>",
-      "interior": [
+      "doors": [
         {
           "seg": [
-            1.74,
-            0.04,
-            1.74,
-            1.77
-          ],
-          "$note": "bathroom west wall"
+            2,
+            1.8,
+            2,
+            2.6
+          ]
         },
         {
           "seg": [
-            4.01,
-            0.04,
-            4.01,
-            1.7
-          ],
-          "$note": "bathroom east wall"
+            2.4,
+            1.6,
+            3.1,
+            1.6
+          ]
         },
         {
           "seg": [
-            1.71,
-            1.67,
-            4.08,
-            1.67
-          ],
-          "door": "door",
-          "$note": "bathroom south wall \u2014 the plan draws a door swing here, so it is emitted as a door rather than solid. The exact hinge position was not resolvable from the plan; adjust in Foundry if it matters."
+            3.5,
+            1.8,
+            3.5,
+            2.6
+          ]
+        },
+        {
+          "seg": [
+            0.8,
+            2,
+            1.6,
+            2
+          ]
+        },
+        {
+          "seg": [
+            6,
+            3,
+            6.9,
+            3
+          ]
         }
       ],
-      "$wallsNote": "Extracted by tools/extract-walls.py and verified against the render overlay. The detector also returned the two perimeter walls (already generated from the measured dimensions) and one false positive at x=6.64 \u2014 the kitchen counter edge. Those were dropped by hand. The bedroom/living divider is a ZIGZAG and an axis-aligned detector cannot see it; it is not included rather than approximated."
+      "$layoutNote": "Layout AUTHORED at the printed scale, not traced. The dimensions and the room list come from the book; the arrangement inside them is ours. This is both more robust than extracting a scan and squarely within the module's no-reproduced-layout rule.",
+      "layout": [
+        {
+          "name": "Bedroom (2)",
+          "x": 0,
+          "y": 0,
+          "w": 2,
+          "h": 2
+        },
+        {
+          "name": "Closet (3)",
+          "x": 0,
+          "y": 2,
+          "w": 2,
+          "h": 1
+        },
+        {
+          "name": "Bath (4)",
+          "x": 2,
+          "y": 0,
+          "w": 1.5,
+          "h": 1.6
+        },
+        {
+          "name": "Hall",
+          "x": 2,
+          "y": 1.6,
+          "w": 1.5,
+          "h": 1.4
+        },
+        {
+          "name": "Living / Kitchenette (1)",
+          "x": 3.5,
+          "y": 0,
+          "w": 4.5,
+          "h": 3
+        }
+      ]
     },
     {
       "_id": "79290bce4cf94fb5",
@@ -98,8 +146,50 @@
       "measuredBy": "grid period (41 px, both axes)",
       "art": "magic-shop-upper.webp",
       "nav": true,
-      "rooms": "Main store area (1).",
-      "notes": "<p>The shopfront. Fetish material worth about <strong>2,500\u00a5</strong> remains, and it is obvious at a glance the store has not been used for some time.</p><p>Two entrances \u2014 the main door and a back door to the alley. Both are closed and locked at <strong>Barrier Rating 5</strong>. The alley door's lock is in better condition and shows evidence of recent use.</p>"
+      "notes": "<p>The shopfront. Fetish material worth about <strong>2,500\u00a5</strong> remains, and it is obvious at a glance the store has not been used for some time.</p><p>Two entrances \u2014 the main door and a back door to the alley. Both are closed and locked at <strong>Barrier Rating 5</strong>. The alley door's lock is in better condition and shows evidence of recent use.</p>",
+      "doors": [
+        {
+          "seg": [
+            12,
+            2.4,
+            12,
+            3.6
+          ]
+        },
+        {
+          "seg": [
+            0,
+            2.4,
+            0,
+            3.6
+          ]
+        },
+        {
+          "seg": [
+            17,
+            2.4,
+            17,
+            3.6
+          ]
+        }
+      ],
+      "$layoutNote": "Layout AUTHORED at the printed scale, not traced. The dimensions and the room list come from the book; the arrangement inside them is ours. This is both more robust than extracting a scan and squarely within the module's no-reproduced-layout rule.",
+      "layout": [
+        {
+          "name": "Main Store (1)",
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 6
+        },
+        {
+          "name": "Back Room",
+          "x": 12,
+          "y": 0,
+          "w": 5,
+          "h": 6
+        }
+      ]
     },
     {
       "_id": "98d3967668684bfa",
@@ -111,8 +201,49 @@
       "measuredBy": "grid period (41 px, both axes \u2014 same pitch as the upper level)",
       "art": "magic-shop-lower.webp",
       "nav": true,
-      "rooms": "Living area (2), bathroom (3), bedroom (4).",
-      "notes": "<p>Where Craft lived before the Hive, and still uses as a private escape when he wants to be human for a while.</p><p><strong>The living area</strong> shows use in the past week: trideo, LiveSound audio, a simsense player and chips that turn out to be mainly Euphoria sims. A crude map of the Amber Gel facility \u2014 <strong>including its location</strong> \u2014 is here. Empty Amber Gel containers everywhere.</p><p><strong>The bedroom (4) is the source of the stench, and it is a crime scene.</strong> Walls covered in two- and three-dimensional photos and illustrations of Euphoria, many blood-splattered. Judging by the blood, at least one person and probably more have been killed here. Facsimiles of clothing Euphoria wore in her sims, wigs and hairpieces in her styles.</p><p>The bathroom has not been cleaned in months; hundreds of roaches scatter when the lights come on.</p>"
+      "notes": "<p>Where Craft lived before the Hive, and still uses as a private escape when he wants to be human for a while.</p><p><strong>The living area</strong> shows use in the past week: trideo, LiveSound audio, a simsense player and chips that turn out to be mainly Euphoria sims. A crude map of the Amber Gel facility \u2014 <strong>including its location</strong> \u2014 is here. Empty Amber Gel containers everywhere.</p><p><strong>The bedroom (4) is the source of the stench, and it is a crime scene.</strong> Walls covered in two- and three-dimensional photos and illustrations of Euphoria, many blood-splattered. Judging by the blood, at least one person and probably more have been killed here. Facsimiles of clothing Euphoria wore in her sims, wigs and hairpieces in her styles.</p><p>The bathroom has not been cleaned in months; hundreds of roaches scatter when the lights come on.</p>",
+      "doors": [
+        {
+          "seg": [
+            8,
+            2.4,
+            8,
+            3.6
+          ]
+        },
+        {
+          "seg": [
+            11,
+            2.4,
+            11,
+            3.6
+          ]
+        }
+      ],
+      "$layoutNote": "Layout AUTHORED at the printed scale, not traced. The dimensions and the room list come from the book; the arrangement inside them is ours. This is both more robust than extracting a scan and squarely within the module's no-reproduced-layout rule.",
+      "layout": [
+        {
+          "name": "Living Area (2)",
+          "x": 0,
+          "y": 0,
+          "w": 8,
+          "h": 6
+        },
+        {
+          "name": "Bath (3)",
+          "x": 8,
+          "y": 0,
+          "w": 3,
+          "h": 6
+        },
+        {
+          "name": "Bedroom (4)",
+          "x": 11,
+          "y": 0,
+          "w": 6,
+          "h": 6
+        }
+      ]
     },
     {
       "_id": "cf17d2b939a9b756",
@@ -150,8 +281,64 @@
       "measuredBy": "n/a \u2014 no floorplan is printed for this location",
       "art": "megamedia-office.webp",
       "nav": true,
-      "rooms": "Reception, corridor, Carrone's corner office with desk and window wall, small meeting area.",
-      "notes": "<p><strong>GM-invented layout.</strong> Queen Euphoria plays scenes at MegaMedia but prints no floorplan for it, so this map is original and carries no authority \u2014 resize or replace it freely.</p><p>Where <strong>Robert Carrone</strong> hires the runners.</p>"
+      "notes": "<p><strong>GM-invented layout.</strong> Queen Euphoria plays scenes at MegaMedia but prints no floorplan for it, so this map is original and carries no authority \u2014 resize or replace it freely.</p><p>Where <strong>Robert Carrone</strong> hires the runners.</p>",
+      "doors": [
+        {
+          "seg": [
+            2,
+            4,
+            3.2,
+            4
+          ]
+        },
+        {
+          "seg": [
+            7,
+            4,
+            8.2,
+            4
+          ]
+        },
+        {
+          "seg": [
+            4,
+            6,
+            5.2,
+            6
+          ]
+        }
+      ],
+      "$layoutNote": "Layout AUTHORED at the printed scale, not traced. The dimensions and the room list come from the book; the arrangement inside them is ours. This is both more robust than extracting a scan and squarely within the module's no-reproduced-layout rule.",
+      "layout": [
+        {
+          "name": "Reception",
+          "x": 0,
+          "y": 0,
+          "w": 5,
+          "h": 4
+        },
+        {
+          "name": "Corridor",
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 2
+        },
+        {
+          "name": "Meeting Area",
+          "x": 5,
+          "y": 0,
+          "w": 7,
+          "h": 4
+        },
+        {
+          "name": "Carrone's Office",
+          "x": 0,
+          "y": 6,
+          "w": 12,
+          "h": 3
+        }
+      ]
     },
     {
       "_id": "a303b85826fd7a3e",
@@ -162,8 +349,64 @@
       "measuredBy": "n/a \u2014 no floorplan is printed for this location",
       "art": "megamedia-studio.webp",
       "nav": true,
-      "rooms": "Recording floor, control booth behind glass, equipment racks, green room.",
-      "notes": "<p><strong>GM-invented layout.</strong> No floorplan is printed for this location; the map is original and carries no authority.</p><p>Useful for the MegaMedia deal thread \u2014 the Strice host holds purchase orders showing <strong>1,280,000\u00a5</strong> for Euphoria's three appearances.</p>"
+      "notes": "<p><strong>GM-invented layout.</strong> No floorplan is printed for this location; the map is original and carries no authority.</p><p>Useful for the MegaMedia deal thread \u2014 the Strice host holds purchase orders showing <strong>1,280,000\u00a5</strong> for Euphoria's three appearances.</p>",
+      "doors": [
+        {
+          "seg": [
+            12,
+            1.6,
+            12,
+            3.2
+          ]
+        },
+        {
+          "seg": [
+            12,
+            6,
+            12,
+            7.2
+          ]
+        },
+        {
+          "seg": [
+            12,
+            9.4,
+            12,
+            10.6
+          ]
+        }
+      ],
+      "$layoutNote": "Layout AUTHORED at the printed scale, not traced. The dimensions and the room list come from the book; the arrangement inside them is ours. This is both more robust than extracting a scan and squarely within the module's no-reproduced-layout rule.",
+      "layout": [
+        {
+          "name": "Recording Floor",
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 12
+        },
+        {
+          "name": "Control Booth",
+          "x": 12,
+          "y": 0,
+          "w": 6,
+          "h": 5
+        },
+        {
+          "name": "Equipment",
+          "x": 12,
+          "y": 5,
+          "w": 6,
+          "h": 3
+        },
+        {
+          "name": "Green Room",
+          "x": 12,
+          "y": 8,
+          "w": 6,
+          "h": 4
+        }
+      ]
     }
   ]
 }
