@@ -42,24 +42,46 @@ Uzi III, Ceska vz/120). Method B is for anything with no SR2 counterpart.
 
 ## SR1 three-digit codes present in the source
 
-Found by scanning the per-page OCR, then to be confirmed on each render:
+**16 pages, 14 distinct codes.** From the purchased copy's text layer
+(`_work/text/pNN.txt`), to be confirmed on the render before any value is used.
 
 | page | codes |
 |------|-------|
 | 14 | 4M2, 5L2 |
-| 15 | 3M2, 5M3, 6M2 |
-| 19 | 5M3, 6M2, 4M3 |
-| 20 | 4M2, 5M3 |
-| 21 | 4M2, 3M2 |
-| 25 | 3M2, 5L2, 4M3 |
-| 26 | 6L3 |
+| 15 | 5M3, 6M2 |
+| 16 | 5S3 |
+| 19 | 4M3, 5M3, 6M2 |
+| 20 | 4M2, 5M3, 6S4 |
+| 21 | 3M2, 4M2 |
+| 25 | 3M2, 4M3, 5L2 |
+| 26 | 6L3, 6M2, 6S3 |
 | 38 | 7M2 |
-| 42 | 5S4 (x2) |
+| 42 | 5S4 |
 | 49 | 6M2 |
 | 50 | 8M2 |
+| 51 | 7M2 |
 | 52 | 9M2 |
 | 62 | 4M2 |
 | 64 | 3M2 |
+
+Distinct: 3M2, 4M2, 4M3, 5L2, 5M3, 5S3, 5S4, 6L3, 6M2, 6S3, 6S4, 7M2, 8M2, 9M2.
+
+> **Extraction gotcha, and why this table was wrong the first time.** A strict
+> `\b\d{1,2}[LMSD]\d\b` scan silently under-counts, because OCR turns the
+> closing bracket into a letter — `Survival Knife [6L3]` comes through as
+> `6L3J`, and `\b` then refuses to match. The first pass missed **two whole
+> pages (16, 51)** and three codes (5S3, 6S3, 6S4). Only the LEADING boundary
+> can be strict; the trailing one must reject just a digit:
+> `(?<![A-Za-z0-9])(\d{1,2})([LMSD])(\d)(?!\d)`.
+
+## Both scans agree — the earlier verifications stand
+
+When the source PDF was swapped, the two copies were diffed page by page on
+their damage codes. Four pages appeared to disagree; all four turned out to be
+extraction artifacts of the kind above, not content differences. Craft (p.62)
+was independently re-read from the new text layer and matches the old render
+exactly, attribute for attribute. **Same printing — nothing verified before the
+swap needs redoing.**
 
 ---
 
@@ -131,7 +153,10 @@ preferable to method B's `4M2 → 6M` because the Predator exists in SR2.
 
 ### Remaining pages — NOT YET AUDITED
 
-14, 15, 20, 21, 25, 26, 38, 42, 49, 50, 52, 63, 64.
+14, 15, **16**, 20, 21, 25, 26, 38, 42, 49, 50, **51**, 52, 63, 64.
+
+(16 and 51 were absent from the first inventory — see the extraction gotcha
+above. Both carry a stat block that has never been checked.)
 
 ## Emerging pattern
 
