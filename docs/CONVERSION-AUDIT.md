@@ -197,18 +197,42 @@ and three bound elementals is currently unplayable.
 
 ### p.26 — "Pride" (Lion-totem shaman) — **MISSING ENTIRELY**
 
-Printed: Quickness 5, Strength 6, Charisma 4, Intelligence 4, Willpower 6,
-Essence 6, Magic 6, Reaction 5. Skills: Etiquette (Corporate) 1, Etiquette
-(Street) 2, Etiquette (Tribal) 4, Firearms 3, Magical Theory 5, Negotiation 4,
-**Sorcery (Ritual) 6**, Stealth 5, **Thrown Weapon (Spear) 6**, Unarmed
-Combat 5. Dice Pools: Astral 14, Defense (Armed) 4, Defense (Unarmed) 5,
-Dodge 5, Magic 4. Gear includes a 6M2 firearm, **Spear [+2 reach, 6S3]**,
-**Survival Knife [6L3]**, Medicine Lodge Materials (4), 4 Plastic Restraints,
-Real Leather Clothing. Spells include Power Missile 5, Detox Deadly Toxin 5.
-Lion totem.
+**COMPLETE — the whole block re-read from the render 2026-08-03.** The first
+pass cropped short and missed four entries; all are now captured.
 
-**There is no actor for this character.** (Body was not captured in the crop —
-read it before generating.)
+```
+Attributes  Body 6, Quickness 5, Strength 6, Charisma 4, Intelligence 4,
+            Willpower 6, Essence 6, Magic 6, Reaction 5
+Skills      Armed Combat 4, Etiquette (Corporate) 1, Etiquette (Street) 2,
+            Etiquette (Tribal) 4, Firearms 3, Magical Theory 5, Negotiation 4,
+            Sorcery (Ritual) 6, Stealth 5, Thrown Weapon (Spear) 6,
+            Unarmed Combat 5
+Dice Pools  Astral 14, Defense (Armed) 4, Defense (Unarmed) 5, Dodge 5, Magic 4
+Gear        Browning Ultra-Power [10 (clip), Laser Sight, Firepower Ammo, 6M2]
+            Medicine Lodge Materials (4); 4 Plastic Restraints
+            Real Leather Clothing (2/1)
+            Spear [+2 reach, 6S3]; Survival Knife [6L3]
+Spells      Combat:    Power Missile 5, Fireball 5
+            Detection: Detect Enemies 3, Mind Probe 6
+            Health:    Detox Deadly Toxin 5
+            Illusion:  Entertainment 3
+Notes       Pride's totem is Lion.
+```
+
+Four things the first crop missed and this pass recovered: **Body 6**,
+**Armed Combat 4**, and three spells — **Fireball 5, Mind Probe 6,
+Entertainment 3**. Also the Real Leather Clothing rating (**2/1**) and the fact
+that his pistol is a **Browning Ultra-Power with Firepower Ammo**, not a bare
+"6M2 firearm".
+
+Backstory: Shaka Jubowel, named for Shaka Zulu, an African-trained shaman turned
+globally active bounty-hunter. Two metres, vertical cat pupils, aristocratic
+manner, savage when angered — *"Pride gives no quarter in combat."*
+
+**There is no actor for this character.**
+
+He is the *second* full magician in the cast (after Stone), which matters for the
+sheet finding below.
 
 ### p.63 / p.64 — Euphoria and Carrone — **attributes CLEAN, gear incomplete**
 
@@ -382,9 +406,28 @@ printed: **Browning Max-Power heavy pistols [8 (clip), 1 extra clip, 4M2]**,
 **stun batons [+1 Reach, 5L2 Stun + Special]**, **Armor Vests [2/1]**.
 
 The shipped "Lone Star Officer" carries an **Ares Predator (9M)** and no baton
-or vest. Wrong weapon, missing gear. Because the block defers to an external
-archetype, its attributes need deriving rather than transcribing — flag for a
-GM decision (SR2 has its own Lone Star patrol stats).
+or vest. Wrong weapon, missing gear.
+
+**RULED 2026-08-03 (futurekill): use SR2's own patrol stats**, rather than
+converting the SR1 Street Cop contact the book points at. SR2 core **p.205**
+prints a **CORPORATE SECURITY GUARD** archetype:
+
+```
+Body 4  Quickness 3  Strength 3  Charisma 2  Intelligence 2  Willpower 2
+Essence 6  Reaction 2        Professional Rating: 2
+Skills: Etiquette (Corporate) 2, Firearms 3, Interrogation 2, Unarmed Combat 3
+```
+
+**This is identical to Queen Euphoria's own printed Pacific Towers Security Guard
+(p.15)** — the same eight attributes, and the same skills except SR2 adds
+Interrogation 2. That is a genuine cross-check rather than a convenience: the
+SR1 adventure and the SR2 core are printing the same archetype under two names,
+which independently corroborates the p.15 transcription above and supplies the
+**Professional Rating** that every QE block omits.
+
+So this is not really a substitution — we are citing SR2 directly instead of
+converting anything. The officers keep their **printed p.14 gear** on top:
+Browning Max-Power (`4M2`), stun baton (`5L2` Stun + Special), Armor Vest (2/1).
 
 ### p.16 — three vehicles, **none of which exist in the module**
 
@@ -405,11 +448,66 @@ The module ships no vehicle actors at all.
   Car at the same value"* — so the pilot reuses the p.19 block with Car 3
   swapped to Rotor 3.
 
-**Open conversion question — vehicle armour.** p.283 tells you to *"multiply the
-Vehicle Armor Ratings listed for the vehicles in the Rigger Black Book by 3"*
-for SRII compatibility. These are SR1 adventure vehicles on the same scale, so
-Armor 1 probably becomes 3 — but the appendix names the RBB specifically, not
-adventures. **Needs a GM ruling before the vehicles are built.**
+**Vehicle armour — RULED 2026-08-03 (futurekill): apply the conversion rules.**
+*"We are building this for Shadowrun 2e so all those updates apply."* Core p.283,
+re-verified at 300 dpi because it is a number that ships:
+
+> Multiply the Vehicle Armor Ratings listed for the vehicles in the **Rigger
+> Black Book** by **3** to make the values compatible with the **SRII** rules.
+> Also, divide the armor cost by 3, and multiply the maximum allowed by 3.
+
+All three QE vehicles print **Armor 1**, so each is built at **Armor 3**. The
+Wasp's LMG (`5S3`) folds by method B to **8S**.
+
+### The audit compared numbers, not playability — and missed a shipped bug
+
+Every finding above is "does the stat on the sheet match the stat on the page".
+That question has an accurate answer for Craft: **CLEAN**. It is also the wrong
+question, and asking only it let a real defect ship.
+
+**Craft is an `npc` carrying eight spells, and the NPC sheet cannot render
+spells.** Verified in the system repo:
+
+- `module/sheets/actor-sheet.mjs:1137` — the NPC sheet's `_prepareContext`
+  computes `context.spells = actor.items.filter(i => i.type === "spell")`;
+- `templates/actor/npc-sheet.hbs` — **never references `spells`.** The template
+  has exactly two item sections, Skills and Weapons.
+- `module/sheets/actor-sheet.mjs:1113` — the NPC sheet's action map has no
+  `castSpell` entry, so even a hand-added row would not roll.
+
+So the context is prepared and then thrown away. Someone intended this section
+and it never got written. The consequence: **the adventure's villain has eight
+invisible, unrollable spells**, and his Sleep spell — the one the plot turns on —
+cannot be cast from his sheet.
+
+This applies to three of the cast, not one:
+
+| actor | spells | currently |
+|---|---|---|
+| **Craft** (p.62) | 8 | `npc` — spells invisible |
+| **Stone** (p.21) | 9 + 3 bound elementals | `npc`, and statted as a generic thug |
+| **Pride** (p.26) | 6 | missing entirely |
+
+`PLAN-actor-rebuild.md` Step 5 noticed half of this — it concluded *"Stone must
+be a `character`, not an `npc`"* — but treated it as a fact about Stone rather
+than about the sheet, so it neither caught Craft (already shipped, already
+"CLEAN") nor Pride.
+
+**The fix belongs in the system, not in this module.** Making magician NPCs
+`character` actors is a per-actor workaround that every content module would
+have to repeat forever, and the plan itself lists the costs: `chargen.inProgress`
+defaults `true`, and `professionalRating` / `threatRating` are NPC-only and get
+stripped. Adding the missing Spells section to `npc-sheet.hbs` plus
+`castSpell: onCastSpell` to the NPC action map fixes it once, for every module,
+and lets all three stay NPCs with their Professional and Threat Ratings intact.
+
+`onCastSpell` is already actor-type-agnostic (it reads `this.document.items`,
+then `promptSpellOptions` → `item.roll`), and `NPCData` already declares
+`magic{value,max,tradition,type,totem}` and `dicePools.magic`. One detail worth
+keeping: `NPCData.prepareDerivedData` **derives the combat pool but never the
+magic pool**, so whatever the generator writes to `dicePools.magic` survives —
+which is what we want, because the printed blocks give the pool outright
+(Stone **Magic 7**, Pride **Magic 4**).
 
 ## Transcription complete
 
