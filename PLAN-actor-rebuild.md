@@ -229,11 +229,27 @@ Beyond "stats match the data file":
 
 ## Risks / open questions
 
-1. **Vehicle armour — BLOCKING.** p.283 says triple RBB vehicle armour for SRII
-   but names the RBB, not adventures. Armor 1 → 3 is likely right; it is
-   futurekill's ruling.
-2. **Lone Star attributes are not printed** — the book defers to the SR1 core
-   "Street Cop Contact". Convert that archetype or use SR2 patrol stats? Ruling.
+1. ~~Vehicle armour~~ — **RULED (futurekill, 2026-08-02): apply the conversion
+   rules; we are building for SR2, so all the updates apply.** Core p.283,
+   verified at 300 dpi: *"Multiply the Vehicle Armor Ratings… by 3 to make the
+   values compatible with the SRII rules. Also, divide the armor cost by 3, and
+   multiply the maximum allowed by 3."* All three QE vehicles print Armor 1, so
+   each becomes **Armor 3**.
+2. ~~Lone Star attributes~~ — **RULED: use SR2's own stats.** SR2 core p.205
+   prints a **Corporate Security Guard** archetype: Body 4, Quickness 3,
+   Strength 3, Charisma 2, Intelligence 2, Willpower 2, Essence 6, Reaction 2,
+   **Professional Rating 2**; Etiquette (Corporate) 2, Firearms 3,
+   Interrogation 2, Unarmed Combat 3.
+
+   **This is identical to QE's own printed Pacific Towers Security Guard
+   (p.15)** — same eight attributes, same skills except SR2 adds Interrogation 2.
+   That is a strong cross-check: the SR1 adventure and the SR2 core are printing
+   the same archetype, so using it for the Lone Star officers is not a
+   substitution so much as the same block by its SR2 name. It also supplies the
+   **Professional Rating**, which the QE blocks omit.
+
+   Lone Star officers keep their **printed p.14 gear** (Browning Max-Power 4M2,
+   stun baton 5L2 Stun + Special, Armor Vest 2/1) on top of these attributes.
 3. **Five** new portraits needed (Pride, Burroughs, The Strice Boys, and the two
    Force-5 Soldiers); the three elementals reuse the `sr2e` system's existing
    spirit portraits. Image-gen credits available since 2026-08-01.
