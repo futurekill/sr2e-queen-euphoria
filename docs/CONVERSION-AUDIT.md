@@ -271,7 +271,50 @@ Fix: rebuild all of them from the printed tables, at the printed Forces, and
 add the Worker's Force-1 block. Note the Attacks codes are SR1 three-digit
 (6M2 / 7M2 / 8M2 / 9M2) so they need the p.283 treatment — no SR2 "comparable
 item" exists for an ant's mandibles, so method **B** (fold the staging digit):
-6M2→8M, 7M2→9M, 8M2→10M, 9M2→11M. Confirm each on its render first.
+6M2→8M, 7M2→9M, 8M2→10M, 9M2→11M.
+
+#### The printed tables, transcribed from 300 dpi renders
+
+All five combat blocks, read off the page. `E` is Essence, `(n)A` as printed;
+`R x(y)` is Reaction with its augmented/astral value in brackets.
+
+| block | B | Q | S | C | I | W | E | M | R | Armor |
+|-------|---|---|---|---|---|---|---|---|---|-------|
+| Flesh Worker (F1) | 2 | 2 | 2 | — | 1 | 1 | (1)A | — | 1 | None |
+| Flesh Soldiers (F3) | 6 | 6 | 6 | — | 1 | 2 | (3)A | — | 3 | None |
+| Flesh Soldiers (F5) | 8 | 8 | 8 | — | 3 | 2 | (5)A | — | 5 | None |
+| True Soldiers (F3) | 4 | 7 | 7 | — | 1 | 2 | (3)A | — | 6 (11) | **3/3** |
+| True Soldiers (F5) | 6 | 9 | 9 | — | 3 | 2 | (5)A | — | 10 (15) | **5/5** |
+
+| block | Attacks | Skills | Powers | Weaknesses |
+|-------|---------|--------|--------|------------|
+| Flesh Worker (F1) | **None** | — | Enhanced Senses (Smell) | Reduced Senses (Sight) |
+| Flesh Soldiers (F3) | 6M2 Physical | Unarmed Combat 3 | Enh. Senses (Smell), Pain Resistance | **None** |
+| Flesh Soldiers (F5) | 8M2 Physical | Unarmed Combat 3 | Enh. Senses (Smell), Pain Resistance | **None** |
+| True Soldiers (F3) | 7M2 Physical + Special | — | Enh. Senses (Smell), Manifestation, **Paralyzing Touch, Venom** | Reduced Senses (Sight), Vulnerability (Insecticide) |
+| True Soldiers (F5) | 9M2 Physical + Special | — | as above | as above |
+
+#### Three more inherited assumptions that the printed stats contradict
+
+QE's own `CLAUDE.md` carries modelling instructions taken from Double Exposure's
+ants. It warns "DE is a reference, not a template to clone" — and then clones it.
+The printed blocks disagree on all three:
+
+1. **"armor 2×Force"** — the book prints **3/3 at Force 3 and 5/5 at Force 5**,
+   i.e. Force ×1, and only on the True Forms. Flesh Forms have **no armour at
+   all**. Doubling would make every True Form twice as tough as printed.
+2. **"Immunity to Normal Weapons vs ranged"** — this is **not one of the printed
+   Powers**. The complete list is Enhanced Senses (Smell), Pain Resistance,
+   Manifestation, Paralyzing Touch and Venom. Immunity would make the Hive
+   near-unkillable by the party's guns, which is not what the adventure prints.
+3. **"melee attackers use Willpower not weapon skill"** — the Flesh Soldiers
+   print **Unarmed Combat 3**, an ordinary skill.
+
+What the assumptions got *right*: astral initiative **+5**, which matches the
+printed True Form Reaction 6 (11) and 10 (15).
+
+Two Powers were also lost to OCR truncation and only appear on the render:
+**Paralyzing Touch** and **Venom**. Both are mechanically significant.
 
 ### Remaining pages — attribute rows still to transcribe
 

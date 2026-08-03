@@ -47,15 +47,23 @@ derivable directly from the floorplans — count grid squares, don't estimate.
   mechanically-opposed recurring NPCs — bodyguards, Osprey, Stone, security,
   Lone Star). Craft's actor type (npc vs character) is decided by an in-Foundry
   capability test (does the sheet roll his spells/drain?) before generation.
-- **Insect Hive** — re-derived from QE p.54–55, NOT DE's ants: **Soldier** and
-  **Worker** ant spirits only (the Queen is a non-combat set-piece), **True Form**
-  and **Flesh Form** variants; astral init **+5** (not DE's +10); armor **2×Force**;
-  Immunity to Normal Weapons vs ranged; melee attackers use **Willpower** not
-  weapon skill. Model as `npc` + `race:"spirit"`. Two schema traps: `essence` is
-  `max:6` (store true Force-Essence in the bio, keep the field ≤6); baking the
-  manifest/astral init bonus into `reaction` also inflates dodge/defense — prefer
-  an init-only field, else keep Reaction true and note the bonus. Mark Immunity /
-  ranged-armor / Willpower-melee as **MANUAL** GM rules in the bio + journal.
+- **Insect Hive** — **the book prints full SR1 critter tables; transcribe them.**
+  An earlier note here claimed QE gives only rules and no attribute table, and
+  told you to Force-scale DE's ants instead. That is wrong and it produced four
+  invented actors. The printed blocks (all verified at 300 dpi) are:
+  **Flesh Worker F1** (p.47), **Flesh Soldiers F3/F5** (p.49/50),
+  **True Soldiers F3/F5** (p.51/52), plus a singular True Soldier F3 (p.38).
+  Full tables in `docs/CONVERSION-AUDIT.md`. Three DE assumptions the printed
+  stats contradict: armour is **Force ×1 and only on True Forms** (not 2×Force,
+  and Flesh Forms have none); **Immunity to Normal Weapons is NOT a printed
+  power**; and the Flesh Soldiers use an ordinary **Unarmed Combat 3**, not
+  Willpower. Astral init **+5** was right. Do not lose **Paralyzing Touch** and
+  **Venom** — OCR truncates the Powers line, so read the render. The
+  **Weaknesses** (Reduced Senses (Sight), Vulnerability to insecticide) are the
+  intended route to winning the climax and must reach the sheet.
+  Two schema traps remain: `essence` is `max:6` (keep the field ≤6 and put the
+  true Force-Essence in the bio); baking the astral init bonus into `reaction`
+  also inflates dodge/defense — prefer an init-only field.
 - **Strice Matrix** — convert the printed system map (QE p.34) to **one** `host`
   actor (multi-node hosts are unsupported) at one representative Security Code;
   copy each printed IC rating directly (Trace-and-Dump 3, Tar Pit 4, Barrier 3/4,
