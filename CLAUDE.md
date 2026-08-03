@@ -39,14 +39,36 @@ layer is itself OCR-derived and mangles digits — observed `"t 5 (clip)"` for
 `15 (clip)` and `"t ,000 nuyen"` for `1,000 nuyen`. Prose is reliable; digits
 are not. `_work/` (git-ignored, never shipped) holds the page renders.
 
+**And it truncates.** A `pdftotext` sweep returned Euphoria's gear as *"she wears
+a Long Coat"* with the `(4/2)` silently dropped onto the next line, which read as
+invented armour until the render showed it printed. Earlier, `Survival Knife
+[6L3]` came through as `6L3J` and a `\b`-anchored scan skipped two whole pages.
+Both were **false findings** — the sweep said something was wrong when it was
+fine. So: the text layer is for *locating* a line and never for *trusting* one,
+and that cuts both ways. Render before concluding something is wrong, not only
+before concluding it is right.
+
 **The printed maps carry a `□ = 1 meter` scale legend**, so scene dimensions are
 derivable directly from the floorplans — count grid squares, don't estimate.
 
 ## Authoring conventions
 - **Cast** are `npc` actors (principals: Craft, Euphoria, Carrone; plus
-  mechanically-opposed recurring NPCs — bodyguards, Osprey, Stone, security,
-  Lone Star). Craft's actor type (npc vs character) is decided by an in-Foundry
-  capability test (does the sheet roll his spells/drain?) before generation.
+  mechanically-opposed recurring NPCs — Knight Errant and Pacific Towers guards,
+  Osprey, Stone, Pride, the Strice Boys, Burroughs, Lone Star).
+  **The npc-vs-character question is settled: everyone stays `npc`.** It was open
+  because the NPC sheet rendered no spells, which would have made Craft, Stone and
+  Pride unplayable — Craft shipped that way for two releases with eight invisible,
+  uncastable spells. Fixed in the system (sr2e 0.88.1+) rather than per-actor:
+  `npc-sheet.hbs` now has Spells and Foci sections and the NPC action map has
+  `castSpell` + `toggleSustain`. Keeping them as NPCs preserves
+  `professionalRating` and `threatRating`, which are NPC-only and would be
+  stripped by a `character` conversion.
+  Consequence to remember: **`NPCData` has no `boundSpirits`**, so Stone's three
+  bound elementals are standalone `spirit` actors with the assignment recorded in
+  prose on both sides — do not fabricate a link the model cannot hold.
+  Also: `NPCData.prepareDerivedData` derives the **combat** pool but leaves
+  `dicePools.magic` alone, so a transcribed Magic Pool survives exactly. Use the
+  printed number (Stone 7, Pride 4) rather than deriving one.
 - **Insect Hive** — **the book prints full SR1 critter tables; transcribe them.**
   An earlier note here claimed QE gives only rules and no attribute table, and
   told you to Force-scale DE's ants instead. That is wrong and it produced four
@@ -61,9 +83,13 @@ derivable directly from the floorplans — count grid squares, don't estimate.
   **Venom** — OCR truncates the Powers line, so read the render. The
   **Weaknesses** (Reduced Senses (Sight), Vulnerability to insecticide) are the
   intended route to winning the climax and must reach the sheet.
-  Two schema traps remain: `essence` is `max:6` (keep the field ≤6 and put the
-  true Force-Essence in the bio); baking the astral init bonus into `reaction`
-  also inflates dodge/defense — prefer an init-only field.
+  One schema trap remains: baking the astral init bonus into `reaction` also
+  inflates dodge/defense — prefer an init-only field.
+  **The Essence note used to be wrong and is now corrected:** store the *exact*
+  printed number. The printed values are 1, 3 and 5, all of which fit under
+  `max: 6` with no approximation; only the `A` qualifier is unrepresentable and
+  that goes in the bio. The old "keep the field ≤6" wording implied the numbers
+  themselves needed rounding, which they do not.
 - **Strice Matrix** — convert the printed system map (QE p.34) to **one** `host`
   actor (multi-node hosts are unsupported) at one representative Security Code;
   copy each printed IC rating directly (Trace-and-Dump 3, Tar Pit 4, Barrier 3/4,
