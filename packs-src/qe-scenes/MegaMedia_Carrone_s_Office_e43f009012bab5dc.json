@@ -1,15 +1,15 @@
 {
-  "_id": "00dc26593c511f39",
-  "name": "Magic Crafts Shop",
+  "_id": "e43f009012bab5dc",
+  "name": "MegaMedia — Carrone's Office",
   "navigation": true,
   "navName": "",
   "active": false,
-  "width": 1600,
-  "height": 1200,
+  "width": 1200,
+  "height": 900,
   "padding": 0.25,
   "backgroundColor": "#15151f",
   "background": {
-    "src": "modules/sr2e-queen-euphoria/assets/scenes/Magic_Crafts_Shop.png",
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/megamedia-office.webp",
     "anchorX": 0.5,
     "anchorY": 0.5,
     "offsetX": 0,
@@ -57,7 +57,18 @@
   "walls": [],
   "folder": null,
   "sort": 0,
-  "flags": {},
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "invented",
+      "folio": null,
+      "metres": {
+        "w": 12,
+        "h": 9
+      },
+      "measuredBy": "n/a — no floorplan is printed for this location",
+      "rooms": "Reception, corridor, Carrone's corner office with desk and window wall, small meeting area."
+    }
+  },
   "_stats": {
     "coreVersion": "13.351",
     "systemId": "sr2e",
@@ -72,5 +83,6 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!scenes!00dc26593c511f39"
+  "_key": "!scenes!e43f009012bab5dc",
+  "description": "<p><strong>GM-invented layout.</strong> Queen Euphoria plays scenes at MegaMedia but prints no floorplan for it, so this map is original and carries no authority — resize or replace it freely.</p><p>Where <strong>Robert Carrone</strong> hires the runners.</p><p><strong>Rooms:</strong> Reception, corridor, Carrone's corner office with desk and window wall, small meeting area.</p><p><em><strong>GM-invented layout.</strong> The adventure plays scenes at this location but prints no floorplan for it, so nothing here carries the book's authority. Resize or replace freely.</em></p>"
 }

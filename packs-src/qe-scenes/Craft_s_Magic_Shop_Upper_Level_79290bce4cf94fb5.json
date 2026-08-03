@@ -1,15 +1,15 @@
 {
-  "_id": "b5945ccec665af5c",
-  "name": "Pacific Towers",
+  "_id": "79290bce4cf94fb5",
+  "name": "Craft's Magic Shop — Upper Level",
   "navigation": true,
   "navName": "",
   "active": false,
-  "width": 1600,
-  "height": 1200,
+  "width": 1700,
+  "height": 600,
   "padding": 0.25,
   "backgroundColor": "#15151f",
   "background": {
-    "src": "modules/sr2e-queen-euphoria/assets/scenes/Pacific_Towers.png",
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/magic-shop-upper.webp",
     "anchorX": 0.5,
     "anchorY": 0.5,
     "offsetX": 0,
@@ -57,7 +57,18 @@
   "walls": [],
   "folder": null,
   "sort": 0,
-  "flags": {},
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "printed",
+      "folio": 40,
+      "metres": {
+        "w": 17,
+        "h": 6
+      },
+      "measuredBy": "grid period (41 px, both axes)",
+      "rooms": "Main store area (1)."
+    }
+  },
   "_stats": {
     "coreVersion": "13.351",
     "systemId": "sr2e",
@@ -72,5 +83,6 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!scenes!b5945ccec665af5c"
+  "_key": "!scenes!79290bce4cf94fb5",
+  "description": "<p>The shopfront. Fetish material worth about <strong>2,500¥</strong> remains, and it is obvious at a glance the store has not been used for some time.</p><p>Two entrances — the main door and a back door to the alley. Both are closed and locked at <strong>Barrier Rating 5</strong>. The alley door's lock is in better condition and shows evidence of recent use.</p><p><strong>Rooms:</strong> Main store area (1).</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.40. Measured 17 × 6 m by grid period (41 px, both axes) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
 }

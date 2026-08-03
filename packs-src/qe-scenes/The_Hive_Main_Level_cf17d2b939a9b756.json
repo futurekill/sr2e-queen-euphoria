@@ -1,0 +1,88 @@
+{
+  "_id": "cf17d2b939a9b756",
+  "name": "The Hive — Main Level",
+  "navigation": true,
+  "navName": "",
+  "active": false,
+  "width": 2400,
+  "height": 1200,
+  "padding": 0.25,
+  "backgroundColor": "#15151f",
+  "background": {
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/hive-main-level.webp",
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "fit": "fill",
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff",
+    "alphaThreshold": 0
+  },
+  "foreground": null,
+  "foregroundElevation": null,
+  "thumb": null,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 1,
+    "units": "m"
+  },
+  "initial": null,
+  "tokenVision": false,
+  "fog": {
+    "exploration": false,
+    "reset": 0,
+    "overlay": null
+  },
+  "globalLight": {
+    "enabled": true
+  },
+  "darkness": 0,
+  "environment": {},
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "regions": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "printed",
+      "folio": 44,
+      "metres": {
+        "w": 24,
+        "h": 12
+      },
+      "measuredBy": "grid period (43 px, both axes); bounding box of an L-shaped plan",
+      "rooms": "Main area with disused conventional food-production equipment (dusty, poorly maintained), loading dock, freight elevator, small group of empty abandoned offices, stairway up to the roof and down to the Lower Level."
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!scenes!cf17d2b939a9b756",
+  "description": "<p>The Amber Gel facility. Barely used by the Hive and showing only general activity at the loading dock — trucks from Strice Foods load each morning, and the drums are already waiting for them. The only person the truckers ever see is <strong>Craft</strong>.</p><p>Lighting is whatever filters through the high green-tinted windows; the power is on, so the runners can switch the fluorescents on if they want. <strong>The stairway is unlit.</strong></p><p><strong>None of the doors are locked</strong> and all are easily operable. The freight elevator is conventional and fully operational, though its control panel shows physical damage.</p><p><strong>Rooms:</strong> Main area with disused conventional food-production equipment (dusty, poorly maintained), loading dock, freight elevator, small group of empty abandoned offices, stairway up to the roof and down to the Lower Level.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.44. Measured 24 × 12 m by grid period (43 px, both axes); bounding box of an L-shaped plan — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+}

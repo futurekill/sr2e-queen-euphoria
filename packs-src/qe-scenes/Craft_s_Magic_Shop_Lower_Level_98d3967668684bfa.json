@@ -1,0 +1,88 @@
+{
+  "_id": "98d3967668684bfa",
+  "name": "Craft's Magic Shop — Lower Level",
+  "navigation": true,
+  "navName": "",
+  "active": false,
+  "width": 1700,
+  "height": 600,
+  "padding": 0.25,
+  "backgroundColor": "#15151f",
+  "background": {
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/magic-shop-lower.webp",
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "fit": "fill",
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff",
+    "alphaThreshold": 0
+  },
+  "foreground": null,
+  "foregroundElevation": null,
+  "thumb": null,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 1,
+    "units": "m"
+  },
+  "initial": null,
+  "tokenVision": false,
+  "fog": {
+    "exploration": false,
+    "reset": 0,
+    "overlay": null
+  },
+  "globalLight": {
+    "enabled": true
+  },
+  "darkness": 0,
+  "environment": {},
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "regions": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "printed",
+      "folio": 40,
+      "metres": {
+        "w": 17,
+        "h": 6
+      },
+      "measuredBy": "grid period (41 px, both axes — same pitch as the upper level)",
+      "rooms": "Living area (2), bathroom (3), bedroom (4)."
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!scenes!98d3967668684bfa",
+  "description": "<p>Where Craft lived before the Hive, and still uses as a private escape when he wants to be human for a while.</p><p><strong>The living area</strong> shows use in the past week: trideo, LiveSound audio, a simsense player and chips that turn out to be mainly Euphoria sims. A crude map of the Amber Gel facility — <strong>including its location</strong> — is here. Empty Amber Gel containers everywhere.</p><p><strong>The bedroom (4) is the source of the stench, and it is a crime scene.</strong> Walls covered in two- and three-dimensional photos and illustrations of Euphoria, many blood-splattered. Judging by the blood, at least one person and probably more have been killed here. Facsimiles of clothing Euphoria wore in her sims, wigs and hairpieces in her styles.</p><p>The bathroom has not been cleaned in months; hundreds of roaches scatter when the lights come on.</p><p><strong>Rooms:</strong> Living area (2), bathroom (3), bedroom (4).</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.40. Measured 17 × 6 m by grid period (41 px, both axes — same pitch as the upper level) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+}

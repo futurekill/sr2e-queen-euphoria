@@ -1,0 +1,88 @@
+{
+  "_id": "2749f185b382f009",
+  "name": "Royal Meadows — Flat",
+  "navigation": true,
+  "navName": "",
+  "active": false,
+  "width": 800,
+  "height": 300,
+  "padding": 0.25,
+  "backgroundColor": "#15151f",
+  "background": {
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/royal-meadows-flat.webp",
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "fit": "fill",
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff",
+    "alphaThreshold": 0
+  },
+  "foreground": null,
+  "foregroundElevation": null,
+  "thumb": null,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 1,
+    "units": "m"
+  },
+  "initial": null,
+  "tokenVision": false,
+  "fog": {
+    "exploration": false,
+    "reset": 0,
+    "overlay": null
+  },
+  "globalLight": {
+    "enabled": true
+  },
+  "darkness": 0,
+  "environment": {},
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "regions": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "printed",
+      "folio": 12,
+      "metres": {
+        "w": 8,
+        "h": 3
+      },
+      "measuredBy": "legend square (128 x 129 px — no grid is drawn on this plan)",
+      "rooms": "Living room / kitchenette (two plastic-covered chairs, couch, imitation-wood tables, microwave, refrigerator, cupboards, sink), bedroom (two double beds squeezed side by side, imitation-wood dresser, plastic mirror), closet, bathroom (shower stall, toilet, sink)."
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!scenes!2749f185b382f009",
+  "description": "<p><strong>Where Euphoria is held.</strong> A cheap rented flat supplied by Ludivenko — dehydrated food in the cupboards, women's clothing still in plastic wrap in the dresser and closet.</p><p>Only 24 m², and that is correct: the book says the units are packed with people and crowded with extra beds. Play it cramped.</p><p>Details that matter if the runners search: one chair will break if sat on, the refrigerator's freezer does not work, the sink's water filters are foul, and the hot water faucet does not work.</p><p>If the runners annoy the manager it costs about <strong>100¥</strong> to calm him down.</p><p><strong>Rooms:</strong> Living room / kitchenette (two plastic-covered chairs, couch, imitation-wood tables, microwave, refrigerator, cupboards, sink), bedroom (two double beds squeezed side by side, imitation-wood dresser, plastic mirror), closet, bathroom (shower stall, toilet, sink).</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.12. Measured 8 × 3 m by legend square (128 x 129 px — no grid is drawn on this plan) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+}

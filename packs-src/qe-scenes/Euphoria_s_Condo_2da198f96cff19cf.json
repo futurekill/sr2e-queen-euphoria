@@ -1,0 +1,88 @@
+{
+  "_id": "2da198f96cff19cf",
+  "name": "Euphoria's Condo",
+  "navigation": true,
+  "navName": "",
+  "active": false,
+  "width": 2500,
+  "height": 2400,
+  "padding": 0.25,
+  "backgroundColor": "#15151f",
+  "background": {
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/euphorias-condo.webp",
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "fit": "fill",
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff",
+    "alphaThreshold": 0
+  },
+  "foreground": null,
+  "foregroundElevation": null,
+  "thumb": null,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 1,
+    "units": "m"
+  },
+  "initial": null,
+  "tokenVision": false,
+  "fog": {
+    "exploration": false,
+    "reset": 0,
+    "overlay": null
+  },
+  "globalLight": {
+    "enabled": true
+  },
+  "darkness": 0,
+  "environment": {},
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "regions": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "printed",
+      "folio": 18,
+      "metres": {
+        "w": 25,
+        "h": 24
+      },
+      "measuredBy": "grid period (25 px, both axes)",
+      "rooms": "Entrance hall (Knight Errant guard posted), foyer with security station, living room (largest, entertainment centre, telecom desk, three more guards), recording studio, enclosed greenhouse balcony, workout room, closet, bathroom, kitchen, dining room, Osprey's bedroom, spare bedroom (Stone's), master bedroom, master bathroom. One elevator."
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!scenes!2da198f96cff19cf",
+  "description": "<p>Euphoria's home, and where she is taken. The condo doors have <strong>Barrier Rating 5</strong> and need an Electronics (4) Test to bypass, base time two minutes.</p><p>The greenhouse balcony is enclosed in clear impact plastic at <strong>Barrier Rating 6</strong>.</p><p><strong>Rooms:</strong> Entrance hall (Knight Errant guard posted), foyer with security station, living room (largest, entertainment centre, telecom desk, three more guards), recording studio, enclosed greenhouse balcony, workout room, closet, bathroom, kitchen, dining room, Osprey's bedroom, spare bedroom (Stone's), master bedroom, master bathroom. One elevator.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.18. Measured 25 × 24 m by grid period (25 px, both axes) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+}

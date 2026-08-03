@@ -1,0 +1,88 @@
+{
+  "_id": "81d72ca327baf377",
+  "name": "The Hive — Lower Level",
+  "navigation": true,
+  "navName": "",
+  "active": false,
+  "width": 2300,
+  "height": 1200,
+  "padding": 0.25,
+  "backgroundColor": "#15151f",
+  "background": {
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/hive-lower-level.webp",
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "fit": "fill",
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff",
+    "alphaThreshold": 0
+  },
+  "foreground": null,
+  "foregroundElevation": null,
+  "thumb": null,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 1,
+    "units": "m"
+  },
+  "initial": null,
+  "tokenVision": true,
+  "fog": {
+    "exploration": true,
+    "reset": 0,
+    "overlay": null
+  },
+  "globalLight": {
+    "enabled": false
+  },
+  "darkness": 1,
+  "environment": {},
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "regions": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "printed",
+      "folio": 45,
+      "metres": {
+        "w": 23,
+        "h": 12
+      },
+      "measuredBy": "legend square (1 m = 44.5 px), cross-checked against the drawn grid pitch of 43 px",
+      "rooms": "16 rooms. Room 1 elevator arrival; Room 8 stairway exit; Rooms 3, 14 and 15 are Worker rooms; Room 16 is the Hive Room. Rooms 2, 4-7 and 9-13 are as Room 1."
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!scenes!81d72ca327baf377",
+  "description": "<p><strong>The climax.</strong> Dark — neither light nor power. The air is stale and reeks sweet and pungent. Anyone who notices such things will realise there are no normal insects or rodents on this level.</p><p>Rooms are dirty and debris-filled, some with crates of basic soy foods, full or waiting to be filled.</p><p><strong>Every wall here is Barrier Rating 3</strong>, and the book is explicit that Soldiers making an all-out attack <em>\"will use the thin walls to their advantage\"</em> — build the walls breakable, not as hard scene boundaries.</p><p><strong>Printed occupants:</strong> Room 3 — six Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 8 — two Flesh Form Workers (F1). Room 14 — four Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 15 — five Flesh Form Workers (F1) and a lone Flesh Form Soldier (<strong>F5</strong>). Room 16 — the Hive Room.</p><p><strong>Rooms:</strong> 16 rooms. Room 1 elevator arrival; Room 8 stairway exit; Rooms 3, 14 and 15 are Worker rooms; Room 16 is the Hive Room. Rooms 2, 4-7 and 9-13 are as Room 1.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.45. Measured 23 × 12 m by legend square (1 m = 44.5 px), cross-checked against the drawn grid pitch of 43 px — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+}

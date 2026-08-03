@@ -7,12 +7,26 @@ background is not a map, it is a picture of one.
 
 ## How these were measured
 
-Not by eye. Each floorplan is cropped to the grid block, then the dark-pixel
-profile along each axis is autocorrelated to recover the grid period in pixels;
-block width ÷ period = metres. **The check that it worked is that the X and Y
-periods come out equal** — the printed grid is square, so an axis mismatch means
-the crop caught a caption or a page rule instead of the map. Every measurement
-below passed that check.
+Not by eye, and by **two different methods**, because the plans are not drawn
+consistently.
+
+**Method 1 — grid period.** Crop to the drawn grid, autocorrelate the dark-pixel
+profile on each axis to recover the grid pitch, divide the block size by it. The
+check that it worked is that the **X and Y periods come out equal**: the printed
+grid is square, so an axis mismatch means the crop caught a caption or page rule
+rather than the map.
+
+**Method 2 — the legend square.** Two plans defeated method 1. Royal Meadows has
+**no drawn grid at all** — it is a clean furnished plan whose only scale
+reference is the legend — and the Hive Lower Level has large open areas with no
+vertical hatch, which corrupts the X period. For those, measure the `□` legend
+square itself and use it as the metre stick. The check here is that the legend
+comes out square: Royal Meadows' measured 128 × 129 px, within 1 px.
+
+Where both methods apply they agree — the Hive Lower Level gives 12.1 m by legend
+and 12.5 m by grid period on the Y axis. And the two Hive levels independently
+measure 24 × 12 and 23 × 12: the same building, which is the strongest
+confirmation available that the method is sound.
 
 Where the printed map is an irregular shape (the Hive), the figure is the
 **bounding box**, which is what a Foundry scene needs.
@@ -54,21 +68,32 @@ presented as if derived from a floorplan.
 | **Magic Shop — Lower Level** | 40 | 17 × 6 | 1700 × 600 | Rooms 2–4: living area, bathroom, bedroom (the blood-splattered one). |
 | **Magic Shop — Upper Level** | 40 | 17 × 6 | 1700 × 600 | Room 1, the main store area. Same grid pitch as the lower level. |
 | **The Hive — Main Level** | 44 | 24 × 12 | 2400 × 1200 | Bounding box of an L-shaped plan. Loading dock, Amber Gel processing equipment, freight elevator, small office group, stairway to roof and down. |
+| **The Hive — Lower Level** | 45 | 23 × 12 | 2300 × 1200 | 16 rooms, irregular plan. The climax. Elevator bottom-right; **Room 16 is the Hive Room**. Measured by legend (1 m = 44.5 px), cross-checked against the drawn grid pitch of 43 px. |
+| **Royal Meadows Flat** | 12 | 8 × 3 | 800 × 300 | Living room/kitchenette, bedroom (two double beds crammed side by side), closet, bathroom. **No drawn grid** — measured off the legend square. 24 m² total, which is not an error: the text says these rented units are packed with people and crowded with extra beds. |
 
-## Not yet measured
+**All seven printed floorplans are now measured.** Nothing is outstanding.
 
-| scene | folio | why |
-|---|---|---|
-| **Royal Meadows Flat** | 12 | The automatic grid-block finder failed on both of these — they need a visual crop the way the five above were done. Straightforward, just not yet done. |
-| **The Hive — Lower Level** | 45 | as above |
+### The Hive Lower Level is half the encounter journal already
 
-The Lower Level is worth doing carefully: it is the climax, and **folio 45 prints
-the insect placements room by room** — Room 3 holds six Flesh Form Workers
-(Force 1) and two Flesh Form Soldiers (Force 3), Room 8 two Workers, Room 14 four
-Workers and two Soldiers, with rooms 4–7 and 9–13 repeating Room 1. Those are
-exactly the Forces the rebuilt actors now use, which is a nice independent
-confirmation that the roster is right. The rooms have **Barrier Rating 3** walls
-and the Soldiers are explicitly said to attack *through* them.
+Folio 45 prints the insect placements **room by room**, and the Forces it names
+are exactly the ones the rebuilt actors carry — independent confirmation that the
+roster is right:
+
+| room | occupants |
+|---|---|
+| 1 | Elevator unloads here. Empty unless the Hive is alerted. |
+| 2, 4–7, 9–13 | See Room 1. |
+| 3 | Six **Flesh Form Workers (F1)**, two **Flesh Form Soldiers (F3)** |
+| 8 | Stairway exit. Two **Flesh Form Workers (F1)** |
+| 14 | Four **Flesh Form Workers (F1)**, two **Flesh Form Soldiers (F3)** |
+| 15 | Five **Flesh Form Workers (F1)**, one **Flesh Form Soldier (F5)** |
+| 16 | **The Hive Room** — the climax |
+
+Two mechanics to carry onto the scene: the Lower Level is **fully dark, with no
+power** — no light source at all — and **every internal wall is Barrier Rating 3**,
+with the book explicitly noting that Soldiers making an all-out attack *"will use
+the thin walls to their advantage"*. Walls should be built breakable, not as
+hard scene boundaries.
 
 ## Art
 

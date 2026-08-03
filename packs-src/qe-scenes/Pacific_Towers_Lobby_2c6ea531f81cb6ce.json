@@ -1,0 +1,88 @@
+{
+  "_id": "2c6ea531f81cb6ce",
+  "name": "Pacific Towers — Lobby",
+  "navigation": true,
+  "navName": "",
+  "active": false,
+  "width": 2700,
+  "height": 2000,
+  "padding": 0.25,
+  "backgroundColor": "#15151f",
+  "background": {
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/pacific-towers-lobby.webp",
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "fit": "fill",
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff",
+    "alphaThreshold": 0
+  },
+  "foreground": null,
+  "foregroundElevation": null,
+  "thumb": null,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 1,
+    "units": "m"
+  },
+  "initial": null,
+  "tokenVision": false,
+  "fog": {
+    "exploration": false,
+    "reset": 0,
+    "overlay": null
+  },
+  "globalLight": {
+    "enabled": true
+  },
+  "darkness": 0,
+  "environment": {},
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "regions": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "printed",
+      "folio": 14,
+      "metres": {
+        "w": 27,
+        "h": 20
+      },
+      "measuredBy": "grid period (31 px, both axes)",
+      "rooms": "Front entrance and guard station (four sets of double doors, computer terminal, PANICBUTTON alarm, camera, visitor-verification speaker), bar, private meeting room, lecture room doubling as a small theatre, store, garden courtyard, storeroom, men's and women's restrooms with sauna and shower, pool. Three elevators."
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!scenes!2c6ea531f81cb6ce",
+  "description": "<p>The building where Euphoria lives. <strong>Four Lone Star officers</strong> respond to the PANICBUTTON within five minutes; the alarm can be cancelled inside five minutes with a memorised code.</p><p>The desk guard keeps a loaded <strong>Enfield AS7 shotgun</strong> behind the desk. The courier on duty will not fight — average human, all 3s.</p><p>Elevators are thumbprint-locked and auto-select the resident's floor; bypassing needs an Electronics (5) Test, base time five minutes.</p><p><strong>Rooms:</strong> Front entrance and guard station (four sets of double doors, computer terminal, PANICBUTTON alarm, camera, visitor-verification speaker), bar, private meeting room, lecture room doubling as a small theatre, store, garden courtyard, storeroom, men's and women's restrooms with sauna and shower, pool. Three elevators.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.14. Measured 27 × 20 m by grid period (31 px, both axes) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+}

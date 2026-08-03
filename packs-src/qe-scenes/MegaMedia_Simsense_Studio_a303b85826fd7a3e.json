@@ -1,15 +1,15 @@
 {
-  "_id": "547b2a3a2dc3de67",
-  "name": "MegaMedia Studio",
+  "_id": "a303b85826fd7a3e",
+  "name": "MegaMedia — Simsense Studio",
   "navigation": true,
   "navName": "",
   "active": false,
-  "width": 1600,
+  "width": 1800,
   "height": 1200,
   "padding": 0.25,
   "backgroundColor": "#15151f",
   "background": {
-    "src": "modules/sr2e-queen-euphoria/assets/scenes/MegaMedia_Studio.png",
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/megamedia-studio.webp",
     "anchorX": 0.5,
     "anchorY": 0.5,
     "offsetX": 0,
@@ -57,7 +57,18 @@
   "walls": [],
   "folder": null,
   "sort": 0,
-  "flags": {},
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "invented",
+      "folio": null,
+      "metres": {
+        "w": 18,
+        "h": 12
+      },
+      "measuredBy": "n/a — no floorplan is printed for this location",
+      "rooms": "Recording floor, control booth behind glass, equipment racks, green room."
+    }
+  },
   "_stats": {
     "coreVersion": "13.351",
     "systemId": "sr2e",
@@ -72,5 +83,6 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!scenes!547b2a3a2dc3de67"
+  "_key": "!scenes!a303b85826fd7a3e",
+  "description": "<p><strong>GM-invented layout.</strong> No floorplan is printed for this location; the map is original and carries no authority.</p><p>Useful for the MegaMedia deal thread — the Strice host holds purchase orders showing <strong>1,280,000¥</strong> for Euphoria's three appearances.</p><p><strong>Rooms:</strong> Recording floor, control booth behind glass, equipment racks, green room.</p><p><em><strong>GM-invented layout.</strong> The adventure plays scenes at this location but prints no floorplan for it, so nothing here carries the book's authority. Resize or replace freely.</em></p>"
 }
