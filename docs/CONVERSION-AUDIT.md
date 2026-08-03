@@ -509,6 +509,35 @@ magic pool**, so whatever the generator writes to `dicePools.magic` survives —
 which is what we want, because the printed blocks give the pool outright
 (Stone **Magic 7**, Pride **Magic 4**).
 
+### Three re-checks while building the manifest — all three came back CLEAN
+
+Building `tools/data/qe-actors.json` meant reading gear lines the original audit
+had summarised rather than transcribed. Three things I suspected were wrong
+turned out to be right, and saying so matters as much as the failures:
+
+- **Craft's spell list** (p.62) was never actually audited — the entry verified
+  attributes, skills and gear and said nothing about spells. Re-read 2026-08-03:
+  **eight spells at the shipped Forces**, matching exactly. Mana Bolt 5, Sleep 5,
+  Clairvoyance 4, Confusion 5, Mask 6, Stimulation 4, Armor 6, Levitate Person 4.
+- **Euphoria's Long Coat (4/2)** (p.63) — I suspected invented armour, because a
+  `pdftotext` sweep returned the sentence truncated at *"she wears a Long Coat"*
+  with no rating. The render shows **(4/2) printed on the next line**. Shipped
+  value correct. Note the condition though: *"In public, she wears a Long Coat"* —
+  she is **unarmoured in her condo**, which is where she is taken.
+- **Carrone's Ceska vz/120 [18 (clip), 3M2] and Armor Clothing** (p.64) — both
+  printed as shipped. I had wrongly assumed his pistol was the guards' Ceska
+  Black Scorpion; they are **two different Ceskas**, and both need method B.
+
+This tightens the audit's central pattern rather than weakening it: everything
+that went through `docs/CAST-STATS.md` is accurate, including the parts nobody
+had checked yet. The errors are all concentrated in the blocks that never did.
+
+**A method note.** The truncated Long Coat line is the second time a text-layer
+sweep has produced a false finding (the first was the `6L3J` bracket). The rule
+that keeps holding: the text layer is fine for *finding* a line and useless for
+*trusting* one. Render before concluding something is wrong, not just before
+concluding it is right.
+
 ## The weapon conversion table — every SR1 code, and which method it used
 
 p.283 sanctions exactly two methods and says each conversion should record which

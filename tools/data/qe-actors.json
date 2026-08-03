@@ -1,0 +1,1155 @@
+{
+  "$schema": "./qe-actors.schema.md",
+  "$comment": [
+    "THE actor manifest for Queen Euphoria. gen-actors.mjs holds no stat literals \u2014",
+    "everything mechanical lives here, with a citation.",
+    "",
+    "source: 'printed' entries carry a `page` (the printed folio, NOT the PDF page \u2014",
+    "the offset is +2) and were read from a 300 dpi render. source: 'modeled' entries",
+    "were derived rather than transcribed and say what from. The validator checks only",
+    "'printed' entries against docs/CONVERSION-AUDIT.md.",
+    "",
+    "_id is PINNED and permanent. Foundry's Adventure import matches on _id alone, so",
+    "a changed id is a DIFFERENT document \u2014 re-importing would duplicate while existing",
+    "tokens stayed bound to the old actor. Renaming an actor changes its display name",
+    "only. Never recycle a retired id.",
+    "",
+    "art is explicit for the same reason: deriving it from the name means renaming an",
+    "actor silently un-wires its portrait."
+  ],
+  "retiredIds": {
+    "e6c0660fae6813ab": "Worker Ant Spirit (True Form, Force 3) \u2014 no such block is printed in the adventure. Retired, never reused. Nothing auto-deletes it from an existing world; see docs/UPGRADING.md."
+  },
+  "armor": {
+    "armorVest": {
+      "name": "Armor Vest",
+      "av": [
+        2,
+        1
+      ]
+    },
+    "armorVestPlates": {
+      "name": "Armor Vest With Plates",
+      "av": [
+        4,
+        3
+      ]
+    },
+    "armorJacket": {
+      "name": "Armor Jacket",
+      "av": [
+        5,
+        3
+      ]
+    },
+    "armorClothing": {
+      "name": "Armor Clothing",
+      "av": [
+        3,
+        0
+      ]
+    },
+    "leatherCraft": {
+      "name": "Real Leather Clothing",
+      "av": [
+        0,
+        2
+      ]
+    },
+    "leatherPride": {
+      "name": "Real Leather Clothing",
+      "av": [
+        2,
+        1
+      ]
+    },
+    "longCoat": {
+      "name": "Long Coat",
+      "av": [
+        4,
+        2
+      ]
+    }
+  },
+  "$armorComment": "Craft's Real Leather Clothing prints 0/2 (p.62) and Pride's prints 2/1 (p.26). Not a transcription error \u2014 kept as two entries so neither is quietly normalised to the other. Euphoria's Long Coat (4/2) is printed at p.63 and verified on the render \u2014 she wears it in public only; at home she has none.",
+  "weapons": {
+    "$comment": [
+      "sysName = method A: take the SR2 catalogue entry from",
+      "../sr2e-foundryvtt/packs-src/weapons by name, so no damage code is ever",
+      "hand-typed here. That is the whole point of method A and it removes the",
+      "single largest transcription risk in the module.",
+      "",
+      "method 'B' = fold the SR1 staging digit into Power (p.283), used only where",
+      "no SR2 counterpart exists. `from` records the printed SR1 code so the",
+      "arithmetic stays checkable."
+    ],
+    "aresPredator": {
+      "method": "A",
+      "sysName": "Ares Predator",
+      "from": "4M2",
+      "note": "Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry \u2014 SR2 has no separate 'II'."
+    },
+    "browningMaxPower": {
+      "method": "A",
+      "sysName": "Browning Max-Power",
+      "from": "4M2",
+      "note": "Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) \u2014 Ultra-Power is the SR1 name for this pistol."
+    },
+    "coltManhunter": {
+      "method": "A",
+      "sysName": "Colt Manhunter",
+      "from": "4M2",
+      "note": "Osprey p.20, with Smartgun Link."
+    },
+    "uzi3": {
+      "method": "A",
+      "sysName": "Uzi III",
+      "from": "4M3",
+      "note": "The Strice Boys p.25."
+    },
+    "hk227": {
+      "method": "A",
+      "sysName": "Heckler & Koch HK227",
+      "from": "4M3",
+      "note": "Stands in for the H&K MP-5TX (p.19). Method A and method B agree here \u2014 B also gives 7M \u2014 so the choice is free."
+    },
+    "stunBaton": {
+      "method": "A",
+      "sysName": "Stun Baton",
+      "from": "5L2 Stun + Special",
+      "note": "Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note."
+    },
+    "monoWhip": {
+      "method": "A",
+      "sysName": "Monofilament Whip",
+      "from": "6S4",
+      "note": "Osprey p.20. +2 Reach preserved."
+    },
+    "concussionGrenade": {
+      "method": "A",
+      "sysName": "Concussion Grenade",
+      "from": "5M3 Stun",
+      "note": "Knight Errant p.19 carry two Airfoil IPE Concussion Grenades. These are why Throwing 3 matters; both were dropped together in the old actor."
+    },
+    "staff": {
+      "method": "A",
+      "sysName": "Staff",
+      "from": "3M2 Stun",
+      "note": "Stone p.21, +2 Reach."
+    },
+    "spear": {
+      "method": "A",
+      "sysName": "Pole Arm",
+      "from": "6S3",
+      "note": "Pride p.26 Spear, +2 reach. Pole Arm is SR2's reach polearm entry."
+    },
+    "survivalKnife": {
+      "method": "A",
+      "sysName": "Combat Knife",
+      "from": "6L3",
+      "note": "Pride p.26 Survival Knife."
+    },
+    "lmg": {
+      "method": "A",
+      "sysName": "Ingram Valiant",
+      "from": "5S3",
+      "note": "The PRC-42D's nose gun (p.16). NOTE: methods disagree here \u2014 A gives 7S, B gives 8S. A wins on p.283's preference ordering. Re-check if the mislabelled Light_Machine_Gun_Generic file in the system pack resolves to a different weapon."
+    },
+    "ceskaBlackScorpion": {
+      "method": "B",
+      "from": "3M2",
+      "damageCode": "5M",
+      "name": "Ceska Black Scorpion",
+      "weaponType": "firearm",
+      "skill": "firearms",
+      "modes": "sa,bf",
+      "ammo": [
+        25,
+        "pistol"
+      ],
+      "ranges": [
+        5,
+        15,
+        30,
+        50
+      ],
+      "conceal": 6,
+      "cost": 400,
+      "avail": "5/6 days",
+      "note": "Pacific Towers guards p.15 [25 (clip), 1 extra clip, 3M2]. No SR2 Black Scorpion exists, so the staging digit folds: 3+2 = 5M."
+    },
+    "secoLD120": {
+      "method": "B",
+      "from": "3M2",
+      "damageCode": "5M",
+      "name": "Seco LD 120",
+      "weaponType": "firearm",
+      "skill": "firearms",
+      "modes": "sa",
+      "ammo": [
+        12,
+        "pistol"
+      ],
+      "ranges": [
+        5,
+        15,
+        30,
+        50
+      ],
+      "conceal": 7,
+      "cost": 300,
+      "avail": "4/5 days",
+      "note": "The Strice Boys p.25 [12 (clip), 1 extra clip, 3M2]. No SR2 Seco entry, so 3+2 = 5M."
+    },
+    "ceskaVz120": {
+      "method": "B",
+      "from": "3M2",
+      "damageCode": "5M",
+      "name": "Ceska vz/120",
+      "weaponType": "firearm",
+      "skill": "firearms",
+      "modes": "sa",
+      "ammo": [
+        18,
+        "pistol"
+      ],
+      "ranges": [
+        5,
+        15,
+        30,
+        50
+      ],
+      "conceal": 8,
+      "cost": 200,
+      "avail": "4/4 days",
+      "note": "Carrone p.64 [18 (clip), 3M2]. A DIFFERENT weapon from the guards' Ceska Black Scorpion (p.15) \u2014 both are Ceskas, neither is in SR2, and both fold to 5M."
+    }
+  },
+  "actors": [
+    {
+      "_id": "b5363a843c6735ae",
+      "name": "Craft (Thomas Dorin)",
+      "type": "npc",
+      "source": "printed",
+      "page": 62,
+      "art": "craft-thomas-dorin.webp",
+      "pro": 4,
+      "threat": 6,
+      "essence": 6,
+      "magic": 6,
+      "magicType": "full_magician",
+      "tradition": "shamanic",
+      "totem": "ant",
+      "disposition": -1,
+      "attrs": {
+        "body": 4,
+        "qui": 3,
+        "str": 3,
+        "cha": 5,
+        "int": 5,
+        "wil": 6
+      },
+      "reaction": 4,
+      "initDice": 1,
+      "armorKey": "leatherCraft",
+      "weapons": [
+        "aresPredator"
+      ],
+      "skills": [
+        {
+          "name": "Conjuring",
+          "rating": 5,
+          "magical": true
+        },
+        {
+          "name": "Sorcery",
+          "rating": 6,
+          "conc": "Spellcasting",
+          "magical": true
+        },
+        {
+          "name": "Firearms",
+          "rating": 4,
+          "conc": "Pistols"
+        },
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 1,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Etiquette (Street)",
+          "rating": 4,
+          "conc": "Street"
+        },
+        {
+          "name": "Magic Theory",
+          "rating": 6
+        },
+        {
+          "name": "Negotiation",
+          "rating": 4
+        },
+        {
+          "name": "Stealth",
+          "rating": 4,
+          "conc": "Urban"
+        },
+        {
+          "name": "Unarmed Combat",
+          "rating": 3
+        },
+        {
+          "name": "Evaluate Magical Goods",
+          "rating": 5,
+          "category": "knowledge"
+        },
+        {
+          "name": "Metalworking",
+          "rating": 3,
+          "category": "knowledge"
+        },
+        {
+          "name": "Woodworking",
+          "rating": 3,
+          "category": "knowledge"
+        }
+      ],
+      "spells": [
+        {
+          "name": "Mana Bolt",
+          "force": 5
+        },
+        {
+          "name": "Sleep",
+          "force": 5,
+          "notes": "His signature spell \u2014 how Euphoria is taken. The bonded Sleep Spell Focus (Force 2) adds 2 dice, but ONLY while the focus is active; see the focus item."
+        },
+        {
+          "name": "Clairvoyance",
+          "force": 4
+        },
+        {
+          "name": "Confusion",
+          "force": 5
+        },
+        {
+          "name": "Mask",
+          "force": 6
+        },
+        {
+          "name": "Stimulation",
+          "force": 4
+        },
+        {
+          "name": "Armor",
+          "force": 6
+        },
+        {
+          "name": "Levitate Person",
+          "force": 4
+        }
+      ],
+      "foci": [
+        {
+          "name": "Sleep Spell Focus",
+          "focusType": "spell",
+          "force": 2,
+          "bonded": true,
+          "active": false,
+          "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Ships INACTIVE on purpose: the system sums every ACTIVE bonded spell focus into EVERY spell (FocusData does not bind a focus to a category), so leaving it on would hand Craft +2 dice on Mana Bolt too, which the page does not grant. Activate it on the item sheet when he casts Sleep, then deactivate."
+        }
+      ],
+      "bio": "<p>Ant-totem shaman and the adventure's villain. A former Coyote shaman turned talismonger who runs the <strong>Magic Crafts</strong> shop; he took a run from his Fixer, Solomon Daniels, and came back changed. Under the Ant totem he is crazed with power, and his psychotic fixation on the simstar Euphoria drives the plot \u2014 he means to make her his <em>Queen</em>.</p><p><strong>Totem:</strong> Ant. The book grants it no mechanical benefit; the bond is roleplay.</p><p><strong>Sleep Spell Focus (Force 2)</strong> \u2014 a real item on this sheet, shipped inactive. Turn it on for Sleep and off again afterwards, or it adds its dice to every other spell he casts.</p><p><em>Cast of Characters, Queen Euphoria p.62. Attributes, skills and gear verified from a 300 dpi render; the spell list re-checked 2026-08-03 and confirmed at eight spells.</em></p>"
+    },
+    {
+      "_id": "07633edb47f6c337",
+      "name": "Euphoria (Amanda Lockhart)",
+      "type": "npc",
+      "source": "printed",
+      "page": 63,
+      "art": "euphoria-amanda-lockhart.webp",
+      "pro": 2,
+      "threat": 2,
+      "essence": 5,
+      "disposition": 0,
+      "attrs": {
+        "body": 2,
+        "qui": 4,
+        "str": 2,
+        "cha": 6,
+        "int": 4,
+        "wil": 2
+      },
+      "reaction": 4,
+      "initDice": 1,
+      "armorKey": "longCoat",
+      "skills": [
+        {
+          "name": "Electronics",
+          "rating": 3,
+          "conc": "Simsense Equipment"
+        },
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 2,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Etiquette (Media)",
+          "rating": 3,
+          "conc": "Media"
+        },
+        {
+          "name": "Etiquette (Street)",
+          "rating": 1,
+          "conc": "Street"
+        },
+        {
+          "name": "Negotiation",
+          "rating": 2
+        },
+        {
+          "name": "Acting",
+          "rating": 5,
+          "category": "knowledge"
+        },
+        {
+          "name": "Dance",
+          "rating": 2,
+          "category": "knowledge"
+        },
+        {
+          "name": "Simsense Acting",
+          "rating": 6,
+          "category": "knowledge"
+        }
+      ],
+      "cyberware": [
+        {
+          "name": "Datajack",
+          "essence": 0.2
+        },
+        {
+          "name": "Sense Link",
+          "essence": 0.8,
+          "notes": "With internal transmitter. Still recording when she was taken \u2014 the recording is the key clue at the penthouse."
+        }
+      ],
+      "bio": "<p>Megasimsense star and the adventure's abductee. An arrogant 21-year-old recluse, daughter of two trideo stars, discovered and managed by Robert Carrone.</p><p><strong>Her sim-rig kept recording during the kidnapping.</strong> That recording is the single most important clue in Act 1.</p><p><em>Cast of Characters, Queen Euphoria p.63. Attributes and skills verified from the render.</em></p>",
+      "$armorNote": "Long Coat (4/2), printed p.63 and verified on the render. Worn IN PUBLIC only \u2014 unarmoured in her condo, which is where she is taken."
+    },
+    {
+      "_id": "5e033754c9d374b4",
+      "name": "Robert Carrone",
+      "type": "npc",
+      "source": "printed",
+      "page": 64,
+      "art": "robert-carrone.webp",
+      "pro": 3,
+      "threat": 3,
+      "essence": 5.4,
+      "disposition": 0,
+      "attrs": {
+        "body": 3,
+        "qui": 4,
+        "str": 2,
+        "cha": 3,
+        "int": 4,
+        "wil": 3
+      },
+      "reaction": 4,
+      "initDice": 1,
+      "armorKey": "armorClothing",
+      "weapons": [
+        "ceskaVz120"
+      ],
+      "skills": [
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 6,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Etiquette (Media)",
+          "rating": 5,
+          "conc": "Media"
+        },
+        {
+          "name": "Firearms",
+          "rating": 3
+        },
+        {
+          "name": "Negotiation",
+          "rating": 5
+        }
+      ],
+      "cyberware": [
+        {
+          "name": "Datajack",
+          "essence": 0.2
+        },
+        {
+          "name": "Display Link",
+          "essence": 0.2
+        },
+        {
+          "name": "Headware Memory",
+          "essence": 0.2,
+          "notes": "30 Mp."
+        }
+      ],
+      "gear": [
+        {
+          "name": "Pocket Secretary"
+        },
+        {
+          "name": "Wristphone",
+          "notes": "With vidscreen."
+        }
+      ],
+      "bio": "<p>MegaMedia vice-president and Euphoria's former manager \u2014 the Johnson who hires the runners to find her. Born corp, calm, ruthless, loyal to MegaMedia only until a better offer arrives.</p><p><em>Cast of Characters, Queen Euphoria p.64. Attributes and skills verified from the render; the printed cyberware is now on the sheet as items.</em></p>",
+      "$weaponNote": "Ceska vz/120 [18 (clip), 3M2] and Armor Clothing, both confirmed printed at p.64. The shipped actor had these right."
+    },
+    {
+      "_id": "04e23b7806026164",
+      "name": "Knight Errant Security Guard",
+      "$wasNamed": "Euphoria's Bodyguard",
+      "type": "npc",
+      "source": "printed",
+      "page": 19,
+      "$pageNote": "The block is printed TWICE and both are cited deliberately: p.15 supplies the Armor column (5/3), p.19 supplies the fuller gear list (adds the H&K MP-5TX and specifies two grenades). They agree on every attribute and skill.",
+      "art": "euphorias-bodyguard.webp",
+      "pro": 3,
+      "threat": 3,
+      "essence": 6,
+      "disposition": 0,
+      "attrs": {
+        "body": 4,
+        "qui": 4,
+        "str": 4,
+        "cha": 3,
+        "int": 2,
+        "wil": 4
+      },
+      "reaction": 3,
+      "initDice": 1,
+      "armorKey": "armorJacket",
+      "weapons": [
+        "aresPredator",
+        "hk227",
+        "concussionGrenade"
+      ],
+      "skills": [
+        {
+          "name": "Armed Combat",
+          "rating": 3
+        },
+        {
+          "name": "Car",
+          "rating": 3,
+          "attr": "reaction"
+        },
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 3,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Firearms",
+          "rating": 4
+        },
+        {
+          "name": "Throwing Weapons",
+          "rating": 3
+        },
+        {
+          "name": "Unarmed Combat",
+          "rating": 4
+        }
+      ],
+      "bio": "<p>Knight Errant contract security. <em>\"Currently at a Group Three training level, these guards are a cut above the usual corporate security guard, but not elite.\"</em></p><p><strong>Four are on Euphoria at all times:</strong> two precede her vehicle in a modified Ford Americar, one drives her Nightsky, one stays in the condo. These are the professionals slaughtered by Craft's Soldiers at the penthouse \u2014 their bodies are the horror the runners find.</p><p><strong>For the PRC-42D Wasp pilot:</strong> use this block with <strong>Rotor 3</strong> in place of Car 3 (QE p.16).</p><p><em>Queen Euphoria p.15 + p.19, both verified from renders. The old actor was wrong on six counts \u2014 Intelligence, Willpower, Essence, Unarmed Combat, three missing skills, an invented Stealth, and the wrong gun.</em></p>"
+    },
+    {
+      "_id": "adf7c8acc476c171",
+      "name": "Pacific Towers Security Guard",
+      "$wasNamed": "Corporate / Venue Security",
+      "type": "npc",
+      "source": "printed",
+      "page": 15,
+      "art": "corporate-venue-security.webp",
+      "pro": 2,
+      "threat": 2,
+      "essence": 6,
+      "disposition": -1,
+      "attrs": {
+        "body": 4,
+        "qui": 3,
+        "str": 3,
+        "cha": 2,
+        "int": 2,
+        "wil": 2
+      },
+      "reaction": 2,
+      "initDice": 1,
+      "armorKey": "armorVest",
+      "weapons": [
+        "ceskaBlackScorpion"
+      ],
+      "skills": [
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 2,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Firearms",
+          "rating": 3
+        },
+        {
+          "name": "Unarmed Combat",
+          "rating": 3
+        }
+      ],
+      "bio": "<p><em>\"Building security, barely trained and nearly inexperienced.\"</em> The guards in the Pacific Towers lobby and on the residential floors.</p><p>Worth knowing: this block is <strong>attribute-identical to SR2's own Corporate Security Guard archetype</strong> (core p.205) \u2014 same eight attributes, same skills except SR2 adds Interrogation 2. The SR1 adventure and the SR2 core are printing the same archetype under two names.</p><p><em>Queen Euphoria p.15, verified from a render. The old actor was wrong on six counts: Charisma, Intelligence and Willpower all 3 instead of 2, an Armor Jacket instead of the printed Armor Vest, the wrong pistol, and no Etiquette.</em></p>"
+    },
+    {
+      "_id": "f139ed747f2833e6",
+      "name": "Lone Star Officer",
+      "type": "npc",
+      "source": "printed",
+      "page": 14,
+      "derivedFrom": "Gear is printed at QE p.14. Attributes are NOT \u2014 the book says '(Use the Street Cop Contact, p.171 SR rules)', an SR1 archetype. Ruled by futurekill 2026-08-03: use SR2's own patrol stats, i.e. the CORPORATE SECURITY GUARD archetype at SR2 core p.205 (B4 Q3 S3 C2 I2 W2 E6 R2, Professional Rating 2, Etiquette (Corporate) 2 / Firearms 3 / Interrogation 2 / Unarmed Combat 3). That archetype is attribute-identical to QE's own p.15 guard, so this is citing SR2 directly rather than converting anything.",
+      "art": "lone-star-officer.webp",
+      "pro": 2,
+      "threat": 2,
+      "essence": 6,
+      "disposition": -1,
+      "attrs": {
+        "body": 4,
+        "qui": 3,
+        "str": 3,
+        "cha": 2,
+        "int": 2,
+        "wil": 2
+      },
+      "reaction": 2,
+      "initDice": 1,
+      "armorKey": "armorVest",
+      "weapons": [
+        "browningMaxPower",
+        "stunBaton"
+      ],
+      "skills": [
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 2,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Firearms",
+          "rating": 3
+        },
+        {
+          "name": "Interrogation",
+          "rating": 2
+        },
+        {
+          "name": "Unarmed Combat",
+          "rating": 3
+        }
+      ],
+      "bio": "<p>Lone Star officers. <strong>Four hold the Pacific Towers lobby</strong> (QE p.14), and more arrive if a Strice Matrix alert Traces the decker or a scene goes loud.</p><p><strong>Gear is printed</strong> (p.14): Browning Max-Power heavy pistols, stun batons, Armor Vests. <strong>Attributes are not</strong> \u2014 the adventure defers to the SR1 Street Cop contact, so these come from SR2's own <em>Corporate Security Guard</em> archetype (core p.205), which happens to be identical to the Pacific Towers guard block on p.15.</p><p>The stun baton's printed <em>\"+ Special\"</em> is a stun effect beyond the damage code \u2014 GM adjudicates.</p><p><em>The old actor carried an Ares Predator and no baton or vest.</em></p>"
+    },
+    {
+      "_id": "1dece01022748b01",
+      "name": "Osprey (Adams)",
+      "$wasNamed": "Osprey (Craft's muscle)",
+      "type": "npc",
+      "source": "printed",
+      "page": 20,
+      "art": "osprey-crafts-muscle.webp",
+      "pro": 4,
+      "threat": 5,
+      "essence": 0.3,
+      "disposition": -1,
+      "$essenceNote": "Printed exactly as '.3'. It fits under the NPC schema's max of 6 with no approximation.",
+      "attrs": {
+        "body": 5,
+        "qui": 5,
+        "str": 4,
+        "cha": 5,
+        "int": 4,
+        "wil": 5
+      },
+      "reaction": 9,
+      "initDice": 3,
+      "$reactionNote": "Printed 'Reaction 5 (9)'. Wired Reflexes (2) is +4 and +2d6, which exactly explains the augmented value \u2014 it is real, not a typo. Stored as the augmented 9 with 3 initiative dice.",
+      "armorKey": "armorJacket",
+      "weapons": [
+        "coltManhunter",
+        "monoWhip"
+      ],
+      "skills": [
+        {
+          "name": "Armed Combat",
+          "rating": 5
+        },
+        {
+          "name": "Car",
+          "rating": 3,
+          "attr": "reaction"
+        },
+        {
+          "name": "Demolitions",
+          "rating": 2
+        },
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 2,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Etiquette (Media)",
+          "rating": 4,
+          "conc": "Media"
+        },
+        {
+          "name": "Etiquette (Street)",
+          "rating": 4,
+          "conc": "Street"
+        },
+        {
+          "name": "Firearms",
+          "rating": 7
+        },
+        {
+          "name": "Interrogation",
+          "rating": 3
+        },
+        {
+          "name": "Leadership",
+          "rating": 2
+        },
+        {
+          "name": "Negotiation",
+          "rating": 4
+        },
+        {
+          "name": "Stealth",
+          "rating": 5
+        },
+        {
+          "name": "Unarmed Combat",
+          "rating": 5
+        }
+      ],
+      "cyberware": [
+        {
+          "name": "Chipjack",
+          "essence": 0.2,
+          "qty": 2
+        },
+        {
+          "name": "Datasoft Link",
+          "essence": 0.2
+        },
+        {
+          "name": "Retinal Modification",
+          "essence": 0.2,
+          "notes": "With Thermographic."
+        },
+        {
+          "name": "Retractable Razors",
+          "essence": 0.3
+        },
+        {
+          "name": "Skillwire",
+          "rating": 6,
+          "essence": 2.4,
+          "notes": "Skillsofts: Car (4), Demolitions (4), French (4), Interrogation (5), Japanese (4), Monofilament Whip (5)."
+        },
+        {
+          "name": "Smartgun Link",
+          "essence": 0.5
+        },
+        {
+          "name": "Wired Reflexes",
+          "rating": 2,
+          "essence": 3.0,
+          "notes": "+4 Reaction, +2d6 Initiative \u2014 this is the (9) in the printed Reaction 5 (9)."
+        }
+      ],
+      "gear": [
+        {
+          "name": "BMW 330LS",
+          "notes": "Sportscar."
+        },
+        {
+          "name": "Explosive Ammunition",
+          "notes": "Printed 5M3."
+        }
+      ],
+      "bio": "<p>Craft's muscle \u2014 and a genuinely dangerous street samurai, not the generic thug the module used to ship. <strong>Firearms 7</strong>, Wired Reflexes (2), and a Monofilament Whip.</p><p><strong>A skillwire user</strong> with two linguasofts (French, Japanese) and a Monofilament Whip activesoft, which is worth remembering if the runners try to talk their way past him in the wrong language.</p><p><em>Queen Euphoria p.20, verified from a render. The old actor was wrong on every attribute and skill checked, had none of the cyberware, and carried an Uzi he does not own.</em></p>"
+    },
+    {
+      "_id": "2b6a986a58820472",
+      "name": "Stone (Alexander Cross)",
+      "$wasNamed": "Stone (Craft's muscle)",
+      "type": "npc",
+      "source": "printed",
+      "page": 21,
+      "art": "stone-crafts-muscle.webp",
+      "pro": 4,
+      "threat": 5,
+      "essence": 6,
+      "magic": 6,
+      "magicType": "full_magician",
+      "tradition": "hermetic",
+      "disposition": -1,
+      "attrs": {
+        "body": 4,
+        "qui": 2,
+        "str": 3,
+        "cha": 4,
+        "int": 5,
+        "wil": 6
+      },
+      "reaction": 4,
+      "initDice": 1,
+      "magicPool": 7,
+      "$magicPoolNote": "Printed 'Dice Pools \u2014 Magic: 7'. NPCData.prepareDerivedData derives the COMBAT pool but leaves dicePools.magic alone, so this transcribed value survives exactly. The page is authoritative.",
+      "armorKey": "armorClothing",
+      "weapons": [
+        "browningMaxPower",
+        "staff"
+      ],
+      "skills": [
+        {
+          "name": "Etiquette (Street)",
+          "rating": 3,
+          "conc": "Street"
+        },
+        {
+          "name": "Magic Theory",
+          "rating": 8
+        },
+        {
+          "name": "Sorcery",
+          "rating": 7,
+          "magical": true
+        },
+        {
+          "name": "Stealth",
+          "rating": 2
+        },
+        {
+          "name": "Unarmed Combat",
+          "rating": 2
+        }
+      ],
+      "spells": [
+        {
+          "name": "Mana Bolt",
+          "force": 5
+        },
+        {
+          "name": "Powerball",
+          "force": 5
+        },
+        {
+          "name": "Sleep",
+          "force": 6
+        },
+        {
+          "name": "Detect Enemies",
+          "force": 3
+        },
+        {
+          "name": "Increase Strength",
+          "force": 4,
+          "notes": "Printed as 'Increase Strength +2: 4'."
+        },
+        {
+          "name": "Treat Severe Wounds",
+          "force": 5
+        },
+        {
+          "name": "Armor",
+          "force": 8,
+          "notes": "REQUIRES A FETISH (printed)."
+        },
+        {
+          "name": "Control Thoughts",
+          "force": 5,
+          "notes": "REQUIRES A FETISH (printed)."
+        },
+        {
+          "name": "Petrify",
+          "force": 6,
+          "notes": "REQUIRES A FETISH (printed)."
+        }
+      ],
+      "gear": [
+        {
+          "name": "Expendable Manipulation Fetish",
+          "qty": 6,
+          "notes": "All three of his Manipulation spells require one. Six uses total \u2014 when they run out, Armor, Control Thoughts and Petrify are unavailable."
+        }
+      ],
+      "bio": "<p><strong>Stone is a full magician</strong>, not a gunman \u2014 the module previously shipped him as a byte-identical copy of Osprey, with Magic 0, no spells and an Uzi. He has nine spells, Sorcery 7, Magic Theory 8 and a printed <strong>Magic Pool of 7</strong>.</p><p><strong>Three bound elementals</strong> (separate actors in this compendium, and no link between them \u2014 the NPC data model has no boundSpirits field, so the assignment is recorded here rather than faked mechanically):</p><ul><li><strong>Fire Elemental Force 5</strong> \u2014 assigned to <em>Spell Defense</em>.</li><li><strong>Fire Elemental Force 4</strong> \u2014 bound to him, for <em>Combat Spells</em>.</li><li><strong>Earth Elemental Force 5</strong>.</li></ul><p><strong>Six expendable Manipulation fetishes.</strong> Armor, Control Thoughts and Petrify each need one to cast.</p><p><em>Queen Euphoria p.21, verified from a render.</em></p>"
+    },
+    {
+      "_id": "PRIDE-NEW",
+      "$idNote": "Net-new. Assign a permanent random id on first generation and write it back here, never derive it from the name.",
+      "name": "Pride (Shaka Jubowel)",
+      "type": "npc",
+      "source": "printed",
+      "page": 26,
+      "art": "pride-shaka-jubowel.webp",
+      "pro": 4,
+      "threat": 5,
+      "essence": 6,
+      "magic": 6,
+      "magicType": "full_magician",
+      "tradition": "shamanic",
+      "totem": "lion",
+      "disposition": -1,
+      "attrs": {
+        "body": 6,
+        "qui": 5,
+        "str": 6,
+        "cha": 4,
+        "int": 4,
+        "wil": 6
+      },
+      "reaction": 5,
+      "initDice": 1,
+      "magicPool": 4,
+      "armorKey": "leatherPride",
+      "weapons": [
+        "browningMaxPower",
+        "spear",
+        "survivalKnife"
+      ],
+      "skills": [
+        {
+          "name": "Armed Combat",
+          "rating": 4
+        },
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 1,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Etiquette (Street)",
+          "rating": 2,
+          "conc": "Street"
+        },
+        {
+          "name": "Etiquette (Tribal)",
+          "rating": 4,
+          "conc": "Tribal"
+        },
+        {
+          "name": "Firearms",
+          "rating": 3
+        },
+        {
+          "name": "Magic Theory",
+          "rating": 5
+        },
+        {
+          "name": "Negotiation",
+          "rating": 4
+        },
+        {
+          "name": "Sorcery",
+          "rating": 6,
+          "conc": "Ritual",
+          "magical": true
+        },
+        {
+          "name": "Stealth",
+          "rating": 5
+        },
+        {
+          "name": "Throwing Weapons",
+          "rating": 6,
+          "conc": "Spear"
+        },
+        {
+          "name": "Unarmed Combat",
+          "rating": 5
+        }
+      ],
+      "spells": [
+        {
+          "name": "Power Missile",
+          "force": 5
+        },
+        {
+          "name": "Fireball",
+          "force": 5
+        },
+        {
+          "name": "Detect Enemies",
+          "force": 3
+        },
+        {
+          "name": "Mind Probe",
+          "force": 6
+        },
+        {
+          "name": "Detox Deadly Toxin",
+          "force": 5
+        },
+        {
+          "name": "Entertainment",
+          "force": 3
+        }
+      ],
+      "gear": [
+        {
+          "name": "Medicine Lodge Materials",
+          "rating": 4
+        },
+        {
+          "name": "Plastic Restraints",
+          "qty": 4
+        },
+        {
+          "name": "Firepower Ammunition",
+          "notes": "Loaded in the Browning."
+        }
+      ],
+      "bio": "<p>Shaka Jubowel, named for the great African conqueror Shaka Zulu, learned the magic of the Sixth World from shamans still carrying on ancient traditions before leaving to make a name for himself. As <strong>Pride</strong> he became a globally active shadowrunner specialising in <strong>bounty-hunting</strong>.</p><p>Almost two metres, muscular, very black skin, long stringy hair down the back of his neck, and eyes with <strong>vertical pupils like a cat's</strong>. He usually wears real leather clothing of African design. He behaves like an aristocrat, is always cunning, and becomes savage when angered. <em>\"Pride gives no quarter in combat.\"</em></p><p><strong>Lion totem.</strong> Astral Pool 14. Sorcery specialises in <em>Ritual</em> sorcery \u2014 he is a ritual tracker, which is how a bounty hunter finds people.</p><p><em>Queen Euphoria p.26. This character had no actor at all. Block completed from the render 2026-08-03 \u2014 an earlier crop had lost Body, Armed Combat and three spells.</em></p>"
+    },
+    {
+      "_id": "BURROUGHS-NEW",
+      "$idNote": "Net-new. Assign a permanent random id on first generation.",
+      "name": "Vincent Burroughs",
+      "type": "npc",
+      "source": "printed",
+      "page": 38,
+      "art": "vincent-burroughs.webp",
+      "pro": 1,
+      "threat": 1,
+      "essence": 4.8,
+      "disposition": 0,
+      "attrs": {
+        "body": 3,
+        "qui": 2,
+        "str": 2,
+        "cha": 4,
+        "int": 4,
+        "wil": 2
+      },
+      "reaction": 3,
+      "initDice": 1,
+      "skills": [
+        {
+          "name": "Computer Theory",
+          "rating": 3,
+          "category": "knowledge"
+        },
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 4,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Interrogation",
+          "rating": 3
+        },
+        {
+          "name": "Negotiation",
+          "rating": 4
+        }
+      ],
+      "cyberware": [
+        {
+          "name": "Datajack",
+          "essence": 0.2
+        },
+        {
+          "name": "Headware Memory",
+          "essence": 1.0,
+          "notes": "100 Mp."
+        }
+      ],
+      "bio": "<p>Strice Foods' Security Director contact \u2014 and <strong>the man Craft is blackmailing</strong>, which is how the insect Hive got its foothold in a Strice facility.</p><p>Not a combatant: Defense pools of 1, no gear, no weapons. He is an interrogation and social encounter, not a fight.</p><p><strong>If a Matrix Trace succeeds</strong>, the result prints at his terminal and he calls Lone Star \u2014 immediately if he is in-office by day, otherwise the next morning.</p><p><em>Queen Euphoria p.38. No actor previously existed.</em></p>"
+    },
+    {
+      "_id": "STRICEBOYS-NEW",
+      "$idNote": "Net-new. Assign a permanent random id on first generation.",
+      "name": "The Strice Boys",
+      "type": "npc",
+      "source": "printed",
+      "page": 25,
+      "art": "the-strice-boys.webp",
+      "pro": 3,
+      "threat": 3,
+      "essence": 6,
+      "disposition": -1,
+      "attrs": {
+        "body": 5,
+        "qui": 3,
+        "str": 4,
+        "cha": 2,
+        "int": 3,
+        "wil": 3
+      },
+      "reaction": 3,
+      "initDice": 1,
+      "armorKey": "armorVestPlates",
+      "weapons": [
+        "secoLD120",
+        "stunBaton",
+        "uzi3"
+      ],
+      "skills": [
+        {
+          "name": "Armed Combat",
+          "rating": 4
+        },
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 2,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Etiquette (Street)",
+          "rating": 2,
+          "conc": "Street"
+        },
+        {
+          "name": "Firearms",
+          "rating": 3
+        },
+        {
+          "name": "Stealth",
+          "rating": 2
+        },
+        {
+          "name": "Unarmed Combat",
+          "rating": 4
+        }
+      ],
+      "bio": "<p>Strice Foods facility guards \u2014 better equipped than the Pacific Towers rent-a-cops, with Armor Vests With Plates, Uzis and stun batons.</p><p>The stun baton's printed <em>\"+ Special\"</em> is a stun effect beyond its damage code; GM adjudicates.</p><p><em>Queen Euphoria p.25. No actor previously existed \u2014 neither the Seco LD 120 nor the stun baton appeared anywhere in the module.</em></p>"
+    }
+  ],
+  "$remaining": [
+    "STILL TO ADD in the next pass \u2014 the insects, the elementals, the Matrix documents",
+    "and the vehicles. Listed here so the roster arithmetic stays checkable:",
+    "  insects (5): Flesh Worker F1 (p.47, id 96c308d2b016c4f9),",
+    "    Flesh Soldiers F3 (p.49, id 5ca2bfcd68b562a5), Flesh Soldiers F5 (p.50, NEW),",
+    "    True Soldiers F3 (p.51, id 68c86edeb4715b6b), True Soldiers F5 (p.52, NEW)",
+    "  Hive Queen set-piece (1): id ef2a8ee358b3f451, modeled \u2014 does not appear in play",
+    "  elementals (3): Fire F5, Fire F4, Earth F5 \u2014 modeled from Stone's printed notes",
+    "  Matrix (5): host 613124d3b87809ff + 4 IC, modeled from the p.34 system map",
+    "  vehicles (3): Nightsky, Americar, PRC-42D Wasp \u2014 method A from the system pack",
+    "Total when complete: 11 here + 17 remaining = 28 actors."
+  ]
+}
