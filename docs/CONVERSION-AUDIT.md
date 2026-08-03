@@ -316,12 +316,82 @@ printed True Form Reaction 6 (11) and 10 (15).
 Two Powers were also lost to OCR truncation and only appear on the render:
 **Paralyzing Touch** and **Venom**. Both are mechanically significant.
 
-### Remaining pages — attribute rows still to transcribe
+### p.38 — Vincent Burroughs (Strice Foods) — **MISSING ENTIRELY**
 
-14, **16** (a rigged LMG vehicle, 5S3), 25 (a second security block: Armor Vest
-w/ Plates 4/3, Seco LD 120 3M2, Stun Baton 5L2 + Special, Uzi III 4M3),
-38/47/49/50/51/52 attribute rows (the text layer mangles the B Q S C I W E M R
-table — render each).
+Named NPC, Strice Food Security Director's contact and the man Craft is
+blackmailing. No actor exists.
+
+```
+  B  Q  S  C  I  W   E   M  R   Armor
+  3  2  2  4  4  2  4.8  —  3   None
+Dice Pools: Defense (Armed) 1, Defense (Unarmed) 1, Dodge 3
+Skills: Computer Theory 3, Etiquette (Corporate) 4, Interrogation 3, Negotiation 4
+Cyberware: Datajack, 100 Mp of memory
+Gear: None
+```
+
+The p.38 True Form Soldier (Force 3) block on the same page matches p.51 exactly
+(B4 Q7 S7 I1 W2 E(3)A R6(11), Armor 3/3, 7M2 + Special) — a duplicate printing,
+not a sixth variant.
+
+### p.25 — "The Strice Boys" (facility guards) — **MISSING ENTIRELY**
+
+```
+  B  Q  S  C  I  W  E  M  R  Armor
+  5  3  4  2  3  3  6  —  3   4/3
+Dice Pools: Defense (Armed) 4, Defense (Unarmed) 4, Dodge 3
+Skills: Armed Combat 4, Etiquette (Corporate) 2, Etiquette (Street) 2,
+        Firearms 3, Stealth 2, Unarmed Combat 4
+Gear: Armor Vest With Plates (4/3); Seco LD 120 [12 (clip), 1 extra clip, 3M2];
+      Stun Baton [+1 Reach, 5L2 Stun + Special];
+      Uzi III [16 (clip), 1 extra clip, Laser Sight, 4M3]
+```
+
+Note the **Stun Baton "+ Special"** — a stun effect beyond its damage code, and
+the second time a baton has appeared (the Pacific Towers guards on p.14 carry
+one too). Neither the baton nor the Seco LD 120 exists on any shipped actor.
+
+### p.14 — Pacific Towers lobby guards are **Lone Star**, with the wrong gun
+
+Printed: *"four Lone Star officers… (Use the **Street Cop Contact, p.171 SR
+rules**.)"* — i.e. the SR1 core archetype, not statted in QE. Their gear IS
+printed: **Browning Max-Power heavy pistols [8 (clip), 1 extra clip, 4M2]**,
+**stun batons [+1 Reach, 5L2 Stun + Special]**, **Armor Vests [2/1]**.
+
+The shipped "Lone Star Officer" carries an **Ares Predator (9M)** and no baton
+or vest. Wrong weapon, missing gear. Because the block defers to an external
+archetype, its attributes need deriving rather than transcribing — flag for a
+GM decision (SR2 has its own Lone Star patrol stats).
+
+### p.16 — three vehicles, **none of which exist in the module**
+
+The module ships no vehicle actors at all.
+
+| vehicle | Hand | Speed | Body | Armor | Sig | Pilot | Cost |
+|---------|------|-------|------|-------|-----|-------|------|
+| **Mitsubishi Nightsky** (Euphoria's limo) | 4 | 45/120 | 5 | 1 | 4 | 4 | 250,000¥ |
+| **Ford Americar (security variant)** | 4 | 45/135 | 3 | 1 | 2 | 2 | 80,000¥ |
+| **Northrup PRC-42D Wasp** (armed helo) | 3 | 65/100 | 1 | 1 | 5 | 0 | 340,000¥ |
+
+- Nightsky: *"this particular Nightsky has no concealed weaponry."*
+- Americar: equipped with a two-way radio.
+- Wasp: **one Light Machine Gun under the nose — [LMG, 100 (Belt, internal),
+  Laser Sight, 5S3] rigged for automatic 6 shots, no Recoil Modifier.** A
+  variant of the standard Wasp with Ares Armorflex vehicle armour. *"For the
+  pilot, use the Knight Errant Security Guard above, but substitute Rotor for
+  Car at the same value"* — so the pilot reuses the p.19 block with Car 3
+  swapped to Rotor 3.
+
+**Open conversion question — vehicle armour.** p.283 tells you to *"multiply the
+Vehicle Armor Ratings listed for the vehicles in the Rigger Black Book by 3"*
+for SRII compatibility. These are SR1 adventure vehicles on the same scale, so
+Armor 1 probably becomes 3 — but the appendix names the RBB specifically, not
+adventures. **Needs a GM ruling before the vehicles are built.**
+
+## Transcription complete
+
+Every printed stat block in the adventure has now been read from a 300 dpi
+render. Nothing is left un-audited.
 
 (16 and 51 were absent from the first inventory — see the extraction gotcha
 above. Both carry a stat block that has never been checked.)
