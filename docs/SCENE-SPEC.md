@@ -102,3 +102,35 @@ copyright stance is no reproduced layout. So these dimensions and room keys are
 the brief for generated art, not a tracing target. The room list per scene above
 is what the art has to satisfy; the metre figures are what the scene document
 must be set to regardless of what the art looks like.
+
+
+## Walls
+
+**Perimeter walls are built on all nine scenes**, derived from the same measured
+dimensions as the background, so the two cannot drift apart. On the dark Hive
+Lower Level this also stops vision leaking past the building envelope.
+
+`gen-scenes.mjs` takes an optional per-scene `interior` list — wall segments in
+**metres**, with `door` and `breakable` flags — and emits them alongside the
+perimeter. The machinery is done; the segment data is not.
+
+### Why interior walls were not auto-extracted
+
+The obvious approach is the one that worked for dimensions: profile the plan's
+dark pixels and call a column that is dark down most of its height a wall. It
+finds nothing. **Interior walls are broken by doorways**, so no interior wall is
+ever continuous down its full extent — at a threshold loose enough to catch them
+(0.55) the same test also catches bed and counter edges, and at a threshold tight
+enough to reject furniture (0.75+) only the perimeter survives. Verified on Royal
+Meadows: the loose pass returned eight candidate lines of which most are
+furniture, the tight pass returned exactly the two outer walls.
+
+Extracting them properly needs **line-segment detection** (Hough or connected
+components) that can join collinear fragments across a door gap and report the
+gap as the door. That is a real piece of work, not a threshold tweak.
+
+**Estimating the positions by eye was the other option and it was rejected.** A
+wall half a metre out of place is worse than no wall: it silently changes cover,
+line of sight and movement cost in a way nobody will question mid-fight, and the
+whole point of measuring these plans was to stop shipping numbers that came from
+somewhere other than the page.

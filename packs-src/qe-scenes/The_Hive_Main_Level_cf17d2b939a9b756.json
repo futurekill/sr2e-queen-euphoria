@@ -54,7 +54,104 @@
   "regions": [],
   "templates": [],
   "tiles": [],
-  "walls": [],
+  "walls": [
+    {
+      "_id": null,
+      "c": [
+        0,
+        0,
+        2400,
+        0
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2400,
+        0,
+        2400,
+        1200
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2400,
+        1200,
+        0,
+        1200
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        1200,
+        0,
+        0
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    }
+  ],
   "folder": null,
   "sort": 0,
   "flags": {

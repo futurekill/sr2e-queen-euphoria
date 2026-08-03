@@ -44,6 +44,49 @@ const ids = manifest.scenes.map(s => s._id);
 const dupes = ids.filter((x, i) => ids.indexOf(x) !== i);
 if (dupes.length) throw new Error(`Duplicate scene ids: ${dupes.join(", ")}`);
 
+// ── Walls ───────────────────────────────────────────────────────────────────
+// Wall coordinates are in scene pixels, so every metre figure here is x100 — the
+// same measured dimensions the background uses, which is why the two can never
+// drift apart.
+//
+// `interior` entries are optional per-scene room partitions, given in METRES as
+// [x1,y1,x2,y2]. A scene with none still gets its perimeter, which is correct
+// and useful on its own: it stops tokens walking off the map and, on the dark
+// Hive level, stops vision leaking past the building envelope.
+//
+// door: "none" (default) solid | "door" a normal door | "secret".
+// Set `breakable: true` for a wall the book says can be attacked through — the
+// Hive's Lower Level walls are Barrier Rating 3 and the Soldiers are meant to
+// come through them, so they are modelled as doors set to open rather than as
+// impassable boundaries a GM would have to delete mid-fight.
+function wall(x1, y1, x2, y2, opts = {}) {
+  return {
+    _id: null, c: [x1, y1, x2, y2],
+    light: opts.sense ?? 20, sight: opts.sense ?? 20, sound: opts.sense ?? 20,
+    move: opts.move ?? 20,
+    door: opts.door === "secret" ? 2 : opts.door === "door" ? 1 : 0,
+    ds: 0, doorSound: null, dir: 0, threshold: { light: null, sight: null, sound: null, attenuation: false },
+    flags: opts.flags ?? {}
+  };
+}
+
+function walls(s, W, H) {
+  const M = PX_PER_M;
+  const out = [
+    wall(0, 0, W, 0), wall(W, 0, W, H), wall(W, H, 0, H), wall(0, H, 0, 0)
+  ];
+  for (const r of s.interior ?? []) {
+    const [x1, y1, x2, y2] = r.seg.map(v => v * M);
+    out.push(wall(x1, y1, x2, y2, {
+      door: r.door,
+      // A Barrier-3 partition should not behave like bedrock. Flagged so the GM
+      // can see which walls the book explicitly says are breakable.
+      flags: r.breakable ? { "sr2e-queen-euphoria": { barrierRating: r.barrier ?? 3, breakable: true } } : {}
+    }));
+  }
+  return out;
+}
+
 function build(s) {
   const width  = s.widthM  * PX_PER_M;
   const height = s.heightM * PX_PER_M;
@@ -77,7 +120,7 @@ function build(s) {
     darkness: s.dark ? 1 : 0,
     environment: {},
     drawings: [], tokens: [], lights: [], notes: [], sounds: [], regions: [],
-    templates: [], tiles: [], walls: [],
+    templates: [], tiles: [], walls: walls(s, width, height),
     folder: null, sort: 0,
     flags: { "sr2e-queen-euphoria": {
       source: s.source, folio: s.folio ?? null,
