@@ -10,8 +10,8 @@ core rulebook's official conversion rules.
 > check: the text layer renders `15 (clip)` as `t 5 (clip)`. Everything below
 > was verified from 300dpi renders and re-confirmed against the new text layer.
 
-**Status: IN PROGRESS.** Pages verified so far are listed below; the rest are
-still to do. Do not treat an unlisted page as clean.
+**Status: COMPLETE (2026-08-02).** Every printed stat block in the adventure
+has been read from a 300 dpi render. Nothing remains render-pending.
 
 ## The governing rule
 
@@ -217,13 +217,36 @@ printed cyberware never became items: Euphoria's **Datajack** and **Sense Link
 (w/ internal transmitter)**, Carrone's **Datajack, Display Link, Headware
 Memory 30 Mp**, plus his Pocket Secretary and Wristphone.
 
-### p.15 — a second security block — **TEXT LAYER ONLY, RENDER CHECK PENDING**
+### p.15 — **VERIFIED FROM RENDER.** Two blocks; both matter
 
-Reads: Skills Etiquette (Corporate) 2, Firearms 3, Unarmed Combat 3;
-Gear **Armor Vest (2/1)**, **Ceska Black Scorpion** [25 (clip), 1 extra clip…].
-The module's "Corporate / Venue Security" carries an Armor Jacket (5/3) and a
-Ceska vz/120 — different armour and a different weapon. Confirm on the render
-before changing anything.
+**Pacific Towers Security Guard** — *"building security, barely trained and
+nearly inexperienced."*
+
+```
+  B  Q  S  C  I  W  E  M  R  Armor
+  4  3  3  2  2  2  6  —  2   2/1
+Dice Pools: Defense (Armed) 1, Defense (Unarmed) 3, Dodge 3
+Skills: Etiquette (Corporate) 2, Firearms 3, Unarmed Combat 3
+Gear: Armor Vest (2/1); Ceska Black Scorpion [25 (clip), 1 extra clip, 3M2]
+```
+
+This is the block the shipped **"Corporate / Venue Security"** stands in for,
+and it is wrong on six counts: Charisma 3 (printed 2), Intelligence 3 (2),
+Willpower 3 (2), a **Ceska vz/120** instead of the printed **Ceska Black
+Scorpion**, an **Armor Jacket 5/3** instead of the printed **Armor Vest 2/1**,
+and no Etiquette skill.
+
+**Knight Errant Security Guard** — the attribute row for the p.19 block,
+confirming Intelligence **2** and Willpower **4**, and adding **Armor 5/3**:
+
+```
+  B  Q  S  C  I  W  E  M  R  Armor
+  4  4  4  3  2  4  6  —  3   5/3
+```
+
+Same skills and gear as p.19. *"Currently at a Group Three training level,
+these guards are a cut above the usual corporate security guard, but not
+elite."*
 
 ### pp.38, 47, 49–52 — THE INSECT SPIRITS — **the module's four are all invented**
 
