@@ -151,12 +151,98 @@ His Predator is the one place a conversion decision was actually made and it is
 method A (substitute the real SR2 weapon), which p.283 sanctions and which is
 preferable to method B's `4M2 → 6M` because the Predator exists in SR2.
 
+### p.20 — Osprey / "Adams" (Craft's muscle) — **VERIFIED FROM RENDER, WHOLLY WRONG**
+
+Printed: Body 5, Quickness 5, Strength 4, Charisma 5, Intelligence 4,
+Willpower 5, **Essence: .3** (printed exactly so), **Reaction 5 (9)**.
+Skills: Armed Combat 5, Car 3, **Demolitions 2**, **Etiquette (Corporate) 2**,
+Etiquette (Media) 4, Etiquette (Street) 4, **Firearms 7**, Interrogation 3,
+Leadership 2, Negotiation 4, Stealth 5, Unarmed Combat 5.
+Cyberware: (2) Chipjacks, Datasoft Link, Retinal Modification w/ Thermographic,
+Retractable Razors, **Skillwire (6)** with skillsofts Car (4), Demolitions (4),
+French (4), Interrogation (5), Japanese (4), **Monofilament Whip (5)**,
+Smartgun Link, **Wired Reflexes (2)**.
+Gear: Armor Jacket (5/3), BMW 330LS sportscar, Colt Manhunter [16 (clip),
+1 extra clip, Smartgun Link, 4M2], Explosive Ammunition 5M3,
+**Monofilament Whip (+2 Reach, 6S4)**.
+
+Shipped: Body 5, Q 4, S 5, C 3, I 3, W 4, E 5, R 3; four skills at 3–4;
+Uzi III + Knife. **Nine of nine attributes/skills checked are wrong**, the
+entire cyberware suite is absent, and both signature weapons are replaced by an
+Uzi he does not carry. Wired Reflexes (2) exactly explains the printed
+Reaction 5 (9) — +4 — so the augmented value is real, not a typo.
+
+Also relevant to the system's skillsoft work: he is a **skillwire user with two
+LinguaSofts (French, Japanese) and a Monofilament Whip activesoft**.
+
+### p.21 — Stone / Alexander Cross (Craft's muscle) — **VERIFIED FROM RENDER, WHOLLY WRONG**
+
+**Stone is a full magician**, not a gunman. Printed: Body 4, Quickness 2,
+Strength 3, Charisma 4, Intelligence 5, Willpower 6, Essence 6, **Magic 6**,
+Reaction 4. Skills: Etiquette (Street) 3, **Magical Theory 8**, **Sorcery 7**,
+Stealth 2, Unarmed Combat 2. Dice Pools include **Magic: 7**.
+Gear: Armor Clothing (3/0), Browning Max-Power [8 (clip), 2 extra clips,
+Silencer, 4M2], **6 Expendable Manipulation Fetishes**, Staff [+2 Reach,
+3M2 Stun].
+Spells — Combat: Mana Bolt 5, Powerball 5, Sleep 6. Detection: Detect
+Enemies 3. Health: Increase Strength +2: 4, Treat Severe Wounds 5.
+**Manipulation (all known requiring a fetish):** Armor 8, Control Thoughts 5,
+Petrify 6.
+**Notes: Stone has three Elementals bound** — Fire Force 5 (assigned to Spell
+Defense), Fire Force 4 (bound to him, for Combat Spells), Earth Force 5.
+
+Shipped: **byte-identical to Osprey** — the same generic thug, Magic 0, no
+spells, no fetishes, no elementals, an Uzi III. A spellcaster with nine spells
+and three bound elementals is currently unplayable.
+
+### p.26 — "Pride" (Lion-totem shaman) — **MISSING ENTIRELY**
+
+Printed: Quickness 5, Strength 6, Charisma 4, Intelligence 4, Willpower 6,
+Essence 6, Magic 6, Reaction 5. Skills: Etiquette (Corporate) 1, Etiquette
+(Street) 2, Etiquette (Tribal) 4, Firearms 3, Magical Theory 5, Negotiation 4,
+**Sorcery (Ritual) 6**, Stealth 5, **Thrown Weapon (Spear) 6**, Unarmed
+Combat 5. Dice Pools: Astral 14, Defense (Armed) 4, Defense (Unarmed) 5,
+Dodge 5, Magic 4. Gear includes a 6M2 firearm, **Spear [+2 reach, 6S3]**,
+**Survival Knife [6L3]**, Medicine Lodge Materials (4), 4 Plastic Restraints,
+Real Leather Clothing. Spells include Power Missile 5, Detox Deadly Toxin 5.
+Lion totem.
+
+**There is no actor for this character.** (Body was not captured in the crop —
+read it before generating.)
+
+### p.63 / p.64 — Euphoria and Carrone — **attributes CLEAN, gear incomplete**
+
+Every printed attribute and skill matches the shipped actor for both. But the
+printed cyberware never became items: Euphoria's **Datajack** and **Sense Link
+(w/ internal transmitter)**, Carrone's **Datajack, Display Link, Headware
+Memory 30 Mp**, plus his Pocket Secretary and Wristphone.
+
+### p.15 — a second security block — **TEXT LAYER ONLY, RENDER CHECK PENDING**
+
+Reads: Skills Etiquette (Corporate) 2, Firearms 3, Unarmed Combat 3;
+Gear **Armor Vest (2/1)**, **Ceska Black Scorpion** [25 (clip), 1 extra clip…].
+The module's "Corporate / Venue Security" carries an Armor Jacket (5/3) and a
+Ceska vz/120 — different armour and a different weapon. Confirm on the render
+before changing anything.
+
 ### Remaining pages — NOT YET AUDITED
 
-14, 15, **16**, 20, 21, 25, 26, 38, 42, 49, 50, **51**, 52, 63, 64.
+14, **16**, 25, 38, 42, 49, 50, **51**, 52.
 
 (16 and 51 were absent from the first inventory — see the extraction gotcha
 above. Both carry a stat block that has never been checked.)
+
+## Verdict so far
+
+The pattern is now conclusive across eight blocks. **Every NPC transcribed into
+`docs/CAST-STATS.md` is accurate** (Craft, Euphoria, Carrone). **Every NPC that
+was not is either invented or missing** — the Knight Errant guards, Osprey and
+Stone are generic filler bearing no relation to the printed stats, and Pride
+does not exist at all. Osprey and Stone are literally the same actor data twice.
+
+This is not a conversion problem — those three blocks were never converted. The
+fix is to transcribe them from the page and then apply the p.283 rules, not to
+adjust what is there.
 
 ## Emerging pattern
 
