@@ -1,0 +1,195 @@
+{
+  "_id": "891c91998c426e1b",
+  "name": "Flesh Form Soldiers (Force 5)",
+  "type": "npc",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/soldier-ant-spirit-flesh-form-force-4.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "biography": "<p>The heavier Flesh Soldier. Same shape as the Force 3 version and considerably more dangerous — Body, Quickness and Strength all 8, hitting at 10M.</p><p><strong>Manual rules the sheet does not enforce.</strong> Powers and Weaknesses are not fields on the NPC data model, so they live here as prose. Switching these to <code>spirit</code> actors would be worse — <code>SpiritData.prepareDerivedData</code> recomputes attributes from Force and would overwrite the printed table this whole audit exists to restore.</p><p><strong>Astral:</strong> add <strong>+5 Initiative</strong> when acting astrally (the printed Reaction shows this as the bracketed second value). It is deliberately NOT baked into <code>reaction</code>, which would also inflate dodge and defence.</p><p><strong>Attack:</strong> 10M Physical (printed SR1 <code>8M2</code>, converted by p.283 method B — no SR2 item is an ant's mandibles, so the staging digit folds into Power).</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Pain Resistance.<br><strong>Weaknesses:</strong> None printed.</p><p><em>Queen Euphoria p.50, transcribed from a 300 dpi render.</em></p>",
+    "race": "spirit",
+    "professionalRating": 5,
+    "body": {
+      "base": 8,
+      "mod": 0,
+      "value": 8,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 8,
+      "mod": 0,
+      "value": 8,
+      "racial": 0
+    },
+    "strength": {
+      "base": 8,
+      "mod": 0,
+      "value": 8,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 5,
+      "mod": 0,
+      "value": 5,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 3,
+      "mod": 0,
+      "value": 3,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "essence": {
+      "value": 5,
+      "max": 6
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 5,
+      "mod": 0,
+      "value": 5
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 0,
+      "impact": 0
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 5,
+      "dice": 1,
+      "mod": 0,
+      "value": 5
+    },
+    "threatRating": 5,
+    "nuyen": 0,
+    "movement": {
+      "walk": 8,
+      "run": 24
+    }
+  },
+  "items": [
+    {
+      "_id": "891c9199736b696c",
+      "name": "Unarmed Combat",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "strength",
+        "rating": 3,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Flesh Form Soldiers (Force 5)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/soldier-ant-spirit-flesh-form-force-4.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "cover",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "_key": "!actors!891c91998c426e1b"
+}

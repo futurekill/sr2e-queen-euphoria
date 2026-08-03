@@ -1,0 +1,134 @@
+{
+  "_id": "f0da659aff0323a4",
+  "name": "Northrup PRC-42D Wasp",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/northrup-prc-42b-wasp.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "vehicleType": "rotor",
+    "skill": "",
+    "handling": 3,
+    "speed": 130,
+    "acceleration": 15,
+    "body": 2,
+    "armor": 3,
+    "signature": 3,
+    "pilot": 0,
+    "sensor": 2,
+    "cargo": 2,
+    "load": 68,
+    "seating": "",
+    "cost": 122000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 0,
+    "notes": "<p><strong>Armed helicopter</strong> — a variant of the standard Wasp with Ares Armorflex vehicle armour.</p><p><strong>Armament:</strong> one Light Machine Gun under the nose, 100 rounds (Belt, internal), Laser Sight, <strong>rigged for automatic 6 shots with no Recoil Modifier</strong>.</p><p><strong>Pilot:</strong> QE p.16 says <em>\"use the Knight Errant Security Guard above, but substitute Rotor for Car at the same value\"</em> — so the p.19 block with <strong>Rotor 3</strong>. That is a note, not a separate actor.</p><p><strong>Conversion:</strong> chassis by method A from the 42B; Armor 1 → 3 by the ×3 rule, which applies here and only here; the LMG by method A (7S). Method B would have given 8S — recorded in the audit as the one weapon where the two methods disagree.</p><p>A single-seat police/military light rotorcraft.</p><p><em>Cruising speed 65 m/CT (used for vehicle tests). Max speed 130 m/CT. Stats: SR2E p.264-265.</em></p><p><em>Stats verified against the Rigger 2 Vehicle List (SR2, book p.148+). Northrup Wasp (PRC-42B variant).</em></p>"
+  },
+  "items": [
+    {
+      "_id": "f0da659a77656170",
+      "name": "Ingram Valiant",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/light-machine-gun-generic.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "weaponType": "firearm",
+        "skill": "firearms",
+        "damageCode": "7S",
+        "damageType": "physical",
+        "concealability": 99,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": true,
+          "fa": true
+        },
+        "ammo": {
+          "current": 50,
+          "max": 50,
+          "type": "belt"
+        },
+        "recoilComp": 1,
+        "ranges": {
+          "short": 20,
+          "medium": 40,
+          "long": 80,
+          "extreme": 150
+        },
+        "strengthMin": 0,
+        "weight": 9,
+        "cost": 1500,
+        "availability": "6/5 days",
+        "legality": "Restricted",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Light machine gun, belt-fed 50 (c). Popular with merc units worldwide; the most common LMG model. Has a hip-brace recoil pad (Rating 1) and an ammunition bin slung over the shoulder. The only entry the book's Light Machine Guns section lists — there is no generic LMG. Light Machine Guns is a FIREARMS concentration (p.70); Gunnery governs heavy weapons \"on tripods, vehicle mounts, pintles, or in fixed emplacements\", so a VEHICLE-MOUNTED Valiant is fired with Gunnery even though the weapon itself is a firearm. SR2E p.238, p.255.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5S3</code>. The PRC-42D's nose gun (p.16). NOTE: methods disagree here — A gives 7S, B gives 8S. A wins on p.283's preference ordering. Re-check if the mislabelled Light_Machine_Gun_Generic file in the system pack resolves to a different weapon.</em></p>",
+        "streetIndex": 2
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Northrup PRC-42D Wasp",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/northrup-prc-42b-wasp.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0
+  },
+  "_key": "!actors!f0da659aff0323a4"
+}

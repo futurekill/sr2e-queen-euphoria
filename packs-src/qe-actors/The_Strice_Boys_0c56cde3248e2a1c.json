@@ -1,8 +1,8 @@
 {
-  "_id": "5e033754c9d374b4",
-  "name": "Robert Carrone",
+  "_id": "0c56cde3248e2a1c",
+  "name": "The Strice Boys",
   "type": "npc",
-  "img": "modules/sr2e-queen-euphoria/assets/portraits/robert-carrone.webp",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/the-strice-boys.webp",
   "effects": [],
   "flags": {},
   "_stats": {
@@ -22,37 +22,37 @@
     "default": 0
   },
   "system": {
-    "biography": "<p>MegaMedia vice-president and Euphoria's former manager — the Johnson who hires the runners to find her. Born corp, calm, ruthless, loyal to MegaMedia only until a better offer arrives.</p><p><em>Cast of Characters, Queen Euphoria p.64. Attributes and skills verified from the render; the printed cyberware is now on the sheet as items.</em></p>",
+    "biography": "<p>Strice Foods facility guards — better equipped than the Pacific Towers rent-a-cops, with Armor Vests With Plates, Uzis and stun batons.</p><p>The stun baton's printed <em>\"+ Special\"</em> is a stun effect beyond its damage code; GM adjudicates.</p><p><em>Queen Euphoria p.25. No actor previously existed — neither the Seco LD 120 nor the stun baton appeared anywhere in the module.</em></p>",
     "race": "human",
     "professionalRating": 3,
     "body": {
+      "base": 5,
+      "mod": 0,
+      "value": 5,
+      "racial": 0
+    },
+    "quickness": {
       "base": 3,
       "mod": 0,
       "value": 3,
       "racial": 0
     },
-    "quickness": {
+    "strength": {
       "base": 4,
       "mod": 0,
       "value": 4,
       "racial": 0
     },
-    "strength": {
+    "charisma": {
       "base": 2,
       "mod": 0,
       "value": 2,
       "racial": 0
     },
-    "charisma": {
+    "intelligence": {
       "base": 3,
       "mod": 0,
       "value": 3,
-      "racial": 0
-    },
-    "intelligence": {
-      "base": 4,
-      "mod": 0,
-      "value": 4,
       "racial": 0
     },
     "willpower": {
@@ -62,7 +62,7 @@
       "racial": 0
     },
     "essence": {
-      "value": 5.4,
+      "value": 6,
       "max": 6
     },
     "magic": {
@@ -73,9 +73,9 @@
       "totem": ""
     },
     "reaction": {
-      "base": 4,
+      "base": 3,
       "mod": 0,
-      "value": 4
+      "value": 3
     },
     "conditionMonitor": {
       "physical": {
@@ -107,21 +107,60 @@
       }
     },
     "initiative": {
-      "base": 4,
+      "base": 3,
       "dice": 1,
       "mod": 0,
-      "value": 4
+      "value": 3
     },
     "threatRating": 3,
     "nuyen": 0,
     "movement": {
-      "walk": 4,
-      "run": 12
+      "walk": 3,
+      "run": 9
     }
   },
   "items": [
     {
-      "_id": "5e033754736b696c",
+      "_id": "0c56cde3736b696c",
+      "name": "Armed Combat",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "strength",
+        "rating": 4,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "0c56cde3736b696c",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -146,10 +185,10 @@
       "system": {
         "category": "active",
         "linkedAttribute": "charisma",
-        "rating": 6,
+        "rating": 2,
         "concentration": {
           "name": "Corporate",
-          "rating": 6
+          "rating": 2
         },
         "specialization": {
           "name": "",
@@ -160,8 +199,8 @@
       }
     },
     {
-      "_id": "5e033754736b696c",
-      "name": "Etiquette (Media)",
+      "_id": "0c56cde3736b696c",
+      "name": "Etiquette (Street)",
       "type": "skill",
       "img": "icons/svg/book.svg",
       "effects": [],
@@ -185,10 +224,10 @@
       "system": {
         "category": "active",
         "linkedAttribute": "charisma",
-        "rating": 5,
+        "rating": 2,
         "concentration": {
-          "name": "Media",
-          "rating": 5
+          "name": "Street",
+          "rating": 2
         },
         "specialization": {
           "name": "",
@@ -199,7 +238,7 @@
       }
     },
     {
-      "_id": "5e033754736b696c",
+      "_id": "0c56cde3736b696c",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,8 +277,8 @@
       }
     },
     {
-      "_id": "5e033754736b696c",
-      "name": "Negotiation",
+      "_id": "0c56cde3736b696c",
+      "name": "Stealth",
       "type": "skill",
       "img": "icons/svg/book.svg",
       "effects": [],
@@ -262,8 +301,8 @@
       },
       "system": {
         "category": "active",
-        "linkedAttribute": "charisma",
-        "rating": 5,
+        "linkedAttribute": "quickness",
+        "rating": 2,
         "concentration": {
           "name": "",
           "rating": 0
@@ -277,8 +316,47 @@
       }
     },
     {
-      "_id": "5e03375477656170",
-      "name": "Ceska vz/120",
+      "_id": "0c56cde3736b696c",
+      "name": "Unarmed Combat",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "strength",
+        "rating": 4,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "0c56cde377656170",
+      "name": "Seco LD 120",
       "type": "weapon",
       "img": "icons/svg/target.svg",
       "effects": [],
@@ -304,7 +382,7 @@
         "skill": "firearms",
         "damageCode": "5M",
         "damageType": "physical",
-        "concealability": 8,
+        "concealability": 7,
         "reach": 0,
         "firingModes": {
           "ss": false,
@@ -313,8 +391,8 @@
           "fa": false
         },
         "ammo": {
-          "current": 18,
-          "max": 18,
+          "current": 12,
+          "max": 12,
           "type": "pistol"
         },
         "recoilComp": 0,
@@ -324,16 +402,133 @@
           "long": 30,
           "extreme": 50
         },
-        "cost": 200,
-        "availability": "4/4 days",
+        "cost": 300,
+        "availability": "4/5 days",
         "legality": "Restricted",
         "equipped": true,
-        "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Carrone p.64 [18 (clip), 3M2]. A DIFFERENT weapon from the guards' Ceska Black Scorpion (p.15) — both are Ceskas, neither is in SR2, and both fold to 5M.</em></p>"
+        "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. The Strice Boys p.25 [12 (clip), 1 extra clip, 3M2]. No SR2 Seco entry, so 3+2 = 5M.</em></p>"
       }
     },
     {
-      "_id": "5e03375461726d6f",
-      "name": "Armor Clothing",
+      "_id": "0c56cde377656170",
+      "name": "Stun Baton",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "weaponType": "melee",
+        "skill": "armed_combat",
+        "damageCode": "6S",
+        "damageType": "stun",
+        "concealability": 4,
+        "reach": 1,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 750,
+        "availability": "3/36 hrs",
+        "legality": "Legal",
+        "equipped": true,
+        "accessories": [],
+        "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>"
+      }
+    },
+    {
+      "_id": "0c56cde377656170",
+      "name": "Uzi III",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/uzi-iii.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "weaponType": "firearm",
+        "skill": "firearms",
+        "damageCode": "6M",
+        "damageType": "physical",
+        "concealability": 5,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": true,
+          "fa": false
+        },
+        "ammo": {
+          "current": 24,
+          "max": 24,
+          "type": "smg"
+        },
+        "recoilComp": 1,
+        "ranges": {
+          "short": 10,
+          "medium": 40,
+          "long": 80,
+          "extreme": 150
+        },
+        "strengthMin": 0,
+        "weight": 4,
+        "cost": 600,
+        "availability": "4/24 hrs",
+        "legality": "Legal",
+        "equipped": true,
+        "accessories": [],
+        "notes": "SR2E p.232. The latest in the venerable Uzi lineage—compact, reliable, and effective in close quarters. BF capable.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M3</code>. The Strice Boys p.25.</em></p>",
+        "streetIndex": 0.75
+      }
+    },
+    {
+      "_id": "0c56cde361726d6f",
+      "name": "Armor Vest With Plates",
       "type": "armor",
       "img": "icons/svg/shield.svg",
       "effects": [],
@@ -355,8 +550,8 @@
         "default": 0
       },
       "system": {
-        "ballistic": 3,
-        "impact": 0,
+        "ballistic": 4,
+        "impact": 3,
         "concealability": 0,
         "weight": 0,
         "cost": 0,
@@ -365,186 +560,16 @@
         "equipped": true,
         "notes": "<p>Worn armor, as printed in the Queen Euphoria stat block.</p>"
       }
-    },
-    {
-      "_id": "5e03375463796265",
-      "name": "Datajack",
-      "type": "cyberware",
-      "img": "icons/svg/biohazard.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "rating": 0,
-        "quantity": 1,
-        "cost": 0,
-        "availability": "",
-        "legality": "Legal",
-        "equipped": true,
-        "essence": 0.2,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "5e03375463796265",
-      "name": "Display Link",
-      "type": "cyberware",
-      "img": "icons/svg/biohazard.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "rating": 0,
-        "quantity": 1,
-        "cost": 0,
-        "availability": "",
-        "legality": "Legal",
-        "equipped": true,
-        "essence": 0.2,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "5e03375463796265",
-      "name": "Headware Memory",
-      "type": "cyberware",
-      "img": "icons/svg/biohazard.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "rating": 0,
-        "quantity": 1,
-        "cost": 0,
-        "availability": "",
-        "legality": "Legal",
-        "equipped": true,
-        "essence": 0.2,
-        "notes": "30 Mp."
-      }
-    },
-    {
-      "_id": "5e03375467656172",
-      "name": "Pocket Secretary",
-      "type": "gear",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "rating": 0,
-        "quantity": 1,
-        "cost": 0,
-        "availability": "",
-        "legality": "Legal",
-        "equipped": true,
-        "essence": 0,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "5e03375467656172",
-      "name": "Wristphone",
-      "type": "gear",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "rating": 0,
-        "quantity": 1,
-        "cost": 0,
-        "availability": "",
-        "legality": "Legal",
-        "equipped": true,
-        "essence": 0,
-        "notes": "With vidscreen."
-      }
     }
   ],
   "prototypeToken": {
-    "name": "Robert Carrone",
+    "name": "The Strice Boys",
     "displayName": 20,
     "actorLink": false,
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-queen-euphoria/assets/portraits/robert-carrone.webp",
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/the-strice-boys.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,
@@ -559,7 +584,7 @@
     "lockRotation": true,
     "rotation": 0,
     "alpha": 1,
-    "disposition": 0,
+    "disposition": -1,
     "displayBars": 20,
     "bar1": {
       "attribute": "conditionMonitor.physical"
@@ -568,5 +593,5 @@
       "attribute": "conditionMonitor.stun"
     }
   },
-  "_key": "!actors!5e033754c9d374b4"
+  "_key": "!actors!0c56cde3248e2a1c"
 }

@@ -1,8 +1,8 @@
 {
-  "_id": "b5363a843c6735ae",
-  "name": "Craft (Thomas Dorin)",
+  "_id": "2b6a986a58820472",
+  "name": "Stone (Alexander Cross)",
   "type": "npc",
-  "img": "modules/sr2e-queen-euphoria/assets/portraits/craft-thomas-dorin.webp",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/stone-crafts-muscle.webp",
   "effects": [],
   "flags": {},
   "_stats": {
@@ -22,7 +22,7 @@
     "default": 0
   },
   "system": {
-    "biography": "<p>Ant-totem shaman and the adventure's villain. A former Coyote shaman turned talismonger who runs the <strong>Magic Crafts</strong> shop; he took a run from his Fixer, Solomon Daniels, and came back changed. Under the Ant totem he is crazed with power, and his psychotic fixation on the simstar Euphoria drives the plot — he means to make her his <em>Queen</em>.</p><p><strong>Totem:</strong> Ant. The book grants it no mechanical benefit; the bond is roleplay.</p><p><strong>Sleep Spell Focus (Force 2)</strong> — a real item on this sheet, shipped inactive. Turn it on for Sleep and off again afterwards, or it adds its dice to every other spell he casts.</p><p><em>Cast of Characters, Queen Euphoria p.62. Attributes, skills and gear verified from a 300 dpi render; the spell list re-checked 2026-08-03 and confirmed at eight spells.</em></p>",
+    "biography": "<p><strong>Stone is a full magician</strong>, not a gunman — the module previously shipped him as a byte-identical copy of Osprey, with Magic 0, no spells and an Uzi. He has nine spells, Sorcery 7, Magic Theory 8 and a printed <strong>Magic Pool of 7</strong>.</p><p><strong>Three bound elementals</strong> (separate actors in this compendium, and no link between them — the NPC data model has no boundSpirits field, so the assignment is recorded here rather than faked mechanically):</p><ul><li><strong>Fire Elemental Force 5</strong> — assigned to <em>Spell Defense</em>.</li><li><strong>Fire Elemental Force 4</strong> — bound to him, for <em>Combat Spells</em>.</li><li><strong>Earth Elemental Force 5</strong>.</li></ul><p><strong>Six expendable Manipulation fetishes.</strong> Armor, Control Thoughts and Petrify each need one to cast.</p><p><em>Queen Euphoria p.21, verified from a render.</em></p>",
     "race": "human",
     "professionalRating": 4,
     "body": {
@@ -32,9 +32,9 @@
       "racial": 0
     },
     "quickness": {
-      "base": 3,
+      "base": 2,
       "mod": 0,
-      "value": 3,
+      "value": 2,
       "racial": 0
     },
     "strength": {
@@ -44,9 +44,9 @@
       "racial": 0
     },
     "charisma": {
-      "base": 5,
+      "base": 4,
       "mod": 0,
-      "value": 5,
+      "value": 4,
       "racial": 0
     },
     "intelligence": {
@@ -68,13 +68,13 @@
     "magic": {
       "value": 6,
       "max": 6,
-      "tradition": "shamanic",
+      "tradition": "hermetic",
       "type": "full_magician",
-      "totem": "ant"
+      "totem": ""
     },
     "reaction": {
-      "base": 4,
-      "mod": 0,
+      "base": 3,
+      "mod": 1,
       "value": 4
     },
     "conditionMonitor": {
@@ -101,8 +101,8 @@
         "bonus": 0
       },
       "magic": {
-        "value": 0,
-        "max": 0,
+        "value": 7,
+        "max": 7,
         "bonus": 0
       }
     },
@@ -112,172 +112,16 @@
       "mod": 0,
       "value": 4
     },
-    "threatRating": 6,
+    "threatRating": 5,
     "nuyen": 0,
     "movement": {
-      "walk": 3,
-      "run": 9
+      "walk": 2,
+      "run": 6
     }
   },
   "items": [
     {
-      "_id": "b5363a84736b696c",
-      "name": "Conjuring",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "active",
-        "linkedAttribute": "charisma",
-        "rating": 5,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": true,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a84736b696c",
-      "name": "Sorcery",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "active",
-        "linkedAttribute": "willpower",
-        "rating": 6,
-        "concentration": {
-          "name": "Spellcasting",
-          "rating": 6
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": true,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a84736b696c",
-      "name": "Firearms",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "active",
-        "linkedAttribute": "quickness",
-        "rating": 4,
-        "concentration": {
-          "name": "Pistols",
-          "rating": 4
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a84736b696c",
-      "name": "Etiquette (Corporate)",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "active",
-        "linkedAttribute": "charisma",
-        "rating": 1,
-        "concentration": {
-          "name": "Corporate",
-          "rating": 1
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a84736b696c",
+      "_id": "2b6a986a736b696c",
       "name": "Etiquette (Street)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -302,10 +146,10 @@
       "system": {
         "category": "active",
         "linkedAttribute": "charisma",
-        "rating": 4,
+        "rating": 3,
         "concentration": {
           "name": "Street",
-          "rating": 4
+          "rating": 3
         },
         "specialization": {
           "name": "",
@@ -316,7 +160,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "2b6a986a736b696c",
       "name": "Magic Theory",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -341,7 +185,7 @@
       "system": {
         "category": "active",
         "linkedAttribute": "intelligence",
-        "rating": 6,
+        "rating": 8,
         "concentration": {
           "name": "",
           "rating": 0
@@ -355,8 +199,8 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
-      "name": "Negotiation",
+      "_id": "2b6a986a736b696c",
+      "name": "Sorcery",
       "type": "skill",
       "img": "icons/svg/book.svg",
       "effects": [],
@@ -379,8 +223,8 @@
       },
       "system": {
         "category": "active",
-        "linkedAttribute": "charisma",
-        "rating": 4,
+        "linkedAttribute": "willpower",
+        "rating": 7,
         "concentration": {
           "name": "",
           "rating": 0
@@ -389,12 +233,12 @@
           "name": "",
           "rating": 0
         },
-        "isMagical": false,
+        "isMagical": true,
         "notes": ""
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "2b6a986a736b696c",
       "name": "Stealth",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -419,10 +263,10 @@
       "system": {
         "category": "active",
         "linkedAttribute": "quickness",
-        "rating": 4,
+        "rating": 2,
         "concentration": {
-          "name": "Urban",
-          "rating": 4
+          "name": "",
+          "rating": 0
         },
         "specialization": {
           "name": "",
@@ -433,7 +277,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "2b6a986a736b696c",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -458,7 +302,7 @@
       "system": {
         "category": "active",
         "linkedAttribute": "strength",
-        "rating": 3,
+        "rating": 2,
         "concentration": {
           "name": "",
           "rating": 0
@@ -472,124 +316,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
-      "name": "Evaluate Magical Goods",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "knowledge",
-        "linkedAttribute": "intelligence",
-        "rating": 5,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a84736b696c",
-      "name": "Metalworking",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "knowledge",
-        "linkedAttribute": "intelligence",
-        "rating": 3,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a84736b696c",
-      "name": "Woodworking",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "knowledge",
-        "linkedAttribute": "intelligence",
-        "rating": 3,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a847370656c",
+      "_id": "2b6a986a7370656c",
       "name": "Mana Bolt",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -632,7 +359,50 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
+      "_id": "2b6a986a7370656c",
+      "name": "Powerball",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "combat",
+        "subcategory": "",
+        "type": "physical",
+        "range": "los",
+        "duration": "instant",
+        "force": 5,
+        "drainCode": "((F / 2) + 1)S",
+        "target": "Body (R)",
+        "damageCode": "M",
+        "isAreaEffect": true,
+        "isVoluntary": false,
+        "notes": "An area-effect spell that causes Physical damage. This mana version affects only living targets.",
+        "sustaining": false,
+        "sustainedForce": 0,
+        "spellLocked": false,
+        "quickened": false,
+        "quickeningKarma": 0
+      }
+    },
+    {
+      "_id": "2b6a986a7370656c",
       "name": "Sleep",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -660,13 +430,13 @@
         "type": "mana",
         "range": "los",
         "duration": "instant",
-        "force": 5,
+        "force": 6,
         "drainCode": "((F / 2) - 1)S",
         "target": "Willpower (R)",
         "damageCode": "M",
         "isAreaEffect": true,
         "isVoluntary": false,
-        "notes": "<p>His signature spell — how Euphoria is taken. The bonded Sleep Spell Focus (Force 2) adds 2 dice, but ONLY while the focus is active; see the focus item.</p>An area-effect spell that causes Stun damage to living targets only.",
+        "notes": "An area-effect spell that causes Stun damage to living targets only.",
         "sustaining": false,
         "sustainedForce": 0,
         "spellLocked": false,
@@ -675,8 +445,8 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
-      "name": "Clairvoyance",
+      "_id": "2b6a986a7370656c",
+      "name": "Detect Enemies",
       "type": "spell",
       "img": "icons/svg/daze.svg",
       "effects": [],
@@ -703,56 +473,13 @@
         "type": "mana",
         "range": "limited",
         "duration": "sustained",
-        "force": 4,
-        "drainCode": "(F / 2)M",
+        "force": 3,
+        "drainCode": "((F / 2) + 1)M",
         "target": "4",
         "damageCode": "",
-        "isAreaEffect": false,
-        "isVoluntary": true,
-        "notes": "A hypersense spell requiring a voluntary subject. The magician can see distant scenes as if present, to the range of the new sense. The magician must concentrate to use this sense, and while using it, cannot use physical vision. A magician cannot cast spells at a target seen using the clairvoyance spell. This spell does not translate sound.",
-        "sustaining": false,
-        "sustainedForce": 0,
-        "spellLocked": false,
-        "quickened": false,
-        "quickeningKarma": 0
-      }
-    },
-    {
-      "_id": "b5363a847370656c",
-      "name": "Confusion",
-      "type": "spell",
-      "img": "icons/svg/daze.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "illusion",
-        "subcategory": "",
-        "type": "mana",
-        "range": "los",
-        "duration": "sustained",
-        "force": 5,
-        "drainCode": "(F / 2)S",
-        "target": "Willpower (R)",
-        "damageCode": "",
         "isAreaEffect": true,
-        "isVoluntary": false,
-        "notes": "This is an area-effect spell similar to the chaos spell, except that the confusion spell does not affect technological systems. Visual illusions ﬁll the affected area, making it a place of shifting forms, dazzling lights, and pools of shadow. Those who fail to resist suffer a distraction (+1 to all target numbers) for every two successes remaining after reductions from the Spell Resistance Test.",
+        "isVoluntary": true,
+        "notes": "An area-effect, general hypersense spell requiring a voluntary subject. Within range, detects living beings who have hostile intentions toward the subject of the spell. This spell would not detect a trap (it is not alive) nor a terrorist about to shoot into a crowd at random (the intention is not personal).",
         "sustaining": false,
         "sustainedForce": 0,
         "spellLocked": false,
@@ -761,8 +488,8 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
-      "name": "Mask",
+      "_id": "2b6a986a7370656c",
+      "name": "Increase [Attribute]",
       "type": "spell",
       "img": "icons/svg/daze.svg",
       "effects": [],
@@ -784,18 +511,17 @@
         "default": 0
       },
       "system": {
-        "category": "illusion",
-        "subcategory": "",
+        "category": "health",
         "type": "mana",
         "range": "touch",
         "duration": "sustained",
-        "force": 6,
-        "drainCode": "(F / 2)L",
-        "target": "4",
+        "force": 4,
+        "drainCode": "+0(L)",
+        "target": "",
         "damageCode": "",
         "isAreaEffect": false,
-        "isVoluntary": true,
-        "notes": "This spell requires that the magician touch a voluntary subject. The subject assumes some physical appearance (same basic size and shape) chosen by the caster. The number of successes becomes the target number for Perception Tests by observers. This spell does not work through technological devices.",
+        "isVoluntary": false,
+        "notes": "<p>Printed as 'Increase Strength +2: 4'.</p><p><em>Queen Euphoria conversion (core p.283 — translate spell codes). Printed in Queen Euphoria as <strong>Increase Strength</strong>. SR1 printed one spell per attribute ('Increase Strength +2: 4'); SR2 generalised them into a single Increase [Attribute] spell. Stone's is Strength +2 at Force 4 — recorded in the item notes since the generic spell carries no attribute field.</em></p>",
         "sustaining": false,
         "sustainedForce": 0,
         "spellLocked": false,
@@ -804,8 +530,8 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
-      "name": "Stimulation",
+      "_id": "2b6a986a7370656c",
+      "name": "Treat",
       "type": "spell",
       "img": "icons/svg/daze.svg",
       "effects": [],
@@ -827,18 +553,19 @@
         "default": 0
       },
       "system": {
-        "category": "illusion",
-        "subcategory": "",
+        "category": "health",
         "type": "mana",
-        "range": "los",
-        "duration": "sustained",
-        "force": 4,
-        "drainCode": "((F / 2) + 1)L",
-        "target": "4",
+        "range": "touch",
+        "duration": "permanent",
+        "force": 5,
+        "drainCode": "(F / 2)W",
+        "target": "",
         "damageCode": "",
         "isAreaEffect": false,
-        "isVoluntary": true,
-        "notes": "The voluntary subject experiences a full sensory illusion of whatever type the spellcaster desires. This is usually a luxury spell bought by the rich and jaded, seeking sensations they cannot ﬁnd in the real world. Successes measure the pleasure of the subject.",
+        "isVoluntary": false,
+        "notes": "<p><em>Queen Euphoria conversion (core p.283 — translate spell codes). Printed in Queen Euphoria as <strong>Treat Severe Wounds</strong>. SR1 printed a separate Treat spell per wound level; SR2 collapsed them into one Treat whose drain scales with the wound ((F/2)W). Force 5 as printed.</em></p>",
+        "healsDamage": true,
+        "healingTnBase": 8,
         "sustaining": false,
         "sustainedForce": 0,
         "spellLocked": false,
@@ -847,7 +574,7 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
+      "_id": "2b6a986a7370656c",
       "name": "Armor",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -875,13 +602,13 @@
         "type": "physical",
         "range": "limited",
         "duration": "sustained",
-        "force": 6,
+        "force": 8,
         "drainCode": "((F / 2) + 2)M",
         "target": "4",
         "damageCode": "",
         "isAreaEffect": false,
         "isVoluntary": true,
-        "notes": "A voluntary subject is required. The magician gives the subject built-in armor, knitting his tissues into tougher compounds. Treat one-half the successes made in the Spell Success Test as the Dermal Armor Rating (add to Body) for as long as the spell is maintained.",
+        "notes": "<p>REQUIRES A FETISH (printed).</p>A voluntary subject is required. The magician gives the subject built-in armor, knitting his tissues into tougher compounds. Treat one-half the successes made in the Spell Success Test as the Dermal Armor Rating (add to Body) for as long as the spell is maintained.",
         "sustaining": false,
         "sustainedForce": 0,
         "spellLocked": false,
@@ -890,8 +617,8 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
-      "name": "Levitate Person",
+      "_id": "2b6a986a7370656c",
+      "name": "Control Thoughts",
       "type": "spell",
       "img": "icons/svg/daze.svg",
       "effects": [],
@@ -914,17 +641,17 @@
       },
       "system": {
         "category": "manipulation",
-        "subcategory": "telekinetic",
-        "type": "physical",
-        "range": "los",
+        "subcategory": "control",
+        "type": "mana",
+        "range": "limited",
         "duration": "sustained",
-        "force": 4,
-        "drainCode": "((F / 2) + 1)M",
-        "target": "4",
+        "force": 5,
+        "drainCode": "((F / 2) + 2)D",
+        "target": "Willpower (R)",
         "damageCode": "",
         "isAreaEffect": false,
         "isVoluntary": false,
-        "notes": "",
+        "notes": "<p>REQUIRES A FETISH (printed).</p>The magician controls the thoughts of the subject. The victim will carry out orders wholeheartedly as long as the magician sustains the spell. This is the magical equivalent of deep hypnotic suggestion. Actions that would be terribly destructive to the target or his loved ones allow the character to fight the spell. He must pass a Willpower Test with a target number of the spell's Force. If the casting magician is not present, a single success will do. If the casting magician is present, roll that character's Willpower against a target number equal to the target's Willpower. The magician's successes reduce the target's. One net success on the part of the target is still all that is required to resist the heinous command.",
         "sustaining": false,
         "sustainedForce": 0,
         "spellLocked": false,
@@ -933,10 +660,10 @@
       }
     },
     {
-      "_id": "b5363a84666f6375",
-      "name": "Sleep Spell Focus",
-      "type": "focus",
-      "img": "icons/svg/aura.svg",
+      "_id": "2b6a986a7370656c",
+      "name": "Petrify",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
       "effects": [],
       "flags": {},
       "_stats": {
@@ -956,20 +683,30 @@
         "default": 0
       },
       "system": {
-        "focusType": "spell",
-        "force": 2,
-        "bonded": true,
-        "active": false,
-        "expendable": false,
-        "bondedWeaponId": "",
-        "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Ships INACTIVE on purpose: the system sums every ACTIVE bonded spell focus into EVERY spell (FocusData does not bind a focus to a category), so leaving it on would hand Craft +2 dice on Mana Bolt too, which the page does not grant. Activate it on the item sheet when he casts Sleep, then deactivate."
+        "category": "manipulation",
+        "subcategory": "transform",
+        "type": "mana",
+        "range": "limited",
+        "duration": "permanent",
+        "force": 6,
+        "drainCode": "((F / 2) + 2)D",
+        "target": "Body (R)",
+        "damageCode": "",
+        "isAreaEffect": false,
+        "isVoluntary": false,
+        "sustaining": false,
+        "sustainedForce": 0,
+        "spellLocked": false,
+        "quickened": false,
+        "quickeningKarma": 0,
+        "notes": "<p>REQUIRES A FETISH (printed).</p><p><em>Queen Euphoria conversion (core p.283 — translate spell codes). <strong>No SR2 equivalent — custom spell.</strong> NO SR2 EQUIVALENT EXISTS. Checked the core rulebook and Grimoire 2e: both have only 'Petrifying Gaze' as a critter power (basilisk, cockatrice), not a spell. Rather than drop one of Stone's three fetish-bound Manipulation spells — which would change the encounter — it is kept as a QE-local custom spell built on the SR1 printing and flagged as such on the item. This is the spell equivalent of weapon method B.</em></p>"
       }
     },
     {
-      "_id": "b5363a8477656170",
-      "name": "Ares Predator",
+      "_id": "2b6a986a77656170",
+      "name": "Browning Max-Power",
       "type": "weapon",
-      "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
+      "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
       "effects": [],
       "flags": {},
       "_stats": {
@@ -993,7 +730,7 @@
         "skill": "firearms",
         "damageCode": "9M",
         "damageType": "physical",
-        "concealability": 5,
+        "concealability": 6,
         "reach": 0,
         "firingModes": {
           "ss": false,
@@ -1002,8 +739,8 @@
           "fa": false
         },
         "ammo": {
-          "current": 15,
-          "max": 15,
+          "current": 10,
+          "max": 10,
           "type": "pistol"
         },
         "recoilComp": 0,
@@ -1014,19 +751,77 @@
           "extreme": 60
         },
         "strengthMin": 0,
-        "weight": 2.25,
+        "weight": 2,
         "cost": 450,
         "availability": "3/24 hrs",
         "legality": "Legal",
         "equipped": true,
         "accessories": [],
-        "notes": "SR2E p.231. Considered by many the premier heavy pistol. Menacing and popular among mercenaries and security services.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry — SR2 has no separate 'II'.</em></p>",
-        "streetIndex": 0.5
+        "notes": "SR2E p.231. The main competitor to the Ares Predator. Heavy frame, hard-hitting—the samurai's sidearm of choice.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) — Ultra-Power is the SR1 name for this pistol.</em></p>",
+        "streetIndex": 1
       }
     },
     {
-      "_id": "b5363a8461726d6f",
-      "name": "Real Leather Clothing",
+      "_id": "2b6a986a77656170",
+      "name": "Staff",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/staff.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "weaponType": "melee",
+        "skill": "armed_combat",
+        "damageCode": "(Str+2)M",
+        "damageType": "stun",
+        "concealability": 2,
+        "reach": 2,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 50,
+        "availability": "3/24 hrs",
+        "legality": "Legal",
+        "equipped": true,
+        "accessories": [],
+        "notes": "SR2E Melee Weapons Table p.101: (Str+2)M Stun, Reach 2, Concealability 2, 50¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>3M2 Stun</code>. Stone p.21, +2 Reach.</em></p>"
+      }
+    },
+    {
+      "_id": "2b6a986a61726d6f",
+      "name": "Armor Clothing",
       "type": "armor",
       "img": "icons/svg/shield.svg",
       "effects": [],
@@ -1048,8 +843,8 @@
         "default": 0
       },
       "system": {
-        "ballistic": 0,
-        "impact": 2,
+        "ballistic": 3,
+        "impact": 0,
         "concealability": 0,
         "weight": 0,
         "cost": 0,
@@ -1058,16 +853,50 @@
         "equipped": true,
         "notes": "<p>Worn armor, as printed in the Queen Euphoria stat block.</p>"
       }
+    },
+    {
+      "_id": "2b6a986a67656172",
+      "name": "Expendable Manipulation Fetish",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 0,
+        "quantity": 6,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 0,
+        "notes": "All three of his Manipulation spells require one. Six uses total — when they run out, Armor, Control Thoughts and Petrify are unavailable."
+      }
     }
   ],
   "prototypeToken": {
-    "name": "Craft (Thomas Dorin)",
+    "name": "Stone (Alexander Cross)",
     "displayName": 20,
     "actorLink": false,
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-queen-euphoria/assets/portraits/craft-thomas-dorin.webp",
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/stone-crafts-muscle.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,
@@ -1091,5 +920,5 @@
       "attribute": "conditionMonitor.stun"
     }
   },
-  "_key": "!actors!b5363a843c6735ae"
+  "_key": "!actors!2b6a986a58820472"
 }

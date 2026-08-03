@@ -1,12 +1,30 @@
 {
   "_id": "96c308d2b016c4f9",
-  "name": "Worker Ant Spirit (Flesh Form, Force 3)",
+  "name": "Flesh Form Worker (Force 1)",
   "type": "npc",
   "img": "modules/sr2e-queen-euphoria/assets/portraits/worker-ant-spirit-flesh-form-force-3.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
   "system": {
-    "biography": "<p>A worker ant spirit inhabiting a human host — a Dual Being that cannot astrally project. <strong>Flesh Form rule:</strong> a Worker reduces the host's Physical attributes by 1; Mental attributes are the spirit's True-Form values. (Representative host below: Physical 3 − 1 = 2.) Still a poor combatant that screeches and self-sacrifices to protect the Hive.</p><p><strong>MANUAL rules (QE p.54 — the sheet does NOT enforce these):</strong> Immunity to Normal Weapons vs <em>all ranged</em> attacks (firearms etc., not spells); \"armor\" = 2×Force. A mundane weapon in melee attacks with <strong>Willpower</strong>, not weapon skill (magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> (attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p><p><em>Insects Among Us, Queen Euphoria p.54. Scale the host's Physical attributes to the individual it possesses.</em></p>",
+    "biography": "<p>The colony's labour caste in a human host — tending cocoons and larvae. <strong>It has no printed attack at all</strong> and is not a combatant: it screeches to warn the Hive and will throw itself in front of a blow to protect the cocoons or the Queen.</p><p><strong>This replaces the old 'Worker Ant Spirit (Flesh Form, Force 3)'.</strong> The printed Worker is Force 1, so an existing token becomes weaker than the GM expected, not stronger.</p><p><strong>Manual rules the sheet does not enforce.</strong> Powers and Weaknesses are not fields on the NPC data model, so they live here as prose. Switching these to <code>spirit</code> actors would be worse — <code>SpiritData.prepareDerivedData</code> recomputes attributes from Force and would overwrite the printed table this whole audit exists to restore.</p><p><strong>Astral:</strong> add <strong>+5 Initiative</strong> when acting astrally (the printed Reaction shows this as the bracketed second value). It is deliberately NOT baked into <code>reaction</code>, which would also inflate dodge and defence.</p><p><strong>Attack:</strong> None Physical (printed SR1 <code>None</code>, converted by p.283 method B — no SR2 item is an ant's mandibles, so the staging digit folds into Power).</p><p><strong>Powers:</strong> Enhanced Senses (Smell).<br><strong>Weaknesses:</strong> Reduced Senses (Sight).</p><p><em>Queen Euphoria p.47, transcribed from a 300 dpi render.</em></p>",
     "race": "spirit",
-    "professionalRating": 3,
+    "professionalRating": 1,
     "body": {
       "base": 2,
       "mod": 0,
@@ -26,9 +44,9 @@
       "racial": 0
     },
     "charisma": {
-      "base": 3,
+      "base": 1,
       "mod": 0,
-      "value": 3,
+      "value": 1,
       "racial": 0
     },
     "intelligence": {
@@ -38,14 +56,14 @@
       "racial": 0
     },
     "willpower": {
-      "base": 3,
+      "base": 1,
       "mod": 0,
-      "value": 3,
+      "value": 1,
       "racial": 0
     },
     "essence": {
-      "value": 3,
-      "max": 3
+      "value": 1,
+      "max": 6
     },
     "magic": {
       "value": 0,
@@ -73,8 +91,8 @@
       "overflow": 0
     },
     "armor": {
-      "ballistic": 6,
-      "impact": 6
+      "ballistic": 0,
+      "impact": 0
     },
     "dicePools": {
       "combat": {
@@ -94,7 +112,7 @@
       "mod": 0,
       "value": 1
     },
-    "threatRating": 2,
+    "threatRating": 1,
     "nuyen": 0,
     "movement": {
       "walk": 2,
@@ -102,23 +120,8 @@
     }
   },
   "items": [],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "flags": {},
-  "_stats": {
-    "coreVersion": "13.351",
-    "systemId": "sr2e",
-    "systemVersion": "0.1.0",
-    "createdTime": 1784000000000,
-    "modifiedTime": 1784000000000,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-  },
   "prototypeToken": {
-    "name": "Worker Ant Spirit (Flesh Form, Force 3)",
+    "name": "Flesh Form Worker (Force 1)",
     "displayName": 20,
     "actorLink": false,
     "width": 1,
@@ -147,9 +150,6 @@
     "bar2": {
       "attribute": "conditionMonitor.stun"
     }
-  },
-  "ownership": {
-    "default": 0
   },
   "_key": "!actors!96c308d2b016c4f9"
 }

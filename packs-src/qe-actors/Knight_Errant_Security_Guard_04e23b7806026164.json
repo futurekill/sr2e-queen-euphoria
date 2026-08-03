@@ -1,8 +1,8 @@
 {
-  "_id": "5e033754c9d374b4",
-  "name": "Robert Carrone",
+  "_id": "04e23b7806026164",
+  "name": "Knight Errant Security Guard",
   "type": "npc",
-  "img": "modules/sr2e-queen-euphoria/assets/portraits/robert-carrone.webp",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/euphorias-bodyguard.webp",
   "effects": [],
   "flags": {},
   "_stats": {
@@ -22,13 +22,13 @@
     "default": 0
   },
   "system": {
-    "biography": "<p>MegaMedia vice-president and Euphoria's former manager — the Johnson who hires the runners to find her. Born corp, calm, ruthless, loyal to MegaMedia only until a better offer arrives.</p><p><em>Cast of Characters, Queen Euphoria p.64. Attributes and skills verified from the render; the printed cyberware is now on the sheet as items.</em></p>",
+    "biography": "<p>Knight Errant contract security. <em>\"Currently at a Group Three training level, these guards are a cut above the usual corporate security guard, but not elite.\"</em></p><p><strong>Four are on Euphoria at all times:</strong> two precede her vehicle in a modified Ford Americar, one drives her Nightsky, one stays in the condo. These are the professionals slaughtered by Craft's Soldiers at the penthouse — their bodies are the horror the runners find.</p><p><strong>For the PRC-42D Wasp pilot:</strong> use this block with <strong>Rotor 3</strong> in place of Car 3 (QE p.16).</p><p><em>Queen Euphoria p.15 + p.19, both verified from renders. The old actor was wrong on six counts — Intelligence, Willpower, Essence, Unarmed Combat, three missing skills, an invented Stealth, and the wrong gun.</em></p>",
     "race": "human",
     "professionalRating": 3,
     "body": {
-      "base": 3,
+      "base": 4,
       "mod": 0,
-      "value": 3,
+      "value": 4,
       "racial": 0
     },
     "quickness": {
@@ -38,9 +38,9 @@
       "racial": 0
     },
     "strength": {
-      "base": 2,
+      "base": 4,
       "mod": 0,
-      "value": 2,
+      "value": 4,
       "racial": 0
     },
     "charisma": {
@@ -50,19 +50,19 @@
       "racial": 0
     },
     "intelligence": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "willpower": {
       "base": 4,
       "mod": 0,
       "value": 4,
       "racial": 0
     },
-    "willpower": {
-      "base": 3,
-      "mod": 0,
-      "value": 3,
-      "racial": 0
-    },
     "essence": {
-      "value": 5.4,
+      "value": 6,
       "max": 6
     },
     "magic": {
@@ -73,9 +73,9 @@
       "totem": ""
     },
     "reaction": {
-      "base": 4,
+      "base": 3,
       "mod": 0,
-      "value": 4
+      "value": 3
     },
     "conditionMonitor": {
       "physical": {
@@ -107,10 +107,10 @@
       }
     },
     "initiative": {
-      "base": 4,
+      "base": 3,
       "dice": 1,
       "mod": 0,
-      "value": 4
+      "value": 3
     },
     "threatRating": 3,
     "nuyen": 0,
@@ -121,7 +121,85 @@
   },
   "items": [
     {
-      "_id": "5e033754736b696c",
+      "_id": "04e23b78736b696c",
+      "name": "Armed Combat",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "strength",
+        "rating": 3,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "04e23b78736b696c",
+      "name": "Car",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "reaction",
+        "rating": 3,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "04e23b78736b696c",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -146,10 +224,10 @@
       "system": {
         "category": "active",
         "linkedAttribute": "charisma",
-        "rating": 6,
+        "rating": 3,
         "concentration": {
           "name": "Corporate",
-          "rating": 6
+          "rating": 3
         },
         "specialization": {
           "name": "",
@@ -160,46 +238,7 @@
       }
     },
     {
-      "_id": "5e033754736b696c",
-      "name": "Etiquette (Media)",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "active",
-        "linkedAttribute": "charisma",
-        "rating": 5,
-        "concentration": {
-          "name": "Media",
-          "rating": 5
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "5e033754736b696c",
+      "_id": "04e23b78736b696c",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -224,7 +263,7 @@
       "system": {
         "category": "active",
         "linkedAttribute": "quickness",
-        "rating": 3,
+        "rating": 4,
         "concentration": {
           "name": "",
           "rating": 0
@@ -238,8 +277,8 @@
       }
     },
     {
-      "_id": "5e033754736b696c",
-      "name": "Negotiation",
+      "_id": "04e23b78736b696c",
+      "name": "Throwing Weapons",
       "type": "skill",
       "img": "icons/svg/book.svg",
       "effects": [],
@@ -262,8 +301,8 @@
       },
       "system": {
         "category": "active",
-        "linkedAttribute": "charisma",
-        "rating": 5,
+        "linkedAttribute": "strength",
+        "rating": 3,
         "concentration": {
           "name": "",
           "rating": 0
@@ -277,10 +316,49 @@
       }
     },
     {
-      "_id": "5e03375477656170",
-      "name": "Ceska vz/120",
+      "_id": "04e23b78736b696c",
+      "name": "Unarmed Combat",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "strength",
+        "rating": 4,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "04e23b7877656170",
+      "name": "Ares Predator",
       "type": "weapon",
-      "img": "icons/svg/target.svg",
+      "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
       "effects": [],
       "flags": {},
       "_stats": {
@@ -302,9 +380,9 @@
       "system": {
         "weaponType": "firearm",
         "skill": "firearms",
-        "damageCode": "5M",
+        "damageCode": "9M",
         "damageType": "physical",
-        "concealability": 8,
+        "concealability": 5,
         "reach": 0,
         "firingModes": {
           "ss": false,
@@ -313,27 +391,151 @@
           "fa": false
         },
         "ammo": {
-          "current": 18,
-          "max": 18,
+          "current": 15,
+          "max": 15,
           "type": "pistol"
         },
         "recoilComp": 0,
         "ranges": {
           "short": 5,
-          "medium": 15,
-          "long": 30,
-          "extreme": 50
+          "medium": 20,
+          "long": 40,
+          "extreme": 60
         },
-        "cost": 200,
-        "availability": "4/4 days",
-        "legality": "Restricted",
+        "strengthMin": 0,
+        "weight": 2.25,
+        "cost": 450,
+        "availability": "3/24 hrs",
+        "legality": "Legal",
         "equipped": true,
-        "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Carrone p.64 [18 (clip), 3M2]. A DIFFERENT weapon from the guards' Ceska Black Scorpion (p.15) — both are Ceskas, neither is in SR2, and both fold to 5M.</em></p>"
+        "accessories": [],
+        "notes": "SR2E p.231. Considered by many the premier heavy pistol. Menacing and popular among mercenaries and security services.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry — SR2 has no separate 'II'.</em></p>",
+        "streetIndex": 0.5
       }
     },
     {
-      "_id": "5e03375461726d6f",
-      "name": "Armor Clothing",
+      "_id": "04e23b7877656170",
+      "name": "Heckler & Koch HK227",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/hk-hk227.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "weaponType": "firearm",
+        "skill": "firearms",
+        "damageCode": "7M",
+        "damageType": "physical",
+        "concealability": 4,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": true,
+          "bf": true,
+          "fa": true
+        },
+        "ammo": {
+          "current": 28,
+          "max": 28,
+          "type": "smg"
+        },
+        "recoilComp": 2,
+        "ranges": {
+          "short": 10,
+          "medium": 40,
+          "long": 80,
+          "extreme": 150
+        },
+        "strengthMin": 0,
+        "weight": 4,
+        "cost": 1500,
+        "availability": "4/24 hrs",
+        "legality": "Legal",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Submachine gun. The SMG of choice for corporate security, military police and base security worldwide. The standard model has a retractable stock, integral laser sight (under-barrel mount) and an integral gas-vent recoil compensation system (barrel mount, Rating 2). SR2E p.238, p.254.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M3</code>. Stands in for the H&K MP-5TX (p.19). Method A and method B agree here — B also gives 7M — so the choice is free.</em></p>",
+        "streetIndex": 0.75
+      }
+    },
+    {
+      "_id": "04e23b7877656170",
+      "name": "Concussion Grenade",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/concussion-grenade.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "weaponType": "grenade",
+        "skill": "throwing_weapons",
+        "damageCode": "12M",
+        "damageType": "stun",
+        "concealability": 6,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 5,
+          "medium": 10,
+          "long": 15,
+          "extreme": 20
+        },
+        "strengthMin": 0,
+        "weight": 0.25,
+        "cost": 30,
+        "availability": "5/4 days",
+        "legality": "Restricted",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Concussion grenade — minimal fragmentation, −1 Power per metre, Stun damage. SR2E p.256.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5M3 Stun</code>. Knight Errant p.19 carry two Airfoil IPE Concussion Grenades. These are why Throwing 3 matters; both were dropped together in the old actor.</em></p>",
+        "blastType": "concussion",
+        "quantity": 1,
+        "streetIndex": 2
+      }
+    },
+    {
+      "_id": "04e23b7861726d6f",
+      "name": "Armor Jacket",
       "type": "armor",
       "img": "icons/svg/shield.svg",
       "effects": [],
@@ -355,8 +557,8 @@
         "default": 0
       },
       "system": {
-        "ballistic": 3,
-        "impact": 0,
+        "ballistic": 5,
+        "impact": 3,
         "concealability": 0,
         "weight": 0,
         "cost": 0,
@@ -365,186 +567,16 @@
         "equipped": true,
         "notes": "<p>Worn armor, as printed in the Queen Euphoria stat block.</p>"
       }
-    },
-    {
-      "_id": "5e03375463796265",
-      "name": "Datajack",
-      "type": "cyberware",
-      "img": "icons/svg/biohazard.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "rating": 0,
-        "quantity": 1,
-        "cost": 0,
-        "availability": "",
-        "legality": "Legal",
-        "equipped": true,
-        "essence": 0.2,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "5e03375463796265",
-      "name": "Display Link",
-      "type": "cyberware",
-      "img": "icons/svg/biohazard.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "rating": 0,
-        "quantity": 1,
-        "cost": 0,
-        "availability": "",
-        "legality": "Legal",
-        "equipped": true,
-        "essence": 0.2,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "5e03375463796265",
-      "name": "Headware Memory",
-      "type": "cyberware",
-      "img": "icons/svg/biohazard.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "rating": 0,
-        "quantity": 1,
-        "cost": 0,
-        "availability": "",
-        "legality": "Legal",
-        "equipped": true,
-        "essence": 0.2,
-        "notes": "30 Mp."
-      }
-    },
-    {
-      "_id": "5e03375467656172",
-      "name": "Pocket Secretary",
-      "type": "gear",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "rating": 0,
-        "quantity": 1,
-        "cost": 0,
-        "availability": "",
-        "legality": "Legal",
-        "equipped": true,
-        "essence": 0,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "5e03375467656172",
-      "name": "Wristphone",
-      "type": "gear",
-      "img": "icons/svg/item-bag.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "rating": 0,
-        "quantity": 1,
-        "cost": 0,
-        "availability": "",
-        "legality": "Legal",
-        "equipped": true,
-        "essence": 0,
-        "notes": "With vidscreen."
-      }
     }
   ],
   "prototypeToken": {
-    "name": "Robert Carrone",
+    "name": "Knight Errant Security Guard",
     "displayName": 20,
     "actorLink": false,
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-queen-euphoria/assets/portraits/robert-carrone.webp",
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/euphorias-bodyguard.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,
@@ -568,5 +600,5 @@
       "attribute": "conditionMonitor.stun"
     }
   },
-  "_key": "!actors!5e033754c9d374b4"
+  "_key": "!actors!04e23b7806026164"
 }

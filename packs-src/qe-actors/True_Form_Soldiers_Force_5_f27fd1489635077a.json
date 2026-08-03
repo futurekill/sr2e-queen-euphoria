@@ -1,8 +1,8 @@
 {
-  "_id": "ef2a8ee358b3f451",
-  "name": "Hive Queen (set-piece)",
+  "_id": "f27fd1489635077a",
+  "name": "True Form Soldiers (Force 5)",
   "type": "npc",
-  "img": "modules/sr2e-queen-euphoria/assets/portraits/hive-queen-set-piece.webp",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/soldier-ant-spirit-true-form-force-4.webp",
   "effects": [],
   "flags": {},
   "_stats": {
@@ -22,47 +22,47 @@
     "default": 0
   },
   "system": {
-    "biography": "<p><strong>Non-combat set-piece.</strong> The book is explicit that the Queen does not appear — the Hive is still forming. This actor is the cocooned-Euphoria tableau at the climax, not a statted opponent.</p><p>If a GM extends the adventure and needs her in play, she is a very high-Force insect Queen; scale her to the group. The attributes below are <strong>nominal placeholders at roughly Force 10</strong> and are explicitly NOT transcribed from anything — armour is Force ×1 to match the printed True Forms rather than the 2×Force figure the module previously used.</p>",
+    "biography": "<p>The Hive's heaviest printed guardian: Quickness and Strength 9, Armour 5/5, hitting at 11M with Paralyzing Touch and Venom. Printed Reaction 10 (15).</p><p><strong>Manual rules the sheet does not enforce.</strong> Powers and Weaknesses are not fields on the NPC data model, so they live here as prose. Switching these to <code>spirit</code> actors would be worse — <code>SpiritData.prepareDerivedData</code> recomputes attributes from Force and would overwrite the printed table this whole audit exists to restore.</p><p><strong>Astral:</strong> add <strong>+5 Initiative</strong> when acting astrally (the printed Reaction shows this as the bracketed second value). It is deliberately NOT baked into <code>reaction</code>, which would also inflate dodge and defence.</p><p><strong>Attack:</strong> 11M Physical + Special (printed SR1 <code>9M2</code>, converted by p.283 method B — no SR2 item is an ant's mandibles, so the staging digit folds into Power).</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Manifestation, Paralyzing Touch, Venom.<br><strong>Weaknesses:</strong> Reduced Senses (Sight), Vulnerability (Insecticide).</p><p><em>Queen Euphoria p.52, transcribed from a 300 dpi render.</em></p>",
     "race": "spirit",
     "professionalRating": 5,
     "body": {
-      "base": 15,
+      "base": 6,
       "mod": 0,
-      "value": 15,
+      "value": 6,
       "racial": 0
     },
     "quickness": {
-      "base": 16,
+      "base": 9,
       "mod": 0,
-      "value": 16,
+      "value": 9,
       "racial": 0
     },
     "strength": {
-      "base": 10,
+      "base": 9,
       "mod": 0,
-      "value": 10,
+      "value": 9,
       "racial": 0
     },
     "charisma": {
-      "base": 10,
+      "base": 5,
       "mod": 0,
-      "value": 10,
+      "value": 5,
       "racial": 0
     },
     "intelligence": {
-      "base": 10,
+      "base": 3,
       "mod": 0,
-      "value": 10,
+      "value": 3,
       "racial": 0
     },
     "willpower": {
-      "base": 10,
+      "base": 2,
       "mod": 0,
-      "value": 10,
+      "value": 2,
       "racial": 0
     },
     "essence": {
-      "value": 6,
+      "value": 5,
       "max": 6
     },
     "magic": {
@@ -73,8 +73,8 @@
       "totem": ""
     },
     "reaction": {
-      "base": 13,
-      "mod": -3,
+      "base": 6,
+      "mod": 4,
       "value": 10
     },
     "conditionMonitor": {
@@ -91,8 +91,8 @@
       "overflow": 0
     },
     "armor": {
-      "ballistic": 10,
-      "impact": 10
+      "ballistic": 5,
+      "impact": 5
     },
     "dicePools": {
       "combat": {
@@ -112,22 +112,22 @@
       "mod": 0,
       "value": 10
     },
-    "threatRating": 10,
+    "threatRating": 5,
     "nuyen": 0,
     "movement": {
-      "walk": 16,
-      "run": 48
+      "walk": 9,
+      "run": 27
     }
   },
   "items": [],
   "prototypeToken": {
-    "name": "Hive Queen (set-piece)",
+    "name": "True Form Soldiers (Force 5)",
     "displayName": 20,
     "actorLink": false,
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-queen-euphoria/assets/portraits/hive-queen-set-piece.webp",
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/soldier-ant-spirit-true-form-force-4.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,
@@ -151,5 +151,5 @@
       "attribute": "conditionMonitor.stun"
     }
   },
-  "_key": "!actors!ef2a8ee358b3f451"
+  "_key": "!actors!f27fd1489635077a"
 }

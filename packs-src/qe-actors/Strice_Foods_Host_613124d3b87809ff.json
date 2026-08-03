@@ -3,6 +3,24 @@
   "name": "Strice Foods Host",
   "type": "host",
   "img": "modules/sr2e-queen-euphoria/assets/portraits/strice-foods-host.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
   "system": {
     "securityCode": "orange",
     "systemRating": 4,
@@ -16,24 +34,9 @@
       "slave": 4
     },
     "securityValueOverride": 0,
-    "notes": "<p>Strice Foods' \"low-cost\" corporate system (QE p.34). Modelled as one SR2E host at a representative Security Code <strong>Orange-4</strong> (the CPU tier). The SR1 system map's per-node color-codes drive MANUAL operation TNs / success thresholds the GM applies as the decker moves between nodes:</p><ul><li><strong>SAN</strong> (gateway, #2206 / 312-1752) — Red-5, Access 5: a tougher initial Access/Logon test than the host baseline.</li><li><strong>SPU-1</strong> — Orange-3: <em>Trace-and-Dump 3</em> IC.</li><li><strong>CPU</strong> — Orange-4: <em>Barrier 3</em> + <em>Tar Pit 4</em> IC.</li><li><strong>DS-1</strong> — Orange-3, Barrier 4: purchase orders — the MegaMedia deal (1,280,000¥ for Euphoria's three appearances) and Knight Errant expenditures. 4 files × 70 Mp = <strong>28,000¥</strong> fenced.</li><li><strong>DS-2</strong> — Orange-5, Scramble 3: Accounts Receivable. 3 files × 80 Mp = <strong>60,000¥</strong>.</li><li><strong>DS-3</strong> — Green-3: Seattle retailer/distributor list. 2 files × 40 Mp = <strong>4,000¥</strong>.</li></ul><p><strong>Trigger:</strong> an external alert shuts the whole system down within two minutes; any Trace result prints at Burroughs' terminal, and he calls Lone Star (immediately if he's in-office by day, otherwise next morning). No vital clues live here — the run is for paydata and the MegaMedia/Craft trail. <em>Defending IC below link to this host via system.hostUuid.</em></p>"
+    "notes": "<p>Strice Foods' deliberately low-cost corporate system (QE p.34), modelled as one SR2E host at <strong>Orange-4</strong>. The SR1 map's per-node codes are MANUAL:</p><ul><li><strong>SAN</strong> (gateway, #2206 / 312-1752) — Red-5, Access 5: a tougher Logon than the host baseline.</li><li><strong>SPU-1</strong> — Orange-3: <em>Trace-and-Dump 3</em>.</li><li><strong>CPU</strong> — Orange-4: <em>Barrier 3</em> + <em>Tar Pit 4</em>.</li><li><strong>DS-1</strong> — Orange-3, Barrier 4: purchase orders — the MegaMedia deal (1,280,000¥ for Euphoria's three appearances) and Knight Errant expenditures. 4 files × 70 Mp = <strong>28,000¥</strong> fenced.</li><li><strong>DS-2</strong> — Orange-5, Scramble 3: Accounts Receivable. 3 files × 80 Mp = <strong>60,000¥</strong>.</li><li><strong>DS-3</strong> — Green-3: Seattle retailer/distributor list. 2 files × 40 Mp = <strong>4,000¥</strong>.</li></ul><p><strong>Trigger:</strong> an external alert shuts the system down within two minutes. Any Trace result prints at <strong>Vincent Burroughs'</strong> terminal and he calls Lone Star — immediately if he is in-office by day, otherwise next morning. No vital clue lives here; the run is for paydata and the MegaMedia/Craft trail.</p>"
   },
   "items": [],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "flags": {},
-  "_stats": {
-    "coreVersion": "13.351",
-    "systemId": "sr2e",
-    "systemVersion": "0.1.0",
-    "createdTime": 1784000000000,
-    "modifiedTime": 1784000000000,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-  },
   "prototypeToken": {
     "name": "Strice Foods Host",
     "displayName": 20,
@@ -44,17 +47,20 @@
       "src": "modules/sr2e-queen-euphoria/assets/portraits/strice-foods-host.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
+      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
     "disposition": -1,
     "displayBars": 0
-  },
-  "ownership": {
-    "default": 0
   },
   "_key": "!actors!613124d3b87809ff"
 }

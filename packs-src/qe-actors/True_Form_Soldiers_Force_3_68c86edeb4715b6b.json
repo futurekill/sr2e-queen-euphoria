@@ -1,0 +1,155 @@
+{
+  "_id": "68c86edeb4715b6b",
+  "name": "True Form Soldiers (Force 3)",
+  "type": "npc",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/soldier-ant-spirit-true-form-force-4.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "biography": "<p>A soldier in its true form — a roughly man-sized chitin-armoured ant-horror that exists to protect the Queen. Aggressive, fearless, terrifying.</p><p><strong>Armour 3/3 — Force ×1, not 2×Force.</strong> The doubled figure was a Double Exposure assumption; doubling would make every True Form twice as tough as printed.</p><p><strong>Paralyzing Touch and Venom are easy to lose</strong> — OCR truncates the Powers line, and they only appear on the render.</p><p><strong>Vulnerability to insecticide is the intended route to winning the climax.</strong></p><p>Printed identically at p.38 and p.51 — a duplicate printing, not two variants. Replaces 'Soldier Ant Spirit (True Form, Force 4)'.</p><p><strong>Manual rules the sheet does not enforce.</strong> Powers and Weaknesses are not fields on the NPC data model, so they live here as prose. Switching these to <code>spirit</code> actors would be worse — <code>SpiritData.prepareDerivedData</code> recomputes attributes from Force and would overwrite the printed table this whole audit exists to restore.</p><p><strong>Astral:</strong> add <strong>+5 Initiative</strong> when acting astrally (the printed Reaction shows this as the bracketed second value). It is deliberately NOT baked into <code>reaction</code>, which would also inflate dodge and defence.</p><p><strong>Attack:</strong> 9M Physical + Special (printed SR1 <code>7M2</code>, converted by p.283 method B — no SR2 item is an ant's mandibles, so the staging digit folds into Power).</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Manifestation, Paralyzing Touch, Venom.<br><strong>Weaknesses:</strong> Reduced Senses (Sight), Vulnerability (Insecticide).</p><p><em>Queen Euphoria p.51, transcribed from a 300 dpi render.</em></p>",
+    "race": "spirit",
+    "professionalRating": 3,
+    "body": {
+      "base": 4,
+      "mod": 0,
+      "value": 4,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 7,
+      "mod": 0,
+      "value": 7,
+      "racial": 0
+    },
+    "strength": {
+      "base": 7,
+      "mod": 0,
+      "value": 7,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 3,
+      "mod": 0,
+      "value": 3,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 1,
+      "mod": 0,
+      "value": 1,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "essence": {
+      "value": 3,
+      "max": 6
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 4,
+      "mod": 2,
+      "value": 6
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 3,
+      "impact": 3
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 6,
+      "dice": 1,
+      "mod": 0,
+      "value": 6
+    },
+    "threatRating": 3,
+    "nuyen": 0,
+    "movement": {
+      "walk": 7,
+      "run": 21
+    }
+  },
+  "items": [],
+  "prototypeToken": {
+    "name": "True Form Soldiers (Force 3)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/soldier-ant-spirit-true-form-force-4.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "cover",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "_key": "!actors!68c86edeb4715b6b"
+}

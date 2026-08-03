@@ -1,421 +1,399 @@
-// Generate Queen Euphoria cast actors (npc type) into packs-src/qe-actors.
-// Stats transcribed from the adventure's Cast of Characters (book p.62-64) and
-// Insects Among Us (p.54), modernized to SR2E — see docs/CAST-STATS.md.
-// Re-run after editing CAST; it overwrites the per-name files (stable _id by name).
-// Mirrors ../sr2e-double-exposure/tools/gen-actors.mjs.
-import { writeFileSync, readdirSync, readFileSync } from "node:fs";
-import { createHash } from "node:crypto";
+// Generate the Queen Euphoria cast into packs-src/qe-actors.
+//
+// THIS FILE HOLDS NO STAT LITERALS. Every number lives in tools/data/qe-actors.json
+// with a page citation, and every SR2 damage code is read out of the system's own
+// weapons pack rather than re-typed here. That split is the whole point: the
+// module previously shipped 12 invented or missing stat blocks because stats and
+// generation logic were tangled together in one file nobody could audit.
+//
+// Two properties this generator guarantees, both of which it used to violate:
+//
+//   1. IDENTITY IS PINNED. _id comes from the manifest, never from hashing a name.
+//      Foundry's Adventure import matches on _id alone, so a changed id is a
+//      DIFFERENT document — renaming an actor used to mean re-importing produced a
+//      duplicate while existing tokens stayed bound to the old one.
+//
+//   2. GENERATION IS ATOMIC. It writes to a sibling directory, validates, then
+//      swaps. The old version wrote current outputs but never removed files whose
+//      names had disappeared, so a rename left the stale JSON behind AND THE PACK
+//      LOADED BOTH.
+import { writeFileSync, readdirSync, readFileSync, mkdirSync, rmSync, renameSync, existsSync } from "node:fs";
+import { randomBytes } from "node:crypto";
 
-// Canonical spell definitions from the sr2e system pack — so Craft's spells carry
-// the system's real drain/target/area/subcategory (not hand-typed guesses).
-const SYS_SPELLS_DIR = "../sr2e-foundryvtt/packs-src/spells";
-const SYS_SPELLS = new Map();
-for (const f of readdirSync(SYS_SPELLS_DIR).filter((f) => f.endsWith(".json"))) {
-  const d = JSON.parse(readFileSync(`${SYS_SPELLS_DIR}/${f}`, "utf8"));
-  if (d.name) SYS_SPELLS.set(d.name, d.system);
-}
-
+const SYS = "../sr2e-foundryvtt";
 const DIR = "packs-src/qe-actors";
-const idFor = (s) => createHash("sha1").update("qe:" + s).digest("hex").slice(0, 16);
-const SKILL_ATTR = {
-  conjuring: "charisma", sorcery: "willpower", "magic theory": "intelligence",
-  firearms: "quickness", "unarmed combat": "strength", "armed combat": "strength",
-  stealth: "quickness", etiquette: "charisma", negotiation: "charisma",
-  electronics: "intelligence", acting: "charisma", dance: "quickness",
-  "simsense acting": "charisma", "evaluate magical goods": "intelligence",
-  metalworking: "intelligence", woodworking: "intelligence"
-};
-const STATS = { coreVersion: "13.351", systemId: null, systemVersion: null, createdTime: null, modifiedTime: null, lastModifiedBy: null, compendiumSource: null, duplicateSource: null, exportSource: null };
+const MANIFEST = "tools/data/qe-actors.json";
+
+const manifest = JSON.parse(readFileSync(MANIFEST, "utf8"));
+
+// ── Canonical definitions pulled from the system, never hand-typed ───────────
+function loadPack(name) {
+  const dir = `${SYS}/packs-src/${name}`;
+  const map = new Map();
+  for (const f of readdirSync(dir).filter(f => f.endsWith(".json") && !f.startsWith("_folder"))) {
+    const d = JSON.parse(readFileSync(`${dir}/${f}`, "utf8"));
+    if (d.name) map.set(d.name, d);
+  }
+  return map;
+}
+const SYS_SPELLS   = loadPack("spells");
+const SYS_WEAPONS  = loadPack("weapons");
+const SYS_VEHICLES = loadPack("vehicles");
+
+const STATS = { coreVersion: "13.351", systemId: "sr2e", systemVersion: "0.1.0",
+  createdTime: 1784000000000, modifiedTime: 1784000000000, lastModifiedBy: null,
+  compendiumSource: null, duplicateSource: null, exportSource: null };
 
 const safeName = (s) => s.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_|_$/g, "");
-const slugName = (s) => s.toLowerCase().replace(/['’()]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-const portraitPath = (name) => `modules/sr2e-queen-euphoria/assets/portraits/${slugName(name)}.webp`;
+const art = (a) => a === "$fromSystem" ? null
+  : a.startsWith("systems/") ? a
+  : `modules/sr2e-queen-euphoria/assets/portraits/${a}`;
 
-function attr(base, mod = 0) {
-  return { base, mod, value: Math.max(1, base + mod), racial: 0 };
-}
+// Deterministic per-actor item ids. Derived from the actor's PINNED id, so they
+// are stable across runs but cannot collide between two actors carrying the same
+// weapon — which a name-only hash would have done.
+let itemSeq = 0;
+const itemId = (actorId, kind, name) =>
+  (actorId.replace(/[^a-f0-9]/gi, "0").slice(0, 8) +
+   Buffer.from(`${kind}:${name}:${itemSeq++}`).toString("hex")).slice(0, 16).padEnd(16, "0");
 
-function skillItem(s) {
-  const key = s.name.toLowerCase().replace(/\s*\(.*\)$/, "");
-  return {
-    _id: idFor("skill:" + s.name + ":" + s.rating), name: s.name, type: "skill",
-    img: "icons/svg/book.svg",
-    system: {
-      category: s.category ?? "active", linkedAttribute: s.attr ?? SKILL_ATTR[key] ?? "intelligence",
-      rating: s.rating, concentration: { name: s.conc ?? "", rating: s.conc ? s.rating : 0 },
-      specialization: { name: s.spec ?? "", rating: s.spec ? s.rating : 0 },
-      isMagical: !!s.magical, notes: ""
-    },
-    effects: [], flags: {}, _stats: STATS, folder: null, sort: 0, ownership: { default: 0 }
-  };
-}
-
-// s = { name, force, notes? }. Uses the canonical system spell definition, only
-// overriding the Force to Craft's rating (and a per-actor note if any).
-function spellItem(s) {
-  const sys = SYS_SPELLS.get(s.name);
-  if (!sys) throw new Error(`No canonical system spell named "${s.name}" — check the spelling against ../sr2e-foundryvtt/packs-src/spells/`);
-  return {
-    _id: idFor("spell:" + s.name), name: s.name, type: "spell", img: "icons/svg/daze.svg",
-    system: {
-      ...sys, force: s.force,
-      sustaining: false, sustainedForce: 0, spellLocked: false, quickened: false, quickeningKarma: 0,
-      notes: s.notes ?? sys.notes ?? ""
-    },
-    effects: [], flags: {}, _stats: STATS, folder: null, sort: 0, ownership: { default: 0 }
-  };
-}
-
-const WEAPONS = {
-  aresPredator: { name: "Ares Predator", type: "firearm", skill: "firearms", dmg: "9M", modes: "sa", ammo: [15, "pistol"], ranges: [5, 20, 40, 60], conceal: 5, cost: 450, avail: "4/5 days", notes: "Heavy pistol (SR2E p.94)." },
-  ceska120:     { name: "Ceska vz/120", type: "firearm", skill: "firearms", dmg: "6L", modes: "sa", ammo: [18, "pistol"], ranges: [5, 15, 30, 50], conceal: 8, cost: 200, avail: "4/4 days", notes: "Light pistol, high concealability (SR2E p.94)." },
-  uzi3:         { name: "Uzi III", type: "firearm", skill: "firearms", dmg: "6M", modes: "bf", ammo: [24, "smg"], ranges: [10, 40, 80, 150], conceal: 5, cost: 600, avail: "6/8 days", notes: "SMG (SR2E p.94)." },
-  knife:        { name: "Knife", type: "melee", skill: "armed_combat", dmg: "4L", modes: "", ammo: null, ranges: null, conceal: 8, reach: 0, cost: 30, avail: "Legal", notes: "Blade." }
+const SKILL_ATTR = {
+  conjuring: "charisma", sorcery: "willpower", "magic theory": "intelligence",
+  "magical theory": "intelligence", firearms: "quickness", "unarmed combat": "strength",
+  "armed combat": "strength", stealth: "quickness", etiquette: "charisma",
+  negotiation: "charisma", electronics: "intelligence", acting: "charisma",
+  dance: "quickness", "simsense acting": "charisma", interrogation: "charisma",
+  leadership: "charisma", demolitions: "intelligence", "throwing weapons": "strength",
+  "computer theory": "intelligence", "evaluate magical goods": "intelligence",
+  metalworking: "intelligence", woodworking: "intelligence", car: "reaction"
 };
 
-function weaponItem(key) {
-  const w = WEAPONS[key];
-  const fm = { ss: false, sa: false, bf: false, fa: false };
-  for (const m of (w.modes ? w.modes.split(",") : [])) fm[m.trim()] = true;
+const base = (id, name, type, img) => ({
+  _id: id, name, type, img, effects: [], flags: {}, _stats: STATS,
+  folder: null, sort: 0, ownership: { default: 0 }
+});
+
+function skillItem(aid, s) {
+  const key = s.name.toLowerCase().replace(/\s*\(.*\)$/, "");
   return {
-    _id: idFor("weapon:" + w.name), name: w.name, type: "weapon",
-    img: w.type === "melee" ? "icons/svg/sword.svg" : "icons/svg/target.svg",
+    ...base(itemId(aid, "skill", s.name), s.name, "skill", "icons/svg/book.svg"),
     system: {
-      weaponType: w.type, skill: w.skill, damageCode: w.dmg, damageType: "physical",
-      concealability: w.conceal ?? 4, reach: w.reach ?? 0, firingModes: fm,
-      ammo: w.ammo ? { current: w.ammo[0], max: w.ammo[0], type: w.ammo[1] } : { current: 0, max: 0, type: "" },
+      category: s.category ?? "active",
+      linkedAttribute: s.attr ?? SKILL_ATTR[key] ?? "intelligence",
+      rating: s.rating,
+      concentration: { name: s.conc ?? "", rating: s.conc ? s.rating : 0 },
+      specialization: { name: s.spec ?? "", rating: s.spec ? s.rating : 0 },
+      isMagical: !!s.magical, notes: ""
+    }
+  };
+}
+
+// QE prints SR1 spell names. p.283 says spell codes must be translated to their
+// second-edition versions, and SR2 both renamed and MERGED spells (SR1's
+// per-wound-level Treat variants became one Treat). spellTranslations maps the
+// printed name onto the system's canonical spell so the sheet gets SR2's real
+// drain code — or, where SR2 has no equivalent at all, keeps the SR1 spell as a
+// flagged custom item rather than silently dropping it.
+function spellItem(aid, s) {
+  const t = manifest.spellTranslations?.[s.name];
+  const provenance = (extra) =>
+    `<p><em>Queen Euphoria conversion (core p.283 — translate spell codes). ${extra}</em></p>`;
+
+  if (t?.custom) {
+    return {
+      ...base(itemId(aid, "spell", s.name), s.name, "spell", "icons/svg/daze.svg"),
+      system: { ...t.system, force: s.force, sustaining: false, sustainedForce: 0,
+        spellLocked: false, quickened: false, quickeningKarma: 0,
+        notes: (s.notes ? `<p>${s.notes}</p>` : "") +
+          provenance(`<strong>No SR2 equivalent — custom spell.</strong> ${t.note}`) }
+    };
+  }
+
+  const lookup = t?.sysName ?? s.name;
+  const sys = SYS_SPELLS.get(lookup);
+  if (!sys) {
+    throw new Error(
+      `No system spell "${lookup}"${t ? ` (translated from "${s.name}")` : ""} — ` +
+      `either fix the name, add a spellTranslations entry in ${MANIFEST}, or mark it custom.`);
+  }
+  return {
+    ...base(itemId(aid, "spell", lookup), lookup, "spell", "icons/svg/daze.svg"),
+    system: { ...sys.system, force: s.force, sustaining: false, sustainedForce: 0,
+      spellLocked: false, quickened: false, quickeningKarma: 0,
+      notes: (s.notes ? `<p>${s.notes}</p>` : "") +
+        (t ? provenance(`Printed in Queen Euphoria as <strong>${s.name}</strong>. ${t.note}`)
+           : (sys.system.notes ?? "")) }
+  };
+}
+
+// Method A reads the SR2 catalogue entry whole. Method B builds from the folded
+// code, and records the SR1 original in the notes so the arithmetic stays visible
+// on the sheet itself.
+function weaponItem(aid, key) {
+  const w = manifest.weapons[key];
+  if (!w) throw new Error(`Unknown weapon key "${key}"`);
+
+  if (w.method === "A") {
+    const src = SYS_WEAPONS.get(w.sysName);
+    if (!src) throw new Error(`Method A weapon "${w.sysName}" not in the system pack`);
+    return {
+      ...base(itemId(aid, "weapon", w.sysName), src.name, "weapon", src.img),
+      system: { ...src.system, equipped: true,
+        notes: `${src.system.notes ?? ""}<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>${w.from}</code>. ${w.note ?? ""}</em></p>` }
+    };
+  }
+
+  const fm = { ss: false, sa: false, bf: false, fa: false };
+  for (const m of (w.modes ?? "").split(",").filter(Boolean)) fm[m.trim()] = true;
+  return {
+    ...base(itemId(aid, "weapon", w.name), w.name, "weapon",
+            w.weaponType === "melee" ? "icons/svg/sword.svg" : "icons/svg/target.svg"),
+    system: {
+      weaponType: w.weaponType, skill: w.skill, damageCode: w.damageCode,
+      damageType: "physical", concealability: w.conceal ?? 4, reach: w.reach ?? 0,
+      firingModes: fm,
+      ammo: w.ammo ? { current: w.ammo[0], max: w.ammo[0], type: w.ammo[1] }
+                   : { current: 0, max: 0, type: "" },
       recoilComp: 0,
       ranges: w.ranges ? { short: w.ranges[0], medium: w.ranges[1], long: w.ranges[2], extreme: w.ranges[3] }
                        : { short: 0, medium: 0, long: 0, extreme: 0 },
-      cost: w.cost ?? 0, availability: w.avail ?? "", legality: "Restricted", equipped: true, notes: w.notes ?? ""
-    },
-    effects: [], flags: {}, _stats: STATS, folder: null, sort: 0, ownership: { default: 0 }
+      cost: w.cost ?? 0, availability: w.avail ?? "", legality: "Restricted", equipped: true,
+      notes: `<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>${w.from}</code> → <code>${w.damageCode}</code>. ${w.note ?? ""}</em></p>`
+    }
   };
 }
 
-function armorItem(name, av) {
+function armorItem(aid, key) {
+  const a = manifest.armor[key];
+  if (!a) throw new Error(`Unknown armor key "${key}"`);
   return {
-    _id: idFor("armor:" + name), name, type: "armor", img: "icons/svg/shield.svg",
-    system: {
-      ballistic: av?.[0] ?? 0, impact: av?.[1] ?? 0, concealability: 0, weight: 0,
+    ...base(itemId(aid, "armor", a.name), a.name, "armor", "icons/svg/shield.svg"),
+    system: { ballistic: a.av[0], impact: a.av[1], concealability: 0, weight: 0,
       cost: 0, availability: "", legality: "Legal", equipped: true,
-      notes: "Worn armor (Queen Euphoria stat block)."
-    },
-    effects: [], flags: {}, _stats: STATS, folder: null, sort: 0, ownership: { default: 0 }
+      notes: "<p>Worn armor, as printed in the Queen Euphoria stat block.</p>" }
   };
 }
 
-function actor(n) {
-  const _id = idFor(n.name);
-  const a = n.attrs;
-  const reactionBase = Math.floor((a.qui + a.int) / 2);
-  const reactionMod = (n.reaction ?? reactionBase) - reactionBase;
-  const reactionVal = reactionBase + reactionMod;
-  const wornArmor = n.armorName ? [armorItem(n.armorName, n.armor)] : [];
-  const items = [
-    ...(n.skills ?? []).map(skillItem),
-    ...(n.spells ?? []).map(spellItem),
-    ...(n.weapons ?? []).map(weaponItem),
-    ...wornArmor
-  ];
-  const armorField = n.armorName ? { ballistic: 0, impact: 0 } : { ballistic: n.armor?.[0] ?? 0, impact: n.armor?.[1] ?? 0 };
-  const img = n.img ?? portraitPath(n.name);
+const simpleItem = (aid, kind, g, img) => ({
+  ...base(itemId(aid, kind, g.name), g.name, kind, img),
+  system: { rating: g.rating ?? 0, quantity: g.qty ?? 1, cost: 0, availability: "",
+    legality: "Legal", equipped: true, essence: g.essence ?? 0, notes: g.notes ?? "" }
+});
+
+function focusItem(aid, f) {
   return {
-    _id, name: n.name, type: "npc", img,
+    ...base(itemId(aid, "focus", f.name), f.name, "focus", "icons/svg/aura.svg"),
+    system: { focusType: f.focusType, force: f.force, bonded: !!f.bonded,
+      active: !!f.active, expendable: false, bondedWeaponId: "", notes: f.notes ?? "" }
+  };
+}
+
+const attr = (v) => ({ base: v, mod: 0, value: v, racial: 0 });
+
+function protoToken(name, img, opts = {}) {
+  return {
+    name, displayName: 20, actorLink: opts.linked ?? false,
+    width: opts.w ?? 1, height: opts.h ?? 1,
+    texture: { src: img, anchorX: 0.5, anchorY: 0.5, offsetX: 0, offsetY: 0,
+      fit: opts.fit ?? "cover", scaleX: 1, scaleY: 1, rotation: 0, tint: "#ffffff",
+      alphaThreshold: 0.75 },
+    lockRotation: true, rotation: 0, alpha: 1,
+    disposition: opts.disposition ?? -1, displayBars: opts.bars ?? 20,
+    ...(opts.bar1 ? { bar1: { attribute: opts.bar1 } } : {}),
+    ...(opts.bar2 ? { bar2: { attribute: opts.bar2 } } : {})
+  };
+}
+
+// ── Builders per actor type ─────────────────────────────────────────────────
+function buildNpc(e) {
+  const a = e.attrs, id = e._id;
+  const reactionBase = Math.floor((a.qui + a.int) / 2);
+  const reactionMod  = (e.reaction ?? reactionBase) - reactionBase;
+  const reactionVal  = reactionBase + reactionMod;
+  const img = art(e.art);
+
+  const items = [
+    ...(e.skills ?? []).map(s => skillItem(id, s)),
+    ...(e.spells ?? []).map(s => spellItem(id, s)),
+    ...(e.foci ?? []).map(f => focusItem(id, f)),
+    ...(e.weapons ?? []).map(k => weaponItem(id, k)),
+    ...(e.armorKey ? [armorItem(id, e.armorKey)] : []),
+    ...(e.cyberware ?? []).map(g => simpleItem(id, "cyberware", g, "icons/svg/biohazard.svg")),
+    ...(e.gear ?? []).map(g => simpleItem(id, "gear", g, "icons/svg/item-bag.svg"))
+  ];
+
+  return {
+    ...base(id, e.name, "npc", img),
     system: {
-      biography: n.bio ?? "", race: n.race ?? "human", professionalRating: n.pro ?? 0,
+      biography: e.bio ?? "", race: e.race ?? "human",
+      professionalRating: e.pro ?? 0,
       body: attr(a.body), quickness: attr(a.qui), strength: attr(a.str),
       charisma: attr(a.cha), intelligence: attr(a.int), willpower: attr(a.wil),
-      // Metahumans keep max 6 (current Essence reflects cyberware loss); spirits'
-      // Essence = Force (both capped at the NPC schema's max of 6).
-      essence: n.race === "spirit"
-        ? { value: Math.min(n.essence ?? 6, 6), max: Math.min(n.essence ?? 6, 6) }
-        : { value: n.essence ?? 6, max: 6 },
-      magic: { value: n.magic ?? 0, max: n.magic ?? 0, tradition: n.tradition ?? "none", type: n.magicType ?? "none", totem: n.totem ?? "" },
+      essence: { value: e.essence ?? 6, max: 6 },
+      magic: { value: e.magic ?? 0, max: e.magic ?? 0, tradition: e.tradition ?? "none",
+               type: e.magicType ?? "none", totem: e.totem ?? "" },
       reaction: { base: reactionBase, mod: reactionMod, value: reactionVal },
-      conditionMonitor: { physical: { value: 0, max: 10, overflow: 0 }, stun: { value: 0, max: 10, overflow: 0 }, overflow: 0 },
-      armor: armorField,
-      dicePools: { combat: { value: 0, max: 0, bonus: 0 }, magic: { value: 0, max: 0, bonus: 0 } },
-      initiative: { base: reactionVal, dice: n.initDice ?? 1, mod: 0, value: reactionVal },
-      threatRating: n.threat ?? 0, nuyen: 0, movement: { walk: a.qui, run: a.qui * 3 }
+      conditionMonitor: { physical: { value: 0, max: 10, overflow: 0 },
+                          stun: { value: 0, max: 10, overflow: 0 }, overflow: 0 },
+      // armorKey puts the rating on a real equipped item, which the data model
+      // adds on top of this base — so the base must stay 0 or it double-counts.
+      armor: e.armorKey ? { ballistic: 0, impact: 0 }
+                        : { ballistic: e.armor?.[0] ?? 0, impact: e.armor?.[1] ?? 0 },
+      dicePools: { combat: { value: 0, max: 0, bonus: 0 },
+                   // NPCData derives the combat pool but NOT this one, so a
+                   // transcribed printed Magic Pool survives untouched.
+                   magic: { value: e.magicPool ?? 0, max: e.magicPool ?? 0, bonus: 0 } },
+      initiative: { base: reactionVal, dice: e.initDice ?? 1, mod: 0, value: reactionVal },
+      threatRating: e.threat ?? 0, nuyen: 0,
+      movement: { walk: a.qui, run: a.qui * 3 }
     },
-    items, effects: [], folder: null, sort: 0, flags: {},
-    _stats: { ...STATS, systemId: "sr2e", systemVersion: "0.1.0", createdTime: 1784000000000, modifiedTime: 1784000000000 },
-    prototypeToken: {
-      name: n.name, displayName: 20, actorLink: false, width: 1, height: 1,
-      texture: { src: img, anchorX: 0.5, anchorY: 0.5, offsetX: 0, offsetY: 0, fit: "cover", scaleX: 1, scaleY: 1, rotation: 0, tint: "#ffffff", alphaThreshold: 0.75 },
-      lockRotation: true, rotation: 0, alpha: 1, disposition: n.disposition ?? -1, displayBars: 20,
-      bar1: { attribute: "conditionMonitor.physical" }, bar2: { attribute: "conditionMonitor.stun" }
-    },
-    ownership: { default: 0 }, _key: `!actors!${_id}`
+    items,
+    prototypeToken: protoToken(e.name, img, {
+      disposition: e.disposition, bar1: "conditionMonitor.physical", bar2: "conditionMonitor.stun"
+    }),
+    _key: `!actors!${id}`
   };
 }
 
-// Bio boilerplate shared by every insect actor (the MANUAL combat rules the NPC
-// workflow won't enforce — SR2 rules re-derived from QE p.54).
-const INSECT_RULES = "<p><strong>MANUAL rules (QE p.54 — the sheet does NOT enforce these):</strong> "
-  + "Immunity to Normal Weapons vs <em>all ranged</em> attacks (firearms etc., not spells); "
-  + "\"armor\" = 2×Force. A mundane weapon in melee attacks with <strong>Willpower</strong>, not weapon skill "
-  + "(magic / Vulnerability attacks exempt). In astral space stats derive from Force with <strong>+5 Initiative</strong> "
-  + "(attack/defend only, no powers). Defeat by destroying the body, banishing, or astral combat.</p>";
-
-// --- Strice Foods Matrix host + IC (QE p.34) ------------------------------
-// One host at a representative Security Code; each printed IC keeps its rating.
-// IC link to the host by system.hostUuid = "Actor.<hostId>"; on Adventure import
-// Foundry preserves the embedded _id, so the link resolves to the imported host.
-const STRICE_HOST_ID = idFor("host:Strice Foods Host");
-
-function hostActor(h) {
-  const _id = idFor("host:" + h.name);
-  // Same portrait convention as every other actor. This defaulted to a generic
-  // Foundry icon, which is why the host was the one document in the module with
-  // no art while all four IC that link to it had portraits.
-  const img = h.img ?? portraitPath(h.name);
+function buildSpirit(e) {
+  const img = art(e.art);
   return {
-    _id, name: h.name, type: "host", img,
+    ...base(e._id, e.name, "spirit", img),
     system: {
-      securityCode: h.securityCode, systemRating: h.systemRating, attempts: 0, alert: "none",
-      subsystems: { access: h.systemRating, control: h.systemRating, index: h.systemRating, files: h.systemRating, slave: h.systemRating },
-      securityValueOverride: 0, notes: h.notes ?? ""
+      spiritType: e.spiritType, force: e.force, domain: e.domain ?? "",
+      services: e.services ?? 0, maxServices: e.maxServices ?? 0,
+      conjurerUuid: "", powers: e.powers ?? [], weaknesses: e.weaknesses ?? [],
+      notes: e.bio ?? ""
     },
-    items: [], effects: [], folder: null, sort: 0, flags: {},
-    _stats: { ...STATS, systemId: "sr2e", systemVersion: "0.1.0", createdTime: 1784000000000, modifiedTime: 1784000000000 },
-    prototypeToken: {
-      name: h.name, displayName: 20, actorLink: true, width: 2, height: 2,
-      texture: { src: img, anchorX: 0.5, anchorY: 0.5, fit: "contain", scaleX: 1, scaleY: 1, tint: "#ffffff", alphaThreshold: 0.75 },
-      disposition: -1, displayBars: 0
-    },
-    ownership: { default: 0 }, _key: `!actors!${_id}`
+    items: [],
+    prototypeToken: protoToken(e.name, img, { linked: true, disposition: e.disposition }),
+    _key: `!actors!${e._id}`
   };
 }
 
-function icActor(ic) {
-  const _id = idFor("ic:" + ic.name);
-  const img = ic.img ?? portraitPath(ic.name);
-  const r = ic.rating;
+function buildHost(e) {
+  const img = art(e.art), r = e.systemRating;
   return {
-    _id, name: ic.name, type: "ic", img,
+    ...base(e._id, e.name, "host", img),
     system: {
-      icType: ic.icType, rating: r, hostUuid: `Actor.${STRICE_HOST_ID}`,
+      securityCode: e.securityCode, systemRating: r, attempts: 0, alert: "none",
+      subsystems: { access: r, control: r, index: r, files: r, slave: r },
+      securityValueOverride: 0, notes: e.notes ?? ""
+    },
+    items: [],
+    prototypeToken: protoToken(e.name, img, { linked: true, w: 2, h: 2, fit: "contain", bars: 0 }),
+    _key: `!actors!${e._id}`
+  };
+}
+
+function buildIc(e) {
+  const img = art(e.art), r = e.rating;
+  return {
+    ...base(e._id, e.name, "ic", img),
+    system: {
+      icType: e.icType, rating: r, hostUuid: `Actor.${e.hostId}`,
       securityCode: "orange", alert: "none",
       bod: r, evasion: r, masking: r, sensor: r, attack: r,
       conditionMonitor: { value: 0, max: r * 2 },
-      // Reaction Time = Orange base (7, SR2E p.169) + rating; the system re-derives
-      // this from the linked host's Security Code at runtime.
+      // Orange base 7 (SR2E p.169) + rating. Re-derived at runtime from the
+      // linked host's Security Code.
       initiative: { base: 7 + r, dice: 1, value: 7 + r },
-      specialAbilities: ic.abilities ?? [], notes: ic.notes ?? ""
+      specialAbilities: e.abilities ?? [], notes: e.notes ?? ""
     },
-    items: [], effects: [], folder: null, sort: 0, flags: {},
-    _stats: { ...STATS, systemId: "sr2e", systemVersion: "0.1.0", createdTime: 1784000000000, modifiedTime: 1784000000000 },
-    prototypeToken: {
-      // IC (like the host) are singleton actors — linked tokens keep damage/state
-      // in sync with the sidebar actor and the host alert-propagation hook.
-      name: ic.name, displayName: 20, actorLink: true, width: 1, height: 1,
-      texture: { src: img, anchorX: 0.5, anchorY: 0.5, fit: "cover", scaleX: 1, scaleY: 1, tint: "#ffffff", alphaThreshold: 0.75 },
-      lockRotation: true, disposition: -1, displayBars: 20, bar1: { attribute: "conditionMonitor" }
-    },
-    ownership: { default: 0 }, _key: `!actors!${_id}`
+    items: [],
+    prototypeToken: protoToken(e.name, img, { linked: true, bar1: "conditionMonitor" }),
+    _key: `!actors!${e._id}`
   };
 }
 
-const STRICE_HOST = {
-  name: "Strice Foods Host",
-  securityCode: "orange", systemRating: 4,
-  notes: "<p>Strice Foods' \"low-cost\" corporate system (QE p.34). Modelled as one SR2E host at a representative Security Code <strong>Orange-4</strong> (the CPU tier). The SR1 system map's per-node color-codes drive MANUAL operation TNs / success thresholds the GM applies as the decker moves between nodes:</p>"
-    + "<ul>"
-    + "<li><strong>SAN</strong> (gateway, #2206 / 312-1752) — Red-5, Access 5: a tougher initial Access/Logon test than the host baseline.</li>"
-    + "<li><strong>SPU-1</strong> — Orange-3: <em>Trace-and-Dump 3</em> IC.</li>"
-    + "<li><strong>CPU</strong> — Orange-4: <em>Barrier 3</em> + <em>Tar Pit 4</em> IC.</li>"
-    + "<li><strong>DS-1</strong> — Orange-3, Barrier 4: purchase orders — the MegaMedia deal (1,280,000¥ for Euphoria's three appearances) and Knight Errant expenditures. 4 files × 70 Mp = <strong>28,000¥</strong> fenced.</li>"
-    + "<li><strong>DS-2</strong> — Orange-5, Scramble 3: Accounts Receivable. 3 files × 80 Mp = <strong>60,000¥</strong>.</li>"
-    + "<li><strong>DS-3</strong> — Green-3: Seattle retailer/distributor list. 2 files × 40 Mp = <strong>4,000¥</strong>.</li>"
-    + "</ul>"
-    + "<p><strong>Trigger:</strong> an external alert shuts the whole system down within two minutes; any Trace result prints at Burroughs' terminal, and he calls Lone Star (immediately if he's in-office by day, otherwise next morning). No vital clues live here — the run is for paydata and the MegaMedia/Craft trail. <em>Defending IC below link to this host via system.hostUuid.</em></p>"
-};
-
-const STRICE_IC = [
-  { name: "Strice Trace-and-Dump IC (SPU)", icType: "gray", rating: 3, abilities: ["Trace", "Dump"], notes: "<p>SPU-1, Orange-3. Traces the intruder and dumps them from the host on success (QE p.34).</p>" },
-  { name: "Strice Tar Pit IC (CPU)", icType: "black", rating: 4, abilities: ["Tar Pit"], notes: "<p>CPU, Orange-4. Appears as a mouth that swallows a decker's utility, then spits it back to poison all copies of the utility (QE p.34).</p>" },
-  { name: "Strice Barrier IC (DS-1)", icType: "white", rating: 4, abilities: ["Barrier"], notes: "<p>DS-1, Orange-3 / Barrier 4. A shimmering field guarding the purchase-order datastore (QE p.34).</p>" },
-  { name: "Strice Scramble IC (DS-2)", icType: "white", rating: 3, abilities: ["Scramble"], notes: "<p>DS-2, Orange-5 / Scramble 3. Lights up at the datastore exit and scrambles the Accounts-Receivable files if not defeated (QE p.34).</p>" }
-];
-
-// ---------------------------------------------------------------------------
-// CAST — Queen Euphoria (FASA 7304). See docs/CAST-STATS.md.
-// ---------------------------------------------------------------------------
-const CAST = [
-  {
-    name: "Craft (Thomas Dorin)",
-    pro: 4, threat: 6, essence: 6, magic: 6, magicType: "full_magician", tradition: "shamanic",
-    totem: "Ant", disposition: -1, armorName: "Real Leather Clothing", armor: [0, 2],
-    weapons: ["aresPredator"],
-    bio: "<p>Ant-totem shaman and the adventure's villain. Former Coyote shaman turned talismonger — he runs the <strong>Magic Crafts</strong> shop and took a run from his Fixer, Solomon Daniels. Under the Ant totem he is crazed with power, and his psychotic fixation on the simstar Euphoria drives the plot: he means to make her his \"Queen.\"</p>"
-      + "<p><strong>Totem:</strong> Ant — the book grants it no special mechanical benefits; the shamanic bond is roleplay/flavour.</p>"
-      + "<p><strong>Focus:</strong> Sleep Spell Focus (Force 2) — bond it to the Sleep spell for +2 dice when casting Sleep.</p>"
-      + "<p><em>Cast of Characters, Queen Euphoria p.62.</em></p>",
-    attrs: { body: 4, qui: 3, str: 3, cha: 5, int: 5, wil: 6 },
-    reaction: 4, initDice: 1,
-    skills: [
-      { name: "Conjuring", rating: 5, magical: true },
-      { name: "Sorcery", rating: 6, conc: "Spellcasting", magical: true },
-      { name: "Firearms", rating: 4, conc: "Pistols" },
-      { name: "Etiquette (Corporate)", rating: 1, conc: "Corporate" },
-      { name: "Etiquette (Street)", rating: 4, conc: "Street" },
-      { name: "Magic Theory", rating: 6 },
-      { name: "Negotiation", rating: 4 },
-      { name: "Stealth", rating: 4, conc: "Urban" },
-      { name: "Unarmed Combat", rating: 3 },
-      { name: "Evaluate Magical Goods", rating: 5, category: "knowledge" },
-      { name: "Metalworking", rating: 3, category: "knowledge" },
-      { name: "Woodworking", rating: 3, category: "knowledge" }
+function buildVehicle(e) {
+  const src = SYS_VEHICLES.get(e.sysVehicle);
+  if (!src) throw new Error(`Method A vehicle "${e.sysVehicle}" not in the system pack`);
+  const img = e.art === "$fromSystem" ? src.img : art(e.art);
+  const id = e._id;
+  return {
+    ...base(id, e.name, "vehicle", img),
+    system: { ...src.system, ...(e.overrides ?? {}),
+      notes: (e.notes ?? "") + (src.system.notes ?? "") },
+    items: [
+      ...(e.weapons ?? []).map(k => weaponItem(id, k)),
+      ...(e.gear ?? []).map(g => simpleItem(id, "gear", g, "icons/svg/item-bag.svg"))
     ],
-    spells: [
-      { name: "Mana Bolt", force: 5 },
-      { name: "Sleep", force: 5, notes: "Bonded Sleep Spell Focus (Force 2) adds 2 dice when casting Sleep." },
-      { name: "Clairvoyance", force: 4 },
-      { name: "Confusion", force: 5 },
-      { name: "Mask", force: 6 },
-      { name: "Stimulation", force: 4 },
-      { name: "Armor", force: 6 },
-      { name: "Levitate Person", force: 4 }
-    ]
-  },
-  {
-    name: "Euphoria (Amanda Lockhart)",
-    pro: 2, threat: 2, essence: 5, disposition: 0, armorName: "Long Coat", armor: [4, 2],
-    bio: "<p>Megasimsense star and the adventure's abductee. Arrogant 21-year-old recluse, daughter of two trideo stars, discovered/managed by Robert Carrone. Her sim-rig kept recording during the kidnapping — the recording is the key clue at her penthouse.</p>"
-      + "<p><strong>Cyberware:</strong> Datajack; Sense Link (with internal transmitter). (Essence 5.)</p>"
-      + "<p><em>Cast of Characters, Queen Euphoria p.63.</em></p>",
-    attrs: { body: 2, qui: 4, str: 2, cha: 6, int: 4, wil: 2 },
-    reaction: 4, initDice: 1,
-    skills: [
-      { name: "Electronics", rating: 3, conc: "Simsense Equipment" },
-      { name: "Etiquette (Corporate)", rating: 2, conc: "Corporate" },
-      { name: "Etiquette (Media)", rating: 3, conc: "Media" },
-      { name: "Etiquette (Street)", rating: 1, conc: "Street" },
-      { name: "Negotiation", rating: 2 },
-      { name: "Acting", rating: 5, category: "knowledge" },
-      { name: "Dance", rating: 2, category: "knowledge" },
-      { name: "Simsense Acting", rating: 6, category: "knowledge" }
-    ]
-  },
-  {
-    name: "Robert Carrone",
-    pro: 3, threat: 3, essence: 5.4, disposition: 0, armorName: "Armor Clothing", armor: [3, 0],
-    weapons: ["ceska120"],
-    bio: "<p>MegaMedia vice-president and Euphoria's former manager — the Johnson who hires the runners to find her. Born corp man, calm, ruthless, loyal to MegaMedia only until a better deal appears.</p>"
-      + "<p><strong>Cyberware:</strong> Datajack; Display Link; Headware Memory (30 Mp). (Essence 5.4.)</p>"
-      + "<p><strong>Gear:</strong> Pocket Secretary, Wristphone with vidscreen.</p>"
-      + "<p><em>Cast of Characters, Queen Euphoria p.64.</em></p>",
-    attrs: { body: 3, qui: 4, str: 2, cha: 3, int: 4, wil: 3 },
-    reaction: 4, initDice: 1,
-    skills: [
-      { name: "Etiquette (Corporate)", rating: 6, conc: "Corporate" },
-      { name: "Etiquette (Media)", rating: 5, conc: "Media" },
-      { name: "Firearms", rating: 3 },
-      { name: "Negotiation", rating: 5 }
-    ]
-  },
-  // --- Representative combatants (QE has no printed stat blocks for these; SR2
-  // professional-NPC numbers, scaled to their role — GM adjusts as needed) ---
-  {
-    name: "Euphoria's Bodyguard",
-    pro: 3, threat: 3, essence: 5, disposition: 0, armorName: "Armor Jacket", armor: [5, 3],
-    weapons: ["ceska120"],
-    bio: "<p>One of Euphoria's private security detail — the professionals slaughtered by Craft's Soldiers at the penthouse (their bodies are the horror the runners find). Also usable as her live guards during Act 1. Cyberware: smartlink + boosted reflexes (Reaction/Initiative as printed). Representative professional bodyguard.</p>",
-    attrs: { body: 4, qui: 4, str: 4, cha: 3, int: 3, wil: 3 },
-    reaction: 5, initDice: 2,
-    skills: [ { name: "Armed Combat", rating: 3 }, { name: "Firearms", rating: 4 }, { name: "Unarmed Combat", rating: 3 }, { name: "Stealth", rating: 3 } ]
-  },
-  {
-    name: "Corporate / Venue Security",
-    pro: 2, threat: 2, essence: 6, disposition: -1, armorName: "Armor Jacket", armor: [5, 3],
-    weapons: ["ceska120"],
-    bio: "<p>Uniformed Strice Foods / venue security — gate guards and patrols at the corporate and MegaMedia locations. Representative professional guard; run in numbers.</p>",
-    attrs: { body: 4, qui: 3, str: 3, cha: 3, int: 3, wil: 3 },
-    reaction: 3, initDice: 1,
-    skills: [ { name: "Armed Combat", rating: 2 }, { name: "Firearms", rating: 3 }, { name: "Unarmed Combat", rating: 2 } ]
-  },
-  {
-    name: "Lone Star Officer",
-    pro: 3, threat: 3, essence: 6, disposition: -1, armorName: "Armor Jacket", armor: [5, 3],
-    weapons: ["aresPredator"],
-    bio: "<p>Lone Star patrol response — summoned if a Strice Matrix alert Traces the decker, or if a scene goes loud. Representative officer.</p>",
-    attrs: { body: 4, qui: 4, str: 4, cha: 3, int: 3, wil: 3 },
-    reaction: 4, initDice: 1,
-    skills: [ { name: "Armed Combat", rating: 3 }, { name: "Firearms", rating: 4 }, { name: "Ground Vehicles", attr: "reaction", rating: 3 } ]
-  },
-  {
-    name: "Osprey (Craft's muscle)",
-    pro: 3, threat: 3, essence: 5, disposition: -1, armorName: "Armor Jacket", armor: [5, 3],
-    weapons: ["uzi3", "knife"],
-    bio: "<p>Hired muscle in Craft's orbit (Legwork, QE p.59). Representative heavy — a street samurai type guarding the Magic Crafts shop or the Hive approaches. GM: rename/adjust to the individual.</p>",
-    attrs: { body: 5, qui: 4, str: 5, cha: 3, int: 3, wil: 4 },
-    reaction: 4, initDice: 2,
-    skills: [ { name: "Armed Combat", rating: 4 }, { name: "Firearms", rating: 4 }, { name: "Stealth", rating: 3 }, { name: "Unarmed Combat", rating: 4 } ]
-  },
-  {
-    name: "Stone (Craft's muscle)",
-    pro: 3, threat: 3, essence: 5, disposition: -1, armorName: "Armor Jacket", armor: [5, 3],
-    weapons: ["uzi3"],
-    bio: "<p>Hired muscle in Craft's orbit (Legwork, QE p.59). Representative heavy. GM: rename/adjust to the individual.</p>",
-    attrs: { body: 5, qui: 4, str: 5, cha: 3, int: 3, wil: 4 },
-    reaction: 4, initDice: 1,
-    skills: [ { name: "Armed Combat", rating: 4 }, { name: "Firearms", rating: 4 }, { name: "Unarmed Combat", rating: 3 } ]
-  },
-  {
-    name: "Soldier Ant Spirit (True Form, Force 4)",
-    race: "spirit", pro: 4, threat: 4, essence: 4, disposition: -1, armor: [8, 8],
-    bio: "<p>An insect spirit soldier in its true form — a roughly man-sized, chitin-armoured ant-horror that exists to protect the Queen. Aggressive, fearless, terrifying. Attributes scale with Force (here F = 4); manifest Reaction = Force.</p>"
-      + INSECT_RULES
-      + "<p><em>Insects Among Us, Queen Euphoria p.54.</em></p>",
-    attrs: { body: 5, qui: 16, str: 8, cha: 4, int: 4, wil: 4 },
-    reaction: 4, initDice: 1
-  },
-  {
-    name: "Soldier Ant Spirit (Flesh Form, Force 4)",
-    race: "spirit", pro: 4, threat: 4, essence: 4, disposition: -1, armor: [8, 8],
-    bio: "<p>A soldier ant spirit inhabiting a human host — a gruesome human/giant-ant hybrid, permanently bound to the body (a Dual Being that cannot astrally project). <strong>Flesh Form rule:</strong> a Soldier adds its Force to the host's Physical attributes; Mental attributes are the spirit's True-Form values. (Representative host below: Physical 3 + Force 4 = 7.)</p>"
-      + INSECT_RULES
-      + "<p><em>Insects Among Us, Queen Euphoria p.54. Scale the host's Physical attributes to the individual it possesses.</em></p>",
-    attrs: { body: 7, qui: 7, str: 7, cha: 4, int: 4, wil: 4 },
-    reaction: 5, initDice: 1
-  },
-  {
-    name: "Worker Ant Spirit (True Form, Force 3)",
-    race: "spirit", pro: 3, threat: 2, essence: 3, disposition: -1, armor: [6, 6],
-    bio: "<p>An insect spirit worker in its true form — the colony's labour caste, tending cocoons and larvae. Cowardly and ineffective in combat: when attacked it emits a piercing screech to warn the Hive, and it will throw itself in the path of an attack to protect the cocoons or the Queen. Attributes scale with Force (here F = 3); manifest Reaction = Force.</p>"
-      + INSECT_RULES
-      + "<p><em>Insects Among Us, Queen Euphoria p.54.</em></p>",
-    attrs: { body: 1, qui: 9, str: 5, cha: 3, int: 1, wil: 3 },
-    reaction: 3, initDice: 1
-  },
-  {
-    name: "Worker Ant Spirit (Flesh Form, Force 3)",
-    race: "spirit", pro: 3, threat: 2, essence: 3, disposition: -1, armor: [6, 6],
-    bio: "<p>A worker ant spirit inhabiting a human host — a Dual Being that cannot astrally project. <strong>Flesh Form rule:</strong> a Worker reduces the host's Physical attributes by 1; Mental attributes are the spirit's True-Form values. (Representative host below: Physical 3 − 1 = 2.) Still a poor combatant that screeches and self-sacrifices to protect the Hive.</p>"
-      + INSECT_RULES
-      + "<p><em>Insects Among Us, Queen Euphoria p.54. Scale the host's Physical attributes to the individual it possesses.</em></p>",
-    attrs: { body: 2, qui: 2, str: 2, cha: 3, int: 1, wil: 3 },
-    reaction: 1, initDice: 1
-  },
-  {
-    name: "Hive Queen (set-piece)",
-    race: "spirit", pro: 5, threat: 10, essence: 6, disposition: -1, armor: [12, 12],
-    bio: "<p><strong>Non-combat set-piece.</strong> Queen Euphoria states the Queen Spirit \"does not actually appear in the adventure\" — Craft's Hive is still forming and the Queen has not yet been summoned. This actor exists only as a display token for the climax at the Hive (the cocooned Euphoria awaiting metamorphosis); it is not statted for a fight.</p>"
-      + "<p>If a GM extends the adventure and needs the Queen in play, she is an extremely high-Force insect Queen spirit — scale her to the group and see the DE Hive Queen (Force 10) for a worked example. Attributes below are nominal placeholders (Force ~10); armor 2×Force.</p>"
-      + INSECT_RULES,
-    attrs: { body: 15, qui: 16, str: 10, cha: 10, int: 10, wil: 10 },
-    reaction: 10, initDice: 1
-  }
-];
-
-let n = 0;
-function emit(doc, name) {
-  writeFileSync(`${DIR}/${safeName(name)}_${doc._id}.json`, JSON.stringify(doc, null, 2) + "\n");
-  n++;
+    prototypeToken: protoToken(e.name, img, { w: 2, h: 2, fit: "contain",
+      disposition: e.disposition, bars: 0 }),
+    _key: `!actors!${id}`
+  };
 }
-for (const c of CAST) emit(actor(c), c.name);
-emit(hostActor(STRICE_HOST), STRICE_HOST.name);
-for (const ic of STRICE_IC) emit(icActor(ic), ic.name);
-console.log(`wrote ${n} actor(s) (${CAST.length} cast + 1 host + ${STRICE_IC.length} IC)`);
+
+const BUILDERS = { npc: buildNpc, spirit: buildSpirit, host: buildHost, ic: buildIc, vehicle: buildVehicle };
+
+// ── Assign permanent ids to net-new entries, then write them back ────────────
+// A placeholder ending in -NEW means "no id yet". It gets a random one ONCE and
+// the manifest is rewritten, so the id is permanent from that moment. Deriving it
+// from the name instead would make every future rename a new document.
+let assigned = 0;
+for (const e of manifest.actors) {
+  if (e._id.endsWith("-NEW")) {
+    e._id = randomBytes(8).toString("hex");
+    delete e.$idNote;
+    assigned++;
+  }
+}
+if (assigned) {
+  writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + "\n");
+  console.log(`assigned ${assigned} permanent id(s) — written back to ${MANIFEST}`);
+}
+
+// ── Pre-flight assertions (cheap, and each one has bitten before) ────────────
+const ids = manifest.actors.map(a => a._id);
+const dupes = ids.filter((x, i) => ids.indexOf(x) !== i);
+if (dupes.length) throw new Error(`Duplicate actor ids: ${dupes.join(", ")}`);
+
+for (const rid of Object.keys(manifest.retiredIds ?? {})) {
+  if (ids.includes(rid)) throw new Error(`Retired id ${rid} is being re-used — it is permanently reserved`);
+}
+
+// ── Atomic generation: build into a sibling, validate, then swap ─────────────
+const TMP = `${DIR}.tmp-${process.pid}`;
+const BAK = `${DIR}.bak-${process.pid}`;
+rmSync(TMP, { recursive: true, force: true });
+mkdirSync(TMP, { recursive: true });
+
+const expected = new Set();
+try {
+  for (const e of manifest.actors) {
+    const builder = BUILDERS[e.type];
+    if (!builder) throw new Error(`No builder for actor type "${e.type}" (${e.name})`);
+    const doc = builder(e);
+    const file = `${safeName(e.name)}_${doc._id}.json`;
+    expected.add(file);
+    writeFileSync(`${TMP}/${file}`, JSON.stringify(doc, null, 2) + "\n");
+  }
+
+  const written = new Set(readdirSync(TMP));
+  const extra = [...written].filter(f => !expected.has(f));
+  if (extra.length) throw new Error(`Unexpected files: ${extra.join(", ")}`);
+  if (written.size !== manifest.actors.length)
+    throw new Error(`Wrote ${written.size} files for ${manifest.actors.length} actors`);
+
+  // Swap. Non-empty directories can't be replaced by a single rename, so the old
+  // one moves aside first and is only deleted once the new one is in place.
+  if (existsSync(DIR)) renameSync(DIR, BAK);
+  try {
+    renameSync(TMP, DIR);
+  } catch (err) {
+    if (existsSync(BAK)) renameSync(BAK, DIR);   // roll back
+    throw err;
+  }
+  rmSync(BAK, { recursive: true, force: true });
+} catch (err) {
+  rmSync(TMP, { recursive: true, force: true });
+  if (existsSync(BAK) && !existsSync(DIR)) renameSync(BAK, DIR);
+  throw err;
+}
+
+const byType = manifest.actors.reduce((m, a) => (m[a.type] = (m[a.type] ?? 0) + 1, m), {});
+const printed = manifest.actors.filter(a => a.source === "printed").length;
+console.log(`wrote ${manifest.actors.length} actor(s): ` +
+  Object.entries(byType).map(([t, n]) => `${n} ${t}`).join(", "));
+console.log(`  ${printed} printed (cited), ${manifest.actors.length - printed} modeled`);

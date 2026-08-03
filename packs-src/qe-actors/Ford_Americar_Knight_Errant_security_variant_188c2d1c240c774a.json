@@ -1,0 +1,109 @@
+{
+  "_id": "188c2d1c240c774a",
+  "name": "Ford Americar (Knight Errant security variant)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/ford-americar.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "vehicleType": "ground",
+    "skill": "",
+    "handling": 4,
+    "speed": 105,
+    "acceleration": 8,
+    "body": 3,
+    "armor": 0,
+    "signature": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 10,
+    "load": 110,
+    "seating": "",
+    "cost": 20000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p><strong>The escort car.</strong> Two Knight Errant guards precede Euphoria's Nightsky in this.</p><p><strong>Price note:</strong> this carries the SR2 catalogue's <strong>20,000¥</strong>, not QE's printed 80,000¥ — taking the catalogue entry whole means taking its price. Ruled acceptable 2026-08-03 (\"I don't know that the price really matters in this case\").</p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across — the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The ×3 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p><p>The ubiquitous mid-size sedan of the sprawl.</p><p><em>Cruising speed 35 m/CT (used for vehicle tests). Max speed 105 m/CT. Stats: SR2E p.264-265.</em></p><p><em>Stats verified against the Rigger 2 Vehicle List (SR2, book p.148+). Handling 4/8.</em></p>"
+  },
+  "items": [
+    {
+      "_id": "188c2d1c67656172",
+      "name": "Two-Way Radio",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 0,
+        "quantity": 1,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 0,
+        "notes": "The only equipment the printed security variant adds (QE p.16)."
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Ford Americar (Knight Errant security variant)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/ford-americar.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "_key": "!actors!188c2d1c240c774a"
+}

@@ -3,6 +3,24 @@
   "name": "Strice Scramble IC (DS-2)",
   "type": "ic",
   "img": "modules/sr2e-queen-euphoria/assets/portraits/strice-scramble-ic-ds-2.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
   "system": {
     "icType": "white",
     "rating": 3,
@@ -26,24 +44,9 @@
     "specialAbilities": [
       "Scramble"
     ],
-    "notes": "<p>DS-2, Orange-5 / Scramble 3. Lights up at the datastore exit and scrambles the Accounts-Receivable files if not defeated (QE p.34).</p>"
+    "notes": "<p>DS-2, Orange-5 / Scramble 3. Lights up at the datastore exit and scrambles the Accounts-Receivable files if not defeated. (QE p.34.)</p>"
   },
   "items": [],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "flags": {},
-  "_stats": {
-    "coreVersion": "13.351",
-    "systemId": "sr2e",
-    "systemVersion": "0.1.0",
-    "createdTime": 1784000000000,
-    "modifiedTime": 1784000000000,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-  },
   "prototypeToken": {
     "name": "Strice Scramble IC (DS-2)",
     "displayName": 20,
@@ -54,21 +57,23 @@
       "src": "modules/sr2e-queen-euphoria/assets/portraits/strice-scramble-ic-ds-2.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
       "fit": "cover",
       "scaleX": 1,
       "scaleY": 1,
+      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
     "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
     "disposition": -1,
     "displayBars": 20,
     "bar1": {
       "attribute": "conditionMonitor"
     }
-  },
-  "ownership": {
-    "default": 0
   },
   "_key": "!actors!e377a04489c95550"
 }

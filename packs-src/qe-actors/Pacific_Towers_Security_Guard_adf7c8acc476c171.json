@@ -1,10 +1,28 @@
 {
   "_id": "adf7c8acc476c171",
-  "name": "Corporate / Venue Security",
+  "name": "Pacific Towers Security Guard",
   "type": "npc",
   "img": "modules/sr2e-queen-euphoria/assets/portraits/corporate-venue-security.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
   "system": {
-    "biography": "<p>Uniformed Strice Foods / venue security — gate guards and patrols at the corporate and MegaMedia locations. Representative professional guard; run in numbers.</p>",
+    "biography": "<p><em>\"Building security, barely trained and nearly inexperienced.\"</em> The guards in the Pacific Towers lobby and on the residential floors.</p><p>Worth knowing: this block is <strong>attribute-identical to SR2's own Corporate Security Guard archetype</strong> (core p.205) — same eight attributes, same skills except SR2 adds Interrogation 2. The SR1 adventure and the SR2 core are printing the same archetype under two names.</p><p><em>Queen Euphoria p.15, verified from a render. The old actor was wrong on six counts: Charisma, Intelligence and Willpower all 3 instead of 2, an Armor Jacket instead of the printed Armor Vest, the wrong pistol, and no Etiquette.</em></p>",
     "race": "human",
     "professionalRating": 2,
     "body": {
@@ -26,21 +44,21 @@
       "racial": 0
     },
     "charisma": {
-      "base": 3,
+      "base": 2,
       "mod": 0,
-      "value": 3,
+      "value": 2,
       "racial": 0
     },
     "intelligence": {
-      "base": 3,
+      "base": 2,
       "mod": 0,
-      "value": 3,
+      "value": 2,
       "racial": 0
     },
     "willpower": {
-      "base": 3,
+      "base": 2,
       "mod": 0,
-      "value": 3,
+      "value": 2,
       "racial": 0
     },
     "essence": {
@@ -55,9 +73,9 @@
       "totem": ""
     },
     "reaction": {
-      "base": 3,
+      "base": 2,
       "mod": 0,
-      "value": 3
+      "value": 2
     },
     "conditionMonitor": {
       "physical": {
@@ -89,10 +107,10 @@
       }
     },
     "initiative": {
-      "base": 3,
+      "base": 2,
       "dice": 1,
       "mod": 0,
-      "value": 3
+      "value": 2
     },
     "threatRating": 2,
     "nuyen": 0,
@@ -103,33 +121,18 @@
   },
   "items": [
     {
-      "_id": "0ec7b30c546665ea",
-      "name": "Armed Combat",
+      "_id": "adf7c8ac736b696c",
+      "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
-      "system": {
-        "category": "active",
-        "linkedAttribute": "strength",
-        "rating": 2,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      },
       "effects": [],
       "flags": {},
       "_stats": {
         "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
         "lastModifiedBy": null,
         "compendiumSource": null,
         "duplicateSource": null,
@@ -139,13 +142,46 @@
       "sort": 0,
       "ownership": {
         "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "charisma",
+        "rating": 2,
+        "concentration": {
+          "name": "Corporate",
+          "rating": 2
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
       }
     },
     {
-      "_id": "ce187687879e8569",
+      "_id": "adf7c8ac736b696c",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
       "system": {
         "category": "active",
         "linkedAttribute": "quickness",
@@ -160,15 +196,21 @@
         },
         "isMagical": false,
         "notes": ""
-      },
+      }
+    },
+    {
+      "_id": "adf7c8ac736b696c",
+      "name": "Unarmed Combat",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
       "effects": [],
       "flags": {},
       "_stats": {
         "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
         "lastModifiedBy": null,
         "compendiumSource": null,
         "duplicateSource": null,
@@ -178,17 +220,11 @@
       "sort": 0,
       "ownership": {
         "default": 0
-      }
-    },
-    {
-      "_id": "b1f560d94c979412",
-      "name": "Unarmed Combat",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
+      },
       "system": {
         "category": "active",
         "linkedAttribute": "strength",
-        "rating": 2,
+        "rating": 3,
         "concentration": {
           "name": "",
           "rating": 0
@@ -199,15 +235,21 @@
         },
         "isMagical": false,
         "notes": ""
-      },
+      }
+    },
+    {
+      "_id": "adf7c8ac77656170",
+      "name": "Ceska Black Scorpion",
+      "type": "weapon",
+      "img": "icons/svg/target.svg",
       "effects": [],
       "flags": {},
       "_stats": {
         "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
         "lastModifiedBy": null,
         "compendiumSource": null,
         "duplicateSource": null,
@@ -217,29 +259,23 @@
       "sort": 0,
       "ownership": {
         "default": 0
-      }
-    },
-    {
-      "_id": "b72e63183dafde15",
-      "name": "Ceska vz/120",
-      "type": "weapon",
-      "img": "icons/svg/target.svg",
+      },
       "system": {
         "weaponType": "firearm",
         "skill": "firearms",
-        "damageCode": "6L",
+        "damageCode": "5M",
         "damageType": "physical",
-        "concealability": 8,
+        "concealability": 6,
         "reach": 0,
         "firingModes": {
           "ss": false,
           "sa": true,
-          "bf": false,
+          "bf": true,
           "fa": false
         },
         "ammo": {
-          "current": 18,
-          "max": 18,
+          "current": 25,
+          "max": 25,
           "type": "pistol"
         },
         "recoilComp": 0,
@@ -249,20 +285,26 @@
           "long": 30,
           "extreme": 50
         },
-        "cost": 200,
-        "availability": "4/4 days",
+        "cost": 400,
+        "availability": "5/6 days",
         "legality": "Restricted",
         "equipped": true,
-        "notes": "Light pistol, high concealability (SR2E p.94)."
-      },
+        "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Pacific Towers guards p.15 [25 (clip), 1 extra clip, 3M2]. No SR2 Black Scorpion exists, so the staging digit folds: 3+2 = 5M.</em></p>"
+      }
+    },
+    {
+      "_id": "adf7c8ac61726d6f",
+      "name": "Armor Vest",
+      "type": "armor",
+      "img": "icons/svg/shield.svg",
       "effects": [],
       "flags": {},
       "_stats": {
         "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
         "lastModifiedBy": null,
         "compendiumSource": null,
         "duplicateSource": null,
@@ -272,61 +314,22 @@
       "sort": 0,
       "ownership": {
         "default": 0
-      }
-    },
-    {
-      "_id": "d434823f585354f1",
-      "name": "Armor Jacket",
-      "type": "armor",
-      "img": "icons/svg/shield.svg",
+      },
       "system": {
-        "ballistic": 5,
-        "impact": 3,
+        "ballistic": 2,
+        "impact": 1,
         "concealability": 0,
         "weight": 0,
         "cost": 0,
         "availability": "",
         "legality": "Legal",
         "equipped": true,
-        "notes": "Worn armor (Queen Euphoria stat block)."
-      },
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
+        "notes": "<p>Worn armor, as printed in the Queen Euphoria stat block.</p>"
       }
     }
   ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "flags": {},
-  "_stats": {
-    "coreVersion": "13.351",
-    "systemId": "sr2e",
-    "systemVersion": "0.1.0",
-    "createdTime": 1784000000000,
-    "modifiedTime": 1784000000000,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-  },
   "prototypeToken": {
-    "name": "Corporate / Venue Security",
+    "name": "Pacific Towers Security Guard",
     "displayName": 20,
     "actorLink": false,
     "width": 1,
@@ -355,9 +358,6 @@
     "bar2": {
       "attribute": "conditionMonitor.stun"
     }
-  },
-  "ownership": {
-    "default": 0
   },
   "_key": "!actors!adf7c8acc476c171"
 }

@@ -1,0 +1,74 @@
+{
+  "_id": "dc823ae934f75053",
+  "name": "Mitsubishi Nightsky",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/mitsubishi-nightsky.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "vehicleType": "ground",
+    "skill": "",
+    "handling": 4,
+    "speed": 120,
+    "acceleration": 8,
+    "body": 4,
+    "armor": 2,
+    "signature": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 10,
+    "load": 60,
+    "seating": "",
+    "cost": 250000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 4,
+    "notes": "<p><strong>Euphoria's limousine</strong> — one Knight Errant guard drives it. QE p.16 is explicit that <em>\"this particular Nightsky has no concealed weaponry.\"</em></p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across — the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The ×3 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p><p>An armored executive limousine.</p><p><em>Cruising speed 45 m/CT (used for vehicle tests). Max speed 120 m/CT. Stats: SR2E p.264-265.</em></p><p><em>Stats verified against the Rigger 2 Vehicle List (SR2, book p.148+). Handling 4/8.</em></p>"
+  },
+  "items": [],
+  "prototypeToken": {
+    "name": "Mitsubishi Nightsky",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/mitsubishi-nightsky.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "_key": "!actors!dc823ae934f75053"
+}

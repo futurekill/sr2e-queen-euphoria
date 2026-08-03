@@ -1,0 +1,62 @@
+{
+  "_id": "9fa1e46a299e0805",
+  "name": "Earth Elemental (Force 5)",
+  "type": "spirit",
+  "img": "systems/sr2e/assets/spirit_portraits/earth-1.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "spiritType": "elemental",
+    "force": 5,
+    "domain": "earth",
+    "services": 0,
+    "maxServices": 0,
+    "conjurerUuid": "",
+    "powers": [],
+    "weaknesses": [],
+    "notes": "<p>One of three elementals bound to <strong>Stone (Alexander Cross)</strong>, bound, no assignment printed.</p><p><strong>No mechanical link to Stone.</strong> <code>boundSpirits</code> is a field on <code>CharacterData</code> and Stone is an <code>npc</code>, so the binding is recorded in prose on both sheets rather than faked with a link the data model cannot hold.</p><p><strong>Services are 0 / unknown.</strong> The page gives an <em>assignment</em>, not a service count — GM sets this. No invented number is presented as printed.</p><p>Unlike the insects, these are real <code>spirit</code> actors: the system derives elemental attributes from Force per the SR2 Critter Statistics Table (p.234–235), which is correct here because Queen Euphoria prints no elemental attributes to preserve.</p><p><em>Queen Euphoria p.21.</em></p>"
+  },
+  "items": [],
+  "prototypeToken": {
+    "name": "Earth Elemental (Force 5)",
+    "displayName": 20,
+    "actorLink": true,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/sr2e/assets/spirit_portraits/earth-1.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "cover",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20
+  },
+  "_key": "!actors!9fa1e46a299e0805"
+}

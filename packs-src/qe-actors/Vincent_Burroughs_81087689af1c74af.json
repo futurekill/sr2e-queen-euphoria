@@ -1,50 +1,68 @@
 {
-  "_id": "04e23b7806026164",
-  "name": "Euphoria's Bodyguard",
+  "_id": "81087689af1c74af",
+  "name": "Vincent Burroughs",
   "type": "npc",
-  "img": "modules/sr2e-queen-euphoria/assets/portraits/euphorias-bodyguard.webp",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/vincent-burroughs.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
   "system": {
-    "biography": "<p>One of Euphoria's private security detail — the professionals slaughtered by Craft's Soldiers at the penthouse (their bodies are the horror the runners find). Also usable as her live guards during Act 1. Cyberware: smartlink + boosted reflexes (Reaction/Initiative as printed). Representative professional bodyguard.</p>",
+    "biography": "<p>Strice Foods' Security Director contact — and <strong>the man Craft is blackmailing</strong>, which is how the insect Hive got its foothold in a Strice facility.</p><p>Not a combatant: Defense pools of 1, no gear, no weapons. He is an interrogation and social encounter, not a fight.</p><p><strong>If a Matrix Trace succeeds</strong>, the result prints at his terminal and he calls Lone Star — immediately if he is in-office by day, otherwise the next morning.</p><p><em>Queen Euphoria p.38. No actor previously existed.</em></p>",
     "race": "human",
-    "professionalRating": 3,
+    "professionalRating": 1,
     "body": {
-      "base": 4,
+      "base": 3,
       "mod": 0,
-      "value": 4,
+      "value": 3,
       "racial": 0
     },
     "quickness": {
-      "base": 4,
+      "base": 2,
       "mod": 0,
-      "value": 4,
+      "value": 2,
       "racial": 0
     },
     "strength": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "charisma": {
       "base": 4,
       "mod": 0,
       "value": 4,
       "racial": 0
     },
-    "charisma": {
-      "base": 3,
-      "mod": 0,
-      "value": 3,
-      "racial": 0
-    },
     "intelligence": {
-      "base": 3,
+      "base": 4,
       "mod": 0,
-      "value": 3,
+      "value": 4,
       "racial": 0
     },
     "willpower": {
-      "base": 3,
+      "base": 2,
       "mod": 0,
-      "value": 3,
+      "value": 2,
       "racial": 0
     },
     "essence": {
-      "value": 5,
+      "value": 4.8,
       "max": 6
     },
     "magic": {
@@ -56,8 +74,8 @@
     },
     "reaction": {
       "base": 3,
-      "mod": 2,
-      "value": 5
+      "mod": 0,
+      "value": 3
     },
     "conditionMonitor": {
       "physical": {
@@ -89,27 +107,45 @@
       }
     },
     "initiative": {
-      "base": 5,
-      "dice": 2,
+      "base": 3,
+      "dice": 1,
       "mod": 0,
-      "value": 5
+      "value": 3
     },
-    "threatRating": 3,
+    "threatRating": 1,
     "nuyen": 0,
     "movement": {
-      "walk": 4,
-      "run": 12
+      "walk": 2,
+      "run": 6
     }
   },
   "items": [
     {
-      "_id": "0753bb17d734cb84",
-      "name": "Armed Combat",
+      "_id": "81087689736b696c",
+      "name": "Computer Theory",
       "type": "skill",
       "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
       "system": {
-        "category": "active",
-        "linkedAttribute": "strength",
+        "category": "knowledge",
+        "linkedAttribute": "intelligence",
         "rating": 3,
         "concentration": {
           "name": "",
@@ -121,15 +157,21 @@
         },
         "isMagical": false,
         "notes": ""
-      },
+      }
+    },
+    {
+      "_id": "81087689736b696c",
+      "name": "Etiquette (Corporate)",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
       "effects": [],
       "flags": {},
       "_stats": {
         "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
         "lastModifiedBy": null,
         "compendiumSource": null,
         "duplicateSource": null,
@@ -139,16 +181,88 @@
       "sort": 0,
       "ownership": {
         "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "charisma",
+        "rating": 4,
+        "concentration": {
+          "name": "Corporate",
+          "rating": 4
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
       }
     },
     {
-      "_id": "98ea98df538aa6ae",
-      "name": "Firearms",
+      "_id": "81087689736b696c",
+      "name": "Interrogation",
       "type": "skill",
       "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
       "system": {
         "category": "active",
-        "linkedAttribute": "quickness",
+        "linkedAttribute": "charisma",
+        "rating": 3,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "81087689736b696c",
+      "name": "Negotiation",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "charisma",
         "rating": 4,
         "concentration": {
           "name": "",
@@ -160,15 +274,21 @@
         },
         "isMagical": false,
         "notes": ""
-      },
+      }
+    },
+    {
+      "_id": "8108768963796265",
+      "name": "Datajack",
+      "type": "cyberware",
+      "img": "icons/svg/biohazard.svg",
       "effects": [],
       "flags": {},
       "_stats": {
         "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
         "lastModifiedBy": null,
         "compendiumSource": null,
         "duplicateSource": null,
@@ -178,165 +298,31 @@
       "sort": 0,
       "ownership": {
         "default": 0
-      }
-    },
-    {
-      "_id": "b75089f6c656353a",
-      "name": "Unarmed Combat",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
+      },
       "system": {
-        "category": "active",
-        "linkedAttribute": "strength",
-        "rating": 3,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      },
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      }
-    },
-    {
-      "_id": "e3189c5c5974f210",
-      "name": "Stealth",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "category": "active",
-        "linkedAttribute": "quickness",
-        "rating": 3,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      },
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      }
-    },
-    {
-      "_id": "b72e63183dafde15",
-      "name": "Ceska vz/120",
-      "type": "weapon",
-      "img": "icons/svg/target.svg",
-      "system": {
-        "weaponType": "firearm",
-        "skill": "firearms",
-        "damageCode": "6L",
-        "damageType": "physical",
-        "concealability": 8,
-        "reach": 0,
-        "firingModes": {
-          "ss": false,
-          "sa": true,
-          "bf": false,
-          "fa": false
-        },
-        "ammo": {
-          "current": 18,
-          "max": 18,
-          "type": "pistol"
-        },
-        "recoilComp": 0,
-        "ranges": {
-          "short": 5,
-          "medium": 15,
-          "long": 30,
-          "extreme": 50
-        },
-        "cost": 200,
-        "availability": "4/4 days",
-        "legality": "Restricted",
-        "equipped": true,
-        "notes": "Light pistol, high concealability (SR2E p.94)."
-      },
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      }
-    },
-    {
-      "_id": "d434823f585354f1",
-      "name": "Armor Jacket",
-      "type": "armor",
-      "img": "icons/svg/shield.svg",
-      "system": {
-        "ballistic": 5,
-        "impact": 3,
-        "concealability": 0,
-        "weight": 0,
+        "rating": 0,
+        "quantity": 1,
         "cost": 0,
         "availability": "",
         "legality": "Legal",
         "equipped": true,
-        "notes": "Worn armor (Queen Euphoria stat block)."
-      },
+        "essence": 0.2,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "8108768963796265",
+      "name": "Headware Memory",
+      "type": "cyberware",
+      "img": "icons/svg/biohazard.svg",
       "effects": [],
       "flags": {},
       "_stats": {
         "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
         "lastModifiedBy": null,
         "compendiumSource": null,
         "duplicateSource": null,
@@ -346,32 +332,27 @@
       "sort": 0,
       "ownership": {
         "default": 0
+      },
+      "system": {
+        "rating": 0,
+        "quantity": 1,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 1,
+        "notes": "100 Mp."
       }
     }
   ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "flags": {},
-  "_stats": {
-    "coreVersion": "13.351",
-    "systemId": "sr2e",
-    "systemVersion": "0.1.0",
-    "createdTime": 1784000000000,
-    "modifiedTime": 1784000000000,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-  },
   "prototypeToken": {
-    "name": "Euphoria's Bodyguard",
+    "name": "Vincent Burroughs",
     "displayName": 20,
     "actorLink": false,
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-queen-euphoria/assets/portraits/euphorias-bodyguard.webp",
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/vincent-burroughs.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,
@@ -395,8 +376,5 @@
       "attribute": "conditionMonitor.stun"
     }
   },
-  "ownership": {
-    "default": 0
-  },
-  "_key": "!actors!04e23b7806026164"
+  "_key": "!actors!81087689af1c74af"
 }

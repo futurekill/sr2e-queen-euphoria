@@ -3,10 +3,28 @@
   "name": "Lone Star Officer",
   "type": "npc",
   "img": "modules/sr2e-queen-euphoria/assets/portraits/lone-star-officer.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
   "system": {
-    "biography": "<p>Lone Star patrol response — summoned if a Strice Matrix alert Traces the decker, or if a scene goes loud. Representative officer.</p>",
+    "biography": "<p>Lone Star officers. <strong>Four hold the Pacific Towers lobby</strong> (QE p.14), and more arrive if a Strice Matrix alert Traces the decker or a scene goes loud.</p><p><strong>Gear is printed</strong> (p.14): Browning Max-Power heavy pistols, stun batons, Armor Vests. <strong>Attributes are not</strong> — the adventure defers to the SR1 Street Cop contact, so these come from SR2's own <em>Corporate Security Guard</em> archetype (core p.205), which happens to be identical to the Pacific Towers guard block on p.15.</p><p>The stun baton's printed <em>\"+ Special\"</em> is a stun effect beyond the damage code — GM adjudicates.</p><p><em>The old actor carried an Ares Predator and no baton or vest.</em></p>",
     "race": "human",
-    "professionalRating": 3,
+    "professionalRating": 2,
     "body": {
       "base": 4,
       "mod": 0,
@@ -14,33 +32,33 @@
       "racial": 0
     },
     "quickness": {
-      "base": 4,
+      "base": 3,
       "mod": 0,
-      "value": 4,
+      "value": 3,
       "racial": 0
     },
     "strength": {
-      "base": 4,
+      "base": 3,
       "mod": 0,
-      "value": 4,
+      "value": 3,
       "racial": 0
     },
     "charisma": {
-      "base": 3,
+      "base": 2,
       "mod": 0,
-      "value": 3,
+      "value": 2,
       "racial": 0
     },
     "intelligence": {
-      "base": 3,
+      "base": 2,
       "mod": 0,
-      "value": 3,
+      "value": 2,
       "racial": 0
     },
     "willpower": {
-      "base": 3,
+      "base": 2,
       "mod": 0,
-      "value": 3,
+      "value": 2,
       "racial": 0
     },
     "essence": {
@@ -55,9 +73,9 @@
       "totem": ""
     },
     "reaction": {
-      "base": 3,
-      "mod": 1,
-      "value": 4
+      "base": 2,
+      "mod": 0,
+      "value": 2
     },
     "conditionMonitor": {
       "physical": {
@@ -89,24 +107,159 @@
       }
     },
     "initiative": {
-      "base": 4,
+      "base": 2,
       "dice": 1,
       "mod": 0,
-      "value": 4
+      "value": 2
     },
-    "threatRating": 3,
+    "threatRating": 2,
     "nuyen": 0,
     "movement": {
-      "walk": 4,
-      "run": 12
+      "walk": 3,
+      "run": 9
     }
   },
   "items": [
     {
-      "_id": "0753bb17d734cb84",
-      "name": "Armed Combat",
+      "_id": "f139ed74736b696c",
+      "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "charisma",
+        "rating": 2,
+        "concentration": {
+          "name": "Corporate",
+          "rating": 2
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "f139ed74736b696c",
+      "name": "Firearms",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "quickness",
+        "rating": 3,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "f139ed74736b696c",
+      "name": "Interrogation",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "charisma",
+        "rating": 2,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "f139ed74736b696c",
+      "name": "Unarmed Combat",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
       "system": {
         "category": "active",
         "linkedAttribute": "strength",
@@ -121,115 +274,37 @@
         },
         "isMagical": false,
         "notes": ""
-      },
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
       }
     },
     {
-      "_id": "98ea98df538aa6ae",
-      "name": "Firearms",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "category": "active",
-        "linkedAttribute": "quickness",
-        "rating": 4,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      },
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      }
-    },
-    {
-      "_id": "1a413a5e21bf7d8a",
-      "name": "Ground Vehicles",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "category": "active",
-        "linkedAttribute": "reaction",
-        "rating": 3,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      },
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      }
-    },
-    {
-      "_id": "626cbd800e16d855",
-      "name": "Ares Predator",
+      "_id": "f139ed7477656170",
+      "name": "Browning Max-Power",
       "type": "weapon",
-      "img": "icons/svg/target.svg",
+      "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
       "system": {
         "weaponType": "firearm",
         "skill": "firearms",
         "damageCode": "9M",
         "damageType": "physical",
-        "concealability": 5,
+        "concealability": 6,
         "reach": 0,
         "firingModes": {
           "ss": false,
@@ -238,8 +313,8 @@
           "fa": false
         },
         "ammo": {
-          "current": 15,
-          "max": 15,
+          "current": 10,
+          "max": 10,
           "type": "pistol"
         },
         "recoilComp": 0,
@@ -249,20 +324,30 @@
           "long": 40,
           "extreme": 60
         },
+        "strengthMin": 0,
+        "weight": 2,
         "cost": 450,
-        "availability": "4/5 days",
-        "legality": "Restricted",
+        "availability": "3/24 hrs",
+        "legality": "Legal",
         "equipped": true,
-        "notes": "Heavy pistol (SR2E p.94)."
-      },
+        "accessories": [],
+        "notes": "SR2E p.231. The main competitor to the Ares Predator. Heavy frame, hard-hitting—the samurai's sidearm of choice.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) — Ultra-Power is the SR1 name for this pistol.</em></p>",
+        "streetIndex": 1
+      }
+    },
+    {
+      "_id": "f139ed7477656170",
+      "name": "Stun Baton",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
       "effects": [],
       "flags": {},
       "_stats": {
         "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
         "lastModifiedBy": null,
         "compendiumSource": null,
         "duplicateSource": null,
@@ -272,59 +357,78 @@
       "sort": 0,
       "ownership": {
         "default": 0
+      },
+      "system": {
+        "weaponType": "melee",
+        "skill": "armed_combat",
+        "damageCode": "6S",
+        "damageType": "stun",
+        "concealability": 4,
+        "reach": 1,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 750,
+        "availability": "3/36 hrs",
+        "legality": "Legal",
+        "equipped": true,
+        "accessories": [],
+        "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>"
       }
     },
     {
-      "_id": "d434823f585354f1",
-      "name": "Armor Jacket",
+      "_id": "f139ed7461726d6f",
+      "name": "Armor Vest",
       "type": "armor",
       "img": "icons/svg/shield.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
       "system": {
-        "ballistic": 5,
-        "impact": 3,
+        "ballistic": 2,
+        "impact": 1,
         "concealability": 0,
         "weight": 0,
         "cost": 0,
         "availability": "",
         "legality": "Legal",
         "equipped": true,
-        "notes": "Worn armor (Queen Euphoria stat block)."
-      },
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
+        "notes": "<p>Worn armor, as printed in the Queen Euphoria stat block.</p>"
       }
     }
   ],
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "flags": {},
-  "_stats": {
-    "coreVersion": "13.351",
-    "systemId": "sr2e",
-    "systemVersion": "0.1.0",
-    "createdTime": 1784000000000,
-    "modifiedTime": 1784000000000,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-  },
   "prototypeToken": {
     "name": "Lone Star Officer",
     "displayName": 20,
@@ -355,9 +459,6 @@
     "bar2": {
       "attribute": "conditionMonitor.stun"
     }
-  },
-  "ownership": {
-    "default": 0
   },
   "_key": "!actors!f139ed747f2833e6"
 }

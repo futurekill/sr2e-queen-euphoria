@@ -1,8 +1,8 @@
 {
-  "_id": "b5363a843c6735ae",
-  "name": "Craft (Thomas Dorin)",
+  "_id": "1dece01022748b01",
+  "name": "Osprey (Adams)",
   "type": "npc",
-  "img": "modules/sr2e-queen-euphoria/assets/portraits/craft-thomas-dorin.webp",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/osprey-crafts-muscle.webp",
   "effects": [],
   "flags": {},
   "_stats": {
@@ -22,25 +22,25 @@
     "default": 0
   },
   "system": {
-    "biography": "<p>Ant-totem shaman and the adventure's villain. A former Coyote shaman turned talismonger who runs the <strong>Magic Crafts</strong> shop; he took a run from his Fixer, Solomon Daniels, and came back changed. Under the Ant totem he is crazed with power, and his psychotic fixation on the simstar Euphoria drives the plot — he means to make her his <em>Queen</em>.</p><p><strong>Totem:</strong> Ant. The book grants it no mechanical benefit; the bond is roleplay.</p><p><strong>Sleep Spell Focus (Force 2)</strong> — a real item on this sheet, shipped inactive. Turn it on for Sleep and off again afterwards, or it adds its dice to every other spell he casts.</p><p><em>Cast of Characters, Queen Euphoria p.62. Attributes, skills and gear verified from a 300 dpi render; the spell list re-checked 2026-08-03 and confirmed at eight spells.</em></p>",
+    "biography": "<p>Craft's muscle — and a genuinely dangerous street samurai, not the generic thug the module used to ship. <strong>Firearms 7</strong>, Wired Reflexes (2), and a Monofilament Whip.</p><p><strong>A skillwire user</strong> with two linguasofts (French, Japanese) and a Monofilament Whip activesoft, which is worth remembering if the runners try to talk their way past him in the wrong language.</p><p><em>Queen Euphoria p.20, verified from a render. The old actor was wrong on every attribute and skill checked, had none of the cyberware, and carried an Uzi he does not own.</em></p>",
     "race": "human",
     "professionalRating": 4,
     "body": {
-      "base": 4,
+      "base": 5,
       "mod": 0,
-      "value": 4,
+      "value": 5,
       "racial": 0
     },
     "quickness": {
-      "base": 3,
+      "base": 5,
       "mod": 0,
-      "value": 3,
+      "value": 5,
       "racial": 0
     },
     "strength": {
-      "base": 3,
+      "base": 4,
       "mod": 0,
-      "value": 3,
+      "value": 4,
       "racial": 0
     },
     "charisma": {
@@ -50,32 +50,32 @@
       "racial": 0
     },
     "intelligence": {
+      "base": 4,
+      "mod": 0,
+      "value": 4,
+      "racial": 0
+    },
+    "willpower": {
       "base": 5,
       "mod": 0,
       "value": 5,
       "racial": 0
     },
-    "willpower": {
-      "base": 6,
-      "mod": 0,
-      "value": 6,
-      "racial": 0
-    },
     "essence": {
-      "value": 6,
+      "value": 0.3,
       "max": 6
     },
     "magic": {
-      "value": 6,
-      "max": 6,
-      "tradition": "shamanic",
-      "type": "full_magician",
-      "totem": "ant"
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
     },
     "reaction": {
       "base": 4,
-      "mod": 0,
-      "value": 4
+      "mod": 5,
+      "value": 9
     },
     "conditionMonitor": {
       "physical": {
@@ -107,22 +107,22 @@
       }
     },
     "initiative": {
-      "base": 4,
-      "dice": 1,
+      "base": 9,
+      "dice": 3,
       "mod": 0,
-      "value": 4
+      "value": 9
     },
-    "threatRating": 6,
+    "threatRating": 5,
     "nuyen": 0,
     "movement": {
-      "walk": 3,
-      "run": 9
+      "walk": 5,
+      "run": 15
     }
   },
   "items": [
     {
-      "_id": "b5363a84736b696c",
-      "name": "Conjuring",
+      "_id": "1dece010736b696c",
+      "name": "Armed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
       "effects": [],
@@ -145,89 +145,11 @@
       },
       "system": {
         "category": "active",
-        "linkedAttribute": "charisma",
+        "linkedAttribute": "strength",
         "rating": 5,
         "concentration": {
           "name": "",
           "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": true,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a84736b696c",
-      "name": "Sorcery",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "active",
-        "linkedAttribute": "willpower",
-        "rating": 6,
-        "concentration": {
-          "name": "Spellcasting",
-          "rating": 6
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": true,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a84736b696c",
-      "name": "Firearms",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "active",
-        "linkedAttribute": "quickness",
-        "rating": 4,
-        "concentration": {
-          "name": "Pistols",
-          "rating": 4
         },
         "specialization": {
           "name": "",
@@ -238,7 +160,85 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "1dece010736b696c",
+      "name": "Car",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "reaction",
+        "rating": 3,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "1dece010736b696c",
+      "name": "Demolitions",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "intelligence",
+        "rating": 2,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "1dece010736b696c",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -263,10 +263,10 @@
       "system": {
         "category": "active",
         "linkedAttribute": "charisma",
-        "rating": 1,
+        "rating": 2,
         "concentration": {
           "name": "Corporate",
-          "rating": 1
+          "rating": 2
         },
         "specialization": {
           "name": "",
@@ -277,7 +277,46 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "1dece010736b696c",
+      "name": "Etiquette (Media)",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "charisma",
+        "rating": 4,
+        "concentration": {
+          "name": "Media",
+          "rating": 4
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "1dece010736b696c",
       "name": "Etiquette (Street)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,8 +355,8 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
-      "name": "Magic Theory",
+      "_id": "1dece010736b696c",
+      "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
       "effects": [],
@@ -340,8 +379,8 @@
       },
       "system": {
         "category": "active",
-        "linkedAttribute": "intelligence",
-        "rating": 6,
+        "linkedAttribute": "quickness",
+        "rating": 7,
         "concentration": {
           "name": "",
           "rating": 0
@@ -355,7 +394,85 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "1dece010736b696c",
+      "name": "Interrogation",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "charisma",
+        "rating": 3,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "1dece010736b696c",
+      "name": "Leadership",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "charisma",
+        "rating": 2,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "1dece010736b696c",
       "name": "Negotiation",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -394,7 +511,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "1dece010736b696c",
       "name": "Stealth",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -419,10 +536,10 @@
       "system": {
         "category": "active",
         "linkedAttribute": "quickness",
-        "rating": 4,
+        "rating": 5,
         "concentration": {
-          "name": "Urban",
-          "rating": 4
+          "name": "",
+          "rating": 0
         },
         "specialization": {
           "name": "",
@@ -433,7 +550,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "1dece010736b696c",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -458,45 +575,6 @@
       "system": {
         "category": "active",
         "linkedAttribute": "strength",
-        "rating": 3,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a84736b696c",
-      "name": "Evaluate Magical Goods",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "knowledge",
-        "linkedAttribute": "intelligence",
         "rating": 5,
         "concentration": {
           "name": "",
@@ -511,465 +589,10 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
-      "name": "Metalworking",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "knowledge",
-        "linkedAttribute": "intelligence",
-        "rating": 3,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a84736b696c",
-      "name": "Woodworking",
-      "type": "skill",
-      "img": "icons/svg/book.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "knowledge",
-        "linkedAttribute": "intelligence",
-        "rating": 3,
-        "concentration": {
-          "name": "",
-          "rating": 0
-        },
-        "specialization": {
-          "name": "",
-          "rating": 0
-        },
-        "isMagical": false,
-        "notes": ""
-      }
-    },
-    {
-      "_id": "b5363a847370656c",
-      "name": "Mana Bolt",
-      "type": "spell",
-      "img": "icons/svg/daze.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "combat",
-        "subcategory": "",
-        "type": "mana",
-        "range": "los",
-        "duration": "instant",
-        "force": 5,
-        "drainCode": "(F / 2)S",
-        "target": "Willpower (R)",
-        "damageCode": "S",
-        "isAreaEffect": false,
-        "isVoluntary": false,
-        "notes": "A powerful bolt of magical energy that causes Physical damage.",
-        "sustaining": false,
-        "sustainedForce": 0,
-        "spellLocked": false,
-        "quickened": false,
-        "quickeningKarma": 0
-      }
-    },
-    {
-      "_id": "b5363a847370656c",
-      "name": "Sleep",
-      "type": "spell",
-      "img": "icons/svg/daze.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "combat",
-        "subcategory": "",
-        "type": "mana",
-        "range": "los",
-        "duration": "instant",
-        "force": 5,
-        "drainCode": "((F / 2) - 1)S",
-        "target": "Willpower (R)",
-        "damageCode": "M",
-        "isAreaEffect": true,
-        "isVoluntary": false,
-        "notes": "<p>His signature spell — how Euphoria is taken. The bonded Sleep Spell Focus (Force 2) adds 2 dice, but ONLY while the focus is active; see the focus item.</p>An area-effect spell that causes Stun damage to living targets only.",
-        "sustaining": false,
-        "sustainedForce": 0,
-        "spellLocked": false,
-        "quickened": false,
-        "quickeningKarma": 0
-      }
-    },
-    {
-      "_id": "b5363a847370656c",
-      "name": "Clairvoyance",
-      "type": "spell",
-      "img": "icons/svg/daze.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "detection",
-        "subcategory": "",
-        "type": "mana",
-        "range": "limited",
-        "duration": "sustained",
-        "force": 4,
-        "drainCode": "(F / 2)M",
-        "target": "4",
-        "damageCode": "",
-        "isAreaEffect": false,
-        "isVoluntary": true,
-        "notes": "A hypersense spell requiring a voluntary subject. The magician can see distant scenes as if present, to the range of the new sense. The magician must concentrate to use this sense, and while using it, cannot use physical vision. A magician cannot cast spells at a target seen using the clairvoyance spell. This spell does not translate sound.",
-        "sustaining": false,
-        "sustainedForce": 0,
-        "spellLocked": false,
-        "quickened": false,
-        "quickeningKarma": 0
-      }
-    },
-    {
-      "_id": "b5363a847370656c",
-      "name": "Confusion",
-      "type": "spell",
-      "img": "icons/svg/daze.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "illusion",
-        "subcategory": "",
-        "type": "mana",
-        "range": "los",
-        "duration": "sustained",
-        "force": 5,
-        "drainCode": "(F / 2)S",
-        "target": "Willpower (R)",
-        "damageCode": "",
-        "isAreaEffect": true,
-        "isVoluntary": false,
-        "notes": "This is an area-effect spell similar to the chaos spell, except that the confusion spell does not affect technological systems. Visual illusions ﬁll the affected area, making it a place of shifting forms, dazzling lights, and pools of shadow. Those who fail to resist suffer a distraction (+1 to all target numbers) for every two successes remaining after reductions from the Spell Resistance Test.",
-        "sustaining": false,
-        "sustainedForce": 0,
-        "spellLocked": false,
-        "quickened": false,
-        "quickeningKarma": 0
-      }
-    },
-    {
-      "_id": "b5363a847370656c",
-      "name": "Mask",
-      "type": "spell",
-      "img": "icons/svg/daze.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "illusion",
-        "subcategory": "",
-        "type": "mana",
-        "range": "touch",
-        "duration": "sustained",
-        "force": 6,
-        "drainCode": "(F / 2)L",
-        "target": "4",
-        "damageCode": "",
-        "isAreaEffect": false,
-        "isVoluntary": true,
-        "notes": "This spell requires that the magician touch a voluntary subject. The subject assumes some physical appearance (same basic size and shape) chosen by the caster. The number of successes becomes the target number for Perception Tests by observers. This spell does not work through technological devices.",
-        "sustaining": false,
-        "sustainedForce": 0,
-        "spellLocked": false,
-        "quickened": false,
-        "quickeningKarma": 0
-      }
-    },
-    {
-      "_id": "b5363a847370656c",
-      "name": "Stimulation",
-      "type": "spell",
-      "img": "icons/svg/daze.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "illusion",
-        "subcategory": "",
-        "type": "mana",
-        "range": "los",
-        "duration": "sustained",
-        "force": 4,
-        "drainCode": "((F / 2) + 1)L",
-        "target": "4",
-        "damageCode": "",
-        "isAreaEffect": false,
-        "isVoluntary": true,
-        "notes": "The voluntary subject experiences a full sensory illusion of whatever type the spellcaster desires. This is usually a luxury spell bought by the rich and jaded, seeking sensations they cannot ﬁnd in the real world. Successes measure the pleasure of the subject.",
-        "sustaining": false,
-        "sustainedForce": 0,
-        "spellLocked": false,
-        "quickened": false,
-        "quickeningKarma": 0
-      }
-    },
-    {
-      "_id": "b5363a847370656c",
-      "name": "Armor",
-      "type": "spell",
-      "img": "icons/svg/daze.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "manipulation",
-        "subcategory": "transformation",
-        "type": "physical",
-        "range": "limited",
-        "duration": "sustained",
-        "force": 6,
-        "drainCode": "((F / 2) + 2)M",
-        "target": "4",
-        "damageCode": "",
-        "isAreaEffect": false,
-        "isVoluntary": true,
-        "notes": "A voluntary subject is required. The magician gives the subject built-in armor, knitting his tissues into tougher compounds. Treat one-half the successes made in the Spell Success Test as the Dermal Armor Rating (add to Body) for as long as the spell is maintained.",
-        "sustaining": false,
-        "sustainedForce": 0,
-        "spellLocked": false,
-        "quickened": false,
-        "quickeningKarma": 0
-      }
-    },
-    {
-      "_id": "b5363a847370656c",
-      "name": "Levitate Person",
-      "type": "spell",
-      "img": "icons/svg/daze.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "category": "manipulation",
-        "subcategory": "telekinetic",
-        "type": "physical",
-        "range": "los",
-        "duration": "sustained",
-        "force": 4,
-        "drainCode": "((F / 2) + 1)M",
-        "target": "4",
-        "damageCode": "",
-        "isAreaEffect": false,
-        "isVoluntary": false,
-        "notes": "",
-        "sustaining": false,
-        "sustainedForce": 0,
-        "spellLocked": false,
-        "quickened": false,
-        "quickeningKarma": 0
-      }
-    },
-    {
-      "_id": "b5363a84666f6375",
-      "name": "Sleep Spell Focus",
-      "type": "focus",
-      "img": "icons/svg/aura.svg",
-      "effects": [],
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.1.0",
-        "createdTime": 1784000000000,
-        "modifiedTime": 1784000000000,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "system": {
-        "focusType": "spell",
-        "force": 2,
-        "bonded": true,
-        "active": false,
-        "expendable": false,
-        "bondedWeaponId": "",
-        "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Ships INACTIVE on purpose: the system sums every ACTIVE bonded spell focus into EVERY spell (FocusData does not bind a focus to a category), so leaving it on would hand Craft +2 dice on Mana Bolt too, which the page does not grant. Activate it on the item sheet when he casts Sleep, then deactivate."
-      }
-    },
-    {
-      "_id": "b5363a8477656170",
-      "name": "Ares Predator",
+      "_id": "1dece01077656170",
+      "name": "Colt Manhunter",
       "type": "weapon",
-      "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
+      "img": "systems/sr2e/assets/item_icons/weapons/colt-manhunter.webp",
       "effects": [],
       "flags": {},
       "_stats": {
@@ -1002,8 +625,8 @@
           "fa": false
         },
         "ammo": {
-          "current": 15,
-          "max": 15,
+          "current": 16,
+          "max": 16,
           "type": "pistol"
         },
         "recoilComp": 0,
@@ -1014,19 +637,77 @@
           "extreme": 60
         },
         "strengthMin": 0,
-        "weight": 2.25,
-        "cost": 450,
-        "availability": "3/24 hrs",
+        "weight": 0,
+        "cost": 425,
+        "availability": "4/48hrs",
         "legality": "Legal",
         "equipped": true,
         "accessories": [],
-        "notes": "SR2E p.231. Considered by many the premier heavy pistol. Menacing and popular among mercenaries and security services.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry — SR2 has no separate 'II'.</em></p>",
-        "streetIndex": 0.5
+        "notes": "SR2E p.231. A rugged, large-frame heavy pistol favored by bounty hunters and independents. Reliable under field conditions.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Osprey p.20, with Smartgun Link.</em></p>"
       }
     },
     {
-      "_id": "b5363a8461726d6f",
-      "name": "Real Leather Clothing",
+      "_id": "1dece01077656170",
+      "name": "Monofilament Whip",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/monofilament-whip.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "weaponType": "melee",
+        "skill": "armed_combat",
+        "damageCode": "10S",
+        "damageType": "physical",
+        "concealability": 10,
+        "reach": 2,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 3000,
+        "availability": "24/14 days",
+        "legality": "Restricted",
+        "equipped": true,
+        "accessories": [],
+        "notes": "SR2E Melee Weapons Table p.101: 10S, Reach 2, Concealability 10, 3,000¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6S4</code>. Osprey p.20. +2 Reach preserved.</em></p>",
+        "streetIndex": 3
+      }
+    },
+    {
+      "_id": "1dece01061726d6f",
+      "name": "Armor Jacket",
       "type": "armor",
       "img": "icons/svg/shield.svg",
       "effects": [],
@@ -1048,8 +729,8 @@
         "default": 0
       },
       "system": {
-        "ballistic": 0,
-        "impact": 2,
+        "ballistic": 5,
+        "impact": 3,
         "concealability": 0,
         "weight": 0,
         "cost": 0,
@@ -1058,16 +739,322 @@
         "equipped": true,
         "notes": "<p>Worn armor, as printed in the Queen Euphoria stat block.</p>"
       }
+    },
+    {
+      "_id": "1dece01063796265",
+      "name": "Chipjack",
+      "type": "cyberware",
+      "img": "icons/svg/biohazard.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 0,
+        "quantity": 2,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 0.2,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "1dece01063796265",
+      "name": "Datasoft Link",
+      "type": "cyberware",
+      "img": "icons/svg/biohazard.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 0,
+        "quantity": 1,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 0.2,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "1dece01063796265",
+      "name": "Retinal Modification",
+      "type": "cyberware",
+      "img": "icons/svg/biohazard.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 0,
+        "quantity": 1,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 0.2,
+        "notes": "With Thermographic."
+      }
+    },
+    {
+      "_id": "1dece01063796265",
+      "name": "Retractable Razors",
+      "type": "cyberware",
+      "img": "icons/svg/biohazard.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 0,
+        "quantity": 1,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 0.3,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "1dece01063796265",
+      "name": "Skillwire",
+      "type": "cyberware",
+      "img": "icons/svg/biohazard.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 6,
+        "quantity": 1,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 2.4,
+        "notes": "Skillsofts: Car (4), Demolitions (4), French (4), Interrogation (5), Japanese (4), Monofilament Whip (5)."
+      }
+    },
+    {
+      "_id": "1dece01063796265",
+      "name": "Smartgun Link",
+      "type": "cyberware",
+      "img": "icons/svg/biohazard.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 0,
+        "quantity": 1,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 0.5,
+        "notes": ""
+      }
+    },
+    {
+      "_id": "1dece01063796265",
+      "name": "Wired Reflexes",
+      "type": "cyberware",
+      "img": "icons/svg/biohazard.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 2,
+        "quantity": 1,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 3,
+        "notes": "+4 Reaction, +2d6 Initiative — this is the (9) in the printed Reaction 5 (9)."
+      }
+    },
+    {
+      "_id": "1dece01067656172",
+      "name": "BMW 330LS",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 0,
+        "quantity": 1,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 0,
+        "notes": "Sportscar."
+      }
+    },
+    {
+      "_id": "1dece01067656172",
+      "name": "Explosive Ammunition",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "rating": 0,
+        "quantity": 1,
+        "cost": 0,
+        "availability": "",
+        "legality": "Legal",
+        "equipped": true,
+        "essence": 0,
+        "notes": "Printed 5M3."
+      }
     }
   ],
   "prototypeToken": {
-    "name": "Craft (Thomas Dorin)",
+    "name": "Osprey (Adams)",
     "displayName": 20,
     "actorLink": false,
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-queen-euphoria/assets/portraits/craft-thomas-dorin.webp",
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/osprey-crafts-muscle.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,
@@ -1091,5 +1078,5 @@
       "attribute": "conditionMonitor.stun"
     }
   },
-  "_key": "!actors!b5363a843c6735ae"
+  "_key": "!actors!1dece01022748b01"
 }

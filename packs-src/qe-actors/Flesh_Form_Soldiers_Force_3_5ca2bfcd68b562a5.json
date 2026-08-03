@@ -1,0 +1,195 @@
+{
+  "_id": "5ca2bfcd68b562a5",
+  "name": "Flesh Form Soldiers (Force 3)",
+  "type": "npc",
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/soldier-ant-spirit-flesh-form-force-4.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "biography": "<p>A soldier spirit inhabiting a human host — a human/giant-ant hybrid, permanently bound to the body and unable to project astrally. <strong>Note it fights with an ordinary Unarmed Combat 3</strong>, not Willpower; the Willpower rule was a Double Exposure assumption the printed block contradicts.</p><p><strong>No armour.</strong> Flesh Forms have none printed — armour appears only on the True Forms.</p><p>Replaces 'Soldier Ant Spirit (Flesh Form, Force 4)'; no Force 4 Soldier is printed.</p><p><strong>Manual rules the sheet does not enforce.</strong> Powers and Weaknesses are not fields on the NPC data model, so they live here as prose. Switching these to <code>spirit</code> actors would be worse — <code>SpiritData.prepareDerivedData</code> recomputes attributes from Force and would overwrite the printed table this whole audit exists to restore.</p><p><strong>Astral:</strong> add <strong>+5 Initiative</strong> when acting astrally (the printed Reaction shows this as the bracketed second value). It is deliberately NOT baked into <code>reaction</code>, which would also inflate dodge and defence.</p><p><strong>Attack:</strong> 8M Physical (printed SR1 <code>6M2</code>, converted by p.283 method B — no SR2 item is an ant's mandibles, so the staging digit folds into Power).</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Pain Resistance.<br><strong>Weaknesses:</strong> None printed.</p><p><em>Queen Euphoria p.49, transcribed from a 300 dpi render.</em></p>",
+    "race": "spirit",
+    "professionalRating": 3,
+    "body": {
+      "base": 6,
+      "mod": 0,
+      "value": 6,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 6,
+      "mod": 0,
+      "value": 6,
+      "racial": 0
+    },
+    "strength": {
+      "base": 6,
+      "mod": 0,
+      "value": 6,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 3,
+      "mod": 0,
+      "value": 3,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 1,
+      "mod": 0,
+      "value": 1,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "essence": {
+      "value": 3,
+      "max": 6
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 3,
+      "mod": 0,
+      "value": 3
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 0,
+      "impact": 0
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 3,
+      "dice": 1,
+      "mod": 0,
+      "value": 3
+    },
+    "threatRating": 3,
+    "nuyen": 0,
+    "movement": {
+      "walk": 6,
+      "run": 18
+    }
+  },
+  "items": [
+    {
+      "_id": "5ca2bfcd736b696c",
+      "name": "Unarmed Combat",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "category": "active",
+        "linkedAttribute": "strength",
+        "rating": 3,
+        "concentration": {
+          "name": "",
+          "rating": 0
+        },
+        "specialization": {
+          "name": "",
+          "rating": 0
+        },
+        "isMagical": false,
+        "notes": ""
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Flesh Form Soldiers (Force 3)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/soldier-ant-spirit-flesh-form-force-4.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "cover",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "_key": "!actors!5ca2bfcd68b562a5"
+}
