@@ -49,8 +49,8 @@
       "name": "Royal Meadows \u2014 Flat",
       "source": "printed",
       "folio": 12,
-      "widthM": 8,
-      "heightM": 3,
+      "widthM": 12,
+      "heightM": 7,
       "measuredBy": "legend square (128 x 129 px \u2014 no grid is drawn on this plan)",
       "art": "royal-meadows-flat.webp",
       "nav": true,
@@ -58,83 +58,124 @@
       "doors": [
         {
           "seg": [
-            2,
-            1.8,
-            2,
-            2.6
-          ]
-        },
-        {
-          "seg": [
-            2.4,
-            1.6,
-            3.1,
-            1.6
-          ]
-        },
-        {
-          "seg": [
-            3.5,
-            1.8,
-            3.5,
-            2.6
-          ]
-        },
-        {
-          "seg": [
-            0.8,
-            2,
-            1.6,
-            2
-          ]
-        },
-        {
-          "seg": [
-            6,
             3,
-            6.9,
+            2.8,
+            3,
+            3.6
+          ]
+        },
+        {
+          "seg": [
+            3.4,
+            2.6,
+            4.1,
+            2.6
+          ]
+        },
+        {
+          "seg": [
+            4.5,
+            2.8,
+            4.5,
+            3.6
+          ]
+        },
+        {
+          "seg": [
+            1.8,
+            3,
+            2.6,
             3
           ]
+        },
+        {
+          "seg": [
+            6.6,
+            4,
+            7.5,
+            4
+          ],
+          "$note": "the flat's front door, onto the corridor"
+        },
+        {
+          "seg": [
+            1.4,
+            6.0,
+            2.3,
+            6.0
+          ],
+          "$note": "neighbour 3A"
+        },
+        {
+          "seg": [
+            5.4,
+            6.0,
+            6.3,
+            6.0
+          ],
+          "$note": "neighbour 3C"
+        },
+        {
+          "seg": [
+            9.0,
+            6.0,
+            9.9,
+            6.0
+          ],
+          "$note": "neighbour 3D"
         }
       ],
       "$layoutNote": "Layout AUTHORED at the printed scale, not traced. The dimensions and the room list come from the book; the arrangement inside them is ours. This is both more robust than extracting a scan and squarely within the module's no-reproduced-layout rule.",
       "layout": [
         {
           "name": "Bedroom (2)",
-          "x": 0,
-          "y": 0,
+          "x": 1,
+          "y": 1,
           "w": 2,
           "h": 2
         },
         {
           "name": "Closet (3)",
-          "x": 0,
-          "y": 2,
+          "x": 1,
+          "y": 3,
           "w": 2,
           "h": 1
         },
         {
           "name": "Bath (4)",
-          "x": 2,
-          "y": 0,
+          "x": 3,
+          "y": 1,
           "w": 1.5,
           "h": 1.6
         },
         {
           "name": "Hall",
-          "x": 2,
-          "y": 1.6,
+          "x": 3,
+          "y": 2.6,
           "w": 1.5,
           "h": 1.4
         },
         {
           "name": "Living / Kitchenette (1)",
-          "x": 3.5,
-          "y": 0,
+          "x": 4.5,
+          "y": 1,
           "w": 4.5,
           "h": 3
+        },
+        {
+          "name": "Building Corridor",
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 2
         }
-      ]
+      ],
+      "planMetres": [
+        8,
+        3
+      ],
+      "$sizeNote": "Scene is 12 x 7 m; the FLAT ITSELF is the measured 8 x 3 m at origin (1,1). The rest is the building corridor, added because a sealed flat gives the players nowhere to approach from, listen at the door, or retreat to.",
+      "stairs": true
     },
     {
       "_id": "79290bce4cf94fb5",
