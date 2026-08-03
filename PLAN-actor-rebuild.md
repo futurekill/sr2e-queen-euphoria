@@ -1,5 +1,5 @@
 # Plan: rebuild the Queen Euphoria actors from the printed stat blocks
-_Round 2 — revised after two Codex rounds_
+_Round 3 — Step 5 rewritten after the NPC-sheet finding; both rulings resolved_
 
 ## Goal
 
@@ -145,39 +145,70 @@ any token placed on a user scene).
 
 **Vehicles (3):** blocked on the armour ruling — see open questions.
 
-### Step 5 — What the data model can and cannot represent  *(corrected)*
+### Step 5 — Fix the sheet once, in the system  *(revised — Round 3)*
 
-Checked against `../sr2e-foundryvtt/module/data/actor-data.mjs`. The previous
-draft promised mechanics the system does not have:
+The Round-2 draft said **"Stone must be a `character`, not an `npc`"**, because
+the NPC sheet renders no spells. The premise is right and the conclusion was
+wrong: that is a fact about the *sheet*, not about Stone. Re-checked against the
+system repo:
 
-- **Stone must be a `character`, not an `npc`.** `NPCData` has no
-  `boundSpirits`, no `astralState`, no `magic.skill`, and the NPC sheet renders
-  no spells — a "playable full magician" as an npc is not achievable, and strict
-  data-model cleaning would discard the undeclared fields. Two consequences to
-  handle explicitly:
-  - `CharacterData.chargen.inProgress` **defaults to `true`**, which would make
-    Stone behave as an unfinished PC and change purchase behaviour. Generation
-    must set it `false`, verified *after* schema preparation.
-  - `professionalRating` and `threatRating` are **NPC-only fields** and will be
-    stripped. Record his recalculated Threat Rating in the biography and state
-    that these two ratings are deliberately unavailable on a character sheet —
-    the stat-block validator must not assert them for Stone.
+- `actor-sheet.mjs:1137` computes `context.spells` for the NPC sheet;
+- `npc-sheet.hbs` never references it (Skills and Weapons are its only item
+  sections);
+- `actor-sheet.mjs:1113` — the NPC action map has no `castSpell`.
+
+So **Craft has already shipped with eight invisible spells**, and the audit
+marked him CLEAN because it only compared numbers. Pride (6 spells) would have
+shipped the same way. Three actors, one cause.
+
+**Do the system fix instead.** Two changes in `../sr2e-foundryvtt`:
+
+1. `npc-sheet.hbs` — a Spells fieldset mirroring the existing Weapons fieldset
+   (name → `data-action="castSpell"`, Force, edit), rendered only when the actor
+   has spells so no existing NPC sheet changes appearance;
+2. the NPC sheet's action map — add `castSpell: onCastSpell`.
+
+`onCastSpell` is already actor-type-agnostic (`this.document.items` →
+`promptSpellOptions` → `item.roll`), and `NPCData` already declares
+`magic{value,max,tradition,type,totem}` and `dicePools.magic`. This is a smaller
+diff than converting one actor, and it fixes every content module at once
+(Double Exposure's casters have the same latent problem).
+
+**What that buys the rebuild.** All three magicians stay `npc`, which means they
+keep `professionalRating` and `threatRating` — both NPC-only fields that a
+`character` conversion would have stripped — and none of them inherits
+`CharacterData.chargen.inProgress` defaulting to `true`. The Round-2 draft's two
+special-case workarounds for Stone are both deleted rather than generalised to
+three actors.
+
+**Magic pools are transcribed, not derived.** `NPCData.prepareDerivedData`
+derives the combat pool but deliberately leaves `dicePools.magic` alone, so the
+printed values survive exactly: **Stone Magic 7**, **Pride Magic 4**. This is
+better than deriving them — the page is authoritative.
+
+**The cost: Stone's three bound elementals lose their reciprocal link.**
+`boundSpirits` is a `CharacterData` field; `NPCData` has none. The Round-2 draft
+was explicit that linked spirit actors were justified *only* because Stone was
+becoming a character, and that "without those prerequisites, notes would be more
+honest than links that silently vanish." That reasoning still holds, so:
+generate the three elementals as **standalone `spirit` actors** (they are useful
+tokens for the fight and reuse the system's spirit portraits), record the printed
+assignment verbatim in both Stone's bio and each elemental's, and **do not
+fabricate a link the data model cannot hold**. Services stay 0/unknown with a GM
+note, exactly as before — the page gives assignments, not service counts.
+
+Unchanged from Round 2, and still true:
+
 - **Powers and Weaknesses are not npc fields.** They exist only on `SpiritData`,
   and switching the insects to `spirit` is worse: `SpiritData.prepareDerivedData`
-  **overwrites** printed attributes from Force/domain, which is exactly what the
-  audit is trying to stop. So under the current system these are **prose**, in the
-  **actor biography only** — the encounter journals are out of scope in this
-  plan, so promising them there would be a contradiction. The plan says so instead of implying the
-  sheet models them. First-class NPC powers/weaknesses is filed as follow-up
-  system work, explicitly out of scope here.
+  **overwrites** printed attributes from Force/domain, which is exactly what this
+  audit exists to stop. So they are **prose in the actor biography**. First-class
+  NPC powers/weaknesses stays filed as follow-up system work.
 - **Astral initiative +5 is a manual note.** `NPCData` has one reaction and one
-  initiative tuple and no astral mode; `initiative.mod` is extra dice, not an
-  astral-only bonus. Do not bake +5 into `reaction` (it would inflate dodge and
-  defence too).
-- **Essence: store the exact printed number.** 1, 3 and 5 all fit under
-  `max: 6`; only the `A` qualifier is unrepresentable, and that goes in the bio.
-  The previous draft's "keep the field ≤6 and put the true value in the bio"
-  wrongly implied the numbers themselves needed approximating.
+  initiative tuple and no astral mode; `initiative.mod` is extra dice. Do not
+  bake +5 into `reaction` — it would inflate dodge and defence too.
+- **Essence: store the exact printed number.** 1, 3 and 5 all fit under `max: 6`;
+  only the `A` qualifier is unrepresentable, and that goes in the bio.
 
 ### Step 6 — Existing worlds: a separate, non-destructive procedure
 
@@ -211,8 +242,14 @@ Beyond "stats match the data file":
 - **two import tests, not one.** A clean import proves the content loads; it does
   NOT exercise the riskiest path. Also re-import over a **v0.2.0 fixture world**
   containing Stone plus both a linked and an unlinked token of him, and verify
-  that updating him in place from `npc` to `character` preserves the token
-  references and replaces the old embedded items rather than merging them;
+  that the in-place update preserves the token references and **replaces** the
+  old embedded items rather than merging them. (Round 2 framed this as an
+  `npc`→`character` type change; with Step 5 revised there is no type change, but
+  the item-replacement half is the part that was actually risky and it still
+  needs proving — Stone's shipped data is Osprey's, so every item he owns is
+  wrong and must go, not merge.)
+- **Craft's spells are castable from his sheet** — the regression that motivated
+  the Step 5 change, and the one thing no stat comparison would have caught;
 - prototype token dimensions/disposition, actor type, and ownership unchanged
   where not deliberately altered.
 
@@ -220,11 +257,13 @@ Beyond "stats match the data file":
 
 1. **Pin ids explicitly; regenerate everything else.** Determinism for content,
    stability for identity — the two must not be conflated.
-2. **Stone becomes a `character`.** The only way the spells are playable.
-3. **Bound elementals: real linked `spirit` actors** — but only *because* Stone
-   becomes a character, with permanent ids, reciprocal `conjurerUuid`, and an
-   import test proving the UUIDs resolve. Without those prerequisites, notes
-   would be more honest than links that silently vanish.
+2. **Fix the NPC sheet in the system; everyone stays an `npc`.** Two small
+   changes in `sr2e-foundryvtt` beat converting three actors to `character` and
+   losing their Professional/Threat Ratings — and they fix Double Exposure too.
+3. **Bound elementals: standalone `spirit` actors, no fake link.** `NPCData` has
+   no `boundSpirits`, and Round 2 already ruled that a link the model cannot hold
+   is worse than a note. The printed assignment is recorded verbatim on both
+   sides instead.
 4. **Powers/Weaknesses stay prose for now**, stated plainly rather than promised.
 
 ## Risks / open questions
