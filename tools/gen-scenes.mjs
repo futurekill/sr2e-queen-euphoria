@@ -224,7 +224,7 @@ function background(s) {
      </pattern>`).join("");
 
   // ── floors ────────────────────────────────────────────────────────────────
-  let floors = "", decals = "", labels = "";
+  let floors = "", decals = "";
   for (const r of rooms) {
     const x = r.x * M, y = r.y * M, w = r.w * M, h = r.h * M;
     floors += r.material
@@ -245,11 +245,29 @@ function background(s) {
                    rx="${rad.toFixed(1)}" ry="${(rad * (0.55 + v * 0.7)).toFixed(1)}"
                    fill="#000" opacity="${(0.03 + t * 0.07).toFixed(3)}"/>`;
     }
-    const lf = Math.max(14, Math.min(38, Math.round(Math.min(h / 3.2, (w * 0.8) / (r.name.length * 0.55)))));
-    labels += `<text x="${x + w/2}" y="${y + h/2 + lf/3}" fill="#e8e8f2" opacity="0.5"
-                 font-family="Helvetica,Arial,sans-serif" font-size="${lf}" font-weight="bold"
-                 text-anchor="middle" style="paint-order:stroke" stroke="#000" stroke-width="${lf/6}"
-                 stroke-opacity="0.55">${esc(r.name)}</text>`;
+  }
+
+  // ── props ─────────────────────────────────────────────────────────────────
+  // Top-down sprites, positioned and sized in METRES. With room labels gone,
+  // these are what tells a player which room they are standing in — a bed means
+  // bedroom, a toilet means bathroom. Decoration only: nothing mechanical reads
+  // them and they never define geometry.
+  let props = "";
+  for (const r of rooms) {
+    for (const [kind, px, py, pw, ph] of (r.props ?? [])) {
+      // px,py is the prop's CENTRE in metres. Assert it stays inside its room:
+      // the first pass put bed centres a bed-length from the room's top edge, so
+      // both beds rendered outside the flat entirely and nothing complained.
+      const tol = 0.05;
+      if (px - pw/2 < r.x - tol || px + pw/2 > r.x + r.w + tol ||
+          py - ph/2 < r.y - tol || py + ph/2 > r.y + r.h + tol)
+        throw new Error(`${s.name}: prop "${kind}" at (${px},${py}) ${pw}x${ph} m ` +
+          `escapes room "${r.name}" (${r.x},${r.y} ${r.w}x${r.h})`);
+      const w2 = pw * M, h2 = ph * M, x2 = px * M - w2 / 2, y2 = py * M - h2 / 2;
+      props += `<image href="assets/props/${kind}.webp" x="${x2.toFixed(1)}" y="${y2.toFixed(1)}"
+                  width="${w2.toFixed(1)}" height="${h2.toFixed(1)}"
+                  preserveAspectRatio="none"/>`;
+    }
   }
 
   // ── grid ──────────────────────────────────────────────────────────────────
@@ -310,9 +328,9 @@ function background(s) {
   <g filter="url(#soft)">${decals}</g>
   <rect width="${W}" height="${H}" fill="#0b0b12" opacity="${dark ? 0.5 : 0.28}"/>
   <g stroke="#000" stroke-width="1.5" opacity="0.3">${g}</g>
+  ${props}
   ${wsvg}
   ${dsvg}
-  ${labels}
   <rect width="${W}" height="${H}" fill="url(#vig)"/>
   ${dark ? `<rect width="${W}" height="${H}" fill="#000" opacity="0.45"/>` : ""}
   <text x="${W/2}" y="${H - 18}" fill="${ink}" font-family="Helvetica,Arial,sans-serif"

@@ -58,44 +58,48 @@
       "doors": [
         {
           "seg": [
-            3,
-            2.8,
-            3,
-            3.6
-          ]
-        },
-        {
-          "seg": [
-            3.4,
-            2.6,
-            4.1,
-            2.6
-          ]
-        },
-        {
-          "seg": [
-            4.5,
-            2.8,
-            4.5,
-            3.6
-          ]
-        },
-        {
-          "seg": [
             1.8,
-            3,
-            2.6,
-            3
-          ]
+            3.2,
+            2.7,
+            3.2
+          ],
+          "$note": "bedroom to hall"
         },
         {
           "seg": [
-            6.6,
+            3.5,
+            1.6,
+            3.5,
+            2.4
+          ],
+          "$note": "closet, off the bedroom \u2014 a dead end, not a through-route"
+        },
+        {
+          "seg": [
+            4.8,
+            3.2,
+            5.6,
+            3.2
+          ],
+          "$note": "bath to hall"
+        },
+        {
+          "seg": [
+            7.0,
+            3.2,
+            7.9,
+            3.2
+          ],
+          "$note": "living to hall"
+        },
+        {
+          "seg": [
+            7.6,
             4,
-            7.5,
+            8.5,
             4
           ],
-          "$note": "the flat's front door, onto the corridor"
+          "$note": "front door, hall onto the building corridor"
         },
         {
           "seg": [
@@ -131,41 +135,127 @@
           "name": "Bedroom (2)",
           "x": 1,
           "y": 1,
-          "w": 2,
-          "h": 2,
-          "material": "carpet-cheap"
+          "w": 2.5,
+          "h": 2.2,
+          "material": "carpet-cheap",
+          "props": [
+            [
+              "bed",
+              1.62,
+              2.05,
+              0.9,
+              1.9
+            ],
+            [
+              "bed",
+              2.62,
+              2.05,
+              0.9,
+              1.9
+            ],
+            [
+              "dresser",
+              2.9,
+              2.9,
+              1.0,
+              0.45
+            ]
+          ]
         },
         {
           "name": "Closet (3)",
-          "x": 1,
-          "y": 3,
-          "w": 2,
-          "h": 1,
-          "material": "carpet-cheap"
+          "x": 3.5,
+          "y": 1,
+          "w": 1,
+          "h": 2.2,
+          "material": "carpet-cheap",
+          "props": [
+            [
+              "rail",
+              4.0,
+              1.45,
+              0.75,
+              0.3
+            ]
+          ]
         },
         {
           "name": "Bath (4)",
-          "x": 3,
+          "x": 4.5,
           "y": 1,
           "w": 1.5,
-          "h": 1.6,
-          "material": "tile-bath"
-        },
-        {
-          "name": "Hall",
-          "x": 3,
-          "y": 2.6,
-          "w": 1.5,
-          "h": 1.4,
-          "material": "lino-kitchen"
+          "h": 2.2,
+          "material": "tile-bath",
+          "props": [
+            [
+              "toilet",
+              4.85,
+              1.5,
+              0.5,
+              0.7
+            ],
+            [
+              "sink",
+              5.6,
+              1.4,
+              0.6,
+              0.45
+            ],
+            [
+              "shower",
+              5.25,
+              2.6,
+              1.15,
+              1.0
+            ]
+          ]
         },
         {
           "name": "Living / Kitchenette (1)",
-          "x": 4.5,
+          "x": 6,
           "y": 1,
-          "w": 4.5,
-          "h": 3,
-          "material": "lino-kitchen"
+          "w": 3,
+          "h": 2.2,
+          "material": "lino-kitchen",
+          "props": [
+            [
+              "counter",
+              7.5,
+              1.35,
+              2.35,
+              0.6
+            ],
+            [
+              "couch",
+              7.7,
+              2.7,
+              2.0,
+              0.85
+            ],
+            [
+              "table",
+              6.75,
+              2.35,
+              1.0,
+              0.7
+            ],
+            [
+              "chair",
+              6.75,
+              1.75,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "name": "Hall",
+          "x": 1,
+          "y": 3.2,
+          "w": 8,
+          "h": 0.8,
+          "material": "lino-kitchen",
+          "props": []
         },
         {
           "name": "Building Corridor",
@@ -173,7 +263,8 @@
           "y": 4,
           "w": 12,
           "h": 2,
-          "material": "concrete-corridor"
+          "material": "concrete-corridor",
+          "props": []
         }
       ],
       "planMetres": [
@@ -181,7 +272,8 @@
         3
       ],
       "$sizeNote": "Scene is 12 x 7 m; the FLAT ITSELF is the measured 8 x 3 m at origin (1,1). The rest is the building corridor, added because a sealed flat gives the players nowhere to approach from, listen at the door, or retreat to.",
-      "stairs": true
+      "stairs": true,
+      "$circulationNote": "Every room opens off the hall spine. An earlier version put the closet between the bedroom and the rest of the flat, so reaching the bedroom meant walking through the closet \u2014 the closet is now a dead end off the bedroom, which is what a closet is."
     },
     {
       "_id": "79290bce4cf94fb5",
