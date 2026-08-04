@@ -117,17 +117,20 @@ function punch(segs, doors) {
   return out;
 }
 
-function walls(s, W, H) {
-  const M = PX_PER_M;
+/** The solid wall runs, in METRES, with doorways already cut out. */
+function solidSegments(s) {
   const rooms = s.layout ?? [];
-  const doors = s.doors ?? [];
-
-  // Outer envelope always exists, even for a scene with no authored rooms yet.
-  let segs = rooms.length
+  const segs = rooms.length
     ? roomEdges(rooms)
     : [[0, 0, s.widthM, 0], [s.widthM, 0, s.widthM, s.heightM],
        [0, s.heightM, s.widthM, s.heightM], [0, 0, 0, s.heightM]];
-  segs = punch(segs, doors);
+  return punch(segs, s.doors ?? []);
+}
+
+function walls(s, W, H) {
+  const M = PX_PER_M;
+  const doors = s.doors ?? [];
+  const segs = solidSegments(s);
 
   const out = segs.map(([x1, y1, x2, y2]) =>
     wall(x1 * M, y1 * M, x2 * M, y2 * M, {
@@ -196,76 +199,136 @@ function build(s) {
 // It is also original artwork rather than a reproduction of the printed plan,
 // which the module's copyright stance requires.
 function background(s) {
-  const W = s.widthM * PX_PER_M, H = s.heightM * PX_PER_M;
+  const M = PX_PER_M;
+  const W = s.widthM * M, H = s.heightM * M;
   const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const dark = !!s.dark;
-  const floor  = dark ? "#14110f" : "#1b1b24";
-  const panel  = dark ? "#1c1815" : "#232331";
-  const line   = dark ? "#2b241d" : "#33334a";
-  const ink    = dark ? "#8d7355" : "#9aa0c0";
+  const rooms = s.layout ?? [];
+  const voidFill = dark ? "#0a0908" : "#101018";
+  const ink = dark ? "#8d7355" : "#9aa0c0";
   const accent = dark ? "#c2843c" : "#7fb0d8";
 
-  let g = "";
-  for (let x = PX_PER_M; x < W; x += PX_PER_M)
-    g += `<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="${line}" stroke-width="1"/>`;
-  for (let y = PX_PER_M; y < H; y += PX_PER_M)
-    g += `<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="${line}" stroke-width="1"/>`;
-  // every 5 m, a heavier rule so distance is countable at a glance
-  for (let x = 5 * PX_PER_M; x < W; x += 5 * PX_PER_M)
-    g += `<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="${line}" stroke-width="3"/>`;
-  for (let y = 5 * PX_PER_M; y < H; y += 5 * PX_PER_M)
-    g += `<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="${line}" stroke-width="3"/>`;
+  // Deterministic per-position jitter, so decals never land in the same place
+  // twice but never move between runs either.
+  const hash = (a, b) => { let h = (a * 73856093) ^ (b * 19349663); h = (h ^ (h >>> 13)) >>> 0; return h / 4294967296; };
 
-  // Rooms, drawn from the same rectangles the walls come from.
-  let rms = "";
-  for (const r of s.layout ?? []) {
-    const x = r.x * PX_PER_M, y = r.y * PX_PER_M, w = r.w * PX_PER_M, h = r.h * PX_PER_M;
-    // Fit the label to the room, not just to its short side: a 2 m bedroom and a
-    // 4.5 m living room otherwise get the same size text and the long name spills
-    // across the wall into its neighbour. 0.55em is a good average glyph width.
-    const lf = Math.max(14, Math.min(40,
-      Math.round(Math.min(h / 3, (w * 0.86) / (r.name.length * 0.55)))));
-    rms += `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${panel}" opacity="0.55"/>`
-         + `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="none" stroke="${ink}" stroke-width="5" opacity="0.8"/>`
-         + `<text x="${x + w/2}" y="${y + h/2 + lf/3}" fill="${ink}" opacity="0.9"
+  // ── material tiles ────────────────────────────────────────────────────────
+  // One <pattern> per material actually used. 400px = 4m, the scale the tiles
+  // were generated for.
+  const TILE = 400;
+  const mats = [...new Set(rooms.map(r => r.material).filter(Boolean))];
+  const defs = mats.map(m =>
+    `<pattern id="m-${m}" patternUnits="userSpaceOnUse" width="${TILE}" height="${TILE}">
+       <image href="assets/textures/${m}.webp" x="0" y="0" width="${TILE}" height="${TILE}"
+              preserveAspectRatio="none"/>
+     </pattern>`).join("");
+
+  // ── floors ────────────────────────────────────────────────────────────────
+  let floors = "", decals = "", labels = "";
+  for (const r of rooms) {
+    const x = r.x * M, y = r.y * M, w = r.w * M, h = r.h * M;
+    floors += r.material
+      ? `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="url(#m-${r.material})"/>`
+      : `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#1d1d27"/>`;
+    // Boundary-safe wear: soft blobs at a frequency unrelated to the tile pitch,
+    // which is what breaks up the repeat without needing edge-matched variants.
+    // Small and many, not few and huge. The first pass used a 0.5-1.9 m radius,
+    // which drew stains up to 4 m across — they read as craters, not wear, and
+    // they fought the texture instead of breaking up its repeat.
+    const n = Math.max(6, Math.round(r.w * r.h * 1.6));
+    for (let k = 0; k < n; k++) {
+      const u = hash(Math.round(x + k * 31), Math.round(y + k * 57));
+      const v = hash(Math.round(y + k * 13), Math.round(x + k * 91));
+      const t = hash(k * 7919, Math.round(x + y));
+      const rad = (0.06 + u * 0.28) * M;
+      decals += `<ellipse cx="${(x + u * w).toFixed(1)}" cy="${(y + v * h).toFixed(1)}"
+                   rx="${rad.toFixed(1)}" ry="${(rad * (0.55 + v * 0.7)).toFixed(1)}"
+                   fill="#000" opacity="${(0.03 + t * 0.07).toFixed(3)}"/>`;
+    }
+    const lf = Math.max(14, Math.min(38, Math.round(Math.min(h / 3.2, (w * 0.8) / (r.name.length * 0.55)))));
+    labels += `<text x="${x + w/2}" y="${y + h/2 + lf/3}" fill="#e8e8f2" opacity="0.5"
                  font-family="Helvetica,Arial,sans-serif" font-size="${lf}" font-weight="bold"
-                 text-anchor="middle">${esc(r.name)}</text>`;
-  }
-  // Doorways as breaks in the wall ink, so the map reads the way it plays.
-  for (const d of s.doors ?? []) {
-    const [x1, y1, x2, y2] = d.seg.map(v => v * PX_PER_M);
-    rms += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${floor}" stroke-width="9"/>`
-         + `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${accent}" stroke-width="3" opacity="0.75"/>`;
+                 text-anchor="middle" style="paint-order:stroke" stroke="#000" stroke-width="${lf/6}"
+                 stroke-opacity="0.55">${esc(r.name)}</text>`;
   }
 
-  const fs = Math.max(28, Math.min(64, Math.round(Math.min(W, H) / 9)));
-  const sub = Math.round(fs * 0.42);
+  // ── grid ──────────────────────────────────────────────────────────────────
+  let g = "";
+  for (let x = M; x < W; x += M) g += `<line x1="${x}" y1="0" x2="${x}" y2="${H}"/>`;
+  for (let y = M; y < H; y += M) g += `<line x1="0" y1="${y}" x2="${W}" y2="${y}"/>`;
+
+  // ── walls, from the SOLID segments only ───────────────────────────────────
+  // walls() also returns door Wall documents; stroking those would paint a solid
+  // wall straight through every doorway.
+  const TH = 16;
+  let wsvg = "";
+  for (const [x1, y1, x2, y2] of solidSegments(s)) {
+    const a = [x1 * M, y1 * M, x2 * M, y2 * M];
+    wsvg += `<line x1="${a[0]}" y1="${a[1]}" x2="${a[2]}" y2="${a[3]}"
+               stroke="#0c0c11" stroke-width="${TH}" stroke-linecap="square"/>`
+          + `<line x1="${a[0]}" y1="${a[1]}" x2="${a[2]}" y2="${a[3]}"
+               stroke="#4a4a5e" stroke-width="${TH * 0.35}" stroke-linecap="square" opacity="0.85"/>`;
+  }
+
+  // ── doors: state-neutral ──────────────────────────────────────────────────
+  // Jambs and a threshold only. The background is static and Foundry creates
+  // doors closed, so drawing an open leaf would permanently contradict the
+  // actual door state and its line of sight.
+  let dsvg = "";
+  for (const d of s.doors ?? []) {
+    const [x1, y1, x2, y2] = d.seg.map(v => v * M);
+    const vert = Math.abs(x1 - x2) < 1;
+    const jamb = TH * 1.1;
+    dsvg += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#171720" stroke-width="${TH}"/>`;
+    dsvg += vert
+      ? `<line x1="${x1}" y1="${y1}" x2="${x1}" y2="${y1 + jamb*0.5}" stroke="#0c0c11" stroke-width="${TH}"/>
+         <line x1="${x1}" y1="${y2}" x2="${x1}" y2="${y2 - jamb*0.5}" stroke="#0c0c11" stroke-width="${TH}"/>`
+      : `<line x1="${x1}" y1="${y1}" x2="${x1 + jamb*0.5}" y2="${y1}" stroke="#0c0c11" stroke-width="${TH}"/>
+         <line x1="${x2}" y1="${y1}" x2="${x2 - jamb*0.5}" y2="${y1}" stroke="#0c0c11" stroke-width="${TH}"/>`;
+    dsvg += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${accent}"
+               stroke-width="3" opacity="0.5" stroke-dasharray="10 8"/>`;
+  }
+
   const tag = s.source === "printed"
-    ? `p.${s.folio} · ${s.widthM} × ${s.heightM} m · measured`
-    : `${s.widthM} × ${s.heightM} m · GM-invented layout, no printed floorplan`;
+    ? `p.${s.folio} · ${s.widthM} × ${s.heightM} m`
+    : `${s.widthM} × ${s.heightM} m · GM-invented layout`;
 
   const svg =
-`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
-  <rect width="${W}" height="${H}" fill="${floor}"/>
-  ${g}
-  ${rms}
-  <rect x="12" y="12" width="${W-24}" height="${H-24}" fill="none" stroke="${panel}" stroke-width="8"/>
-  ${(s.layout ?? []).length ? "" : `
-  <text x="${W/2}" y="${H/2 - sub}" fill="${ink}" font-family="Helvetica,Arial,sans-serif"
-        font-size="${fs}" font-weight="bold" text-anchor="middle">${esc(s.name)}</text>
-  <text x="${W/2}" y="${H/2 + sub}" fill="${accent}" font-family="Helvetica,Arial,sans-serif"
-        font-size="${sub}" text-anchor="middle">${esc(tag)}</text>`}
-  <text x="${W/2}" y="${H - 26}" fill="${ink}" font-family="Helvetica,Arial,sans-serif"
-        font-size="${Math.round(sub*0.8)}" text-anchor="middle" opacity="0.55">${esc(tag)} · 1 square = 1 metre</text>
+`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <defs>${defs}
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <radialGradient id="vig" cx="50%" cy="50%" r="72%">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="${dark ? 0.85 : 0.5}"/>
+    </radialGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="${voidFill}"/>
+  ${floors}
+  <g filter="url(#soft)">${decals}</g>
+  <rect width="${W}" height="${H}" fill="#0b0b12" opacity="${dark ? 0.5 : 0.28}"/>
+  <g stroke="#000" stroke-width="1.5" opacity="0.3">${g}</g>
+  ${wsvg}
+  ${dsvg}
+  ${labels}
+  <rect width="${W}" height="${H}" fill="url(#vig)"/>
+  ${dark ? `<rect width="${W}" height="${H}" fill="#000" opacity="0.45"/>` : ""}
+  <text x="${W/2}" y="${H - 18}" fill="${ink}" font-family="Helvetica,Arial,sans-serif"
+        font-size="20" text-anchor="middle" opacity="0.5">${esc(tag)} · 1 square = 1 metre</text>
 </svg>`;
 
-  // rsvg-convert (librsvg), not ImageMagick's built-in SVG reader: the latter has
-  // no fontconfig and dies with "unable to read font `'" on any <text> element.
-  const out = `assets/scenes/${s.art}`;
-  const png = execFileSync("rsvg-convert", ["-f", "png", "-w", String(W), "-h", String(H)],
-    { input: svg, maxBuffer: 1 << 28 });
-  execFileSync("magick", ["png:-", "-quality", "88", out], { input: png, maxBuffer: 1 << 28 });
-  return out;
+  // rsvg-convert must read from a FILE inside the repo, not stdin: piped SVG has
+  // no base URI, so relative <image href> silently renders empty under librsvg.
+  const tmp = `.scene-${process.pid}.svg`;
+  writeFileSync(tmp, svg);
+  try {
+    const png = execFileSync("rsvg-convert",
+      ["-f", "png", "-w", String(W), "-h", String(H), tmp], { maxBuffer: 1 << 29 });
+    execFileSync("magick", ["png:-", "-quality", "86", `assets/scenes/${s.art}`],
+      { input: png, maxBuffer: 1 << 29 });
+  } finally { rmSync(tmp, { force: true }); }
 }
 
 for (const s of manifest.scenes) background(s);

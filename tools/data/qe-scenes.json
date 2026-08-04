@@ -132,42 +132,48 @@
           "x": 1,
           "y": 1,
           "w": 2,
-          "h": 2
+          "h": 2,
+          "material": "carpet-cheap"
         },
         {
           "name": "Closet (3)",
           "x": 1,
           "y": 3,
           "w": 2,
-          "h": 1
+          "h": 1,
+          "material": "carpet-cheap"
         },
         {
           "name": "Bath (4)",
           "x": 3,
           "y": 1,
           "w": 1.5,
-          "h": 1.6
+          "h": 1.6,
+          "material": "tile-bath"
         },
         {
           "name": "Hall",
           "x": 3,
           "y": 2.6,
           "w": 1.5,
-          "h": 1.4
+          "h": 1.4,
+          "material": "lino-kitchen"
         },
         {
           "name": "Living / Kitchenette (1)",
           "x": 4.5,
           "y": 1,
           "w": 4.5,
-          "h": 3
+          "h": 3,
+          "material": "lino-kitchen"
         },
         {
           "name": "Building Corridor",
           "x": 0,
           "y": 4,
           "w": 12,
-          "h": 2
+          "h": 2,
+          "material": "concrete-corridor"
         }
       ],
       "planMetres": [
