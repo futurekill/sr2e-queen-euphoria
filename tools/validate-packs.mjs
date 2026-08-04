@@ -57,3 +57,22 @@ for (const pack of packs.sort()) {
 
 if (problems) { console.error(`\n${problems} problem(s) found.`); process.exit(1); }
 console.log("\nAll packs valid.");
+
+// A spell focus that points at a spell id which is not on the same actor grants
+// nothing at all and warns forever on the sheet. This shipped correct only by an
+// accident of id truncation once; assert it instead of trusting it.
+{
+  const { readdirSync, readFileSync } = await import("node:fs");
+  const dir = "packs-src/qe-actors";
+  for (const f of readdirSync(dir).filter(f => f.endsWith(".json"))) {
+    const d = JSON.parse(readFileSync(`${dir}/${f}`, "utf8"));
+    const spellIds = new Set((d.items ?? []).filter(i => i.type === "spell").map(i => i._id));
+    for (const it of (d.items ?? []).filter(i => i.type === "focus")) {
+      const bound = it.system?.boundSpellId;
+      if (bound && !spellIds.has(bound)) {
+        throw new Error(`${d.name}: focus "${it.name}" is bound to ${bound}, which is not a spell on this actor`);
+      }
+    }
+  }
+  console.log("  focus bindings resolve to real spells on the same actor ✓");
+}

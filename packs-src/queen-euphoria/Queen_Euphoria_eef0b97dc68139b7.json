@@ -967,10 +967,13 @@
             "focusType": "spell",
             "force": 2,
             "bonded": true,
-            "active": false,
+            "active": true,
             "expendable": false,
             "bondedWeaponId": "",
-            "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Ships INACTIVE on purpose: the system sums every ACTIVE bonded spell focus into EVERY spell (FocusData does not bind a focus to a category), so leaving it on would hand Craft +2 dice on Mana Bolt too, which the page does not grant. Activate it on the item sheet when he casts Sleep, then deactivate."
+            "spellSubtype": "specific",
+            "boundSpellId": "b5363a847370656c",
+            "spent": 0,
+            "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Bound to Sleep and left ACTIVE. It previously shipped inactive as a workaround: the system treated a focus as a permanent bonus on every spell, so an active focus handed Craft +2 on Mana Bolt too. sr2e 0.89.0 fixed that — a focus now serves only its bound spell, from a pool of 2 dice per action shared between the casting test and the Drain test, so leaving it on is both correct and what the page describes."
           }
         },
         {

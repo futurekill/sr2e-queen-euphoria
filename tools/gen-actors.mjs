@@ -180,11 +180,24 @@ const simpleItem = (aid, kind, g, img) => ({
     legality: "Legal", equipped: true, essence: g.essence ?? 0, notes: g.notes ?? "" }
 });
 
-function focusItem(aid, f) {
+function focusItem(aid, f, spellIds = new Map()) {
   return {
     ...base(itemId(aid, "focus", f.name), f.name, "focus", "icons/svg/aura.svg"),
     system: { focusType: f.focusType, force: f.force, bonded: !!f.bonded,
-      active: !!f.active, expendable: false, bondedWeaponId: "", notes: f.notes ?? "" }
+      active: !!f.active, expendable: false, bondedWeaponId: "",
+      // sr2e 0.89.0: a spell focus serves ONE bound spell from a per-action pool
+      // (SR2E p.137). boundSpellId is resolved from the spell NAME at generation,
+      // because item ids are assigned here and the manifest cannot know them.
+      spellSubtype: f.spellSubtype ?? "specific",
+      // Resolved from the ACTUAL generated spell items, never recomputed. Calling
+      // itemId() again would only coincidentally agree: it folds a global sequence
+      // counter into the hash, and that counter differs between the two calls —
+      // the ids matched purely because slice(0,16) happened to truncate the
+      // sequence away for these particular names. A shorter kind/name would have
+      // produced a silently unbound focus.
+      boundSpellId: f.boundSpell ? (spellIds.get(f.boundSpell) ?? "") : "",
+      spent: 0,
+      notes: f.notes ?? "" }
   };
 }
 
@@ -212,10 +225,14 @@ function buildNpc(e) {
   const reactionVal  = reactionBase + reactionMod;
   const img = art(e.art);
 
+  // Spells first, so a focus can bind to the id that was actually emitted.
+  const spellItems = (e.spells ?? []).map(s => spellItem(id, s));
+  const spellIds = new Map(spellItems.map(s => [s.name, s._id]));
+
   const items = [
     ...(e.skills ?? []).map(s => skillItem(id, s)),
-    ...(e.spells ?? []).map(s => spellItem(id, s)),
-    ...(e.foci ?? []).map(f => focusItem(id, f)),
+    ...spellItems,
+    ...(e.foci ?? []).map(f => focusItem(id, f, spellIds)),
     ...(e.weapons ?? []).map(k => weaponItem(id, k)),
     ...(e.armorKey ? [armorItem(id, e.armorKey)] : []),
     ...(e.cyberware ?? []).map(g => simpleItem(id, "cyberware", g, "icons/svg/biohazard.svg")),

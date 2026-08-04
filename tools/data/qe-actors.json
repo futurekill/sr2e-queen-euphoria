@@ -356,8 +356,10 @@
           "focusType": "spell",
           "force": 2,
           "bonded": true,
-          "active": false,
-          "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Ships INACTIVE on purpose: the system sums every ACTIVE bonded spell focus into EVERY spell (FocusData does not bind a focus to a category), so leaving it on would hand Craft +2 dice on Mana Bolt too, which the page does not grant. Activate it on the item sheet when he casts Sleep, then deactivate."
+          "active": true,
+          "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Bound to Sleep and left ACTIVE. It previously shipped inactive as a workaround: the system treated a focus as a permanent bonus on every spell, so an active focus handed Craft +2 on Mana Bolt too. sr2e 0.89.0 fixed that \u2014 a focus now serves only its bound spell, from a pool of 2 dice per action shared between the casting test and the Drain test, so leaving it on is both correct and what the page describes.",
+          "boundSpell": "Sleep",
+          "spellSubtype": "specific"
         }
       ],
       "bio": "<p>Ant-totem shaman and the adventure's villain. A former Coyote shaman turned talismonger who runs the <strong>Magic Crafts</strong> shop; he took a run from his Fixer, Solomon Daniels, and came back changed. Under the Ant totem he is crazed with power, and his psychotic fixation on the simstar Euphoria drives the plot \u2014 he means to make her his <em>Queen</em>.</p><p><strong>Totem:</strong> Ant. The book grants it no mechanical benefit; the bond is roleplay.</p><p><strong>Sleep Spell Focus (Force 2)</strong> \u2014 a real item on this sheet, shipped inactive. Turn it on for Sleep and off again afterwards, or it adds its dice to every other spell he casts.</p><p><em>Cast of Characters, Queen Euphoria p.62. Attributes, skills and gear verified from a 300 dpi render; the spell list re-checked 2026-08-03 and confirmed at eight spells.</em></p>"
