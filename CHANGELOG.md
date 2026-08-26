@@ -2,6 +2,11 @@
 
 ## Unreleased — Visual handouts
 
+**The Act 1 meet is now fully cast** — Juan Diablo, Mr. Johnson and Johnson's
+bodyguard. All three are cropped out of the *Off and Running* handout: Diablo
+on the Harley, Johnson facing camera by the Toyota Elite, and the chauffeur
+holding its door, which is exactly his job in the book.
+
 **Juan Diablo** joins the cast. The adventure names him at the first meet
 (p.10) but prints no block — it says to use the Street Samurai archetype with
 Gunnery 4. That is a 1st-edition pointer, so the stats here are the **SR2E**

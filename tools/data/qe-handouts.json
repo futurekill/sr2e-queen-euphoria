@@ -157,6 +157,20 @@
       "out": "juan-diablo.webp",
       "name": "Juan Diablo",
       "note": "The razorguy leaning on his Harley in the Off and Running art — red cybereyes, forearm plating, and the bike gun that earns him Gunnery 4. Upscaled from a 465px crop of a 1672x941 source, so it is soft at full size; fine at token scale."
+    },
+    {
+      "src": "Off And Running.png",
+      "crop": "215x215+1190+292",
+      "out": "mr-johnson-ludivenko.webp",
+      "name": "Mr. Johnson (Ludivenko)",
+      "note": "The suit facing camera by the open door of the Toyota Elite."
+    },
+    {
+      "src": "Off And Running.png",
+      "crop": "200x200+1048+300",
+      "out": "johnsons-bodyguard.webp",
+      "name": "Johnson's Bodyguard (Company Man)",
+      "note": "The suit holding the car door open — he is the chauffeur, which is exactly his job in the book."
     }
   ]
 }

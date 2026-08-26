@@ -22,7 +22,7 @@
     "default": 0
   },
   "system": {
-    "biography": "<p><strong>A gang punk turned samurai on Ludivenko's money.</strong> Diablo is the razorguy at the first meet (<em>Off and Running</em>, p.8&ndash;10), riding escort for the Johnson's Toyota Elite. He backs up the Company Man if trouble breaks out, and otherwise stays quiet.</p><p><strong>He is the runners' contact line.</strong> Diablo hands over his wristphone number so the team can reach their employers &mdash; which makes him the obvious thread to pull if they later want to work out who really hired them.</p><p><strong>Loadout per the adventure:</strong> Uzi III with shock pads and a Smartgun Adapter, an armored vest with plates, and the weaponry mounted on his Harley. The SR2E archetype also carries an Ares Predator, a Data Display, a DocWagon platinum contract and 17,270&yen; of starting cash; use those only if you need them, since QE names a narrower kit.</p>",
+    "biography": "<p><strong>A gang punk turned samurai on Ludivenko's money.</strong> Diablo is the razorguy at the first meet (<em>Off and Running</em>, p.8&ndash;10), riding escort for the Johnson's Toyota Elite. He backs up the Company Man if trouble breaks out, and otherwise stays quiet. If the runners turn violent, he and the chauffeur lay down cover while Mr. Johnson gets clear.</p><p><strong>He is the runners' contact line.</strong> Diablo hands over his wristphone number so the team can reach their employers &mdash; which makes him the obvious thread to pull if they later want to work out who really hired them.</p><p><strong>On his sheet:</strong> the <strong>Uzi III</strong> the adventure gives him, fitted with shock pads and a Smartgun Adapter to pair with his Smartlink; an <strong>armored vest with plates</strong> (4/3); his <strong>retractable razors</strong> at 7L; and the gun on the <strong>Harley</strong> &mdash; which is the whole reason the adventure bothers to give him Gunnery 4. The Harley's weapon is listed as an Ingram Valiant because the book never says what it is; swap it freely. The <strong>Ares Predator</strong> and <strong>stun baton</strong> come with the Street Samurai archetype QE points at.</p>",
     "race": "human",
     "professionalRating": 3,
     "body": {
@@ -454,6 +454,65 @@
     },
     {
       "_id": "329cdf6777656170",
+      "name": "Ares Predator",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "weaponType": "firearm",
+        "skill": "firearms",
+        "damageCode": "9M",
+        "damageType": "physical",
+        "concealability": 5,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": true,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 15,
+          "max": 15,
+          "type": "pistol"
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 5,
+          "medium": 20,
+          "long": 40,
+          "extreme": 60
+        },
+        "strengthMin": 0,
+        "weight": 2.25,
+        "cost": 450,
+        "availability": "3/24 hrs",
+        "legality": "Legal",
+        "equipped": true,
+        "accessories": [],
+        "notes": "SR2E p.231. Considered by many the premier heavy pistol. Menacing and popular among mercenaries and security services.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry — SR2 has no separate 'II'.</em></p>",
+        "streetIndex": 0.5
+      }
+    },
+    {
+      "_id": "329cdf6777656170",
       "name": "Stun Baton",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
@@ -508,6 +567,65 @@
         "equipped": true,
         "accessories": [],
         "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>"
+      }
+    },
+    {
+      "_id": "329cdf6777656170",
+      "name": "Ingram Valiant",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/light-machine-gun-generic.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "weaponType": "firearm",
+        "skill": "firearms",
+        "damageCode": "7S",
+        "damageType": "physical",
+        "concealability": 99,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": true,
+          "fa": true
+        },
+        "ammo": {
+          "current": 50,
+          "max": 50,
+          "type": "belt"
+        },
+        "recoilComp": 1,
+        "ranges": {
+          "short": 20,
+          "medium": 40,
+          "long": 80,
+          "extreme": 150
+        },
+        "strengthMin": 0,
+        "weight": 9,
+        "cost": 1500,
+        "availability": "6/5 days",
+        "legality": "Restricted",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Light machine gun, belt-fed 50 (c). Popular with merc units worldwide; the most common LMG model. Has a hip-brace recoil pad (Rating 1) and an ammunition bin slung over the shoulder. The only entry the book's Light Machine Guns section lists — there is no generic LMG. Light Machine Guns is a FIREARMS concentration (p.70); Gunnery governs heavy weapons \"on tripods, vehicle mounts, pintles, or in fixed emplacements\", so a VEHICLE-MOUNTED Valiant is fired with Gunnery even though the weapon itself is a firearm. SR2E p.238, p.255.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5S3</code>. The PRC-42D's nose gun (p.16). NOTE: methods disagree here — A gives 7S, B gives 8S. A wins on p.283's preference ordering. Re-check if the mislabelled Light_Machine_Gun_Generic file in the system pack resolves to a different weapon.</em></p>",
+        "streetIndex": 2
       }
     },
     {

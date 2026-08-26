@@ -69,6 +69,13 @@
         4,
         2
       ]
+    },
+    "linedCoat": {
+      "name": "Lined Coat",
+      "av": [
+        4,
+        2
+      ]
     }
   },
   "$armorComment": "Craft's Real Leather Clothing prints 0/2 (p.62) and Pride's prints 2/1 (p.26). Not a transcription error — kept as two entries so neither is quietly normalised to the other. Euphoria's Long Coat (4/2) is printed at p.63 and verified on the render — she wears it in public only; at home she has none.",
@@ -1572,7 +1579,9 @@
       "armorKey": "armorVestPlates",
       "weapons": [
         "uzi3",
-        "stunBaton"
+        "aresPredator",
+        "stunBaton",
+        "lmg"
       ],
       "skills": [
         {
@@ -1663,10 +1672,154 @@
           "notes": "He gives the runners this number at the meet so they can reach their employers (QE p.10)."
         }
       ],
-      "bio": "<p><strong>A gang punk turned samurai on Ludivenko's money.</strong> Diablo is the razorguy at the first meet (<em>Off and Running</em>, p.8&ndash;10), riding escort for the Johnson's Toyota Elite. He backs up the Company Man if trouble breaks out, and otherwise stays quiet.</p><p><strong>He is the runners' contact line.</strong> Diablo hands over his wristphone number so the team can reach their employers &mdash; which makes him the obvious thread to pull if they later want to work out who really hired them.</p><p><strong>Loadout per the adventure:</strong> Uzi III with shock pads and a Smartgun Adapter, an armored vest with plates, and the weaponry mounted on his Harley. The SR2E archetype also carries an Ares Predator, a Data Display, a DocWagon platinum contract and 17,270&yen; of starting cash; use those only if you need them, since QE names a narrower kit.</p>",
+      "bio": "<p><strong>A gang punk turned samurai on Ludivenko's money.</strong> Diablo is the razorguy at the first meet (<em>Off and Running</em>, p.8&ndash;10), riding escort for the Johnson's Toyota Elite. He backs up the Company Man if trouble breaks out, and otherwise stays quiet. If the runners turn violent, he and the chauffeur lay down cover while Mr. Johnson gets clear.</p><p><strong>He is the runners' contact line.</strong> Diablo hands over his wristphone number so the team can reach their employers &mdash; which makes him the obvious thread to pull if they later want to work out who really hired them.</p><p><strong>On his sheet:</strong> the <strong>Uzi III</strong> the adventure gives him, fitted with shock pads and a Smartgun Adapter to pair with his Smartlink; an <strong>armored vest with plates</strong> (4/3); his <strong>retractable razors</strong> at 7L; and the gun on the <strong>Harley</strong> &mdash; which is the whole reason the adventure bothers to give him Gunnery 4. The Harley's weapon is listed as an Ingram Valiant because the book never says what it is; swap it freely. The <strong>Ares Predator</strong> and <strong>stun baton</strong> come with the Street Samurai archetype QE points at.</p>",
       "art": "juan-diablo.webp",
       "$artNote": "Cropped from the Off and Running scene art — he is the razorguy on the Harley in it, so the portrait and the scene the players are shown are literally the same picture. Regenerate with `npm run handouts`.",
-      "$poolNote": "Combat Pool is derived by the system as (Q+I+W)/2 = (5+5+5)/2 = 7, which matches the archetype's printed Combat: 7. Nothing to store."
+      "$poolNote": "Combat Pool is derived by the system as (Q+I+W)/2 = (5+5+5)/2 = 7, which matches the archetype's printed Combat: 7. Nothing to store.",
+      "$weaponNote": "QE p.10 names only the Uzi III (shock pads + Smartgun Adapter) and 'the weaponry on his Harley'. The Ares Predator and Stun Baton come from the SR2E Street Samurai archetype the adventure tells you to use. The Harley gun is MODELED, not printed: the book never says what it is, so an Ingram Valiant stands in — swap it for anything you like, it exists so the Gunnery 4 has something to point at and so the sheet matches the bio."
+    },
+    {
+      "_id": "91a6231e96cffe93",
+      "name": "Mr. Johnson (Ludivenko)",
+      "type": "npc",
+      "source": "archetype",
+      "page": 10,
+      "$pageNote": "QE p.10: \"Mr. Johnson, whose real name is unimportant, is an executive in Ludivenko's Seattle operations. (Use the Mr. Johnson Contact, p.170, SR rules.)\" That is 1st edition; these are the SR2E Mr. Johnson contact stats (core p.210, read from a 300dpi render). The adventure separately states he has Negotiation Skill 6 — which is exactly what the SR2E contact already prints, confirming this is the right conversion target.",
+      "art": "mr-johnson-ludivenko.webp",
+      "pro": 3,
+      "$proNote": "The contact prints Professional Rating 2-3; he is an executive, so 3.",
+      "essence": 3.8,
+      "$essenceNote": "Reconciles exactly: Datajack .2 + 200Mp headware memory 2.0 = 2.2, leaving 3.8.",
+      "disposition": 0,
+      "attrs": {
+        "body": 2,
+        "qui": 2,
+        "str": 2,
+        "cha": 4,
+        "int": 6,
+        "wil": 5
+      },
+      "reaction": 4,
+      "initDice": 1,
+      "skills": [
+        {
+          "name": "Computer Theory",
+          "rating": 5,
+          "attr": "intelligence"
+        },
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 8,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Negotiation",
+          "rating": 6,
+          "attr": "charisma"
+        },
+        {
+          "name": "Psychology",
+          "rating": 8,
+          "attr": "intelligence"
+        },
+        {
+          "name": "History",
+          "rating": 4,
+          "attr": "intelligence"
+        }
+      ],
+      "cyberware": [
+        {
+          "name": "Datajack",
+          "essence": 0.2
+        },
+        {
+          "name": "Headware Memory",
+          "essence": 2.0,
+          "notes": "200 Mp."
+        }
+      ],
+      "bio": "<p><strong>An executive in Ludivenko's Seattle operations</strong> — though he will not admit that, and the runners are not meant to find out at the meet. His real name does not matter.</p><p><strong>The offer:</strong> 20,000&yen; each to make Euphoria disappear before her first Amber Gel appearance. Negotiable — run an <strong>Opposed Negotiation Test</strong> against his <strong>Negotiation 6</strong>, and every net success moves the fee by 1,000&yen; in the winner's favour. The <em>payment plan</em> is not negotiable: half after the abduction, half after Euphoria misses her last scheduled appearance.</p><p><strong>The terms:</strong> take her from her penthouse the following night and hold her three days while the appearances come and go. He wants her kept at the rented Royal Meadows flat so he can watch both the star and the runners — <em>\"you, uhm, chummers can hold the lady anywhere you like, but your payments will be delivered to the rented flat.\"</em> He will repeat that <strong>she must not be harmed</strong>: injured or dead, she is no use for Ludivenko's own ads.</p><p><strong>Playing him:</strong> condescending, especially about questions he thinks are obvious. He answers anything reasonable. If the runners turn violent he runs for the car while the chauffeur and Juan Diablo cover him — and the deal collapses.</p>"
+    },
+    {
+      "_id": "c58d81dfd11f60ab",
+      "name": "Johnson's Bodyguard (Company Man)",
+      "type": "npc",
+      "source": "archetype",
+      "page": 10,
+      "$pageNote": "QE p.10: \"The Toyota Elite's driver is Johnson's bodyguard. (Use the Company Man Contact, page 164, SR rules.)\" 1st-edition pointer; these are the SR2E Company Man contact stats (core p.204, from a 300dpi render). The printed Vehicle skill is \"Vehicle (Gamemaster's discretion for type): 5\" — he drives the Elite, so it is recorded as Car 5.",
+      "art": "johnsons-bodyguard.webp",
+      "pro": 3,
+      "essence": 3,
+      "$essenceNote": "Printed Essence 3, and like the Street Samurai archetype it does not quite reconcile: Wired Reflexes 1 (2.0) plus Skillwires 5 (0.5) is 2.5, which would leave 3.5. Recorded as printed.",
+      "disposition": 0,
+      "attrs": {
+        "body": 6,
+        "qui": 5,
+        "str": 6,
+        "cha": 2,
+        "int": 4,
+        "wil": 5
+      },
+      "reaction": 6,
+      "initDice": 2,
+      "$reactionNote": "Printed Reaction 4 (6); the (6) is Wired Reflexes 1, which also gives the second initiative die.",
+      "armorKey": "linedCoat",
+      "weapons": [
+        "browningMaxPower"
+      ],
+      "skills": [
+        {
+          "name": "Car",
+          "rating": 5,
+          "attr": "reaction"
+        },
+        {
+          "name": "Etiquette (Corporate)",
+          "rating": 3,
+          "conc": "Corporate"
+        },
+        {
+          "name": "Firearms",
+          "rating": 7
+        },
+        {
+          "name": "Stealth",
+          "rating": 5
+        },
+        {
+          "name": "Unarmed Combat",
+          "rating": 6
+        }
+      ],
+      "cyberware": [
+        {
+          "name": "Wired Reflexes",
+          "rating": 1,
+          "essence": 2.0,
+          "notes": "+2 Reaction, +1d6 Initiative — the (6) in the printed Reaction 4 (6)."
+        },
+        {
+          "name": "Skillwires",
+          "rating": 5,
+          "essence": 0.5
+        }
+      ],
+      "gear": [
+        {
+          "name": "Silencer",
+          "notes": "Fitted to the Browning Max-Power (QE p.10)."
+        },
+        {
+          "name": "Explosive Ammo",
+          "notes": "Loaded in the Browning (QE p.10). +1 Power, Damage Level unchanged."
+        },
+        {
+          "name": "Toyota Elite",
+          "notes": "He drives it. Mr. Johnson rides in the back."
+        }
+      ],
+      "bio": "<p><strong>Chauffeur and bodyguard both.</strong> He drives the Toyota Elite that brings Mr. Johnson to Pier 36, and he opens the door. Corporate to the bone: he does the job, no questions asked.</p><p><strong>He will not start anything.</strong> The adventure is explicit — he attacks only if the player characters become violent first. If they do, he and Juan Diablo lay down cover while Johnson gets to the car.</p><p><strong>Loadout per QE:</strong> a lined coat (4/2) and a <strong>Browning Max-Power with a silencer and explosive ammo</strong>. With Firearms 7 and Wired Reflexes on a Reaction 6, he is a considerably harder proposition than he looks standing by the car.</p>"
     }
   ],
   "spellTranslations": {

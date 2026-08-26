@@ -2661,6 +2661,620 @@
       }
     },
     {
+      "_id": "c58d81dfd11f60ab",
+      "name": "Johnson's Bodyguard (Company Man)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/johnsons-bodyguard.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "biography": "<p><strong>Chauffeur and bodyguard both.</strong> He drives the Toyota Elite that brings Mr. Johnson to Pier 36, and he opens the door. Corporate to the bone: he does the job, no questions asked.</p><p><strong>He will not start anything.</strong> The adventure is explicit — he attacks only if the player characters become violent first. If they do, he and Juan Diablo lay down cover while Johnson gets to the car.</p><p><strong>Loadout per QE:</strong> a lined coat (4/2) and a <strong>Browning Max-Power with a silencer and explosive ammo</strong>. With Firearms 7 and Wired Reflexes on a Reaction 6, he is a considerably harder proposition than he looks standing by the car.</p>",
+        "race": "human",
+        "professionalRating": 3,
+        "body": {
+          "base": 6,
+          "mod": 0,
+          "value": 6,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "strength": {
+          "base": 6,
+          "mod": 0,
+          "value": 6,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "essence": {
+          "value": 3,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 4,
+          "mod": 2,
+          "value": 6
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 6,
+          "dice": 2,
+          "mod": 0,
+          "value": 6
+        },
+        "threatRating": 0,
+        "nuyen": 0,
+        "movement": {
+          "walk": 5,
+          "run": 15
+        }
+      },
+      "items": [
+        {
+          "_id": "c58d81df736b696c",
+          "name": "Car",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "reaction",
+            "rating": 5,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "c58d81df736b696c",
+          "name": "Etiquette (Corporate)",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 3,
+            "concentration": {
+              "name": "Corporate",
+              "rating": 3
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "c58d81df736b696c",
+          "name": "Firearms",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 7,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "c58d81df736b696c",
+          "name": "Stealth",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 5,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "c58d81df736b696c",
+          "name": "Unarmed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 6,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "c58d81df77656170",
+          "name": "Browning Max-Power",
+          "type": "weapon",
+          "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "9M",
+            "damageType": "physical",
+            "concealability": 6,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": true,
+              "bf": false,
+              "fa": false
+            },
+            "ammo": {
+              "current": 10,
+              "max": 10,
+              "type": "pistol"
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 5,
+              "medium": 20,
+              "long": 40,
+              "extreme": 60
+            },
+            "strengthMin": 0,
+            "weight": 2,
+            "cost": 450,
+            "availability": "3/24 hrs",
+            "legality": "Legal",
+            "equipped": true,
+            "accessories": [],
+            "notes": "SR2E p.231. The main competitor to the Ares Predator. Heavy frame, hard-hitting—the samurai's sidearm of choice.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) — Ultra-Power is the SR1 name for this pistol.</em></p>",
+            "streetIndex": 1
+          }
+        },
+        {
+          "_id": "c58d81df61726d6f",
+          "name": "Lined Coat",
+          "type": "armor",
+          "img": "icons/svg/shield.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "ballistic": 4,
+            "impact": 2,
+            "concealability": 0,
+            "weight": 0,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "notes": "<p>Worn armor, as printed in the Queen Euphoria stat block.</p>"
+          }
+        },
+        {
+          "_id": "c58d81df63796265",
+          "name": "Wired Reflexes",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 1,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 2,
+            "notes": "+2 Reaction, +1d6 Initiative — the (6) in the printed Reaction 4 (6)."
+          }
+        },
+        {
+          "_id": "c58d81df63796265",
+          "name": "Skillwires",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 5,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0.5,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "c58d81df67656172",
+          "name": "Silencer",
+          "type": "gear",
+          "img": "icons/svg/item-bag.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0,
+            "notes": "Fitted to the Browning Max-Power (QE p.10)."
+          }
+        },
+        {
+          "_id": "c58d81df67656172",
+          "name": "Explosive Ammo",
+          "type": "gear",
+          "img": "icons/svg/item-bag.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0,
+            "notes": "Loaded in the Browning (QE p.10). +1 Power, Damage Level unchanged."
+          }
+        },
+        {
+          "_id": "c58d81df67656172",
+          "name": "Toyota Elite",
+          "type": "gear",
+          "img": "icons/svg/item-bag.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0,
+            "notes": "He drives it. Mr. Johnson rides in the back."
+          }
+        }
+      ],
+      "prototypeToken": {
+        "name": "Johnson's Bodyguard (Company Man)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/johnsons-bodyguard.webp",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "cover",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": true,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": 0,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      }
+    },
+    {
       "_id": "329cdf671df38405",
       "name": "Juan Diablo",
       "type": "npc",
@@ -2684,7 +3298,7 @@
         "default": 0
       },
       "system": {
-        "biography": "<p><strong>A gang punk turned samurai on Ludivenko's money.</strong> Diablo is the razorguy at the first meet (<em>Off and Running</em>, p.8&ndash;10), riding escort for the Johnson's Toyota Elite. He backs up the Company Man if trouble breaks out, and otherwise stays quiet.</p><p><strong>He is the runners' contact line.</strong> Diablo hands over his wristphone number so the team can reach their employers &mdash; which makes him the obvious thread to pull if they later want to work out who really hired them.</p><p><strong>Loadout per the adventure:</strong> Uzi III with shock pads and a Smartgun Adapter, an armored vest with plates, and the weaponry mounted on his Harley. The SR2E archetype also carries an Ares Predator, a Data Display, a DocWagon platinum contract and 17,270&yen; of starting cash; use those only if you need them, since QE names a narrower kit.</p>",
+        "biography": "<p><strong>A gang punk turned samurai on Ludivenko's money.</strong> Diablo is the razorguy at the first meet (<em>Off and Running</em>, p.8&ndash;10), riding escort for the Johnson's Toyota Elite. He backs up the Company Man if trouble breaks out, and otherwise stays quiet. If the runners turn violent, he and the chauffeur lay down cover while Mr. Johnson gets clear.</p><p><strong>He is the runners' contact line.</strong> Diablo hands over his wristphone number so the team can reach their employers &mdash; which makes him the obvious thread to pull if they later want to work out who really hired them.</p><p><strong>On his sheet:</strong> the <strong>Uzi III</strong> the adventure gives him, fitted with shock pads and a Smartgun Adapter to pair with his Smartlink; an <strong>armored vest with plates</strong> (4/3); his <strong>retractable razors</strong> at 7L; and the gun on the <strong>Harley</strong> &mdash; which is the whole reason the adventure bothers to give him Gunnery 4. The Harley's weapon is listed as an Ingram Valiant because the book never says what it is; swap it freely. The <strong>Ares Predator</strong> and <strong>stun baton</strong> come with the Street Samurai archetype QE points at.</p>",
         "race": "human",
         "professionalRating": 3,
         "body": {
@@ -3116,6 +3730,65 @@
         },
         {
           "_id": "329cdf6777656170",
+          "name": "Ares Predator",
+          "type": "weapon",
+          "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "9M",
+            "damageType": "physical",
+            "concealability": 5,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": true,
+              "bf": false,
+              "fa": false
+            },
+            "ammo": {
+              "current": 15,
+              "max": 15,
+              "type": "pistol"
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 5,
+              "medium": 20,
+              "long": 40,
+              "extreme": 60
+            },
+            "strengthMin": 0,
+            "weight": 2.25,
+            "cost": 450,
+            "availability": "3/24 hrs",
+            "legality": "Legal",
+            "equipped": true,
+            "accessories": [],
+            "notes": "SR2E p.231. Considered by many the premier heavy pistol. Menacing and popular among mercenaries and security services.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry — SR2 has no separate 'II'.</em></p>",
+            "streetIndex": 0.5
+          }
+        },
+        {
+          "_id": "329cdf6777656170",
           "name": "Stun Baton",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
@@ -3170,6 +3843,65 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>"
+          }
+        },
+        {
+          "_id": "329cdf6777656170",
+          "name": "Ingram Valiant",
+          "type": "weapon",
+          "img": "systems/sr2e/assets/item_icons/weapons/light-machine-gun-generic.webp",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "7S",
+            "damageType": "physical",
+            "concealability": 99,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": false,
+              "bf": true,
+              "fa": true
+            },
+            "ammo": {
+              "current": 50,
+              "max": 50,
+              "type": "belt"
+            },
+            "recoilComp": 1,
+            "ranges": {
+              "short": 20,
+              "medium": 40,
+              "long": 80,
+              "extreme": 150
+            },
+            "strengthMin": 0,
+            "weight": 9,
+            "cost": 1500,
+            "availability": "6/5 days",
+            "legality": "Restricted",
+            "equipped": true,
+            "accessories": [],
+            "notes": "Light machine gun, belt-fed 50 (c). Popular with merc units worldwide; the most common LMG model. Has a hip-brace recoil pad (Rating 1) and an ammunition bin slung over the shoulder. The only entry the book's Light Machine Guns section lists — there is no generic LMG. Light Machine Guns is a FIREARMS concentration (p.70); Gunnery governs heavy weapons \"on tripods, vehicle mounts, pintles, or in fixed emplacements\", so a VEHICLE-MOUNTED Valiant is fired with Gunnery even though the weapon itself is a firearm. SR2E p.238, p.255.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5S3</code>. The PRC-42D's nose gun (p.16). NOTE: methods disagree here — A gives 7S, B gives 8S. A wins on p.283's preference ordering. Re-check if the mislabelled Light_Machine_Gun_Generic file in the system pack resolves to a different weapon.</em></p>",
+            "streetIndex": 2
           }
         },
         {
@@ -4751,6 +5483,424 @@
         "alpha": 1,
         "disposition": 0,
         "displayBars": 0
+      }
+    },
+    {
+      "_id": "91a6231e96cffe93",
+      "name": "Mr. Johnson (Ludivenko)",
+      "type": "npc",
+      "img": "modules/sr2e-queen-euphoria/assets/portraits/mr-johnson-ludivenko.webp",
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "biography": "<p><strong>An executive in Ludivenko's Seattle operations</strong> — though he will not admit that, and the runners are not meant to find out at the meet. His real name does not matter.</p><p><strong>The offer:</strong> 20,000&yen; each to make Euphoria disappear before her first Amber Gel appearance. Negotiable — run an <strong>Opposed Negotiation Test</strong> against his <strong>Negotiation 6</strong>, and every net success moves the fee by 1,000&yen; in the winner's favour. The <em>payment plan</em> is not negotiable: half after the abduction, half after Euphoria misses her last scheduled appearance.</p><p><strong>The terms:</strong> take her from her penthouse the following night and hold her three days while the appearances come and go. He wants her kept at the rented Royal Meadows flat so he can watch both the star and the runners — <em>\"you, uhm, chummers can hold the lady anywhere you like, but your payments will be delivered to the rented flat.\"</em> He will repeat that <strong>she must not be harmed</strong>: injured or dead, she is no use for Ludivenko's own ads.</p><p><strong>Playing him:</strong> condescending, especially about questions he thinks are obvious. He answers anything reasonable. If the runners turn violent he runs for the car while the chauffeur and Juan Diablo cover him — and the deal collapses.</p>",
+        "race": "human",
+        "professionalRating": 3,
+        "body": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "strength": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 4,
+          "mod": 0,
+          "value": 4,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 6,
+          "mod": 0,
+          "value": 6,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "essence": {
+          "value": 3.8,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 4,
+          "mod": 0,
+          "value": 4
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 4,
+          "dice": 1,
+          "mod": 0,
+          "value": 4
+        },
+        "threatRating": 0,
+        "nuyen": 0,
+        "movement": {
+          "walk": 2,
+          "run": 6
+        }
+      },
+      "items": [
+        {
+          "_id": "91a6231e736b696c",
+          "name": "Computer Theory",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "intelligence",
+            "rating": 5,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "91a6231e736b696c",
+          "name": "Etiquette (Corporate)",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 8,
+            "concentration": {
+              "name": "Corporate",
+              "rating": 8
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "91a6231e736b696c",
+          "name": "Negotiation",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 6,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "91a6231e736b696c",
+          "name": "Psychology",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "intelligence",
+            "rating": 8,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "91a6231e736b696c",
+          "name": "History",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "intelligence",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "91a6231e63796265",
+          "name": "Datajack",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0.2,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "91a6231e63796265",
+          "name": "Headware Memory",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 2,
+            "notes": "200 Mp."
+          }
+        }
+      ],
+      "prototypeToken": {
+        "name": "Mr. Johnson (Ludivenko)",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "modules/sr2e-queen-euphoria/assets/portraits/mr-johnson-ludivenko.webp",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "cover",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": true,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": 0,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
       }
     },
     {
