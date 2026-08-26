@@ -3,8 +3,8 @@
   "name": "Player Handouts",
   "pages": [
     {
-      "_id": "78430b87e76f1854",
-      "name": "Newsnet — Successful Recovery",
+      "_id": "e04c7516b21a4236",
+      "name": "The MegaMedia Contract (p.63)",
       "type": "text",
       "title": {
         "show": true,
@@ -12,7 +12,7 @@
       },
       "text": {
         "format": 1,
-        "content": "<blockquote><p><strong>KSAF NEWSNET —</strong> Simsense superstar <strong>Euphoria</strong> was recovered unharmed today after what MegaMedia Entertainment calls \"a private security matter.\" The megastar's spokesperson thanked \"the professionals who brought her home\" and confirmed she is resting in seclusion. MegaMedia declined to comment on rumors linking the incident to the snack-food maker <strong>Strice Foods</strong> and its runaway hit <em>Amber Gel</em>.</p></blockquote> <p><em>Hand out on a clean rescue.</em></p>"
+        "content": "<p><em>Carrone puts this in front of the team before the Act 2 run. Signing is <strong>non-negotiable</strong> — a runner who refuses does not go.</em></p> <p><strong>Parties.</strong> An agreement dated 2050 between <strong>MegaMedia Incorporated</strong> of Seattle UCAS, a multinational corporation, and the runner, who the document calls the <em>Contractee</em>. Signed for MegaMedia by <strong>Robert Carrone, Vice President</strong>, and countersigned by <strong>August Dorn, Independent Contract Overseer</strong>, \"as overseen by, in accordance with Intermediary Law.\"</p> <p><strong>What the runner agrees to.</strong></p> <ul> <li>Make all due and proper effort to carry out the Mission, using every resource at their disposal.</li> <li>Return any weaponry, electronic gear or vehicles MegaMedia supplies, minus expendables — and be <em>personally liable</em> to repay MegaMedia for non-expendable resources lost on the run.</li> <li>Discuss no item, fact or piece of data relating to the Mission with anyone, inside or outside MegaMedia, without written consent from a senior PR official or a firm executive.</li> <li><strong>Assign MegaMedia the dramatization rights.</strong> Motion picture, trideo, simulated senses, radio and television, publication and reprint, serial and translation rights — worldwide, for the full term of copyright. Carrone intends to <em>record the rescue</em> and this is the clause that lets him.</li> <li>Never undertake a Mission against MegaMedia connected to these events <strong>in perpetuity</strong>, and no Mission of any kind against MegaMedia for <strong>thirty days</strong> after this one ends.</li> </ul> <p><strong>What MegaMedia agrees to.</strong> Support the Contractee to the best of their ability within the agreed timeframe; provide all available information and intelligence on the Mission; assume full responsibility under the <strong>Corporate Interaction Act of 2038</strong>, filed with the Center For Corporate Actions in Paris; and pay the agreed sums — <em>less any amount MegaMedia decides to withhold for non-compliance with the letter or spirit of the above.</em></p> <p><em>Point that last clause out to any player who skims. It is Carrone's leash.</em></p>"
       },
       "image": {},
       "video": {
@@ -39,8 +39,8 @@
       }
     },
     {
-      "_id": "98d86f0ac405f6d2",
-      "name": "Newsnet — Failed Recovery",
+      "_id": "2dc73d21de09ac75",
+      "name": "Seattle Speedprint — Business (Handout 1, p.65)",
       "type": "text",
       "title": {
         "show": true,
@@ -48,7 +48,7 @@
       },
       "text": {
         "format": 1,
-        "content": "<blockquote><p><strong>KSAF NEWSNET —</strong> Fans held a candlelight vigil outside MegaMedia Tower tonight after the entertainment giant confirmed that simstar <strong>Euphoria</strong> \"remains missing and is presumed lost.\" No group has claimed responsibility. Sources hint at a botched private recovery operation; MegaMedia would say only that \"every effort was made.\" Meanwhile <em>Amber Gel</em> sales continue to climb.</p></blockquote> <p><em>Hand out if Euphoria is lost or transformed.</em></p>"
+        "content": "<p><em>Give this during legwork on Strice Foods. The book cues it in the Strice business profile: \"Give players handout 1.\"</em></p> <p><strong>Excerpt from the Business Section of the Seattle Speedprint.</strong></p> <p>Strice Foods Inc. has picked Seattle as the test market for a new stuffer, <strong>Amber Gel</strong>, and it has hit the glutted stuffer market hard enough to look like the company's biggest seller. Strice is known for its <strong>Faucet Flavors</strong> line of soy-flavoring agents and has never held more than a small share of the stuffer trade; executives clearly mean to change that. After a month of Seattle testing, demand is running ahead of what Strice can supply.</p> <p>Two things about the product are strange. The first is the <strong>secrecy</strong>. Concealing ingredients and production methods is normal in the stuffer business; concealing the <em>location of the production site</em> is not, and it is rumored that even members of the Strice board do not know the product's secrets. <strong>Vincent Burroughs</strong>, the executive responsible for Amber Gel, is one of the few who does.</p> <p>The second is the <strong>marketing</strong>. Burroughs' team has booked the simsense star <strong>Euphoria</strong> for three public appearances in Seattle — a star who has never made a public personal appearance before, at what must have been enormous cost, to promote a product that already cannot meet demand. Nor has Strice moved to regional or continental production of an obvious success.</p> <p>The paper's verdict: Strice is a coin-flip investment. Get full production running and they capture a huge share; delay much longer and rival stuffer producers will field clone products and take the niche. Amber Gel's success has not gone unnoticed in competitors' boardrooms.</p>"
       },
       "image": {},
       "video": {
@@ -75,8 +75,8 @@
       }
     },
     {
-      "_id": "bf9f113ac66ad357",
-      "name": "The Simsense Recording (penthouse clue)",
+      "_id": "52c90e552b5e309a",
+      "name": "Seattle Speedprint — Metro (Handout 2, p.65)",
       "type": "text",
       "title": {
         "show": true,
@@ -84,7 +84,79 @@
       },
       "text": {
         "format": 1,
-        "content": "<p><em>Playback, first person, Euphoria's point of view:</em> the studio lights, a joke half-spoken — then the wall gives way. Something huge and <strong>wrong</strong> comes through: chitin, too many angles, a smell like an anthill and acid. Screams that are cut short. The recording jars, tilts, and a clawed, glistening limb fills the frame before everything lurches and goes to static.</p> <p><em>Hand out (edited) when the team recovers and plays the penthouse simchip.</em></p>"
+        "content": "<p><em>The public reaction to Euphoria's <strong>first</strong> disappearance — the one the runners themselves carried out. Give it after the Act 1 job.</em></p> <p><strong>Excerpt from the Metro Section of the Seattle Speedprint.</strong></p> <p><strong>Amanda Lockhart</strong>, better known as the simsense star <strong>Euphoria</strong>, vanished from her penthouse home on <strong>Thursday night</strong>, days before she was due to make several weekend appearances around Seattle. <strong>Lone Star</strong> says an investigation is underway. The only detail officially released is that the star was definitely kidnapped. No suspects have been named.</p> <p><strong>Vincent Burroughs</strong>, speaking for Strice Foods, blames rival corporations — Euphoria's weekend appearances were to promote the company's Amber Gel. Rivals, he said, <em>\"were jealous of the success of our new product. They had to prevent Euphoria's promotions,\"</em> and called the kidnapping the kind of underhanded technique to expect from competitors.</p> <p>Lone Star would neither confirm nor deny that a corporate extraction team was responsible. One Lone Star source did allow that the evidence on the scene does <em>not</em> look like professional work, citing <em>\"the type of weapons apparently used and the sloppiness of execution\"</em> as pointing to a <strong>fan cult gang</strong> rather than a team of professionals.</p> <p>With Euphoria absent, the first promotional event at the <strong>Renraku Arcology</strong> went ahead on Friday afternoon anyway. Attendance was meager and the crowd restless and angry. Strice announced it would not cancel the two remaining events; a city government spokesman said the shows might have to be cancelled to stop riots breaking out when Euphoria fails to appear.</p> <p><em>GM note: the book follows through — the second show at the coliseum ends in rioting, and the city cancels the third.</em></p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "3813e40738a5f284",
+      "name": "Seattle News-Intelligencer — if the team succeeds (p.64)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>The book's instruction is explicit: <strong>if the players are successful, give them this to read.</strong> Dated January 15, 14:00, Local Seattle Stories.</em></p> <p><strong>STRICE DROPS AMBER GEL.</strong> Strice Foods has suspended distribution of Amber Gel. Company representatives denied the move had anything to do with the cancelled Euphoria promotions a week earlier, and separately denied published reports that <strong>MegaMedia had launched a military operation against the Amber Gel production facility</strong>. MegaMedia had no comment. Industry analyst <strong>Nik Elliot</strong> was baffled: <em>\"Amber Gel is their numero uno. Why on earth would they kill it?\"</em></p> <p><strong>EUPHORIA RETIRES, FANS WAIL.</strong> MegaMedia announced that its highest-grossing star will retire once her latest sim is finished. Spokesperson <strong>Angela Lane</strong> cited \"personal confidentiality\" and would not say whether the retirement is connected to the abduction. <strong>Knight Errant</strong> is investigating alongside Lone Star and has issued no statement; rumors persist that the abduction was a failed kidnapping by a deranged fan.</p> <p>Euphoria will make no public statement until <em>Against the Hive Masters</em> — formerly titled <em>Jungle Princess</em> — is complete. Her long-time manager <strong>Robert Carrone</strong> says it is already over budget and not close to done.</p> <p><strong>Lou Buckminster</strong>, founder and president of the fan club <strong>Euphoriacs</strong>, took it badly: <em>\"It can't be true! She wouldn't do that to us! She wouldn't leave us like this. We're her fans, we made her famous! She owes us!\"</em> He urged fans worldwide to fax the star and change her mind. Industry insiders speculate the retirement stems from friction with frequent co-star <strong>Hans Vandenburg</strong>, which MegaMedia publicists deny — Carrone: <em>\"Sure she bugs him occasionally, but she does that to everyone.\"</em></p> <p><strong>Elsewhere on the page:</strong> the European policlub <em>the Revenants</em> claims the bombing of a Werner-Voss corporate shuttle over the English Channel, 175 dead; Lone Star confiscates over 20,000 BTL chips breaking a smuggling ring; Lone Star's city contract comes up for renewal next week; travel into tribal lands may be further restricted; the Universal Brotherhood announces three more Barrens missions.</p> <p><em>That Universal Brotherhood line is not filler. Leave it in.</em></p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "79bb2b13a596abda",
+      "name": "Module extras — not from the book",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>These are ours, not FASA's. Kept because they are useful at the table, labelled so nobody mistakes them for printed handouts.</em></p> <p><strong>If Euphoria is lost or transformed.</strong> The adventure prints no failure handout. If you want one, the honest shape is a follow-up to the Speedprint Metro piece: MegaMedia confirms the star \"remains missing\", no group claims responsibility, and the trade press starts asking who MegaMedia hired. Note that a failed run also means the Hive Queen scenario has run its course — read <em>Picking Up The Pieces</em> before improvising consequences.</p> <p><strong>The penthouse simsense recording.</strong> The clue itself <em>is</em> in the book: Euphoria's sense link was still recording when Craft's Soldiers came through the wall, and the chip is what the runners recover. The playback description in earlier versions of this module was invented prose. Describe it yourself, or read the penthouse scene (p.30–33) and narrate from that.</p>"
       },
       "image": {},
       "video": {
