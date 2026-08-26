@@ -1,7 +1,7 @@
 // Generate Queen Euphoria GM journals into packs-src/qe-journals.
 // Content is ORIGINAL GM-facing summary/prep authored for this module — no
 // verbatim book text; page numbers point back to the adventure. Mirrors DE.
-import { writeFileSync } from "node:fs";
+import { writeFileSync, readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 
 const DIR = "packs-src/qe-journals";
@@ -18,6 +18,24 @@ function page(journalName, name, html, level = 1) {
     system: {}, sort: 0, ownership: { default: -1 }, flags: {}, _stats: STATS
   };
 }
+/**
+ * An IMAGE page. Foundry shows these full-bleed and the GM can right-click a
+ * page and "Show Players" to throw it on everyone's screen — which is the whole
+ * point of these. `src` is a module-relative path; convert-handouts.mjs writes
+ * the file and validate-packs.mjs asserts it is actually there, so a handout
+ * cannot silently become a broken-image icon mid-session.
+ */
+function imagePage(journalName, name, src, caption, sort) {
+  return {
+    _id: idFor(journalName + "::" + name), name, type: "image",
+    title: { show: true, level: 1 },
+    src: `modules/sr2e-queen-euphoria/assets/handouts/${src}`,
+    image: { caption: caption ?? "" },
+    text: { format: 1, content: "" }, video: { controls: true, volume: 0.5 },
+    system: {}, sort, ownership: { default: -1 }, flags: {}, _stats: STATS
+  };
+}
+
 function journal(name, pages) {
   const _id = idFor(name);
   return { _id, name, pages, folder: null, sort: 0, flags: {}, ownership: { default: 0 }, _stats: STATS, _key: `!journal!${_id}` };
@@ -153,6 +171,14 @@ const JOURNALS = [
        <p><em>Hand out (edited) when the team recovers and plays the penthouse simchip.</em></p>`)
   ])
 ];
+
+// Visual handouts — art delivered for the table, ordered as the adventure
+// reaches it. Names, captions and file order all come from the manifest, so the
+// journal and the converted assets cannot drift apart.
+const HANDOUT_JOURNAL = "Queen Euphoria — Visual Handouts";
+const { handouts } = JSON.parse(readFileSync("tools/data/qe-handouts.json", "utf8"));
+JOURNALS.push(journal(HANDOUT_JOURNAL, handouts.map((h, i) =>
+  imagePage(HANDOUT_JOURNAL, h.name, h.out, h.caption, i * 100))));
 
 let n = 0, pg = 0;
 for (const j of JOURNALS) {

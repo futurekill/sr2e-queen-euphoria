@@ -1,0 +1,130 @@
+{
+  "_comment": "Player-facing art for Queen Euphoria. `src` is relative to _work/incoming (gitignored originals); `out` lands in assets/handouts. Order here is the order pages appear in the journal. Run: npm run handouts",
+  "handouts": [
+    { "section": "The Star",
+      "src": "Euphoria/Noir Cyberpunk Lounge Portrait.png",
+      "out": "euphoria-portrait.webp",
+      "name": "Euphoria",
+      "caption": "The megasimsense star herself. Show when the Johnson names the target (p.8-10), and again when the runners finally reach her." },
+
+    { "section": "The Star",
+      "src": "Simstar Magazine/Simstar 1.png",
+      "out": "simstar-cover-1.webp",
+      "name": "SIMSTAR — Cover (Jungle Huntress)",
+      "caption": "Trade press. Teases JUNGLE HUNTRESS as her next sensation and the Amber Gel weekend tour — the same tour the kidnapping is timed to spoil." },
+
+    { "section": "The Star",
+      "src": "Simstar Magazine/Simstar 2.png",
+      "out": "simstar-cover-2.webp",
+      "name": "SIMSTAR — Cover (Inside the Senses of a Sim Queen)",
+      "caption": "Second cover. Legwork handout: a Simstar back issue is the obvious place a runner starts reading up on her." },
+
+    { "section": "Amber Gel",
+      "src": "Amber Gel Adverts/Amber Gel_ Euphoria Advertisement.png",
+      "out": "amber-gel-banner.webp",
+      "name": "Amber Gel — Strice Foods Banner",
+      "caption": "The full campaign board, Strice Foods branded. Carries the whole appearance schedule: Friday Renraku Arcology, Saturday South End Coliseum, Sunday Aztechnology Pyramid Park." },
+
+    { "section": "Amber Gel",
+      "src": "Amber Gel Adverts/image-gen-4(1).png",
+      "out": "amber-gel-poster.webp",
+      "name": "Amber Gel — Weekend Appearances Poster",
+      "caption": "Street poster version of the same schedule." },
+
+    { "section": "Amber Gel",
+      "src": "Amber Gel Adverts/image-gen-1(3).png",
+      "out": "amber-gel-live-poster.webp",
+      "name": "EUPHORIA LIVE — Flyposted Bill",
+      "caption": "Weathered and flyposted. The Barrens version of the ad — use it in Puyallup and Redmond where the clean corporate board would look out of place." },
+
+    { "section": "Amber Gel",
+      "src": "Amber Gel Adverts/ChatGPT Image Aug 26, 2026, 01_46_03 PM (3).png",
+      "out": "amber-gel-poster-alt.webp",
+      "name": "Amber Gel — Weekend Appearances (alt)",
+      "caption": "Alternate poster treatment." },
+
+    { "section": "Act 1 — The Job",
+      "src": "Off And Running.png",
+      "out": "off-and-running-meet.webp",
+      "name": "Off and Running — The Meet",
+      "caption": "The Fixer's meet with Ludivenko's Johnson (p.8-10). Read-aloud opener for Act 1." },
+
+    { "section": "Pacific Towers",
+      "src": "Pacific Towers/Pacific Towers Outside.png",
+      "out": "pacific-towers-exterior.webp",
+      "name": "Pacific Towers — Exterior",
+      "caption": "Euphoria's building. First thing the team sees when they case the place." },
+
+    { "section": "Pacific Towers",
+      "src": "Pacific Towers/Lobby.png",
+      "out": "pacific-towers-lobby.webp",
+      "name": "Pacific Towers — Lobby",
+      "caption": "The lobby, empty. Establishing shot." },
+
+    { "section": "Pacific Towers",
+      "src": "Pacific Towers/Lobby - Security Desk.png",
+      "out": "pacific-towers-lobby-security-desk.webp",
+      "name": "Pacific Towers — Lobby, Security Desk",
+      "caption": "Same lobby with the guard station staffed. Use this one when the runners have to talk their way past." },
+
+    { "section": "Pacific Towers",
+      "src": "Pacific Towers/Pacific Towers Lobby Guide.png",
+      "out": "pacific-towers-lobby-guide.webp",
+      "name": "Pacific Towers — Lobby Layout (reference)",
+      "caption": "Annotated layout: entrance and guard station, mail, bar, meeting room, garden, lecture room, store room, pool, restrooms. Reference art, NOT a battle map — the playable scene is 'Pacific Towers Lobby'." },
+
+    { "section": "Pacific Towers",
+      "src": "Pacific Towers/Bar.png",
+      "out": "pacific-towers-bar.webp",
+      "name": "Pacific Towers — Bar",
+      "caption": "Ground-floor bar. A plausible place to loiter while watching the lifts." },
+
+    { "section": "Pacific Towers",
+      "src": "Pacific Towers/Pool.png",
+      "out": "pacific-towers-pool.webp",
+      "name": "Pacific Towers — Pool",
+      "caption": "Building pool." },
+
+    { "section": "Pacific Towers",
+      "src": "Pacific Towers/Condo Livingroom.png",
+      "out": "euphoria-condo-living-room.webp",
+      "name": "Euphoria's Condo — Living Room",
+      "caption": "The penthouse as the runners find it (p.30-33). Where the sim-rig kept recording through the raid." },
+
+    { "section": "Pacific Towers",
+      "src": "Pacific Towers/Euphoria’s Cyberpunk Condo Guide.png",
+      "out": "euphoria-condo-guide.webp",
+      "name": "Euphoria's Condo — Layout (reference)",
+      "caption": "Annotated floorplan, 21st floor: entrance hall, foyer, living room, recording studio, greenhouse balcony, kitchen, workout room, bedrooms and baths. Reference art, NOT a battle map — the playable scene is 'Euphoria's Condo'." },
+
+    { "section": "Royal Meadows",
+      "src": "Royal Meadows/ Royal Meadows Exterior.png",
+      "out": "royal-meadows-exterior.webp",
+      "name": "Royal Meadows — Exterior",
+      "caption": "The cheap block where Euphoria is actually held in Act 1 (p.12)." },
+
+    { "section": "Royal Meadows",
+      "src": "Royal Meadows/Grimy Royal Meadows Lobby.png",
+      "out": "royal-meadows-lobby.webp",
+      "name": "Royal Meadows — Lobby",
+      "caption": "Manager's window and the security cage. About 100 nuyen calms the building manager down if the runners annoy him." },
+
+    { "section": "Royal Meadows",
+      "src": "Royal Meadows/Safe House.png",
+      "out": "royal-meadows-flat-guide.webp",
+      "name": "Royal Meadows — Flat Layout (reference)",
+      "caption": "The four rooms of the flat: living room/kitchenette, bedroom, closet, bathroom. Matches the book's 8 x 3 metre unit. Reference art, NOT a battle map — the playable scene is 'Royal Meadows Flat'." },
+
+    { "section": "Royal Meadows",
+      "src": "Royal Meadows/Typical Apartment.png",
+      "out": "royal-meadows-flat-1.webp",
+      "name": "Royal Meadows — Flat, Interior",
+      "caption": "Flat 812 from the door. Two double beds squeezed side by side, nowhere to take cover, nowhere to flank." },
+
+    { "section": "Royal Meadows",
+      "src": "Royal Meadows/Gritty Cyberpunk Apartment Interior.png",
+      "out": "royal-meadows-flat-2.webp",
+      "name": "Royal Meadows — Flat, Interior (alt angle)",
+      "caption": "Second view of the same flat. The dresser and closet hold women's clothing in average size, still in plastic wrap — bought for Euphoria, not by her." }
+  ]
+}

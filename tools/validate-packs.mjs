@@ -76,3 +76,24 @@ console.log("\nAll packs valid.");
   }
   console.log("  focus bindings resolve to real spells on the same actor ✓");
 }
+
+// Every image referenced by a journal page must exist on disk. A missing file
+// renders as a broken-image icon, and the moment you discover that is when you
+// are trying to show it to five players.
+{
+  const { readdirSync, readFileSync, existsSync } = await import("node:fs");
+  const dir = "packs-src/qe-journals";
+  let checked = 0;
+  for (const f of readdirSync(dir).filter(f => f.endsWith(".json"))) {
+    const d = JSON.parse(readFileSync(`${dir}/${f}`, "utf8"));
+    for (const p of d.pages ?? []) {
+      if (p.type !== "image" || !p.src) continue;
+      const rel = p.src.replace(/^modules\/sr2e-queen-euphoria\//, "");
+      if (!existsSync(rel)) {
+        throw new Error(`${d.name} / "${p.name}": image missing on disk — ${p.src}`);
+      }
+      checked++;
+    }
+  }
+  console.log(`  ${checked} journal image(s) present on disk ✓`);
+}

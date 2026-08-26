@@ -1,0 +1,822 @@
+{
+  "_id": "7125317f16c942b0",
+  "name": "Queen Euphoria — Visual Handouts",
+  "pages": [
+    {
+      "_id": "5bbcccfa0f6a1392",
+      "name": "Euphoria",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/euphoria-portrait.webp",
+      "image": {
+        "caption": "The megasimsense star herself. Show when the Johnson names the target (p.8-10), and again when the runners finally reach her."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "01f07eceae8df83f",
+      "name": "SIMSTAR — Cover (Jungle Huntress)",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/simstar-cover-1.webp",
+      "image": {
+        "caption": "Trade press. Teases JUNGLE HUNTRESS as her next sensation and the Amber Gel weekend tour — the same tour the kidnapping is timed to spoil."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 100,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "302c60b3ba7e2fd1",
+      "name": "SIMSTAR — Cover (Inside the Senses of a Sim Queen)",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/simstar-cover-2.webp",
+      "image": {
+        "caption": "Second cover. Legwork handout: a Simstar back issue is the obvious place a runner starts reading up on her."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 200,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "157cb93ac7aeca6c",
+      "name": "Amber Gel — Strice Foods Banner",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/amber-gel-banner.webp",
+      "image": {
+        "caption": "The full campaign board, Strice Foods branded. Carries the whole appearance schedule: Friday Renraku Arcology, Saturday South End Coliseum, Sunday Aztechnology Pyramid Park."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 300,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "1e9eebd458c036b3",
+      "name": "Amber Gel — Weekend Appearances Poster",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/amber-gel-poster.webp",
+      "image": {
+        "caption": "Street poster version of the same schedule."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 400,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "5a67e6e8f1f7c16d",
+      "name": "EUPHORIA LIVE — Flyposted Bill",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/amber-gel-live-poster.webp",
+      "image": {
+        "caption": "Weathered and flyposted. The Barrens version of the ad — use it in Puyallup and Redmond where the clean corporate board would look out of place."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 500,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "f828cea3503128dd",
+      "name": "Amber Gel — Weekend Appearances (alt)",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/amber-gel-poster-alt.webp",
+      "image": {
+        "caption": "Alternate poster treatment."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 600,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "8498b6fc32e8b1e1",
+      "name": "Off and Running — The Meet",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/off-and-running-meet.webp",
+      "image": {
+        "caption": "The Fixer's meet with Ludivenko's Johnson (p.8-10). Read-aloud opener for Act 1."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 700,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "fa38bcd7314d663c",
+      "name": "Pacific Towers — Exterior",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/pacific-towers-exterior.webp",
+      "image": {
+        "caption": "Euphoria's building. First thing the team sees when they case the place."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 800,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "5ad6e051114c31d2",
+      "name": "Pacific Towers — Lobby",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/pacific-towers-lobby.webp",
+      "image": {
+        "caption": "The lobby, empty. Establishing shot."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 900,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "c3d2166b9076b83a",
+      "name": "Pacific Towers — Lobby, Security Desk",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/pacific-towers-lobby-security-desk.webp",
+      "image": {
+        "caption": "Same lobby with the guard station staffed. Use this one when the runners have to talk their way past."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 1000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "585a69413b0005c2",
+      "name": "Pacific Towers — Lobby Layout (reference)",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/pacific-towers-lobby-guide.webp",
+      "image": {
+        "caption": "Annotated layout: entrance and guard station, mail, bar, meeting room, garden, lecture room, store room, pool, restrooms. Reference art, NOT a battle map — the playable scene is 'Pacific Towers Lobby'."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 1100,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "b33e0790b521a2bc",
+      "name": "Pacific Towers — Bar",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/pacific-towers-bar.webp",
+      "image": {
+        "caption": "Ground-floor bar. A plausible place to loiter while watching the lifts."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 1200,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "17591858f907c657",
+      "name": "Pacific Towers — Pool",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/pacific-towers-pool.webp",
+      "image": {
+        "caption": "Building pool."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 1300,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "75ed4cccb19f98cd",
+      "name": "Euphoria's Condo — Living Room",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/euphoria-condo-living-room.webp",
+      "image": {
+        "caption": "The penthouse as the runners find it (p.30-33). Where the sim-rig kept recording through the raid."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 1400,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "27a3858c98706225",
+      "name": "Euphoria's Condo — Layout (reference)",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/euphoria-condo-guide.webp",
+      "image": {
+        "caption": "Annotated floorplan, 21st floor: entrance hall, foyer, living room, recording studio, greenhouse balcony, kitchen, workout room, bedrooms and baths. Reference art, NOT a battle map — the playable scene is 'Euphoria's Condo'."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 1500,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "a2fe2922565bff7d",
+      "name": "Royal Meadows — Exterior",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/royal-meadows-exterior.webp",
+      "image": {
+        "caption": "The cheap block where Euphoria is actually held in Act 1 (p.12)."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 1600,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "ef6a3eb417de5d00",
+      "name": "Royal Meadows — Lobby",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/royal-meadows-lobby.webp",
+      "image": {
+        "caption": "Manager's window and the security cage. About 100 nuyen calms the building manager down if the runners annoy him."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 1700,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "9840287867ba6984",
+      "name": "Royal Meadows — Flat Layout (reference)",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/royal-meadows-flat-guide.webp",
+      "image": {
+        "caption": "The four rooms of the flat: living room/kitchenette, bedroom, closet, bathroom. Matches the book's 8 x 3 metre unit. Reference art, NOT a battle map — the playable scene is 'Royal Meadows Flat'."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 1800,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "84075a98d19c01e2",
+      "name": "Royal Meadows — Flat, Interior",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/royal-meadows-flat-1.webp",
+      "image": {
+        "caption": "Flat 812 from the door. Two double beds squeezed side by side, nowhere to take cover, nowhere to flank."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 1900,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "82066659e9560fb0",
+      "name": "Royal Meadows — Flat, Interior (alt angle)",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/royal-meadows-flat-2.webp",
+      "image": {
+        "caption": "Second view of the same flat. The dresser and closet hold women's clothing in average size, still in plastic wrap — bought for Euphoria, not by her."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 2000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!7125317f16c942b0"
+}

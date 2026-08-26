@@ -1,5 +1,27 @@
 # Changelog
 
+## Unreleased — Visual handouts
+
+Twenty-one pieces of player-facing art, wired as image pages in a new
+**Queen Euphoria — Visual Handouts** journal. Foundry shows image pages
+full-bleed and a GM can right-click one and *Show Players*, which is the whole
+point of them. Pages are in the order the adventure reaches them: the star and
+her press, the Amber Gel campaign, the Act 1 meet, Pacific Towers, Royal
+Meadows.
+
+Three of the images are annotated **layout references, not battle maps** —
+Pacific Towers lobby, Euphoria's condo, and the Royal Meadows flat. Their
+captions say so and point at the matching playable scene, so nobody drops
+tokens on a picture.
+
+`npm run handouts` converts the delivered PNGs (kept in gitignored `_work/`,
+never modified) to WebP capped at 1920px: 46.6MB becomes 3.7MB. The manifest at
+`tools/data/qe-handouts.json` drives both the conversion and the journal pages,
+so the two cannot drift apart. `npm run validate` now asserts every journal
+image exists on disk — a missing handout used to be discoverable only by trying
+to show it to five people.
+
+
 ## 0.2.0 — Cast & IC portraits
 
 All 17 Queen Euphoria actors now have custom painterly portraits (square
