@@ -2661,6 +2661,960 @@
       }
     },
     {
+      "_id": "329cdf671df38405",
+      "name": "Juan Diablo",
+      "type": "npc",
+      "img": null,
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "biography": "<p><strong>A gang punk turned samurai on Ludivenko's money.</strong> Diablo is the razorguy at the first meet (<em>Off and Running</em>, p.8&ndash;10), riding escort for the Johnson's Toyota Elite. He backs up the Company Man if trouble breaks out, and otherwise stays quiet.</p><p><strong>He is the runners' contact line.</strong> Diablo hands over his wristphone number so the team can reach their employers &mdash; which makes him the obvious thread to pull if they later want to work out who really hired them.</p><p><strong>Loadout per the adventure:</strong> Uzi III with shock pads and a Smartgun Adapter, an armored vest with plates, and the weaponry mounted on his Harley. The SR2E archetype also carries an Ares Predator, a Data Display, a DocWagon platinum contract and 17,270&yen; of starting cash; use those only if you need them, since QE names a narrower kit.</p>",
+        "race": "human",
+        "professionalRating": 3,
+        "body": {
+          "base": 8,
+          "mod": 0,
+          "value": 8,
+          "racial": 0
+        },
+        "quickness": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "strength": {
+          "base": 7,
+          "mod": 0,
+          "value": 7,
+          "racial": 0
+        },
+        "charisma": {
+          "base": 2,
+          "mod": 0,
+          "value": 2,
+          "racial": 0
+        },
+        "intelligence": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "willpower": {
+          "base": 5,
+          "mod": 0,
+          "value": 5,
+          "racial": 0
+        },
+        "essence": {
+          "value": 0.1,
+          "max": 6
+        },
+        "magic": {
+          "value": 0,
+          "max": 0,
+          "tradition": "none",
+          "type": "none",
+          "totem": ""
+        },
+        "reaction": {
+          "base": 5,
+          "mod": 4,
+          "value": 9
+        },
+        "conditionMonitor": {
+          "physical": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "stun": {
+            "value": 0,
+            "max": 10,
+            "overflow": 0
+          },
+          "overflow": 0
+        },
+        "armor": {
+          "ballistic": 0,
+          "impact": 0
+        },
+        "dicePools": {
+          "combat": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          },
+          "magic": {
+            "value": 0,
+            "max": 0,
+            "bonus": 0
+          }
+        },
+        "initiative": {
+          "base": 9,
+          "dice": 3,
+          "mod": 0,
+          "value": 9
+        },
+        "threatRating": 3,
+        "nuyen": 0,
+        "movement": {
+          "walk": 5,
+          "run": 15
+        }
+      },
+      "items": [
+        {
+          "_id": "329cdf67736b696c",
+          "name": "Armed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 3,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "329cdf67736b696c",
+          "name": "Bike",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "reaction",
+            "rating": 2,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "329cdf67736b696c",
+          "name": "Etiquette (Street)",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "charisma",
+            "rating": 4,
+            "concentration": {
+              "name": "Street",
+              "rating": 4
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "329cdf67736b696c",
+          "name": "Firearms",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 5,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "329cdf67736b696c",
+          "name": "Gunnery",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "intelligence",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "329cdf67736b696c",
+          "name": "Stealth",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "quickness",
+            "rating": 4,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "329cdf67736b696c",
+          "name": "Unarmed Combat",
+          "type": "skill",
+          "img": "icons/svg/book.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "category": "active",
+            "linkedAttribute": "strength",
+            "rating": 6,
+            "concentration": {
+              "name": "",
+              "rating": 0
+            },
+            "specialization": {
+              "name": "",
+              "rating": 0
+            },
+            "isMagical": false,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "329cdf6777656170",
+          "name": "Uzi III",
+          "type": "weapon",
+          "img": "systems/sr2e/assets/item_icons/weapons/uzi-iii.webp",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "weaponType": "firearm",
+            "skill": "firearms",
+            "damageCode": "6M",
+            "damageType": "physical",
+            "concealability": 5,
+            "reach": 0,
+            "firingModes": {
+              "ss": false,
+              "sa": false,
+              "bf": true,
+              "fa": false
+            },
+            "ammo": {
+              "current": 24,
+              "max": 24,
+              "type": "smg"
+            },
+            "recoilComp": 1,
+            "ranges": {
+              "short": 10,
+              "medium": 40,
+              "long": 80,
+              "extreme": 150
+            },
+            "strengthMin": 0,
+            "weight": 4,
+            "cost": 600,
+            "availability": "4/24 hrs",
+            "legality": "Legal",
+            "equipped": true,
+            "accessories": [],
+            "notes": "SR2E p.232. The latest in the venerable Uzi lineage—compact, reliable, and effective in close quarters. BF capable.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M3</code>. The Strice Boys p.25.</em></p>",
+            "streetIndex": 0.75
+          }
+        },
+        {
+          "_id": "329cdf6777656170",
+          "name": "Stun Baton",
+          "type": "weapon",
+          "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "weaponType": "melee",
+            "skill": "armed_combat",
+            "damageCode": "6S",
+            "damageType": "stun",
+            "concealability": 4,
+            "reach": 1,
+            "firingModes": {
+              "ss": false,
+              "sa": false,
+              "bf": false,
+              "fa": false
+            },
+            "ammo": {
+              "current": 0,
+              "max": 0,
+              "type": ""
+            },
+            "recoilComp": 0,
+            "ranges": {
+              "short": 0,
+              "medium": 0,
+              "long": 0,
+              "extreme": 0
+            },
+            "strengthMin": 0,
+            "weight": 0,
+            "cost": 750,
+            "availability": "3/36 hrs",
+            "legality": "Legal",
+            "equipped": true,
+            "accessories": [],
+            "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>"
+          }
+        },
+        {
+          "_id": "329cdf6761726d6f",
+          "name": "Armor Vest With Plates",
+          "type": "armor",
+          "img": "icons/svg/shield.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "ballistic": 4,
+            "impact": 3,
+            "concealability": 0,
+            "weight": 0,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "notes": "<p>Worn armor, as printed in the Queen Euphoria stat block.</p>"
+          }
+        },
+        {
+          "_id": "329cdf6763796265",
+          "name": "Cybereyes",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0.2,
+            "notes": "With Low-Light."
+          }
+        },
+        {
+          "_id": "329cdf6763796265",
+          "name": "Low-Light Vision",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0.2,
+            "notes": ""
+          }
+        },
+        {
+          "_id": "329cdf6763796265",
+          "name": "Dermal Plating",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 2,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 1,
+            "notes": "This is the (8) in the archetype's printed Body 6 (8)."
+          }
+        },
+        {
+          "_id": "329cdf6763796265",
+          "name": "Muscle Replacement",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 1,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 1,
+            "notes": "+1 Quickness and +1 Strength — the (5) and (7) in the printed attributes. Its Quickness does NOT feed Reaction (SR2E p.249)."
+          }
+        },
+        {
+          "_id": "329cdf6763796265",
+          "name": "Retractable Razors",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0.2,
+            "notes": "(Str)L damage — 7L for him."
+          }
+        },
+        {
+          "_id": "329cdf6763796265",
+          "name": "Smartlink",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0.5,
+            "notes": "Pairs with the Smartgun Adapter on his Uzi III."
+          }
+        },
+        {
+          "_id": "329cdf6763796265",
+          "name": "Wired Reflexes",
+          "type": "cyberware",
+          "img": "icons/svg/biohazard.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 2,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 3,
+            "notes": "+4 Reaction, +2d6 Initiative — the (9) in the printed Reaction 5 (9)."
+          }
+        },
+        {
+          "_id": "329cdf6767656172",
+          "name": "Shock Pads",
+          "type": "gear",
+          "img": "icons/svg/item-bag.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0,
+            "notes": "Fitted to the Uzi III (QE p.10) — reduces recoil."
+          }
+        },
+        {
+          "_id": "329cdf6767656172",
+          "name": "Smartgun Adapter",
+          "type": "gear",
+          "img": "icons/svg/item-bag.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0,
+            "notes": "On the Uzi III (QE p.10), paired with his Smartlink."
+          }
+        },
+        {
+          "_id": "329cdf6767656172",
+          "name": "Harley Scorpion",
+          "type": "gear",
+          "img": "icons/svg/item-bag.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0,
+            "notes": "His bike, and it is armed — the mounted weaponry is why the adventure gives him Gunnery 4."
+          }
+        },
+        {
+          "_id": "329cdf6767656172",
+          "name": "Wrist Phone",
+          "type": "gear",
+          "img": "icons/svg/item-bag.svg",
+          "effects": [],
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "system": {
+            "rating": 0,
+            "quantity": 1,
+            "cost": 0,
+            "availability": "",
+            "legality": "Legal",
+            "equipped": true,
+            "essence": 0,
+            "notes": "He gives the runners this number at the meet so they can reach their employers (QE p.10)."
+          }
+        }
+      ],
+      "prototypeToken": {
+        "name": "Juan Diablo",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": null,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "cover",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": true,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": 0,
+        "displayBars": 20,
+        "bar1": {
+          "attribute": "conditionMonitor.physical"
+        },
+        "bar2": {
+          "attribute": "conditionMonitor.stun"
+        }
+      }
+    },
+    {
       "_id": "04e23b7806026164",
       "name": "Knight Errant Security Guard",
       "type": "npc",

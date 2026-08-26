@@ -2,6 +2,15 @@
 
 ## Unreleased — Visual handouts
 
+**Juan Diablo** joins the cast. The adventure names him at the first meet
+(p.10) but prints no block — it says to use the Street Samurai archetype with
+Gunnery 4. That is a 1st-edition pointer, so the stats here are the **SR2E**
+Street Samurai (core p.62, read from a 300dpi render) plus the Gunnery 4 the
+adventure adds, with the loadout QE specifies: Uzi III with shock pads and a
+Smartgun Adapter, armored vest with plates, and an armed Harley — the bike
+weaponry being the reason he has Gunnery at all. He still needs a portrait.
+
+
 Twenty-one pieces of player-facing art, wired as image pages in a new
 **Queen Euphoria — Visual Handouts** journal. Foundry shows image pages
 full-bleed and a GM can right-click one and *Show Players*, which is the whole
