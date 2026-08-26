@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a84d0b470ab",
       "name": "Conjuring",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a84ee7c9190",
       "name": "Sorcery",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a84bd774aec",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a8453475ff9",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a84064c5c36",
       "name": "Etiquette (Street)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a84f70c3a61",
       "name": "Magic Theory",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -355,7 +355,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a842434b0ff",
       "name": "Negotiation",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -394,7 +394,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a840d264ba5",
       "name": "Stealth",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -433,7 +433,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a8477643171",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -472,7 +472,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a84f092639e",
       "name": "Evaluate Magical Goods",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -511,7 +511,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a84b9d7aa19",
       "name": "Metalworking",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -550,7 +550,7 @@
       }
     },
     {
-      "_id": "b5363a84736b696c",
+      "_id": "b5363a844d9ba22c",
       "name": "Woodworking",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -589,7 +589,7 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
+      "_id": "b5363a8474149694",
       "name": "Mana Bolt",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -632,7 +632,7 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
+      "_id": "b5363a8430c8a746",
       "name": "Sleep",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -675,7 +675,7 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
+      "_id": "b5363a84e799fec3",
       "name": "Clairvoyance",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -718,7 +718,7 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
+      "_id": "b5363a84bc98ea43",
       "name": "Confusion",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -761,7 +761,7 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
+      "_id": "b5363a8471067b86",
       "name": "Mask",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -804,7 +804,7 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
+      "_id": "b5363a846b168c0e",
       "name": "Stimulation",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -847,7 +847,7 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
+      "_id": "b5363a8404525878",
       "name": "Armor",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -890,7 +890,7 @@
       }
     },
     {
-      "_id": "b5363a847370656c",
+      "_id": "b5363a84bf454ff0",
       "name": "Levitate Person",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -933,7 +933,7 @@
       }
     },
     {
-      "_id": "b5363a84666f6375",
+      "_id": "b5363a8419a41f2b",
       "name": "Sleep Spell Focus",
       "type": "focus",
       "img": "icons/svg/aura.svg",
@@ -963,13 +963,13 @@
         "expendable": false,
         "bondedWeaponId": "",
         "spellSubtype": "specific",
-        "boundSpellId": "b5363a847370656c",
+        "boundSpellId": "b5363a8430c8a746",
         "spent": 0,
         "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Bound to Sleep and left ACTIVE. It previously shipped inactive as a workaround: the system treated a focus as a permanent bonus on every spell, so an active focus handed Craft +2 on Mana Bolt too. sr2e 0.89.0 fixed that — a focus now serves only its bound spell, from a pool of 2 dice per action shared between the casting test and the Drain test, so leaving it on is both correct and what the page describes."
       }
     },
     {
-      "_id": "b5363a8477656170",
+      "_id": "b5363a84417fd65d",
       "name": "Ares Predator",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
@@ -1028,7 +1028,7 @@
       }
     },
     {
-      "_id": "b5363a8461726d6f",
+      "_id": "b5363a84fbfa4556",
       "name": "Real Leather Clothing",
       "type": "armor",
       "img": "icons/svg/shield.svg",

@@ -18,7 +18,7 @@
 //      names had disappeared, so a rename left the stale JSON behind AND THE PACK
 //      LOADED BOTH.
 import { writeFileSync, readdirSync, readFileSync, mkdirSync, rmSync, renameSync, existsSync } from "node:fs";
-import { randomBytes } from "node:crypto";
+import { randomBytes, createHash } from "node:crypto";
 
 const SYS = "../sr2e-foundryvtt";
 const DIR = "packs-src/qe-actors";
@@ -49,13 +49,30 @@ const art = (a) => a === "$fromSystem" ? null
   : a.startsWith("systems/") ? a
   : `modules/sr2e-queen-euphoria/assets/portraits/${a}`;
 
-// Deterministic per-actor item ids. Derived from the actor's PINNED id, so they
-// are stable across runs but cannot collide between two actors carrying the same
-// weapon — which a name-only hash would have done.
-let itemSeq = 0;
-const itemId = (actorId, kind, name) =>
-  (actorId.replace(/[^a-f0-9]/gi, "0").slice(0, 8) +
-   Buffer.from(`${kind}:${name}:${itemSeq++}`).toString("hex")).slice(0, 16).padEnd(16, "0");
+// Deterministic per-actor item ids: 8 chars of the actor's PINNED id, then 8
+// chars of a hash of the item itself. Stable across runs, and distinct between
+// two actors carrying the same weapon.
+//
+// The previous version hex-ENCODED `kind:name:seq` instead of hashing it. Hex
+// doubles the length, so slice(0,16) kept only the first FOUR characters of the
+// string — "skil", "weap", "cybe" — and the name never reached the id at all.
+// Every skill on an actor therefore shared one id, and Foundry keeps the last
+// document written under a given id: Juan Diablo imported with one skill and one
+// weapon out of seven and four. Hash, never encode, before truncating.
+const usedItemIds = new Map();   // actorId -> Set of ids already issued
+const itemId = (actorId, kind, name) => {
+  const prefix = actorId.replace(/[^a-f0-9]/gi, "0").slice(0, 8).padEnd(8, "0");
+  if (!usedItemIds.has(actorId)) usedItemIds.set(actorId, new Set());
+  const seen = usedItemIds.get(actorId);
+  // Occurrence index keeps an actor carrying the same item twice (two spurs,
+  // two grenades) from colliding with itself, without a global counter that
+  // would shift every id whenever the manifest is reordered.
+  for (let n = 0; ; n++) {
+    const id = prefix + createHash("sha1")
+      .update(`${actorId}:${kind}:${name}:${n}`).digest("hex").slice(0, 8);
+    if (!seen.has(id)) { seen.add(id); return id; }
+  }
+};
 
 const SKILL_ATTR = {
   conjuring: "charisma", sorcery: "willpower", "magic theory": "intelligence",

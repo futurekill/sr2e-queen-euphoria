@@ -97,3 +97,35 @@ console.log("\nAll packs valid.");
   }
   console.log(`  ${checked} journal image(s) present on disk ✓`);
 }
+
+// Embedded item ids must be unique WITHIN an actor. Foundry keeps the last
+// document written under a given id, so a collision does not error — it
+// silently drops items. This shipped: itemId hex-encoded its input instead of
+// hashing it, slice(0,16) kept only the first four characters ("skil", "weap"),
+// and every actor imported with exactly one item per type. Juan Diablo reached
+// the table with one skill out of seven.
+{
+  const { readdirSync, readFileSync } = await import("node:fs");
+  let items = 0;
+  for (const dir of ["packs-src/qe-actors"]) {
+    for (const f of readdirSync(dir).filter(f => f.endsWith(".json"))) {
+      const d = JSON.parse(readFileSync(`${dir}/${f}`, "utf8"));
+      const ids = (d.items ?? []).map(i => i._id);
+      items += ids.length;
+      const dupes = ids.filter((id, n) => ids.indexOf(id) !== n);
+      if (dupes.length) {
+        const names = (d.items ?? []).filter(i => dupes.includes(i._id))
+          .map(i => `${i.type}/${i.name}`).join(", ");
+        throw new Error(
+          `${d.name}: ${dupes.length} embedded item(s) share an id — Foundry would drop all but ` +
+          `the last of each. Affected: ${names}`);
+      }
+      for (const id of ids) {
+        if (!/^[A-Za-z0-9]{16}$/.test(id)) {
+          throw new Error(`${d.name}: embedded item id "${id}" is not 16 alphanumeric characters`);
+        }
+      }
+    }
+  }
+  console.log(`  ${items} embedded item ids unique per actor, 16 chars ✓`);
+}

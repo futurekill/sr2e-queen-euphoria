@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "329cdf67736b696c",
+      "_id": "329cdf67255726a1",
       "name": "Armed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "329cdf67736b696c",
+      "_id": "329cdf677aa49d83",
       "name": "Bike",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "329cdf67736b696c",
+      "_id": "329cdf67d23726b4",
       "name": "Etiquette (Street)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "329cdf67736b696c",
+      "_id": "329cdf67fd7c4140",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "329cdf67736b696c",
+      "_id": "329cdf6756135f56",
       "name": "Gunnery",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "_id": "329cdf67736b696c",
+      "_id": "329cdf67ba89e5f6",
       "name": "Stealth",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -355,7 +355,7 @@
       }
     },
     {
-      "_id": "329cdf67736b696c",
+      "_id": "329cdf676bda36d2",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -394,7 +394,7 @@
       }
     },
     {
-      "_id": "329cdf6777656170",
+      "_id": "329cdf6711f4f4aa",
       "name": "Uzi III",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/uzi-iii.webp",
@@ -453,7 +453,7 @@
       }
     },
     {
-      "_id": "329cdf6777656170",
+      "_id": "329cdf67fd01d23e",
       "name": "Ares Predator",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
@@ -512,7 +512,7 @@
       }
     },
     {
-      "_id": "329cdf6777656170",
+      "_id": "329cdf67af362db9",
       "name": "Stun Baton",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
@@ -570,7 +570,7 @@
       }
     },
     {
-      "_id": "329cdf6777656170",
+      "_id": "329cdf678a612a06",
       "name": "Ingram Valiant",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/light-machine-gun-generic.webp",
@@ -629,7 +629,7 @@
       }
     },
     {
-      "_id": "329cdf6761726d6f",
+      "_id": "329cdf67321eb0c8",
       "name": "Armor Vest With Plates",
       "type": "armor",
       "img": "icons/svg/shield.svg",
@@ -664,7 +664,7 @@
       }
     },
     {
-      "_id": "329cdf6763796265",
+      "_id": "329cdf676152afae",
       "name": "Cybereyes",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -698,7 +698,7 @@
       }
     },
     {
-      "_id": "329cdf6763796265",
+      "_id": "329cdf679abbe133",
       "name": "Low-Light Vision",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -732,7 +732,7 @@
       }
     },
     {
-      "_id": "329cdf6763796265",
+      "_id": "329cdf671a7f756d",
       "name": "Dermal Plating",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -766,7 +766,7 @@
       }
     },
     {
-      "_id": "329cdf6763796265",
+      "_id": "329cdf67ff114cc7",
       "name": "Muscle Replacement",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -800,7 +800,7 @@
       }
     },
     {
-      "_id": "329cdf6763796265",
+      "_id": "329cdf674c2340f5",
       "name": "Retractable Razors",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -834,7 +834,7 @@
       }
     },
     {
-      "_id": "329cdf6763796265",
+      "_id": "329cdf670469fa72",
       "name": "Smartlink",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -868,7 +868,7 @@
       }
     },
     {
-      "_id": "329cdf6763796265",
+      "_id": "329cdf67596f1e16",
       "name": "Wired Reflexes",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -902,7 +902,7 @@
       }
     },
     {
-      "_id": "329cdf6767656172",
+      "_id": "329cdf67283d5090",
       "name": "Shock Pads",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",
@@ -936,7 +936,7 @@
       }
     },
     {
-      "_id": "329cdf6767656172",
+      "_id": "329cdf67c21319cf",
       "name": "Smartgun Adapter",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",
@@ -970,7 +970,7 @@
       }
     },
     {
-      "_id": "329cdf6767656172",
+      "_id": "329cdf672905fcf7",
       "name": "Harley Scorpion",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",
@@ -1004,7 +1004,7 @@
       }
     },
     {
-      "_id": "329cdf6767656172",
+      "_id": "329cdf6700a251e0",
       "name": "Wrist Phone",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",

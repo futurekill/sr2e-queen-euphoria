@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "f139ed74736b696c",
+      "_id": "f139ed74d8b3f8f6",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "f139ed74736b696c",
+      "_id": "f139ed746dd2ad5a",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "f139ed74736b696c",
+      "_id": "f139ed748f5527dd",
       "name": "Interrogation",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "f139ed74736b696c",
+      "_id": "f139ed744196c716",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "f139ed7477656170",
+      "_id": "f139ed7483d94b6a",
       "name": "Browning Max-Power",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
@@ -336,7 +336,7 @@
       }
     },
     {
-      "_id": "f139ed7477656170",
+      "_id": "f139ed744ce7df36",
       "name": "Stun Baton",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
@@ -394,7 +394,7 @@
       }
     },
     {
-      "_id": "f139ed7461726d6f",
+      "_id": "f139ed7405d4949a",
       "name": "Armor Vest",
       "type": "armor",
       "img": "icons/svg/shield.svg",

@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfec44b2f81c",
       "name": "Armed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfec63c54ac6",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfec0959eea6",
       "name": "Etiquette (Street)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfec24b59f96",
       "name": "Etiquette (Tribal)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfecda18b4e2",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfece94120f1",
       "name": "Magic Theory",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -355,7 +355,7 @@
       }
     },
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfece3d7882c",
       "name": "Negotiation",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -394,7 +394,7 @@
       }
     },
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfec434555ff",
       "name": "Sorcery",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -433,7 +433,7 @@
       }
     },
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfec223c810c",
       "name": "Stealth",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -472,7 +472,7 @@
       }
     },
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfece8e967be",
       "name": "Throwing Weapons",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -511,7 +511,7 @@
       }
     },
     {
-      "_id": "87dbcfec736b696c",
+      "_id": "87dbcfec63ec0352",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -550,7 +550,7 @@
       }
     },
     {
-      "_id": "87dbcfec7370656c",
+      "_id": "87dbcfecfd19fbed",
       "name": "Power Missile",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -593,7 +593,7 @@
       }
     },
     {
-      "_id": "87dbcfec7370656c",
+      "_id": "87dbcfec85214345",
       "name": "Fireball",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -636,7 +636,7 @@
       }
     },
     {
-      "_id": "87dbcfec7370656c",
+      "_id": "87dbcfecfe9cbc45",
       "name": "Detect Enemies",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -679,7 +679,7 @@
       }
     },
     {
-      "_id": "87dbcfec7370656c",
+      "_id": "87dbcfecf0aa24e1",
       "name": "Mind Probe",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -722,7 +722,7 @@
       }
     },
     {
-      "_id": "87dbcfec7370656c",
+      "_id": "87dbcfec7267d697",
       "name": "Detox",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -764,7 +764,7 @@
       }
     },
     {
-      "_id": "87dbcfec7370656c",
+      "_id": "87dbcfec5d705bef",
       "name": "Entertainment",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -807,7 +807,7 @@
       }
     },
     {
-      "_id": "87dbcfec77656170",
+      "_id": "87dbcfec08f76d16",
       "name": "Browning Max-Power",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
@@ -866,7 +866,7 @@
       }
     },
     {
-      "_id": "87dbcfec77656170",
+      "_id": "87dbcfecfe8b9721",
       "name": "Pole Arm",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/pole-arm.webp",
@@ -925,7 +925,7 @@
       }
     },
     {
-      "_id": "87dbcfec77656170",
+      "_id": "87dbcfecbd3467ae",
       "name": "Combat Knife",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/combat-knife.webp",
@@ -983,7 +983,7 @@
       }
     },
     {
-      "_id": "87dbcfec61726d6f",
+      "_id": "87dbcfeccf96a7f5",
       "name": "Real Leather Clothing",
       "type": "armor",
       "img": "icons/svg/shield.svg",
@@ -1018,7 +1018,7 @@
       }
     },
     {
-      "_id": "87dbcfec67656172",
+      "_id": "87dbcfec7fadc1f4",
       "name": "Medicine Lodge Materials",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",
@@ -1052,7 +1052,7 @@
       }
     },
     {
-      "_id": "87dbcfec67656172",
+      "_id": "87dbcfec624ff971",
       "name": "Plastic Restraints",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",
@@ -1086,7 +1086,7 @@
       }
     },
     {
-      "_id": "87dbcfec67656172",
+      "_id": "87dbcfec6d6b1706",
       "name": "Firepower Ammunition",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",

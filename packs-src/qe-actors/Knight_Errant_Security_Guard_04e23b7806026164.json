@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "04e23b78736b696c",
+      "_id": "04e23b781ad425ec",
       "name": "Armed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "04e23b78736b696c",
+      "_id": "04e23b786df3698b",
       "name": "Car",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "04e23b78736b696c",
+      "_id": "04e23b7869a7680f",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "04e23b78736b696c",
+      "_id": "04e23b7836f5e149",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "04e23b78736b696c",
+      "_id": "04e23b7844d33e0b",
       "name": "Throwing Weapons",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "_id": "04e23b78736b696c",
+      "_id": "04e23b787122e990",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -355,7 +355,7 @@
       }
     },
     {
-      "_id": "04e23b7877656170",
+      "_id": "04e23b783c02ab31",
       "name": "Ares Predator",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
@@ -414,7 +414,7 @@
       }
     },
     {
-      "_id": "04e23b7877656170",
+      "_id": "04e23b78b457fd26",
       "name": "Heckler & Koch HK227",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/hk-hk227.webp",
@@ -473,7 +473,7 @@
       }
     },
     {
-      "_id": "04e23b7877656170",
+      "_id": "04e23b785a1067d1",
       "name": "Concussion Grenade",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/concussion-grenade.webp",
@@ -534,7 +534,7 @@
       }
     },
     {
-      "_id": "04e23b7861726d6f",
+      "_id": "04e23b78bf3714e8",
       "name": "Armor Jacket",
       "type": "armor",
       "img": "icons/svg/shield.svg",

@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "2b6a986a736b696c",
+      "_id": "2b6a986ad6155988",
       "name": "Etiquette (Street)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "2b6a986a736b696c",
+      "_id": "2b6a986ae5c6c6e7",
       "name": "Magic Theory",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "2b6a986a736b696c",
+      "_id": "2b6a986a6ae72e4c",
       "name": "Sorcery",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "2b6a986a736b696c",
+      "_id": "2b6a986a7c34a4e4",
       "name": "Stealth",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "2b6a986a736b696c",
+      "_id": "2b6a986af40dfa53",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "_id": "2b6a986a7370656c",
+      "_id": "2b6a986a3694a0ec",
       "name": "Mana Bolt",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -359,7 +359,7 @@
       }
     },
     {
-      "_id": "2b6a986a7370656c",
+      "_id": "2b6a986a93c2f545",
       "name": "Powerball",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -402,7 +402,7 @@
       }
     },
     {
-      "_id": "2b6a986a7370656c",
+      "_id": "2b6a986af34bcc20",
       "name": "Sleep",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -445,7 +445,7 @@
       }
     },
     {
-      "_id": "2b6a986a7370656c",
+      "_id": "2b6a986a3c3de4b5",
       "name": "Detect Enemies",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -488,7 +488,7 @@
       }
     },
     {
-      "_id": "2b6a986a7370656c",
+      "_id": "2b6a986ae514d461",
       "name": "Increase [Attribute]",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -530,7 +530,7 @@
       }
     },
     {
-      "_id": "2b6a986a7370656c",
+      "_id": "2b6a986a8946e401",
       "name": "Treat",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -574,7 +574,7 @@
       }
     },
     {
-      "_id": "2b6a986a7370656c",
+      "_id": "2b6a986a073b47b9",
       "name": "Armor",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -617,7 +617,7 @@
       }
     },
     {
-      "_id": "2b6a986a7370656c",
+      "_id": "2b6a986a5f5d8fb6",
       "name": "Control Thoughts",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -660,7 +660,7 @@
       }
     },
     {
-      "_id": "2b6a986a7370656c",
+      "_id": "2b6a986a34328b07",
       "name": "Petrify",
       "type": "spell",
       "img": "icons/svg/daze.svg",
@@ -703,7 +703,7 @@
       }
     },
     {
-      "_id": "2b6a986a77656170",
+      "_id": "2b6a986abee29d54",
       "name": "Browning Max-Power",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
@@ -762,7 +762,7 @@
       }
     },
     {
-      "_id": "2b6a986a77656170",
+      "_id": "2b6a986a9a0ec94e",
       "name": "Staff",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/staff.webp",
@@ -820,7 +820,7 @@
       }
     },
     {
-      "_id": "2b6a986a61726d6f",
+      "_id": "2b6a986ae97d59ba",
       "name": "Armor Clothing",
       "type": "armor",
       "img": "icons/svg/shield.svg",
@@ -855,7 +855,7 @@
       }
     },
     {
-      "_id": "2b6a986a67656172",
+      "_id": "2b6a986a684f09e5",
       "name": "Expendable Manipulation Fetish",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",

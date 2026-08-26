@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "c58d81df736b696c",
+      "_id": "c58d81df421a39e1",
       "name": "Car",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "c58d81df736b696c",
+      "_id": "c58d81dfc146541b",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "c58d81df736b696c",
+      "_id": "c58d81dffb76e782",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "c58d81df736b696c",
+      "_id": "c58d81dfa1c27b47",
       "name": "Stealth",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "c58d81df736b696c",
+      "_id": "c58d81dfd81894e5",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "_id": "c58d81df77656170",
+      "_id": "c58d81df9525d80f",
       "name": "Browning Max-Power",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
@@ -375,7 +375,7 @@
       }
     },
     {
-      "_id": "c58d81df61726d6f",
+      "_id": "c58d81dfb57987ff",
       "name": "Lined Coat",
       "type": "armor",
       "img": "icons/svg/shield.svg",
@@ -410,7 +410,7 @@
       }
     },
     {
-      "_id": "c58d81df63796265",
+      "_id": "c58d81df4f429187",
       "name": "Wired Reflexes",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -444,7 +444,7 @@
       }
     },
     {
-      "_id": "c58d81df63796265",
+      "_id": "c58d81dfa501b985",
       "name": "Skillwires",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -478,7 +478,7 @@
       }
     },
     {
-      "_id": "c58d81df67656172",
+      "_id": "c58d81dfe417a0e2",
       "name": "Silencer",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",
@@ -512,7 +512,7 @@
       }
     },
     {
-      "_id": "c58d81df67656172",
+      "_id": "c58d81df9dfa565b",
       "name": "Explosive Ammo",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",
@@ -546,7 +546,7 @@
       }
     },
     {
-      "_id": "c58d81df67656172",
+      "_id": "c58d81df6b7c08f1",
       "name": "Toyota Elite",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",

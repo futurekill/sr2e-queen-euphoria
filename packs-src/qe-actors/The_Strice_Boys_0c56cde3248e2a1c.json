@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "0c56cde3736b696c",
+      "_id": "0c56cde37bcff0cb",
       "name": "Armed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "0c56cde3736b696c",
+      "_id": "0c56cde35ebbd47f",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "0c56cde3736b696c",
+      "_id": "0c56cde3d6e3de08",
       "name": "Etiquette (Street)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "0c56cde3736b696c",
+      "_id": "0c56cde35bd7d0dc",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "0c56cde3736b696c",
+      "_id": "0c56cde3406fe756",
       "name": "Stealth",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "_id": "0c56cde3736b696c",
+      "_id": "0c56cde36c87e82b",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -355,7 +355,7 @@
       }
     },
     {
-      "_id": "0c56cde377656170",
+      "_id": "0c56cde3de455f9b",
       "name": "Seco LD 120",
       "type": "weapon",
       "img": "icons/svg/target.svg",
@@ -410,7 +410,7 @@
       }
     },
     {
-      "_id": "0c56cde377656170",
+      "_id": "0c56cde318ec7cc1",
       "name": "Stun Baton",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
@@ -468,7 +468,7 @@
       }
     },
     {
-      "_id": "0c56cde377656170",
+      "_id": "0c56cde33aca6610",
       "name": "Uzi III",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/uzi-iii.webp",
@@ -527,7 +527,7 @@
       }
     },
     {
-      "_id": "0c56cde361726d6f",
+      "_id": "0c56cde3cf13db95",
       "name": "Armor Vest With Plates",
       "type": "armor",
       "img": "icons/svg/shield.svg",

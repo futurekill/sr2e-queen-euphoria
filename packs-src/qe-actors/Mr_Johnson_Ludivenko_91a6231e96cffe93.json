@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "91a6231e736b696c",
+      "_id": "91a6231e7ee2e426",
       "name": "Computer Theory",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "91a6231e736b696c",
+      "_id": "91a6231e101c43e9",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "91a6231e736b696c",
+      "_id": "91a6231e403acf5e",
       "name": "Negotiation",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "91a6231e736b696c",
+      "_id": "91a6231ef0168c1b",
       "name": "Psychology",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "91a6231e736b696c",
+      "_id": "91a6231e4d3cf966",
       "name": "History",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "_id": "91a6231e63796265",
+      "_id": "91a6231e3ad13ea7",
       "name": "Datajack",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -350,7 +350,7 @@
       }
     },
     {
-      "_id": "91a6231e63796265",
+      "_id": "91a6231e9daa6084",
       "name": "Headware Memory",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",

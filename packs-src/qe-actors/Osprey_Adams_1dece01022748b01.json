@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece010a2aa5d6b",
       "name": "Armed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece01064152295",
       "name": "Car",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece0104c2c40b8",
       "name": "Demolitions",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece0101752570e",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece01021da039d",
       "name": "Etiquette (Media)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece0100c7731c8",
       "name": "Etiquette (Street)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -355,7 +355,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece010858d56a6",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -394,7 +394,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece01011279eb8",
       "name": "Interrogation",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -433,7 +433,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece0102708c612",
       "name": "Leadership",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -472,7 +472,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece01066af8c15",
       "name": "Negotiation",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -511,7 +511,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece010580c59ec",
       "name": "Stealth",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -550,7 +550,7 @@
       }
     },
     {
-      "_id": "1dece010736b696c",
+      "_id": "1dece0109d484671",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -589,7 +589,7 @@
       }
     },
     {
-      "_id": "1dece01077656170",
+      "_id": "1dece010cbb55fbc",
       "name": "Colt Manhunter",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/colt-manhunter.webp",
@@ -647,7 +647,7 @@
       }
     },
     {
-      "_id": "1dece01077656170",
+      "_id": "1dece010e5dee328",
       "name": "Monofilament Whip",
       "type": "weapon",
       "img": "systems/sr2e/assets/item_icons/weapons/monofilament-whip.webp",
@@ -706,7 +706,7 @@
       }
     },
     {
-      "_id": "1dece01061726d6f",
+      "_id": "1dece01093502a5e",
       "name": "Armor Jacket",
       "type": "armor",
       "img": "icons/svg/shield.svg",
@@ -741,7 +741,7 @@
       }
     },
     {
-      "_id": "1dece01063796265",
+      "_id": "1dece010ea52b214",
       "name": "Chipjack",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -775,7 +775,7 @@
       }
     },
     {
-      "_id": "1dece01063796265",
+      "_id": "1dece0102e679054",
       "name": "Datasoft Link",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -809,7 +809,7 @@
       }
     },
     {
-      "_id": "1dece01063796265",
+      "_id": "1dece0101272ecbb",
       "name": "Retinal Modification",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -843,7 +843,7 @@
       }
     },
     {
-      "_id": "1dece01063796265",
+      "_id": "1dece0103f142287",
       "name": "Retractable Razors",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -877,7 +877,7 @@
       }
     },
     {
-      "_id": "1dece01063796265",
+      "_id": "1dece010081a2857",
       "name": "Skillwire",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -911,7 +911,7 @@
       }
     },
     {
-      "_id": "1dece01063796265",
+      "_id": "1dece010b3fb390d",
       "name": "Smartgun Link",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -945,7 +945,7 @@
       }
     },
     {
-      "_id": "1dece01063796265",
+      "_id": "1dece0102d1ad74e",
       "name": "Wired Reflexes",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -979,7 +979,7 @@
       }
     },
     {
-      "_id": "1dece01067656172",
+      "_id": "1dece010a9ba5da5",
       "name": "BMW 330LS",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",
@@ -1013,7 +1013,7 @@
       }
     },
     {
-      "_id": "1dece01067656172",
+      "_id": "1dece01095956224",
       "name": "Explosive Ammunition",
       "type": "gear",
       "img": "icons/svg/item-bag.svg",

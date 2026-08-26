@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "adf7c8ac736b696c",
+      "_id": "adf7c8ac60de340d",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "adf7c8ac736b696c",
+      "_id": "adf7c8aca0ffa463",
       "name": "Firearms",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "adf7c8ac736b696c",
+      "_id": "adf7c8acfc2d879f",
       "name": "Unarmed Combat",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "adf7c8ac77656170",
+      "_id": "adf7c8ac440a3e3f",
       "name": "Ceska Black Scorpion",
       "type": "weapon",
       "img": "icons/svg/target.svg",
@@ -293,7 +293,7 @@
       }
     },
     {
-      "_id": "adf7c8ac61726d6f",
+      "_id": "adf7c8ac12cf6c68",
       "name": "Armor Vest",
       "type": "armor",
       "img": "icons/svg/shield.svg",

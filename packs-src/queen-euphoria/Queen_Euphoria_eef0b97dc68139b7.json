@@ -129,7 +129,7 @@
       },
       "items": [
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a84d0b470ab",
           "name": "Conjuring",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -168,7 +168,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a84ee7c9190",
           "name": "Sorcery",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -207,7 +207,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a84bd774aec",
           "name": "Firearms",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -246,7 +246,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a8453475ff9",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -285,7 +285,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a84064c5c36",
           "name": "Etiquette (Street)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -324,7 +324,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a84f70c3a61",
           "name": "Magic Theory",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -363,7 +363,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a842434b0ff",
           "name": "Negotiation",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -402,7 +402,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a840d264ba5",
           "name": "Stealth",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -441,7 +441,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a8477643171",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -480,7 +480,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a84f092639e",
           "name": "Evaluate Magical Goods",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -519,7 +519,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a84b9d7aa19",
           "name": "Metalworking",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -558,7 +558,7 @@
           }
         },
         {
-          "_id": "b5363a84736b696c",
+          "_id": "b5363a844d9ba22c",
           "name": "Woodworking",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -597,7 +597,7 @@
           }
         },
         {
-          "_id": "b5363a847370656c",
+          "_id": "b5363a8474149694",
           "name": "Mana Bolt",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -640,7 +640,7 @@
           }
         },
         {
-          "_id": "b5363a847370656c",
+          "_id": "b5363a8430c8a746",
           "name": "Sleep",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -683,7 +683,7 @@
           }
         },
         {
-          "_id": "b5363a847370656c",
+          "_id": "b5363a84e799fec3",
           "name": "Clairvoyance",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -726,7 +726,7 @@
           }
         },
         {
-          "_id": "b5363a847370656c",
+          "_id": "b5363a84bc98ea43",
           "name": "Confusion",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -769,7 +769,7 @@
           }
         },
         {
-          "_id": "b5363a847370656c",
+          "_id": "b5363a8471067b86",
           "name": "Mask",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -812,7 +812,7 @@
           }
         },
         {
-          "_id": "b5363a847370656c",
+          "_id": "b5363a846b168c0e",
           "name": "Stimulation",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -855,7 +855,7 @@
           }
         },
         {
-          "_id": "b5363a847370656c",
+          "_id": "b5363a8404525878",
           "name": "Armor",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -898,7 +898,7 @@
           }
         },
         {
-          "_id": "b5363a847370656c",
+          "_id": "b5363a84bf454ff0",
           "name": "Levitate Person",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -941,7 +941,7 @@
           }
         },
         {
-          "_id": "b5363a84666f6375",
+          "_id": "b5363a8419a41f2b",
           "name": "Sleep Spell Focus",
           "type": "focus",
           "img": "icons/svg/aura.svg",
@@ -971,13 +971,13 @@
             "expendable": false,
             "bondedWeaponId": "",
             "spellSubtype": "specific",
-            "boundSpellId": "b5363a847370656c",
+            "boundSpellId": "b5363a8430c8a746",
             "spent": 0,
             "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Bound to Sleep and left ACTIVE. It previously shipped inactive as a workaround: the system treated a focus as a permanent bonus on every spell, so an active focus handed Craft +2 on Mana Bolt too. sr2e 0.89.0 fixed that — a focus now serves only its bound spell, from a pool of 2 dice per action shared between the casting test and the Drain test, so leaving it on is both correct and what the page describes."
           }
         },
         {
-          "_id": "b5363a8477656170",
+          "_id": "b5363a84417fd65d",
           "name": "Ares Predator",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
@@ -1036,7 +1036,7 @@
           }
         },
         {
-          "_id": "b5363a8461726d6f",
+          "_id": "b5363a84fbfa4556",
           "name": "Real Leather Clothing",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -1287,7 +1287,7 @@
       },
       "items": [
         {
-          "_id": "07633edb736b696c",
+          "_id": "07633edb48260b0c",
           "name": "Electronics",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -1326,7 +1326,7 @@
           }
         },
         {
-          "_id": "07633edb736b696c",
+          "_id": "07633edb580cae9f",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -1365,7 +1365,7 @@
           }
         },
         {
-          "_id": "07633edb736b696c",
+          "_id": "07633edb37ddc0c4",
           "name": "Etiquette (Media)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -1404,7 +1404,7 @@
           }
         },
         {
-          "_id": "07633edb736b696c",
+          "_id": "07633edb8ca19c10",
           "name": "Etiquette (Street)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -1443,7 +1443,7 @@
           }
         },
         {
-          "_id": "07633edb736b696c",
+          "_id": "07633edb2598d931",
           "name": "Negotiation",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -1482,7 +1482,7 @@
           }
         },
         {
-          "_id": "07633edb736b696c",
+          "_id": "07633edbefff48e4",
           "name": "Acting",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -1521,7 +1521,7 @@
           }
         },
         {
-          "_id": "07633edb736b696c",
+          "_id": "07633edb5e336f3a",
           "name": "Dance",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -1560,7 +1560,7 @@
           }
         },
         {
-          "_id": "07633edb736b696c",
+          "_id": "07633edb84f01d65",
           "name": "Simsense Acting",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -1599,7 +1599,7 @@
           }
         },
         {
-          "_id": "07633edb61726d6f",
+          "_id": "07633edbe532b39b",
           "name": "Long Coat",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -1634,7 +1634,7 @@
           }
         },
         {
-          "_id": "07633edb63796265",
+          "_id": "07633edbc4190a71",
           "name": "Datajack",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -1668,7 +1668,7 @@
           }
         },
         {
-          "_id": "07633edb63796265",
+          "_id": "07633edbeaac5405",
           "name": "Sense Link",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -1979,7 +1979,7 @@
       },
       "items": [
         {
-          "_id": "5ca2bfcd736b696c",
+          "_id": "5ca2bfcd95fd34d9",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -2173,7 +2173,7 @@
       },
       "items": [
         {
-          "_id": "891c9199736b696c",
+          "_id": "891c9199d6b3cd60",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -2446,7 +2446,7 @@
       },
       "items": [
         {
-          "_id": "188c2d1c67656172",
+          "_id": "188c2d1c377b78b7",
           "name": "Two-Way Radio",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -2783,7 +2783,7 @@
       },
       "items": [
         {
-          "_id": "c58d81df736b696c",
+          "_id": "c58d81df421a39e1",
           "name": "Car",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -2822,7 +2822,7 @@
           }
         },
         {
-          "_id": "c58d81df736b696c",
+          "_id": "c58d81dfc146541b",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -2861,7 +2861,7 @@
           }
         },
         {
-          "_id": "c58d81df736b696c",
+          "_id": "c58d81dffb76e782",
           "name": "Firearms",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -2900,7 +2900,7 @@
           }
         },
         {
-          "_id": "c58d81df736b696c",
+          "_id": "c58d81dfa1c27b47",
           "name": "Stealth",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -2939,7 +2939,7 @@
           }
         },
         {
-          "_id": "c58d81df736b696c",
+          "_id": "c58d81dfd81894e5",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -2978,7 +2978,7 @@
           }
         },
         {
-          "_id": "c58d81df77656170",
+          "_id": "c58d81df9525d80f",
           "name": "Browning Max-Power",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
@@ -3037,7 +3037,7 @@
           }
         },
         {
-          "_id": "c58d81df61726d6f",
+          "_id": "c58d81dfb57987ff",
           "name": "Lined Coat",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -3072,7 +3072,7 @@
           }
         },
         {
-          "_id": "c58d81df63796265",
+          "_id": "c58d81df4f429187",
           "name": "Wired Reflexes",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -3106,7 +3106,7 @@
           }
         },
         {
-          "_id": "c58d81df63796265",
+          "_id": "c58d81dfa501b985",
           "name": "Skillwires",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -3140,7 +3140,7 @@
           }
         },
         {
-          "_id": "c58d81df67656172",
+          "_id": "c58d81dfe417a0e2",
           "name": "Silencer",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -3174,7 +3174,7 @@
           }
         },
         {
-          "_id": "c58d81df67656172",
+          "_id": "c58d81df9dfa565b",
           "name": "Explosive Ammo",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -3208,7 +3208,7 @@
           }
         },
         {
-          "_id": "c58d81df67656172",
+          "_id": "c58d81df6b7c08f1",
           "name": "Toyota Elite",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -3397,7 +3397,7 @@
       },
       "items": [
         {
-          "_id": "329cdf67736b696c",
+          "_id": "329cdf67255726a1",
           "name": "Armed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -3436,7 +3436,7 @@
           }
         },
         {
-          "_id": "329cdf67736b696c",
+          "_id": "329cdf677aa49d83",
           "name": "Bike",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -3475,7 +3475,7 @@
           }
         },
         {
-          "_id": "329cdf67736b696c",
+          "_id": "329cdf67d23726b4",
           "name": "Etiquette (Street)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -3514,7 +3514,7 @@
           }
         },
         {
-          "_id": "329cdf67736b696c",
+          "_id": "329cdf67fd7c4140",
           "name": "Firearms",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -3553,7 +3553,7 @@
           }
         },
         {
-          "_id": "329cdf67736b696c",
+          "_id": "329cdf6756135f56",
           "name": "Gunnery",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -3592,7 +3592,7 @@
           }
         },
         {
-          "_id": "329cdf67736b696c",
+          "_id": "329cdf67ba89e5f6",
           "name": "Stealth",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -3631,7 +3631,7 @@
           }
         },
         {
-          "_id": "329cdf67736b696c",
+          "_id": "329cdf676bda36d2",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -3670,7 +3670,7 @@
           }
         },
         {
-          "_id": "329cdf6777656170",
+          "_id": "329cdf6711f4f4aa",
           "name": "Uzi III",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/uzi-iii.webp",
@@ -3729,7 +3729,7 @@
           }
         },
         {
-          "_id": "329cdf6777656170",
+          "_id": "329cdf67fd01d23e",
           "name": "Ares Predator",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
@@ -3788,7 +3788,7 @@
           }
         },
         {
-          "_id": "329cdf6777656170",
+          "_id": "329cdf67af362db9",
           "name": "Stun Baton",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
@@ -3846,7 +3846,7 @@
           }
         },
         {
-          "_id": "329cdf6777656170",
+          "_id": "329cdf678a612a06",
           "name": "Ingram Valiant",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/light-machine-gun-generic.webp",
@@ -3905,7 +3905,7 @@
           }
         },
         {
-          "_id": "329cdf6761726d6f",
+          "_id": "329cdf67321eb0c8",
           "name": "Armor Vest With Plates",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -3940,7 +3940,7 @@
           }
         },
         {
-          "_id": "329cdf6763796265",
+          "_id": "329cdf676152afae",
           "name": "Cybereyes",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -3974,7 +3974,7 @@
           }
         },
         {
-          "_id": "329cdf6763796265",
+          "_id": "329cdf679abbe133",
           "name": "Low-Light Vision",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -4008,7 +4008,7 @@
           }
         },
         {
-          "_id": "329cdf6763796265",
+          "_id": "329cdf671a7f756d",
           "name": "Dermal Plating",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -4042,7 +4042,7 @@
           }
         },
         {
-          "_id": "329cdf6763796265",
+          "_id": "329cdf67ff114cc7",
           "name": "Muscle Replacement",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -4076,7 +4076,7 @@
           }
         },
         {
-          "_id": "329cdf6763796265",
+          "_id": "329cdf674c2340f5",
           "name": "Retractable Razors",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -4110,7 +4110,7 @@
           }
         },
         {
-          "_id": "329cdf6763796265",
+          "_id": "329cdf670469fa72",
           "name": "Smartlink",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -4144,7 +4144,7 @@
           }
         },
         {
-          "_id": "329cdf6763796265",
+          "_id": "329cdf67596f1e16",
           "name": "Wired Reflexes",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -4178,7 +4178,7 @@
           }
         },
         {
-          "_id": "329cdf6767656172",
+          "_id": "329cdf67283d5090",
           "name": "Shock Pads",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -4212,7 +4212,7 @@
           }
         },
         {
-          "_id": "329cdf6767656172",
+          "_id": "329cdf67c21319cf",
           "name": "Smartgun Adapter",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -4246,7 +4246,7 @@
           }
         },
         {
-          "_id": "329cdf6767656172",
+          "_id": "329cdf672905fcf7",
           "name": "Harley Scorpion",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -4280,7 +4280,7 @@
           }
         },
         {
-          "_id": "329cdf6767656172",
+          "_id": "329cdf6700a251e0",
           "name": "Wrist Phone",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -4469,7 +4469,7 @@
       },
       "items": [
         {
-          "_id": "04e23b78736b696c",
+          "_id": "04e23b781ad425ec",
           "name": "Armed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -4508,7 +4508,7 @@
           }
         },
         {
-          "_id": "04e23b78736b696c",
+          "_id": "04e23b786df3698b",
           "name": "Car",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -4547,7 +4547,7 @@
           }
         },
         {
-          "_id": "04e23b78736b696c",
+          "_id": "04e23b7869a7680f",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -4586,7 +4586,7 @@
           }
         },
         {
-          "_id": "04e23b78736b696c",
+          "_id": "04e23b7836f5e149",
           "name": "Firearms",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -4625,7 +4625,7 @@
           }
         },
         {
-          "_id": "04e23b78736b696c",
+          "_id": "04e23b7844d33e0b",
           "name": "Throwing Weapons",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -4664,7 +4664,7 @@
           }
         },
         {
-          "_id": "04e23b78736b696c",
+          "_id": "04e23b787122e990",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -4703,7 +4703,7 @@
           }
         },
         {
-          "_id": "04e23b7877656170",
+          "_id": "04e23b783c02ab31",
           "name": "Ares Predator",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/ares-predator.webp",
@@ -4762,7 +4762,7 @@
           }
         },
         {
-          "_id": "04e23b7877656170",
+          "_id": "04e23b78b457fd26",
           "name": "Heckler & Koch HK227",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/hk-hk227.webp",
@@ -4821,7 +4821,7 @@
           }
         },
         {
-          "_id": "04e23b7877656170",
+          "_id": "04e23b785a1067d1",
           "name": "Concussion Grenade",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/concussion-grenade.webp",
@@ -4882,7 +4882,7 @@
           }
         },
         {
-          "_id": "04e23b7861726d6f",
+          "_id": "04e23b78bf3714e8",
           "name": "Armor Jacket",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -5072,7 +5072,7 @@
       },
       "items": [
         {
-          "_id": "f139ed74736b696c",
+          "_id": "f139ed74d8b3f8f6",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -5111,7 +5111,7 @@
           }
         },
         {
-          "_id": "f139ed74736b696c",
+          "_id": "f139ed746dd2ad5a",
           "name": "Firearms",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -5150,7 +5150,7 @@
           }
         },
         {
-          "_id": "f139ed74736b696c",
+          "_id": "f139ed748f5527dd",
           "name": "Interrogation",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -5189,7 +5189,7 @@
           }
         },
         {
-          "_id": "f139ed74736b696c",
+          "_id": "f139ed744196c716",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -5228,7 +5228,7 @@
           }
         },
         {
-          "_id": "f139ed7477656170",
+          "_id": "f139ed7483d94b6a",
           "name": "Browning Max-Power",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
@@ -5287,7 +5287,7 @@
           }
         },
         {
-          "_id": "f139ed7477656170",
+          "_id": "f139ed744ce7df36",
           "name": "Stun Baton",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
@@ -5345,7 +5345,7 @@
           }
         },
         {
-          "_id": "f139ed7461726d6f",
+          "_id": "f139ed7405d4949a",
           "name": "Armor Vest",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -5608,7 +5608,7 @@
       },
       "items": [
         {
-          "_id": "91a6231e736b696c",
+          "_id": "91a6231e7ee2e426",
           "name": "Computer Theory",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -5647,7 +5647,7 @@
           }
         },
         {
-          "_id": "91a6231e736b696c",
+          "_id": "91a6231e101c43e9",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -5686,7 +5686,7 @@
           }
         },
         {
-          "_id": "91a6231e736b696c",
+          "_id": "91a6231e403acf5e",
           "name": "Negotiation",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -5725,7 +5725,7 @@
           }
         },
         {
-          "_id": "91a6231e736b696c",
+          "_id": "91a6231ef0168c1b",
           "name": "Psychology",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -5764,7 +5764,7 @@
           }
         },
         {
-          "_id": "91a6231e736b696c",
+          "_id": "91a6231e4d3cf966",
           "name": "History",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -5803,7 +5803,7 @@
           }
         },
         {
-          "_id": "91a6231e63796265",
+          "_id": "91a6231e3ad13ea7",
           "name": "Datajack",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -5837,7 +5837,7 @@
           }
         },
         {
-          "_id": "91a6231e63796265",
+          "_id": "91a6231e9daa6084",
           "name": "Headware Memory",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -5951,7 +5951,7 @@
       },
       "items": [
         {
-          "_id": "f0da659a77656170",
+          "_id": "f0da659a0ebdf965",
           "name": "Ingram Valiant",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/light-machine-gun-generic.webp",
@@ -6159,7 +6159,7 @@
       },
       "items": [
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece010a2aa5d6b",
           "name": "Armed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6198,7 +6198,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece01064152295",
           "name": "Car",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6237,7 +6237,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece0104c2c40b8",
           "name": "Demolitions",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6276,7 +6276,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece0101752570e",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6315,7 +6315,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece01021da039d",
           "name": "Etiquette (Media)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6354,7 +6354,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece0100c7731c8",
           "name": "Etiquette (Street)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6393,7 +6393,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece010858d56a6",
           "name": "Firearms",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6432,7 +6432,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece01011279eb8",
           "name": "Interrogation",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6471,7 +6471,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece0102708c612",
           "name": "Leadership",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6510,7 +6510,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece01066af8c15",
           "name": "Negotiation",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6549,7 +6549,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece010580c59ec",
           "name": "Stealth",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6588,7 +6588,7 @@
           }
         },
         {
-          "_id": "1dece010736b696c",
+          "_id": "1dece0109d484671",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -6627,7 +6627,7 @@
           }
         },
         {
-          "_id": "1dece01077656170",
+          "_id": "1dece010cbb55fbc",
           "name": "Colt Manhunter",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/colt-manhunter.webp",
@@ -6685,7 +6685,7 @@
           }
         },
         {
-          "_id": "1dece01077656170",
+          "_id": "1dece010e5dee328",
           "name": "Monofilament Whip",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/monofilament-whip.webp",
@@ -6744,7 +6744,7 @@
           }
         },
         {
-          "_id": "1dece01061726d6f",
+          "_id": "1dece01093502a5e",
           "name": "Armor Jacket",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -6779,7 +6779,7 @@
           }
         },
         {
-          "_id": "1dece01063796265",
+          "_id": "1dece010ea52b214",
           "name": "Chipjack",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -6813,7 +6813,7 @@
           }
         },
         {
-          "_id": "1dece01063796265",
+          "_id": "1dece0102e679054",
           "name": "Datasoft Link",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -6847,7 +6847,7 @@
           }
         },
         {
-          "_id": "1dece01063796265",
+          "_id": "1dece0101272ecbb",
           "name": "Retinal Modification",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -6881,7 +6881,7 @@
           }
         },
         {
-          "_id": "1dece01063796265",
+          "_id": "1dece0103f142287",
           "name": "Retractable Razors",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -6915,7 +6915,7 @@
           }
         },
         {
-          "_id": "1dece01063796265",
+          "_id": "1dece010081a2857",
           "name": "Skillwire",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -6949,7 +6949,7 @@
           }
         },
         {
-          "_id": "1dece01063796265",
+          "_id": "1dece010b3fb390d",
           "name": "Smartgun Link",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -6983,7 +6983,7 @@
           }
         },
         {
-          "_id": "1dece01063796265",
+          "_id": "1dece0102d1ad74e",
           "name": "Wired Reflexes",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -7017,7 +7017,7 @@
           }
         },
         {
-          "_id": "1dece01067656172",
+          "_id": "1dece010a9ba5da5",
           "name": "BMW 330LS",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -7051,7 +7051,7 @@
           }
         },
         {
-          "_id": "1dece01067656172",
+          "_id": "1dece01095956224",
           "name": "Explosive Ammunition",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -7240,7 +7240,7 @@
       },
       "items": [
         {
-          "_id": "adf7c8ac736b696c",
+          "_id": "adf7c8ac60de340d",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7279,7 +7279,7 @@
           }
         },
         {
-          "_id": "adf7c8ac736b696c",
+          "_id": "adf7c8aca0ffa463",
           "name": "Firearms",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7318,7 +7318,7 @@
           }
         },
         {
-          "_id": "adf7c8ac736b696c",
+          "_id": "adf7c8acfc2d879f",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7357,7 +7357,7 @@
           }
         },
         {
-          "_id": "adf7c8ac77656170",
+          "_id": "adf7c8ac440a3e3f",
           "name": "Ceska Black Scorpion",
           "type": "weapon",
           "img": "icons/svg/target.svg",
@@ -7412,7 +7412,7 @@
           }
         },
         {
-          "_id": "adf7c8ac61726d6f",
+          "_id": "adf7c8ac12cf6c68",
           "name": "Armor Vest",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -7602,7 +7602,7 @@
       },
       "items": [
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfec44b2f81c",
           "name": "Armed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7641,7 +7641,7 @@
           }
         },
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfec63c54ac6",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7680,7 +7680,7 @@
           }
         },
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfec0959eea6",
           "name": "Etiquette (Street)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7719,7 +7719,7 @@
           }
         },
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfec24b59f96",
           "name": "Etiquette (Tribal)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7758,7 +7758,7 @@
           }
         },
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfecda18b4e2",
           "name": "Firearms",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7797,7 +7797,7 @@
           }
         },
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfece94120f1",
           "name": "Magic Theory",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7836,7 +7836,7 @@
           }
         },
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfece3d7882c",
           "name": "Negotiation",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7875,7 +7875,7 @@
           }
         },
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfec434555ff",
           "name": "Sorcery",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7914,7 +7914,7 @@
           }
         },
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfec223c810c",
           "name": "Stealth",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7953,7 +7953,7 @@
           }
         },
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfece8e967be",
           "name": "Throwing Weapons",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -7992,7 +7992,7 @@
           }
         },
         {
-          "_id": "87dbcfec736b696c",
+          "_id": "87dbcfec63ec0352",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -8031,7 +8031,7 @@
           }
         },
         {
-          "_id": "87dbcfec7370656c",
+          "_id": "87dbcfecfd19fbed",
           "name": "Power Missile",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -8074,7 +8074,7 @@
           }
         },
         {
-          "_id": "87dbcfec7370656c",
+          "_id": "87dbcfec85214345",
           "name": "Fireball",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -8117,7 +8117,7 @@
           }
         },
         {
-          "_id": "87dbcfec7370656c",
+          "_id": "87dbcfecfe9cbc45",
           "name": "Detect Enemies",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -8160,7 +8160,7 @@
           }
         },
         {
-          "_id": "87dbcfec7370656c",
+          "_id": "87dbcfecf0aa24e1",
           "name": "Mind Probe",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -8203,7 +8203,7 @@
           }
         },
         {
-          "_id": "87dbcfec7370656c",
+          "_id": "87dbcfec7267d697",
           "name": "Detox",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -8245,7 +8245,7 @@
           }
         },
         {
-          "_id": "87dbcfec7370656c",
+          "_id": "87dbcfec5d705bef",
           "name": "Entertainment",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -8288,7 +8288,7 @@
           }
         },
         {
-          "_id": "87dbcfec77656170",
+          "_id": "87dbcfec08f76d16",
           "name": "Browning Max-Power",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
@@ -8347,7 +8347,7 @@
           }
         },
         {
-          "_id": "87dbcfec77656170",
+          "_id": "87dbcfecfe8b9721",
           "name": "Pole Arm",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/pole-arm.webp",
@@ -8406,7 +8406,7 @@
           }
         },
         {
-          "_id": "87dbcfec77656170",
+          "_id": "87dbcfecbd3467ae",
           "name": "Combat Knife",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/combat-knife.webp",
@@ -8464,7 +8464,7 @@
           }
         },
         {
-          "_id": "87dbcfec61726d6f",
+          "_id": "87dbcfeccf96a7f5",
           "name": "Real Leather Clothing",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -8499,7 +8499,7 @@
           }
         },
         {
-          "_id": "87dbcfec67656172",
+          "_id": "87dbcfec7fadc1f4",
           "name": "Medicine Lodge Materials",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -8533,7 +8533,7 @@
           }
         },
         {
-          "_id": "87dbcfec67656172",
+          "_id": "87dbcfec624ff971",
           "name": "Plastic Restraints",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -8567,7 +8567,7 @@
           }
         },
         {
-          "_id": "87dbcfec67656172",
+          "_id": "87dbcfec6d6b1706",
           "name": "Firepower Ammunition",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -8756,7 +8756,7 @@
       },
       "items": [
         {
-          "_id": "5e033754736b696c",
+          "_id": "5e0337540e884ab9",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -8795,7 +8795,7 @@
           }
         },
         {
-          "_id": "5e033754736b696c",
+          "_id": "5e03375439d300f2",
           "name": "Etiquette (Media)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -8834,7 +8834,7 @@
           }
         },
         {
-          "_id": "5e033754736b696c",
+          "_id": "5e033754387b5dbe",
           "name": "Firearms",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -8873,7 +8873,7 @@
           }
         },
         {
-          "_id": "5e033754736b696c",
+          "_id": "5e03375468ad10e1",
           "name": "Negotiation",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -8912,7 +8912,7 @@
           }
         },
         {
-          "_id": "5e03375477656170",
+          "_id": "5e0337540413781d",
           "name": "Ceska vz/120",
           "type": "weapon",
           "img": "icons/svg/target.svg",
@@ -8967,7 +8967,7 @@
           }
         },
         {
-          "_id": "5e03375461726d6f",
+          "_id": "5e03375482bf4ebb",
           "name": "Armor Clothing",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -9002,7 +9002,7 @@
           }
         },
         {
-          "_id": "5e03375463796265",
+          "_id": "5e03375476ce1def",
           "name": "Datajack",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -9036,7 +9036,7 @@
           }
         },
         {
-          "_id": "5e03375463796265",
+          "_id": "5e033754029169ca",
           "name": "Display Link",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -9070,7 +9070,7 @@
           }
         },
         {
-          "_id": "5e03375463796265",
+          "_id": "5e0337548eb84def",
           "name": "Headware Memory",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -9104,7 +9104,7 @@
           }
         },
         {
-          "_id": "5e03375467656172",
+          "_id": "5e0337543b91f0f8",
           "name": "Pocket Secretary",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -9138,7 +9138,7 @@
           }
         },
         {
-          "_id": "5e03375467656172",
+          "_id": "5e033754bbaaf361",
           "name": "Wristphone",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -9327,7 +9327,7 @@
       },
       "items": [
         {
-          "_id": "2b6a986a736b696c",
+          "_id": "2b6a986ad6155988",
           "name": "Etiquette (Street)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -9366,7 +9366,7 @@
           }
         },
         {
-          "_id": "2b6a986a736b696c",
+          "_id": "2b6a986ae5c6c6e7",
           "name": "Magic Theory",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -9405,7 +9405,7 @@
           }
         },
         {
-          "_id": "2b6a986a736b696c",
+          "_id": "2b6a986a6ae72e4c",
           "name": "Sorcery",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -9444,7 +9444,7 @@
           }
         },
         {
-          "_id": "2b6a986a736b696c",
+          "_id": "2b6a986a7c34a4e4",
           "name": "Stealth",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -9483,7 +9483,7 @@
           }
         },
         {
-          "_id": "2b6a986a736b696c",
+          "_id": "2b6a986af40dfa53",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -9522,7 +9522,7 @@
           }
         },
         {
-          "_id": "2b6a986a7370656c",
+          "_id": "2b6a986a3694a0ec",
           "name": "Mana Bolt",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -9565,7 +9565,7 @@
           }
         },
         {
-          "_id": "2b6a986a7370656c",
+          "_id": "2b6a986a93c2f545",
           "name": "Powerball",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -9608,7 +9608,7 @@
           }
         },
         {
-          "_id": "2b6a986a7370656c",
+          "_id": "2b6a986af34bcc20",
           "name": "Sleep",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -9651,7 +9651,7 @@
           }
         },
         {
-          "_id": "2b6a986a7370656c",
+          "_id": "2b6a986a3c3de4b5",
           "name": "Detect Enemies",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -9694,7 +9694,7 @@
           }
         },
         {
-          "_id": "2b6a986a7370656c",
+          "_id": "2b6a986ae514d461",
           "name": "Increase [Attribute]",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -9736,7 +9736,7 @@
           }
         },
         {
-          "_id": "2b6a986a7370656c",
+          "_id": "2b6a986a8946e401",
           "name": "Treat",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -9780,7 +9780,7 @@
           }
         },
         {
-          "_id": "2b6a986a7370656c",
+          "_id": "2b6a986a073b47b9",
           "name": "Armor",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -9823,7 +9823,7 @@
           }
         },
         {
-          "_id": "2b6a986a7370656c",
+          "_id": "2b6a986a5f5d8fb6",
           "name": "Control Thoughts",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -9866,7 +9866,7 @@
           }
         },
         {
-          "_id": "2b6a986a7370656c",
+          "_id": "2b6a986a34328b07",
           "name": "Petrify",
           "type": "spell",
           "img": "icons/svg/daze.svg",
@@ -9909,7 +9909,7 @@
           }
         },
         {
-          "_id": "2b6a986a77656170",
+          "_id": "2b6a986abee29d54",
           "name": "Browning Max-Power",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/browning-max-power.webp",
@@ -9968,7 +9968,7 @@
           }
         },
         {
-          "_id": "2b6a986a77656170",
+          "_id": "2b6a986a9a0ec94e",
           "name": "Staff",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/staff.webp",
@@ -10026,7 +10026,7 @@
           }
         },
         {
-          "_id": "2b6a986a61726d6f",
+          "_id": "2b6a986ae97d59ba",
           "name": "Armor Clothing",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -10061,7 +10061,7 @@
           }
         },
         {
-          "_id": "2b6a986a67656172",
+          "_id": "2b6a986a684f09e5",
           "name": "Expendable Manipulation Fetish",
           "type": "gear",
           "img": "icons/svg/item-bag.svg",
@@ -10628,7 +10628,7 @@
       },
       "items": [
         {
-          "_id": "0c56cde3736b696c",
+          "_id": "0c56cde37bcff0cb",
           "name": "Armed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -10667,7 +10667,7 @@
           }
         },
         {
-          "_id": "0c56cde3736b696c",
+          "_id": "0c56cde35ebbd47f",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -10706,7 +10706,7 @@
           }
         },
         {
-          "_id": "0c56cde3736b696c",
+          "_id": "0c56cde3d6e3de08",
           "name": "Etiquette (Street)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -10745,7 +10745,7 @@
           }
         },
         {
-          "_id": "0c56cde3736b696c",
+          "_id": "0c56cde35bd7d0dc",
           "name": "Firearms",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -10784,7 +10784,7 @@
           }
         },
         {
-          "_id": "0c56cde3736b696c",
+          "_id": "0c56cde3406fe756",
           "name": "Stealth",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -10823,7 +10823,7 @@
           }
         },
         {
-          "_id": "0c56cde3736b696c",
+          "_id": "0c56cde36c87e82b",
           "name": "Unarmed Combat",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -10862,7 +10862,7 @@
           }
         },
         {
-          "_id": "0c56cde377656170",
+          "_id": "0c56cde3de455f9b",
           "name": "Seco LD 120",
           "type": "weapon",
           "img": "icons/svg/target.svg",
@@ -10917,7 +10917,7 @@
           }
         },
         {
-          "_id": "0c56cde377656170",
+          "_id": "0c56cde318ec7cc1",
           "name": "Stun Baton",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/stun-baton.webp",
@@ -10975,7 +10975,7 @@
           }
         },
         {
-          "_id": "0c56cde377656170",
+          "_id": "0c56cde33aca6610",
           "name": "Uzi III",
           "type": "weapon",
           "img": "systems/sr2e/assets/item_icons/weapons/uzi-iii.webp",
@@ -11034,7 +11034,7 @@
           }
         },
         {
-          "_id": "0c56cde361726d6f",
+          "_id": "0c56cde3cf13db95",
           "name": "Armor Vest With Plates",
           "type": "armor",
           "img": "icons/svg/shield.svg",
@@ -11532,7 +11532,7 @@
       },
       "items": [
         {
-          "_id": "81087689736b696c",
+          "_id": "8108768969a1db61",
           "name": "Computer Theory",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -11571,7 +11571,7 @@
           }
         },
         {
-          "_id": "81087689736b696c",
+          "_id": "8108768953b06d20",
           "name": "Etiquette (Corporate)",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -11610,7 +11610,7 @@
           }
         },
         {
-          "_id": "81087689736b696c",
+          "_id": "810876898224fba3",
           "name": "Interrogation",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -11649,7 +11649,7 @@
           }
         },
         {
-          "_id": "81087689736b696c",
+          "_id": "81087689cec609a5",
           "name": "Negotiation",
           "type": "skill",
           "img": "icons/svg/book.svg",
@@ -11688,7 +11688,7 @@
           }
         },
         {
-          "_id": "8108768963796265",
+          "_id": "81087689e87768f9",
           "name": "Datajack",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",
@@ -11722,7 +11722,7 @@
           }
         },
         {
-          "_id": "8108768963796265",
+          "_id": "81087689942bace3",
           "name": "Headware Memory",
           "type": "cyberware",
           "img": "icons/svg/biohazard.svg",

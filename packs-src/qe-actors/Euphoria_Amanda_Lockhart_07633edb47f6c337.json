@@ -121,7 +121,7 @@
   },
   "items": [
     {
-      "_id": "07633edb736b696c",
+      "_id": "07633edb48260b0c",
       "name": "Electronics",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "_id": "07633edb736b696c",
+      "_id": "07633edb580cae9f",
       "name": "Etiquette (Corporate)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "_id": "07633edb736b696c",
+      "_id": "07633edb37ddc0c4",
       "name": "Etiquette (Media)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "_id": "07633edb736b696c",
+      "_id": "07633edb8ca19c10",
       "name": "Etiquette (Street)",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "_id": "07633edb736b696c",
+      "_id": "07633edb2598d931",
       "name": "Negotiation",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "_id": "07633edb736b696c",
+      "_id": "07633edbefff48e4",
       "name": "Acting",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -355,7 +355,7 @@
       }
     },
     {
-      "_id": "07633edb736b696c",
+      "_id": "07633edb5e336f3a",
       "name": "Dance",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -394,7 +394,7 @@
       }
     },
     {
-      "_id": "07633edb736b696c",
+      "_id": "07633edb84f01d65",
       "name": "Simsense Acting",
       "type": "skill",
       "img": "icons/svg/book.svg",
@@ -433,7 +433,7 @@
       }
     },
     {
-      "_id": "07633edb61726d6f",
+      "_id": "07633edbe532b39b",
       "name": "Long Coat",
       "type": "armor",
       "img": "icons/svg/shield.svg",
@@ -468,7 +468,7 @@
       }
     },
     {
-      "_id": "07633edb63796265",
+      "_id": "07633edbc4190a71",
       "name": "Datajack",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",
@@ -502,7 +502,7 @@
       }
     },
     {
-      "_id": "07633edb63796265",
+      "_id": "07633edbeaac5405",
       "name": "Sense Link",
       "type": "cyberware",
       "img": "icons/svg/biohazard.svg",

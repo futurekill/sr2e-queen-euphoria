@@ -2,6 +2,17 @@
 
 ## Unreleased — Visual handouts
 
+### Fixed
+- **Every NPC was silently missing most of their items.** `itemId` hex-ENCODED
+  `kind:name:seq` instead of hashing it; hex doubles the length, so
+  `slice(0,16)` kept only the first four characters — `skil`, `weap`, `cybe` —
+  and the name never reached the id. Every skill on an actor shared one id, and
+  Foundry keeps the last document written under a given id. **137 of 195
+  embedded items, 70%, never reached the table.** Juan Diablo imported with one
+  skill out of seven and one weapon out of four. `npm run validate` now asserts
+  embedded item ids are unique per actor.
+
+
 **The Act 1 meet is now fully cast** — Juan Diablo, Mr. Johnson and Johnson's
 bodyguard. All three are cropped out of the *Off and Running* handout: Diablo
 on the Harley, Johnson facing camera by the Toyota Elite, and the chauffeur
