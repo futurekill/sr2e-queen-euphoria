@@ -160,121 +160,220 @@ const JOURNALS = [
   ]),
 
   journal("Player Handouts", [
-    page("Player Handouts", "The MegaMedia Contract (p.63)",
-      `<p><em>Carrone puts this in front of the team before the Act 2 run. Signing is
-       <strong>non-negotiable</strong> — a runner who refuses does not go.</em></p>
-       <p><strong>Parties.</strong> An agreement dated 2050 between <strong>MegaMedia Incorporated</strong>
-       of Seattle UCAS, a multinational corporation, and the runner, who the document calls
-       the <em>Contractee</em>. Signed for MegaMedia by <strong>Robert Carrone, Vice President</strong>,
-       and countersigned by <strong>August Dorn, Independent Contract Overseer</strong>, "as overseen
-       by, in accordance with Intermediary Law."</p>
-       <p><strong>What the runner agrees to.</strong></p>
+    page("Player Handouts", "How to use these",
+      `<p>The four pages that follow are <strong>verbatim transcriptions</strong> of the handouts
+       printed in <em>Queen Euphoria</em> (FASA 7304), pages 63&ndash;65. Book typos are preserved
+       — "conclusionn", "neccessary", "MEGAGMEDIA" in clause 6, and the MegaMedia clause numbering
+       that restarts at 5 — so that what your players read is what the book prints.</p>
+       <p><strong>When each one goes out:</strong></p>
        <ul>
-         <li>Make all due and proper effort to carry out the Mission, using every resource at their disposal.</li>
-         <li>Return any weaponry, electronic gear or vehicles MegaMedia supplies, minus expendables —
-             and be <em>personally liable</em> to repay MegaMedia for non-expendable resources lost on the run.</li>
-         <li>Discuss no item, fact or piece of data relating to the Mission with anyone, inside or outside
-             MegaMedia, without written consent from a senior PR official or a firm executive.</li>
-         <li><strong>Assign MegaMedia the dramatization rights.</strong> Motion picture, trideo, simulated
-             senses, radio and television, publication and reprint, serial and translation rights — worldwide,
-             for the full term of copyright. Carrone intends to <em>record the rescue</em> and this is the
-             clause that lets him.</li>
-         <li>Never undertake a Mission against MegaMedia connected to these events <strong>in perpetuity</strong>,
-             and no Mission of any kind against MegaMedia for <strong>thirty days</strong> after this one ends.</li>
+         <li><strong>Handout 1</strong> (Speedprint, Business) — during Legwork on Strice Foods.
+             The book cues it in the Strice business profile: <em>"Give players handout 1."</em></li>
+         <li><strong>Handout 2</strong> (Speedprint, Metro) — after the Act 1 job. It is the public
+             reaction to Euphoria's <em>first</em> disappearance, the one the runners carried out.</li>
+         <li><strong>The MegaMedia contract</strong> — Carrone puts it in front of them before the
+             Act 2 run. Signing is non-negotiable; a runner who refuses does not go.</li>
+         <li><strong>The News-Intelligencer</strong> — only if the players succeed. The book's own
+             caption: <em>"If the players are successful, give them this to read."</em></li>
        </ul>
-       <p><strong>What MegaMedia agrees to.</strong> Support the Contractee to the best of their ability
-       within the agreed timeframe; provide all available information and intelligence on the Mission;
-       assume full responsibility under the <strong>Corporate Interaction Act of 2038</strong>, filed with
-       the Center For Corporate Actions in Paris; and pay the agreed sums — <em>less any amount MegaMedia
-       decides to withhold for non-compliance with the letter or spirit of the above.</em></p>
-       <p><em>Point that last clause out to any player who skims. It is Carrone's leash.</em></p>`),
+       <p>The book follows through on Handout 2's last paragraph: the second show at the coliseum
+       ends in rioting, and the city cancels the third.</p>`),
 
-    page("Player Handouts", "Seattle Speedprint — Business (Handout 1, p.65)",
-      `<p><em>Give this during legwork on Strice Foods. The book cues it in the Strice business profile:
-       "Give players handout 1."</em></p>
-       <p><strong>Excerpt from the Business Section of the Seattle Speedprint.</strong></p>
-       <p>Strice Foods Inc. has picked Seattle as the test market for a new stuffer, <strong>Amber Gel</strong>,
-       and it has hit the glutted stuffer market hard enough to look like the company's biggest seller.
-       Strice is known for its <strong>Faucet Flavors</strong> line of soy-flavoring agents and has never held
-       more than a small share of the stuffer trade; executives clearly mean to change that. After a month of
-       Seattle testing, demand is running ahead of what Strice can supply.</p>
-       <p>Two things about the product are strange. The first is the <strong>secrecy</strong>. Concealing
-       ingredients and production methods is normal in the stuffer business; concealing the <em>location of the
-       production site</em> is not, and it is rumored that even members of the Strice board do not know the
-       product's secrets. <strong>Vincent Burroughs</strong>, the executive responsible for Amber Gel, is one of
-       the few who does.</p>
-       <p>The second is the <strong>marketing</strong>. Burroughs' team has booked the simsense star
-       <strong>Euphoria</strong> for three public appearances in Seattle — a star who has never made a public
-       personal appearance before, at what must have been enormous cost, to promote a product that already
-       cannot meet demand. Nor has Strice moved to regional or continental production of an obvious success.</p>
-       <p>The paper's verdict: Strice is a coin-flip investment. Get full production running and they capture a
-       huge share; delay much longer and rival stuffer producers will field clone products and take the niche.
-       Amber Gel's success has not gone unnoticed in competitors' boardrooms.</p>`),
+    page("Player Handouts", "PLAYER HANDOUT 1 — Speedprint, Business (p.65)",
+      `<p><strong>Excerpt from the Business Section of the Seattle Speedprint</strong></p>
+       <p>Strice Foods Inc. has chosen Seattle as its test marketing area for a new stuffer named
+       Amber Gel. The new product is hitting the glutted stuffer market with a bang and promises to
+       become one of Strice Foods' biggest sellers. Some mystery surrounds the product, however, both
+       in its top-secret production and in the bizarre strategies used to market it.</p>
+       <p>Strice Foods, well known for their Faucet Flavors line of soy-flavoring agents, has held
+       only a small share of the large stuffer market. Top executives apparently want to turn that
+       around with the company's new product, Amber Gel. After a month of testing in the Seattle
+       area, the product has met with enormous success. It appears that Strice Foods cannot keep up
+       with demand for the product in the rapidly growing Seattle market.</p>
+       <p>Vincent Burroughs, the Strice executive responsible for the success of Amber Gel, is one of
+       the few Strice Foods personnel who is privy to the secrets of Amber Gel. It is not new for a
+       stuffer manufacturer to conceal the ingredients and production techniques of its stuffers, but
+       secrecy measures have never been taken to the extremes seen in the case of Amber Gel. It is not
+       only the product's ingredients and production methods that are secret but even the location of
+       the production site is a mystery. It is rumored that even members of Strice Foods' Board of
+       Directors remain ignorant of the product's secrets.</p>
+       <p>More alarming than its secrecy are the strange marketing strategies employed by Burroughs
+       and his team. They have managed to book the simsense star Euphoria for three public appearances
+       in Seattle to support Amber Gel. These appearances come on top of a demand that already exceeds
+       the current supply of their product. As Euphoria has never before made a public personal
+       appearance, these promotions must certainly have cost Strice Foods a bundle of nuyen. Nuyen
+       better spent increasing their production in the Seattle area.</p>
+       <p>It is also a mystery why Strice Foods hasn't gone ahead with regional or continental
+       production and distribution of a product that is such an obvious success. Perhaps Strice Foods
+       was correct in choosing Burroughs to start the product off, but now Amber Gel's success may
+       have gone beyond Burroughs' business and managerial skills.</p>
+       <p>The confusion surrounding the product makes Strice Foods a risky investment, the potential
+       for either profit or loss are about equal at the moment. If Strice Foods and Vincent Burroughs
+       can get full-scale production started, they'll capture a huge market share. Too much delay,
+       however, and rival stuffer producers will surely bring out clone products to beat Amber Gel to
+       the market niche. You can be sure that Amber Gel's success has not gone unnoticed in the
+       boardrooms of Strice Foods competitors.</p>`),
 
-    page("Player Handouts", "Seattle Speedprint — Metro (Handout 2, p.65)",
-      `<p><em>The public reaction to Euphoria's <strong>first</strong> disappearance — the one the runners
-       themselves carried out. Give it after the Act 1 job.</em></p>
-       <p><strong>Excerpt from the Metro Section of the Seattle Speedprint.</strong></p>
-       <p><strong>Amanda Lockhart</strong>, better known as the simsense star <strong>Euphoria</strong>, vanished
-       from her penthouse home on <strong>Thursday night</strong>, days before she was due to make several weekend
-       appearances around Seattle. <strong>Lone Star</strong> says an investigation is underway. The only detail
-       officially released is that the star was definitely kidnapped. No suspects have been named.</p>
-       <p><strong>Vincent Burroughs</strong>, speaking for Strice Foods, blames rival corporations — Euphoria's
-       weekend appearances were to promote the company's Amber Gel. Rivals, he said, <em>"were jealous of the
-       success of our new product. They had to prevent Euphoria's promotions,"</em> and called the kidnapping
-       the kind of underhanded technique to expect from competitors.</p>
-       <p>Lone Star would neither confirm nor deny that a corporate extraction team was responsible. One Lone Star
-       source did allow that the evidence on the scene does <em>not</em> look like professional work, citing
-       <em>"the type of weapons apparently used and the sloppiness of execution"</em> as pointing to a
-       <strong>fan cult gang</strong> rather than a team of professionals.</p>
-       <p>With Euphoria absent, the first promotional event at the <strong>Renraku Arcology</strong> went ahead
-       on Friday afternoon anyway. Attendance was meager and the crowd restless and angry. Strice announced it
-       would not cancel the two remaining events; a city government spokesman said the shows might have to be
-       cancelled to stop riots breaking out when Euphoria fails to appear.</p>
-       <p><em>GM note: the book follows through — the second show at the coliseum ends in rioting, and the city
-       cancels the third.</em></p>`),
+    page("Player Handouts", "PLAYER HANDOUT 2 — Speedprint, Metro (p.65)",
+      `<p><strong>Excerpt from the Metro Section of the Seattle Speedprint</strong></p>
+       <p>Amanda Lockhart, otherwise known as the simsense star Euphoria, disappeared from her
+       penthouse home Thursday night. Her disappearance came shortly before Euphoria was scheduled to
+       make several weekend appearances in the Seattle area. Lone Star spokesmen say that an
+       investigation is underway. The only officially released information is that the star was
+       definitely kidnapped, but no suspects were mentioned.</p>
+       <p>Vincent Burroughs, Strice Foods spokesman, blames rival corporations for the star's
+       disappearance. Euphoria's scheduled weekend appearances were to be promotions for Strice Foods'
+       new Amber Gel product. In an interview, Burroughs stated that rival companies "were jealous of
+       the success of our new product. They had to prevent Euphoria's promotions, and [kidnapping
+       Euphoria] is the kind of underhanded techniques you can expect from our competitors." Lone Star
+       would not confirm or deny the possibility that a corporate extraction team was responsible for
+       the kidnapping. One Lone Star source did admit that evidence on the scene suggests that the
+       kidnapping did not appear to have been a professional job. He cited that "the type of weapons
+       apparently used and the sloppiness of execution suggests the likelihood that a fan cult gang was
+       responsible rather than a team of professionals."</p>
+       <p>Though Euphoria was absent, the first scheduled promotional event at the Renraku Arcology was
+       not cancelled Friday afternoon. Attendance was meager and the crowd restless and angry. Strice
+       Foods announced that it was not planning to cancel either of the succeeding two promotional
+       events, either. One city government spokesman announced that it might have to cancel the shows
+       to prevent riots from breaking out among the crowds when Euphoria did not appear.</p>`),
 
-    page("Player Handouts", "Seattle News-Intelligencer — if the team succeeds (p.64)",
-      `<p><em>The book's instruction is explicit: <strong>if the players are successful, give them this to
-       read.</strong> Dated January 15, 14:00, Local Seattle Stories.</em></p>
-       <p><strong>STRICE DROPS AMBER GEL.</strong> Strice Foods has suspended distribution of Amber Gel.
-       Company representatives denied the move had anything to do with the cancelled Euphoria promotions a week
-       earlier, and separately denied published reports that <strong>MegaMedia had launched a military operation
-       against the Amber Gel production facility</strong>. MegaMedia had no comment. Industry analyst
-       <strong>Nik Elliot</strong> was baffled: <em>"Amber Gel is their numero uno. Why on earth would they kill
-       it?"</em></p>
-       <p><strong>EUPHORIA RETIRES, FANS WAIL.</strong> MegaMedia announced that its highest-grossing star will
-       retire once her latest sim is finished. Spokesperson <strong>Angela Lane</strong> cited "personal
-       confidentiality" and would not say whether the retirement is connected to the abduction.
-       <strong>Knight Errant</strong> is investigating alongside Lone Star and has issued no statement; rumors
-       persist that the abduction was a failed kidnapping by a deranged fan.</p>
-       <p>Euphoria will make no public statement until <em>Against the Hive Masters</em> — formerly titled
-       <em>Jungle Princess</em> — is complete. Her long-time manager <strong>Robert Carrone</strong> says it is
-       already over budget and not close to done.</p>
-       <p><strong>Lou Buckminster</strong>, founder and president of the fan club <strong>Euphoriacs</strong>,
-       took it badly: <em>"It can't be true! She wouldn't do that to us! She wouldn't leave us like this. We're
-       her fans, we made her famous! She owes us!"</em> He urged fans worldwide to fax the star and change her
-       mind. Industry insiders speculate the retirement stems from friction with frequent co-star
-       <strong>Hans Vandenburg</strong>, which MegaMedia publicists deny — Carrone: <em>"Sure she bugs him
-       occasionally, but she does that to everyone."</em></p>
-       <p><strong>Elsewhere on the page:</strong> the European policlub <em>the Revenants</em> claims the bombing
-       of a Werner-Voss corporate shuttle over the English Channel, 175 dead; Lone Star confiscates over 20,000
-       BTL chips breaking a smuggling ring; Lone Star's city contract comes up for renewal next week; travel into
-       tribal lands may be further restricted; the Universal Brotherhood announces three more Barrens missions.</p>
-       <p><em>That Universal Brotherhood line is not filler. Leave it in.</em></p>`),
+    page("Player Handouts", "Seattle News-Intelligencer — success handout (p.64)",
+      `<p><em>GAMEMASTER'S NOTE: If the players are successful, give them this to read.</em></p>
+       <p><strong>Seattle News-Intelligencer Update-Net January 15/14:00/Local Seattle Stories</strong></p>
+       <h3>TODAY'S HEADLINES:</h3>
+       <p><strong>INTERNATIONAL</strong><br>
+       &bull; A European policlub known as "the Revenants" takes credit for the recent bombing of
+       corporate shuttle.<br>
+       &bull; A demonstration by Australian government employees demanding higher pay increases is
+       forcibly broken up with the aid of several corporate security teams.</p>
+       <p><strong>LOCAL</strong><br>
+       &bull; City officials warn that travel into all tribal lands may be further restricted.<br>
+       &bull; Lone Star confiscates over 20,000 BTL chips in breaking up one of the city's largest
+       smuggling rings.<br>
+       &bull; Universal Brotherhood announces plans for three more Barrens missions.</p>
+       <p><strong>BUSINESS</strong><br>
+       &bull; Lone Star's city contract is up for renewal. Negotiations begin next week.<br>
+       &bull; Strice Foods announces it is withdrawing its new product, Amber Gel, from the market.</p>
+       <p><strong>ENTERTAINMENT</strong><br>
+       &bull; MegaMedia announces the retirement of their mega-big simstar, Euphoria.</p>
+       <p><strong>SPORTS</strong><br>
+       &bull; "Mauler" Tate, star of the Screamers, is given his unconditional release for refusal to
+       take experimental steroids.</p>
+       <h3>REVENANTS CLAIM BOMB</h3>
+       <p>LONDON (BNI)&mdash; The elusive European policlub known as "the Revenants" today claimed
+       responsibility for last week's bombing of the Werner-Voss corporate shuttle on its run from
+       Berlin to London. The shuttle, a British National Aerospace T306, exploded over the English
+       Channel, killing all 175 aboard. From examined wreckage, aviation experts have determined the
+       cause to be an incendiary device. How the device was planted in spite of stringent security
+       measures remains a mystery.</p>
+       <p>It has been reported that BBC-VI received an extensive data-pak from the Revenants detailing
+       the nature and placement of the explosive device. Authorities have yet to release any
+       information, pending further investigation. Continued on page I2.</p>
+       <h3>STRICE DROPS AMBER GEL</h3>
+       <p>SEATTLE (API)&mdash; In a surprise move, Strice Foods today announced that it was suspending
+       distribution of its popular stuffer, Amber Gel. Strice representatives denied reports that this
+       was in any way connected to the cancelled Euphoria promotions just over a week ago.</p>
+       <p>Strice representives also denied published reports that MegaMedia, the simsense giant, had
+       launched a military operation against Strice's Amber Gel production facility last month.
+       MegaMedia had no comment.</p>
+       <p>Industry experts reacted with amazement at the Strice announcement. "That's wild," said Nik
+       Elliot, industry analyst. "Amber Gel is their numero uno. Why on earth would they kill it?"
+       Continued on page B1</p>
+       <h3>EUPHORIA RETIRES, FANS WAIL</h3>
+       <p>SEATTLE (EntNet)&mdash;MegaMedia Inc., the simsense conglomerate, announced yesterday that
+       their highest-grossing star, Euphoria, would be retiring following the completion of her latest
+       sim. MegaMedia spokesperson Angela Lane, citing "personal confidentiality," refused comment on
+       whether or not the star's retirement was linked to her recent abduction. Knight Errant Security
+       is conducting an investigation into the abduction along with local Lone Star forces, but it has
+       not yet issued a statement. Rumors continue to circulate as to the nature of that abduction,
+       some saying it was a failed kidnapping by a deranged fan.</p>
+       <p>According to Lane, Euphoria would not be making a public statement until after the completion
+       of <em>Against the Hive Masters</em> (formerly <em>Jungle Princess</em>), her latest project
+       currently in studio production at MegaMedia. Euphoria's long-time manager, Robert Carrone, has
+       said that <em>Hive Masters</em> is already over-budget and is still not close to completion.</p>
+       <p>Lou Buckminster, founder amd president of the international Euphoria fanclub, Euphoriacs,
+       expressed shock and disbelief. "It can't really be true! She wouldn't do that to us! She
+       wouldn't leave us like this. We're her fans, we made her famous! She owes us!" Mr. Buckminster
+       went on to encourage all of Euphoria's fans worldwide to fax the star and convince her to
+       reconsider her retirement.</p>
+       <p>Euphoria burst upon the simsense scene in 2048 with <em>Shotgun Blues</em>, a bizarre tale of
+       a crazed Indian who kidnapped a native tourist and dragged her through the Native American
+       Nations while he searched for his long-lost shotgun.</p>
+       <p>Industry insiders continue to speculate that Euphoria's retirement stems from personal
+       conflict with her frequent co-star, Hans Vandenburg. MegaMedia publicists, however, deny such
+       rumors. Said Carrone, "Sure she bugs him occasionally, but she does that to everyone."</p>
+       <p><em>Go 1: Local News / 2: World News / 3: Sports News / 4: Weather Update / 5: Business Report
+       / 6: Lifestyle features / 7: Entertainment</em></p>`),
 
-    page("Player Handouts", "Module extras — not from the book",
-      `<p><em>These are ours, not FASA's. Kept because they are useful at the table, labelled so nobody
-       mistakes them for printed handouts.</em></p>
-       <p><strong>If Euphoria is lost or transformed.</strong> The adventure prints no failure handout. If you
-       want one, the honest shape is a follow-up to the Speedprint Metro piece: MegaMedia confirms the star
-       "remains missing", no group claims responsibility, and the trade press starts asking who MegaMedia hired.
-       Note that a failed run also means the Hive Queen scenario has run its course — read
-       <em>Picking Up The Pieces</em> before improvising consequences.</p>
-       <p><strong>The penthouse simsense recording.</strong> The clue itself <em>is</em> in the book: Euphoria's
-       sense link was still recording when Craft's Soldiers came through the wall, and the chip is what the
-       runners recover. The playback description in earlier versions of this module was invented prose. Describe
-       it yourself, or read the penthouse scene (p.30–33) and narrate from that.</p>`)
+    page("Player Handouts", "MEGAMEDIA INCORPORATED — Contract (p.63)",
+      `<p style="text-align:center"><strong>MEGAMEDIA INCORPORATED</strong></p>
+       <p><strong>CONTRACT</strong></p>
+       <p>This Agreement, in consideration of the mutual covenants of the parties heretofore mentioned,
+       is made at ______________, this ____ day of ___________ 2050 by and between <strong>MEGAMEDIA
+       INCORPORATED</strong>, Seattle UCAS, a Multinational Corporation, (herein called
+       <strong>"MEGAMEDIA CORPORATION"</strong>), and</p>
+       <p>_______________________________ (herein "Contractee").</p>
+       <p><strong>THE CONTRACTEE</strong></p>
+       <p>1. Hereby warrants that he shall make all due and proper effort to undertake the operation for
+       <strong>MEGAMEDIA INCORPORATED</strong> as described below&mdash;</p>
+       <p style="text-align:center">(Attach sufficient Riders as neccessary)</p>
+       <p>(herein called "Mission") and that he will attempt to accomplish said mission using all
+       resources at his disposal in a proper and efficient manner. Said resources, provided by
+       <strong>MEGAMEDIA INCORPORATED</strong>, as stated below, if consisting of physical weaponry,
+       electronic gear, or vehicles will be returned to <strong>MEGAMEDIA INCORPORATED</strong> at the
+       conclusionn of said Mission, minus expendables.</p>
+       <p>2. States that he shall be exclusively responsible for return of said resources and will be,
+       and is, solely responsible for recompensation of <strong>MEGAMEDIA INCORPORATED</strong> for
+       non-expendable resources lost during the course of the Mission.</p>
+       <p>3. Agrees to discuss no item, fact, piece of information, or data relating to said Mission to
+       anyone inside or outside of <strong>MEGAMEDIA INCORPOATED</strong> without the expressed written
+       consent of a senior official of <strong>MEGAMEDIA INCORPORATED</strong> from the public relations
+       department, or an executive of the firm.</p>
+       <p>4. Hereby assigns and transfers to <strong>MEGAMEDIA INCORPORATED</strong> and its assigns the
+       following rights:</p>
+       <p>a. All rights in the work of dramatization, motion picture, trideo, simulated senses,
+       television rights (including rights of mechanical recording, transmission and reproduction by
+       radio, television and any other medium known or to be known), in the United Canadian and American
+       States, and in its possessions, and in all foreign countries.</p>
+       <p>b. The full and exclusive right to publish, print, reprint, copy, sell, vend and market the
+       work and any subsequent or revised editions thereof (including regular trade and "paperback"
+       editions), during the whole term of its copyright and all the renewals thereof in the United
+       Canadian and American States and its possessions, and throughout the world.</p>
+       <p>c. Second and third serial rights, abridgement, condensation, selection, and other serial and
+       publication rights following book publication, of, in, or to said work in the United Canadian and
+       American States. This includes the rights to issue or license to issue said work in a Book Club
+       edition.</p>
+       <p>d. The sole and exclusive right to grant licenses for the publication of said work or parts
+       thereof in the English language, or for translations of said work into foreign languages, and for
+       the exercise of the other rights enumerated in paragraphs a, b, c above, in any foreign country.</p>
+       <p>5. Agrees to accomplish said Mission at indicated time, within the means at his disposal, in
+       exchange for the terms of payment indicated below.</p>
+       <p>6 The Contractee agrees not to undertake a Mission against <strong>MEGAGMEDIA
+       CORPORATION</strong> in any way connected to the facts or circumstances of this contracted
+       Mission, in perpetuity, and agrees not to undertake any Mission of any kind against
+       <strong>MEGAMEDIA CORPORATION</strong> for thirty (30) days following the completion of this
+       contracted Mission.</p>
+       <p><strong>MEGAMEDIA CORPORATION AGREES:</strong></p>
+       <p>5. To support the Contractee to the best of their ability in the execution of the contracted
+       Mission within the time frame specified in separate negotiations.</p>
+       <p>6. To provide the Contractee with all available information and intelligence regarding said
+       contract Mission and its inclusive elements.</p>
+       <p>7. To assume full responsibility for said Mission within the agreements and provisions of the
+       Corporate Interaction Act of 2038 as agreed to and signed by <strong>MEGAMEDIA CORPORATION</strong>,
+       and filed with the Center For Corporate Actions, Paris, France, on the date of inception.</p>
+       <p>8 To pay to the Contractee less any sum of money which <strong>MEGAMEDIA CORPORATION</strong>
+       may be required to deduct or withhold by reason of non-compliance with the letter or spirit of
+       aforementioned contract points, the following sums on the following schedule:</p>
+       <p>This agreement shall be binding upon and inure to the benefit of the executors, administrators
+       and assigns of the Contractees and upon the successors and assigns of <strong>MEGAMEDIA
+       CORPORATION</strong>.</p>
+       <p>IN WITNESS WHEREOF, the parties have executed this agreement and affixed their signatures
+       hereto on the date first above mentioned.</p>
+       <p>CONTRACTEE _____________________________</p>
+       <p>MEGAMEDIA CORPORATION, by _____________________________<br>
+       Robert Carrone, Vice President</p>
+       <p>As Overseen By, in accordance with Intermediary Law, _____________________________<br>
+       August Dorn, Independent Contract Overseer</p>`)
   ])
 ];
 

@@ -2,6 +2,13 @@
 
 ## Unreleased — Visual handouts
 
+### Changed
+- **Player Handouts are now verbatim transcriptions** of the four handouts the
+  book prints (p.63–65), replacing text that had been authored from scratch and
+  matched nothing in the adventure. Book typos are preserved deliberately —
+  "conclusionn", "neccessary", "MEGAGMEDIA", and the MegaMedia clause numbering
+  that restarts at 5 — so what the players read is what the book prints.
+
 ### Fixed
 - **Every NPC was silently missing most of their items.** `itemId` hex-ENCODED
   `kind:name:seq` instead of hashing it; hex doubles the length, so
