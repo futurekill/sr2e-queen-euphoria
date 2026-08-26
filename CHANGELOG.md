@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased — Visual handouts
+## 0.3.0 — Visual handouts, the Act 1 cast, and the real Player Handouts
 
 ### Changed
 - **Player Handouts are now verbatim transcriptions** of the four handouts the

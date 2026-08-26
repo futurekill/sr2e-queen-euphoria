@@ -2,7 +2,7 @@
   "id": "sr2e-queen-euphoria",
   "title": "Shadowrun 2E: Queen Euphoria",
   "description": "The Queen Euphoria adventure (FASA 7304), modernized to the Shadowrun 2nd Edition system: cast, insect Hive, the Strice Matrix host, GM journals, and scenes, ready to import.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "compatibility": {
     "minimum": "13",
     "verified": "13"

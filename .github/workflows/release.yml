@@ -40,9 +40,13 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Install dependencies & build packs
+      # Validate BEFORE building. A bad pack should fail the release rather than
+      # get compiled into a LevelDB and shipped — the id collision that dropped
+      # 70% of every actor's items would have been caught here.
+      - name: Install dependencies, validate, build packs
         run: |
           npm install --no-audit --no-fund
+          npm run validate
           npm run build-packs
           ls -1 packs/
 
