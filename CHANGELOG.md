@@ -8,7 +8,9 @@ Gunnery 4. That is a 1st-edition pointer, so the stats here are the **SR2E**
 Street Samurai (core p.62, read from a 300dpi render) plus the Gunnery 4 the
 adventure adds, with the loadout QE specifies: Uzi III with shock pads and a
 Smartgun Adapter, armored vest with plates, and an armed Harley — the bike
-weaponry being the reason he has Gunnery at all. He still needs a portrait.
+weaponry being the reason he has Gunnery at all. His portrait is cropped out of the *Off and Running* handout — he is the
+razorguy on the Harley in it, so the face on his token and the scene the
+players get shown are the same picture.
 
 
 Twenty-one pieces of player-facing art, wired as image pages in a new

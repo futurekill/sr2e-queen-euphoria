@@ -2,7 +2,7 @@
   "_id": "329cdf671df38405",
   "name": "Juan Diablo",
   "type": "npc",
-  "img": null,
+  "img": "modules/sr2e-queen-euphoria/assets/portraits/juan-diablo.webp",
   "effects": [],
   "flags": {},
   "_stats": {
@@ -927,7 +927,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": null,
+      "src": "modules/sr2e-queen-euphoria/assets/portraits/juan-diablo.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

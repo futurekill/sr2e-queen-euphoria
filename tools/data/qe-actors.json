@@ -1664,8 +1664,8 @@
         }
       ],
       "bio": "<p><strong>A gang punk turned samurai on Ludivenko's money.</strong> Diablo is the razorguy at the first meet (<em>Off and Running</em>, p.8&ndash;10), riding escort for the Johnson's Toyota Elite. He backs up the Company Man if trouble breaks out, and otherwise stays quiet.</p><p><strong>He is the runners' contact line.</strong> Diablo hands over his wristphone number so the team can reach their employers &mdash; which makes him the obvious thread to pull if they later want to work out who really hired them.</p><p><strong>Loadout per the adventure:</strong> Uzi III with shock pads and a Smartgun Adapter, an armored vest with plates, and the weaponry mounted on his Harley. The SR2E archetype also carries an Ares Predator, a Data Display, a DocWagon platinum contract and 17,270&yen; of starting cash; use those only if you need them, since QE names a narrower kit.</p>",
-      "art": "$fromSystem",
-      "$artNote": "PLACEHOLDER — falls back to the system default. Every other cast member has a custom portrait (CHANGELOG 0.2.0); Diablo still needs one.",
+      "art": "juan-diablo.webp",
+      "$artNote": "Cropped from the Off and Running scene art — he is the razorguy on the Harley in it, so the portrait and the scene the players are shown are literally the same picture. Regenerate with `npm run handouts`.",
       "$poolNote": "Combat Pool is derived by the system as (Q+I+W)/2 = (5+5+5)/2 = 7, which matches the archetype's printed Combat: 7. Nothing to store."
     }
   ],

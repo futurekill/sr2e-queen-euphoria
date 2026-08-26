@@ -43,5 +43,23 @@ for (const h of handouts) {
   const dim = execFileSync("magick", ["identify", "-format", "%wx%h", out]).toString();
   console.log(`  ${h.out.padEnd(38)} ${dim.padEnd(10)} ${(o / 1024).toFixed(0)}KB`);
 }
+// Cast portraits cropped out of the scene art (square, 1024, per the module's
+// portrait convention) so the faces match the places they appear in.
+const { portraits = [] } = JSON.parse(readFileSync("tools/data/qe-handouts.json", "utf8"));
+if (portraits.length) {
+  mkdirSync("assets/portraits", { recursive: true });
+  console.log("");
+  for (const p of portraits) {
+    const src = join(SRC_DIR, p.src);
+    if (!existsSync(src)) { console.error(`  MISSING source for ${p.out}: ${p.src}`); process.exit(1); }
+    const out = join("assets/portraits", p.out);
+    execFileSync("magick", [
+      src, "-crop", p.crop, "+repage", "-resize", "1024x1024!",
+      "-unsharp", "0x0.75+0.6+0.02", "-quality", "88", "-strip", out
+    ]);
+    console.log(`  portrait ${p.out.padEnd(28)} ${(statSync(out).size / 1024).toFixed(0)}KB  (${p.name})`);
+  }
+}
+
 const mb = n => (n / 1024 / 1024).toFixed(1);
 console.log(`\n${handouts.length} handouts: ${mb(totalIn)}MB PNG -> ${mb(totalOut)}MB WebP`);
