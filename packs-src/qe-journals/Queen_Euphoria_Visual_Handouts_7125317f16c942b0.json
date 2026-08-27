@@ -117,6 +117,158 @@
       }
     },
     {
+      "_id": "438a5de5f67b1189",
+      "name": "Euphoria — Arrival",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/euphoria-paparazzi-arrival.webp",
+      "image": {
+        "caption": "Stepping out of the car into a wall of lenses, bodyguards already closing. The everyday version of her security: close, practised, and not remotely expecting trouble."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 300,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "8926caa54fa37f64",
+      "name": "Euphoria — No Pictures",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/euphoria-paparazzi-hand.webp",
+      "image": {
+        "caption": "Hand up, face down, being walked through the scrum. Use this one when the team asks what she is like in public — she is not enjoying it."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 400,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "7bbd25a194cea6b2",
+      "name": "Euphoria — Rain, Green Gown",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/euphoria-paparazzi-rain.webp",
+      "image": {
+        "caption": "Boxed in by her detail on a wet street, one flashbulb behind. The gap between the star and the four people whose job is her body."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 500,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "f806d3aa10607ff9",
+      "name": "Euphoria — Outside the Elysium",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/sr2e-queen-euphoria/assets/handouts/euphoria-paparazzi-elysium.webp",
+      "image": {
+        "caption": "Knight Errant riot armour, plainly marked, working a club door. This is the best single image for the Security Around Euphoria legwork (p.58): it shows the runners exactly who they would have to go through."
+      },
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "system": {},
+      "sort": 600,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
       "_id": "157cb93ac7aeca6c",
       "name": "Amber Gel — Strice Foods Banner",
       "type": "image",
@@ -137,7 +289,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 300,
+      "sort": 700,
       "ownership": {
         "default": -1
       },
@@ -175,7 +327,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 400,
+      "sort": 800,
       "ownership": {
         "default": -1
       },
@@ -213,7 +365,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 500,
+      "sort": 900,
       "ownership": {
         "default": -1
       },
@@ -251,7 +403,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 600,
+      "sort": 1000,
       "ownership": {
         "default": -1
       },
@@ -289,7 +441,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 700,
+      "sort": 1100,
       "ownership": {
         "default": -1
       },
@@ -327,7 +479,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 800,
+      "sort": 1200,
       "ownership": {
         "default": -1
       },
@@ -365,7 +517,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 900,
+      "sort": 1300,
       "ownership": {
         "default": -1
       },
@@ -403,7 +555,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 1000,
+      "sort": 1400,
       "ownership": {
         "default": -1
       },
@@ -441,7 +593,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 1100,
+      "sort": 1500,
       "ownership": {
         "default": -1
       },
@@ -479,7 +631,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 1200,
+      "sort": 1600,
       "ownership": {
         "default": -1
       },
@@ -517,7 +669,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 1300,
+      "sort": 1700,
       "ownership": {
         "default": -1
       },
@@ -555,7 +707,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 1400,
+      "sort": 1800,
       "ownership": {
         "default": -1
       },
@@ -593,7 +745,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 1500,
+      "sort": 1900,
       "ownership": {
         "default": -1
       },
@@ -631,7 +783,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 1600,
+      "sort": 2000,
       "ownership": {
         "default": -1
       },
@@ -669,7 +821,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 1700,
+      "sort": 2100,
       "ownership": {
         "default": -1
       },
@@ -707,7 +859,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 1800,
+      "sort": 2200,
       "ownership": {
         "default": -1
       },
@@ -745,7 +897,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 1900,
+      "sort": 2300,
       "ownership": {
         "default": -1
       },
@@ -783,7 +935,7 @@
         "volume": 0.5
       },
       "system": {},
-      "sort": 2000,
+      "sort": 2400,
       "ownership": {
         "default": -1
       },

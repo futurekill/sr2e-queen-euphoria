@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+### Added
+- Four **paparazzi shots of Euphoria**, bringing the visual handouts to 25. They
+  sit between her portrait and the Amber Gel campaign — the press pack a team
+  would study while casing her. The Elysium shot shows Knight Errant riot armour
+  plainly marked, which makes it the one to put in front of players doing the
+  *Security Around Euphoria* legwork (p.58).
+
 ## 0.3.0 — Visual handouts, the Act 1 cast, and the real Player Handouts
 
 ### Changed
