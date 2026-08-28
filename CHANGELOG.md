@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.3.1 — Paparazzi
 
 ### Added
 - Four **paparazzi shots of Euphoria**, bringing the visual handouts to 25. They
