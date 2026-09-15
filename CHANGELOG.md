@@ -1,5 +1,38 @@
 # Changelog
 
+
+## Unreleased
+
+### Changed — the Pacific Towers Lobby is a real battle map
+
+The composited maps read as diagrams, and the reason was a bad trade in
+`PLAN-battlemap-art.md`. It ruled out whole-image generation because a diffusion
+model cannot place a wall on a grid line. True, and over-weighted: Foundry walls
+are separate vector objects that only have to agree with what a player can SEE.
+What the composite bought in pixel-exact alignment it paid for in flat ambient
+light, one floor tile repeating six times a room, and props pasted with no
+contact shadow.
+
+The Lobby is now generated whole, with the floorplan supplied as an image
+REFERENCE so the layout still comes from the book — the missing half of the
+earlier condo attempt, which was generated with no layout reference at all and
+invented a floorplan nobody would live in. Room rectangles and walls are now
+measured off the ART; the doors land on the painted doors.
+
+- `externalArt: true` on a scene makes the generator skip the SVG compositor and
+  leave the raster alone. Without it, re-running silently paints the composite
+  back over a finished map — the way re-running gen-portraits once un-wired every
+  Rigger Black Book vehicle portrait.
+
+### Fixed — every material tile was a kaleidoscope
+
+The generator's cheap route to "seamless" is to mirror one quadrant into all
+four. It *is* seamless, and the mirror axes read as hard diagonal lattices across
+the floor. All ten tiles were built this way, including the four from August, so
+Royal Meadows has it too. `tools/check-textures.mjs` is now a build gate that
+measures both axes and rejects a mirrored tile; the prompt forbids it explicitly.
+Six new lobby materials pass; **the four original tiles still need regenerating.**
+
 ## 0.3.1 — Paparazzi
 
 ### Added

@@ -199,6 +199,15 @@ function build(s) {
 // It is also original artwork rather than a reproduction of the printed plan,
 // which the module's copyright stance requires.
 function background(s) {
+  // A scene whose art was MADE rather than composited opts out here. Without
+  // this, re-running the generator silently paints the SVG composite back over
+  // a finished map — the same way re-running gen-portraits once un-wired every
+  // vehicle portrait in the Rigger Black Book. The room rectangles are still
+  // read below for walls and doors; only the raster is left alone.
+  if (s.externalArt) {
+    console.log(`  ${s.name}: external art, background left as-is (${s.art})`);
+    return;
+  }
   const M = PX_PER_M;
   const W = s.widthM * M, H = s.heightM * M;
   const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -227,9 +236,13 @@ function background(s) {
   let floors = "", decals = "";
   for (const r of rooms) {
     const x = r.x * M, y = r.y * M, w = r.w * M, h = r.h * M;
-    floors += r.material
-      ? `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="url(#m-${r.material})"/>`
-      : `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#1d1d27"/>`;
+    // `shape: "ellipse"` for the things that are not rectangular rooms — the
+    // Pacific Towers pool is an oval on the printed plan, and a rectangle of
+    // water sitting in an oval pool room reads as a mistake.
+    const fill = r.material ? `url(#m-${r.material})` : "#1d1d27";
+    floors += r.shape === "ellipse"
+      ? `<ellipse cx="${x + w/2}" cy="${y + h/2}" rx="${w/2}" ry="${h/2}" fill="${fill}"/>`
+      : `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${fill}"/>`;
     // Boundary-safe wear: soft blobs at a frequency unrelated to the tile pitch,
     // which is what breaks up the repeat without needing edge-matched variants.
     // Small and many, not few and huge. The first pass used a 0.5-1.9 m radius,

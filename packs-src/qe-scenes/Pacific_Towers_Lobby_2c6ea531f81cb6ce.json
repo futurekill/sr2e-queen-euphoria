@@ -4,8 +4,8 @@
   "navigation": true,
   "navName": "",
   "active": false,
-  "width": 2700,
-  "height": 2000,
+  "width": 2600,
+  "height": 2100,
   "padding": 0.25,
   "backgroundColor": "#15151f",
   "background": {
@@ -58,10 +58,10 @@
     {
       "_id": null,
       "c": [
-        0,
-        0,
-        2700,
-        0
+        60,
+        120,
+        930,
+        120
       ],
       "light": 20,
       "sight": 20,
@@ -82,10 +82,10 @@
     {
       "_id": null,
       "c": [
-        2700,
-        0,
-        2700,
-        2000
+        930,
+        120,
+        930,
+        550
       ],
       "light": 20,
       "sight": 20,
@@ -106,10 +106,10 @@
     {
       "_id": null,
       "c": [
-        0,
-        2000,
-        2700,
-        2000
+        60,
+        550,
+        460,
+        550
       ],
       "light": 20,
       "sight": 20,
@@ -130,16 +130,1888 @@
     {
       "_id": null,
       "c": [
-        0,
-        0,
-        0,
-        2000
+        560,
+        550,
+        930,
+        550
       ],
       "light": 20,
       "sight": 20,
       "sound": 20,
       "move": 20,
       "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        60,
+        120,
+        60,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        120,
+        1160,
+        120
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1160,
+        120,
+        1160,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        550,
+        990,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1100,
+        550,
+        1160,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1400,
+        120,
+        1600,
+        120
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        120,
+        1600,
+        200
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        280,
+        1600,
+        330
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1400,
+        330,
+        1600,
+        330
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1400,
+        120,
+        1400,
+        330
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        330,
+        1600,
+        400
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        480,
+        1600,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1400,
+        550,
+        1600,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1400,
+        330,
+        1400,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        120,
+        2540,
+        120
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2540,
+        120,
+        2540,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        550,
+        1950,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2050,
+        550,
+        2540,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        280,
+        1600,
+        400
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        160,
+        550,
+        460,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        560,
+        550,
+        990,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1100,
+        550,
+        1950,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2050,
+        550,
+        2430,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2430,
+        550,
+        2430,
+        730
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        160,
+        730,
+        2430,
+        730
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        160,
+        550,
+        160,
+        730
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        290,
+        730,
+        930,
+        730
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        730,
+        930,
+        860
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        960,
+        930,
+        1100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        290,
+        1100,
+        930,
+        1100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        290,
+        730,
+        290,
+        1100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        730,
+        2200,
+        730
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2200,
+        730,
+        2200,
+        900
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2200,
+        980,
+        2200,
+        1100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        1100,
+        2200,
+        1100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        730,
+        1600,
+        860
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        960,
+        1600,
+        1100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2200,
+        730,
+        2360,
+        730
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2360,
+        730,
+        2360,
+        1100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2200,
+        1100,
+        2360,
+        1100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        110,
+        1100,
+        930,
+        1100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        1100,
+        930,
+        1280
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        1380,
+        930,
+        1580
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        110,
+        1580,
+        930,
+        1580
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        110,
+        1100,
+        110,
+        1580
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        1100,
+        2360,
+        1100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2360,
+        1100,
+        2360,
+        1580
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        1580,
+        2360,
+        1580
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        1100,
+        1600,
+        1280
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        1380,
+        1600,
+        1580
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        730,
+        1600,
+        730
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        960,
+        1600,
+        1280
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        1380,
+        1600,
+        1780
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        1780,
+        1600,
+        1780
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        960,
+        930,
+        1280
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        1380,
+        930,
+        1780
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1100,
+        1780,
+        1460,
+        1780
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1460,
+        1780,
+        1460,
+        1950
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1100,
+        1950,
+        1190,
+        1950
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1260,
+        1950,
+        1300,
+        1950
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1370,
+        1950,
+        1460,
+        1950
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1100,
+        1780,
+        1100,
+        1950
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1180,
+        30,
+        1350,
+        30
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1350,
+        30,
+        1350,
+        120
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1180,
+        120,
+        1350,
+        120
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1180,
+        30,
+        1180,
+        120
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1190,
+        1950,
+        1260,
+        1950
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1300,
+        1950,
+        1370,
+        1950
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        1280,
+        930,
+        1380
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        930,
+        860,
+        930,
+        960
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        860,
+        1600,
+        960
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        1280,
+        1600,
+        1380
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2200,
+        900,
+        2200,
+        980
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        460,
+        550,
+        560,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        990,
+        550,
+        1100,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1950,
+        550,
+        2050,
+        550
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        200,
+        1600,
+        280
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1600,
+        400,
+        1600,
+        480
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
       "ds": 0,
       "doorSound": null,
       "dir": 0,
@@ -159,10 +2031,10 @@
       "source": "printed",
       "folio": 14,
       "metres": {
-        "w": 27,
-        "h": 20
+        "w": 26,
+        "h": 21
       },
-      "measuredBy": "grid period (31 px, both axes)",
+      "measuredBy": "grid period 42 px/m on a 200 dpi render of book p.14; wall runs isolated by ink thickness. Wall-to-wall footprint measures 25.8 x 20.8 m, so the scene is 26 x 21 with a 0.5 m margin. The previous 27 x 20 came from a coarser 31 px/m read.",
       "rooms": "Front entrance and guard station (four sets of double doors, computer terminal, PANICBUTTON alarm, camera, visitor-verification speaker), bar, private meeting room, lecture room doubling as a small theatre, store, garden courtyard, storeroom, men's and women's restrooms with sauna and shower, pool. Three elevators."
     }
   },
@@ -181,5 +2053,5 @@
     "default": 0
   },
   "_key": "!scenes!2c6ea531f81cb6ce",
-  "description": "<p>The building where Euphoria lives. <strong>Four Lone Star officers</strong> respond to the PANICBUTTON within five minutes; the alarm can be cancelled inside five minutes with a memorised code.</p><p>The desk guard keeps a loaded <strong>Enfield AS7 shotgun</strong> behind the desk. The courier on duty will not fight — average human, all 3s.</p><p>Elevators are thumbprint-locked and auto-select the resident's floor; bypassing needs an Electronics (5) Test, base time five minutes.</p><p><strong>Rooms:</strong> Front entrance and guard station (four sets of double doors, computer terminal, PANICBUTTON alarm, camera, visitor-verification speaker), bar, private meeting room, lecture room doubling as a small theatre, store, garden courtyard, storeroom, men's and women's restrooms with sauna and shower, pool. Three elevators.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.14. Measured 27 × 20 m by grid period (31 px, both axes) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+  "description": "<p>The building where Euphoria lives. <strong>Four Lone Star officers</strong> respond to the PANICBUTTON within five minutes; the alarm can be cancelled inside five minutes with a memorised code.</p><p>The desk guard keeps a loaded <strong>Enfield AS7 shotgun</strong> behind the desk. The courier on duty will not fight — average human, all 3s.</p><p>Elevators are thumbprint-locked and auto-select the resident's floor; bypassing needs an Electronics (5) Test, base time five minutes.</p><p><strong>Rooms:</strong> Front entrance and guard station (four sets of double doors, computer terminal, PANICBUTTON alarm, camera, visitor-verification speaker), bar, private meeting room, lecture room doubling as a small theatre, store, garden courtyard, storeroom, men's and women's restrooms with sauna and shower, pool. Three elevators.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.14. Measured 26 × 21 m by grid period 42 px/m on a 200 dpi render of book p.14; wall runs isolated by ink thickness. Wall-to-wall footprint measures 25.8 x 20.8 m, so the scene is 26 x 21 with a 0.5 m margin. The previous 27 x 20 came from a coarser 31 px/m read. — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
 }
