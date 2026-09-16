@@ -1,7 +1,7 @@
 # Changelog
 
 
-## Unreleased
+## 0.4.0 — Real battle maps
 
 ### Changed — Euphoria's Condo and the Royal Meadows flat are real battle maps
 
