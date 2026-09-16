@@ -29,7 +29,244 @@
       "art": "euphorias-condo.webp",
       "nav": true,
       "rooms": "Entrance hall (Knight Errant guard posted), foyer with security station, living room (largest, entertainment centre, telecom desk, three more guards), recording studio, enclosed greenhouse balcony, workout room, closet, bathroom, kitchen, dining room, Osprey's bedroom, spare bedroom (Stone's), master bedroom, master bathroom. One elevator.",
-      "notes": "<p>Euphoria's home, and where she is taken. The condo doors have <strong>Barrier Rating 5</strong> and need an Electronics (4) Test to bypass, base time two minutes.</p><p>The greenhouse balcony is enclosed in clear impact plastic at <strong>Barrier Rating 6</strong>.</p>"
+      "notes": "<p>Euphoria's home, and where she is taken. The condo doors have <strong>Barrier Rating 5</strong> and need an Electronics (4) Test to bypass, base time two minutes.</p><p>The greenhouse balcony is enclosed in clear impact plastic at <strong>Barrier Rating 6</strong>.</p>",
+      "externalArt": true,
+      "$artNote": "Background generated whole with the condo guide's floorplan panel supplied as an image reference (tools/gen-condo-map.sh), then upscaled 2x Lanczos and back down to 2500x2400. Rectangles below are measured off the ART against a 100 px/m grid, not off the printed plan — the art is the authority for geometry now, and Foundry walls only have to agree with what a player can see.",
+      "layout": [
+        {
+          "name": "Master Bedroom (13)",
+          "x": 0.2,
+          "y": 0.2,
+          "w": 6.2,
+          "h": 4.8
+        },
+        {
+          "name": "Closet (7)",
+          "x": 6.7,
+          "y": 0.2,
+          "w": 4.6,
+          "h": 3.7
+        },
+        {
+          "name": "Bathroom (8)",
+          "x": 11.4,
+          "y": 0.2,
+          "w": 3.8,
+          "h": 3.7
+        },
+        {
+          "name": "Osprey's Bedroom (11)",
+          "x": 15.4,
+          "y": 0.2,
+          "w": 7.9,
+          "h": 3.8
+        },
+        {
+          "name": "Master Bathroom (14)",
+          "x": 0.2,
+          "y": 5.5,
+          "w": 5.4,
+          "h": 3.2
+        },
+        {
+          "name": "Workout Room (6)",
+          "x": 0.2,
+          "y": 8.9,
+          "w": 4.4,
+          "h": 6.6
+        },
+        {
+          "name": "Greenhouse Balcony (5)",
+          "x": 0.2,
+          "y": 15.7,
+          "w": 6.2,
+          "h": 7.8
+        },
+        {
+          "name": "Living Room (3)",
+          "x": 7.9,
+          "y": 16.2,
+          "w": 8.1,
+          "h": 7.3
+        },
+        {
+          "name": "Recording Studio (4)",
+          "x": 17.5,
+          "y": 15.7,
+          "w": 7.0,
+          "h": 7.8
+        },
+        {
+          "name": "Spare Bedroom (12)",
+          "x": 19.0,
+          "y": 4.3,
+          "w": 5.5,
+          "h": 4.0
+        },
+        {
+          "name": "Dining Room (10)",
+          "x": 19.0,
+          "y": 8.5,
+          "w": 5.5,
+          "h": 3.7
+        },
+        {
+          "name": "Kitchen (9)",
+          "x": 19.0,
+          "y": 12.4,
+          "w": 5.5,
+          "h": 3.6
+        },
+        {
+          "name": "Elevator",
+          "x": 10.2,
+          "y": 6.6,
+          "w": 3.0,
+          "h": 1.9
+        },
+        {
+          "name": "Entrance Hall (1)",
+          "x": 10.0,
+          "y": 8.6,
+          "w": 3.3,
+          "h": 5.6
+        },
+        {
+          "name": "Foyer (2)",
+          "x": 9.3,
+          "y": 14.2,
+          "w": 4.7,
+          "h": 1.6
+        }
+      ],
+      "doors": [
+        {
+          "seg": [
+            5.0,
+            5.0,
+            6.0,
+            5.0
+          ],
+          "$note": "master bedroom into the hall"
+        },
+        {
+          "seg": [
+            8.6,
+            3.9,
+            9.6,
+            3.9
+          ],
+          "$note": "closet into the hall"
+        },
+        {
+          "seg": [
+            12.8,
+            3.9,
+            13.8,
+            3.9
+          ],
+          "$note": "bathroom into the hall"
+        },
+        {
+          "seg": [
+            16.4,
+            4.0,
+            17.4,
+            4.0
+          ],
+          "$note": "Osprey's bedroom into the hall"
+        },
+        {
+          "seg": [
+            5.6,
+            6.6,
+            5.6,
+            7.6
+          ],
+          "$note": "master bathroom, off the hall"
+        },
+        {
+          "seg": [
+            4.6,
+            11.0,
+            4.6,
+            12.0
+          ],
+          "$note": "workout room, off the hall"
+        },
+        {
+          "seg": [
+            6.4,
+            18.6,
+            6.4,
+            19.6
+          ],
+          "$note": "greenhouse balcony, off the living room"
+        },
+        {
+          "seg": [
+            19.0,
+            5.8,
+            19.0,
+            6.8
+          ],
+          "$note": "spare bedroom (Stone), off the hall"
+        },
+        {
+          "seg": [
+            19.0,
+            9.8,
+            19.0,
+            10.8
+          ],
+          "$note": "dining room, off the hall"
+        },
+        {
+          "seg": [
+            19.0,
+            13.6,
+            19.0,
+            14.6
+          ],
+          "$note": "kitchen, off the hall"
+        },
+        {
+          "seg": [
+            17.5,
+            18.8,
+            17.5,
+            19.8
+          ],
+          "$note": "recording studio, off the living room"
+        },
+        {
+          "seg": [
+            11.2,
+            14.2,
+            12.2,
+            14.2
+          ],
+          "$note": "entrance hall into the foyer"
+        },
+        {
+          "seg": [
+            11.2,
+            15.8,
+            12.2,
+            15.8
+          ],
+          "$note": "foyer into the living room"
+        },
+        {
+          "seg": [
+            11.2,
+            8.5,
+            12.2,
+            8.5
+          ],
+          "$note": "private lift into the entrance hall"
+        }
+      ]
     },
     {
       "_id": "2c6ea531f81cb6ce",
@@ -276,73 +513,64 @@
       "doors": [
         {
           "seg": [
-            1.8,
-            3.2,
-            2.7,
-            3.2
-          ],
-          "$note": "bedroom to hall"
-        },
-        {
-          "seg": [
-            3.5,
-            1.6,
-            3.5,
-            2.4
-          ],
-          "$note": "closet, off the bedroom — a dead end, not a through-route"
-        },
-        {
-          "seg": [
-            4.8,
-            3.2,
-            5.6,
-            3.2
-          ],
-          "$note": "bath to hall"
-        },
-        {
-          "seg": [
-            7.0,
-            3.2,
-            7.9,
-            3.2
-          ],
-          "$note": "living to hall"
-        },
-        {
-          "seg": [
-            7.6,
+            2.0,
             4,
-            8.5,
+            2.9,
             4
           ],
-          "$note": "front door, hall onto the building corridor"
+          "$note": "front door, living room onto the building corridor"
+        },
+        {
+          "seg": [
+            5.1,
+            2.6,
+            5.9,
+            2.6
+          ],
+          "$note": "bath, off the living-room alcove"
+        },
+        {
+          "seg": [
+            6.3,
+            2.9,
+            6.3,
+            3.7
+          ],
+          "$note": "bedroom, off the living-room alcove"
+        },
+        {
+          "seg": [
+            7.4,
+            1.6,
+            8.2,
+            1.6
+          ],
+          "$note": "closet — bifold louvre doors inside the bedroom (guide panel 3)"
         },
         {
           "seg": [
             1.4,
-            6.0,
+            6.4,
             2.3,
-            6.0
+            6.4
           ],
           "$note": "neighbour 3A"
         },
         {
           "seg": [
             5.4,
-            6.0,
+            6.4,
             6.3,
-            6.0
+            6.4
           ],
           "$note": "neighbour 3C"
         },
         {
           "seg": [
             9.0,
-            6.0,
+            6.4,
             9.9,
-            6.0
+            6.4
           ],
           "$note": "neighbour 3D"
         }
@@ -350,135 +578,135 @@
       "$layoutNote": "Layout AUTHORED at the printed scale, not traced. The dimensions and the room list come from the book; the arrangement inside them is ours. This is both more robust than extracting a scan and squarely within the module's no-reproduced-layout rule.",
       "layout": [
         {
-          "name": "Bedroom (2)",
+          "name": "Living / Kitchenette (1)",
           "x": 1,
           "y": 1,
-          "w": 2.5,
-          "h": 2.2,
-          "material": "carpet-cheap",
-          "props": [
-            [
-              "bed",
-              1.62,
-              2.05,
-              0.9,
-              1.9
-            ],
-            [
-              "bed",
-              2.62,
-              2.05,
-              0.9,
-              1.9
-            ],
-            [
-              "dresser",
-              2.9,
-              2.9,
-              1.0,
-              0.45
-            ]
-          ]
-        },
-        {
-          "name": "Closet (3)",
-          "x": 3.5,
-          "y": 1,
-          "w": 1,
-          "h": 2.2,
-          "material": "carpet-cheap",
-          "props": [
-            [
-              "rail",
-              4.0,
-              1.45,
-              0.75,
-              0.3
-            ]
-          ]
-        },
-        {
-          "name": "Bath (4)",
-          "x": 4.5,
-          "y": 1,
-          "w": 1.5,
-          "h": 2.2,
-          "material": "tile-bath",
-          "props": [
-            [
-              "toilet",
-              4.85,
-              1.5,
-              0.5,
-              0.7
-            ],
-            [
-              "sink",
-              5.6,
-              1.4,
-              0.6,
-              0.45
-            ],
-            [
-              "shower",
-              5.25,
-              2.6,
-              1.15,
-              1.0
-            ]
-          ]
-        },
-        {
-          "name": "Living / Kitchenette (1)",
-          "x": 6,
-          "y": 1,
-          "w": 3,
-          "h": 2.2,
+          "w": 3.8,
+          "h": 3,
           "material": "lino-kitchen",
           "props": [
             [
               "counter",
-              7.5,
+              2.6,
               1.35,
-              2.35,
+              2.6,
               0.6
             ],
             [
               "couch",
-              7.7,
-              2.7,
-              2.0,
-              0.85
+              2.3,
+              3.4,
+              1.9,
+              0.8
             ],
             [
               "table",
-              6.75,
-              2.35,
-              1.0,
-              0.7
+              2.4,
+              2.5,
+              0.9,
+              0.6
             ],
             [
               "chair",
-              6.75,
-              1.75,
+              1.5,
+              2.5,
+              0.5,
+              0.5
+            ],
+            [
+              "chair",
+              3.3,
+              2.5,
               0.5,
               0.5
             ]
           ]
         },
         {
-          "name": "Hall",
-          "x": 1,
-          "y": 3.2,
-          "w": 8,
-          "h": 0.8,
+          "name": "Living / Kitchenette (alcove)",
+          "x": 4.8,
+          "y": 2.6,
+          "w": 1.5,
+          "h": 1.4,
           "material": "lino-kitchen",
           "props": []
         },
         {
+          "name": "Bath (4)",
+          "x": 4.8,
+          "y": 1,
+          "w": 1.5,
+          "h": 1.6,
+          "material": "tile-bath",
+          "props": [
+            [
+              "toilet",
+              5.15,
+              1.35,
+              0.5,
+              0.6
+            ],
+            [
+              "sink",
+              5.9,
+              1.3,
+              0.55,
+              0.4
+            ],
+            [
+              "shower",
+              5.5,
+              2.1,
+              1.2,
+              0.9
+            ]
+          ]
+        },
+        {
+          "name": "Bedroom (2)",
+          "x": 6.3,
+          "y": 1,
+          "w": 2.7,
+          "h": 3,
+          "material": "carpet-cheap",
+          "props": [
+            [
+              "bed",
+              7.1,
+              2.6,
+              1.4,
+              1.9
+            ],
+            [
+              "dresser",
+              8.6,
+              2.9,
+              0.45,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "Closet (3)",
+          "x": 7.0,
+          "y": 1,
+          "w": 1.6,
+          "h": 0.6,
+          "material": "carpet-cheap",
+          "props": [
+            [
+              "rail",
+              7.8,
+              1.3,
+              1.3,
+              0.35
+            ]
+          ]
+        },
+        {
           "name": "Building Corridor",
           "x": 0,
-          "y": 4,
+          "y": 4.4,
           "w": 12,
           "h": 2,
           "material": "concrete-corridor",
@@ -491,7 +719,7 @@
       ],
       "$sizeNote": "Scene is 12 x 7 m; the FLAT ITSELF is the measured 8 x 3 m at origin (1,1). The rest is the building corridor, added because a sealed flat gives the players nowhere to approach from, listen at the door, or retreat to.",
       "stairs": true,
-      "$circulationNote": "Every room opens off the hall spine. An earlier version put the closet between the bedroom and the rest of the flat, so reaching the bedroom meant walking through the closet — the closet is now a dead end off the bedroom, which is what a closet is."
+      "$circulationNote": "No internal hallway. The front door opens straight into the living / kitchenette, which turns a corner into a short alcove serving the bath and the bedroom; the closet is a reach-in wardrobe inside the bedroom with bifold louvre doors. The earlier plan gave a 24 m2 flat a full-width corridor with every room off it, which belongs in a much bigger apartment. The flat's own interior guide settles it: panel 1 shows the entry door in the living space, panel 3 shows the wardrobe."
     },
     {
       "_id": "79290bce4cf94fb5",
