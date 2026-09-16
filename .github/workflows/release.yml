@@ -73,6 +73,7 @@ jobs:
             --exclude='node_modules' --exclude='.gitignore' --exclude='*.md' \
             --exclude='docs' --exclude='package.json' --exclude='package-lock.json' \
             --exclude='packs-src' --exclude='tools' --exclude='_work' \
+            --exclude='assets/textures' --exclude='assets/props' \
             ./ staging/${{ env.MODULE_ID }}/
           cd staging && zip -r ../${{ env.MODULE_ID }}.zip ${{ env.MODULE_ID }}/ && cd ..
           unzip -l ${{ env.MODULE_ID }}.zip | head -20
