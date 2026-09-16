@@ -719,7 +719,9 @@
       ],
       "$sizeNote": "Scene is 12 x 7 m; the FLAT ITSELF is the measured 8 x 3 m at origin (1,1). The rest is the building corridor, added because a sealed flat gives the players nowhere to approach from, listen at the door, or retreat to.",
       "stairs": true,
-      "$circulationNote": "No internal hallway. The front door opens straight into the living / kitchenette, which turns a corner into a short alcove serving the bath and the bedroom; the closet is a reach-in wardrobe inside the bedroom with bifold louvre doors. The earlier plan gave a 24 m2 flat a full-width corridor with every room off it, which belongs in a much bigger apartment. The flat's own interior guide settles it: panel 1 shows the entry door in the living space, panel 3 shows the wardrobe."
+      "$circulationNote": "No internal hallway. The front door opens straight into the living / kitchenette, which turns a corner into a short alcove serving the bath and the bedroom; the closet is a reach-in wardrobe inside the bedroom with bifold louvre doors. The earlier plan gave a 24 m2 flat a full-width corridor with every room off it, which belongs in a much bigger apartment. The flat's own interior guide settles it: panel 1 shows the entry door in the living space, panel 3 shows the wardrobe.",
+      "externalArt": true,
+      "$artNote": "Background generated whole (tools/gen-royalmeadows-map.sh) with OUR OWN authored layout rendered as a schematic for the floorplan reference — not a book scan. The generator followed it noticeably more closely than it followed the Pacific Towers guide art, which is why that is now the preferred pattern. Source was 137 px/m native, so this is a DOWNSCALE to the estate's 100 px/m; no upscaling trickery needed."
     },
     {
       "_id": "79290bce4cf94fb5",

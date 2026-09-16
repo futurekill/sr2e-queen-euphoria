@@ -3,6 +3,25 @@
 
 ## Unreleased
 
+### Changed — Euphoria's Condo and the Royal Meadows flat are real battle maps
+
+Both generated whole with a floorplan supplied as an image reference, the same
+way as the Lobby. The Condo had no room layout at all before — it now carries 15
+rooms and 14 doors measured off the art. Royal Meadows was re-laid-out first:
+
+- **The flat's internal hallway is gone.** The old plan ran a 0.8 m corridor the
+  full width of a 24 m2 flat with every room opening off it, which belongs in a
+  much larger apartment. The flat's own interior guide settles it — the front
+  door opens straight into the living/kitchenette, and the closet is a shallow
+  reach-in wardrobe with bifold louvre doors, not a room. The living room now
+  turns a corner into a short open alcove serving the bath and the bedroom, and
+  the only corridor left is the building's.
+
+Its floorplan reference was OUR OWN authored layout rendered as a schematic
+rather than a book scan, and the generator followed it noticeably more closely
+than it followed the Pacific Towers guide art. That is now the preferred pattern
+for the remaining scenes.
+
 ### Changed — the Pacific Towers Lobby is a real battle map
 
 The composited maps read as diagrams, and the reason was a bad trade in
