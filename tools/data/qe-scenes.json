@@ -937,7 +937,93 @@
       "art": "hive-main-level.webp",
       "nav": true,
       "rooms": "Main area with disused conventional food-production equipment (dusty, poorly maintained), loading dock, freight elevator, small group of empty abandoned offices, stairway up to the roof and down to the Lower Level.",
-      "notes": "<p>The Amber Gel facility. Barely used by the Hive and showing only general activity at the loading dock — trucks from Strice Foods load each morning, and the drums are already waiting for them. The only person the truckers ever see is <strong>Craft</strong>.</p><p>Lighting is whatever filters through the high green-tinted windows; the power is on, so the runners can switch the fluorescents on if they want. <strong>The stairway is unlit.</strong></p><p><strong>None of the doors are locked</strong> and all are easily operable. The freight elevator is conventional and fully operational, though its control panel shows physical damage.</p>"
+      "notes": "<p>The Amber Gel facility. Barely used by the Hive and showing only general activity at the loading dock — trucks from Strice Foods load each morning, and the drums are already waiting for them. The only person the truckers ever see is <strong>Craft</strong>.</p><p>Lighting is whatever filters through the high green-tinted windows; the power is on, so the runners can switch the fluorescents on if they want. <strong>The stairway is unlit.</strong></p><p><strong>None of the doors are locked</strong> and all are easily operable. The freight elevator is conventional and fully operational, though its control panel shows physical damage.</p>",
+      "$layoutNote": "Authored from the printed plan on QE p.44, measured at 1 m = 62 px on a 220 dpi render — calibrated against the plan's own '= 1 meter' legend square, NOT the ink bounding box, because the page border rule sits outside the building and skews it by nearly 3 m. Rectangles are ours, rounded to half metres; the room list, the L-shaped footprint and the adjacencies are the book's.",
+      "layout": [
+        {
+          "name": "Main Area",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 23,
+          "h": 7,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Offices",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 3,
+          "h": 3.5,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Stairway (up to the roof)",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 1.4,
+          "h": 1.1,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Loading Dock",
+          "x": 13.5,
+          "y": 7.5,
+          "w": 10,
+          "h": 3.8,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Elevator",
+          "x": 21.6,
+          "y": 8.2,
+          "w": 1.4,
+          "h": 2.2,
+          "material": "concrete-corridor",
+          "props": []
+        }
+      ],
+      "doors": [
+        {
+          "seg": [
+            3.5,
+            1.6,
+            3.5,
+            2.6
+          ],
+          "$note": "offices onto the main floor"
+        },
+        {
+          "seg": [
+            16,
+            7.5,
+            17.2,
+            7.5
+          ],
+          "$note": "main floor to the loading dock"
+        },
+        {
+          "seg": [
+            21.6,
+            9,
+            21.6,
+            9.8
+          ],
+          "$note": "freight elevator down to the Lower Level"
+        },
+        {
+          "seg": [
+            17.5,
+            11.3,
+            19.5,
+            11.3
+          ],
+          "$note": "roller shutter onto the yard — trucks load here each morning"
+        }
+      ]
     },
     {
       "_id": "81d72ca327baf377",
@@ -951,7 +1037,346 @@
       "nav": true,
       "dark": true,
       "rooms": "16 rooms. Room 1 elevator arrival; Room 8 stairway exit; Rooms 3, 14 and 15 are Worker rooms; Room 16 is the Hive Room. Rooms 2, 4-7 and 9-13 are as Room 1.",
-      "notes": "<p><strong>The climax.</strong> Dark — neither light nor power. The air is stale and reeks sweet and pungent. Anyone who notices such things will realise there are no normal insects or rodents on this level.</p><p>Rooms are dirty and debris-filled, some with crates of basic soy foods, full or waiting to be filled.</p><p><strong>Every wall here is Barrier Rating 3</strong>, and the book is explicit that Soldiers making an all-out attack <em>\"will use the thin walls to their advantage\"</em> — build the walls breakable, not as hard scene boundaries.</p><p><strong>Printed occupants:</strong> Room 3 — six Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 8 — two Flesh Form Workers (F1). Room 14 — four Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 15 — five Flesh Form Workers (F1) and a lone Flesh Form Soldier (<strong>F5</strong>). Room 16 — the Hive Room.</p>"
+      "notes": "<p><strong>The climax.</strong> Dark — neither light nor power. The air is stale and reeks sweet and pungent. Anyone who notices such things will realise there are no normal insects or rodents on this level.</p><p>Rooms are dirty and debris-filled, some with crates of basic soy foods, full or waiting to be filled.</p><p><strong>Every wall here is Barrier Rating 3</strong>, and the book is explicit that Soldiers making an all-out attack <em>\"will use the thin walls to their advantage\"</em> — build the walls breakable, not as hard scene boundaries.</p><p><strong>Printed occupants:</strong> Room 3 — six Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 8 — two Flesh Form Workers (F1). Room 14 — four Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 15 — five Flesh Form Workers (F1) and a lone Flesh Form Soldier (<strong>F5</strong>). Room 16 — the Hive Room.</p>",
+      "$layoutNote": "Authored from the printed plan on QE p.45, same calibration as the Main Level. Sixteen numbered rooms; 16 is the Hive Room. The book gives the internal walls Barrier 3 and says the Soldiers will come straight through them rather than round, so breakableInterior is set.",
+      "breakableInterior": true,
+      "layout": [
+        {
+          "name": "Stairway (up)",
+          "x": 0.4,
+          "y": 0.4,
+          "w": 1.5,
+          "h": 1,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 8 — Worker room",
+          "x": 0.4,
+          "y": 0.4,
+          "w": 4.9,
+          "h": 2.1,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 12 — Worker room",
+          "x": 5.3,
+          "y": 0.4,
+          "w": 3.4,
+          "h": 2.1,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 14 — Worker room",
+          "x": 8.7,
+          "y": 0.4,
+          "w": 1.8,
+          "h": 3.6,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 9 — Worker room",
+          "x": 2.7,
+          "y": 2.5,
+          "w": 2.6,
+          "h": 1.5,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 13 — Worker room",
+          "x": 5.3,
+          "y": 2.5,
+          "w": 2.7,
+          "h": 1.5,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 10 — Worker room",
+          "x": 0.4,
+          "y": 4,
+          "w": 4.9,
+          "h": 2.3,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 15 — Worker room",
+          "x": 5.3,
+          "y": 4.3,
+          "w": 5.2,
+          "h": 2,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 11 — Worker room",
+          "x": 0.4,
+          "y": 6.3,
+          "w": 10.1,
+          "h": 1.5,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 16 — The Hive Room",
+          "x": 10.5,
+          "y": 0.4,
+          "w": 6.6,
+          "h": 7.4,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 3 — Worker room",
+          "x": 17.4,
+          "y": 1.5,
+          "w": 2.8,
+          "h": 4,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 4 — Worker room",
+          "x": 20.4,
+          "y": 0.4,
+          "w": 2.6,
+          "h": 1.4,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 5 — Worker room",
+          "x": 20.2,
+          "y": 1.8,
+          "w": 1.4,
+          "h": 1.1,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 6 — Worker room",
+          "x": 21.6,
+          "y": 2.2,
+          "w": 1.4,
+          "h": 1.2,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 7 — Worker room",
+          "x": 20.7,
+          "y": 3.4,
+          "w": 2.3,
+          "h": 2.1,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 2 — Worker room",
+          "x": 17.4,
+          "y": 6,
+          "w": 2.9,
+          "h": 1.8,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Room 1 — Elevator unloads here",
+          "x": 15.4,
+          "y": 7.8,
+          "w": 7.6,
+          "h": 3.6,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Elevator",
+          "x": 21.5,
+          "y": 8.3,
+          "w": 1.4,
+          "h": 1.6,
+          "material": "concrete-corridor",
+          "props": []
+        }
+      ],
+      "doors": [
+        {
+          "seg": [
+            2.1,
+            2.5,
+            3,
+            2.5
+          ],
+          "$note": "8 to 9"
+        },
+        {
+          "seg": [
+            5.3,
+            1.3,
+            5.3,
+            2.1
+          ],
+          "$note": "8 to 12"
+        },
+        {
+          "seg": [
+            6.3,
+            2.5,
+            7.1,
+            2.5
+          ],
+          "$note": "12 to 13"
+        },
+        {
+          "seg": [
+            8.7,
+            1.3,
+            8.7,
+            2.1
+          ],
+          "$note": "12 to 14"
+        },
+        {
+          "seg": [
+            8,
+            3.1,
+            8,
+            3.9
+          ],
+          "$note": "13 to 14"
+        },
+        {
+          "seg": [
+            3.2,
+            4,
+            4,
+            4
+          ],
+          "$note": "9 to 10"
+        },
+        {
+          "seg": [
+            5.3,
+            4.8,
+            5.3,
+            5.6
+          ],
+          "$note": "10 to 15"
+        },
+        {
+          "seg": [
+            2.2,
+            6.3,
+            3,
+            6.3
+          ],
+          "$note": "10 to 11"
+        },
+        {
+          "seg": [
+            7,
+            6.3,
+            7.8,
+            6.3
+          ],
+          "$note": "15 to 11"
+        },
+        {
+          "seg": [
+            10.5,
+            3,
+            10.5,
+            3.8
+          ],
+          "$note": "14 into the Hive Room"
+        },
+        {
+          "seg": [
+            10.5,
+            6.6,
+            10.5,
+            7.4
+          ],
+          "$note": "11 into the Hive Room"
+        },
+        {
+          "seg": [
+            17.4,
+            2.4,
+            17.4,
+            3.2
+          ],
+          "$note": "Hive Room into 3"
+        },
+        {
+          "seg": [
+            20.2,
+            0.4,
+            20.2,
+            1.2
+          ],
+          "$note": "4 to 3"
+        },
+        {
+          "seg": [
+            20.2,
+            2.2,
+            20.2,
+            2.9
+          ],
+          "$note": "5 to 3"
+        },
+        {
+          "seg": [
+            21.6,
+            3,
+            22.4,
+            3
+          ],
+          "$note": "6 to 7"
+        },
+        {
+          "seg": [
+            20.7,
+            4.2,
+            20.7,
+            5
+          ],
+          "$note": "3 to 7"
+        },
+        {
+          "seg": [
+            18.2,
+            6,
+            19,
+            6
+          ],
+          "$note": "Hive Room into 2"
+        },
+        {
+          "seg": [
+            18.2,
+            7.8,
+            19,
+            7.8
+          ],
+          "$note": "2 down into 1"
+        },
+        {
+          "seg": [
+            21.5,
+            9.1,
+            21.5,
+            9.7
+          ],
+          "$note": "freight elevator from the Main Level"
+        }
+      ]
     },
     {
       "_id": "e43f009012bab5dc",
