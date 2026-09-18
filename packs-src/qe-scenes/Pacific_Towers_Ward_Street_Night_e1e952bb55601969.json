@@ -1,0 +1,665 @@
+{
+  "_id": "e1e952bb55601969",
+  "name": "Pacific Towers — Ward Street (Night)",
+  "navigation": true,
+  "navName": "",
+  "active": false,
+  "width": 3600,
+  "height": 2400,
+  "padding": 0.25,
+  "backgroundColor": "#15151f",
+  "background": {
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/pacific-towers-ward-street-night.webp",
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "fit": "fill",
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff",
+    "alphaThreshold": 0
+  },
+  "foreground": null,
+  "foregroundElevation": null,
+  "thumb": null,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 1,
+    "units": "m"
+  },
+  "initial": null,
+  "tokenVision": false,
+  "fog": {
+    "exploration": false,
+    "reset": 0,
+    "overlay": null
+  },
+  "globalLight": {
+    "enabled": true
+  },
+  "darkness": 0,
+  "environment": {},
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "regions": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [
+    {
+      "_id": null,
+      "c": [
+        550,
+        0,
+        3100,
+        0
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        3100,
+        0,
+        3100,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        550,
+        350,
+        1520,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1620,
+        350,
+        1700,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1800,
+        350,
+        1960.0000000000002,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2060,
+        350,
+        2160,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2260,
+        350,
+        3100,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        550,
+        0,
+        550,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        0,
+        450,
+        0
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        450,
+        0,
+        450,
+        850
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        850,
+        450,
+        850
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        0,
+        0,
+        850
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        1850,
+        1350,
+        1850
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1350,
+        1850,
+        1350,
+        2400
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        2400,
+        1350,
+        2400
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        1850,
+        0,
+        2400
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1850,
+        1850,
+        3600,
+        1850
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        3600,
+        1850,
+        3600,
+        2400
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1850,
+        2400,
+        3600,
+        2400
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1850,
+        1850,
+        1850,
+        2400
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1520,
+        350,
+        1620,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1700,
+        350,
+        1800,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1960.0000000000002,
+        350,
+        2060,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2160,
+        350,
+        2260,
+        350
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "invented",
+      "folio": null,
+      "metres": {
+        "w": 36,
+        "h": 24
+      },
+      "measuredBy": "GM-invented. The building frontage is set to the LOBBY's measured 26 m so the two scenes agree; the street depth is chosen for play, not measured.",
+      "rooms": "Ward Street frontage: the tower's four sets of double doors under a covered drop-off, kerb and bollards, the carriageway, the far pavement with an alley mouth, and the waterfront promenade along the west flank."
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!scenes!e1e952bb55601969",
+  "description": "<p>Where the players may try to take Euphoria as she crosses the pavement to a waiting vehicle. The book prints no exterior map — this one is original and carries no authority, so resize or replace it freely.</p><p>Knight Errant maintain a detail on the door; the guard inside can hit the PANICBUTTON, and <strong>four Lone Star officers arrive in five minutes</strong> (QE p.14). A car at the kerb with the engine running is the difference between a snatch and a firefight.</p><p><strong>Rooms:</strong> Ward Street frontage: the tower's four sets of double doors under a covered drop-off, kerb and bollards, the carriageway, the far pavement with an alley mouth, and the waterfront promenade along the west flank.</p><p><em><strong>GM-invented layout.</strong> The adventure plays scenes at this location but prints no floorplan for it, so nothing here carries the book's authority. Resize or replace freely.</em></p>"
+}

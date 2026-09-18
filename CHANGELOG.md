@@ -1,6 +1,35 @@
 # Changelog
 
 
+
+## Unreleased
+
+### Added — Ward Street, outside Pacific Towers, night and day
+
+There was no map for outside the building, and the players may well try to take
+Euphoria as she crosses the pavement to a waiting car. Two scenes, 36 x 24 m:
+**Pacific Towers — Ward Street (Night)** and **(Day)**.
+
+They are the same street at different hours, not two streets that resemble each
+other: the approved night map went into the daytime generation as an image
+reference, and the night walls were then checked against the day art — every
+building edge, the water, both opposite blocks and the door line land exactly.
+One geometry, two backgrounds; switch scene for time of day.
+
+The book prints no exterior plan, so the geometry is GM-invented and says so. The
+tower frontage is set to the Lobby's measured 26 m with the door line centred on
+it, so the two scenes agree when the players come out through the lobby, and the
+four sets of double doors match p.14. For an exterior the layout describes
+BUILDING MASSES rather than rooms, which walls the frontage, Elliott Bay and the
+opposite blocks while leaving the carriageway completely open — walling the
+street as a "room" would have been exactly wrong. The alley mouth opposite is
+deliberate: a grab on the pavement needs somewhere to go that is not the road,
+and four Lone Star officers arrive five minutes after the PANICBUTTON.
+
+Named "Ward Street" rather than "Exterior" because a journal handout already
+carries the name *Pacific Towers — Exterior* (the tower photo); Ward Street is
+the book's own name for it.
+
 ## 0.4.0 — Real battle maps
 
 ### Changed — Euphoria's Condo and the Royal Meadows flat are real battle maps

@@ -1,6 +1,6 @@
 {
-  "_id": "e1e952bb55601969",
-  "name": "Pacific Towers — Exterior",
+  "_id": "e9d1497b54cb4234",
+  "name": "Pacific Towers — Ward Street (Day)",
   "navigation": true,
   "navName": "",
   "active": false,
@@ -9,7 +9,7 @@
   "padding": 0.25,
   "backgroundColor": "#15151f",
   "background": {
-    "src": "modules/sr2e-queen-euphoria/assets/scenes/pacific-towers-exterior.webp",
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/pacific-towers-ward-street-day.webp",
     "anchorX": 0.5,
     "anchorY": 0.5,
     "offsetX": 0,
@@ -660,6 +660,6 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!scenes!e1e952bb55601969",
-  "description": "<p>Where the players may try to take Euphoria as she crosses the pavement to a waiting vehicle. The book prints no exterior map — this one is original and carries no authority, so resize or replace it freely.</p><p>Knight Errant maintain a detail on the door; the guard inside can hit the PANICBUTTON, and <strong>four Lone Star officers arrive in five minutes</strong> (QE p.14). A car at the kerb with the engine running is the difference between a snatch and a firefight.</p><p><strong>Rooms:</strong> Ward Street frontage: the tower's four sets of double doors under a covered drop-off, kerb and bollards, the carriageway, the far pavement with an alley mouth, and the waterfront promenade along the west flank.</p><p><em><strong>GM-invented layout.</strong> The adventure plays scenes at this location but prints no floorplan for it, so nothing here carries the book's authority. Resize or replace freely.</em></p>"
+  "_key": "!scenes!e9d1497b54cb4234",
+  "description": "<p><strong>Daytime.</strong> Where the players may try to take Euphoria as she crosses the pavement to a waiting vehicle. The book prints no exterior map — this one is original and carries no authority, so resize or replace it freely.</p><p>Knight Errant maintain a detail on the door; the guard inside can hit the PANICBUTTON, and <strong>four Lone Star officers arrive in five minutes</strong> (QE p.14). A car at the kerb with the engine running is the difference between a snatch and a firefight.</p><p><strong>Rooms:</strong> Ward Street frontage: the tower's four sets of double doors under a covered drop-off, kerb and bollards, the carriageway, the far pavement with an alley mouth, and the waterfront promenade along the west flank.</p><p><em><strong>GM-invented layout.</strong> The adventure plays scenes at this location but prints no floorplan for it, so nothing here carries the book's authority. Resize or replace freely.</em></p>"
 }

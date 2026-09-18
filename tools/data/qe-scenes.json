@@ -501,13 +501,13 @@
     },
     {
       "_id": "e1e952bb55601969",
-      "name": "Pacific Towers — Exterior",
+      "name": "Pacific Towers — Ward Street (Night)",
       "source": "invented",
       "folio": null,
       "widthM": 36,
       "heightM": 24,
       "measuredBy": "GM-invented. The building frontage is set to the LOBBY's measured 26 m so the two scenes agree; the street depth is chosen for play, not measured.",
-      "art": "pacific-towers-exterior.webp",
+      "art": "pacific-towers-ward-street-night.webp",
       "externalArt": true,
       "nav": true,
       "rooms": "Ward Street frontage: the tower's four sets of double doors under a covered drop-off, kerb and bollards, the carriageway, the far pavement with an alley mouth, and the waterfront promenade along the west flank.",
@@ -565,9 +565,9 @@
         },
         {
           "seg": [
-            17.0,
+            17,
             3.5,
-            18.0,
+            18,
             3.5
           ],
           "$note": "front doors, set 2"
@@ -592,6 +592,100 @@
         }
       ],
       "$artNote": "Background generated whole (tools/gen-exterior-map.sh) from the layout schematic plus the tower's own exterior art. Generated 1536x1024 at aspect 1.500 against a 3600x2400 target — an exact aspect match, so the 2x overshoot upscale introduced no distortion at all. Rectangles above are re-measured off the ART; the authored guesses that drove generation were 2-3 m out."
+    },
+    {
+      "_id": "e9d1497b54cb4234",
+      "name": "Pacific Towers — Ward Street (Day)",
+      "source": "invented",
+      "folio": null,
+      "widthM": 36,
+      "heightM": 24,
+      "measuredBy": "GM-invented. The building frontage is set to the LOBBY's measured 26 m so the two scenes agree; the street depth is chosen for play, not measured.",
+      "art": "pacific-towers-ward-street-day.webp",
+      "externalArt": true,
+      "nav": true,
+      "rooms": "Ward Street frontage: the tower's four sets of double doors under a covered drop-off, kerb and bollards, the carriageway, the far pavement with an alley mouth, and the waterfront promenade along the west flank.",
+      "$layoutNote": "An EXTERIOR, so `layout` describes BUILDING MASSES rather than rooms — walls land on the solid frontages and the street stays open, which is what a vehicle grab needs. The tower frontage is 26 m to match the Lobby's measured width, and the door line sits centred on it so the two scenes line up when the players come out through the lobby.",
+      "$circulationNote": "The four door sets are the only way in or out of the tower on this map. The alley mouth opposite is deliberate: a grab on the pavement needs somewhere to go that is not the carriageway, and Knight Errant response comes up Ward Street from the east.",
+      "notes": "<p><strong>Daytime.</strong> Where the players may try to take Euphoria as she crosses the pavement to a waiting vehicle. The book prints no exterior map — this one is original and carries no authority, so resize or replace it freely.</p><p>Knight Errant maintain a detail on the door; the guard inside can hit the PANICBUTTON, and <strong>four Lone Star officers arrive in five minutes</strong> (QE p.14). A car at the kerb with the engine running is the difference between a snatch and a firefight.</p>",
+      "layout": [
+        {
+          "name": "Pacific Towers (frontage)",
+          "x": 5.5,
+          "y": 0,
+          "w": 25.5,
+          "h": 3.5,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Elliott Bay",
+          "x": 0,
+          "y": 0,
+          "w": 4.5,
+          "h": 8.5,
+          "material": "concrete-corridor",
+          "props": [],
+          "$note": "Walled so tokens cannot wander into the water. The railing is drawn on the art."
+        },
+        {
+          "name": "Opposite block — west",
+          "x": 0,
+          "y": 18.5,
+          "w": 13.5,
+          "h": 5.5,
+          "material": "concrete-corridor",
+          "props": []
+        },
+        {
+          "name": "Opposite block — east",
+          "x": 18.5,
+          "y": 18.5,
+          "w": 17.5,
+          "h": 5.5,
+          "material": "concrete-corridor",
+          "props": []
+        }
+      ],
+      "doors": [
+        {
+          "seg": [
+            15.2,
+            3.5,
+            16.2,
+            3.5
+          ],
+          "$note": "front doors, set 1 of 4 (QE p.14)"
+        },
+        {
+          "seg": [
+            17,
+            3.5,
+            18,
+            3.5
+          ],
+          "$note": "front doors, set 2"
+        },
+        {
+          "seg": [
+            19.6,
+            3.5,
+            20.6,
+            3.5
+          ],
+          "$note": "front doors, set 3"
+        },
+        {
+          "seg": [
+            21.6,
+            3.5,
+            22.6,
+            3.5
+          ],
+          "$note": "front doors, set 4"
+        }
+      ],
+      "$artNote": "Daytime pass of the SAME street. The approved night map went in as the image reference, so this is the same place at a different hour rather than a second street that resembles it — verified by overlaying the night walls on the day art: every building edge, the water, both opposite blocks and the door line land exactly. One geometry, two backgrounds; the GM switches scene for time of day."
     },
     {
       "_id": "2749f185b382f009",
