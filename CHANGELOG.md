@@ -2,7 +2,7 @@
 
 
 
-## Unreleased
+## 0.5.0 — Ward Street
 
 ### Added — Ward Street, outside Pacific Towers, night and day
 
