@@ -1,4 +1,4 @@
-name: Lint
+name: Lint & validate
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  lint:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -24,3 +24,7 @@ jobs:
       # unused names are warnings only.
       - name: Lint
         run: npm run lint
+
+      # The pack sources (packs-src/): JSON, required keys, ids, counts.
+      - name: Validate packs
+        run: npm run validate
