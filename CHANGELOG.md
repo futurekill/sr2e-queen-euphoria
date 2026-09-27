@@ -2,6 +2,27 @@
 
 
 
+## Unreleased
+
+### Added — real battle maps for Craft's Magic Shop and MegaMedia
+
+Four more scenes get generated battle maps in place of their placeholder grids,
+made the same way as the Condo, Lobby and Royal Meadows (the authored layout as a
+schematic reference plus interior art), with walls and doors measured off the art.
+- **Craft's Magic Shop — Upper Level**: the dusty, long-closed shopfront and its
+  back room, with the street door, the alley door and the stairs down.
+- **Craft's Magic Shop — Lower Level**: now laid out as the book prints it (p.40):
+  the bedroom — a crime scene — to the west, the living area and kitchenette in
+  the middle with the stairs up, the filthy bath to the east.
+- **MegaMedia — Carrone's Office**: reception with its lift-lobby entrance, the
+  meeting room behind a smart-glass partition, and Carrone's office along a
+  floor-to-ceiling window. The glass is a see-through wall in Foundry: it blocks
+  movement, not sight.
+- **MegaMedia — Simsense Studio**: the recording floor, and a control booth with a
+  glass front onto it, reached through the equipment room; the green room.
+- MegaMedia's interior references were nudged "a touch more high-tech" first.
+- Both MegaMedia layouts gained the entrances they were missing.
+
 ## 0.5.0 — Ward Street
 
 ### Added — Ward Street, outside Pacific Towers, night and day

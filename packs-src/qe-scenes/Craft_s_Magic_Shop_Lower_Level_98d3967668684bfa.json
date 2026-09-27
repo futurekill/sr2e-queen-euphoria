@@ -58,10 +58,10 @@
     {
       "_id": null,
       "c": [
-        0,
-        0,
-        800,
-        0
+        12,
+        8,
+        550,
+        8
       ],
       "light": 20,
       "sight": 20,
@@ -82,10 +82,10 @@
     {
       "_id": null,
       "c": [
-        800,
-        0,
-        800,
-        240
+        550,
+        8,
+        550,
+        328
       ],
       "light": 20,
       "sight": 20,
@@ -106,10 +106,10 @@
     {
       "_id": null,
       "c": [
-        800,
-        360,
-        800,
-        600
+        550,
+        426,
+        550,
+        591
       ],
       "light": 20,
       "sight": 20,
@@ -130,10 +130,10 @@
     {
       "_id": null,
       "c": [
-        0,
-        600,
-        800,
-        600
+        12,
+        591,
+        550,
+        591
       ],
       "light": 20,
       "sight": 20,
@@ -154,10 +154,10 @@
     {
       "_id": null,
       "c": [
-        0,
-        0,
-        0,
-        600
+        12,
+        8,
+        12,
+        591
       ],
       "light": 20,
       "sight": 20,
@@ -178,10 +178,10 @@
     {
       "_id": null,
       "c": [
-        800,
-        0,
-        1100,
-        0
+        550,
+        8,
+        1355,
+        8
       ],
       "light": 20,
       "sight": 20,
@@ -202,10 +202,10 @@
     {
       "_id": null,
       "c": [
-        1100,
-        0,
-        1100,
-        240
+        1355,
+        8,
+        1355,
+        328
       ],
       "light": 20,
       "sight": 20,
@@ -226,10 +226,10 @@
     {
       "_id": null,
       "c": [
-        1100,
-        360,
-        1100,
-        600
+        1355,
+        426,
+        1355,
+        591
       ],
       "light": 20,
       "sight": 20,
@@ -250,10 +250,10 @@
     {
       "_id": null,
       "c": [
-        800,
-        600,
-        1100,
-        600
+        550,
+        591,
+        1355,
+        591
       ],
       "light": 20,
       "sight": 20,
@@ -274,10 +274,10 @@
     {
       "_id": null,
       "c": [
-        1100,
-        0,
-        1700,
-        0
+        1355,
+        8,
+        1687,
+        8
       ],
       "light": 20,
       "sight": 20,
@@ -298,10 +298,10 @@
     {
       "_id": null,
       "c": [
-        1700,
-        0,
-        1700,
-        600
+        1687,
+        8,
+        1687,
+        591
       ],
       "light": 20,
       "sight": 20,
@@ -322,10 +322,10 @@
     {
       "_id": null,
       "c": [
-        1100,
-        600,
-        1700,
-        600
+        1355,
+        591,
+        1687,
+        591
       ],
       "light": 20,
       "sight": 20,
@@ -346,10 +346,10 @@
     {
       "_id": null,
       "c": [
-        800,
-        240,
-        800,
-        360
+        550,
+        328,
+        550,
+        426
       ],
       "light": 20,
       "sight": 20,
@@ -370,10 +370,10 @@
     {
       "_id": null,
       "c": [
-        1100,
-        240,
-        1100,
-        360
+        1355,
+        328,
+        1355,
+        426
       ],
       "light": 20,
       "sight": 20,
@@ -402,7 +402,7 @@
         "w": 17,
         "h": 6
       },
-      "measuredBy": "grid period (41 px, both axes — same pitch as the upper level)",
+      "measuredBy": "grid period (41 px, both axes); walls measured off the generated art",
       "rooms": ""
     }
   },
@@ -421,5 +421,5 @@
     "default": 0
   },
   "_key": "!scenes!98d3967668684bfa",
-  "description": "<p>Where Craft lived before the Hive, and still uses as a private escape when he wants to be human for a while.</p><p><strong>The living area</strong> shows use in the past week: trideo, LiveSound audio, a simsense player and chips that turn out to be mainly Euphoria sims. A crude map of the Amber Gel facility — <strong>including its location</strong> — is here. Empty Amber Gel containers everywhere.</p><p><strong>The bedroom (4) is the source of the stench, and it is a crime scene.</strong> Walls covered in two- and three-dimensional photos and illustrations of Euphoria, many blood-splattered. Judging by the blood, at least one person and probably more have been killed here. Facsimiles of clothing Euphoria wore in her sims, wigs and hairpieces in her styles.</p><p>The bathroom has not been cleaned in months; hundreds of roaches scatter when the lights come on.</p><p><strong>Rooms:</strong> —</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.40. Measured 17 × 6 m by grid period (41 px, both axes — same pitch as the upper level) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+  "description": "<p>Where Craft lived before the Hive, and still uses as a private escape when he wants to be human for a while.</p><p><strong>The living area</strong> shows use in the past week: trideo, LiveSound audio, a simsense player and chips that turn out to be mainly Euphoria sims. A crude map of the Amber Gel facility — <strong>including its location</strong> — is here. Empty Amber Gel containers everywhere.</p><p><strong>The bedroom (4) is the source of the stench, and it is a crime scene.</strong> Walls covered in two- and three-dimensional photos and illustrations of Euphoria, many blood-splattered. Judging by the blood, at least one person and probably more have been killed here. Facsimiles of clothing Euphoria wore in her sims, wigs and hairpieces in her styles.</p><p>The bathroom has not been cleaned in months; hundreds of roaches scatter when the lights come on.</p><p><strong>Rooms:</strong> —</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.40. Measured 17 × 6 m by grid period (41 px, both axes); walls measured off the generated art — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
 }

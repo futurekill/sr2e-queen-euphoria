@@ -58,10 +58,10 @@
     {
       "_id": null,
       "c": [
-        0,
-        0,
-        1200,
-        0
+        20,
+        5,
+        1150,
+        5
       ],
       "light": 20,
       "sight": 20,
@@ -82,10 +82,10 @@
     {
       "_id": null,
       "c": [
-        1200,
-        0,
-        1200,
-        240
+        1150,
+        5,
+        1150,
+        275
       ],
       "light": 20,
       "sight": 20,
@@ -106,10 +106,10 @@
     {
       "_id": null,
       "c": [
-        1200,
-        360,
-        1200,
-        600
+        1150,
+        380,
+        1150,
+        590
       ],
       "light": 20,
       "sight": 20,
@@ -130,10 +130,10 @@
     {
       "_id": null,
       "c": [
-        0,
-        600,
-        1200,
-        600
+        20,
+        590,
+        1150,
+        590
       ],
       "light": 20,
       "sight": 20,
@@ -154,10 +154,10 @@
     {
       "_id": null,
       "c": [
-        0,
-        0,
-        0,
-        240
+        20,
+        5,
+        20,
+        100
       ],
       "light": 20,
       "sight": 20,
@@ -178,10 +178,10 @@
     {
       "_id": null,
       "c": [
-        0,
-        360,
-        0,
-        600
+        20,
+        509.99999999999994,
+        20,
+        590
       ],
       "light": 20,
       "sight": 20,
@@ -202,10 +202,10 @@
     {
       "_id": null,
       "c": [
-        1200,
-        0,
-        1700,
-        0
+        1150,
+        5,
+        1680,
+        5
       ],
       "light": 20,
       "sight": 20,
@@ -226,10 +226,10 @@
     {
       "_id": null,
       "c": [
-        1700,
-        0,
-        1700,
-        240
+        1680,
+        5,
+        1680,
+        245.00000000000003
       ],
       "light": 20,
       "sight": 20,
@@ -250,10 +250,10 @@
     {
       "_id": null,
       "c": [
-        1700,
-        360,
-        1700,
-        600
+        1680,
+        355,
+        1680,
+        590
       ],
       "light": 20,
       "sight": 20,
@@ -274,10 +274,10 @@
     {
       "_id": null,
       "c": [
-        1200,
-        600,
-        1700,
-        600
+        1150,
+        590,
+        1680,
+        590
       ],
       "light": 20,
       "sight": 20,
@@ -298,10 +298,10 @@
     {
       "_id": null,
       "c": [
-        1200,
-        240,
-        1200,
-        360
+        20,
+        229.99999999999997,
+        20,
+        340
       ],
       "light": 20,
       "sight": 20,
@@ -322,10 +322,10 @@
     {
       "_id": null,
       "c": [
-        0,
-        240,
-        0,
-        360
+        1150,
+        275,
+        1150,
+        380
       ],
       "light": 20,
       "sight": 20,
@@ -346,16 +346,64 @@
     {
       "_id": null,
       "c": [
-        1700,
-        240,
-        1700,
-        360
+        1680,
+        245.00000000000003,
+        1680,
+        355
       ],
       "light": 20,
       "sight": 20,
       "sound": 20,
       "move": 20,
       "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        20,
+        100,
+        20,
+        229.99999999999997
+      ],
+      "light": 0,
+      "sight": 0,
+      "sound": 10,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        20,
+        340,
+        20,
+        509.99999999999994
+      ],
+      "light": 0,
+      "sight": 0,
+      "sound": 10,
+      "move": 20,
+      "door": 0,
       "ds": 0,
       "doorSound": null,
       "dir": 0,
@@ -378,7 +426,7 @@
         "w": 17,
         "h": 6
       },
-      "measuredBy": "grid period (41 px, both axes)",
+      "measuredBy": "grid period (41 px, both axes); walls measured off the generated art",
       "rooms": ""
     }
   },
@@ -397,5 +445,5 @@
     "default": 0
   },
   "_key": "!scenes!79290bce4cf94fb5",
-  "description": "<p>The shopfront. Fetish material worth about <strong>2,500¥</strong> remains, and it is obvious at a glance the store has not been used for some time.</p><p>Two entrances — the main door and a back door to the alley. Both are closed and locked at <strong>Barrier Rating 5</strong>. The alley door's lock is in better condition and shows evidence of recent use.</p><p><strong>Rooms:</strong> —</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.40. Measured 17 × 6 m by grid period (41 px, both axes) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+  "description": "<p>The shopfront. Fetish material worth about <strong>2,500¥</strong> remains, and it is obvious at a glance the store has not been used for some time.</p><p>Two entrances — the main door and a back door to the alley. Both are closed and locked at <strong>Barrier Rating 5</strong>. The alley door's lock is in better condition and shows evidence of recent use.</p><p><strong>Rooms:</strong> —</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.40. Measured 17 × 6 m by grid period (41 px, both axes); walls measured off the generated art — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
 }

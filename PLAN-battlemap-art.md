@@ -99,6 +99,14 @@ Working examples: `tools/gen-lobby-map.sh`, `tools/gen-condo-map.sh`,
 ## Still to do
 
 The Hive Main and Lower levels are perimeter-only — their layouts must be
-authored and signed off before art, exactly as before. Craft's Magic Shop
-(both levels) and the two MegaMedia scenes already have layouts and are ready
-for step 1.
+authored and signed off before art, exactly as before (awaiting futurekill's
+review as of 2026-09-27).
+
+Done 2026-09-27: Craft's Magic Shop (both levels; the lower level re-authored to
+the book's arrangement, with the stairs where p.40 prints them) and both MegaMedia
+scenes (interiors nudged "a touch more high-tech" first; the studio went through
+several edits to clear its doors and give the control booth a glass front reached
+from the equipment room). `tools/render-plan.py` renders any scene's authored
+layout as the step-1 schematic (windows cyan, stairs hatched); scenes may now
+carry `windows` (see-through walls) and `features` (stairs, drawn but not walls);
+`tools/gen-remaining-maps.sh` is the generation script.

@@ -124,7 +124,8 @@ function solidSegments(s) {
     ? roomEdges(rooms)
     : [[0, 0, s.widthM, 0], [s.widthM, 0, s.widthM, s.heightM],
        [0, s.heightM, s.widthM, s.heightM], [0, 0, 0, s.heightM]];
-  return punch(segs, s.doors ?? []);
+  // Windows are cut out like doors, then added back as see-through walls.
+  return punch(punch(segs, s.doors ?? []), s.windows ?? []);
 }
 
 function walls(s, W, H) {
@@ -141,6 +142,11 @@ function walls(s, W, H) {
 
   for (const d of doors)
     out.push(wall(...d.seg.map(v => v * M), { door: d.secret ? "secret" : "door" }));
+
+  // Glass (a window wall, a smart-glass partition): stops movement, lets sight
+  // and light through, muffles sound.
+  for (const w of s.windows ?? [])
+    out.push({ ...wall(...w.seg.map(v => v * M)), light: 0, sight: 0, sound: 10 });
 
   return out;
 }
