@@ -2,7 +2,7 @@
 
 
 
-## Unreleased
+## 0.6.0 — The Hive
 
 ### Added — the Hive Exterior, and stairs/elevators/doors that link floors
 
