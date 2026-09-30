@@ -5,7 +5,7 @@
   "navName": "",
   "active": false,
   "width": 2400,
-  "height": 1200,
+  "height": 1400,
   "padding": 0.25,
   "backgroundColor": "#15151f",
   "background": {
@@ -51,17 +51,424 @@
   "lights": [],
   "notes": [],
   "sounds": [],
-  "regions": [],
+  "regions": [
+    {
+      "_id": "35a452f7827110fc",
+      "name": "Stairway up to the roof",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 40,
+          "y": 5,
+          "width": 100,
+          "height": 45,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "b1be45938412a9c8",
+          "name": "To The Hive — Exterior",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.b52232ce011e8f6e.Region.c1a9f2bf44276309",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "8c61320e0156c9a1",
+      "name": "Stairway down",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 40,
+          "y": 50,
+          "width": 100,
+          "height": 45,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "eff968737779bb59",
+          "name": "To The Hive — Lower Level",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.81d72ca327baf377.Region.140930645e2e66aa",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "e66d2b82178dfac3",
+      "name": "West side door",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 320,
+          "y": 810,
+          "width": 140,
+          "height": 90,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "609f4c76fc768824",
+          "name": "To The Hive — Exterior",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.b52232ce011e8f6e.Region.8227848cccf1ac1d",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "eca789a5cda8c3f5",
+      "name": "East side door",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1120,
+          "y": 810,
+          "width": 140,
+          "height": 90,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "3969a10cab906412",
+          "name": "To The Hive — Exterior",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.b52232ce011e8f6e.Region.89e2405adf1a1c8a",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "cc566b1b78399f6c",
+      "name": "Back door",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1910.0000000000002,
+          "y": 5,
+          "width": 150,
+          "height": 90,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "d9b6df14866cbf69",
+          "name": "To The Hive — Exterior",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.b52232ce011e8f6e.Region.83d92ea6496c4035",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "b7af4ccf290a7af3",
+      "name": "Loading dock doors",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1880,
+          "y": 1210,
+          "width": 310,
+          "height": 90,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "e0eb01b6e0bbf6bc",
+          "name": "To The Hive — Exterior",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.b52232ce011e8f6e.Region.ca9b02fbc3e1e55d",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "10c97113af82f1c7",
+      "name": "Freight elevator",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2220,
+          "y": 810,
+          "width": 140,
+          "height": 180,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "0c504309e213b479",
+          "name": "To The Hive — Lower Level",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.81d72ca327baf377.Region.f51505e1e2e11d09",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
   "templates": [],
   "tiles": [],
   "walls": [
     {
       "_id": null,
       "c": [
-        50,
-        50,
-        2350,
-        50
+        0,
+        0,
+        1910.0000000000002,
+        0
       ],
       "light": 20,
       "sight": 20,
@@ -82,10 +489,10 @@
     {
       "_id": null,
       "c": [
-        2350,
-        50,
-        2350,
-        750
+        2060,
+        0,
+        2400,
+        0
       ],
       "light": 20,
       "sight": 20,
@@ -106,10 +513,82 @@
     {
       "_id": null,
       "c": [
-        50,
-        750,
+        2400,
+        0,
+        2400,
+        800
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        800,
+        320,
+        800
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        459.99999999999994,
+        800,
+        1120,
+        800
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1260,
+        800,
         1600,
-        750
+        800
       ],
       "light": 20,
       "sight": 20,
@@ -130,10 +609,10 @@
     {
       "_id": null,
       "c": [
-        1720,
-        750,
-        2350,
-        750
+        2210,
+        800,
+        2370,
+        800
       ],
       "light": 20,
       "sight": 20,
@@ -154,10 +633,10 @@
     {
       "_id": null,
       "c": [
-        50,
-        50,
-        50,
-        750
+        0,
+        0,
+        0,
+        800
       ],
       "light": 20,
       "sight": 20,
@@ -178,10 +657,10 @@
     {
       "_id": null,
       "c": [
-        50,
-        50,
-        350,
-        50
+        2210,
+        800,
+        2370,
+        800
       ],
       "light": 20,
       "sight": 20,
@@ -202,10 +681,10 @@
     {
       "_id": null,
       "c": [
-        350,
-        50,
-        350,
-        160
+        2400,
+        800,
+        2400,
+        1200
       ],
       "light": 20,
       "sight": 20,
@@ -226,178 +705,10 @@
     {
       "_id": null,
       "c": [
-        350,
-        260,
-        350,
-        400
-      ],
-      "light": 20,
-      "sight": 20,
-      "sound": 20,
-      "move": 20,
-      "door": 0,
-      "ds": 0,
-      "doorSound": null,
-      "dir": 0,
-      "threshold": {
-        "light": null,
-        "sight": null,
-        "sound": null,
-        "attenuation": false
-      },
-      "flags": {}
-    },
-    {
-      "_id": null,
-      "c": [
-        50,
-        400,
-        350,
-        400
-      ],
-      "light": 20,
-      "sight": 20,
-      "sound": 20,
-      "move": 20,
-      "door": 0,
-      "ds": 0,
-      "doorSound": null,
-      "dir": 0,
-      "threshold": {
-        "light": null,
-        "sight": null,
-        "sound": null,
-        "attenuation": false
-      },
-      "flags": {}
-    },
-    {
-      "_id": null,
-      "c": [
-        50,
-        50,
-        50,
-        400
-      ],
-      "light": 20,
-      "sight": 20,
-      "sound": 20,
-      "move": 20,
-      "door": 0,
-      "ds": 0,
-      "doorSound": null,
-      "dir": 0,
-      "threshold": {
-        "light": null,
-        "sight": null,
-        "sound": null,
-        "attenuation": false
-      },
-      "flags": {}
-    },
-    {
-      "_id": null,
-      "c": [
-        50,
-        50,
-        190,
-        50
-      ],
-      "light": 20,
-      "sight": 20,
-      "sound": 20,
-      "move": 20,
-      "door": 0,
-      "ds": 0,
-      "doorSound": null,
-      "dir": 0,
-      "threshold": {
-        "light": null,
-        "sight": null,
-        "sound": null,
-        "attenuation": false
-      },
-      "flags": {}
-    },
-    {
-      "_id": null,
-      "c": [
-        190,
-        50,
-        190,
-        160
-      ],
-      "light": 20,
-      "sight": 20,
-      "sound": 20,
-      "move": 20,
-      "door": 0,
-      "ds": 0,
-      "doorSound": null,
-      "dir": 0,
-      "threshold": {
-        "light": null,
-        "sight": null,
-        "sound": null,
-        "attenuation": false
-      },
-      "flags": {}
-    },
-    {
-      "_id": null,
-      "c": [
-        50,
-        160,
-        190,
-        160
-      ],
-      "light": 20,
-      "sight": 20,
-      "sound": 20,
-      "move": 20,
-      "door": 0,
-      "ds": 0,
-      "doorSound": null,
-      "dir": 0,
-      "threshold": {
-        "light": null,
-        "sight": null,
-        "sound": null,
-        "attenuation": false
-      },
-      "flags": {}
-    },
-    {
-      "_id": null,
-      "c": [
-        50,
-        50,
-        50,
-        160
-      ],
-      "light": 20,
-      "sight": 20,
-      "sound": 20,
-      "move": 20,
-      "door": 0,
-      "ds": 0,
-      "doorSound": null,
-      "dir": 0,
-      "threshold": {
-        "light": null,
-        "sight": null,
-        "sound": null,
-        "attenuation": false
-      },
-      "flags": {}
-    },
-    {
-      "_id": null,
-      "c": [
-        1350,
-        750,
         1600,
-        750
+        1200,
+        1880,
+        1200
       ],
       "light": 20,
       "sight": 20,
@@ -418,10 +729,10 @@
     {
       "_id": null,
       "c": [
-        1720,
-        750,
-        2350,
-        750
+        2190,
+        1200,
+        2400,
+        1200
       ],
       "light": 20,
       "sight": 20,
@@ -442,10 +753,10 @@
     {
       "_id": null,
       "c": [
-        2350,
-        750,
-        2350,
-        1130
+        1600,
+        800,
+        1600,
+        1200
       ],
       "light": 20,
       "sight": 20,
@@ -466,10 +777,10 @@
     {
       "_id": null,
       "c": [
-        1350,
-        1130,
-        1750,
-        1130
+        0,
+        0,
+        180,
+        0
       ],
       "light": 20,
       "sight": 20,
@@ -490,10 +801,10 @@
     {
       "_id": null,
       "c": [
-        1950,
-        1130,
-        2350,
-        1130
+        180,
+        0,
+        180,
+        10
       ],
       "light": 20,
       "sight": 20,
@@ -514,10 +825,10 @@
     {
       "_id": null,
       "c": [
-        1350,
-        750,
-        1350,
-        1130
+        180,
+        90,
+        180,
+        100
       ],
       "light": 20,
       "sight": 20,
@@ -538,10 +849,10 @@
     {
       "_id": null,
       "c": [
-        2160,
-        819.9999999999999,
-        2300,
-        819.9999999999999
+        0,
+        100,
+        180,
+        100
       ],
       "light": 20,
       "sight": 20,
@@ -562,10 +873,10 @@
     {
       "_id": null,
       "c": [
-        2300,
-        819.9999999999999,
-        2300,
-        1039.9999999999998
+        0,
+        0,
+        0,
+        100
       ],
       "light": 20,
       "sight": 20,
@@ -586,10 +897,10 @@
     {
       "_id": null,
       "c": [
-        2160,
-        1039.9999999999998,
-        2300,
-        1039.9999999999998
+        0,
+        100,
+        150,
+        100
       ],
       "light": 20,
       "sight": 20,
@@ -610,10 +921,10 @@
     {
       "_id": null,
       "c": [
-        2160,
-        819.9999999999999,
-        2160,
-        900
+        150,
+        100,
+        150,
+        120
       ],
       "light": 20,
       "sight": 20,
@@ -634,10 +945,10 @@
     {
       "_id": null,
       "c": [
-        2160,
-        980.0000000000001,
-        2160,
-        1039.9999999999998
+        150,
+        180,
+        150,
+        225
       ],
       "light": 20,
       "sight": 20,
@@ -658,10 +969,490 @@
     {
       "_id": null,
       "c": [
-        350,
-        160,
-        350,
-        260
+        0,
+        225,
+        150,
+        225
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        100,
+        0,
+        225
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        150,
+        225,
+        150,
+        270
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        150,
+        340,
+        150,
+        375
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        375,
+        150,
+        375
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        225,
+        0,
+        375
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        470,
+        150,
+        470
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        375,
+        0,
+        470
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        150,
+        100,
+        250,
+        100
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        250,
+        100,
+        250,
+        120
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        250,
+        180,
+        250,
+        470
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        240,
+        470,
+        250,
+        470
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        150,
+        100,
+        150,
+        120
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        150,
+        180,
+        150,
+        270
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        150,
+        340,
+        150,
+        375
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2210,
+        800,
+        2370,
+        800
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2370.0000000000005,
+        800,
+        2370.0000000000005,
+        1000
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2210,
+        1000,
+        2370.0000000000005,
+        1000
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2210,
+        800,
+        2210,
+        850
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2210,
+        950,
+        2210,
+        1000
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        320,
+        800,
+        459.99999999999994,
+        800
       ],
       "light": 20,
       "sight": 20,
@@ -682,10 +1473,10 @@
     {
       "_id": null,
       "c": [
-        1600,
-        750,
-        1720,
-        750
+        1120,
+        800,
+        1260,
+        800
       ],
       "light": 20,
       "sight": 20,
@@ -706,10 +1497,10 @@
     {
       "_id": null,
       "c": [
-        2160,
-        900,
-        2160,
-        980.0000000000001
+        1910.0000000000002,
+        0,
+        2060,
+        0
       ],
       "light": 20,
       "sight": 20,
@@ -730,10 +1521,34 @@
     {
       "_id": null,
       "c": [
-        1750,
-        1130,
-        1950,
-        1130
+        1880,
+        1200,
+        2190,
+        1200
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2210,
+        850,
+        2210,
+        950
       ],
       "light": 20,
       "sight": 20,
@@ -760,9 +1575,9 @@
       "folio": 44,
       "metres": {
         "w": 24,
-        "h": 12
+        "h": 14
       },
-      "measuredBy": "grid period (43 px, both axes); bounding box of an L-shaped plan",
+      "measuredBy": "1 m = 85.5 px on a 300 dpi render of p.44 (PDF 46); the printed 1 m floor tiles line up with a metre grid laid over it, 24 x 12 m building plus the loading dock outside the double doors",
       "rooms": "Main area with disused conventional food-production equipment (dusty, poorly maintained), loading dock, freight elevator, small group of empty abandoned offices, stairway up to the roof and down to the Lower Level."
     }
   },
@@ -781,5 +1596,5 @@
     "default": 0
   },
   "_key": "!scenes!cf17d2b939a9b756",
-  "description": "<p>The Amber Gel facility. Barely used by the Hive and showing only general activity at the loading dock — trucks from Strice Foods load each morning, and the drums are already waiting for them. The only person the truckers ever see is <strong>Craft</strong>.</p><p>Lighting is whatever filters through the high green-tinted windows; the power is on, so the runners can switch the fluorescents on if they want. <strong>The stairway is unlit.</strong></p><p><strong>None of the doors are locked</strong> and all are easily operable. The freight elevator is conventional and fully operational, though its control panel shows physical damage.</p><p><strong>Rooms:</strong> Main area with disused conventional food-production equipment (dusty, poorly maintained), loading dock, freight elevator, small group of empty abandoned offices, stairway up to the roof and down to the Lower Level.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.44. Measured 24 × 12 m by grid period (43 px, both axes); bounding box of an L-shaped plan — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+  "description": "<p>The Amber Gel facility. Barely used by the Hive and showing only general activity at the loading dock — trucks from Strice Foods load each morning, and the drums are already waiting for them. The only person the truckers ever see is <strong>Craft</strong>.</p><p>Lighting is whatever filters through the high green-tinted windows; the power is on, so the runners can switch the fluorescents on if they want. <strong>The stairway is unlit.</strong></p><p><strong>None of the doors are locked</strong> and all are easily operable. The freight elevator is conventional and fully operational, though its control panel shows physical damage.</p><p><strong>Rooms:</strong> Main area with disused conventional food-production equipment (dusty, poorly maintained), loading dock, freight elevator, small group of empty abandoned offices, stairway up to the roof and down to the Lower Level.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.44. Measured 24 × 14 m by 1 m = 85.5 px on a 300 dpi render of p.44 (PDF 46); the printed 1 m floor tiles line up with a metre grid laid over it, 24 x 12 m building plus the loading dock outside the double doors — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
 }

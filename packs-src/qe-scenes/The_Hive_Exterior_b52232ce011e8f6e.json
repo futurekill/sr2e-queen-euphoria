@@ -1,0 +1,884 @@
+{
+  "_id": "b52232ce011e8f6e",
+  "name": "The Hive — Exterior",
+  "navigation": true,
+  "navName": "",
+  "active": false,
+  "width": 4000,
+  "height": 3500,
+  "padding": 0.25,
+  "backgroundColor": "#15151f",
+  "background": {
+    "src": "modules/sr2e-queen-euphoria/assets/scenes/hive-exterior.webp",
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "fit": "fill",
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff",
+    "alphaThreshold": 0
+  },
+  "foreground": null,
+  "foregroundElevation": null,
+  "thumb": null,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 1,
+    "units": "m"
+  },
+  "initial": null,
+  "tokenVision": false,
+  "fog": {
+    "exploration": false,
+    "reset": 0,
+    "overlay": null
+  },
+  "globalLight": {
+    "enabled": true
+  },
+  "darkness": 0,
+  "environment": {},
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "regions": [
+    {
+      "_id": "c1a9f2bf44276309",
+      "name": "Roof access",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 900,
+          "y": 910,
+          "width": 170,
+          "height": 130,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "fe2eecd9d3187221",
+          "name": "To The Hive — Main Level",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.cf17d2b939a9b756.Region.35a452f7827110fc",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "8227848cccf1ac1d",
+      "name": "West side door",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1150,
+          "y": 1660.0000000000002,
+          "width": 140,
+          "height": 90,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "a4a68861915e8b28",
+          "name": "To The Hive — Main Level",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.cf17d2b939a9b756.Region.e66d2b82178dfac3",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "89e2405adf1a1c8a",
+      "name": "East side door",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1950,
+          "y": 1660.0000000000002,
+          "width": 140,
+          "height": 90,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "0adce8c08e488483",
+          "name": "To The Hive — Main Level",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.cf17d2b939a9b756.Region.eca789a5cda8c3f5",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "83d92ea6496c4035",
+      "name": "Back door",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2800,
+          "y": 760,
+          "width": 140,
+          "height": 90,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "015c85595b1ecc66",
+          "name": "To The Hive — Main Level",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.cf17d2b939a9b756.Region.cc566b1b78399f6c",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "ca9b02fbc3e1e55d",
+      "name": "Loading dock doors",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2800,
+          "y": 2060,
+          "width": 250,
+          "height": 90,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "084c3e3779cbdecd",
+          "name": "To The Hive — Main Level",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.cf17d2b939a9b756.Region.b7af4ccf290a7af3",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "templates": [],
+  "tiles": [],
+  "walls": [
+    {
+      "_id": null,
+      "c": [
+        830.0000000000001,
+        850,
+        2800,
+        850
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2940,
+        850,
+        3229.9999999999995,
+        850
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        3229.9999999999995,
+        850,
+        3229.9999999999995,
+        1650
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        830.0000000000001,
+        1650,
+        1150,
+        1650
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1290,
+        1650,
+        1950,
+        1650
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2090,
+        1650,
+        2430,
+        1650
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        830.0000000000001,
+        850,
+        830.0000000000001,
+        1650
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        3229.9999999999995,
+        1650,
+        3229.9999999999995,
+        2050
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2430,
+        2050,
+        2800,
+        2050
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        3050,
+        2050,
+        3229.9999999999995,
+        2050
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2430,
+        1650,
+        2430,
+        2050
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1150,
+        1650,
+        1290,
+        1650
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        1950,
+        1650,
+        2090,
+        1650
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2800,
+        850,
+        2940,
+        850
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2800,
+        2050,
+        3050,
+        2050
+      ],
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "door": 1,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        0,
+        3020,
+        0
+      ],
+      "light": 0,
+      "sight": 0,
+      "sound": 10,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        3310,
+        0,
+        4000,
+        0
+      ],
+      "light": 0,
+      "sight": 0,
+      "sound": 10,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        4000,
+        0,
+        4000,
+        3500
+      ],
+      "light": 0,
+      "sight": 0,
+      "sound": 10,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        0,
+        0,
+        3500
+      ],
+      "light": 0,
+      "sight": 0,
+      "sound": 10,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        0,
+        3500,
+        2450,
+        3500
+      ],
+      "light": 0,
+      "sight": 0,
+      "sound": 10,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "_id": null,
+      "c": [
+        2730,
+        3500,
+        4000,
+        3500
+      ],
+      "light": 0,
+      "sight": 0,
+      "sound": 10,
+      "move": 20,
+      "door": 0,
+      "ds": 0,
+      "doorSound": null,
+      "dir": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-queen-euphoria": {
+      "source": "printed",
+      "folio": 43,
+      "metres": {
+        "w": 40,
+        "h": 35
+      },
+      "measuredBy": "legend square = 2 m; 1 m = 24.2 px on a 300 dpi render of p.43 (PDF 45). The compound is 20 x 17.5 printed squares; the building inside it measures 24 x 8 m plus the 8 x 4 m wing, matching the Main Level plan exactly",
+      "rooms": "The Amber Gel compound at night: the fenced lot, grass and pavement, the building's roof with its roof access, and the gates."
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1784000000000,
+    "modifiedTime": 1784000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!scenes!b52232ce011e8f6e",
+  "description": "<p>The runners arrive by night; the building looks deserted, no lights, nothing moving — except perhaps something on the roof.</p><p><strong>Two sentries</strong> are outside, both Flesh Form Soldiers (F3). The Queen is not yet fully summoned, so there is no true hive-mind yet: they can be killed <em>without</em> alerting the Hive, but given the chance they run for the building. Inside among the machinery, two Flesh Form Workers (F1) flee downstairs to warn Craft if they spot intruders.</p><p>The doors in the building's walls lead onto <strong>The Hive — Main Level</strong>; the roof access leads down its stairway.</p><p><strong>Rooms:</strong> The Amber Gel compound at night: the fenced lot, grass and pavement, the building's roof with its roof access, and the gates.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.43. Measured 40 × 35 m by legend square = 2 m; 1 m = 24.2 px on a 300 dpi render of p.43 (PDF 45). The compound is 20 x 17.5 printed squares; the building inside it measures 24 x 8 m plus the 8 x 4 m wing, matching the Main Level plan exactly — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+}

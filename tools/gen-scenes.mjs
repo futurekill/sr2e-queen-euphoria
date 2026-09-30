@@ -14,7 +14,7 @@
 // Same two guarantees as gen-actors.mjs: ids are pinned, and generation is atomic.
 import { writeFileSync, readdirSync, readFileSync, mkdirSync, rmSync, renameSync, existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
-import { randomBytes } from "node:crypto";
+import { randomBytes, createHash } from "node:crypto";
 
 const DIR = "packs-src/qe-scenes";
 const MANIFEST = "tools/data/qe-scenes.json";
@@ -43,6 +43,40 @@ if (assigned) {
 const ids = manifest.scenes.map(s => s._id);
 const dupes = ids.filter((x, i) => ids.indexOf(x) !== i);
 if (dupes.length) throw new Error(`Duplicate scene ids: ${dupes.join(", ")}`);
+
+// ── Teleport links ──────────────────────────────────────────────────────────
+// Stairs, elevators and doors that lead to ANOTHER scene are Foundry's built-in
+// "Teleport Token" Region Behaviour. Each side is authored on its own scene as
+// { name, x, y, w, h, to: "<scene name>", toName: "<region name there>" } in
+// metres. choice:true asks before teleporting, so walking past a door is safe.
+// Region ids are hashed from scene id + link name so both sides can reference
+// each other before either exists; renaming a link re-ids it, harmlessly (the
+// region lives inside its scene and is replaced with it).
+const byName = new Map(manifest.scenes.map(s => [s.name, s]));
+const linkId = (sceneId, name, salt = "") =>
+  createHash("sha1").update(`${sceneId}:${name}${salt}`).digest("hex").slice(0, 16);
+
+function regions(s) {
+  const M = PX_PER_M;
+  return (s.teleports ?? []).map(t => {
+    const dest = byName.get(t.to);
+    if (!dest) throw new Error(`${s.name}: teleport "${t.name}" targets unknown scene "${t.to}"`);
+    if (!(dest.teleports ?? []).some(o => o.name === t.toName))
+      throw new Error(`${s.name}: teleport "${t.name}" targets missing region "${t.toName}" on ${t.to}`);
+    const _id = linkId(s._id, t.name);
+    return {
+      _id, name: t.name, color: "#4fa3d8",
+      shapes: [{ type: "rectangle", x: t.x * M, y: t.y * M, width: t.w * M, height: t.h * M, rotation: 0, hole: false }],
+      elevation: { bottom: null, top: null }, visibility: 0, locked: false, flags: {},
+      behaviors: [{
+        _id: linkId(s._id, t.name, ":teleport"), name: `To ${t.to}`, type: "teleportToken",
+        system: { destination: `Scene.${dest._id}.Region.${linkId(dest._id, t.toName)}`, choice: true },
+        disabled: false, flags: {}, _stats: STATS
+      }],
+      _stats: STATS
+    };
+  });
+}
 
 // ── Walls ───────────────────────────────────────────────────────────────────
 // Wall coordinates are in scene pixels, so every metre figure here is x100 — the
@@ -125,7 +159,8 @@ function solidSegments(s) {
     : [[0, 0, s.widthM, 0], [s.widthM, 0, s.widthM, s.heightM],
        [0, s.heightM, s.widthM, s.heightM], [0, 0, 0, s.heightM]];
   // Windows are cut out like doors, then added back as see-through walls.
-  return punch(punch(segs, s.doors ?? []), s.windows ?? []);
+  // Openings (archways, the open side of an L-shaped room) are cut and left open.
+  return punch(punch(punch(segs, s.doors ?? []), s.windows ?? []), s.openings ?? []);
 }
 
 function walls(s, W, H) {
@@ -183,7 +218,7 @@ function build(s) {
     globalLight: { enabled: !s.dark },
     darkness: s.dark ? 1 : 0,
     environment: {},
-    drawings: [], tokens: [], lights: [], notes: [], sounds: [], regions: [],
+    drawings: [], tokens: [], lights: [], notes: [], sounds: [], regions: regions(s),
     templates: [], tiles: [], walls: walls(s, width, height),
     folder: null, sort: 0,
     flags: { "sr2e-queen-euphoria": {

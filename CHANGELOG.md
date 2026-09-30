@@ -4,6 +4,42 @@
 
 ## Unreleased
 
+### Added — the Hive Exterior, and stairs/elevators/doors that link floors
+
+- **The Hive — Exterior** (p.43): the fenced Amber Gel compound, 40 × 35 m from
+  the plan's 2 m squares. The building's roof, its four doors where the Main Level
+  puts them, the book's grass and pavement, and a chain-link fence (a see-through
+  wall) with the two open gateways.
+- **Teleport links between floors**: stairs, the freight elevator and the
+  building's doors are Foundry's built-in Teleport Token regions. Step onto one
+  and Foundry asks whether to move the token to the matching spot on the other
+  scene; the view follows. The Hive's exterior doors and roof hatch lead to the
+  Main Level, and its stairway and elevator lead to the Lower Level. Craft's Magic
+  Shop's stairs link its two floors. They are ordinary regions, so delete any
+  you don't want. They link up when the scenes come in through the Adventure
+  import, which keeps their ids.
+
+### Fixed — the Hive floorplans now match the book
+
+Both Hive levels were re-traced wall by wall from a metre grid laid over the
+printed plans (p.44/45). The first pass misread the scale: the Lower Level is
+24 m wide, not 23, and most rooms, doors, the offices and the loading dock were
+misplaced. The Main Level has the book's three offices off a hall, its four doors
+and the dock outside the double doors, so the scene is 24 × 14 m. The Lower Level
+has all sixteen rooms where the book draws them, and all 24 doors.
+
+### Added — battle maps for the Hive
+
+All three Hive scenes get generated battle maps in place of placeholder grids,
+with walls, doors and teleport regions checked against the art:
+- **Exterior**: the compound by overcast daylight (set time of day and lights in
+  Foundry): cracked asphalt, overgrown grass, the flat roof and its hatch.
+- **Main Level**: the dusty factory floor with the processing plant and tank row,
+  the three abandoned offices, drums waiting in the dock bay, the caged freight
+  elevator, and the stairwell's two flights — one up to the roof, one down.
+- **Lower Level**: the comb-crusted Hive Room and its egg mass, sixteen squalid
+  storerooms, and a stair that only goes up.
+
 ### Added — real battle maps for Craft's Magic Shop and MegaMedia
 
 Four more scenes get generated battle maps in place of their placeholder grids,

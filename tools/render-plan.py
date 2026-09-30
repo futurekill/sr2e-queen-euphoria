@@ -30,6 +30,10 @@ def main(name, out):
     to = lambda m: int(round((m + MARGIN) * PX))
     for gx in range(W + 2 * MARGIN + 1): d.line([(gx * PX, 0), (gx * PX, img.height)], fill=GRID, width=1)
     for gy in range(H + 2 * MARGIN + 1): d.line([(0, gy * PX), (img.width, gy * PX)], fill=GRID, width=1)
+    # Exterior ground (one character per metre, g = grass), drawn under everything.
+    for j, row in enumerate(s.get("ground", [])):
+        for i, ch in enumerate(row):
+            d.rectangle([to(i), to(j), to(i + 1) - 1, to(j + 1) - 1], fill=(38, 70, 40) if ch == "g" else (70, 70, 74))
     rooms = s.get("layout", [])
     for r in rooms:
         d.rectangle([to(r["x"]), to(r["y"]), to(r["x"] + r["w"]), to(r["y"] + r["h"])], fill=FLOOR)
@@ -41,6 +45,11 @@ def main(name, out):
         if x1 == x2: d.rectangle([to(x1) - 6, to(y1), to(x1) + 6, to(y2)], fill=FLOOR)
         else:        d.rectangle([to(x1), to(y1) - 6, to(x2), to(y1) + 6], fill=FLOOR)
         d.line([(to(x1), to(y1)), (to(x2), to(y2))], fill=DOOR, width=5)
+    # Openings: a gap in the wall, nothing drawn in it.
+    for o in s.get("openings", []):
+        x1, y1, x2, y2 = o["seg"]
+        if x1 == x2: d.rectangle([to(x1) - 6, to(y1), to(x1) + 6, to(y2)], fill=FLOOR)
+        else:        d.rectangle([to(x1), to(y1) - 6, to(x2), to(y1) + 6], fill=FLOOR)
     # Glass (windows): cyan, drawn over the wall.
     for w in s.get("windows", []):
         x1, y1, x2, y2 = w["seg"]
@@ -54,7 +63,9 @@ def main(name, out):
     f1, f2 = font(34), font(24)
     inside = lambda a, b: a is not b and a["x"] >= b["x"] and a["y"] >= b["y"] \
         and a["x"] + a["w"] <= b["x"] + b["w"] and a["y"] + a["h"] <= b["y"] + b["h"]
+    stair_in = lambda r: any(f.get("dir") and inside(f, r) for f in s.get("features", []))
     for r in rooms:
+        if stair_in(r): continue   # the flight's own UP/DOWN arrow labels it
         # A room holding other rooms is labelled in its middle, so the nested
         # rooms' corner labels don't pile up on top of it.
         if any(inside(o, r) for o in rooms):
@@ -65,7 +76,19 @@ def main(name, out):
         d.text(pos, r["name"], fill=TEXT, font=f1)
         if r.get("hint"): d.text((pos[0], pos[1] + 44), r["hint"], fill=HINT, font=f2)
     for f in s.get("features", []):
+        if f.get("dir"): continue
         d.text((to(f["x"]) + 10, to(f["y"] + f["h"]) + 6), f["name"], fill=HINT, font=f2)
+    # Stair flights: an arrow in the direction of travel from the landing, and
+    # UP/DOWN written on it, so the image model can't guess the direction.
+    for f in s.get("features", []):
+        if not f.get("dir"): continue
+        x0, y0, x1, y1 = to(f["x"]), to(f["y"]), to(f["x"] + f["w"]), to(f["y"] + f["h"])
+        cy = (y0 + y1) // 2
+        a, b = (x1 - 12, x0 + 12) if f["dir"] == "left" else (x0 + 12, x1 - 12)
+        d.line([(a, cy), (b, cy)], fill=(255, 210, 60), width=6)
+        k = 1 if b > a else -1
+        d.polygon([(b, cy), (b - k * 26, cy - 16), (b - k * 26, cy + 16)], fill=(255, 210, 60))
+        d.text((x1 + 8 if f["dir"] == "left" else x0 - 70, cy - 14), f["dir_label"], fill=(255, 210, 60), font=f2)
     img.save(out)
     print(out, img.size, f"{W}x{H} m")
 

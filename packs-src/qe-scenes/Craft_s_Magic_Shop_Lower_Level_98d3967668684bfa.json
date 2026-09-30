@@ -51,7 +51,66 @@
   "lights": [],
   "notes": [],
   "sounds": [],
-  "regions": [],
+  "regions": [
+    {
+      "_id": "bbdbc90232c6d96c",
+      "name": "Stairs up",
+      "color": "#4fa3d8",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 795,
+          "y": 10,
+          "width": 204.99999999999997,
+          "height": 135,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "visibility": 0,
+      "locked": false,
+      "flags": {},
+      "behaviors": [
+        {
+          "_id": "4ad559af5d35f920",
+          "name": "To Craft's Magic Shop — Upper Level",
+          "type": "teleportToken",
+          "system": {
+            "destination": "Scene.79290bce4cf94fb5.Region.7ae3a9ffa96cbec8",
+            "choice": true
+          },
+          "disabled": false,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
   "templates": [],
   "tiles": [],
   "walls": [

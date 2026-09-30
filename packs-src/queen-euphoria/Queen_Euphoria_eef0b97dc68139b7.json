@@ -11843,7 +11843,66 @@
       "lights": [],
       "notes": [],
       "sounds": [],
-      "regions": [],
+      "regions": [
+        {
+          "_id": "bbdbc90232c6d96c",
+          "name": "Stairs up",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 795,
+              "y": 10,
+              "width": 204.99999999999997,
+              "height": 135,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "4ad559af5d35f920",
+              "name": "To Craft's Magic Shop — Upper Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.79290bce4cf94fb5.Region.7ae3a9ffa96cbec8",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
       "templates": [],
       "tiles": [],
       "walls": [
@@ -12267,7 +12326,66 @@
       "lights": [],
       "notes": [],
       "sounds": [],
-      "regions": [],
+      "regions": [
+        {
+          "_id": "7ae3a9ffa96cbec8",
+          "name": "Stairs down",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 770,
+              "y": 10,
+              "width": 229.99999999999997,
+              "height": 125,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "d6c6d9057146e7a2",
+              "name": "To Craft's Magic Shop — Lower Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.98d3967668684bfa.Region.bbdbc90232c6d96c",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
       "templates": [],
       "tiles": [],
       "walls": [
@@ -20719,12 +20837,895 @@
       "description": "<p><strong>Where Euphoria is held.</strong> A cheap rented flat supplied by Ludivenko — dehydrated food in the cupboards, women's clothing still in plastic wrap in the dresser and closet.</p><p>Only 24 m², and that is correct: the book says the units are packed with people and crowded with extra beds. Play it cramped.</p><p>Details that matter if the runners search: one chair will break if sat on, the refrigerator's freezer does not work, the sink's water filters are foul, and the hot water faucet does not work.</p><p>If the runners annoy the manager it costs about <strong>100¥</strong> to calm him down.</p><p><strong>Rooms:</strong> —</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.12. Measured 12 × 7 m by legend square (128 x 129 px — no grid is drawn on this plan) — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
     },
     {
+      "_id": "b52232ce011e8f6e",
+      "name": "The Hive — Exterior",
+      "navigation": true,
+      "navName": "",
+      "active": false,
+      "width": 4000,
+      "height": 3500,
+      "padding": 0.25,
+      "backgroundColor": "#15151f",
+      "background": {
+        "src": "modules/sr2e-queen-euphoria/assets/scenes/hive-exterior.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0
+      },
+      "foreground": null,
+      "foregroundElevation": null,
+      "thumb": null,
+      "grid": {
+        "type": 1,
+        "size": 100,
+        "style": "solidLines",
+        "thickness": 1,
+        "color": "#000000",
+        "alpha": 0.2,
+        "distance": 1,
+        "units": "m"
+      },
+      "initial": null,
+      "tokenVision": false,
+      "fog": {
+        "exploration": false,
+        "reset": 0,
+        "overlay": null
+      },
+      "globalLight": {
+        "enabled": true
+      },
+      "darkness": 0,
+      "environment": {},
+      "drawings": [],
+      "tokens": [],
+      "lights": [],
+      "notes": [],
+      "sounds": [],
+      "regions": [
+        {
+          "_id": "c1a9f2bf44276309",
+          "name": "Roof access",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 900,
+              "y": 910,
+              "width": 170,
+              "height": 130,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "fe2eecd9d3187221",
+              "name": "To The Hive — Main Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.cf17d2b939a9b756.Region.35a452f7827110fc",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "8227848cccf1ac1d",
+          "name": "West side door",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 1150,
+              "y": 1660.0000000000002,
+              "width": 140,
+              "height": 90,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "a4a68861915e8b28",
+              "name": "To The Hive — Main Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.cf17d2b939a9b756.Region.e66d2b82178dfac3",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "89e2405adf1a1c8a",
+          "name": "East side door",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 1950,
+              "y": 1660.0000000000002,
+              "width": 140,
+              "height": 90,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "0adce8c08e488483",
+              "name": "To The Hive — Main Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.cf17d2b939a9b756.Region.eca789a5cda8c3f5",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "83d92ea6496c4035",
+          "name": "Back door",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 2800,
+              "y": 760,
+              "width": 140,
+              "height": 90,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "015c85595b1ecc66",
+              "name": "To The Hive — Main Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.cf17d2b939a9b756.Region.cc566b1b78399f6c",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "ca9b02fbc3e1e55d",
+          "name": "Loading dock doors",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 2800,
+              "y": 2060,
+              "width": 250,
+              "height": 90,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "084c3e3779cbdecd",
+              "name": "To The Hive — Main Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.cf17d2b939a9b756.Region.b7af4ccf290a7af3",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "templates": [],
+      "tiles": [],
+      "walls": [
+        {
+          "_id": null,
+          "c": [
+            830.0000000000001,
+            850,
+            2800,
+            850
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2940,
+            850,
+            3229.9999999999995,
+            850
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            3229.9999999999995,
+            850,
+            3229.9999999999995,
+            1650
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            830.0000000000001,
+            1650,
+            1150,
+            1650
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            1290,
+            1650,
+            1950,
+            1650
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2090,
+            1650,
+            2430,
+            1650
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            830.0000000000001,
+            850,
+            830.0000000000001,
+            1650
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            3229.9999999999995,
+            1650,
+            3229.9999999999995,
+            2050
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2430,
+            2050,
+            2800,
+            2050
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            3050,
+            2050,
+            3229.9999999999995,
+            2050
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2430,
+            1650,
+            2430,
+            2050
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            1150,
+            1650,
+            1290,
+            1650
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            1950,
+            1650,
+            2090,
+            1650
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2800,
+            850,
+            2940,
+            850
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2800,
+            2050,
+            3050,
+            2050
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            0,
+            3020,
+            0
+          ],
+          "light": 0,
+          "sight": 0,
+          "sound": 10,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            3310,
+            0,
+            4000,
+            0
+          ],
+          "light": 0,
+          "sight": 0,
+          "sound": 10,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            4000,
+            0,
+            4000,
+            3500
+          ],
+          "light": 0,
+          "sight": 0,
+          "sound": 10,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            0,
+            0,
+            3500
+          ],
+          "light": 0,
+          "sight": 0,
+          "sound": 10,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            3500,
+            2450,
+            3500
+          ],
+          "light": 0,
+          "sight": 0,
+          "sound": 10,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2730,
+            3500,
+            4000,
+            3500
+          ],
+          "light": 0,
+          "sight": 0,
+          "sound": 10,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e-queen-euphoria": {
+          "source": "printed",
+          "folio": 43,
+          "metres": {
+            "w": 40,
+            "h": 35
+          },
+          "measuredBy": "legend square = 2 m; 1 m = 24.2 px on a 300 dpi render of p.43 (PDF 45). The compound is 20 x 17.5 printed squares; the building inside it measures 24 x 8 m plus the 8 x 4 m wing, matching the Main Level plan exactly",
+          "rooms": "The Amber Gel compound at night: the fenced lot, grass and pavement, the building's roof with its roof access, and the gates."
+        }
+      },
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.1.0",
+        "createdTime": 1784000000000,
+        "modifiedTime": 1784000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "description": "<p>The runners arrive by night; the building looks deserted, no lights, nothing moving — except perhaps something on the roof.</p><p><strong>Two sentries</strong> are outside, both Flesh Form Soldiers (F3). The Queen is not yet fully summoned, so there is no true hive-mind yet: they can be killed <em>without</em> alerting the Hive, but given the chance they run for the building. Inside among the machinery, two Flesh Form Workers (F1) flee downstairs to warn Craft if they spot intruders.</p><p>The doors in the building's walls lead onto <strong>The Hive — Main Level</strong>; the roof access leads down its stairway.</p><p><strong>Rooms:</strong> The Amber Gel compound at night: the fenced lot, grass and pavement, the building's roof with its roof access, and the gates.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.43. Measured 40 × 35 m by legend square = 2 m; 1 m = 24.2 px on a 300 dpi render of p.43 (PDF 45). The compound is 20 x 17.5 printed squares; the building inside it measures 24 x 8 m plus the 8 x 4 m wing, matching the Main Level plan exactly — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+    },
+    {
       "_id": "81d72ca327baf377",
       "name": "The Hive — Lower Level",
       "navigation": true,
       "navName": "",
       "active": false,
-      "width": 2300,
+      "width": 2400,
       "height": 1200,
       "padding": 0.25,
       "backgroundColor": "#15151f",
@@ -20771,17 +21772,134 @@
       "lights": [],
       "notes": [],
       "sounds": [],
-      "regions": [],
+      "regions": [
+        {
+          "_id": "140930645e2e66aa",
+          "name": "Stairway up",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 40,
+              "y": 5,
+              "width": 100,
+              "height": 90,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "3da8a64b648bbbdd",
+              "name": "To The Hive — Main Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.cf17d2b939a9b756.Region.8c61320e0156c9a1",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "f51505e1e2e11d09",
+          "name": "Freight elevator",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 2250,
+              "y": 810,
+              "width": 120,
+              "height": 180,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "095869b049f34a12",
+              "name": "To The Hive — Main Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.cf17d2b939a9b756.Region.10c97113af82f1c7",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
       "templates": [],
       "tiles": [],
       "walls": [
         {
           "_id": null,
           "c": [
-            40,
-            40,
-            190,
-            40
+            0,
+            0,
+            180,
+            0
           ],
           "light": 20,
           "sight": 20,
@@ -20807,10 +21925,10 @@
         {
           "_id": null,
           "c": [
-            190,
-            40,
-            190,
-            140
+            180,
+            0,
+            180,
+            15
           ],
           "light": 20,
           "sight": 20,
@@ -20836,10 +21954,10 @@
         {
           "_id": null,
           "c": [
-            40,
-            140,
-            190,
-            140
+            180,
+            85,
+            180,
+            100
           ],
           "light": 20,
           "sight": 20,
@@ -20865,10 +21983,10 @@
         {
           "_id": null,
           "c": [
-            40,
-            40,
-            40,
-            140
+            0,
+            100,
+            180,
+            100
           ],
           "light": 20,
           "sight": 20,
@@ -20894,10 +22012,10 @@
         {
           "_id": null,
           "c": [
-            40,
-            40,
-            530.0000000000001,
-            40
+            0,
+            0,
+            0,
+            100
           ],
           "light": 20,
           "sight": 20,
@@ -20923,10 +22041,10 @@
         {
           "_id": null,
           "c": [
-            530.0000000000001,
-            40,
-            530.0000000000001,
-            130
+            0,
+            0,
+            550,
+            0
           ],
           "light": 20,
           "sight": 20,
@@ -20952,10 +22070,10 @@
         {
           "_id": null,
           "c": [
-            530.0000000000001,
-            210,
-            530.0000000000001,
-            250
+            550,
+            0,
+            550,
+            10
           ],
           "light": 20,
           "sight": 20,
@@ -20981,9 +22099,9 @@
         {
           "_id": null,
           "c": [
-            40,
-            250,
-            210,
+            550,
+            80,
+            550,
             250
           ],
           "light": 20,
@@ -21012,7 +22130,7 @@
           "c": [
             300,
             250,
-            530.0000000000001,
+            550,
             250
           ],
           "light": 20,
@@ -21039,329 +22157,10 @@
         {
           "_id": null,
           "c": [
-            40,
-            40,
-            40,
+            0,
+            0,
+            0,
             250
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            530,
-            40,
-            869.9999999999999,
-            40
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            869.9999999999999,
-            40,
-            869.9999999999999,
-            130
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            869.9999999999999,
-            210,
-            869.9999999999999,
-            250
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            530,
-            250,
-            630,
-            250
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            710,
-            250,
-            869.9999999999999,
-            250
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            869.9999999999999,
-            40,
-            1050,
-            40
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            40,
-            1050,
-            300
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            380,
-            1050,
-            400
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            869.9999999999999,
-            400,
-            1050,
-            400
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            869.9999999999999,
-            40,
-            869.9999999999999,
-            130
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            869.9999999999999,
-            210,
-            869.9999999999999,
-            400
           ],
           "light": 20,
           "sight": 20,
@@ -21389,7 +22188,152 @@
           "c": [
             300,
             250,
-            530.0000000000001,
+            300,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            400,
+            300,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            250,
+            0,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            550,
+            0,
+            880.0000000000001,
+            0
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            880.0000000000001,
+            0,
+            880.0000000000001,
+            180
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            880.0000000000001,
+            240,
+            880.0000000000001,
             250
           ],
           "light": 20,
@@ -21416,125 +22360,9 @@
         {
           "_id": null,
           "c": [
-            530.0000000000001,
+            550,
             250,
-            530.0000000000001,
-            400
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            270,
-            400,
-            320,
-            400
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            400,
-            400,
-            530.0000000000001,
-            400
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            270,
-            250,
-            270,
-            400
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            530,
-            250,
-            630,
+            620,
             250
           ],
           "light": 20,
@@ -21561,9 +22389,212 @@
         {
           "_id": null,
           "c": [
-            710,
+            690,
             250,
-            800,
+            880.0000000000001,
+            250
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            880.0000000000001,
+            0,
+            1080,
+            0
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1080,
+            0,
+            1080,
+            10
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1080,
+            70,
+            1080,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            880.0000000000001,
+            400,
+            940,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1010,
+            400,
+            1080,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            880.0000000000001,
+            0,
+            880.0000000000001,
+            180
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            880.0000000000001,
+            240,
+            880.0000000000001,
             250
           ],
           "light": 20,
@@ -21592,8 +22623,66 @@
           "c": [
             800,
             250,
+            880.0000000000001,
+            250
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
             800,
-            310
+            400,
+            880.0000000000001,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            800,
+            250,
+            800,
+            330
           ],
           "light": 20,
           "sight": 20,
@@ -21648,7 +22737,210 @@
         {
           "_id": null,
           "c": [
-            530,
+            300,
+            250,
+            550,
+            250
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            550,
+            250,
+            550,
+            330
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            550,
+            390,
+            550,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            300,
+            400,
+            390,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            450,
+            400,
+            550,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            550,
+            250,
+            620,
+            250
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            690,
+            250,
+            800,
+            250
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            550,
             400,
             800,
             400
@@ -21677,9 +22969,9 @@
         {
           "_id": null,
           "c": [
-            40,
+            0,
             400,
-            320,
+            390,
             400
           ],
           "light": 20,
@@ -21706,9 +22998,9 @@
         {
           "_id": null,
           "c": [
+            450,
             400,
-            400,
-            530.0000000000001,
+            550,
             400
           ],
           "light": 20,
@@ -21735,1314 +23027,212 @@
         {
           "_id": null,
           "c": [
-            530.0000000000001,
-            400,
-            530.0000000000001,
-            480
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            530.0000000000001,
-            560,
-            530.0000000000001,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            40,
-            630,
-            220.00000000000003,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            300,
-            630,
-            530.0000000000001,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            40,
-            400,
-            40,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            530,
-            430,
-            1050,
-            430
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            430,
-            1050,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            530,
-            630,
-            700,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            780,
-            630,
-            1050,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            530,
-            430,
-            530,
-            480
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            530,
-            560,
-            530,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            40,
-            630,
-            220.00000000000003,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            300,
-            630,
-            700,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            780,
-            630,
-            1050,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            630,
-            1050,
-            660
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            740,
-            1050,
-            780
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            40,
-            780,
-            1050,
-            780
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            40,
-            630,
-            40,
-            780
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            40,
-            1710.0000000000002,
-            40
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1710.0000000000002,
-            40,
-            1710.0000000000002,
-            780.0000000000001
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            780.0000000000001,
-            1710.0000000000002,
-            780.0000000000001
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            40,
-            1050,
-            300
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            380,
-            1050,
-            660
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            740,
-            1050,
-            780.0000000000001
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1739.9999999999998,
-            150,
-            2020,
-            150
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2020,
-            150,
-            2020,
-            220.00000000000003
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2020,
-            290,
-            2020,
-            550
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1739.9999999999998,
             550,
-            2020,
-            550
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1739.9999999999998,
-            150,
-            1739.9999999999998,
-            240
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            1739.9999999999998,
-            320,
-            1739.9999999999998,
-            550
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2039.9999999999998,
-            40,
-            2300,
-            40
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2300,
-            40,
-            2300,
-            179.99999999999997
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2039.9999999999998,
-            179.99999999999997,
-            2300,
-            179.99999999999997
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2039.9999999999998,
-            40,
-            2039.9999999999998,
-            179.99999999999997
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2020,
-            180,
-            2160,
-            180
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2160,
-            180,
-            2160,
-            290.00000000000006
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2020,
-            290.00000000000006,
-            2160,
-            290.00000000000006
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2020,
-            180,
-            2020,
-            220.00000000000003
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2020,
-            290,
-            2020,
-            290.00000000000006
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2160,
-            220.00000000000003,
-            2300,
-            220.00000000000003
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2300,
-            220.00000000000003,
-            2300,
-            340.00000000000006
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2160,
-            340.00000000000006,
-            2300,
-            340.00000000000006
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2160,
-            220.00000000000003,
-            2160,
-            340.00000000000006
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2070,
-            340,
-            2300,
-            340
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2300,
-            340,
-            2300,
-            550
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {
-            "sr2e-queen-euphoria": {
-              "barrierRating": 3,
-              "breakable": true
-            }
-          }
-        },
-        {
-          "_id": null,
-          "c": [
-            2070,
+            400,
             550,
-            2300,
+            500
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            550,
+            560,
+            550,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            620,
+            390,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            450,
+            620,
+            550,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            400,
+            0,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            630,
+            400,
+            940,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1010,
+            400,
+            1080,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1080,
+            400,
+            1080,
             550
           ],
           "light": 20,
@@ -23069,9 +23259,67 @@
         {
           "_id": null,
           "c": [
-            2070,
-            340,
-            2070,
+            1080,
+            610,
+            1080,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            630,
+            620,
+            1080,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            630,
+            400,
+            630,
             420
           ],
           "light": 20,
@@ -23098,9 +23346,386 @@
         {
           "_id": null,
           "c": [
-            2070,
-            500,
-            2070,
+            630,
+            480,
+            630,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            620,
+            390,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            450,
+            620,
+            550,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            630,
+            620,
+            1080,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            800,
+            1080,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            620,
+            0,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            550,
+            400,
+            630,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1080,
+            0,
+            1800,
+            0
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1800,
+            140,
+            1800,
+            170
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1800,
+            229.99999999999997,
+            1800,
+            520
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1800,
+            580,
+            1800,
+            600
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1600,
+            600,
+            1800,
+            600
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1080,
+            0,
+            1080,
+            10
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1080,
+            70,
+            1080,
             550
           ],
           "light": 20,
@@ -23127,9 +23752,444 @@
         {
           "_id": null,
           "c": [
-            1739.9999999999998,
+            1600,
             600,
-            1820,
+            1600,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1080,
+            800,
+            1600,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1080,
+            610,
+            1080,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1800,
+            0,
+            2000,
+            0
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2000,
+            0,
+            2000,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1800,
+            140,
+            2000,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2000,
+            0,
+            2400,
+            0
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2400,
+            0,
+            2400,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2000,
+            140,
+            2010.0000000000002,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2070,
+            140,
+            2320,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2390,
+            140,
+            2400,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1800,
+            140,
+            2010.0000000000002,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2070,
+            140,
+            2100,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2100,
+            140,
+            2100,
+            210
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2100,
+            270,
+            2100,
+            520
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2100,
+            580,
+            2100,
             600
           ],
           "light": 20,
@@ -23156,9 +24216,9 @@
         {
           "_id": null,
           "c": [
-            1900,
+            1800,
             600,
-            2029.9999999999998,
+            1860.0000000000002,
             600
           ],
           "light": 20,
@@ -23185,10 +24245,10 @@
         {
           "_id": null,
           "c": [
-            2029.9999999999998,
+            1920,
             600,
-            2029.9999999999998,
-            780
+            2100,
+            600
           ],
           "light": 20,
           "sight": 20,
@@ -23214,10 +24274,10 @@
         {
           "_id": null,
           "c": [
-            1739.9999999999998,
-            780,
-            1820,
-            780
+            1800,
+            140,
+            1800,
+            170
           ],
           "light": 20,
           "sight": 20,
@@ -23243,10 +24303,10 @@
         {
           "_id": null,
           "c": [
-            1900,
-            780,
-            2029.9999999999998,
-            780
+            1800,
+            229.99999999999997,
+            1800,
+            520
           ],
           "light": 20,
           "sight": 20,
@@ -23272,10 +24332,532 @@
         {
           "_id": null,
           "c": [
-            1739.9999999999998,
+            1800,
+            580,
+            1800,
+            600
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2100,
+            140,
+            2320,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2390,
+            140,
+            2400,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2400,
+            140,
+            2400,
+            225
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2200,
+            225,
+            2210,
+            225
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2270,
+            225,
+            2400,
+            225
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2100,
+            140,
+            2100,
+            210
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2200,
+            225,
+            2200,
+            350
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2160,
+            350,
+            2200,
+            350
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2100,
+            270,
+            2100,
+            350
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2200,
+            225,
+            2210,
+            225
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2270,
+            225,
+            2400,
+            225
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2400,
+            225,
+            2400,
+            350
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2200,
+            350,
+            2330,
+            350
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2390,
+            350,
+            2400,
+            350
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2160,
+            350,
+            2330,
+            350
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2390,
+            350,
+            2400,
+            350
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2400,
+            350,
+            2400,
+            600
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2100,
             600,
-            1739.9999999999998,
-            780
+            2330,
+            600
           ],
           "light": 20,
           "sight": 20,
@@ -23301,10 +24883,10 @@
         {
           "_id": null,
           "c": [
-            1540,
-            780,
-            1820,
-            780
+            2390,
+            600,
+            2400,
+            600
           ],
           "light": 20,
           "sight": 20,
@@ -23330,10 +24912,10 @@
         {
           "_id": null,
           "c": [
-            1900,
-            780,
-            2300,
-            780
+            2100,
+            350,
+            2100,
+            520
           ],
           "light": 20,
           "sight": 20,
@@ -23359,10 +24941,10 @@
         {
           "_id": null,
           "c": [
-            2300,
-            780,
-            2300,
-            1140
+            2100,
+            580,
+            2100,
+            600
           ],
           "light": 20,
           "sight": 20,
@@ -23388,10 +24970,10 @@
         {
           "_id": null,
           "c": [
-            1540,
-            1140,
-            2300,
-            1140
+            1600,
+            600,
+            1860.0000000000002,
+            600
           ],
           "light": 20,
           "sight": 20,
@@ -23417,10 +24999,10 @@
         {
           "_id": null,
           "c": [
-            1540,
-            780,
-            1540,
-            1140
+            1920,
+            600,
+            2330,
+            600
           ],
           "light": 20,
           "sight": 20,
@@ -23446,10 +25028,10 @@
         {
           "_id": null,
           "c": [
-            2150,
-            830.0000000000001,
-            2290,
-            830.0000000000001
+            2390,
+            600,
+            2400,
+            600
           ],
           "light": 20,
           "sight": 20,
@@ -23475,10 +25057,10 @@
         {
           "_id": null,
           "c": [
-            2290,
-            830.0000000000001,
-            2290,
-            990
+            2400,
+            600,
+            2400,
+            1200
           ],
           "light": 20,
           "sight": 20,
@@ -23504,10 +25086,10 @@
         {
           "_id": null,
           "c": [
-            2150,
-            990,
-            2290,
-            990
+            1600,
+            1200,
+            2400,
+            1200
           ],
           "light": 20,
           "sight": 20,
@@ -23533,10 +25115,10 @@
         {
           "_id": null,
           "c": [
-            2150,
-            830.0000000000001,
-            2150,
-            910
+            1600,
+            600,
+            1600,
+            1200
           ],
           "light": 20,
           "sight": 20,
@@ -23562,10 +25144,10 @@
         {
           "_id": null,
           "c": [
-            2150,
-            969.9999999999999,
-            2150,
-            990
+            2100,
+            600,
+            2100,
+            800
           ],
           "light": 20,
           "sight": 20,
@@ -23591,9 +25173,265 @@
         {
           "_id": null,
           "c": [
-            210,
+            1800,
+            800,
+            1930,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1989.9999999999998,
+            800,
+            2100,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            1800,
+            600,
+            1800,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2240,
+            800,
+            2379.9999999999995,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2379.9999999999995,
+            800,
+            2379.9999999999995,
+            1000
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2240,
+            1000,
+            2379.9999999999995,
+            1000
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2240,
+            800,
+            2240,
+            850
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            2240,
+            950,
+            2240,
+            1000
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {
+            "sr2e-queen-euphoria": {
+              "barrierRating": 3,
+              "breakable": true
+            }
+          }
+        },
+        {
+          "_id": null,
+          "c": [
+            550,
+            10,
+            550,
+            80
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            620,
             250,
-            300,
+            690,
             250
           ],
           "light": 20,
@@ -23615,10 +25453,10 @@
         {
           "_id": null,
           "c": [
-            530,
-            130,
-            530,
-            210
+            880.0000000000001,
+            180,
+            880.0000000000001,
+            240
           ],
           "light": 20,
           "sight": 20,
@@ -23639,10 +25477,10 @@
         {
           "_id": null,
           "c": [
-            630,
-            250,
-            710,
-            250
+            1080,
+            10,
+            1080,
+            70
           ],
           "light": 20,
           "sight": 20,
@@ -23663,10 +25501,34 @@
         {
           "_id": null,
           "c": [
-            869.9999999999999,
-            130,
-            869.9999999999999,
-            210
+            390,
+            400,
+            450,
+            400
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            550,
+            330,
+            550,
+            390
           ],
           "light": 20,
           "sight": 20,
@@ -23688,7 +25550,7 @@
           "_id": null,
           "c": [
             800,
-            310,
+            330,
             800,
             390
           ],
@@ -23711,9 +25573,9 @@
         {
           "_id": null,
           "c": [
-            320,
+            940,
             400,
-            400,
+            1010,
             400
           ],
           "light": 20,
@@ -23735,9 +25597,33 @@
         {
           "_id": null,
           "c": [
-            530,
-            480,
-            530,
+            390,
+            620,
+            450,
+            620
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            550,
+            500,
+            550,
             560
           ],
           "light": 20,
@@ -23759,202 +25645,10 @@
         {
           "_id": null,
           "c": [
-            220.00000000000003,
             630,
-            300,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 1,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            700,
-            630,
-            780,
-            630
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 1,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            300,
-            1050,
-            380
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 1,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            1050,
-            660,
-            1050,
-            740
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 1,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            1739.9999999999998,
-            240,
-            1739.9999999999998,
-            320
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 1,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            2020,
-            40,
-            2020,
-            120
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 1,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            2020,
-            220.00000000000003,
-            2020,
-            290
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 1,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            2160,
-            300,
-            2240,
-            300
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 1,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            2070,
             420,
-            2070,
-            500
+            630,
+            480
           ],
           "light": 20,
           "sight": 20,
@@ -23975,9 +25669,249 @@
         {
           "_id": null,
           "c": [
-            1820,
+            1080,
+            550,
+            1080,
+            610
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            1800,
+            170,
+            1800,
+            229.99999999999997
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            1800,
+            520,
+            1800,
+            580
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2100,
+            210,
+            2100,
+            270
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2100,
+            520,
+            2100,
+            580
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2010.0000000000002,
+            140,
+            2070,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2320,
+            140,
+            2390,
+            140
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2210,
+            225,
+            2270,
+            225
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2330,
+            350,
+            2390,
+            350
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2100,
+            350,
+            2160,
+            350
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2330,
             600,
-            1900,
+            2390,
             600
           ],
           "light": 20,
@@ -23999,10 +25933,10 @@
         {
           "_id": null,
           "c": [
-            1820,
-            780,
-            1900,
-            780
+            1860.0000000000002,
+            600,
+            1920,
+            600
           ],
           "light": 20,
           "sight": 20,
@@ -24023,10 +25957,34 @@
         {
           "_id": null,
           "c": [
-            2150,
-            910,
-            2150,
-            969.9999999999999
+            1930,
+            800,
+            1989.9999999999998,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2240,
+            850,
+            2240,
+            950
           ],
           "light": 20,
           "sight": 20,
@@ -24052,10 +26010,10 @@
           "source": "printed",
           "folio": 45,
           "metres": {
-            "w": 23,
+            "w": 24,
             "h": 12
           },
-          "measuredBy": "legend square (1 m = 44.5 px), cross-checked against the drawn grid pitch of 43 px",
+          "measuredBy": "1 m = 85 px on a 300 dpi render of p.45 (PDF 47), read against a metre grid laid over the printed 1 m squares",
           "rooms": "16 rooms. Room 1 elevator arrival; Room 8 stairway exit; Rooms 3, 14 and 15 are Worker rooms; Room 16 is the Hive Room. Rooms 2, 4-7 and 9-13 are as Room 1."
         }
       },
@@ -24073,7 +26031,7 @@
       "ownership": {
         "default": 0
       },
-      "description": "<p><strong>The climax.</strong> Dark — neither light nor power. The air is stale and reeks sweet and pungent. Anyone who notices such things will realise there are no normal insects or rodents on this level.</p><p>Rooms are dirty and debris-filled, some with crates of basic soy foods, full or waiting to be filled.</p><p><strong>Every wall here is Barrier Rating 3</strong>, and the book is explicit that Soldiers making an all-out attack <em>\"will use the thin walls to their advantage\"</em> — build the walls breakable, not as hard scene boundaries.</p><p><strong>Printed occupants:</strong> Room 3 — six Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 8 — two Flesh Form Workers (F1). Room 14 — four Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 15 — five Flesh Form Workers (F1) and a lone Flesh Form Soldier (<strong>F5</strong>). Room 16 — the Hive Room.</p><p><strong>Rooms:</strong> 16 rooms. Room 1 elevator arrival; Room 8 stairway exit; Rooms 3, 14 and 15 are Worker rooms; Room 16 is the Hive Room. Rooms 2, 4-7 and 9-13 are as Room 1.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.45. Measured 23 × 12 m by legend square (1 m = 44.5 px), cross-checked against the drawn grid pitch of 43 px — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+      "description": "<p><strong>The climax.</strong> Dark — neither light nor power. The air is stale and reeks sweet and pungent. Anyone who notices such things will realise there are no normal insects or rodents on this level.</p><p>Rooms are dirty and debris-filled, some with crates of basic soy foods, full or waiting to be filled.</p><p><strong>Every wall here is Barrier Rating 3</strong>, and the book is explicit that Soldiers making an all-out attack <em>\"will use the thin walls to their advantage\"</em> — build the walls breakable, not as hard scene boundaries.</p><p><strong>Printed occupants:</strong> Room 3 — six Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 8 — two Flesh Form Workers (F1). Room 14 — four Flesh Form Workers (F1) and two Flesh Form Soldiers (F3). Room 15 — five Flesh Form Workers (F1) and a lone Flesh Form Soldier (<strong>F5</strong>). Room 16 — the Hive Room.</p><p><strong>Rooms:</strong> 16 rooms. Room 1 elevator arrival; Room 8 stairway exit; Rooms 3, 14 and 15 are Worker rooms; Room 16 is the Hive Room. Rooms 2, 4-7 and 9-13 are as Room 1.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.45. Measured 24 × 12 m by 1 m = 85 px on a 300 dpi render of p.45 (PDF 47), read against a metre grid laid over the printed 1 m squares — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
     },
     {
       "_id": "cf17d2b939a9b756",
@@ -24082,7 +26040,7 @@
       "navName": "",
       "active": false,
       "width": 2400,
-      "height": 1200,
+      "height": 1400,
       "padding": 0.25,
       "backgroundColor": "#15151f",
       "background": {
@@ -24128,17 +26086,424 @@
       "lights": [],
       "notes": [],
       "sounds": [],
-      "regions": [],
+      "regions": [
+        {
+          "_id": "35a452f7827110fc",
+          "name": "Stairway up to the roof",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 40,
+              "y": 5,
+              "width": 100,
+              "height": 45,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "b1be45938412a9c8",
+              "name": "To The Hive — Exterior",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.b52232ce011e8f6e.Region.c1a9f2bf44276309",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "8c61320e0156c9a1",
+          "name": "Stairway down",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 40,
+              "y": 50,
+              "width": 100,
+              "height": 45,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "eff968737779bb59",
+              "name": "To The Hive — Lower Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.81d72ca327baf377.Region.140930645e2e66aa",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "e66d2b82178dfac3",
+          "name": "West side door",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 320,
+              "y": 810,
+              "width": 140,
+              "height": 90,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "609f4c76fc768824",
+              "name": "To The Hive — Exterior",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.b52232ce011e8f6e.Region.8227848cccf1ac1d",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "eca789a5cda8c3f5",
+          "name": "East side door",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 1120,
+              "y": 810,
+              "width": 140,
+              "height": 90,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "3969a10cab906412",
+              "name": "To The Hive — Exterior",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.b52232ce011e8f6e.Region.89e2405adf1a1c8a",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "cc566b1b78399f6c",
+          "name": "Back door",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 1910.0000000000002,
+              "y": 5,
+              "width": 150,
+              "height": 90,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "d9b6df14866cbf69",
+              "name": "To The Hive — Exterior",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.b52232ce011e8f6e.Region.83d92ea6496c4035",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "b7af4ccf290a7af3",
+          "name": "Loading dock doors",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 1880,
+              "y": 1210,
+              "width": 310,
+              "height": 90,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "e0eb01b6e0bbf6bc",
+              "name": "To The Hive — Exterior",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.b52232ce011e8f6e.Region.ca9b02fbc3e1e55d",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
+          "_id": "10c97113af82f1c7",
+          "name": "Freight elevator",
+          "color": "#4fa3d8",
+          "shapes": [
+            {
+              "type": "rectangle",
+              "x": 2220,
+              "y": 810,
+              "width": 140,
+              "height": 180,
+              "rotation": 0,
+              "hole": false
+            }
+          ],
+          "elevation": {
+            "bottom": null,
+            "top": null
+          },
+          "visibility": 0,
+          "locked": false,
+          "flags": {},
+          "behaviors": [
+            {
+              "_id": "0c504309e213b479",
+              "name": "To The Hive — Lower Level",
+              "type": "teleportToken",
+              "system": {
+                "destination": "Scene.81d72ca327baf377.Region.f51505e1e2e11d09",
+                "choice": true
+              },
+              "disabled": false,
+              "flags": {},
+              "_stats": {
+                "coreVersion": "13.351",
+                "systemId": "sr2e",
+                "systemVersion": "0.1.0",
+                "createdTime": 1784000000000,
+                "modifiedTime": 1784000000000,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
       "templates": [],
       "tiles": [],
       "walls": [
         {
           "_id": null,
           "c": [
-            50,
-            50,
-            2350,
-            50
+            0,
+            0,
+            1910.0000000000002,
+            0
           ],
           "light": 20,
           "sight": 20,
@@ -24159,10 +26524,10 @@
         {
           "_id": null,
           "c": [
-            2350,
-            50,
-            2350,
-            750
+            2060,
+            0,
+            2400,
+            0
           ],
           "light": 20,
           "sight": 20,
@@ -24183,10 +26548,82 @@
         {
           "_id": null,
           "c": [
-            50,
-            750,
+            2400,
+            0,
+            2400,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            800,
+            320,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            459.99999999999994,
+            800,
+            1120,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            1260,
+            800,
             1600,
-            750
+            800
           ],
           "light": 20,
           "sight": 20,
@@ -24207,10 +26644,10 @@
         {
           "_id": null,
           "c": [
-            1720,
-            750,
-            2350,
-            750
+            2210,
+            800,
+            2370,
+            800
           ],
           "light": 20,
           "sight": 20,
@@ -24231,10 +26668,10 @@
         {
           "_id": null,
           "c": [
-            50,
-            50,
-            50,
-            750
+            0,
+            0,
+            0,
+            800
           ],
           "light": 20,
           "sight": 20,
@@ -24255,10 +26692,10 @@
         {
           "_id": null,
           "c": [
-            50,
-            50,
-            350,
-            50
+            2210,
+            800,
+            2370,
+            800
           ],
           "light": 20,
           "sight": 20,
@@ -24279,10 +26716,10 @@
         {
           "_id": null,
           "c": [
-            350,
-            50,
-            350,
-            160
+            2400,
+            800,
+            2400,
+            1200
           ],
           "light": 20,
           "sight": 20,
@@ -24303,178 +26740,10 @@
         {
           "_id": null,
           "c": [
-            350,
-            260,
-            350,
-            400
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            50,
-            400,
-            350,
-            400
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            50,
-            50,
-            50,
-            400
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            50,
-            50,
-            190,
-            50
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            190,
-            50,
-            190,
-            160
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            50,
-            160,
-            190,
-            160
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            50,
-            50,
-            50,
-            160
-          ],
-          "light": 20,
-          "sight": 20,
-          "sound": 20,
-          "move": 20,
-          "door": 0,
-          "ds": 0,
-          "doorSound": null,
-          "dir": 0,
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "flags": {}
-        },
-        {
-          "_id": null,
-          "c": [
-            1350,
-            750,
             1600,
-            750
+            1200,
+            1880,
+            1200
           ],
           "light": 20,
           "sight": 20,
@@ -24495,10 +26764,10 @@
         {
           "_id": null,
           "c": [
-            1720,
-            750,
-            2350,
-            750
+            2190,
+            1200,
+            2400,
+            1200
           ],
           "light": 20,
           "sight": 20,
@@ -24519,10 +26788,10 @@
         {
           "_id": null,
           "c": [
-            2350,
-            750,
-            2350,
-            1130
+            1600,
+            800,
+            1600,
+            1200
           ],
           "light": 20,
           "sight": 20,
@@ -24543,10 +26812,10 @@
         {
           "_id": null,
           "c": [
-            1350,
-            1130,
-            1750,
-            1130
+            0,
+            0,
+            180,
+            0
           ],
           "light": 20,
           "sight": 20,
@@ -24567,10 +26836,10 @@
         {
           "_id": null,
           "c": [
-            1950,
-            1130,
-            2350,
-            1130
+            180,
+            0,
+            180,
+            10
           ],
           "light": 20,
           "sight": 20,
@@ -24591,10 +26860,10 @@
         {
           "_id": null,
           "c": [
-            1350,
-            750,
-            1350,
-            1130
+            180,
+            90,
+            180,
+            100
           ],
           "light": 20,
           "sight": 20,
@@ -24615,10 +26884,10 @@
         {
           "_id": null,
           "c": [
-            2160,
-            819.9999999999999,
-            2300,
-            819.9999999999999
+            0,
+            100,
+            180,
+            100
           ],
           "light": 20,
           "sight": 20,
@@ -24639,10 +26908,10 @@
         {
           "_id": null,
           "c": [
-            2300,
-            819.9999999999999,
-            2300,
-            1039.9999999999998
+            0,
+            0,
+            0,
+            100
           ],
           "light": 20,
           "sight": 20,
@@ -24663,10 +26932,10 @@
         {
           "_id": null,
           "c": [
-            2160,
-            1039.9999999999998,
-            2300,
-            1039.9999999999998
+            0,
+            100,
+            150,
+            100
           ],
           "light": 20,
           "sight": 20,
@@ -24687,10 +26956,10 @@
         {
           "_id": null,
           "c": [
-            2160,
-            819.9999999999999,
-            2160,
-            900
+            150,
+            100,
+            150,
+            120
           ],
           "light": 20,
           "sight": 20,
@@ -24711,10 +26980,10 @@
         {
           "_id": null,
           "c": [
-            2160,
-            980.0000000000001,
-            2160,
-            1039.9999999999998
+            150,
+            180,
+            150,
+            225
           ],
           "light": 20,
           "sight": 20,
@@ -24735,10 +27004,490 @@
         {
           "_id": null,
           "c": [
-            350,
-            160,
-            350,
-            260
+            0,
+            225,
+            150,
+            225
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            100,
+            0,
+            225
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            150,
+            225,
+            150,
+            270
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            150,
+            340,
+            150,
+            375
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            375,
+            150,
+            375
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            225,
+            0,
+            375
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            470,
+            150,
+            470
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            0,
+            375,
+            0,
+            470
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            150,
+            100,
+            250,
+            100
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            250,
+            100,
+            250,
+            120
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            250,
+            180,
+            250,
+            470
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            240,
+            470,
+            250,
+            470
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            150,
+            100,
+            150,
+            120
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            150,
+            180,
+            150,
+            270
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            150,
+            340,
+            150,
+            375
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2210,
+            800,
+            2370,
+            800
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2370.0000000000005,
+            800,
+            2370.0000000000005,
+            1000
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2210,
+            1000,
+            2370.0000000000005,
+            1000
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2210,
+            800,
+            2210,
+            850
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2210,
+            950,
+            2210,
+            1000
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 0,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            320,
+            800,
+            459.99999999999994,
+            800
           ],
           "light": 20,
           "sight": 20,
@@ -24759,10 +27508,10 @@
         {
           "_id": null,
           "c": [
-            1600,
-            750,
-            1720,
-            750
+            1120,
+            800,
+            1260,
+            800
           ],
           "light": 20,
           "sight": 20,
@@ -24783,10 +27532,10 @@
         {
           "_id": null,
           "c": [
-            2160,
-            900,
-            2160,
-            980.0000000000001
+            1910.0000000000002,
+            0,
+            2060,
+            0
           ],
           "light": 20,
           "sight": 20,
@@ -24807,10 +27556,34 @@
         {
           "_id": null,
           "c": [
-            1750,
-            1130,
-            1950,
-            1130
+            1880,
+            1200,
+            2190,
+            1200
+          ],
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "ds": 0,
+          "doorSound": null,
+          "dir": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "_id": null,
+          "c": [
+            2210,
+            850,
+            2210,
+            950
           ],
           "light": 20,
           "sight": 20,
@@ -24837,9 +27610,9 @@
           "folio": 44,
           "metres": {
             "w": 24,
-            "h": 12
+            "h": 14
           },
-          "measuredBy": "grid period (43 px, both axes); bounding box of an L-shaped plan",
+          "measuredBy": "1 m = 85.5 px on a 300 dpi render of p.44 (PDF 46); the printed 1 m floor tiles line up with a metre grid laid over it, 24 x 12 m building plus the loading dock outside the double doors",
           "rooms": "Main area with disused conventional food-production equipment (dusty, poorly maintained), loading dock, freight elevator, small group of empty abandoned offices, stairway up to the roof and down to the Lower Level."
         }
       },
@@ -24857,7 +27630,7 @@
       "ownership": {
         "default": 0
       },
-      "description": "<p>The Amber Gel facility. Barely used by the Hive and showing only general activity at the loading dock — trucks from Strice Foods load each morning, and the drums are already waiting for them. The only person the truckers ever see is <strong>Craft</strong>.</p><p>Lighting is whatever filters through the high green-tinted windows; the power is on, so the runners can switch the fluorescents on if they want. <strong>The stairway is unlit.</strong></p><p><strong>None of the doors are locked</strong> and all are easily operable. The freight elevator is conventional and fully operational, though its control panel shows physical damage.</p><p><strong>Rooms:</strong> Main area with disused conventional food-production equipment (dusty, poorly maintained), loading dock, freight elevator, small group of empty abandoned offices, stairway up to the roof and down to the Lower Level.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.44. Measured 24 × 12 m by grid period (43 px, both axes); bounding box of an L-shaped plan — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
+      "description": "<p>The Amber Gel facility. Barely used by the Hive and showing only general activity at the loading dock — trucks from Strice Foods load each morning, and the drums are already waiting for them. The only person the truckers ever see is <strong>Craft</strong>.</p><p>Lighting is whatever filters through the high green-tinted windows; the power is on, so the runners can switch the fluorescents on if they want. <strong>The stairway is unlit.</strong></p><p><strong>None of the doors are locked</strong> and all are easily operable. The freight elevator is conventional and fully operational, though its control panel shows physical damage.</p><p><strong>Rooms:</strong> Main area with disused conventional food-production equipment (dusty, poorly maintained), loading dock, freight elevator, small group of empty abandoned offices, stairway up to the roof and down to the Lower Level.</p><p><em>Layout derived from the printed floorplan on Queen Euphoria p.44. Measured 24 × 14 m by 1 m = 85.5 px on a 300 dpi render of p.44 (PDF 46); the printed 1 m floor tiles line up with a metre grid laid over it, 24 x 12 m building plus the loading dock outside the double doors — the map carries a \"□ = 1 metre\" legend, so the scale is the book's, not an estimate.</em></p>"
     }
   ],
   "journal": [
