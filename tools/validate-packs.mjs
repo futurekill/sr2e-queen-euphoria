@@ -52,6 +52,18 @@ for (const pack of packs.sort()) {
       else ids.set(doc._id, f);
     }
     if (doc.system !== undefined && typeof doc.system !== "object") note(`${f}: system is not an object`);
+    // A scene's walls, regions and region behaviours become their own LevelDB
+    // records, so each needs a unique 16-char id, or build-packs can't split them
+    // and the compendium scene loads empty.
+    if (collection === "scenes") {
+      const seen = new Set();
+      const check = (kind, x) => {
+        if (!/^[A-Za-z0-9]{16}$/.test(x._id ?? "") || seen.has(x._id)) note(`${f}: ${kind} with a missing or duplicate _id`);
+        seen.add(x._id);
+      };
+      for (const w of doc.walls ?? []) check("wall", w);
+      for (const r of doc.regions ?? []) { check("region", r); for (const b of r.behaviors ?? []) check("behaviour", b); }
+    }
   }
 }
 

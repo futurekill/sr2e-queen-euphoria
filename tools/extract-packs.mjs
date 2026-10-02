@@ -34,8 +34,10 @@ const EMBEDDED = {
   // Journal pages are split into separate LevelDB records by build-packs
   // (journal: ["pages"]); re-nest them here so a build->edit-in-Foundry->extract
   // round trip doesn't drop page content. (DE's extractor omitted this.)
-  journal: ["pages"]
+  journal: ["pages"],
+  scenes:  ["walls", "regions"]
 };
+const NESTED = { "actors.items": "effects", "scenes.regions": "behaviors" };
 
 /** Make a filesystem-safe filename fragment from a document name. */
 function safeName(name) {
@@ -56,12 +58,11 @@ function nestDoc(doc, key, records) {
     doc[field] = refs.map(cid => {
       const child = records.get(`!${collection}.${field}!${id}.${cid}`);
       if (!child) return null;
-      // Effects of an actor's embedded items nest one level deeper
-      if (collection === "actors" && field === "items" &&
-          Array.isArray(child.effects) && child.effects.length &&
-          typeof child.effects[0] === "string") {
-        child.effects = child.effects
-          .map(eid => records.get(`!actors.items.effects!${id}.${cid}.${eid}`))
+      // An actor's item effects and a scene's region behaviours nest one level deeper
+      const deep = NESTED[`${collection}.${field}`];
+      if (deep && Array.isArray(child[deep]) && child[deep].length && typeof child[deep][0] === "string") {
+        child[deep] = child[deep]
+          .map(gid => records.get(`!${collection}.${field}.${deep}!${id}.${cid}.${gid}`))
           .filter(Boolean);
       }
       return child;

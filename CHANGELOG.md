@@ -2,6 +2,15 @@
 
 
 
+## Unreleased
+
+### Fixed
+- **Scenes dragged from the Scenes compendium had no walls, doors or teleport
+  regions.** Only the Adventure import had them. The pack build now stores each
+  scene's walls, regions and region behaviours the way Foundry expects, so a scene
+  imported on its own is complete. The teleport links between floors still need the
+  linked scene imported with its id kept, which the Adventure import does.
+
 ## 0.6.0 — The Hive
 
 ### Added — the Hive Exterior, and stairs/elevators/doors that link floors

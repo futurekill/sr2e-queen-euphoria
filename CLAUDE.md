@@ -111,6 +111,15 @@ JSON, then `npm run build-packs [name]`. `tools/build-packs.mjs` splits journal
 After copying any DE tooling, grep for leftover `double-exposure` / `de-` / DE
 prose and fail if any remain.
 
+## Scene children in the packs
+Foundry stores a compendium scene's walls, regions and region behaviours as
+separate LevelDB records. `tools/build-packs.mjs` splits them (and
+`extract-packs.mjs` re-nests them); left inline they are silently dropped and the
+scene loads empty, which shipped through 0.6.0. So walls need ids: `gen-scenes.mjs`
+hashes one per wall, and `npm run validate` fails a scene whose walls, regions or
+behaviours lack unique ids. The Adventure stores scenes as plain data and was never
+affected.
+
 ## Copyright
 *Queen Euphoria* / *Shadowrun* are © FASA and rights holders. This module is for
 the owner's **personal** table use from a PDF they own, not for distribution.

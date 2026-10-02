@@ -31,8 +31,15 @@ const SRC_DIR    = path.join(__dirname, "..", "packs-src");
 const EMBEDDED = {
   actors:  ["items", "effects"],
   items:   ["effects"],
-  journal: ["pages"]
+  journal: ["pages"],
+  // A scene's walls and regions are separate LevelDB records too. Left inline,
+  // Foundry drops them: every scene in the Scenes compendium loaded with no walls
+  // and no regions (only the Adventure, which stores scenes as plain data, had them).
+  scenes:  ["walls", "regions"]
 };
+
+/** Collections nested one level deeper: <collection>.<field> → its child field. */
+const NESTED = { "actors.items": "effects", "scenes.regions": "behaviors" };
 
 /**
  * Split a document's embedded collections into child LevelDB records,
@@ -48,18 +55,18 @@ function splitDoc(doc, key, batch) {
     doc[field] = children.map(c => c._id);
     for (const child of children) {
       if (!child._id) throw new Error(`${key}: embedded ${field} entry missing _id`);
-      // Effects on an actor's embedded items nest one level deeper
-      if (collection === "actors" && field === "items" &&
-          Array.isArray(child.effects) && child.effects.length &&
-          typeof child.effects[0] !== "string") {
-        for (const eff of child.effects) {
+      // An actor's item effects and a scene's region behaviours nest one level deeper
+      const deep = NESTED[`${collection}.${field}`];
+      if (deep && Array.isArray(child[deep]) && child[deep].length && typeof child[deep][0] !== "string") {
+        for (const g of child[deep]) {
+          if (!g._id) throw new Error(`${key}: ${field}.${deep} entry missing _id`);
           batch.push({
             type: "put",
-            key: `!actors.items.effects!${id}.${child._id}.${eff._id}`,
-            value: JSON.stringify(eff)
+            key: `!${collection}.${field}.${deep}!${id}.${child._id}.${g._id}`,
+            value: JSON.stringify(g)
           });
         }
-        child.effects = child.effects.map(e => e._id);
+        child[deep] = child[deep].map(g => g._id);
       }
       batch.push({
         type: "put",

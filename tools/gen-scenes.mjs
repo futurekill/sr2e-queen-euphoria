@@ -183,6 +183,9 @@ function walls(s, W, H) {
   for (const w of s.windows ?? [])
     out.push({ ...wall(...w.seg.map(v => v * M)), light: 0, sight: 0, sound: 10 });
 
+  // Walls are separate LevelDB records in a Scene compendium, so each needs an id:
+  // hashed from the scene and its own position in the list, stable across runs.
+  out.forEach((w, n) => { w._id = createHash("sha1").update(`${s._id}:wall:${n}:${w.c.join(",")}`).digest("hex").slice(0, 16); });
   return out;
 }
 
