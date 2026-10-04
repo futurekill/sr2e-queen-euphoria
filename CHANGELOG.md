@@ -1,8 +1,6 @@
 # Changelog
 
-
-
-## Unreleased
+## 0.6.1 — 2026-10-04
 
 ### Fixed
 - **Scenes dragged from the Scenes compendium had no walls, doors or teleport
