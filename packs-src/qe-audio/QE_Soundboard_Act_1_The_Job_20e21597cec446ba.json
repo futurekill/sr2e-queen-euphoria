@@ -219,6 +219,82 @@
         "systemId": "sr2e",
         "systemVersion": "0.103.1"
       }
+    },
+    {
+      "_id": "8c545d823f2d309f",
+      "name": "Euphoria: do you know who I am?",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-euph-whoami.mp3",
+      "description": "Do you have any idea who I am?",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "f3b8eee84ae479a4",
+      "name": "Euphoria: get your hands off me",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-euph-hands.mp3",
+      "description": "Get your hands off me!",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "ac52f7e0f674817e",
+      "name": "Euphoria: my people will find me",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-euph-find.mp3",
+      "description": "My people will find me. You know that, right? Every single one of you is finished.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "1ec254728924a237",
+      "name": "Euphoria: fine, but I want my own room",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-euph-room.mp3",
+      "description": "Fine. Fine! But I want my own room. And real coffee, not that soy drek.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
     }
   ],
   "ownership": {
