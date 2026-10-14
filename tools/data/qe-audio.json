@@ -16,6 +16,38 @@
     "euphoria": {
       "name": "Euphoria",
       "id": "o2Qeh9Q5Eb0sgWD9vLMH"
+    },
+    "craft": {
+      "name": "QE – Craft",
+      "id": "qSSDGvBZqO1SEVuIVNvg"
+    },
+    "stone": {
+      "name": "QE – Stone",
+      "id": "gU0SV6AdnVGgJQWBvrvJ"
+    },
+    "osprey": {
+      "name": "QE – Osprey",
+      "id": "r7pG7R1puU1h0pVFV6Pe"
+    },
+    "pride": {
+      "name": "QE – Pride",
+      "id": "oYZdgIvekJRLu0DlTdd8"
+    },
+    "carrone": {
+      "name": "QE – Robert Carrone",
+      "id": "sWol2IcEtfG30KgyUFJf"
+    },
+    "burroughs": {
+      "name": "QE – Vincent Burroughs",
+      "id": "TjZLaJfO5SfaIVnBzDma"
+    },
+    "whitecastle": {
+      "name": "QE – Elliot Whitecastle",
+      "id": "BjiwegKTE0VmKy24QEln"
+    },
+    "lonestar": {
+      "name": "QE – Lone Star Officer",
+      "id": "b6TXlmxRebXI53dM1vf9"
     }
   },
   "playlists": [
