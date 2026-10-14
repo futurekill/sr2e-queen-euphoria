@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.7.0 — 2026-10-14
 
 ### Added — a soundboard for the whole adventure
 - **Queen Euphoria — Soundboard** compendium: six playlists, one per stretch of the
