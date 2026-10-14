@@ -13,6 +13,8 @@
 - Sound effects: the commlink, a Harley, Pacific Towers' lobby (looping) and alarm,
   a door kicked in, paparazzi, Magic Crafts' door chime, and the Hive (a looping
   ambience, a worker's alarm screech, a soldier coming through a wall).
+- Lines are performed rather than read: ElevenLabs v3 with direction such as
+  [screaming], [whispers] and [voice breaking].
 - The read-alouds are original text, not the book's boxed text.
 
 ### Fixed

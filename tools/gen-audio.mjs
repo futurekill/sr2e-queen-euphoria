@@ -29,7 +29,7 @@ async function generate(clip) {
   const url = isSfx ? "https://api.elevenlabs.io/v1/sound-generation"
     : `https://api.elevenlabs.io/v1/text-to-speech/${data.voices[clip.voice].id}?output_format=mp3_44100_128`;
   const body = isSfx ? { text: clip.sfx, duration_seconds: clip.seconds ?? null }
-    : { text: clip.text, model_id: "eleven_multilingual_v2" };
+    : { text: clip.text, model_id: clip.model ?? "eleven_v3" };   // v3 performs [audio tags] like [whispers]
   const res = await fetch(url, { method: "POST", headers: { "xi-api-key": KEY, "Content-Type": "application/json" }, body: JSON.stringify(body) });
   if (!res.ok) throw new Error(`${clip.id}: HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
   return Buffer.from(await res.arrayBuffer());

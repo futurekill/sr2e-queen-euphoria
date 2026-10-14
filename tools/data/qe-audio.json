@@ -72,25 +72,25 @@
           "id": "a1-read-wakeup",
           "label": "Read-aloud: the wake-up call",
           "voice": "narrator",
-          "text": "Your commlink drags you out of a dead sleep. The clock says it's too early for anything good. The caller ID says Juan Diablo, and Diablo doesn't call to chat."
+          "text": "[low, gravelly] Your commlink drags you out of a dead sleep. [pause] The clock says it's way too early for anything good... and the caller ID says Juan Diablo. Diablo doesn't call to chat."
         },
         {
           "id": "a1-diablo-rise",
           "label": "Diablo: rise and shine",
           "voice": "diablo",
-          "text": "Rise and shine, chummer. Got work, and it pays. Meet's in an hour."
+          "text": "[laughs] Rise and shine, chummer! Got work. [beat] Good work, the kind that pays. Meet's in an hour."
         },
         {
           "id": "a1-diablo-dontbelate",
           "label": "Diablo: don't be late",
           "voice": "diablo",
-          "text": "Don't be late, and don't be stupid. This Johnson's got class."
+          "text": "And hey — don't be late. [beat] And don't be stupid, eh? This Johnson's got class."
         },
         {
           "id": "a1-diablo-intro",
           "label": "Diablo: I just make introductions",
           "voice": "diablo",
-          "text": "Hey, I just make the introductions. What happens after that is on you."
+          "text": "[shrugs] Hey, hey, I just make the introductions, man. What happens after that? [chuckles] That's on you."
         },
         {
           "id": "a1-sfx-harley",
@@ -102,31 +102,31 @@
           "id": "a1-read-meet",
           "label": "Read-aloud: the meet",
           "voice": "narrator",
-          "text": "The car is long, black and spotless. The man in the back seat is the same: good suit, good manners, nothing you could describe to Lone Star tomorrow. He gestures to the seats across from him."
+          "text": "[quietly] The car is long, black, and spotless. The man in the back seat is the same — good suit, good manners... nothing you could describe to Lone Star tomorrow. [pause] He gestures to the seats across from him."
         },
         {
           "id": "a1-johnson-sit",
           "label": "Johnson: please, sit",
           "voice": "johnson",
-          "text": "Thank you for coming on short notice. Please, sit."
+          "text": "Ah. Thank you for coming on such short notice. [smoothly] Please... sit."
         },
         {
           "id": "a1-johnson-job",
           "label": "Johnson: the job",
           "voice": "johnson",
-          "text": "The job is simple. A certain young lady must miss an appointment. Not permanently. Just long enough to be embarrassing."
+          "text": "The job is simple. [pause] A certain young lady must miss an appointment. Not permanently, mind you. [slight smile] Just long enough to be... embarrassing."
         },
         {
           "id": "a1-johnson-nohurt",
           "label": "Johnson: nobody gets hurt",
           "voice": "johnson",
-          "text": "Let me be clear. My client wants her inconvenienced, not damaged. Nobody gets hurt."
+          "text": "Let me be very clear about one thing. [firmly] My client wants her inconvenienced. Not damaged. Nobody gets hurt."
         },
         {
           "id": "a1-johnson-questions",
           "label": "Johnson: no questions",
           "voice": "johnson",
-          "text": "Who my client is, and why, are not part of the arrangement. Do we have an arrangement?"
+          "text": "Who my client is — and why — are not part of the arrangement. [pause] So. Do we have an arrangement?"
         }
       ]
     },
@@ -150,97 +150,97 @@
           "id": "cs-rentacop-help",
           "label": "Rent-a-cop: can I help you?",
           "voice": "rentacop",
-          "text": "Evening. Can I, uh, help you? Residents and guests only past this point. I'll need to see some ID."
+          "text": "[clears throat] Evening! Can I, uh... help you? Residents and guests only past this point, so I'm gonna need to see some, um — some ID."
         },
         {
           "id": "cs-rentacop-hey",
           "label": "Rent-a-cop: hey, you can't be in here",
           "voice": "rentacop",
-          "text": "Hey! Hey, you can't be in here! I'm calling this in, okay? Don't move!"
+          "text": "[startled] Hey! Hey! You can't — you can't be in here! I'm calling this in, okay? Don't move!"
         },
         {
           "id": "cs-rentacop-panic",
           "label": "Rent-a-cop: panic button",
           "voice": "rentacop",
-          "text": "Oh drek, oh drek. Lobby to anyone! I've got armed people in the lobby! Send Lone Star!"
+          "text": "[panicked, whispering] Oh drek, oh drek, oh drek... [shouting into radio] Lobby to anyone! I've got armed people in the lobby! Send Lone Star! Send Lone Star!"
         },
         {
           "id": "cs-ke-step-back",
           "label": "Knight Errant: step back",
           "voice": "knighterrant",
-          "text": "Sir, step back from the vehicle. This area is restricted. I won't ask you twice."
+          "text": "Sir. Step back from the vehicle. [firmly] This area is restricted. I won't ask you twice."
         },
         {
           "id": "cs-ke-contact",
           "label": "Knight Errant: contact!",
           "voice": "knighterrant",
-          "text": "Contact, front entrance! Team two, cover the principal! Move, move!"
+          "text": "[shouting] Contact, front entrance! Team two, cover the principal! Move, move, move!"
         },
         {
           "id": "cs-ke-down",
           "label": "Knight Errant: man down",
           "voice": "knighterrant",
-          "text": "Man down! I need a medic on the twentieth floor, now!"
+          "text": "[urgent, breathless] Man down! I need a medic on twenty — now! He's bleeding out!"
         },
         {
           "id": "cs-osprey-intro",
           "label": "Osprey: not receiving visitors",
           "voice": "osprey",
-          "text": "I'm afraid Miss Euphoria isn't receiving visitors this evening. Do turn around, there's a good chap."
+          "text": "[politely] I'm afraid Miss Euphoria isn't receiving visitors this evening. [pause] Do turn around, there's a good chap."
         },
         {
           "id": "cs-osprey-orders",
           "label": "Osprey: orders to Knight Errant",
           "voice": "osprey",
-          "text": "Knight Errant, hold them at the door. Nobody gets past the hallway. I'll see to the young lady."
+          "text": "Knight Errant, hold them at the door. [crisp] Nobody gets past the hallway. [calm] I'll see to the young lady myself."
         },
         {
           "id": "cs-osprey-taunt",
           "label": "Osprey: bad career move",
           "voice": "osprey",
-          "text": "You've no idea who you're dealing with, have you? This was a very poor career decision."
+          "text": "[dry chuckle] You've no idea who you're dealing with, have you? [sighs] This was a very poor career decision."
         },
         {
           "id": "cs-stone-warn",
           "label": "Stone: I'd stop there",
           "voice": "stone",
-          "text": "I'd stop there, if I were you. This room is warded."
+          "text": "[quietly] I'd stop there, if I were you. [pause] This room is warded."
         },
         {
           "id": "cs-stone-spirit",
           "label": "Stone: the spirit's waiting",
           "voice": "stone",
-          "text": "The fire spirit has been waiting all evening for someone to try something foolish. Go on."
+          "text": "The fire spirit's been waiting all evening for somebody to try something foolish. [beat] Go on."
         },
         {
           "id": "cs-stone-retreat",
           "label": "Stone: we're done here",
           "voice": "stone",
-          "text": "Osprey. We're outgunned. Get her clear, I'll cover the stairs."
+          "text": "[urgent, low] Osprey. We're outgunned. Get her clear — I'll cover the stairs."
         },
         {
           "id": "cs-euph-grabbed",
-          "label": "Euphoria: you can't be serious",
+          "label": "Euphoria: do you know who I am?",
           "voice": "euphoria",
-          "text": "You can't be serious. Do you have any idea what my fans will do to you?"
+          "text": "[screaming] Get off me! Do you have any idea who I am?"
         },
         {
           "id": "cs-euph-hide",
-          "label": "Euphoria: Osprey, do something!",
+          "label": "Euphoria: where is my security?!",
           "voice": "euphoria",
-          "text": "Osprey! Osprey, do something! What are we paying you for?"
+          "text": "Security! Where is my security?! I pay you people!"
         },
         {
           "id": "cs-lonestar-arrive",
           "label": "Lone Star: arriving",
           "voice": "lonestar",
-          "text": "Lone Star! Nobody move! Everybody on the floor, hands where I can see them!"
+          "text": "[shouting] Lone Star! Nobody move! Everybody on the floor — hands where I can see them!"
         },
         {
           "id": "cs-lonestar-radio",
           "label": "Lone Star: calling it in",
           "voice": "lonestar",
-          "text": "Dispatch, unit four-twelve at Pacific Towers. Shots fired, requesting backup."
+          "text": "[into radio, clipped] Dispatch, four-twelve at Pacific Towers. Shots fired. [beat] Requesting backup, code three."
         }
       ]
     },
@@ -251,55 +251,55 @@
           "id": "hold-read-flat",
           "label": "Read-aloud: the Royal Meadows flat",
           "voice": "narrator",
-          "text": "Twenty-four square meters of somebody else's bad decisions. Two double beds jammed side by side, a kitchenette that smells of old soy, and a ceiling fan that has given up. This is home until Sunday."
+          "text": "[wry] Twenty-four square meters of somebody else's bad decisions. Two double beds jammed side by side, a kitchenette that smells of old soy... and a ceiling fan that gave up years ago. [pause] This is home until Sunday."
         },
         {
           "id": "a1-euph-whoami",
-          "label": "Euphoria: do you know who I am?",
+          "label": "Euphoria: not my face!",
           "voice": "euphoria",
-          "text": "Do you have any idea who I am?"
+          "text": "[panicked] Don't touch my face. Please, not my face!"
         },
         {
           "id": "a1-euph-hands",
           "label": "Euphoria: get your hands off me",
           "voice": "euphoria",
-          "text": "Get your hands off me!"
+          "text": "[furious] Get your hands off me! Get — your — hands — off me!"
         },
         {
           "id": "a1-euph-find",
           "label": "Euphoria: my people will find me",
           "voice": "euphoria",
-          "text": "My people will find me. You know that, right? Every single one of you is finished."
+          "text": "[shaky laugh] My people will find me. You know that, right? [voice hardening] Every single one of you is finished."
         },
         {
           "id": "a1-euph-room",
           "label": "Euphoria: fine, but I want my own room",
           "voice": "euphoria",
-          "text": "Fine. Fine! But I want my own room. And real coffee, not that soy drek."
+          "text": "[exasperated sigh] Fine. Fine! [huffs] But I want my own room. And real coffee, not that soy drek."
         },
         {
           "id": "hold-euph-bored",
-          "label": "Euphoria: this is not a hotel",
+          "label": "Euphoria: Robert, is this a publicity thing?",
           "voice": "euphoria",
-          "text": "This is not a hotel. This is not even a closet. I have closets bigger than this."
+          "text": "This isn't funny. Robert, if this is some publicity thing, I swear to God..."
         },
         {
           "id": "hold-euph-deal",
           "label": "Euphoria: let's make a deal",
           "voice": "euphoria",
-          "text": "Okay. Whoever's paying you, I'll pay double. My manager will transfer it tonight. Just take me home."
+          "text": "[sweetly] Okay. Okay, look. Whoever's paying you? I'll pay double. [quickly] My manager can transfer it tonight. Just — take me home. Please."
         },
         {
           "id": "hold-diablo-payday",
           "label": "Diablo: payday",
           "voice": "diablo",
-          "text": "First half's on its way, chummers. Nice work. Keep her comfortable and keep your heads down."
+          "text": "[cheerful] First half's on its way, chummers! Nice work, real nice. [lowering voice] Keep her comfortable, and keep your heads down, yeah?"
         },
         {
           "id": "hold-diablo-relocate",
           "label": "Diablo: you moved?",
           "voice": "diablo",
-          "text": "You moved? Smart. Tell me where, and I'll bring the rest of your money. Nobody else, chummer. Nobody."
+          "text": "You moved? [whistles] Smart. Tell me where, and I'll bring the rest of your money. [serious] Nobody else, chummer. Nobody."
         },
         {
           "id": "hold-sfx-door",
@@ -311,25 +311,25 @@
           "id": "hold-pride-door",
           "label": "Pride: the door",
           "voice": "pride",
-          "text": "Good afternoon. I believe you have something that belongs to my client."
+          "text": "[calm, amused] Good afternoon. [pause] I believe you have something that belongs to my client."
         },
         {
           "id": "hold-pride-offer",
           "label": "Pride: walk away",
           "voice": "pride",
-          "text": "You have courage. I respect that. Give me the girl, and you may walk away. This offer is made once."
+          "text": "You have courage. I respect that. [beat] Give me the girl, and you may walk away. [quietly] This offer is made once."
         },
         {
           "id": "hold-pride-savage",
           "label": "Pride: angered",
           "voice": "pride",
-          "text": "Enough! You have made your choice. Now the lion feeds."
+          "text": "[roaring] Enough! You have made your choice. [growling] Now the lion feeds!"
         },
         {
           "id": "hold-pride-retreat",
           "label": "Pride: withdraw",
           "voice": "pride",
-          "text": "Another day, little runners. The hunt is never over."
+          "text": "[low chuckle] Another day, little runners. [pause] The hunt is never over."
         }
       ]
     },
@@ -340,67 +340,67 @@
           "id": "a2-whitecastle-call",
           "label": "Whitecastle: the call",
           "voice": "whitecastle",
-          "text": "Good to see you, chummer. I've got a client with deep pockets and a very public problem. Pays well, and the meet's tonight."
+          "text": "[warmly] Hey, good to see you, chummer! [conspiratorial] Listen — I've got a client with deep pockets and a very... public problem. Pays well. Meet's tonight."
         },
         {
           "id": "a2-whitecastle-asked",
           "label": "Whitecastle: asked for you",
           "voice": "whitecastle",
-          "text": "Funny thing. The client asked for your team by name. Don't ask me how they know you."
+          "text": "[laughs] Funny thing, though. The client asked for your team by name. [beat] Don't ask me how they know you. I didn't tell 'em."
         },
         {
           "id": "a2-carrone-intro",
           "label": "Carrone: let's not waste time",
           "voice": "carrone",
-          "text": "Let's not waste each other's time. Euphoria is missing again, MegaMedia wants her back, and I'm told you're discreet."
+          "text": "Let's not waste each other's time. [crisp] Euphoria is missing. Again. MegaMedia wants her back — and I'm told you're discreet."
         },
         {
           "id": "a2-carrone-price",
           "label": "Carrone: name your price",
           "voice": "carrone",
-          "text": "Find her, quietly, before the press does. Name your price, within reason."
+          "text": "Find her. Quietly. Before the press does. [pause] Name your price... within reason."
         },
         {
           "id": "a2-carrone-knows",
           "label": "Carrone: I know what you did",
           "voice": "carrone",
-          "text": "I know exactly who took her the first time. The only question is whether you're going to be useful to me now."
+          "text": "[cold, measured] I know exactly who took her the first time. [pause] The only question is whether you're going to be useful to me now."
         },
         {
           "id": "a2-carrone-threat",
           "label": "Carrone: don't disappoint me",
           "voice": "carrone",
-          "text": "MegaMedia has a long memory and a very large legal department. Don't disappoint me."
+          "text": "[pleasantly] MegaMedia has a long memory — and a very large legal department. [beat] Don't disappoint me."
         },
         {
           "id": "a2-read-condo",
           "label": "Read-aloud: the condo",
           "voice": "narrator",
-          "text": "The penthouse door is open. Inside, the air is thick with something sharp and chemical, like vinegar left to rot. The bodyguards are still here. Most of them. Whatever did this did not use a gun."
+          "text": "[hushed] The penthouse door is open. Inside, the air is thick with something sharp and chemical... like vinegar left to rot. [pause] The bodyguards are still here. Most of them. [slowly] Whatever did this did not use a gun."
         },
         {
           "id": "a2-read-sim",
           "label": "Read-aloud: the sim recording",
           "voice": "narrator",
-          "text": "The playback takes you behind her eyes. Music, a mirror, a smile practiced a thousand times. Then glass bursts inward, and something with too many limbs fills the frame. You feel her scream in your own throat."
+          "text": "[softly] The playback takes you behind her eyes. Music. A mirror. A smile she's practiced a thousand times. [pause] Then the glass bursts inward — and something with too many limbs fills the frame. [tense] You feel her scream in your own throat."
         },
         {
           "id": "a2-burroughs-deny",
           "label": "Burroughs: nothing to do with me",
           "voice": "burroughs",
-          "text": "I don't know what you think you've found, but it has nothing to do with me. Strice Foods runs a clean operation."
+          "text": "[defensive, too fast] I-I don't know what you think you've found, but it has nothing to do with me. Strice Foods runs a clean operation. A clean operation!"
         },
         {
           "id": "a2-burroughs-crack",
           "label": "Burroughs: he made me",
           "voice": "burroughs",
-          "text": "You don't understand. He has things on me. He said he'd ruin me. He said nobody would get hurt."
+          "text": "[voice breaking] You don't understand. He— he has things on me. He said he'd ruin me! [desperate] He said nobody would get hurt..."
         },
         {
           "id": "a2-burroughs-lonestar",
           "label": "Burroughs: calling Lone Star",
           "voice": "burroughs",
-          "text": "Security! Get Lone Star on the line, there's an intrusion in the system!"
+          "text": "[panicked, shouting] Security! Get Lone Star on the line — now! There's an intrusion in the system!"
         },
         {
           "id": "a2-sfx-camera",
@@ -423,25 +423,25 @@
           "id": "mc-craft-welcome",
           "label": "Craft: welcome",
           "voice": "craft",
-          "text": "Welcome, welcome! Fetishes, foci, the finest reagents in the Barrens. Whatever you seek, friends, I can find it for you."
+          "text": "[overly cheerful] Welcome, welcome! Fetishes, foci, the finest reagents in the Barrens! [leaning in] Whatever you seek, friends... I can find it for you."
         },
         {
           "id": "mc-craft-slip",
           "label": "Craft: she's resting",
           "voice": "craft",
-          "text": "Euphoria? No, no, she's resting now. She's changing. She'll be so much more than she was."
+          "text": "Euphoria? [giggles] No, no, no, she's resting now. [whispers] She's changing. She'll be so much more than she was..."
         },
         {
           "id": "mc-craft-turn",
           "label": "Craft: you shouldn't have come",
           "voice": "craft",
-          "text": "You shouldn't have come here. You can feel them, can't you? Under the floor. Waiting."
+          "text": "[suddenly cold] You shouldn't have come here. [whispers] You can feel them, can't you? Under the floor... waiting."
         },
         {
           "id": "mc-craft-flee",
           "label": "Craft: the Queen calls",
           "voice": "craft",
-          "text": "No. No! The Queen is calling. I won't let you take her from me!"
+          "text": "No. No! [frantic] The Queen is calling — I won't let you take her from me! I won't!"
         }
       ]
     },
@@ -471,37 +471,37 @@
           "id": "hive-read-descent",
           "label": "Read-aloud: going down",
           "voice": "narrator",
-          "text": "The stairwell breathes. Warm, damp air rises from below, carrying a sound you feel in your teeth before you hear it: thousands of tiny legs, moving together."
+          "text": "[hushed] The stairwell breathes. Warm, damp air rises from below, carrying a sound you feel in your teeth before you hear it... [pause] thousands of tiny legs, moving together."
         },
         {
           "id": "hive-read-queenroom",
           "label": "Read-aloud: the Hive Room",
           "voice": "narrator",
-          "text": "At the heart of the nest hangs a cocoon the size of a person, glistening and pulsing. Through its thinning skin you can make out a face you know from a hundred magazine covers. She is still breathing."
+          "text": "[slowly] At the heart of the nest hangs a cocoon the size of a person, glistening, pulsing. Through its thinning skin you can make out a face you know from a hundred magazine covers. [pause] She is still breathing."
         },
         {
           "id": "hive-craft-welcome",
           "label": "Craft: you came for the coronation",
           "voice": "craft",
-          "text": "You came! You came to see her crowned. Isn't she beautiful? Isn't she perfect?"
+          "text": "[ecstatic] You came! You came to see her crowned! [whispers, reverent] Isn't she beautiful? Isn't she... perfect?"
         },
         {
           "id": "hive-craft-mother",
           "label": "Craft: the Mother",
           "voice": "craft",
-          "text": "The Mother speaks through me now. Every one of you will serve her. Every one of you will feed the Hive."
+          "text": "[in a strange, layered voice] The Mother speaks through me now. [pause] Every one of you will serve her. Every one of you... will feed the Hive."
         },
         {
           "id": "hive-craft-rage",
           "label": "Craft: no!",
           "voice": "craft",
-          "text": "Get away from her! Children, protect your Queen! Tear them apart!"
+          "text": "[screaming] Get away from her! [shrieking] Children! Protect your Queen! Tear them apart!"
         },
         {
           "id": "hive-euph-weak",
           "label": "Euphoria: help me",
           "voice": "euphoria",
-          "text": "Please. Please, get me out. I can hear them. I can hear them inside my head."
+          "text": "[weak, trembling whisper] Please... please, get me out. [crying] I can hear them. I can hear them inside my head..."
         }
       ]
     }
