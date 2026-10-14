@@ -2,16 +2,16 @@
   "_comment": "Soundboard script for tools/gen-audio.mjs. Original lines only: never the book's boxed text (the repo is public). A clip's file is assets/audio/<id>.mp3; delete it to regenerate. A voice with no id is skipped until it has one.",
   "voices": {
     "narrator": {
-      "name": "Adam (stock)",
-      "id": "pNInz6obpgDQGcFmaJgB"
+      "name": "QE – Narrator",
+      "id": "91cf6YfAaKJGkzsQ4Z9S"
     },
     "johnson": {
-      "name": "Antoni (stock)",
-      "id": "ErXwobaYiN019PkySvjV"
+      "name": "QE – Mr. Johnson",
+      "id": "kiEKmCGO4uXWme0SH9Eb"
     },
     "diablo": {
-      "name": "Arnold (stock)",
-      "id": "VR6AewLTigWG4xSOukaG"
+      "name": "QE – Juan Diablo",
+      "id": "NYuU2SrYfMtldTPlU9cc"
     },
     "euphoria": {
       "name": "Euphoria",
