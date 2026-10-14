@@ -2,14 +2,24 @@
 
 ## Unreleased
 
-### Added — a soundboard (pilot: Act 1)
-- **Queen Euphoria — Soundboard** compendium: import the playlist, and each sound
-  plays for everyone when the GM clicks it (Soundboard Only, so nothing plays by
-  itself).
-- Act 1 so far: the commlink waking the team, Juan Diablo's call, the meet with Mr.
-  Johnson, two read-aloud passages, a Harley idling, and four of Euphoria's lines
-  for when the team has her, in her own voice.
+### Added — a soundboard for the whole adventure
+- **Queen Euphoria — Soundboard** compendium: six playlists, one per stretch of the
+  adventure, 69 clips in all. Import one, and each sound plays for everyone when the
+  GM clicks it (Soundboard Only, so nothing plays by itself).
+- Every speaking character has their own designed voice: Euphoria, Mr. Johnson,
+  Juan Diablo, Osprey, Stone, Pride, Robert Carrone, Vincent Burroughs, Elliot
+  Whitecastle and Craft, plus a narrator for the read-alouds and voices for Knight
+  Errant, Lone Star and the rent-a-cops.
+- Sound effects: the commlink, a Harley, Pacific Towers' lobby (looping) and alarm,
+  a door kicked in, paparazzi, Magic Crafts' door chime, and the Hive (a looping
+  ambience, a worker's alarm screech, a soldier coming through a wall).
 - The read-alouds are original text, not the book's boxed text.
+
+### Fixed
+- **Osprey and Stone were described as Craft's men.** In the book they are Euphoria's
+  own protection: Osprey is her MegaMedia bodyguard, in charge of the Knight Errant
+  detail at her condo, and Stone is the mage he brought in (p.17, p.20–21). Fixed in
+  the Legwork journal and Osprey's bio.
 
 ## 0.6.1 — 2026-10-04
 

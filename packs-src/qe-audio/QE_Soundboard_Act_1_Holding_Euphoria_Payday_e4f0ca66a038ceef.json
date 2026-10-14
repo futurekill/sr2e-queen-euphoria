@@ -1,0 +1,291 @@
+{
+  "_id": "e4f0ca66a038ceef",
+  "name": "QE Soundboard — Act 1: Holding Euphoria & Payday",
+  "description": "Click a sound to play it for everyone.",
+  "mode": -1,
+  "channel": "music",
+  "playing": false,
+  "fade": null,
+  "folder": null,
+  "sorting": "m",
+  "seed": null,
+  "sort": 200000,
+  "sounds": [
+    {
+      "_id": "c16a022aafdb59a8",
+      "name": "Read-aloud: the Royal Meadows flat",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/hold-read-flat.mp3",
+      "description": "Twenty-four square meters of somebody else's bad decisions. Two double beds jammed side by side, a kitchenette that smells of old soy, and a ceiling fan that has given up. This is home until Sunday.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "8c545d823f2d309f",
+      "name": "Euphoria: do you know who I am?",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-euph-whoami.mp3",
+      "description": "Do you have any idea who I am?",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "f3b8eee84ae479a4",
+      "name": "Euphoria: get your hands off me",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-euph-hands.mp3",
+      "description": "Get your hands off me!",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "ac52f7e0f674817e",
+      "name": "Euphoria: my people will find me",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-euph-find.mp3",
+      "description": "My people will find me. You know that, right? Every single one of you is finished.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "1ec254728924a237",
+      "name": "Euphoria: fine, but I want my own room",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-euph-room.mp3",
+      "description": "Fine. Fine! But I want my own room. And real coffee, not that soy drek.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "376bc97b003d3af1",
+      "name": "Euphoria: this is not a hotel",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/hold-euph-bored.mp3",
+      "description": "This is not a hotel. This is not even a closet. I have closets bigger than this.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 600000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "17267eafa54b18a6",
+      "name": "Euphoria: let's make a deal",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/hold-euph-deal.mp3",
+      "description": "Okay. Whoever's paying you, I'll pay double. My manager will transfer it tonight. Just take me home.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 700000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "4eac244c4d1a262b",
+      "name": "Diablo: payday",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/hold-diablo-payday.mp3",
+      "description": "First half's on its way, chummers. Nice work. Keep her comfortable and keep your heads down.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 800000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "7bb355a955741b22",
+      "name": "Diablo: you moved?",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/hold-diablo-relocate.mp3",
+      "description": "You moved? Smart. Tell me where, and I'll bring the rest of your money. Nobody else, chummer. Nobody.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 900000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "95b1752bfa85bf5e",
+      "name": "SFX: door kicked in",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/hold-sfx-door.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1000000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "e764f3e88eb65b6c",
+      "name": "Pride: the door",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/hold-pride-door.mp3",
+      "description": "Good afternoon. I believe you have something that belongs to my client.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "33381b8ac7cb1568",
+      "name": "Pride: walk away",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/hold-pride-offer.mp3",
+      "description": "You have courage. I respect that. Give me the girl, and you may walk away. This offer is made once.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "7d9007a0c2e83a76",
+      "name": "Pride: angered",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/hold-pride-savage.mp3",
+      "description": "Enough! You have made your choice. Now the lion feeds.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "0199eb23f3f297e9",
+      "name": "Pride: withdraw",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/hold-pride-retreat.mp3",
+      "description": "Another day, little runners. The hunt is never over.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.103.1"
+  },
+  "_key": "!playlists!e4f0ca66a038ceef"
+}

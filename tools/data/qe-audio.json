@@ -127,6 +127,131 @@
           "label": "Johnson: no questions",
           "voice": "johnson",
           "text": "Who my client is, and why, are not part of the arrangement. Do we have an arrangement?"
+        }
+      ]
+    },
+    {
+      "name": "QE Soundboard — Act 1: To Catch A Star",
+      "clips": [
+        {
+          "id": "cs-sfx-lobby",
+          "label": "SFX: Pacific Towers lobby (loop)",
+          "sfx": "Quiet upscale apartment lobby at night, soft elevator chimes, a fountain, distant city traffic through glass doors",
+          "seconds": 15,
+          "loop": true
+        },
+        {
+          "id": "cs-sfx-alarm",
+          "label": "SFX: building alarm",
+          "sfx": "A building security alarm going off, loud electronic klaxon echoing through marble halls",
+          "seconds": 8
+        },
+        {
+          "id": "cs-rentacop-help",
+          "label": "Rent-a-cop: can I help you?",
+          "voice": "rentacop",
+          "text": "Evening. Can I, uh, help you? Residents and guests only past this point. I'll need to see some ID."
+        },
+        {
+          "id": "cs-rentacop-hey",
+          "label": "Rent-a-cop: hey, you can't be in here",
+          "voice": "rentacop",
+          "text": "Hey! Hey, you can't be in here! I'm calling this in, okay? Don't move!"
+        },
+        {
+          "id": "cs-rentacop-panic",
+          "label": "Rent-a-cop: panic button",
+          "voice": "rentacop",
+          "text": "Oh drek, oh drek. Lobby to anyone! I've got armed people in the lobby! Send Lone Star!"
+        },
+        {
+          "id": "cs-ke-step-back",
+          "label": "Knight Errant: step back",
+          "voice": "knighterrant",
+          "text": "Sir, step back from the vehicle. This area is restricted. I won't ask you twice."
+        },
+        {
+          "id": "cs-ke-contact",
+          "label": "Knight Errant: contact!",
+          "voice": "knighterrant",
+          "text": "Contact, front entrance! Team two, cover the principal! Move, move!"
+        },
+        {
+          "id": "cs-ke-down",
+          "label": "Knight Errant: man down",
+          "voice": "knighterrant",
+          "text": "Man down! I need a medic on the twentieth floor, now!"
+        },
+        {
+          "id": "cs-osprey-intro",
+          "label": "Osprey: not receiving visitors",
+          "voice": "osprey",
+          "text": "I'm afraid Miss Euphoria isn't receiving visitors this evening. Do turn around, there's a good chap."
+        },
+        {
+          "id": "cs-osprey-orders",
+          "label": "Osprey: orders to Knight Errant",
+          "voice": "osprey",
+          "text": "Knight Errant, hold them at the door. Nobody gets past the hallway. I'll see to the young lady."
+        },
+        {
+          "id": "cs-osprey-taunt",
+          "label": "Osprey: bad career move",
+          "voice": "osprey",
+          "text": "You've no idea who you're dealing with, have you? This was a very poor career decision."
+        },
+        {
+          "id": "cs-stone-warn",
+          "label": "Stone: I'd stop there",
+          "voice": "stone",
+          "text": "I'd stop there, if I were you. This room is warded."
+        },
+        {
+          "id": "cs-stone-spirit",
+          "label": "Stone: the spirit's waiting",
+          "voice": "stone",
+          "text": "The fire spirit has been waiting all evening for someone to try something foolish. Go on."
+        },
+        {
+          "id": "cs-stone-retreat",
+          "label": "Stone: we're done here",
+          "voice": "stone",
+          "text": "Osprey. We're outgunned. Get her clear, I'll cover the stairs."
+        },
+        {
+          "id": "cs-euph-grabbed",
+          "label": "Euphoria: you can't be serious",
+          "voice": "euphoria",
+          "text": "You can't be serious. Do you have any idea what my fans will do to you?"
+        },
+        {
+          "id": "cs-euph-hide",
+          "label": "Euphoria: Osprey, do something!",
+          "voice": "euphoria",
+          "text": "Osprey! Osprey, do something! What are we paying you for?"
+        },
+        {
+          "id": "cs-lonestar-arrive",
+          "label": "Lone Star: arriving",
+          "voice": "lonestar",
+          "text": "Lone Star! Nobody move! Everybody on the floor, hands where I can see them!"
+        },
+        {
+          "id": "cs-lonestar-radio",
+          "label": "Lone Star: calling it in",
+          "voice": "lonestar",
+          "text": "Dispatch, unit four-twelve at Pacific Towers. Shots fired, requesting backup."
+        }
+      ]
+    },
+    {
+      "name": "QE Soundboard — Act 1: Holding Euphoria & Payday",
+      "clips": [
+        {
+          "id": "hold-read-flat",
+          "label": "Read-aloud: the Royal Meadows flat",
+          "voice": "narrator",
+          "text": "Twenty-four square meters of somebody else's bad decisions. Two double beds jammed side by side, a kitchenette that smells of old soy, and a ceiling fan that has given up. This is home until Sunday."
         },
         {
           "id": "a1-euph-whoami",
@@ -151,6 +276,232 @@
           "label": "Euphoria: fine, but I want my own room",
           "voice": "euphoria",
           "text": "Fine. Fine! But I want my own room. And real coffee, not that soy drek."
+        },
+        {
+          "id": "hold-euph-bored",
+          "label": "Euphoria: this is not a hotel",
+          "voice": "euphoria",
+          "text": "This is not a hotel. This is not even a closet. I have closets bigger than this."
+        },
+        {
+          "id": "hold-euph-deal",
+          "label": "Euphoria: let's make a deal",
+          "voice": "euphoria",
+          "text": "Okay. Whoever's paying you, I'll pay double. My manager will transfer it tonight. Just take me home."
+        },
+        {
+          "id": "hold-diablo-payday",
+          "label": "Diablo: payday",
+          "voice": "diablo",
+          "text": "First half's on its way, chummers. Nice work. Keep her comfortable and keep your heads down."
+        },
+        {
+          "id": "hold-diablo-relocate",
+          "label": "Diablo: you moved?",
+          "voice": "diablo",
+          "text": "You moved? Smart. Tell me where, and I'll bring the rest of your money. Nobody else, chummer. Nobody."
+        },
+        {
+          "id": "hold-sfx-door",
+          "label": "SFX: door kicked in",
+          "sfx": "A cheap apartment door being kicked in, wood splintering, followed by shouting",
+          "seconds": 4
+        },
+        {
+          "id": "hold-pride-door",
+          "label": "Pride: the door",
+          "voice": "pride",
+          "text": "Good afternoon. I believe you have something that belongs to my client."
+        },
+        {
+          "id": "hold-pride-offer",
+          "label": "Pride: walk away",
+          "voice": "pride",
+          "text": "You have courage. I respect that. Give me the girl, and you may walk away. This offer is made once."
+        },
+        {
+          "id": "hold-pride-savage",
+          "label": "Pride: angered",
+          "voice": "pride",
+          "text": "Enough! You have made your choice. Now the lion feeds."
+        },
+        {
+          "id": "hold-pride-retreat",
+          "label": "Pride: withdraw",
+          "voice": "pride",
+          "text": "Another day, little runners. The hunt is never over."
+        }
+      ]
+    },
+    {
+      "name": "QE Soundboard — Act 2: The Twist",
+      "clips": [
+        {
+          "id": "a2-whitecastle-call",
+          "label": "Whitecastle: the call",
+          "voice": "whitecastle",
+          "text": "Good to see you, chummer. I've got a client with deep pockets and a very public problem. Pays well, and the meet's tonight."
+        },
+        {
+          "id": "a2-whitecastle-asked",
+          "label": "Whitecastle: asked for you",
+          "voice": "whitecastle",
+          "text": "Funny thing. The client asked for your team by name. Don't ask me how they know you."
+        },
+        {
+          "id": "a2-carrone-intro",
+          "label": "Carrone: let's not waste time",
+          "voice": "carrone",
+          "text": "Let's not waste each other's time. Euphoria is missing again, MegaMedia wants her back, and I'm told you're discreet."
+        },
+        {
+          "id": "a2-carrone-price",
+          "label": "Carrone: name your price",
+          "voice": "carrone",
+          "text": "Find her, quietly, before the press does. Name your price, within reason."
+        },
+        {
+          "id": "a2-carrone-knows",
+          "label": "Carrone: I know what you did",
+          "voice": "carrone",
+          "text": "I know exactly who took her the first time. The only question is whether you're going to be useful to me now."
+        },
+        {
+          "id": "a2-carrone-threat",
+          "label": "Carrone: don't disappoint me",
+          "voice": "carrone",
+          "text": "MegaMedia has a long memory and a very large legal department. Don't disappoint me."
+        },
+        {
+          "id": "a2-read-condo",
+          "label": "Read-aloud: the condo",
+          "voice": "narrator",
+          "text": "The penthouse door is open. Inside, the air is thick with something sharp and chemical, like vinegar left to rot. The bodyguards are still here. Most of them. Whatever did this did not use a gun."
+        },
+        {
+          "id": "a2-read-sim",
+          "label": "Read-aloud: the sim recording",
+          "voice": "narrator",
+          "text": "The playback takes you behind her eyes. Music, a mirror, a smile practiced a thousand times. Then glass bursts inward, and something with too many limbs fills the frame. You feel her scream in your own throat."
+        },
+        {
+          "id": "a2-burroughs-deny",
+          "label": "Burroughs: nothing to do with me",
+          "voice": "burroughs",
+          "text": "I don't know what you think you've found, but it has nothing to do with me. Strice Foods runs a clean operation."
+        },
+        {
+          "id": "a2-burroughs-crack",
+          "label": "Burroughs: he made me",
+          "voice": "burroughs",
+          "text": "You don't understand. He has things on me. He said he'd ruin me. He said nobody would get hurt."
+        },
+        {
+          "id": "a2-burroughs-lonestar",
+          "label": "Burroughs: calling Lone Star",
+          "voice": "burroughs",
+          "text": "Security! Get Lone Star on the line, there's an intrusion in the system!"
+        },
+        {
+          "id": "a2-sfx-camera",
+          "label": "SFX: paparazzi flashes",
+          "sfx": "A crowd of photographers shouting and camera shutters clicking rapidly outside a building",
+          "seconds": 8
+        }
+      ]
+    },
+    {
+      "name": "QE Soundboard — Act 2: Magic Crafts",
+      "clips": [
+        {
+          "id": "mc-sfx-bell",
+          "label": "SFX: shop door chime",
+          "sfx": "An old shop door opening with a small brass bell, creaking floorboards",
+          "seconds": 3
+        },
+        {
+          "id": "mc-craft-welcome",
+          "label": "Craft: welcome",
+          "voice": "craft",
+          "text": "Welcome, welcome! Fetishes, foci, the finest reagents in the Barrens. Whatever you seek, friends, I can find it for you."
+        },
+        {
+          "id": "mc-craft-slip",
+          "label": "Craft: she's resting",
+          "voice": "craft",
+          "text": "Euphoria? No, no, she's resting now. She's changing. She'll be so much more than she was."
+        },
+        {
+          "id": "mc-craft-turn",
+          "label": "Craft: you shouldn't have come",
+          "voice": "craft",
+          "text": "You shouldn't have come here. You can feel them, can't you? Under the floor. Waiting."
+        },
+        {
+          "id": "mc-craft-flee",
+          "label": "Craft: the Queen calls",
+          "voice": "craft",
+          "text": "No. No! The Queen is calling. I won't let you take her from me!"
+        }
+      ]
+    },
+    {
+      "name": "QE Soundboard — Act 2: Audience with the Queen",
+      "clips": [
+        {
+          "id": "hive-sfx-ambience",
+          "label": "SFX: the Hive (loop)",
+          "sfx": "Dark underground insect hive ambience, constant low chittering and clicking of thousands of insects, wet organic sounds, faint dripping",
+          "seconds": 20,
+          "loop": true
+        },
+        {
+          "id": "hive-sfx-screech",
+          "label": "SFX: worker screech",
+          "sfx": "A shrill alarm screech from a giant insect, half human and half insect, echoing in a tunnel",
+          "seconds": 3
+        },
+        {
+          "id": "hive-sfx-wall",
+          "label": "SFX: soldier through the wall",
+          "sfx": "A heavy insect smashing through a plaster and drywall partition, crunching debris and chittering",
+          "seconds": 4
+        },
+        {
+          "id": "hive-read-descent",
+          "label": "Read-aloud: going down",
+          "voice": "narrator",
+          "text": "The stairwell breathes. Warm, damp air rises from below, carrying a sound you feel in your teeth before you hear it: thousands of tiny legs, moving together."
+        },
+        {
+          "id": "hive-read-queenroom",
+          "label": "Read-aloud: the Hive Room",
+          "voice": "narrator",
+          "text": "At the heart of the nest hangs a cocoon the size of a person, glistening and pulsing. Through its thinning skin you can make out a face you know from a hundred magazine covers. She is still breathing."
+        },
+        {
+          "id": "hive-craft-welcome",
+          "label": "Craft: you came for the coronation",
+          "voice": "craft",
+          "text": "You came! You came to see her crowned. Isn't she beautiful? Isn't she perfect?"
+        },
+        {
+          "id": "hive-craft-mother",
+          "label": "Craft: the Mother",
+          "voice": "craft",
+          "text": "The Mother speaks through me now. Every one of you will serve her. Every one of you will feed the Hive."
+        },
+        {
+          "id": "hive-craft-rage",
+          "label": "Craft: no!",
+          "voice": "craft",
+          "text": "Get away from her! Children, protect your Queen! Tear them apart!"
+        },
+        {
+          "id": "hive-euph-weak",
+          "label": "Euphoria: help me",
+          "voice": "euphoria",
+          "text": "Please. Please, get me out. I can hear them. I can hear them inside my head."
         }
       ]
     }

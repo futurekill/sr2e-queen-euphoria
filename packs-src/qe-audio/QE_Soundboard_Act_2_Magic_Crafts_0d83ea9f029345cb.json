@@ -1,0 +1,120 @@
+{
+  "_id": "0d83ea9f029345cb",
+  "name": "QE Soundboard — Act 2: Magic Crafts",
+  "description": "Click a sound to play it for everyone.",
+  "mode": -1,
+  "channel": "music",
+  "playing": false,
+  "fade": null,
+  "folder": null,
+  "sorting": "m",
+  "seed": null,
+  "sort": 400000,
+  "sounds": [
+    {
+      "_id": "b8041a0ee79b0e54",
+      "name": "SFX: shop door chime",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mc-sfx-bell.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "8a40a95c1f1ca239",
+      "name": "Craft: welcome",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mc-craft-welcome.mp3",
+      "description": "Welcome, welcome! Fetishes, foci, the finest reagents in the Barrens. Whatever you seek, friends, I can find it for you.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "c15a672dc2f73989",
+      "name": "Craft: she's resting",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mc-craft-slip.mp3",
+      "description": "Euphoria? No, no, she's resting now. She's changing. She'll be so much more than she was.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "17b19d62a452b91e",
+      "name": "Craft: you shouldn't have come",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mc-craft-turn.mp3",
+      "description": "You shouldn't have come here. You can feel them, can't you? Under the floor. Waiting.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "c051e8a98e325c38",
+      "name": "Craft: the Queen calls",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mc-craft-flee.mp3",
+      "description": "No. No! The Queen is calling. I won't let you take her from me!",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.103.1"
+  },
+  "_key": "!playlists!0d83ea9f029345cb"
+}

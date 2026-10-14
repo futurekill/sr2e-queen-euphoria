@@ -1,0 +1,253 @@
+{
+  "_id": "d9220f96422e4af2",
+  "name": "QE Soundboard — Act 2: The Twist",
+  "description": "Click a sound to play it for everyone.",
+  "mode": -1,
+  "channel": "music",
+  "playing": false,
+  "fade": null,
+  "folder": null,
+  "sorting": "m",
+  "seed": null,
+  "sort": 300000,
+  "sounds": [
+    {
+      "_id": "1610991fd0be809f",
+      "name": "Whitecastle: the call",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-whitecastle-call.mp3",
+      "description": "Good to see you, chummer. I've got a client with deep pockets and a very public problem. Pays well, and the meet's tonight.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "f2255216ca3e74ef",
+      "name": "Whitecastle: asked for you",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-whitecastle-asked.mp3",
+      "description": "Funny thing. The client asked for your team by name. Don't ask me how they know you.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "a19efa5575ade068",
+      "name": "Carrone: let's not waste time",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-intro.mp3",
+      "description": "Let's not waste each other's time. Euphoria is missing again, MegaMedia wants her back, and I'm told you're discreet.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "e0c57cca06208de4",
+      "name": "Carrone: name your price",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-price.mp3",
+      "description": "Find her, quietly, before the press does. Name your price, within reason.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "d90b618cf5e1c1a6",
+      "name": "Carrone: I know what you did",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-knows.mp3",
+      "description": "I know exactly who took her the first time. The only question is whether you're going to be useful to me now.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "4a5bc08e3a021eb0",
+      "name": "Carrone: don't disappoint me",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-threat.mp3",
+      "description": "MegaMedia has a long memory and a very large legal department. Don't disappoint me.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 600000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "7b8c2a425414bb26",
+      "name": "Read-aloud: the condo",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-read-condo.mp3",
+      "description": "The penthouse door is open. Inside, the air is thick with something sharp and chemical, like vinegar left to rot. The bodyguards are still here. Most of them. Whatever did this did not use a gun.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 700000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "e9a3d70a32e0be61",
+      "name": "Read-aloud: the sim recording",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-read-sim.mp3",
+      "description": "The playback takes you behind her eyes. Music, a mirror, a smile practiced a thousand times. Then glass bursts inward, and something with too many limbs fills the frame. You feel her scream in your own throat.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 800000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "ebed348f60927a22",
+      "name": "Burroughs: nothing to do with me",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-burroughs-deny.mp3",
+      "description": "I don't know what you think you've found, but it has nothing to do with me. Strice Foods runs a clean operation.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 900000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "435793f8e2079340",
+      "name": "Burroughs: he made me",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-burroughs-crack.mp3",
+      "description": "You don't understand. He has things on me. He said he'd ruin me. He said nobody would get hurt.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1000000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "777305aa1a7eb8ed",
+      "name": "Burroughs: calling Lone Star",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-burroughs-lonestar.mp3",
+      "description": "Security! Get Lone Star on the line, there's an intrusion in the system!",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "d06db540873c4585",
+      "name": "SFX: paparazzi flashes",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-sfx-camera.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.103.1"
+  },
+  "_key": "!playlists!d9220f96422e4af2"
+}

@@ -1,0 +1,367 @@
+{
+  "_id": "46292360f61673a6",
+  "name": "QE Soundboard — Act 1: To Catch A Star",
+  "description": "Click a sound to play it for everyone.",
+  "mode": -1,
+  "channel": "music",
+  "playing": false,
+  "fade": null,
+  "folder": null,
+  "sorting": "m",
+  "seed": null,
+  "sort": 100000,
+  "sounds": [
+    {
+      "_id": "d9c9966fffbc583f",
+      "name": "SFX: Pacific Towers lobby (loop)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-sfx-lobby.mp3",
+      "description": "",
+      "repeat": true,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "cb0e94b4081cdec9",
+      "name": "SFX: building alarm",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-sfx-alarm.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "3d30f1833e8fd518",
+      "name": "Rent-a-cop: can I help you?",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-rentacop-help.mp3",
+      "description": "Evening. Can I, uh, help you? Residents and guests only past this point. I'll need to see some ID.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "623199bcba81d7e7",
+      "name": "Rent-a-cop: hey, you can't be in here",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-rentacop-hey.mp3",
+      "description": "Hey! Hey, you can't be in here! I'm calling this in, okay? Don't move!",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "4aff372d1f512a42",
+      "name": "Rent-a-cop: panic button",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-rentacop-panic.mp3",
+      "description": "Oh drek, oh drek. Lobby to anyone! I've got armed people in the lobby! Send Lone Star!",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "83bbe4a78c6be519",
+      "name": "Knight Errant: step back",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-ke-step-back.mp3",
+      "description": "Sir, step back from the vehicle. This area is restricted. I won't ask you twice.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 600000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "ae073e7e032b81fe",
+      "name": "Knight Errant: contact!",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-ke-contact.mp3",
+      "description": "Contact, front entrance! Team two, cover the principal! Move, move!",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 700000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "abcde9bcd22aabcb",
+      "name": "Knight Errant: man down",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-ke-down.mp3",
+      "description": "Man down! I need a medic on the twentieth floor, now!",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 800000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "595b4f699804f051",
+      "name": "Osprey: not receiving visitors",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-osprey-intro.mp3",
+      "description": "I'm afraid Miss Euphoria isn't receiving visitors this evening. Do turn around, there's a good chap.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 900000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "adff9163f0d1b035",
+      "name": "Osprey: orders to Knight Errant",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-osprey-orders.mp3",
+      "description": "Knight Errant, hold them at the door. Nobody gets past the hallway. I'll see to the young lady.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1000000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "f042f0d5229f9c16",
+      "name": "Osprey: bad career move",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-osprey-taunt.mp3",
+      "description": "You've no idea who you're dealing with, have you? This was a very poor career decision.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "63c46916b448fb40",
+      "name": "Stone: I'd stop there",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-stone-warn.mp3",
+      "description": "I'd stop there, if I were you. This room is warded.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "12f61047099f619a",
+      "name": "Stone: the spirit's waiting",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-stone-spirit.mp3",
+      "description": "The fire spirit has been waiting all evening for someone to try something foolish. Go on.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "20c36cc1773c62a9",
+      "name": "Stone: we're done here",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-stone-retreat.mp3",
+      "description": "Osprey. We're outgunned. Get her clear, I'll cover the stairs.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "07bcf3b757d9ec12",
+      "name": "Euphoria: you can't be serious",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-euph-grabbed.mp3",
+      "description": "You can't be serious. Do you have any idea what my fans will do to you?",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "357b37f161b0adf2",
+      "name": "Euphoria: Osprey, do something!",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-euph-hide.mp3",
+      "description": "Osprey! Osprey, do something! What are we paying you for?",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1600000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "71155c4490746510",
+      "name": "Lone Star: arriving",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-lonestar-arrive.mp3",
+      "description": "Lone Star! Nobody move! Everybody on the floor, hands where I can see them!",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1700000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "b7fe2631cce9f1c6",
+      "name": "Lone Star: calling it in",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/cs-lonestar-radio.mp3",
+      "description": "Dispatch, unit four-twelve at Pacific Towers. Shots fired, requesting backup.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1800000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.103.1"
+  },
+  "_key": "!playlists!46292360f61673a6"
+}

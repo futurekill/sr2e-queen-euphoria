@@ -4,6 +4,7 @@
  * Soundboard pack (packs-src/qe-audio). Speech and sound effects come from the
  * ElevenLabs API (ELEVENLABS_API_KEY in the environment). Existing files are kept,
  * so a re-run only fills in what's missing; a clip whose voice has no id is skipped.
+ * `loop: true` on a clip makes it repeat until stopped (ambience).
  *
  *   node tools/gen-audio.mjs            # generate missing clips, write the pack
  *   node tools/gen-audio.mjs --pack     # write the pack only, no API calls
@@ -53,7 +54,7 @@ data.playlists.forEach((pl, n) => {
   const _id = id16(`playlist:${pl.name}`);
   const sounds = pl.clips.filter(c => existsSync(path.join(ROOT, AUDIO, `${c.id}.mp3`))).map((c, i) => ({
     _id: id16(`sound:${c.id}`), name: c.label, path: `${MODULE}/${AUDIO}/${c.id}.mp3`,
-    description: c.text ?? "", repeat: false, volume: 0.8, fade: null, sort: (i + 1) * 100000,
+    description: c.text ?? "", repeat: !!c.loop, volume: 0.8, fade: null, sort: (i + 1) * 100000,
     channel: "", playing: false, pausedTime: null, flags: {}, _stats: STATS
   }));
   const doc = { _id, name: pl.name, description: "Click a sound to play it for everyone.", mode: -1,
