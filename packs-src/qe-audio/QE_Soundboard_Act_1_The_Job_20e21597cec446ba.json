@@ -1,0 +1,234 @@
+{
+  "_id": "20e21597cec446ba",
+  "name": "QE Soundboard — Act 1: The Job",
+  "description": "Click a sound to play it for everyone.",
+  "mode": -1,
+  "channel": "music",
+  "playing": false,
+  "fade": null,
+  "folder": null,
+  "sorting": "m",
+  "seed": null,
+  "sort": 0,
+  "sounds": [
+    {
+      "_id": "8b0f8e95732c2917",
+      "name": "SFX: commlink buzzing",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-sfx-commlink.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "0bdf111599adedc2",
+      "name": "Read-aloud: the wake-up call",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-read-wakeup.mp3",
+      "description": "Your commlink drags you out of a dead sleep. The clock says it's too early for anything good. The caller ID says Juan Diablo, and Diablo doesn't call to chat.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "d368ff47e63e2ab1",
+      "name": "Diablo: rise and shine",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-diablo-rise.mp3",
+      "description": "Rise and shine, chummer. Got work, and it pays. Meet's in an hour.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "adae6d41de0aa8cb",
+      "name": "Diablo: don't be late",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-diablo-dontbelate.mp3",
+      "description": "Don't be late, and don't be stupid. This Johnson's got class.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "5d91f78305861028",
+      "name": "Diablo: I just make introductions",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-diablo-intro.mp3",
+      "description": "Hey, I just make the introductions. What happens after that is on you.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "2bf8615ef0db30e5",
+      "name": "SFX: Harley idling",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-sfx-harley.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 600000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "45dd2267367e012d",
+      "name": "Read-aloud: the meet",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-read-meet.mp3",
+      "description": "The car is long, black and spotless. The man in the back seat is the same: good suit, good manners, nothing you could describe to Lone Star tomorrow. He gestures to the seats across from him.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 700000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "cb14d78425e8eaaa",
+      "name": "Johnson: please, sit",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-johnson-sit.mp3",
+      "description": "Thank you for coming on short notice. Please, sit.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 800000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "0397e4f60165b8d4",
+      "name": "Johnson: the job",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-johnson-job.mp3",
+      "description": "The job is simple. A certain young lady must miss an appointment. Not permanently. Just long enough to be embarrassing.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 900000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "0d074f5600647ead",
+      "name": "Johnson: nobody gets hurt",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-johnson-nohurt.mp3",
+      "description": "Let me be clear. My client wants her inconvenienced, not damaged. Nobody gets hurt.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1000000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "5a11e7f1bf69dd14",
+      "name": "Johnson: no questions",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a1-johnson-questions.mp3",
+      "description": "Who my client is, and why, are not part of the arrangement. Do we have an arrangement?",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.103.1"
+  },
+  "_key": "!playlists!20e21597cec446ba"
+}

@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+### Added — a soundboard (pilot: Act 1)
+- **Queen Euphoria — Soundboard** compendium: import the playlist, and each sound
+  plays for everyone when the GM clicks it (Soundboard Only, so nothing plays by
+  itself).
+- Act 1 so far: the commlink waking the team, Juan Diablo's call, the meet with Mr.
+  Johnson, two read-aloud passages, and a Harley idling. Euphoria's lines are
+  written and arrive with her voice.
+- The read-alouds are original text, not the book's boxed text.
+
 ## 0.6.1 — 2026-10-04
 
 ### Fixed

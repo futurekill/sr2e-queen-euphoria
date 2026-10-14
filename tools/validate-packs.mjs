@@ -15,6 +15,7 @@ const COLLECTION = {
   "qe-actors": "actors",
   "qe-journals": "journal",
   "qe-scenes": "scenes",
+  "qe-audio": "playlists",
   "queen-euphoria": "adventures"
 };
 const HAS_TYPE_SYSTEM = new Set(["actors", "items"]); // only these carry type+system

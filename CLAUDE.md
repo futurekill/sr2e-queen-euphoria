@@ -124,3 +124,13 @@ affected.
 *Queen Euphoria* / *Shadowrun* are © FASA and rights holders. This module is for
 the owner's **personal** table use from a PDF they own, not for distribution.
 Keep `_work/` out of git; original copy only in journals/handouts.
+
+## Soundboard audio
+`tools/data/qe-audio.json` is the script (playlists → clips; a clip is speech with a
+`voice` and `text`, or a sound effect with `sfx`). `npm run audio` calls the ElevenLabs
+API (`ELEVENLABS_API_KEY` from `~/.zshrc`) for clips whose `assets/audio/<id>.mp3`
+doesn't exist yet, then writes the Soundboard pack (`qe-audio`, Soundboard-Only
+playlists); `--pack` skips the API. Delete a file to regenerate it. **Never voice the
+book's boxed text**: the repo is public, so read-alouds are original paraphrase.
+Claude can't hear the clips: the user reviews them.
+

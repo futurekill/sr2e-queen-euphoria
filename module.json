@@ -59,6 +59,17 @@
       "path": "packs/qe-scenes",
       "type": "Scene",
       "system": "sr2e"
+    },
+    {
+      "name": "qe-audio",
+      "label": "Queen Euphoria — Soundboard",
+      "type": "Playlist",
+      "path": "packs/qe-audio",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -69,7 +80,8 @@
         "queen-euphoria",
         "qe-actors",
         "qe-journals",
-        "qe-scenes"
+        "qe-scenes",
+        "qe-audio"
       ]
     }
   ],

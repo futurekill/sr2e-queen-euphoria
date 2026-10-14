@@ -35,7 +35,8 @@ const EMBEDDED = {
   // (journal: ["pages"]); re-nest them here so a build->edit-in-Foundry->extract
   // round trip doesn't drop page content. (DE's extractor omitted this.)
   journal: ["pages"],
-  scenes:  ["walls", "regions"]
+  scenes:  ["walls", "regions"],
+  playlists: ["sounds"]
 };
 const NESTED = { "actors.items": "effects", "scenes.regions": "behaviors" };
 

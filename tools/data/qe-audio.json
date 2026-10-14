@@ -1,0 +1,31 @@
+{
+  "_comment": "Soundboard script for tools/gen-audio.mjs. Original lines only: never the book's boxed text (the repo is public). A clip's file is assets/audio/<id>.mp3; delete it to regenerate. A voice with no id is skipped until it has one.",
+  "voices": {
+    "narrator": { "name": "Adam (stock)", "id": "pNInz6obpgDQGcFmaJgB" },
+    "johnson":  { "name": "Antoni (stock)", "id": "ErXwobaYiN019PkySvjV" },
+    "diablo":   { "name": "Arnold (stock)", "id": "VR6AewLTigWG4xSOukaG" },
+    "euphoria": { "name": "Euphoria", "id": null }
+  },
+  "playlists": [
+    {
+      "name": "QE Soundboard — Act 1: The Job",
+      "clips": [
+        { "id": "a1-sfx-commlink", "label": "SFX: commlink buzzing", "sfx": "An old commlink buzzing and vibrating on a bedside table in a quiet dark apartment, insistent, three rings", "seconds": 5 },
+        { "id": "a1-read-wakeup", "label": "Read-aloud: the wake-up call", "voice": "narrator", "text": "Your commlink drags you out of a dead sleep. The clock says it's too early for anything good. The caller ID says Juan Diablo, and Diablo doesn't call to chat." },
+        { "id": "a1-diablo-rise", "label": "Diablo: rise and shine", "voice": "diablo", "text": "Rise and shine, chummer. Got work, and it pays. Meet's in an hour." },
+        { "id": "a1-diablo-dontbelate", "label": "Diablo: don't be late", "voice": "diablo", "text": "Don't be late, and don't be stupid. This Johnson's got class." },
+        { "id": "a1-diablo-intro", "label": "Diablo: I just make introductions", "voice": "diablo", "text": "Hey, I just make the introductions. What happens after that is on you." },
+        { "id": "a1-sfx-harley", "label": "SFX: Harley idling", "sfx": "A heavy motorcycle engine idling in a rain-wet parking lot at night, then revving once", "seconds": 6 },
+        { "id": "a1-read-meet", "label": "Read-aloud: the meet", "voice": "narrator", "text": "The car is long, black and spotless. The man in the back seat is the same: good suit, good manners, nothing you could describe to Lone Star tomorrow. He gestures to the seats across from him." },
+        { "id": "a1-johnson-sit", "label": "Johnson: please, sit", "voice": "johnson", "text": "Thank you for coming on short notice. Please, sit." },
+        { "id": "a1-johnson-job", "label": "Johnson: the job", "voice": "johnson", "text": "The job is simple. A certain young lady must miss an appointment. Not permanently. Just long enough to be embarrassing." },
+        { "id": "a1-johnson-nohurt", "label": "Johnson: nobody gets hurt", "voice": "johnson", "text": "Let me be clear. My client wants her inconvenienced, not damaged. Nobody gets hurt." },
+        { "id": "a1-johnson-questions", "label": "Johnson: no questions", "voice": "johnson", "text": "Who my client is, and why, are not part of the arrangement. Do we have an arrangement?" },
+        { "id": "a1-euph-whoami", "label": "Euphoria: do you know who I am?", "voice": "euphoria", "text": "Do you have any idea who I am?" },
+        { "id": "a1-euph-hands", "label": "Euphoria: get your hands off me", "voice": "euphoria", "text": "Get your hands off me!" },
+        { "id": "a1-euph-find", "label": "Euphoria: my people will find me", "voice": "euphoria", "text": "My people will find me. You know that, right? Every single one of you is finished." },
+        { "id": "a1-euph-room", "label": "Euphoria: fine, but I want my own room", "voice": "euphoria", "text": "Fine. Fine! But I want my own room. And real coffee, not that soy drek." }
+      ]
+    }
+  ]
+}

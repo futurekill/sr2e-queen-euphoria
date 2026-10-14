@@ -35,7 +35,8 @@ const EMBEDDED = {
   // A scene's walls and regions are separate LevelDB records too. Left inline,
   // Foundry drops them: every scene in the Scenes compendium loaded with no walls
   // and no regions (only the Adventure, which stores scenes as plain data, had them).
-  scenes:  ["walls", "regions"]
+  scenes:  ["walls", "regions"],
+  playlists: ["sounds"]
 };
 
 /** Collections nested one level deeper: <collection>.<field> → its child field. */
