@@ -8,6 +8,8 @@
  *
  *   node tools/gen-audio.mjs            # generate missing clips, write the pack
  *   node tools/gen-audio.mjs --pack     # write the pack only, no API calls
+ *   node tools/gen-audio.mjs --verify   # transcribe every speech clip and flag any
+ *                                       # whose words don't match its script
  * Then: npm run build-packs
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync } from "node:fs";
@@ -19,7 +21,7 @@ const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MODULE = "modules/sr2e-queen-euphoria";
 const AUDIO = "assets/audio", PACK = path.join(ROOT, "packs-src/qe-audio");
 const data = JSON.parse(readFileSync(path.join(ROOT, "tools/data/qe-audio.json"), "utf8"));
-const packOnly = process.argv.includes("--pack");
+const packOnly = process.argv.includes("--pack") || process.argv.includes("--verify");   // --verify generates nothing
 const KEY = process.env.ELEVENLABS_API_KEY;
 const id16 = (s) => createHash("sha1").update(s).digest("hex").slice(0, 16);
 const STATS = { coreVersion: "13.351", systemId: "sr2e", systemVersion: "0.103.1" };
@@ -29,7 +31,7 @@ async function generate(clip) {
   const url = isSfx ? "https://api.elevenlabs.io/v1/sound-generation"
     : `https://api.elevenlabs.io/v1/text-to-speech/${data.voices[clip.voice].id}?output_format=mp3_44100_128`;
   const body = isSfx ? { text: clip.sfx, duration_seconds: clip.seconds ?? null }
-    : { text: clip.text, model_id: clip.model ?? "eleven_v3" };   // v3 performs [audio tags] like [whispers]
+    : { text: clip.text, model_id: clip.model ?? "eleven_v4" };   // v4 performs [audio tags] like [whispers]
   const res = await fetch(url, { method: "POST", headers: { "xi-api-key": KEY, "Content-Type": "application/json" }, body: JSON.stringify(body) });
   if (!res.ok) throw new Error(`${clip.id}: HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
   return Buffer.from(await res.arrayBuffer());
@@ -46,6 +48,31 @@ if (!packOnly) {
     writeFileSync(file, await generate(clip));
     made++; console.log(`  + ${clip.id}`);
   }
+}
+
+// --verify: what was actually said, against the script ([tags] and punctuation ignored).
+const words = (s) => s.toLowerCase().replace(/\[[^\]]*\]/g, " ").replace(/[^a-z0-9' ]+/g, " ").split(/\s+/).filter(Boolean);
+async function verify() {
+  let checked = 0, flagged = 0;
+  for (const pl of data.playlists) for (const clip of pl.clips) {
+    const file = path.join(ROOT, AUDIO, `${clip.id}.mp3`);
+    if (!clip.text || !existsSync(file)) continue;
+    const form = new FormData();
+    form.append("model_id", "scribe_v1");
+    form.append("file", new Blob([readFileSync(file)]), `${clip.id}.mp3`);
+    const res = await fetch("https://api.elevenlabs.io/v1/speech-to-text", { method: "POST", headers: { "xi-api-key": KEY }, body: form });
+    if (!res.ok) throw new Error(`${clip.id}: HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
+    const heard = words((await res.json()).text ?? ""), want = words(clip.text);
+    const hit = want.filter(w => heard.includes(w)).length / Math.max(want.length, 1);
+    checked++;
+    // shortcut: bag-of-words overlap, so spelling variants ("Lonestar") still flag; read the diff
+    if (hit < 0.9) { flagged++; console.log(`  ? ${clip.id} (${Math.round(hit * 100)}%)\n      script: ${want.join(" ")}\n      heard:  ${heard.join(" ")}`); }
+  }
+  console.log(`${checked} clip(s) checked, ${flagged} to listen to.`);
+}
+if (process.argv.includes("--verify")) {
+  if (!KEY) { console.error("ELEVENLABS_API_KEY is not set."); process.exit(1); }
+  await verify(); process.exit(0);
 }
 
 // The pack: one Soundboard-Only playlist per entry, only clips whose file exists.

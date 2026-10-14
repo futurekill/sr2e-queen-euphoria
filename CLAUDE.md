@@ -132,7 +132,9 @@ API (`ELEVENLABS_API_KEY` from `~/.zshrc`) for clips whose `assets/audio/<id>.mp
 doesn't exist yet, then writes the Soundboard pack (`qe-audio`, Soundboard-Only
 playlists); `--pack` skips the API. Delete a file to regenerate it. **Never voice the
 book's boxed text**: the repo is public, so read-alouds are original paraphrase.
-Speech uses `eleven_v3` (a clip's `model` overrides), which performs bracketed
+Speech uses `eleven_v4` (a clip's `model` overrides), which performs bracketed
 direction in the text: `[whispers]`, `[screaming]`, `[voice breaking]`; write lines the
-way people talk, with hesitations and interruptions. Claude can't hear the clips: the user reviews them (docs/QA-PLAN.md).
+way people talk, with hesitations and interruptions. Respell slang the model
+mispronounces ("dreck" for drek). `npm run audio -- --verify` transcribes every clip
+and flags any whose words drift from the script. Claude can't hear the clips: the user reviews them (docs/QA-PLAN.md).
 

@@ -162,7 +162,7 @@
           "id": "cs-rentacop-panic",
           "label": "Rent-a-cop: panic button",
           "voice": "rentacop",
-          "text": "[panicked, whispering] Oh drek, oh drek, oh drek... [shouting into radio] Lobby to anyone! I've got armed people in the lobby! Send Lone Star! Send Lone Star!"
+          "text": "[panicked, whispering] Oh dreck, oh dreck, oh dreck... [shouting into radio] Lobby to anyone! I've got armed people in the lobby! Send Lone Star! Send Lone Star!"
         },
         {
           "id": "cs-ke-step-back",
@@ -275,7 +275,7 @@
           "id": "a1-euph-room",
           "label": "Euphoria: fine, but I want my own room",
           "voice": "euphoria",
-          "text": "[exasperated sigh] Fine. Fine! [huffs] But I want my own room. And real coffee, not that soy drek."
+          "text": "[exasperated sigh] Fine. Fine! [huffs] But I want my own room. And real coffee, not that soy dreck."
         },
         {
           "id": "hold-euph-bored",
