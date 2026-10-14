@@ -51,7 +51,7 @@ if (!packOnly) {
 }
 
 // --verify: what was actually said, against the script ([tags] and punctuation ignored).
-const words = (s) => s.toLowerCase().replace(/\[[^\]]*\]/g, " ").replace(/[^a-z0-9' ]+/g, " ").split(/\s+/).filter(Boolean);
+const words = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\[[^\]]*\]/g, " ").replace(/[^a-z0-9' ]+/g, " ").split(/\s+/).filter(Boolean);
 async function verify() {
   let checked = 0, flagged = 0;
   for (const pl of data.playlists) for (const clip of pl.clips) {
