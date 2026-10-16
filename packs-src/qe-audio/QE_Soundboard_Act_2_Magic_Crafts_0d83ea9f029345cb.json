@@ -91,7 +91,7 @@
       "_id": "c051e8a98e325c38",
       "name": "Craft: the Queen calls",
       "path": "modules/sr2e-queen-euphoria/assets/audio/mc-craft-flee.mp3",
-      "description": "No. No! [frantic] The Queen is calling — I won't let you take her from me! I won't!",
+      "description": "[backing away] No. [rising panic] No! [frantic] The Queen is calling — [shrieking] I won't let you take her from me! [sobbing] I won't!",
       "repeat": false,
       "volume": 0.8,
       "fade": null,

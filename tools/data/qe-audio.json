@@ -84,7 +84,7 @@
           "id": "a1-diablo-dontbelate",
           "label": "Diablo: don't be late",
           "voice": "diablo",
-          "text": "And hey — don't be late. [beat] And don't be stupid, eh? This Johnson's got class."
+          "text": "[grinning] And hey — don't be late. [beat] [mock-serious] And don't be stupid, eh? [lowering voice] This Johnson's got class."
         },
         {
           "id": "a1-diablo-intro",
@@ -120,13 +120,13 @@
           "id": "a1-johnson-nohurt",
           "label": "Johnson: nobody gets hurt",
           "voice": "johnson",
-          "text": "Let me be very clear about one thing. [firmly] My client wants her inconvenienced. Not damaged. Nobody gets hurt."
+          "text": "[measured] Let me be very clear about one thing. [pause] [firmly] My client wants her inconvenienced. [beat] Not damaged. [quietly] Nobody gets hurt."
         },
         {
           "id": "a1-johnson-questions",
           "label": "Johnson: no questions",
           "voice": "johnson",
-          "text": "Who my client is — and why — are not part of the arrangement. [pause] So. Do we have an arrangement?"
+          "text": "[politely firm] Who my client is — and why — are not part of the arrangement. [pause] [smoothly] So. [beat] Do we have an arrangement?"
         }
       ]
     },
@@ -150,13 +150,13 @@
           "id": "cs-rentacop-help",
           "label": "Rent-a-cop: can I help you?",
           "voice": "rentacop",
-          "text": "[clears throat] Evening! Can I, uh... help you? Residents and guests only past this point, so I'm gonna need to see some, um — some ID."
+          "text": "[clears throat] Evening! [nervously] Can I, uh... help you? [trying to sound official] Residents and guests only past this point, so I'm gonna need to see some, um — [swallows] some ID."
         },
         {
           "id": "cs-rentacop-hey",
           "label": "Rent-a-cop: hey, you can't be in here",
           "voice": "rentacop",
-          "text": "[startled] Hey! Hey! You can't — you can't be in here! I'm calling this in, okay? Don't move!"
+          "text": "[startled] Hey! Hey! [stammering] You can't — you can't be in here! [fumbling with radio] I'm calling this in, okay? [voice cracking] Don't move!"
         },
         {
           "id": "cs-rentacop-panic",
@@ -168,7 +168,7 @@
           "id": "cs-ke-step-back",
           "label": "Knight Errant: step back",
           "voice": "knighterrant",
-          "text": "Sir. Step back from the vehicle. [firmly] This area is restricted. I won't ask you twice."
+          "text": "[flat, professional] Sir. Step back from the vehicle. [firmly] This area is restricted. [pause] [cold] I won't ask you twice."
         },
         {
           "id": "cs-ke-contact",
@@ -180,7 +180,7 @@
           "id": "cs-ke-down",
           "label": "Knight Errant: man down",
           "voice": "knighterrant",
-          "text": "[urgent, breathless] Man down! I need a medic on twenty — now! He's bleeding out!"
+          "text": "[urgent, breathless] Man down! [shouting into radio] I need a medic on twenty — now! [strained] He's bleeding out!"
         },
         {
           "id": "cs-osprey-intro",
@@ -210,13 +210,13 @@
           "id": "cs-stone-spirit",
           "label": "Stone: the spirit's waiting",
           "voice": "stone",
-          "text": "The fire spirit's been waiting all evening for somebody to try something foolish. [beat] Go on."
+          "text": "[quietly, unbothered] The fire spirit's been waiting all evening for somebody to try something foolish. [beat] [almost kindly] Go on."
         },
         {
           "id": "cs-stone-retreat",
           "label": "Stone: we're done here",
           "voice": "stone",
-          "text": "[urgent, low] Osprey. We're outgunned. Get her clear — I'll cover the stairs."
+          "text": "[urgent, low] Osprey. [beat] We're outgunned. [firmly] Get her clear — [calm] I'll cover the stairs."
         },
         {
           "id": "cs-euph-grabbed",
@@ -228,13 +228,13 @@
           "id": "cs-euph-hide",
           "label": "Euphoria: where is my security?!",
           "voice": "euphoria",
-          "text": "Security! Where is my security?! I pay you people!"
+          "text": "[shrieking] Security! [furious, panicked] Where is my security?! [outraged] I pay you people!"
         },
         {
           "id": "cs-lonestar-arrive",
           "label": "Lone Star: arriving",
           "voice": "lonestar",
-          "text": "[shouting] Lone Star! Nobody move! Everybody on the floor — hands where I can see them!"
+          "text": "[shouting] Lone Star! Nobody move! [commanding] Everybody on the floor — [barking] hands where I can see them!"
         },
         {
           "id": "cs-lonestar-radio",
@@ -263,7 +263,7 @@
           "id": "a1-euph-hands",
           "label": "Euphoria: get your hands off me",
           "voice": "euphoria",
-          "text": "[furious] Get your hands off me! Get — your — hands — off me!"
+          "text": "[furious] Get your hands off me! [through gritted teeth] Get — your — hands — [screaming] off me!"
         },
         {
           "id": "a1-euph-find",
@@ -281,7 +281,7 @@
           "id": "hold-euph-bored",
           "label": "Euphoria: Robert, is this a publicity thing?",
           "voice": "euphoria",
-          "text": "This isn't funny. Robert, if this is some publicity thing, I swear to God..."
+          "text": "[shaky, forced laugh] This isn't funny. [voice wavering] Robert, if this is some publicity thing, [furious whisper] I swear to God..."
         },
         {
           "id": "hold-euph-deal",
@@ -352,13 +352,13 @@
           "id": "a2-carrone-intro",
           "label": "Carrone: let's not waste time",
           "voice": "carrone",
-          "text": "Let's not waste each other's time. [crisp] Euphoria is missing. Again. MegaMedia wants her back — and I'm told you're discreet."
+          "text": "[brusque] Let's not waste each other's time. [crisp] Euphoria is missing. [beat] Again. [measured] MegaMedia wants her back — [pause] and I'm told you're discreet."
         },
         {
           "id": "a2-carrone-price",
           "label": "Carrone: name your price",
           "voice": "carrone",
-          "text": "Find her. Quietly. Before the press does. [pause] Name your price... within reason."
+          "text": "[cold, precise] Find her. Quietly. [pause] Before the press does. [beat] [smooth] Name your price... [dry] within reason."
         },
         {
           "id": "a2-carrone-knows",
@@ -388,7 +388,7 @@
           "id": "a2-burroughs-deny",
           "label": "Burroughs: nothing to do with me",
           "voice": "burroughs",
-          "text": "[defensive, too fast] I-I don't know what you think you've found, but it has nothing to do with me. Strice Foods runs a clean operation. A clean operation!"
+          "text": "[defensive, too fast] I-I don't know what you think you've found, but it has nothing to do with me. [nervous laugh] Strice Foods runs a clean operation. [voice rising] A clean operation!"
         },
         {
           "id": "a2-burroughs-crack",
@@ -400,7 +400,7 @@
           "id": "a2-burroughs-lonestar",
           "label": "Burroughs: calling Lone Star",
           "voice": "burroughs",
-          "text": "[panicked, shouting] Security! Get Lone Star on the line — now! There's an intrusion in the system!"
+          "text": "[panicked, shouting] Security! [frantic] Get Lone Star on the line — now! [breathless] There's an intrusion in the system!"
         },
         {
           "id": "a2-sfx-camera",
@@ -441,7 +441,7 @@
           "id": "mc-craft-flee",
           "label": "Craft: the Queen calls",
           "voice": "craft",
-          "text": "No. No! [frantic] The Queen is calling — I won't let you take her from me! I won't!"
+          "text": "[backing away] No. [rising panic] No! [frantic] The Queen is calling — [shrieking] I won't let you take her from me! [sobbing] I won't!"
         }
       ]
     },
