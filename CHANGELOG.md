@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.7.1 — 2026-10-16
+
+### Changed
+- **18 soundboard lines are re-performed** with fuller direction: each opens with a
+  cue and gets more where the delivery turns ([beat], [sighs], [voice cracking]…), so
+  long lines no longer flatten out after the first phrase. The words are unchanged.
+  Euphoria's "Where is my security?!" and "Robert, if this is some publicity
+  thing…" now carry cues too.
+
 ## 0.7.0 — 2026-10-14
 
 ### Added — a soundboard for the whole adventure
