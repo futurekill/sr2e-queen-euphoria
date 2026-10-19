@@ -1831,8 +1831,8 @@
       "spell equivalent of weapon method B."
     ],
     "Increase Strength": {
-      "sysName": "Increase [Attribute]",
-      "note": "SR1 printed one spell per attribute ('Increase Strength +2: 4'); SR2 generalised them into a single Increase [Attribute] spell. Stone's is Strength +2 at Force 4 — recorded in the item notes since the generic spell carries no attribute field."
+      "sysName": "Increase [Attribute] +2",
+      "note": "SR2 keeps one spell per Attribute and bonus (core p.154): this is Increase [Attribute] +2, cast on Strength at Force 4. The spell has no attribute field, so set its effect to Strength when cast."
     },
     "Treat Severe Wounds": {
       "sysName": "Treat",

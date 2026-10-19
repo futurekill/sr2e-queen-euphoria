@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+- **Stone's Increase Strength** is the core book's Increase [Attribute] +2: Drain
+  ((F / 2) + 1)M, not +0(L) (core p.154; the system now ships the four Increase
+  [Attribute] spells and the four Increase Cybered [Attribute] spells). A Stone already
+  in your world keeps the old spell; import him again.
+
 ## 0.7.1 — 2026-10-16
 
 ### Changed
