@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.7.2 — 2026-10-19
+
 ### Fixed
 - **Stone's Increase Strength** is the core book's Increase [Attribute] +2: Drain
   ((F / 2) + 1)M, not +0(L) (core p.154; the system now ships the four Increase
