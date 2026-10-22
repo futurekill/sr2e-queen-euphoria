@@ -25,3 +25,6 @@ regions and behaviours, embedded item ids, journal images on disk) and
 - [ ] Clicking a sound plays it for every connected client; it doesn't loop, and the
       playlist never plays on its own.
 - [ ] Each line sounds right for its character and says what its label says.
+- [ ] **Act 1: The Vans**: Osprey's three radio lines sound like a radio; the rest don't.
+- [ ] **To Catch A Star → Overheard … in the garage** plays all 19 lines, ending on
+      Euphoria's "I'm not getting older down here." (made by hand, not by gen-audio).

@@ -136,5 +136,8 @@ Speech uses `eleven_v4` (a clip's `model` overrides), which performs bracketed
 direction in the text: `[whispers]`, `[screaming]`, `[voice breaking]`; write lines the
 way people talk, with hesitations and interruptions. Respell slang the model
 mispronounces ("dreck" for drek). `npm run audio -- --verify` transcribes every clip
-and flags any whose words drift from the script. Claude can't hear the clips: the user reviews them (docs/QA-PLAN.md).
+and flags any whose words drift from the script. `radio: true` runs a speech clip
+through a radio filter (ffmpeg) after generation. `cs-garage-overheard` is a three-voice
+conversation stitched by hand (gen-audio makes one voice per clip): it has no `voice`, so
+a deleted file is NOT regenerated. Claude can't hear the clips: the user reviews them (docs/QA-PLAN.md).
 
