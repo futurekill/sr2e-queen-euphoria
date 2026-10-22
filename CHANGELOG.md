@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## 0.8.1 — 2026-10-21
+
+### Fixed
+- **The overheard garage conversation now ends as scripted.** After Osprey asks the
+  drivers which shift they're with, Euphoria cuts him off ("they're Knight Errant,
+  they're wallpaper. Door. Now."). The line was missing from 0.8.0's clip; the
+  sound's description has it too.
+
 ## 0.8.0 — 2026-10-21
 
 ### Added
