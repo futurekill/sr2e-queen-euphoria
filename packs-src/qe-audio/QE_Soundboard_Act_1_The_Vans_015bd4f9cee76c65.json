@@ -1,0 +1,424 @@
+{
+  "_id": "015bd4f9cee76c65",
+  "name": "QE Soundboard — Act 1: The Vans",
+  "description": "Click a sound to play it for everyone.",
+  "mode": -1,
+  "channel": "music",
+  "playing": false,
+  "fade": null,
+  "folder": null,
+  "sorting": "m",
+  "seed": null,
+  "sort": 200000,
+  "sounds": [
+    {
+      "_id": "812eb92f6ac277e3",
+      "name": "Van A · Euphoria: getting in",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-euph-freezing.mp3",
+      "description": "[irritated] Ugh, it's freezing in here. Turn the heat up. [beat] And turn that off. I don't listen to the radio, the radio listens to me.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "f62b229f6d241d0f",
+      "name": "Van A · Euphoria: a runner talks to her",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-euph-road.mp3",
+      "description": "[sweetly condescending] You can look at the road or you can look at me. [beat] I'd pick the road, if I were you.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "b4f763dfaa2ac210",
+      "name": "Van A · Euphoria: first wrong turn",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-euph-wrong-way.mp3",
+      "description": "[frowning] This isn't the way to the studio. [beat] Why are we going this way?",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "0fc34f5580ce325e",
+      "name": "Van A · Euphoria: the other car is gone",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-euph-other-car.mp3",
+      "description": "[sharper] Where's the other car? [rising] Where's Osprey's car?",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "ece61551f97c25b7",
+      "name": "Van A · Euphoria: she works it out",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-euph-not-ke.mp3",
+      "description": "[cold, slow] You're not Knight Errant. [beat] Are you.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "5e6a5bd8b29e1f16",
+      "name": "Van A · Euphoria: calling Osprey",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-euph-commlink.mp3",
+      "description": "[panicked, into her commlink] Osprey? Osprey! Pick up, pick up, pick up...",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 600000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "1ad5e82837037f80",
+      "name": "Van A · Euphoria: ordering the elemental",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-euph-burn-them.mp3",
+      "description": "[shrill, to the empty air] You! The fire thing! Do something! [beat] Burn them!",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 700000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "91da2d11da4393a9",
+      "name": "Van A · Euphoria: bargaining",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-euph-bargain.mp3",
+      "description": "[shaky, then pulling herself together] Okay. Okay. Whatever they're paying you, Robert will triple it. [beat] He'll quadruple it. Just stop the car.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 800000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "c58a284d71c7df63",
+      "name": "Van A · Euphoria: defiant",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-euph-cameras.mp3",
+      "description": "[scornful, close to tears] Do you have any idea how many people are going to be looking for me? [beat] Every camera in Seattle.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 900000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "908155764c0c2bb0",
+      "name": "Van A · Euphoria: hint at her Sense Link recording (optional)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-euph-smile.mp3",
+      "description": "[defiant, tapping her temple] Smile, by the way. [beat] You're going to be famous.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1000000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "4de9766751fcae55",
+      "name": "Van B · Osprey: setting off (radio)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-osprey-rolling.mp3",
+      "description": "[crisp, into his radio] Car two rolling. [beat] Car one, keep us in your mirrors and stay under fifty.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "7dd069059ec2c62d",
+      "name": "Van B · Osprey: to the driver",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-osprey-close-gap.mp3",
+      "description": "[measured] Close the gap. [beat] I want her bumper in our headlights the whole way.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "e4b399322ba41bb1",
+      "name": "Van B · Osprey: testing the driver",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-osprey-precinct.mp3",
+      "description": "[too casual] Which precinct did you rotate in from? [beat] I know most of the faces at Bellevue.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "1c803c92740c2bad",
+      "name": "Van B · Osprey: testing in French",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-osprey-french.mp3",
+      "description": "[lightly] Vous êtes nouveau, non? [beat] [watching them] Sorry. Habit.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "f3813f4da0268685",
+      "name": "Van B · Stone: Detect Enemies goes off",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-stone-detect.mp3",
+      "description": "[evenly] Hold on. [beat] Somebody in this car doesn't like us very much.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "aa70d1b9a31cf971",
+      "name": "Van B · Osprey: car one misses the turn (radio)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-osprey-missed-turn.mp3",
+      "description": "[sharper, into the radio] Car one, you missed the turn. [beat] Car one, respond.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1600000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "9130eac07819284f",
+      "name": "Van B · Osprey: car one is gone",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-osprey-follow.mp3",
+      "description": "[cold] Car one is off route. [to the driver] Follow them. Now.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1700000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "23bf505b17fe4968",
+      "name": "Van B · Stone: the elemental leaves Euphoria (strict line of sight)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-stone-lost-sight.mp3",
+      "description": "[tense] I've lost sight of her. [beat] The elemental's coming back to me. She's on her own.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1800000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "7f465969444ad0dc",
+      "name": "Van B · Stone: threatening the driver",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-stone-hands.mp3",
+      "description": "[firm] Hands on the wheel. [beat] I can put you to sleep before your foot finds the brake.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1900000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "5d79e3bd74ba8f56",
+      "name": "Van B · Osprey: drawing his gun",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-osprey-pull-over.mp3",
+      "description": "[flat, dangerous] Pull over. [beat] Slowly. Both hands where I can see them.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 2000000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "4a629dcaefa41f2b",
+      "name": "Van B · Osprey: calling Knight Errant (radio)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/van-osprey-dispatch.mp3",
+      "description": "[urgent, into the radio] Dispatch, Osprey, MegaMedia detail. Principal's vehicle is off route. I need units. Now.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 2100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.103.1"
+  },
+  "_key": "!playlists!015bd4f9cee76c65"
+}

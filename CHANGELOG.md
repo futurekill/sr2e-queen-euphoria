@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+## 0.9.0 — 2026-10-22
+
+### Added
+- **A new soundboard playlist, "Act 1: The Vans"**: 21 short lines for the drive after
+  the garage, one per situation, so the GM plays whichever fits.
+  - **Van A (Euphoria with the runners):** her complaints, her suspicion as the route
+    goes wrong, calling Osprey, bargaining, ordering the fire elemental, and an
+    optional hint that her Sense Link is recording.
+  - **Van B (Osprey and Stone with the runners):** Osprey testing the drivers (once in
+    French), Stone's Detect Enemies, the chase, threats, and Stone losing sight of
+    Euphoria (for a strict line-of-sight ruling).
+  - Osprey's three radio lines sound like a radio.
+- `tools/gen-audio.mjs`: a clip with `radio: true` gets a radio filter after it's
+  generated (needs ffmpeg).
+
 ## 0.8.1 — 2026-10-21
 
 ### Fixed

@@ -4,7 +4,8 @@
  * Soundboard pack (packs-src/qe-audio). Speech and sound effects come from the
  * ElevenLabs API (ELEVENLABS_API_KEY in the environment). Existing files are kept,
  * so a re-run only fills in what's missing; a clip whose voice has no id is skipped.
- * `loop: true` on a clip makes it repeat until stopped (ambience).
+ * `loop: true` on a clip makes it repeat until stopped (ambience); `radio: true` passes a
+ * speech clip through a radio filter (ffmpeg on the PATH) after it's generated.
  *
  *   node tools/gen-audio.mjs            # generate missing clips, write the pack
  *   node tools/gen-audio.mjs --pack     # write the pack only, no API calls
@@ -12,7 +13,8 @@
  *                                       # whose words don't match its script
  * Then: npm run build-packs
  */
-import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync, renameSync } from "node:fs";
+import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -37,6 +39,15 @@ async function generate(clip) {
   return Buffer.from(await res.arrayBuffer());
 }
 
+// A handheld radio: telephone band, a little drive, squashed dynamics.
+function radioize(file) {
+  const tmp = `${file}.radio.mp3`;
+  execFileSync("ffmpeg", ["-loglevel", "error", "-y", "-i", file, "-af",
+    "highpass=f=400,lowpass=f=3000,acompressor=threshold=-20dB:ratio=6,volume=2,alimiter=limit=0.9,loudnorm=I=-16:TP=-1.5",
+    "-ar", "44100", "-ac", "1", "-b:a", "128k", tmp]);
+  renameSync(tmp, file);
+}
+
 mkdirSync(path.join(ROOT, AUDIO), { recursive: true });
 let made = 0, skipped = [];
 if (!packOnly) {
@@ -46,6 +57,7 @@ if (!packOnly) {
     if (existsSync(file)) continue;
     if (!clip.sfx && !data.voices[clip.voice]?.id) { skipped.push(clip.id); continue; }
     writeFileSync(file, await generate(clip));
+    if (clip.radio) radioize(file);
     made++; console.log(`  + ${clip.id}`);
   }
 }
