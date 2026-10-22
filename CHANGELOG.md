@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## 0.8.0 — 2026-10-21
+
+### Added
+- **"Overheard: Euphoria, Osprey & Stone in the garage"** on the To Catch A Star
+  soundboard: a 1½-minute conversation for runners waiting in the parking garage as
+  Knight Errant drivers. Euphoria throws a diva fit, and it sets up two openings: Stone
+  heads back upstairs for two minutes with two of his elementals (the fire elemental
+  stays on her as spell defense), and Osprey is sent to ride in the other car. It ends
+  with Osprey noticing he doesn't recognise the drivers, so the runners still have to
+  talk their way past him. The full script is in the sound's description.
+
 ## 0.7.2 — 2026-10-19
 
 ### Fixed
