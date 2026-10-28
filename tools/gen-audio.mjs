@@ -97,7 +97,8 @@ data.playlists.forEach((pl, n) => {
     channel: "", playing: false, pausedTime: null, flags: {}, _stats: STATS
   }));
   const doc = { _id, name: pl.name, description: "Click a sound to play it for everyone.", mode: -1,
-    channel: "music", playing: false, fade: null, folder: null, sorting: "m", seed: null,
+    // Environment, not Music: players who turn the score down must still hear the dialogue and SFX.
+    channel: "environment", playing: false, fade: null, folder: null, sorting: "m", seed: null,
     sort: n * 100000, sounds, ownership: { default: 0 }, flags: {}, _stats: STATS,
     _key: `!playlists!${_id}` };
   writeFileSync(path.join(PACK, `${pl.name.replace(/[^A-Za-z0-9]+/g, "_")}_${_id}.json`), JSON.stringify(doc, null, 2) + "\n");
