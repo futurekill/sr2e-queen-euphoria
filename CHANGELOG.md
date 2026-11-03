@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Changed
+- **Soundboard sound effects remade with ElevenLabs' newer sound model** (`eleven_text_to_sound_v3`; v2 is
+  retiring 2027-02-01): 7 of the 10 effects, picked by ear against the old ones, each matched to the old
+  clip's loudness so the mix doesn't change. a1-sfx-commlink, a2-sfx-camera and hold-sfx-door keep their old sound. Voiced lines are unchanged.
+  The files keep their names, so playlists already in a world play the new sounds without re-importing.
+
 ## 0.9.1 — 2026-10-28
 
 ### Changed
