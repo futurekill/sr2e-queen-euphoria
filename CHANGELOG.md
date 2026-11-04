@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.9.2 — 2026-11-04
 
 ### Changed
 - **Soundboard sound effects remade with ElevenLabs' newer sound model** (`eleven_text_to_sound_v3`; v2 is
