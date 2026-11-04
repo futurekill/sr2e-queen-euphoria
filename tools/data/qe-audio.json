@@ -66,7 +66,8 @@
           "id": "a1-sfx-commlink",
           "label": "SFX: commlink buzzing",
           "sfx": "An old commlink buzzing and vibrating on a bedside table in a quiet dark apartment, insistent, three rings",
-          "seconds": 5
+          "seconds": 5,
+          "lufs": -52.1
         },
         {
           "id": "a1-read-wakeup",
@@ -96,7 +97,8 @@
           "id": "a1-sfx-harley",
           "label": "SFX: Harley idling",
           "sfx": "A heavy motorcycle engine idling in a rain-wet parking lot at night, then revving once",
-          "seconds": 6
+          "seconds": 6,
+          "lufs": -13.3
         },
         {
           "id": "a1-read-meet",
@@ -138,13 +140,15 @@
           "label": "SFX: Pacific Towers lobby (loop)",
           "sfx": "Quiet upscale apartment lobby at night, soft elevator chimes, a fountain, distant city traffic through glass doors",
           "seconds": 15,
-          "loop": true
+          "loop": true,
+          "lufs": -38.9
         },
         {
           "id": "cs-sfx-alarm",
           "label": "SFX: building alarm",
           "sfx": "A building security alarm going off, loud electronic klaxon echoing through marble halls",
-          "seconds": 8
+          "seconds": 8,
+          "lufs": -6.2
         },
         {
           "id": "cs-rentacop-help",
@@ -445,7 +449,8 @@
           "id": "hold-sfx-door",
           "label": "SFX: door kicked in",
           "sfx": "A cheap apartment door being kicked in, wood splintering, followed by shouting",
-          "seconds": 4
+          "seconds": 4,
+          "lufs": -12.9
         },
         {
           "id": "hold-pride-door",
@@ -546,7 +551,8 @@
           "id": "a2-sfx-camera",
           "label": "SFX: paparazzi flashes",
           "sfx": "A crowd of photographers shouting and camera shutters clicking rapidly outside a building",
-          "seconds": 8
+          "seconds": 8,
+          "lufs": -13
         }
       ]
     },
@@ -557,7 +563,8 @@
           "id": "mc-sfx-bell",
           "label": "SFX: shop door chime",
           "sfx": "An old shop door opening with a small brass bell, creaking floorboards",
-          "seconds": 3
+          "seconds": 3,
+          "lufs": -20.5
         },
         {
           "id": "mc-craft-welcome",
@@ -593,19 +600,22 @@
           "label": "SFX: the Hive (loop)",
           "sfx": "Dark underground insect hive ambience, constant low chittering and clicking of thousands of insects, wet organic sounds, faint dripping",
           "seconds": 20,
-          "loop": true
+          "loop": true,
+          "lufs": -16.9
         },
         {
           "id": "hive-sfx-screech",
           "label": "SFX: worker screech",
           "sfx": "A shrill alarm screech from a giant insect, half human and half insect, echoing in a tunnel",
-          "seconds": 3
+          "seconds": 3,
+          "lufs": -14.4
         },
         {
           "id": "hive-sfx-wall",
           "label": "SFX: soldier through the wall",
           "sfx": "A heavy insect smashing through a plaster and drywall partition, crunching debris and chittering",
-          "seconds": 4
+          "seconds": 4,
+          "lufs": -18.2
         },
         {
           "id": "hive-read-descent",

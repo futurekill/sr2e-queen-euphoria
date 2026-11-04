@@ -14,7 +14,7 @@
  * Then: npm run build-packs
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync, renameSync } from "node:fs";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -22,7 +22,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MODULE = "modules/sr2e-queen-euphoria";
 const AUDIO = "assets/audio", PACK = path.join(ROOT, "packs-src/qe-audio");
-const data = JSON.parse(readFileSync(path.join(ROOT, "tools/data/qe-audio.json"), "utf8"));
+const DATA_FILE = path.join(ROOT, "tools/data/qe-audio.json");
+const data = JSON.parse(readFileSync(DATA_FILE, "utf8"));
 const packOnly = process.argv.includes("--pack") || process.argv.includes("--verify");   // --verify generates nothing
 const KEY = process.env.ELEVENLABS_API_KEY;
 const id16 = (s) => createHash("sha1").update(s).digest("hex").slice(0, 16);
@@ -48,6 +49,37 @@ function radioize(file) {
   renameSync(tmp, file);
 }
 
+/**
+ * Sound-effect loudness: ElevenLabs' SFX models differ in level (v3 comes out 10–20 dB quieter than v2), so a clip
+ * with `lufs` in the data is levelled to it as it's generated: the soundboard mix stays as authored. The integrated
+ * loudness is measured (EBU R128), the exact gain applied, and peaks capped. `--record-lufs` writes each existing
+ * effect's current loudness into the data file (run it once before regenerating).
+ */
+function lufsOf(file) {
+  const { stderr } = spawnSync("ffmpeg", ["-hide_banner", "-nostats", "-nostdin", "-i", file, "-af", "ebur128", "-f", "null", "-"], { encoding: "utf8" });
+  return parseFloat([...stderr.matchAll(/^\s+I:\s+(-?[\d.]+) LUFS/gm)].at(-1)?.[1]);
+}
+function level(file, target) {
+  const measured = lufsOf(file);
+  if (!Number.isFinite(measured)) return;
+  const tmp = file.replace(/\.mp3$/, ".level.mp3");
+  execFileSync("ffmpeg", ["-hide_banner", "-loglevel", "error", "-nostdin", "-y", "-i", file,
+    "-af", `volume=${(target - measured).toFixed(2)}dB,alimiter=limit=0.89:level=false`, "-b:a", "128k", tmp]);
+  renameSync(tmp, file);
+}
+if (process.argv.includes("--record-lufs")) {
+  let n = 0;
+  for (const pl of data.playlists) for (const clip of pl.clips) {
+    const file = path.join(ROOT, AUDIO, `${clip.id}.mp3`);
+    if (!clip.sfx || !existsSync(file)) continue;
+    const l = lufsOf(file);
+    if (Number.isFinite(l)) { clip.lufs = Math.round(l * 10) / 10; n++; }
+  }
+  writeFileSync(DATA_FILE, JSON.stringify(data, null, 2) + "\n");
+  console.log(`Recorded the loudness of ${n} sound effect(s).`);
+  process.exit(0);
+}
+
 mkdirSync(path.join(ROOT, AUDIO), { recursive: true });
 let made = 0, skipped = [];
 if (!packOnly) {
@@ -57,6 +89,7 @@ if (!packOnly) {
     if (existsSync(file)) continue;
     if (!clip.sfx && !data.voices[clip.voice]?.id) { skipped.push(clip.id); continue; }
     writeFileSync(file, await generate(clip));
+    if (clip.sfx && Number.isFinite(clip.lufs)) level(file, clip.lufs);
     if (clip.radio) radioize(file);
     made++; console.log(`  + ${clip.id}`);
   }
