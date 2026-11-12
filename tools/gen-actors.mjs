@@ -340,6 +340,14 @@ function buildIc(e) {
   };
 }
 
+// A variant with its own printed speed replaces the chassis's "Core book: Speed x/y" line, so only one maximum shows.
+function speedNoted(notes, own) {
+  if (!own) return notes;
+  const re = /<p><em>Core book p\.\d+: Speed [^<]*<\/em><\/p>/;
+  if (!re.test(notes)) throw new Error("speedNote: no core speed line to replace");
+  return notes.replace(re, `<p><em>${own}</em></p>`);
+}
+
 function buildVehicle(e) {
   const src = SYS_VEHICLES.get(e.sysVehicle);
   if (!src) throw new Error(`Method A vehicle "${e.sysVehicle}" not in the system pack`);
@@ -348,7 +356,7 @@ function buildVehicle(e) {
   return {
     ...base(id, e.name, "vehicle", img),
     system: { ...src.system, ...(e.overrides ?? {}),
-      notes: (e.notes ?? "") + (src.system.notes ?? "") },
+      notes: (e.notes ?? "") + speedNoted(src.system.notes ?? "", e.speedNote) },
     items: [
       ...(e.weapons ?? []).map(k => weaponItem(id, k)),
       ...(e.gear ?? []).map(g => simpleItem(id, "gear", g, "icons/svg/item-bag.svg"))
