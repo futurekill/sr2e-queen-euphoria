@@ -1545,7 +1545,7 @@
       "sysVehicle": "Northrup PRC-42B Wasp",
       "art": "$fromSystem",
       "disposition": -1,
-      "speedNote": "Queen Euphoria p.16: Speed 65/100 m/CT (cruising/maximum; Speed holds the cruising speed, which vehicle tests use).",
+      "dropCoreSpeed": true,
       "overrides": {
         "armor": 3,
         "signature": 5,

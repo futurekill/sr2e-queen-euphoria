@@ -340,12 +340,11 @@ function buildIc(e) {
   };
 }
 
-// A variant with its own printed speed replaces the chassis's "Core book: Speed x/y" line, so only one maximum shows.
-function speedNoted(notes, own) {
-  if (!own) return notes;
+// A variant whose own printed line (in its notes) has a different speed drops the chassis's "Core book: Speed x/y" line.
+function dropCoreSpeed(notes) {
   const re = /<p><em>Core book p\.\d+: Speed [^<]*<\/em><\/p>/;
-  if (!re.test(notes)) throw new Error("speedNote: no core speed line to replace");
-  return notes.replace(re, `<p><em>${own}</em></p>`);
+  if (!re.test(notes)) throw new Error("dropCoreSpeed: no core speed line");
+  return notes.replace(re, "");
 }
 
 function buildVehicle(e) {
@@ -356,7 +355,7 @@ function buildVehicle(e) {
   return {
     ...base(id, e.name, "vehicle", img),
     system: { ...src.system, ...(e.overrides ?? {}),
-      notes: (e.notes ?? "") + speedNoted(src.system.notes ?? "", e.speedNote) },
+      notes: (e.notes ?? "") + (e.dropCoreSpeed ? dropCoreSpeed(src.system.notes ?? "") : src.system.notes ?? "") },
     items: [
       ...(e.weapons ?? []).map(k => weaponItem(id, k)),
       ...(e.gear ?? []).map(g => simpleItem(id, "gear", g, "icons/svg/item-bag.svg"))
