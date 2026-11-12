@@ -25,24 +25,24 @@
     "vehicleType": "rotor",
     "skill": "",
     "handling": 3,
-    "speed": 130,
-    "acceleration": 15,
-    "body": 2,
+    "speed": 65,
+    "acceleration": 0,
+    "body": 1,
     "armor": 3,
-    "signature": 3,
+    "signature": 5,
     "pilot": 0,
-    "sensor": 2,
-    "cargo": 2,
-    "load": 68,
+    "sensor": 0,
+    "cargo": 0,
+    "load": 0,
     "seating": "",
-    "cost": 122000,
+    "cost": 340000,
     "availability": "",
     "conditionMonitor": {
       "value": 0,
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p><strong>Armed helicopter</strong> — a variant of the standard Wasp with Ares Armorflex vehicle armour.</p><p><strong>Armament:</strong> one Light Machine Gun under the nose, 100 rounds (Belt, internal), Laser Sight, <strong>rigged for automatic 6 shots with no Recoil Modifier</strong>.</p><p><strong>Pilot:</strong> QE p.16 says <em>\"use the Knight Errant Security Guard above, but substitute Rotor for Car at the same value\"</em> — so the p.19 block with <strong>Rotor 3</strong>. That is a note, not a separate actor.</p><p><strong>Conversion:</strong> chassis by method A from the 42B; Armor 1 → 3 by the ×3 rule, which applies here and only here; the LMG by method A (7S). Method B would have given 8S — recorded in the audit as the one weapon where the two methods disagree.</p><p>A single-seat police/military light rotorcraft.</p><p><em>Cruising speed 65 m/CT (used for vehicle tests). Max speed 130 m/CT. Stats: SR2E p.264-265.</em></p><p><em>Stats verified against the Rigger 2 Vehicle List (SR2, book p.148+). Northrup Wasp (PRC-42B variant).</em></p>"
+    "notes": "<p><strong>Armed helicopter</strong> — a variant of the standard Wasp with Ares Armorflex vehicle armour.</p><p><strong>Armament:</strong> one Light Machine Gun under the nose, 100 rounds (Belt, internal), Laser Sight, <strong>rigged for automatic 6 shots with no Recoil Modifier</strong>.</p><p><strong>Pilot:</strong> QE p.16 says <em>\"use the Knight Errant Security Guard above, but substitute Rotor for Car at the same value\"</em> — so the p.19 block with <strong>Rotor 3</strong>. That is a note, not a separate actor.</p><p><strong>QE p.16 prints:</strong> Handling 3, Speed 65/100, Body 1, Armor 1, Signature 5, Pilot 0, 340,000¥.</p><p><strong>Conversion:</strong> chassis by method A from the 42B, with the D's printed Signature 5 and 340,000¥ (vehicle audit 2026-11-11); Armor 1 → 3 by the ×3 rule, which applies here and only here; the LMG by method A (7S). Method B would have given 8S — recorded in the audit as the one weapon where the two methods disagree.</p><p>A single-seat police/military light rotorcraft.</p><p><em>Core book p.264: Speed 65/130 m/CT (cruising/maximum; Speed holds the cruising speed, which vehicle tests use).</em></p>"
   },
   "items": [
     {

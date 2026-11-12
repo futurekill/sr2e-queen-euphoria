@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.3 — 2026-11-11
+
+### Fixed
+- **Vehicle stats audit** (system docs/VEHICLE-AUDIT.md): the Nightsky, Americar (security variant) and PRC-42D Wasp
+  take the corrected core-book vehicles (they had picked up the Rigger 2 numbers). The PRC-42D also takes its own
+  printed Signature 5 and 340,000¥ (QE p.16), not the 42B's.
+
 ## 0.9.2 — 2026-11-04
 
 ### Changed
