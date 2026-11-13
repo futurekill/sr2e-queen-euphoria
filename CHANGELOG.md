@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.4 — 2026-11-13
+
+### Changed
+- **NPC gear refreshed from the system catalogue** (regenerated actors and the Adventure): Craft, Juan Diablo, the Lone
+  Star officer, Pride, Stone and the Strice Boys pick up the catalogue's current weapon damage types, item weights,
+  Pride's Pole Arm notes (Street Gear p.254, (Str)S) and the Target of Stone's Increase [Attribute] spell
+  ("2 × affected Attribute"). Stone's spell item has a new id; copies already in a world are unaffected.
+
 ## 0.9.3 — 2026-11-11
 
 ### Fixed

@@ -585,6 +585,7 @@
         "isAreaEffect": false,
         "isVoluntary": false,
         "notes": "A bolt of magical power that causes Physical damage.",
+        "damageType": "physical",
         "sustaining": false,
         "sustainedForce": 0,
         "spellLocked": false,
@@ -628,6 +629,7 @@
         "isAreaEffect": true,
         "isVoluntary": false,
         "notes": "An area-effect spell that causes Physical damage. The fireball spell can ignite combustible materials in its blast area. Gamemaster discretion.",
+        "damageType": "physical",
         "sustaining": false,
         "sustainedForce": 0,
         "spellLocked": false,
@@ -914,13 +916,13 @@
           "extreme": 0
         },
         "strengthMin": 0,
-        "weight": 0,
+        "weight": 4,
         "cost": 500,
         "availability": "4/48 hrs",
         "legality": "Legal",
         "equipped": true,
         "accessories": [],
-        "notes": "SR2E Melee Weapons Table p.101: (Str+3)S, Reach 2, Concealability 2, 500¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6S3</code>. Pride p.26 Spear, +2 reach. Pole Arm is SR2's reach polearm entry.</em></p>",
+        "notes": "SR2E Street Gear p.254: (Str)S, Reach 2, Concealability 2, Weight 4, Availability 4/48 hrs, 500¥, Street Index 2. (The combat chapter's Melee Weapons Table, p.101, prints (Str+3)S; Street Gear is the canonical table.)<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6S3</code>. Pride p.26 Spear, +2 reach. Pole Arm is SR2's reach polearm entry.</em></p>",
         "streetIndex": 2
       }
     },
