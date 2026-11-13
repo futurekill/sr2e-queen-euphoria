@@ -1,6 +1,6 @@
 #!/bin/zsh
 # Seamless material tiles for the battle-map compositor. ONE base tile per
-# material — see PLAN-battlemap-art.md for why variants were rejected (tiles that
+# material — see docs/archive/plans/PLAN-battlemap-art.md for why variants were rejected (tiles that
 # are each seamless against themselves are NOT seamless against each other).
 # Variety comes from overlay decals, not from swapping bases.
 set -u

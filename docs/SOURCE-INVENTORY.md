@@ -1,7 +1,7 @@
 # Queen Euphoria — Source Inventory & Expected Counts
 
 Built from `_work/` OCR + page renders (book p.4–67). Freezes the scope so
-omissions are detectable (PLAN.md Step 0). Verify each stat block against the
+omissions are detectable (docs/archive/plans/PLAN.md Step 0). Verify each stat block against the
 page **render** before authoring — OCR is noisy.
 
 ## Structure (page → content)

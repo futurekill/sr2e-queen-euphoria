@@ -1,6 +1,6 @@
 #!/bin/zsh
 # Battle maps for Craft's Magic Shop (both levels) and MegaMedia (office, studio),
-# the same way as the Lobby / Condo / Royal Meadows (PLAN-battlemap-art.md):
+# the same way as the Lobby / Condo / Royal Meadows (docs/archive/plans/PLAN-battlemap-art.md):
 # OUR authored layout rendered as a schematic (tools/render-plan.py) is the first
 # reference, the interior renders set materials and mood, and each scene gets two
 # variants for futurekill to choose from. MegaMedia uses the "touch more tech"

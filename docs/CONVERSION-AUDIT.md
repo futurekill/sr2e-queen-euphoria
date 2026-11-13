@@ -17,7 +17,7 @@ has been read from a 300 dpi render. Nothing remains render-pending.
 
 Core rulebook, **UPDATING ADVENTURES** (book p.283 = PDF 308), verified at
 300 dpi. This is the official instruction for converting a pre-SRII adventure
-such as Queen Euphoria, and neither `PLAN.md` nor `docs/CAST-STATS.md` cites it:
+such as Queen Euphoria, and neither `docs/archive/plans/PLAN.md` nor `docs/CAST-STATS.md` cites it:
 
 > Adventures released prior to *Shadowrun, Second Edition* have some different
 > notations, particularly for weapons… For non-player characters provided in the
@@ -488,7 +488,7 @@ This applies to three of the cast, not one:
 | **Stone** (p.21) | 9 + 3 bound elementals | `npc`, and statted as a generic thug |
 | **Pride** (p.26) | 6 | missing entirely |
 
-`PLAN-actor-rebuild.md` Step 5 noticed half of this — it concluded *"Stone must
+`docs/archive/plans/PLAN-actor-rebuild.md` Step 5 noticed half of this — it concluded *"Stone must
 be a `character`, not an `npc`"* — but treated it as a fact about Stone rather
 than about the sheet, so it neither caught Craft (already shipped, already
 "CLEAN") nor Pride.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render a scene's AUTHORED layout (tools/data/qe-scenes.json) as a labelled
 floorplan schematic — the reference image for battle-map generation
-(PLAN-battlemap-art.md step 1). Same look as the Royal Meadows reference:
+(docs/archive/plans/PLAN-battlemap-art.md step 1). Same look as the Royal Meadows reference:
 dark floor, light walls, blue door gaps, room labels, a faint 1 m grid.
 
   python3 tools/render-plan.py "Craft's Magic Shop — Lower Level" _work/mapref/magic-shop-lower-floorplan.png

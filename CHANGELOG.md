@@ -217,7 +217,7 @@ for the remaining scenes.
 ### Changed — the Pacific Towers Lobby is a real battle map
 
 The composited maps read as diagrams, and the reason was a bad trade in
-`PLAN-battlemap-art.md`. It ruled out whole-image generation because a diffusion
+`docs/archive/plans/PLAN-battlemap-art.md`. It ruled out whole-image generation because a diffusion
 model cannot place a wall on a grid line. True, and over-weighted: Foundry walls
 are separate vector objects that only have to agree with what a player can SEE.
 What the composite bought in pixel-exact alignment it paid for in flat ambient
@@ -327,4 +327,4 @@ grids), and the **Adventure bundle** (`queen-euphoria`) for one-click import.
 - Scaffold: module.json (4 packs), tooling from Double Exposure with the
   extractor journal-page round-trip fixed; `packs/` git-ignored (rebuilt in CI).
 - `docs/SOURCE-INVENTORY.md`: page-by-page inventory + Phase-1/Phase-2 counts.
-- Plan locked via grill + 4 Codex rounds (see PLAN.md / PLAN-REVIEW-LOG.md).
+- Plan locked via grill + 4 Codex rounds (see docs/archive/plans/PLAN.md / docs/archive/plans/PLAN-REVIEW-LOG.md).

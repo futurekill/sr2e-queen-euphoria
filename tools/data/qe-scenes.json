@@ -497,7 +497,7 @@
         }
       ],
       "externalArt": true,
-      "$artNote": "Background is a GENERATED image (_work/mapout/lobby-hybrid-b.webp, upscaled 2x Lanczos then down to 2600x2100), NOT the SVG compositor. The composited version was geometrically exact and read as a diagram: flat ambient light, one floor tile repeating six times a room, props pasted with no contact shadow. This was generated whole with the floorplan supplied as an image reference, which is what PLAN-battlemap-art.md ruled out — that plan weighted pixel-exact alignment too highly. Foundry walls are separate vector objects and only have to agree with what a player can SEE. The rectangles above are therefore measured off the ART, not off the printed plan."
+      "$artNote": "Background is a GENERATED image (_work/mapout/lobby-hybrid-b.webp, upscaled 2x Lanczos then down to 2600x2100), NOT the SVG compositor. The composited version was geometrically exact and read as a diagram: flat ambient light, one floor tile repeating six times a room, props pasted with no contact shadow. This was generated whole with the floorplan supplied as an image reference, which is what docs/archive/plans/PLAN-battlemap-art.md ruled out — that plan weighted pixel-exact alignment too highly. Foundry walls are separate vector objects and only have to agree with what a player can SEE. The rectangles above are therefore measured off the ART, not off the printed plan."
     },
     {
       "_id": "e1e952bb55601969",
@@ -998,7 +998,7 @@
           "$note": "shop window"
         }
       ],
-      "$artNote": "Measured off the generated battle map at 100 px/m (PLAN-battlemap-art.md step 5): the art is the authority for exact walls and doors.",
+      "$artNote": "Measured off the generated battle map at 100 px/m (docs/archive/plans/PLAN-battlemap-art.md step 5): the art is the authority for exact walls and doors.",
       "teleports": [
         {
           "name": "Stairs down",
@@ -1076,7 +1076,7 @@
         }
       ],
       "externalArt": true,
-      "$artNote": "Measured off the generated battle map at 100 px/m (PLAN-battlemap-art.md step 5): the art is the authority for exact walls and doors.",
+      "$artNote": "Measured off the generated battle map at 100 px/m (docs/archive/plans/PLAN-battlemap-art.md step 5): the art is the authority for exact walls and doors.",
       "teleports": [
         {
           "name": "Stairs up",
@@ -2296,7 +2296,7 @@
           "$note": "floor-to-ceiling window over the city"
         }
       ],
-      "$artNote": "Measured off the generated battle map at 100 px/m (PLAN-battlemap-art.md step 5): the art is the authority for exact walls and doors."
+      "$artNote": "Measured off the generated battle map at 100 px/m (docs/archive/plans/PLAN-battlemap-art.md step 5): the art is the authority for exact walls and doors."
     },
     {
       "_id": "a303b85826fd7a3e",
@@ -2389,7 +2389,7 @@
         }
       ],
       "externalArt": true,
-      "$artNote": "Measured off the generated battle map at 100 px/m (PLAN-battlemap-art.md step 5): the art is the authority for exact walls and doors."
+      "$artNote": "Measured off the generated battle map at 100 px/m (docs/archive/plans/PLAN-battlemap-art.md step 5): the art is the authority for exact walls and doors."
     }
   ]
 }

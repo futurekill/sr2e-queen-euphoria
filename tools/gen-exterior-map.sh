@@ -1,5 +1,5 @@
 #!/bin/zsh
-# Pacific Towers exterior — hybrid battle map (see PLAN-battlemap-art.md).
+# Pacific Towers exterior — hybrid battle map (see docs/archive/plans/PLAN-battlemap-art.md).
 # GM-invented geometry: the book prints no exterior plan. The frontage is set to
 # the Lobby's measured 26 m so the two scenes agree at the door line.
 set -u

@@ -2,7 +2,7 @@
 # Whole-image battle map for the Pacific Towers Lobby, generated WITH the
 # floorplan as an image reference.
 #
-# WHY THIS EXISTS. PLAN-battlemap-art.md rejected whole-image generation because
+# WHY THIS EXISTS. docs/archive/plans/PLAN-battlemap-art.md rejected whole-image generation because
 # a diffusion model cannot place a wall on a grid line. That premise is true and
 # the weight was wrong: Foundry walls are separate vector objects and only have
 # to LOOK right, not coincide to the pixel. The composited maps it produced are

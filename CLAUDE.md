@@ -11,7 +11,7 @@ module is `../sr2e-double-exposure` (DE). Read the system's `CLAUDE.md` for the
 data-model contract. **DE is a reference, not a template to clone** — its ids,
 prose, and one stat block (Hive Queen Essence 10, silently clamped by the NPC
 model's `max:6`) are DE-specific; re-derive everything from QE's own printed
-values. The full locked plan is `PLAN.md` (grilled + 4 Codex rounds → APPROVED).
+values. The full locked plan is `docs/archive/plans/PLAN.md` (grilled + 4 Codex rounds → APPROVED).
 
 ## Source material
 Queen Euphoria is **1st Edition** (©1990) — this module **modernizes it to

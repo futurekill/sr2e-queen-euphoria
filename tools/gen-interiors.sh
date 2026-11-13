@@ -1,7 +1,7 @@
 #!/bin/zsh
 # Interior reference art for the locations that have none.
 #
-# These are INPUTS to the map generation (see PLAN-battlemap-art.md step 2) —
+# These are INPUTS to the map generation (see docs/archive/plans/PLAN-battlemap-art.md step 2) —
 # what stopped the Lobby coming out like a tenement was having real interiors to
 # feed in. They double as journal handouts. Skips anything already generated.
 set -u

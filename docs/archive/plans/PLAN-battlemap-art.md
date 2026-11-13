@@ -1,7 +1,7 @@
 # Battle-map art: generate the map, fit the walls to it
 
 _Rewritten 2026-09-16, after three maps were approved. The previous plan is kept
-at `docs/PLAN-battlemap-art-SUPERSEDED.md` because its reasoning is worth
+at `docs/archive/plans/PLAN-battlemap-art-SUPERSEDED.md` because its reasoning is worth
 reading — it is a well-argued case for the wrong trade._
 
 ## What the old plan got wrong
