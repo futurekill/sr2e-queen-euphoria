@@ -42,7 +42,11 @@
       "max": 10
     },
     "autonav": 4,
-    "notes": "<p><strong>Euphoria's limousine</strong> — one Knight Errant guard drives it. QE p.16 is explicit that <em>\"this particular Nightsky has no concealed weaponry.\"</em></p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across — the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The ×3 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p><p>An armored executive limousine.</p><p><em>Core book p.264: Speed 45/120 m/CT (cruising/maximum; Speed holds the cruising speed, which vehicle tests use).</em></p>"
+    "notes": "<p><strong>Euphoria's limousine</strong> — one Knight Errant guard drives it. QE p.16 is explicit that <em>\"this particular Nightsky has no concealed weaponry.\"</em></p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across — the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The ×3 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p><p>An armored executive limousine.</p><p><em>Core book p.264: Speed 45/120 m/CT (cruising/maximum; Speed holds the cruising speed, which vehicle tests use).</em></p>",
+    "citation": {
+      "book": "qe",
+      "page": "16"
+    }
   },
   "items": [],
   "prototypeToken": {

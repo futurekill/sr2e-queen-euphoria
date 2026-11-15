@@ -643,7 +643,11 @@
         "legality": "Legal",
         "equipped": true,
         "accessories": [],
-        "notes": "SR2E p.231. A rugged, large-frame heavy pistol favored by bounty hunters and independents. Reliable under field conditions.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Osprey p.20, with Smartgun Link.</em></p>"
+        "notes": "SR2E p.231. A rugged, large-frame heavy pistol favored by bounty hunters and independents. Reliable under field conditions.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Osprey p.20, with Smartgun Link.</em></p>",
+        "citation": {
+          "book": "sr2",
+          "page": "231"
+        }
       }
     },
     {
@@ -702,7 +706,11 @@
         "equipped": true,
         "accessories": [],
         "notes": "SR2E Melee Weapons Table p.101: 10S, Reach 2, Concealability 10, 3,000¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6S4</code>. Osprey p.20. +2 Reach preserved.</em></p>",
-        "streetIndex": 3
+        "streetIndex": 3,
+        "citation": {
+          "book": "sr2",
+          "page": "101"
+        }
       }
     },
     {

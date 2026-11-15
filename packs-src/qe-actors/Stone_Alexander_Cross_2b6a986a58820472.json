@@ -529,7 +529,11 @@
         "sustainedForce": 0,
         "spellLocked": false,
         "quickened": false,
-        "quickeningKarma": 0
+        "quickeningKarma": 0,
+        "citation": {
+          "book": "qe",
+          "page": "283"
+        }
       }
     },
     {
@@ -573,7 +577,11 @@
         "sustainedForce": 0,
         "spellLocked": false,
         "quickened": false,
-        "quickeningKarma": 0
+        "quickeningKarma": 0,
+        "citation": {
+          "book": "qe",
+          "page": "283"
+        }
       }
     },
     {
@@ -702,7 +710,11 @@
         "spellLocked": false,
         "quickened": false,
         "quickeningKarma": 0,
-        "notes": "<p>REQUIRES A FETISH (printed).</p><p><em>Queen Euphoria conversion (core p.283 — translate spell codes). <strong>No SR2 equivalent — custom spell.</strong> NO SR2 EQUIVALENT EXISTS. Checked the core rulebook and Grimoire 2e: both have only 'Petrifying Gaze' as a critter power (basilisk, cockatrice), not a spell. Rather than drop one of Stone's three fetish-bound Manipulation spells — which would change the encounter — it is kept as a QE-local custom spell built on the SR1 printing and flagged as such on the item. This is the spell equivalent of weapon method B.</em></p>"
+        "notes": "<p>REQUIRES A FETISH (printed).</p><p><em>Queen Euphoria conversion (core p.283 — translate spell codes). <strong>No SR2 equivalent — custom spell.</strong> NO SR2 EQUIVALENT EXISTS. Checked the core rulebook and Grimoire 2e: both have only 'Petrifying Gaze' as a critter power (basilisk, cockatrice), not a spell. Rather than drop one of Stone's three fetish-bound Manipulation spells — which would change the encounter — it is kept as a QE-local custom spell built on the SR1 printing and flagged as such on the item. This is the spell equivalent of weapon method B.</em></p>",
+        "citation": {
+          "book": "qe",
+          "page": "283"
+        }
       }
     },
     {
@@ -761,7 +773,11 @@
         "equipped": true,
         "accessories": [],
         "notes": "SR2E p.231. The main competitor to the Ares Predator. Heavy frame, hard-hitting—the samurai's sidearm of choice.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) — Ultra-Power is the SR1 name for this pistol.</em></p>",
-        "streetIndex": 1
+        "streetIndex": 1,
+        "citation": {
+          "book": "qe",
+          "page": "26"
+        }
       }
     },
     {
@@ -819,7 +835,11 @@
         "legality": "Legal",
         "equipped": true,
         "accessories": [],
-        "notes": "SR2E Melee Weapons Table p.101: (Str+2)M Stun, Reach 2, Concealability 2, 50¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>3M2 Stun</code>. Stone p.21, +2 Reach.</em></p>"
+        "notes": "SR2E Melee Weapons Table p.101: (Str+2)M Stun, Reach 2, Concealability 2, 50¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>3M2 Stun</code>. Stone p.21, +2 Reach.</em></p>",
+        "citation": {
+          "book": "sr2",
+          "page": "101"
+        }
       }
     },
     {

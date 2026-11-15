@@ -406,7 +406,11 @@
         "availability": "4/5 days",
         "legality": "Restricted",
         "equipped": true,
-        "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. The Strice Boys p.25 [12 (clip), 1 extra clip, 3M2]. No SR2 Seco entry, so 3+2 = 5M.</em></p>"
+        "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. The Strice Boys p.25 [12 (clip), 1 extra clip, 3M2]. No SR2 Seco entry, so 3+2 = 5M.</em></p>",
+        "citation": {
+          "book": "qe",
+          "page": "25"
+        }
       }
     },
     {
@@ -464,7 +468,11 @@
         "legality": "Legal",
         "equipped": true,
         "accessories": [],
-        "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>"
+        "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>",
+        "citation": {
+          "book": "sr2",
+          "page": "101"
+        }
       }
     },
     {
@@ -523,7 +531,11 @@
         "equipped": true,
         "accessories": [],
         "notes": "SR2E p.232. The latest in the venerable Uzi lineage—compact, reliable, and effective in close quarters. BF capable.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M3</code>. The Strice Boys p.25.</em></p>",
-        "streetIndex": 0.75
+        "streetIndex": 0.75,
+        "citation": {
+          "book": "sr2",
+          "page": "232"
+        }
       }
     },
     {

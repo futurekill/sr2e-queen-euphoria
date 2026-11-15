@@ -762,7 +762,11 @@
         "sustainedForce": 0,
         "spellLocked": false,
         "quickened": false,
-        "quickeningKarma": 0
+        "quickeningKarma": 0,
+        "citation": {
+          "book": "qe",
+          "page": "283"
+        }
       }
     },
     {
@@ -864,7 +868,11 @@
         "equipped": true,
         "accessories": [],
         "notes": "SR2E p.231. The main competitor to the Ares Predator. Heavy frame, hard-hitting—the samurai's sidearm of choice.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) — Ultra-Power is the SR1 name for this pistol.</em></p>",
-        "streetIndex": 1
+        "streetIndex": 1,
+        "citation": {
+          "book": "qe",
+          "page": "26"
+        }
       }
     },
     {
@@ -923,7 +931,11 @@
         "equipped": true,
         "accessories": [],
         "notes": "SR2E Street Gear p.254: (Str)S, Reach 2, Concealability 2, Weight 4, Availability 4/48 hrs, 500¥, Street Index 2. (The combat chapter's Melee Weapons Table, p.101, prints (Str+3)S; Street Gear is the canonical table.)<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6S3</code>. Pride p.26 Spear, +2 reach. Pole Arm is SR2's reach polearm entry.</em></p>",
-        "streetIndex": 2
+        "streetIndex": 2,
+        "citation": {
+          "book": "sr2",
+          "page": "254"
+        }
       }
     },
     {
@@ -981,7 +993,11 @@
         "legality": "Legal",
         "equipped": true,
         "accessories": [],
-        "notes": "SR2E p.228. Military-spec fighting knife with serrated spine and reinforced hilt. Compact and lethal. (Improvised/houseruled — not in the SR2 core Melee Weapons Table.)<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6L3</code>. Pride p.26 Survival Knife.</em></p>"
+        "notes": "SR2E p.228. Military-spec fighting knife with serrated spine and reinforced hilt. Compact and lethal. (Improvised/houseruled — not in the SR2 core Melee Weapons Table.)<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6L3</code>. Pride p.26 Survival Knife.</em></p>",
+        "citation": {
+          "book": "qe",
+          "page": "26"
+        }
       }
     },
     {

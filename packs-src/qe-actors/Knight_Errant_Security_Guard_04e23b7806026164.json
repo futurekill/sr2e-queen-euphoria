@@ -410,7 +410,11 @@
         "equipped": true,
         "accessories": [],
         "notes": "SR2E p.231. Considered by many the premier heavy pistol. Menacing and popular among mercenaries and security services.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry — SR2 has no separate 'II'.</em></p>",
-        "streetIndex": 0.5
+        "streetIndex": 0.5,
+        "citation": {
+          "book": "sr2",
+          "page": "231"
+        }
       }
     },
     {
@@ -469,7 +473,11 @@
         "equipped": true,
         "accessories": [],
         "notes": "Submachine gun. The SMG of choice for corporate security, military police and base security worldwide. The standard model has a retractable stock, integral laser sight (under-barrel mount) and an integral gas-vent recoil compensation system (barrel mount, Rating 2). SR2E p.238, p.254.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M3</code>. Stands in for the H&K MP-5TX (p.19). Method A and method B agree here — B also gives 7M — so the choice is free.</em></p>",
-        "streetIndex": 0.75
+        "streetIndex": 0.75,
+        "citation": {
+          "book": "qe",
+          "page": "19"
+        }
       }
     },
     {
@@ -530,7 +538,11 @@
         "notes": "Concussion grenade — minimal fragmentation, −1 Power per metre, Stun damage. SR2E p.256.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5M3 Stun</code>. Knight Errant p.19 carry two Airfoil IPE Concussion Grenades. These are why Throwing 3 matters; both were dropped together in the old actor.</em></p>",
         "blastType": "concussion",
         "quantity": 1,
-        "streetIndex": 2
+        "streetIndex": 2,
+        "citation": {
+          "book": "sr2",
+          "page": "256"
+        }
       }
     },
     {

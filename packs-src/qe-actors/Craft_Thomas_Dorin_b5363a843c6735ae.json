@@ -967,7 +967,11 @@
         "spellSubtype": "specific",
         "boundSpellId": "b5363a8430c8a746",
         "spent": 0,
-        "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Bound to Sleep and left ACTIVE. It previously shipped inactive as a workaround: the system treated a focus as a permanent bonus on every spell, so an active focus handed Craft +2 on Mana Bolt too. sr2e 0.89.0 fixed that — a focus now serves only its bound spell, from a pool of 2 dice per action shared between the casting test and the Drain test, so leaving it on is both correct and what the page describes."
+        "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Bound to Sleep and left ACTIVE. It previously shipped inactive as a workaround: the system treated a focus as a permanent bonus on every spell, so an active focus handed Craft +2 on Mana Bolt too. sr2e 0.89.0 fixed that — a focus now serves only its bound spell, from a pool of 2 dice per action shared between the casting test and the Drain test, so leaving it on is both correct and what the page describes.",
+        "citation": {
+          "book": "qe",
+          "page": "62"
+        }
       }
     },
     {
@@ -1026,7 +1030,11 @@
         "equipped": true,
         "accessories": [],
         "notes": "SR2E p.231. Considered by many the premier heavy pistol. Menacing and popular among mercenaries and security services.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry — SR2 has no separate 'II'.</em></p>",
-        "streetIndex": 0.5
+        "streetIndex": 0.5,
+        "citation": {
+          "book": "sr2",
+          "page": "231"
+        }
       }
     },
     {

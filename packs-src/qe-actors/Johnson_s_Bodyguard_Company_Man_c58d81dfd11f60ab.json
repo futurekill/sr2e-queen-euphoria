@@ -371,7 +371,11 @@
         "equipped": true,
         "accessories": [],
         "notes": "SR2E p.231. The main competitor to the Ares Predator. Heavy frame, hard-hitting—the samurai's sidearm of choice.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) — Ultra-Power is the SR1 name for this pistol.</em></p>",
-        "streetIndex": 1
+        "streetIndex": 1,
+        "citation": {
+          "book": "qe",
+          "page": "26"
+        }
       }
     },
     {
@@ -508,7 +512,11 @@
         "legality": "Legal",
         "equipped": true,
         "essence": 0,
-        "notes": "Fitted to the Browning Max-Power (QE p.10)."
+        "notes": "Fitted to the Browning Max-Power (QE p.10).",
+        "citation": {
+          "book": "qe",
+          "page": "10"
+        }
       }
     },
     {
@@ -542,7 +550,11 @@
         "legality": "Legal",
         "equipped": true,
         "essence": 0,
-        "notes": "Loaded in the Browning (QE p.10). +1 Power, Damage Level unchanged."
+        "notes": "Loaded in the Browning (QE p.10). +1 Power, Damage Level unchanged.",
+        "citation": {
+          "book": "qe",
+          "page": "10"
+        }
       }
     },
     {

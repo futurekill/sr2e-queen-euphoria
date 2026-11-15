@@ -289,7 +289,11 @@
         "availability": "5/6 days",
         "legality": "Restricted",
         "equipped": true,
-        "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Pacific Towers guards p.15 [25 (clip), 1 extra clip, 3M2]. No SR2 Black Scorpion exists, so the staging digit folds: 3+2 = 5M.</em></p>"
+        "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Pacific Towers guards p.15 [25 (clip), 1 extra clip, 3M2]. No SR2 Black Scorpion exists, so the staging digit folds: 3+2 = 5M.</em></p>",
+        "citation": {
+          "book": "qe",
+          "page": "15"
+        }
       }
     },
     {

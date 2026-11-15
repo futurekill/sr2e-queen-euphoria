@@ -42,7 +42,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p><strong>The escort car.</strong> Two Knight Errant guards precede Euphoria's Nightsky in this.</p><p><strong>Price note:</strong> this carries the SR2 catalogue's <strong>20,000¥</strong>, not QE's printed 80,000¥ — taking the catalogue entry whole means taking its price. Ruled acceptable 2026-08-03 (\"I don't know that the price really matters in this case\").</p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across — the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The ×3 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p><p>The ubiquitous mid-size sedan of the sprawl.</p><p><em>Core book p.264: Speed 35/105 m/CT (cruising/maximum; Speed holds the cruising speed, which vehicle tests use).</em></p>"
+    "notes": "<p><strong>The escort car.</strong> Two Knight Errant guards precede Euphoria's Nightsky in this.</p><p><strong>Price note:</strong> this carries the SR2 catalogue's <strong>20,000¥</strong>, not QE's printed 80,000¥ — taking the catalogue entry whole means taking its price. Ruled acceptable 2026-08-03 (\"I don't know that the price really matters in this case\").</p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across — the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The ×3 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p><p>The ubiquitous mid-size sedan of the sprawl.</p><p><em>Core book p.264: Speed 35/105 m/CT (cruising/maximum; Speed holds the cruising speed, which vehicle tests use).</em></p>",
+    "citation": {
+      "book": "qe",
+      "page": "283"
+    }
   },
   "items": [
     {
@@ -76,7 +80,11 @@
         "legality": "Legal",
         "equipped": true,
         "essence": 0,
-        "notes": "The only equipment the printed security variant adds (QE p.16)."
+        "notes": "The only equipment the printed security variant adds (QE p.16).",
+        "citation": {
+          "book": "qe",
+          "page": "16"
+        }
       }
     }
   ],

@@ -328,7 +328,11 @@
         "availability": "4/4 days",
         "legality": "Restricted",
         "equipped": true,
-        "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Carrone p.64 [18 (clip), 3M2]. A DIFFERENT weapon from the guards' Ceska Black Scorpion (p.15) — both are Ceskas, neither is in SR2, and both fold to 5M.</em></p>"
+        "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Carrone p.64 [18 (clip), 3M2]. A DIFFERENT weapon from the guards' Ceska Black Scorpion (p.15) — both are Ceskas, neither is in SR2, and both fold to 5M.</em></p>",
+        "citation": {
+          "book": "qe",
+          "page": "15"
+        }
       }
     },
     {
