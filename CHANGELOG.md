@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.11.0 — 2026-11-18
+
+### Added
+- **Act 2 newscast** on the soundboard (**QE Soundboard — Act 2: The Twist → Newscast: Euphoria vanishes again**, the
+  playlist's first sound): a 2½-minute trid news report of Euphoria's second disappearance, to open Act 2 before
+  Carrone's call. Anchor Dana Prescott, field reporter Marcus Hale live outside Pacific Towers (floors 20–22 sealed off),
+  and a resident one floor below who smelled something sweet in the vents — a faint clue. News music under the
+  headlines, a street scene under the live report. It tells the players only what the public knows. Original writing
+  (script: `docs/newscast-second-disappearance.md`); made by `tools/newscast/`, not by `npm run audio`.
+
 ## 0.10.0 — 2026-11-15
 
 Requires sr2e 0.156.0 (citations).

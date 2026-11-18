@@ -1,0 +1,106 @@
+{
+  "$comment": "Euphoria's second disappearance \u2014 the Act 2 newscast. Voices: two UNUSED stock voices (bit players), picked after listening to their previews. Segments are mixed by mix.sh.",
+  "voices": {
+    "anchor": "XrExE9yKIg1WjnnlVkGX",
+    "reporter": "CwhRBWXzGAHq8TQ4Fs17",
+    "resident": "EXAVITQu4vr4xnSDxMaL"
+  },
+  "speech": [
+    {
+      "id": "anchor-open",
+      "voice": "anchor",
+      "text": "[urgent, crisp news delivery] Good evening, I'm Dana Prescott. Our top story tonight: for the second time in a week, simsense superstar Euphoria has vanished. [beat] And this time, chummers, it's no publicity stunt. [serious] Shortly after nine last night, Lone Star responded to an alarm at the star's Pacific Towers penthouse. Officers found the home studio still running, the trid rig still warm, and four members of her private security team dead. [pause] Euphoria herself was gone. [measured] We go live now to Marcus Hale, at the scene. Marcus?"
+    },
+    {
+      "id": "reporter-a",
+      "voice": "reporter",
+      "text": "[a little breathless, on location] Thanks, Dana. I'm standing outside Pacific Towers, where Lone Star has sealed off the twentieth, twenty-first and twenty-second floors. [lower] Sources inside tell us the bodyguards never got off a clean shot. One officer, who asked not to be named, called the scene, quote, [hesitant] not a gang hit. Not anything I've seen before."
+    },
+    {
+      "id": "reporter-resident-in",
+      "voice": "reporter",
+      "text": "[turning to a guest, steady] I'm joined now by a resident who lives one floor below the penthouse. Ma'am, what did you notice last night?"
+    },
+    {
+      "id": "resident",
+      "voice": "resident",
+      "text": "[shaken, a little out of breath] I was up late, working, and, um, sometime after nine there was this smell. Coming out of the vents. [beat] Sweet. Really sweet. Like candy, or like somebody spilled syrup into the air system. [uneasy laugh] I thought it was the building doing something. [quieter] And then the sirens started."
+    },
+    {
+      "id": "reporter-resident-out",
+      "voice": "reporter",
+      "text": "[gently] Thank you. [back to camera, steady] Lone Star has not commented on what residents say they smelled."
+    },
+    {
+      "id": "reporter-b",
+      "voice": "reporter",
+      "text": "[steady, wrapping up] There is no ransom demand. No one has claimed responsibility. Dana, back to you."
+    },
+    {
+      "id": "anchor-close",
+      "voice": "anchor",
+      "text": "[serious] Thank you, Marcus. [skeptical] Of course, many viewers will remember that Euphoria disappeared just days ago, before her first Amber Gel appearance, and turned up again soon after with no explanation. [beat] Some called that a marketing stunt. MegaMedia denies it, then and now. [reading a statement, flat] In a statement tonight, MegaMedia says it is devoting every resource to the star's safe return, and asks anyone with information to come forward. [beat] Strice Foods has postponed all Amber Gel promotional events, quote, [dry] out of respect. [lighter, wrapping up] Lone Star says the investigation is active. We'll bring you updates as we get them. [beat] In other news, Ludivenko's Blue Bacosoy is now on shelves across the metroplex. [warmly] Coming up after the break: are your kids eating too much gel? Stay with us."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "sting-open",
+      "seconds": 7,
+      "text": "Professional TV evening news broadcast intro sting, urgent breaking news theme, punchy orchestral hits with timpani and pulsing synth, ends on a clean final hit"
+    },
+    {
+      "id": "whoosh-out",
+      "seconds": 2,
+      "text": "Broadcast TV news transition whoosh, clean glossy swoosh with a subtle digital glitch, going to a live remote feed"
+    },
+    {
+      "id": "field-bed",
+      "seconds": 30,
+      "text": "Outdoor city street at night outside a high-rise crime scene, light wind on a microphone, distant police sirens, police radio chatter, low crowd murmur, steady ambience"
+    },
+    {
+      "id": "whoosh-back",
+      "seconds": 2,
+      "text": "Broadcast TV news transition whoosh back to the studio, clean glossy swoosh"
+    },
+    {
+      "id": "sting-break",
+      "seconds": 5,
+      "text": "TV news bumper going to a commercial break, short confident orchestral and synth musical sting, clean ending"
+    },
+    {
+      "id": "underscore",
+      "seconds": 30,
+      "text": "TV news headline underscore music bed, tense pulsing synth bass, ticking clock-like percussion, low strings, no melody, steady and serious, for under a news anchor's voice"
+    },
+    {
+      "id": "crowd-scene",
+      "seconds": 30,
+      "text": "Busy city street at night outside a police cordon around a high-rise, a crowd of onlookers murmuring and talking, a few raised voices, cars passing on wet pavement, distant traffic, recorded on location"
+    },
+    {
+      "id": "wind-mic",
+      "seconds": 30,
+      "text": "Wind buffeting a handheld reporter's microphone outdoors at night, soft gusts and low rumble, no other sounds"
+    },
+    {
+      "id": "siren-pass",
+      "seconds": 9,
+      "text": "A police car with its siren wailing approaches and drives past on a city street at night, close by, Doppler effect, then fades away"
+    },
+    {
+      "id": "radio-squawk",
+      "seconds": 4,
+      "text": "Police officer's shoulder radio squawks nearby outdoors: a short burst of garbled dispatch chatter with static and a beep"
+    }
+  ],
+  "voiceNames": {
+    "anchor": "Matilda (stock)",
+    "reporter": "Roger (stock)",
+    "resident": "Sarah (stock)"
+  },
+  "names": {
+    "anchor": "Dana Prescott",
+    "reporter": "Marcus Hale"
+  }
+}
