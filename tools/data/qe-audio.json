@@ -574,7 +574,9 @@
           "id": "mtg-carrone-drink",
           "label": "Carrone: order something",
           "voice": "carrone",
-          "text": "[without looking up] You came. Good. [beat] Order something. [dry] Trust me, you'll want it."
+          "text": "[quietly, not looking up from his glass] So you made it. [beat] Good. [dryly] Order a drink. You'll want one.",
+          "model": "eleven_v3",
+          "note": "eleven_v4 repeats this short line on this voice (2026-11-20, four takes); v3 says it once."
         },
         {
           "id": "mtg-sfx-whitenoise",

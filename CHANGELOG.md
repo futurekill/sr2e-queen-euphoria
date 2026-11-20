@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.12.1 — 2026-11-20
+
+### Fixed
+- **Carrone: order a drink** (Meeting Carrone) said its line twice; remade on eleven_v3, which says it once.
+
 ## 0.12.0 — 2026-11-20
 
 ### Added
