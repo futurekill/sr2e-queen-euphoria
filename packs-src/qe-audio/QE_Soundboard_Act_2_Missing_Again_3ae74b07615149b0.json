@@ -1,0 +1,196 @@
+{
+  "_id": "3ae74b07615149b0",
+  "name": "QE Soundboard — Act 2: Missing Again",
+  "description": "Click a sound to play it for everyone.",
+  "mode": -1,
+  "channel": "environment",
+  "playing": false,
+  "fade": null,
+  "folder": null,
+  "sorting": "m",
+  "seed": null,
+  "sort": 600000,
+  "sounds": [
+    {
+      "_id": "58f06610436a2655",
+      "name": "SFX: elevator opens on a silent hallway",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/ma-sfx-elevator.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "7b8c2a425414bb26",
+      "name": "Read-aloud: the condo",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-read-condo.mp3",
+      "description": "[hushed] The penthouse door stands open. A chair at the guard post. A cup of soykaf gone cold on the carpet. [pause] Inside... [beat] it's very quiet. [slowly] What's left of the Knight Errant guards is scattered across the living room. Torn. Not shot, not cut. Torn. [pause] [unsteady] And under the blood there's something else in the air. Something sweet.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "7d792c604a276fc4",
+      "name": "SFX: wind through the broken greenhouse (loop)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/ma-sfx-wind.mp3",
+      "description": "",
+      "repeat": true,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "7b8c9582163c19db",
+      "name": "SFX: the simsense rig, still running",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/ma-sfx-rig.mp3",
+      "description": "",
+      "repeat": true,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "e9a3d70a32e0be61",
+      "name": "Read-aloud: the sim recording",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-read-sim.mp3",
+      "description": "[softly] The playback takes you behind her eyes. Music. A mirror. A smile she's practiced a thousand times. [pause] Then the glass bursts inward — and something with too many limbs fills the frame. [tense] You feel her scream in your own throat.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "f99b876e29e2484a",
+      "name": "PRIVATE SCREENING — the full playback (2 min, mixed)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/ma-private-screening.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 600000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "5fb4e58193978c8b",
+      "name": "Carrone: Burroughs? Strice Foods",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/ma-carrone-burroughs.mp3",
+      "description": "[frowning] Burroughs. [beat] Vincent Burroughs. Strice Foods, one of their executives. [pause] I've met him a few times, we set up her Amber Gel appearances through him. [crisp] Soykyo Office Plaza. Tenth floor.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 700000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "066cda941b05f9f7",
+      "name": "Carrone: the other man? Never seen him",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/ma-carrone-craft.mp3",
+      "description": "[studying it] The blond one? [long pause] [quietly] No. [beat] I've never seen that man in my life.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 800000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "b059ce07c8bbb8c8",
+      "name": "Carrone: eight hours",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/ma-carrone-report.mp3",
+      "description": "[curt] Eight hours. [beat] I'll expect your first report.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 900000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.103.1"
+  },
+  "_key": "!playlists!3ae74b07615149b0"
+}

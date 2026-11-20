@@ -1,0 +1,29 @@
+{
+  "_comment": "PRIVATE SCREENING (Queen Euphoria p.32-33): Euphoria's abduction, replayed from her inhibitor-free simsense rig. Original paraphrase, never the book's read-aloud; the clues are kept (Burroughs, a Queen). gen.mjs makes raw/, mix.py mixes _work/private-screening/out/private-screening.mp3; copy it to assets/audio/ma-private-screening.mp3.",
+  "voices": { "euphoria": "o2Qeh9Q5Eb0sgWD9vLMH", "craft": "qSSDGvBZqO1SEVuIVNvg", "guard": "JKZclx3RjRH3EKnM0rsW" },
+  "speech": [
+    { "id": "euph-rehearse", "voice": "euphoria", "text": "[softly, rehearsing, sorrowful] They came at dawn. [pause] The helicopters... [breath] and when the smoke cleared, the river ran red. [long pause] [sighs, dropping out of character] No. No, that's too much. [quietly] Again." },
+    { "id": "euph-hate", "voice": "euphoria", "text": "[whispering to herself, tired] I hate this scene. [beat] Why does it always have to be so... cruel." },
+    { "id": "euph-what", "voice": "euphoria", "text": "[startled, small voice] What was that? [beat] [shaky, louder] Hello? [pause] Is someone out there?" },
+    { "id": "euph-fear", "voice": "euphoria", "text": "[terrified, barely breathing] Oh no. [whimpers] Oh no, no, no, no..." },
+    { "id": "craft-a", "voice": "craft", "text": "[delighted, sing-song] There she is. [beat] Even lovelier than on the trid, Euphoria. [softly] Shh. Shh. Don't be scared. [beat] Everything's going to be fine." },
+    { "id": "craft-b", "voice": "craft", "text": "[giggles] Listen to me. Fine. [laughs quietly to himself] Nothing is fine, is it? [cooing] Be scared, sweet thing. [whispers] Be very scared." },
+    { "id": "craft-c", "voice": "craft", "text": "[intimate whisper, very close] Mister Burroughs wants you taken care of. [beat] And I'll take care of you. [reverent, trembling with joy] I'll make you my Queen." },
+    { "id": "guard", "voice": "guard", "text": "[screaming, in agony and rage] Get away from her! Get away from—" },
+    { "id": "euph-scream", "voice": "euphoria", "text": "[screaming] No!" }
+  ],
+  "sfx": [
+    { "id": "headset", "seconds": 5, "text": "A simsense headset clicking into place, a rising electronic whine, then a deep sub-bass drop into total silence" },
+    { "id": "limbo", "seconds": 5, "text": "An empty dark void, almost silent, a faint distant high ringing tone slowly fading in" },
+    { "id": "studio", "seconds": 22, "text": "A quiet professional recording studio at night, soft equipment hum, silk clothing rustling, slow soft footsteps on thick carpet, a console keypad beeping a few times" },
+    { "id": "montage", "seconds": 20, "text": "Muffled dreamlike memories of disaster: distant helicopter rotors, volleys of rockets, a rioting crowd, rushing flood water, under a mournful low drone" },
+    { "id": "crash", "seconds": 4, "text": "A violent crash of glass and plastic shattering and something heavy landing in the next room" },
+    { "id": "carnage", "seconds": 9, "text": "Muffled through a wall: a man screaming, wet flesh tearing, bodies thrown against furniture, then sudden silence" },
+    { "id": "heartbeat", "seconds": 22, "text": "A fast pounding human heartbeat, very close and loud, with ragged frightened breathing" },
+    { "id": "door", "seconds": 6, "text": "A door slowly opening with a creak, a sticky wet sound on the handle, liquid dripping onto carpet" },
+    { "id": "chitter", "seconds": 6, "text": "Close in the dark, the dry rapid clicking and chittering of a huge insect, rhythmic like laughter" },
+    { "id": "gunfire", "seconds": 3, "text": "A laser sight humming on, then a short burst from a submachine gun indoors" },
+    { "id": "impact", "seconds": 4, "text": "Something heavy dropping from the ceiling onto a man, a crushing impact, a wet spray, a gurgle" },
+    { "id": "blackout", "seconds": 7, "text": "A sudden cut to dead silence, then a thin high tinnitus ring slowly fading away" }
+  ]
+}

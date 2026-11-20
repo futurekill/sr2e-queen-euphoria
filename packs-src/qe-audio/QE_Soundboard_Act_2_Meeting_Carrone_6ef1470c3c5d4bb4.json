@@ -1,0 +1,291 @@
+{
+  "_id": "6ef1470c3c5d4bb4",
+  "name": "QE Soundboard — Act 2: Meeting Carrone",
+  "description": "Click a sound to play it for everyone.",
+  "mode": -1,
+  "channel": "environment",
+  "playing": false,
+  "fade": null,
+  "folder": null,
+  "sorting": "m",
+  "seed": null,
+  "sort": 500000,
+  "sounds": [
+    {
+      "_id": "a714bfccd425d4c3",
+      "name": "SFX: Pacific Towers bar, late morning (loop)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mtg-sfx-bar.mp3",
+      "description": "",
+      "repeat": true,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "15441ff7f231509a",
+      "name": "Lobby guard: he's at the bar",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mtg-guard-bar.mp3",
+      "description": "[a little too polite, avoiding eye contact] Morning. [beat] Mister Carrone? He's, uh... by the bar. Table on the left. [nervous] He's expecting you.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "0d6a26bda8c554e6",
+      "name": "Carrone: order something",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mtg-carrone-drink.mp3",
+      "description": "[without looking up] You came. Good. [beat] Order something. [dry] Trust me, you'll want it.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "64bc1f50b6b189dd",
+      "name": "SFX: door locked, white noise generator",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mtg-sfx-whitenoise.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "442fc41568c520f9",
+      "name": "Carrone: who he is",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mtg-carrone-who.mp3",
+      "description": "[measured] Robert Carrone. [beat] Vice president at MegaMedia, in charge of Euphoria's career. [pause] Before the contract, I was her manager. For years. [quietly] So you understand. This one is personal.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "a19efa5575ade068",
+      "name": "Carrone: let's not waste time",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-intro.mp3",
+      "description": "[brusque] Let's not waste each other's time. [crisp] Euphoria is missing. [beat] Again. [measured] MegaMedia wants her back — [pause] and I'm told you're discreet.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 600000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "d90b618cf5e1c1a6",
+      "name": "Carrone: I know what you did",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-knows.mp3",
+      "description": "[cold, measured] I know exactly who took her the first time. [pause] The only question is whether you're going to be useful to me now.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 700000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "9c8bcd2b35d29d93",
+      "name": "Carrone: the late Mr. Whitecastle",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mtg-carrone-late.mp3",
+      "description": "[cool] Your employer has settled its debt with us. [beat] So has your friend, Mister Whitecastle. [pause] [glancing at a watch, almost pleasant] Forgive me. [beat] So did the late Mister Whitecastle.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 800000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "9cb432b3cb45219c",
+      "name": "Carrone: the terms",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mtg-carrone-terms.mp3",
+      "description": "[businesslike] Twenty thousand nuyen. Each. [beat] Bring her back before six a.m. Saturday. [pause] After that, it's half. [flat] Do it, and MegaMedia forgets the first time. Refuse... [beat] and I can only promise you what Mister Whitecastle got.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 900000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "e0c57cca06208de4",
+      "name": "Carrone: name your price",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-price.mp3",
+      "description": "[cold, precise] Find her. Quietly. [pause] Before the press does. [beat] [smooth] Name your price... [dry] within reason.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1000000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "231d19c6f49cce3e",
+      "name": "Carrone: secrecy and reports",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mtg-carrone-rules.mp3",
+      "description": "[cold] Two conditions. [beat] Not one word of this reaches the press. Not a whisper. [pause] And I want a full report every eight hours. [firmly] No exceptions.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "4a5bc08e3a021eb0",
+      "name": "Carrone: don't disappoint me",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-threat.mp3",
+      "description": "[pleasantly] MegaMedia has a long memory — and a very large legal department. [beat] Don't disappoint me.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "f78375c6428f42c5",
+      "name": "Carrone: come up to the condo",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mtg-carrone-upstairs.mp3",
+      "description": "[standing] Come. Her condo. [beat] Nothing has been touched since we found her gone. [pause] I'd like you to see it before anyone else does.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "dc8f2c90b62ab334",
+      "name": "Newscast: Whitecastle firebombed (back on the street)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/mtg-news-whitecastle.mp3",
+      "description": "[news-anchor delivery] In local news, fire crews were called before dawn to a residence in the north metroplex, where a firebomb gutted a private home. [beat] One body was recovered from the scene. [pause] Lone Star has identified the victim, through dental records, as Ellery Whitecastle, a local businessman. [beat] Investigators have not named a suspect, and are asking anyone with information to come forward.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.103.1"
+  },
+  "_key": "!playlists!6ef1470c3c5d4bb4"
+}

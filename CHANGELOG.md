@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.12.0 — 2026-11-20
+
+### Added
+- **PRIVATE SCREENING** on the soundboard (**QE Soundboard — Act 2: Missing Again**): the abduction recording from
+  Euphoria's inhibitor-free simsense rig as one 1¾-minute mixed piece — the headset dropping her into black, her
+  *Jungle Huntress* rehearsal and the montage of other people's suffering, the crash, the carnage behind the door,
+  the clicking laughter, the blond man's lines (he names **Burroughs** and promises her a crown as his **Queen**: the
+  clues), the one-armed guard's burst, the drop from the ceiling and the cut to black. Original writing; made by
+  `tools/private-screening/`, not by `npm run audio`.
+- **Soundboards for Deja Vu, Meeting Carrone and Missing Again** (three new playlists, 32 clips): the hangover wake-up
+  in Clockwork's storeroom, Whitecastle's warning call (and his urgent second call), Clockwork showing them out, the
+  Knight Errant pickup; the lobby guard, the bar, the locked room and white noise generator, Carrone's whole pitch
+  (who he is, "the late Mr. Whitecastle", 20,000¥ by 6 A.M. Saturday or half, no press, a report every eight hours),
+  and a short newscast of Whitecastle's firebombing; the elevator, the wind through the broken greenhouse, the rig
+  still humming, and Carrone on Burroughs (Soykyo Office Plaza, tenth floor) and on the man he's never seen. The
+  existing Act 2 lines moved into these playlists; the rest stay in **Act 2: The Twist (other clips)**.
+- **Deja Vu** page in *The Adventure — Scene Prep* (p.27).
+
+### Changed
+- **Meeting Carrone** and **Missing Again** prep pages rewritten from the book (p.28–33): the deal and its terms,
+  what Carrone knows and hides, Whitecastle's death, every search area with its tests (Perception 8, 5, 6/4;
+  Electronics 3 or Intelligence 9 to replay), the recording's two clues (Burroughs; the Garrety's Bar and Grill
+  shirt), handling the chip (Electronics B/R 4, four hours; copy: Electronics 5, 30 minutes) and where each lead goes.
+  The old pages said the studio was wrecked and missed both clues.
+- **The condo read-aloud** smells sweet, as the book's clue does (it said vinegar).
+
 ## 0.11.0 — 2026-11-18
 
 ### Added

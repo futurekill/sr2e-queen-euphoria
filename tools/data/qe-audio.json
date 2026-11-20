@@ -56,6 +56,14 @@
     "rentacop": {
       "name": "QE – Rent-a-cop",
       "id": "TNaRmYKs7yddgoFGbmrI"
+    },
+    "clockwork": {
+      "name": "Charlie (stock) — Clockwork the bartender",
+      "id": "IKne3meq5aSn9XLyUdCD"
+    },
+    "anchor": {
+      "name": "Matilda (stock) — Dana Prescott, news anchor",
+      "id": "XrExE9yKIg1WjnnlVkGX"
     }
   },
   "playlists": [
@@ -479,7 +487,229 @@
       ]
     },
     {
-      "name": "QE Soundboard — Act 2: The Twist",
+      "name": "QE Soundboard — Act 2: Deja Vu",
+      "clips": [
+        {
+          "id": "dv-sfx-wristphone",
+          "label": "SFX: wristphone chirping in the dark",
+          "sfx": "A small wristphone chirping insistently in a pitch-dark cluttered storage room, muffled bass of a closed nightclub somewhere beyond the wall",
+          "seconds": 6,
+          "lufs": -20
+        },
+        {
+          "id": "dv-read-wake",
+          "label": "Read-aloud: waking up at Clockwork's",
+          "voice": "narrator",
+          "text": "[groggy, low] Something is chirping. [pause] Your skull answers it with a pulse of pure misery. [beat] Dark room. Concrete floor. Crates. A smell of spilled beer and cleaning fluid. [sighs] Last night comes back in pieces... the orange-haired bartender, the little screen on his medallion looping some old ultraviolent film, round after round of something he called Rippers. [pause] [dry] You did celebrate. Thoroughly. [beat] The chirping is your wristphone. Somewhere under you."
+        },
+        {
+          "id": "dv-whitecastle-problem",
+          "label": "Whitecastle: we have a problem",
+          "voice": "whitecastle",
+          "text": "[nervous, too quick] Chummer. Good. You're alive. [beat] Listen... [exhales] we have a bit of a problem. [fidgeting] MegaMedia knows. [pause] About Euphoria. The first time. Don't ask me how, street ears, somebody talked... [beat] They know it was us."
+        },
+        {
+          "id": "dv-whitecastle-meet",
+          "label": "Whitecastle: meet Carrone at eleven",
+          "voice": "whitecastle",
+          "text": "[trying to sound calm] So far they're being... civilized. [beat] They want your team at Pacific Towers. The lobby. Eleven this morning. [pause] A man named Robert Carrone, her manager. [pleading] At least hear what he has to say."
+        },
+        {
+          "id": "dv-whitecastle-deal",
+          "label": "Whitecastle: give them the employers",
+          "voice": "whitecastle",
+          "text": "[lower, conspiratorial] And chummer? [beat] I get the feeling they'd forget the whole thing... if you had something to tell them about the people who hired us. [pause] [quickly] I'll be in touch. Eleven. Don't be late."
+        },
+        {
+          "id": "dv-whitecastle-urgent",
+          "label": "Whitecastle: second call (they didn't show)",
+          "voice": "whitecastle",
+          "text": "[panicked, hushed] Where are you?! [breathing hard] It's past eleven! [beat] They're not asking nicely anymore, chummer. [desperate] Please. Go and see the man. [pause] Please."
+        },
+        {
+          "id": "dv-sfx-storeroom",
+          "label": "SFX: lights on, the storeroom door opens",
+          "sfx": "Old fluorescent tubes flickering and buzzing on in a storage room, a heavy metal door swinging open, loud classical symphony music spilling in from a bar beyond",
+          "seconds": 7,
+          "lufs": -18
+        },
+        {
+          "id": "dv-clockwork-out",
+          "label": "Clockwork: closing time, out you go",
+          "voice": "clockwork",
+          "text": "[cheerfully loud] Rise and shine, my lovelies! [laughs] Sleep well on me crates, did we? [beat] Right. Bar's closed, cleaner's due, and you lot are cluttering up my stock. [mock-polite] Out the back, if you please. Mind the empties."
+        },
+        {
+          "id": "dv-clockwork-music",
+          "label": "Clockwork: the music",
+          "voice": "clockwork",
+          "text": "[delighted, over the music] Hear that? [humming along] The Ninth! [beat] Nothing clears a head like a full orchestra, mate. [laughs] Come back soon. Bring money."
+        },
+        {
+          "id": "dv-ke-pickup",
+          "label": "Knight Errant: the pickup (they refused)",
+          "voice": "knighterrant",
+          "text": "[flat, polite, final] Good morning. MegaMedia would like a word. [beat] You can walk to the car. [pause] Or we can help you."
+        }
+      ]
+    },
+    {
+      "name": "QE Soundboard — Act 2: Meeting Carrone",
+      "clips": [
+        {
+          "id": "mtg-sfx-bar",
+          "label": "SFX: Pacific Towers bar, late morning (loop)",
+          "sfx": "An almost empty upscale hotel lobby bar in the late morning, a bartender quietly polishing glasses, faint jazz, a distant fountain",
+          "seconds": 15,
+          "loop": true,
+          "lufs": -34
+        },
+        {
+          "id": "mtg-guard-bar",
+          "label": "Lobby guard: he's at the bar",
+          "voice": "rentacop",
+          "text": "[a little too polite, avoiding eye contact] Morning. [beat] Mister Carrone? He's, uh... by the bar. Table on the left. [nervous] He's expecting you."
+        },
+        {
+          "id": "mtg-carrone-drink",
+          "label": "Carrone: order something",
+          "voice": "carrone",
+          "text": "[without looking up] You came. Good. [beat] Order something. [dry] Trust me, you'll want it."
+        },
+        {
+          "id": "mtg-sfx-whitenoise",
+          "label": "SFX: door locked, white noise generator",
+          "sfx": "A door closing and a lock clicking shut in a small quiet meeting room, then a small electronic device switched on, a steady dull white noise hum",
+          "seconds": 7,
+          "lufs": -24
+        },
+        {
+          "id": "mtg-carrone-who",
+          "label": "Carrone: who he is",
+          "voice": "carrone",
+          "text": "[measured] Robert Carrone. [beat] Vice president at MegaMedia, in charge of Euphoria's career. [pause] Before the contract, I was her manager. For years. [quietly] So you understand. This one is personal."
+        },
+        {
+          "id": "a2-carrone-intro",
+          "label": "Carrone: let's not waste time",
+          "voice": "carrone",
+          "text": "[brusque] Let's not waste each other's time. [crisp] Euphoria is missing. [beat] Again. [measured] MegaMedia wants her back — [pause] and I'm told you're discreet."
+        },
+        {
+          "id": "a2-carrone-knows",
+          "label": "Carrone: I know what you did",
+          "voice": "carrone",
+          "text": "[cold, measured] I know exactly who took her the first time. [pause] The only question is whether you're going to be useful to me now."
+        },
+        {
+          "id": "mtg-carrone-late",
+          "label": "Carrone: the late Mr. Whitecastle",
+          "voice": "carrone",
+          "text": "[cool] Your employer has settled its debt with us. [beat] So has your friend, Mister Whitecastle. [pause] [glancing at a watch, almost pleasant] Forgive me. [beat] So did the late Mister Whitecastle."
+        },
+        {
+          "id": "mtg-carrone-terms",
+          "label": "Carrone: the terms",
+          "voice": "carrone",
+          "text": "[businesslike] Twenty thousand nuyen. Each. [beat] Bring her back before six a.m. Saturday. [pause] After that, it's half. [flat] Do it, and MegaMedia forgets the first time. Refuse... [beat] and I can only promise you what Mister Whitecastle got."
+        },
+        {
+          "id": "a2-carrone-price",
+          "label": "Carrone: name your price",
+          "voice": "carrone",
+          "text": "[cold, precise] Find her. Quietly. [pause] Before the press does. [beat] [smooth] Name your price... [dry] within reason."
+        },
+        {
+          "id": "mtg-carrone-rules",
+          "label": "Carrone: secrecy and reports",
+          "voice": "carrone",
+          "text": "[cold] Two conditions. [beat] Not one word of this reaches the press. Not a whisper. [pause] And I want a full report every eight hours. [firmly] No exceptions."
+        },
+        {
+          "id": "a2-carrone-threat",
+          "label": "Carrone: don't disappoint me",
+          "voice": "carrone",
+          "text": "[pleasantly] MegaMedia has a long memory — and a very large legal department. [beat] Don't disappoint me."
+        },
+        {
+          "id": "mtg-carrone-upstairs",
+          "label": "Carrone: come up to the condo",
+          "voice": "carrone",
+          "text": "[standing] Come. Her condo. [beat] Nothing has been touched since we found her gone. [pause] I'd like you to see it before anyone else does."
+        },
+        {
+          "id": "mtg-news-whitecastle",
+          "label": "Newscast: Whitecastle firebombed (back on the street)",
+          "voice": "anchor",
+          "text": "[news-anchor delivery] In local news, fire crews were called before dawn to a residence in the north metroplex, where a firebomb gutted a private home. [beat] One body was recovered from the scene. [pause] Lone Star has identified the victim, through dental records, as Ellery Whitecastle, a local businessman. [beat] Investigators have not named a suspect, and are asking anyone with information to come forward."
+        }
+      ]
+    },
+    {
+      "name": "QE Soundboard — Act 2: Missing Again",
+      "clips": [
+        {
+          "id": "ma-sfx-elevator",
+          "label": "SFX: elevator opens on a silent hallway",
+          "sfx": "A luxury elevator arriving with a soft chime, doors sliding open onto a completely silent carpeted hallway, faint air conditioning hum",
+          "seconds": 6,
+          "lufs": -22
+        },
+        {
+          "id": "a2-read-condo",
+          "label": "Read-aloud: the condo",
+          "voice": "narrator",
+          "text": "[hushed] The penthouse door stands open. A chair at the guard post. A cup of soykaf gone cold on the carpet. [pause] Inside... [beat] it's very quiet. [slowly] What's left of the Knight Errant guards is scattered across the living room. Torn. Not shot, not cut. Torn. [pause] [unsteady] And under the blood there's something else in the air. Something sweet."
+        },
+        {
+          "id": "ma-sfx-wind",
+          "label": "SFX: wind through the broken greenhouse (loop)",
+          "sfx": "Cold wind whistling and moaning through a large torn hole in a plastic greenhouse dome high on a skyscraper at night, leaves rustling",
+          "seconds": 15,
+          "loop": true,
+          "lufs": -28
+        },
+        {
+          "id": "ma-sfx-rig",
+          "label": "SFX: the simsense rig, still running",
+          "sfx": "Professional recording equipment humming in an empty studio, a soft electronic tone, small fans whirring, an occasional quiet beep",
+          "seconds": 10,
+          "loop": true,
+          "lufs": -32
+        },
+        {
+          "id": "a2-read-sim",
+          "label": "Read-aloud: the sim recording",
+          "voice": "narrator",
+          "text": "[softly] The playback takes you behind her eyes. Music. A mirror. A smile she's practiced a thousand times. [pause] Then the glass bursts inward — and something with too many limbs fills the frame. [tense] You feel her scream in your own throat."
+        },
+        {
+          "id": "ma-private-screening",
+          "label": "PRIVATE SCREENING — the full playback (2 min, mixed)",
+          "note": "A mixed piece made by tools/private-screening/ (Euphoria, Craft, a guard, studio, montage and attack sounds): gen-audio does NOT regenerate it. Original paraphrase; the clues (Burroughs, a Queen) are spoken."
+        },
+        {
+          "id": "ma-carrone-burroughs",
+          "label": "Carrone: Burroughs? Strice Foods",
+          "voice": "carrone",
+          "text": "[frowning] Burroughs. [beat] Vincent Burroughs. Strice Foods, one of their executives. [pause] I've met him a few times, we set up her Amber Gel appearances through him. [crisp] Soykyo Office Plaza. Tenth floor."
+        },
+        {
+          "id": "ma-carrone-craft",
+          "label": "Carrone: the other man? Never seen him",
+          "voice": "carrone",
+          "text": "[studying it] The blond one? [long pause] [quietly] No. [beat] I've never seen that man in my life."
+        },
+        {
+          "id": "ma-carrone-report",
+          "label": "Carrone: eight hours",
+          "voice": "carrone",
+          "text": "[curt] Eight hours. [beat] I'll expect your first report."
+        }
+      ]
+    },
+    {
+      "name": "QE Soundboard — Act 2: The Twist (other clips)",
       "clips": [
         {
           "id": "a2-news-vanished",
@@ -498,42 +728,6 @@
           "label": "Whitecastle: asked for you",
           "voice": "whitecastle",
           "text": "[laughs] Funny thing, though. The client asked for your team by name. [beat] Don't ask me how they know you. I didn't tell 'em."
-        },
-        {
-          "id": "a2-carrone-intro",
-          "label": "Carrone: let's not waste time",
-          "voice": "carrone",
-          "text": "[brusque] Let's not waste each other's time. [crisp] Euphoria is missing. [beat] Again. [measured] MegaMedia wants her back — [pause] and I'm told you're discreet."
-        },
-        {
-          "id": "a2-carrone-price",
-          "label": "Carrone: name your price",
-          "voice": "carrone",
-          "text": "[cold, precise] Find her. Quietly. [pause] Before the press does. [beat] [smooth] Name your price... [dry] within reason."
-        },
-        {
-          "id": "a2-carrone-knows",
-          "label": "Carrone: I know what you did",
-          "voice": "carrone",
-          "text": "[cold, measured] I know exactly who took her the first time. [pause] The only question is whether you're going to be useful to me now."
-        },
-        {
-          "id": "a2-carrone-threat",
-          "label": "Carrone: don't disappoint me",
-          "voice": "carrone",
-          "text": "[pleasantly] MegaMedia has a long memory — and a very large legal department. [beat] Don't disappoint me."
-        },
-        {
-          "id": "a2-read-condo",
-          "label": "Read-aloud: the condo",
-          "voice": "narrator",
-          "text": "[hushed] The penthouse door is open. Inside, the air is thick with something sharp and chemical... like vinegar left to rot. [pause] The bodyguards are still here. Most of them. [slowly] Whatever did this did not use a gun."
-        },
-        {
-          "id": "a2-read-sim",
-          "label": "Read-aloud: the sim recording",
-          "voice": "narrator",
-          "text": "[softly] The playback takes you behind her eyes. Music. A mirror. A smile she's practiced a thousand times. [pause] Then the glass bursts inward — and something with too many limbs fills the frame. [tense] You feel her scream in your own throat."
         },
         {
           "id": "a2-burroughs-deny",

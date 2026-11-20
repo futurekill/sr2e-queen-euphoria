@@ -975,7 +975,11 @@
             "spellSubtype": "specific",
             "boundSpellId": "b5363a8430c8a746",
             "spent": 0,
-            "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Bound to Sleep and left ACTIVE. It previously shipped inactive as a workaround: the system treated a focus as a permanent bonus on every spell, so an active focus handed Craft +2 on Mana Bolt too. sr2e 0.89.0 fixed that — a focus now serves only its bound spell, from a pool of 2 dice per action shared between the casting test and the Drain test, so leaving it on is both correct and what the page describes."
+            "notes": "Printed at p.62 as 'Sleep Spell Focus (2)'. Bound to Sleep and left ACTIVE. It previously shipped inactive as a workaround: the system treated a focus as a permanent bonus on every spell, so an active focus handed Craft +2 on Mana Bolt too. sr2e 0.89.0 fixed that — a focus now serves only its bound spell, from a pool of 2 dice per action shared between the casting test and the Drain test, so leaving it on is both correct and what the page describes.",
+            "citation": {
+              "book": "qe",
+              "page": "62"
+            }
           }
         },
         {
@@ -1034,7 +1038,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E p.231. Considered by many the premier heavy pistol. Menacing and popular among mercenaries and security services.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry — SR2 has no separate 'II'.</em></p>",
-            "streetIndex": 0.5
+            "streetIndex": 0.5,
+            "citation": {
+              "book": "sr2",
+              "page": "231"
+            }
           }
         },
         {
@@ -2444,7 +2452,11 @@
           "max": 10
         },
         "autonav": 2,
-        "notes": "<p><strong>The escort car.</strong> Two Knight Errant guards precede Euphoria's Nightsky in this.</p><p><strong>Price note:</strong> this carries the SR2 catalogue's <strong>20,000¥</strong>, not QE's printed 80,000¥ — taking the catalogue entry whole means taking its price. Ruled acceptable 2026-08-03 (\"I don't know that the price really matters in this case\").</p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across — the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The ×3 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p><p>The ubiquitous mid-size sedan of the sprawl.</p><p><em>Core book p.264: Speed 35/105 m/CT (cruising/maximum; Speed holds the cruising speed, which vehicle tests use).</em></p>"
+        "notes": "<p><strong>The escort car.</strong> Two Knight Errant guards precede Euphoria's Nightsky in this.</p><p><strong>Price note:</strong> this carries the SR2 catalogue's <strong>20,000¥</strong>, not QE's printed 80,000¥ — taking the catalogue entry whole means taking its price. Ruled acceptable 2026-08-03 (\"I don't know that the price really matters in this case\").</p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across — the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The ×3 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p><p>The ubiquitous mid-size sedan of the sprawl.</p><p><em>Core book p.264: Speed 35/105 m/CT (cruising/maximum; Speed holds the cruising speed, which vehicle tests use).</em></p>",
+        "citation": {
+          "book": "qe",
+          "page": "283"
+        }
       },
       "items": [
         {
@@ -2478,7 +2490,11 @@
             "legality": "Legal",
             "equipped": true,
             "essence": 0,
-            "notes": "The only equipment the printed security variant adds (QE p.16)."
+            "notes": "The only equipment the printed security variant adds (QE p.16).",
+            "citation": {
+              "book": "qe",
+              "page": "16"
+            }
           }
         }
       ],
@@ -3035,7 +3051,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E p.231. The main competitor to the Ares Predator. Heavy frame, hard-hitting—the samurai's sidearm of choice.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) — Ultra-Power is the SR1 name for this pistol.</em></p>",
-            "streetIndex": 1
+            "streetIndex": 1,
+            "citation": {
+              "book": "qe",
+              "page": "26"
+            }
           }
         },
         {
@@ -3172,7 +3192,11 @@
             "legality": "Legal",
             "equipped": true,
             "essence": 0,
-            "notes": "Fitted to the Browning Max-Power (QE p.10)."
+            "notes": "Fitted to the Browning Max-Power (QE p.10).",
+            "citation": {
+              "book": "qe",
+              "page": "10"
+            }
           }
         },
         {
@@ -3206,7 +3230,11 @@
             "legality": "Legal",
             "equipped": true,
             "essence": 0,
-            "notes": "Loaded in the Browning (QE p.10). +1 Power, Damage Level unchanged."
+            "notes": "Loaded in the Browning (QE p.10). +1 Power, Damage Level unchanged.",
+            "citation": {
+              "book": "qe",
+              "page": "10"
+            }
           }
         },
         {
@@ -3727,7 +3755,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E p.232. The latest in the venerable Uzi lineage—compact, reliable, and effective in close quarters. BF capable.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M3</code>. The Strice Boys p.25.</em></p>",
-            "streetIndex": 0.75
+            "streetIndex": 0.75,
+            "citation": {
+              "book": "sr2",
+              "page": "232"
+            }
           }
         },
         {
@@ -3786,7 +3818,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E p.231. Considered by many the premier heavy pistol. Menacing and popular among mercenaries and security services.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry — SR2 has no separate 'II'.</em></p>",
-            "streetIndex": 0.5
+            "streetIndex": 0.5,
+            "citation": {
+              "book": "sr2",
+              "page": "231"
+            }
           }
         },
         {
@@ -3844,7 +3880,11 @@
             "legality": "Legal",
             "equipped": true,
             "accessories": [],
-            "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>"
+            "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>",
+            "citation": {
+              "book": "sr2",
+              "page": "101"
+            }
           }
         },
         {
@@ -3903,7 +3943,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "Light machine gun, belt-fed 50 (c). Popular with merc units worldwide; the most common LMG model. Has a hip-brace recoil pad (Rating 1) and an ammunition bin slung over the shoulder. The only entry the book's Light Machine Guns section lists — there is no generic LMG. Light Machine Guns is a FIREARMS concentration (p.70); Gunnery governs heavy weapons \"on tripods, vehicle mounts, pintles, or in fixed emplacements\", so a VEHICLE-MOUNTED Valiant is fired with Gunnery even though the weapon itself is a firearm. SR2E p.238, p.255.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5S3</code>. The PRC-42D's nose gun (p.16). NOTE: methods disagree here — A gives 7S, B gives 8S. A wins on p.283's preference ordering. Re-check if the mislabelled Light_Machine_Gun_Generic file in the system pack resolves to a different weapon.</em></p>",
-            "streetIndex": 2
+            "streetIndex": 2,
+            "citation": {
+              "book": "sr2",
+              "page": "238"
+            }
           }
         },
         {
@@ -4074,7 +4118,11 @@
             "legality": "Legal",
             "equipped": true,
             "essence": 1,
-            "notes": "+1 Quickness and +1 Strength — the (5) and (7) in the printed attributes. Its Quickness does NOT feed Reaction (SR2E p.249)."
+            "notes": "+1 Quickness and +1 Strength — the (5) and (7) in the printed attributes. Its Quickness does NOT feed Reaction (SR2E p.249).",
+            "citation": {
+              "book": "sr2",
+              "page": "249"
+            }
           }
         },
         {
@@ -4210,7 +4258,11 @@
             "legality": "Legal",
             "equipped": true,
             "essence": 0,
-            "notes": "Fitted to the Uzi III (QE p.10) — reduces recoil."
+            "notes": "Fitted to the Uzi III (QE p.10) — reduces recoil.",
+            "citation": {
+              "book": "qe",
+              "page": "10"
+            }
           }
         },
         {
@@ -4244,7 +4296,11 @@
             "legality": "Legal",
             "equipped": true,
             "essence": 0,
-            "notes": "On the Uzi III (QE p.10), paired with his Smartlink."
+            "notes": "On the Uzi III (QE p.10), paired with his Smartlink.",
+            "citation": {
+              "book": "qe",
+              "page": "10"
+            }
           }
         },
         {
@@ -4312,7 +4368,11 @@
             "legality": "Legal",
             "equipped": true,
             "essence": 0,
-            "notes": "He gives the runners this number at the meet so they can reach their employers (QE p.10)."
+            "notes": "He gives the runners this number at the meet so they can reach their employers (QE p.10).",
+            "citation": {
+              "book": "qe",
+              "page": "10"
+            }
           }
         }
       ],
@@ -4760,7 +4820,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E p.231. Considered by many the premier heavy pistol. Menacing and popular among mercenaries and security services.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Craft p.62. Also stands in for the Ares Predator II (6M2) the Knight Errant guards carry — SR2 has no separate 'II'.</em></p>",
-            "streetIndex": 0.5
+            "streetIndex": 0.5,
+            "citation": {
+              "book": "sr2",
+              "page": "231"
+            }
           }
         },
         {
@@ -4819,7 +4883,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "Submachine gun. The SMG of choice for corporate security, military police and base security worldwide. The standard model has a retractable stock, integral laser sight (under-barrel mount) and an integral gas-vent recoil compensation system (barrel mount, Rating 2). SR2E p.238, p.254.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M3</code>. Stands in for the H&K MP-5TX (p.19). Method A and method B agree here — B also gives 7M — so the choice is free.</em></p>",
-            "streetIndex": 0.75
+            "streetIndex": 0.75,
+            "citation": {
+              "book": "qe",
+              "page": "19"
+            }
           }
         },
         {
@@ -4880,7 +4948,11 @@
             "notes": "Concussion grenade — minimal fragmentation, −1 Power per metre, Stun damage. SR2E p.256.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5M3 Stun</code>. Knight Errant p.19 carry two Airfoil IPE Concussion Grenades. These are why Throwing 3 matters; both were dropped together in the old actor.</em></p>",
             "blastType": "concussion",
             "quantity": 1,
-            "streetIndex": 2
+            "streetIndex": 2,
+            "citation": {
+              "book": "sr2",
+              "page": "256"
+            }
           }
         },
         {
@@ -5285,7 +5357,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E p.231. The main competitor to the Ares Predator. Heavy frame, hard-hitting—the samurai's sidearm of choice.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) — Ultra-Power is the SR1 name for this pistol.</em></p>",
-            "streetIndex": 1
+            "streetIndex": 1,
+            "citation": {
+              "book": "qe",
+              "page": "26"
+            }
           }
         },
         {
@@ -5343,7 +5419,11 @@
             "legality": "Legal",
             "equipped": true,
             "accessories": [],
-            "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>"
+            "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>",
+            "citation": {
+              "book": "sr2",
+              "page": "101"
+            }
           }
         },
         {
@@ -5458,7 +5538,11 @@
           "max": 10
         },
         "autonav": 4,
-        "notes": "<p><strong>Euphoria's limousine</strong> — one Knight Errant guard drives it. QE p.16 is explicit that <em>\"this particular Nightsky has no concealed weaponry.\"</em></p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across — the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The ×3 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p><p>An armored executive limousine.</p><p><em>Core book p.264: Speed 45/120 m/CT (cruising/maximum; Speed holds the cruising speed, which vehicle tests use).</em></p>"
+        "notes": "<p><strong>Euphoria's limousine</strong> — one Knight Errant guard drives it. QE p.16 is explicit that <em>\"this particular Nightsky has no concealed weaponry.\"</em></p><p><strong>Conversion: p.283 method A.</strong> This vehicle exists in SR2, so the module takes the system catalogue entry whole rather than carrying SR1 numbers across — the same call already made for Craft's Ares Predator. Ruled by futurekill 2026-08-03 for consistency with how every weapon in the module was converted. The ×3 vehicle-armour rule therefore does NOT apply here: the catalogue entry already prints SR2-scale armour, and doing both would double-count.</p><p>An armored executive limousine.</p><p><em>Core book p.264: Speed 45/120 m/CT (cruising/maximum; Speed holds the cruising speed, which vehicle tests use).</em></p>",
+        "citation": {
+          "book": "qe",
+          "page": "16"
+        }
       },
       "items": [],
       "prototypeToken": {
@@ -5949,7 +6033,11 @@
           "max": 10
         },
         "autonav": 0,
-        "notes": "<p><strong>Armed helicopter</strong> — a variant of the standard Wasp with Ares Armorflex vehicle armour.</p><p><strong>Armament:</strong> one Light Machine Gun under the nose, 100 rounds (Belt, internal), Laser Sight, <strong>rigged for automatic 6 shots with no Recoil Modifier</strong>.</p><p><strong>Pilot:</strong> QE p.16 says <em>\"use the Knight Errant Security Guard above, but substitute Rotor for Car at the same value\"</em> — so the p.19 block with <strong>Rotor 3</strong>. That is a note, not a separate actor.</p><p><strong>QE p.16 prints:</strong> Handling 3, Speed 65/100, Body 1, Armor 1, Signature 5, Pilot 0, 340,000¥.</p><p><strong>Conversion:</strong> chassis by method A from the 42B, with the D's printed Signature 5 and 340,000¥ (vehicle audit 2026-11-11); Armor 1 → 3 by the ×3 rule, which applies here and only here; the LMG by method A (7S). Method B would have given 8S — recorded in the audit as the one weapon where the two methods disagree.</p><p>A single-seat police/military light rotorcraft.</p>"
+        "notes": "<p><strong>Armed helicopter</strong> — a variant of the standard Wasp with Ares Armorflex vehicle armour.</p><p><strong>Armament:</strong> one Light Machine Gun under the nose, 100 rounds (Belt, internal), Laser Sight, <strong>rigged for automatic 6 shots with no Recoil Modifier</strong>.</p><p><strong>Pilot:</strong> QE p.16 says <em>\"use the Knight Errant Security Guard above, but substitute Rotor for Car at the same value\"</em> — so the p.19 block with <strong>Rotor 3</strong>. That is a note, not a separate actor.</p><p><strong>QE p.16 prints:</strong> Handling 3, Speed 65/100, Body 1, Armor 1, Signature 5, Pilot 0, 340,000¥.</p><p><strong>Conversion:</strong> chassis by method A from the 42B, with the D's printed Signature 5 and 340,000¥ (vehicle audit 2026-11-11); Armor 1 → 3 by the ×3 rule, which applies here and only here; the LMG by method A (7S). Method B would have given 8S — recorded in the audit as the one weapon where the two methods disagree.</p><p>A single-seat police/military light rotorcraft.</p>",
+        "citation": {
+          "book": "qe",
+          "page": "16"
+        }
       },
       "items": [
         {
@@ -6008,7 +6096,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "Light machine gun, belt-fed 50 (c). Popular with merc units worldwide; the most common LMG model. Has a hip-brace recoil pad (Rating 1) and an ammunition bin slung over the shoulder. The only entry the book's Light Machine Guns section lists — there is no generic LMG. Light Machine Guns is a FIREARMS concentration (p.70); Gunnery governs heavy weapons \"on tripods, vehicle mounts, pintles, or in fixed emplacements\", so a VEHICLE-MOUNTED Valiant is fired with Gunnery even though the weapon itself is a firearm. SR2E p.238, p.255.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5S3</code>. The PRC-42D's nose gun (p.16). NOTE: methods disagree here — A gives 7S, B gives 8S. A wins on p.283's preference ordering. Re-check if the mislabelled Light_Machine_Gun_Generic file in the system pack resolves to a different weapon.</em></p>",
-            "streetIndex": 2
+            "streetIndex": 2,
+            "citation": {
+              "book": "sr2",
+              "page": "238"
+            }
           }
         }
       ],
@@ -6683,7 +6775,11 @@
             "legality": "Legal",
             "equipped": true,
             "accessories": [],
-            "notes": "SR2E p.231. A rugged, large-frame heavy pistol favored by bounty hunters and independents. Reliable under field conditions.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Osprey p.20, with Smartgun Link.</em></p>"
+            "notes": "SR2E p.231. A rugged, large-frame heavy pistol favored by bounty hunters and independents. Reliable under field conditions.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Osprey p.20, with Smartgun Link.</em></p>",
+            "citation": {
+              "book": "sr2",
+              "page": "231"
+            }
           }
         },
         {
@@ -6742,7 +6838,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E Melee Weapons Table p.101: 10S, Reach 2, Concealability 10, 3,000¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6S4</code>. Osprey p.20. +2 Reach preserved.</em></p>",
-            "streetIndex": 3
+            "streetIndex": 3,
+            "citation": {
+              "book": "sr2",
+              "page": "101"
+            }
           }
         },
         {
@@ -7410,7 +7510,11 @@
             "availability": "5/6 days",
             "legality": "Restricted",
             "equipped": true,
-            "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Pacific Towers guards p.15 [25 (clip), 1 extra clip, 3M2]. No SR2 Black Scorpion exists, so the staging digit folds: 3+2 = 5M.</em></p>"
+            "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Pacific Towers guards p.15 [25 (clip), 1 extra clip, 3M2]. No SR2 Black Scorpion exists, so the staging digit folds: 3+2 = 5M.</em></p>",
+            "citation": {
+              "book": "qe",
+              "page": "15"
+            }
           }
         },
         {
@@ -8245,7 +8349,11 @@
             "sustainedForce": 0,
             "spellLocked": false,
             "quickened": false,
-            "quickeningKarma": 0
+            "quickeningKarma": 0,
+            "citation": {
+              "book": "qe",
+              "page": "283"
+            }
           }
         },
         {
@@ -8347,7 +8455,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E p.231. The main competitor to the Ares Predator. Heavy frame, hard-hitting—the samurai's sidearm of choice.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) — Ultra-Power is the SR1 name for this pistol.</em></p>",
-            "streetIndex": 1
+            "streetIndex": 1,
+            "citation": {
+              "book": "qe",
+              "page": "26"
+            }
           }
         },
         {
@@ -8406,7 +8518,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E Street Gear p.254: (Str)S, Reach 2, Concealability 2, Weight 4, Availability 4/48 hrs, 500¥, Street Index 2. (The combat chapter's Melee Weapons Table, p.101, prints (Str+3)S; Street Gear is the canonical table.)<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6S3</code>. Pride p.26 Spear, +2 reach. Pole Arm is SR2's reach polearm entry.</em></p>",
-            "streetIndex": 2
+            "streetIndex": 2,
+            "citation": {
+              "book": "sr2",
+              "page": "254"
+            }
           }
         },
         {
@@ -8464,7 +8580,11 @@
             "legality": "Legal",
             "equipped": true,
             "accessories": [],
-            "notes": "SR2E p.228. Military-spec fighting knife with serrated spine and reinforced hilt. Compact and lethal. (Improvised/houseruled — not in the SR2 core Melee Weapons Table.)<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6L3</code>. Pride p.26 Survival Knife.</em></p>"
+            "notes": "SR2E p.228. Military-spec fighting knife with serrated spine and reinforced hilt. Compact and lethal. (Improvised/houseruled — not in the SR2 core Melee Weapons Table.)<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>6L3</code>. Pride p.26 Survival Knife.</em></p>",
+            "citation": {
+              "book": "qe",
+              "page": "26"
+            }
           }
         },
         {
@@ -8967,7 +9087,11 @@
             "availability": "4/4 days",
             "legality": "Restricted",
             "equipped": true,
-            "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Carrone p.64 [18 (clip), 3M2]. A DIFFERENT weapon from the guards' Ceska Black Scorpion (p.15) — both are Ceskas, neither is in SR2, and both fold to 5M.</em></p>"
+            "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. Carrone p.64 [18 (clip), 3M2]. A DIFFERENT weapon from the guards' Ceska Black Scorpion (p.15) — both are Ceskas, neither is in SR2, and both fold to 5M.</em></p>",
+            "citation": {
+              "book": "qe",
+              "page": "15"
+            }
           }
         },
         {
@@ -9739,7 +9863,11 @@
             "sustainedForce": 0,
             "spellLocked": false,
             "quickened": false,
-            "quickeningKarma": 0
+            "quickeningKarma": 0,
+            "citation": {
+              "book": "qe",
+              "page": "283"
+            }
           }
         },
         {
@@ -9783,7 +9911,11 @@
             "sustainedForce": 0,
             "spellLocked": false,
             "quickened": false,
-            "quickeningKarma": 0
+            "quickeningKarma": 0,
+            "citation": {
+              "book": "qe",
+              "page": "283"
+            }
           }
         },
         {
@@ -9912,7 +10044,11 @@
             "spellLocked": false,
             "quickened": false,
             "quickeningKarma": 0,
-            "notes": "<p>REQUIRES A FETISH (printed).</p><p><em>Queen Euphoria conversion (core p.283 — translate spell codes). <strong>No SR2 equivalent — custom spell.</strong> NO SR2 EQUIVALENT EXISTS. Checked the core rulebook and Grimoire 2e: both have only 'Petrifying Gaze' as a critter power (basilisk, cockatrice), not a spell. Rather than drop one of Stone's three fetish-bound Manipulation spells — which would change the encounter — it is kept as a QE-local custom spell built on the SR1 printing and flagged as such on the item. This is the spell equivalent of weapon method B.</em></p>"
+            "notes": "<p>REQUIRES A FETISH (printed).</p><p><em>Queen Euphoria conversion (core p.283 — translate spell codes). <strong>No SR2 equivalent — custom spell.</strong> NO SR2 EQUIVALENT EXISTS. Checked the core rulebook and Grimoire 2e: both have only 'Petrifying Gaze' as a critter power (basilisk, cockatrice), not a spell. Rather than drop one of Stone's three fetish-bound Manipulation spells — which would change the encounter — it is kept as a QE-local custom spell built on the SR1 printing and flagged as such on the item. This is the spell equivalent of weapon method B.</em></p>",
+            "citation": {
+              "book": "qe",
+              "page": "283"
+            }
           }
         },
         {
@@ -9971,7 +10107,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E p.231. The main competitor to the Ares Predator. Heavy frame, hard-hitting—the samurai's sidearm of choice.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M2</code>. Lone Star p.14, Stone p.21. Also Pride's Browning Ultra-Power (6M2, p.26) — Ultra-Power is the SR1 name for this pistol.</em></p>",
-            "streetIndex": 1
+            "streetIndex": 1,
+            "citation": {
+              "book": "qe",
+              "page": "26"
+            }
           }
         },
         {
@@ -10029,7 +10169,11 @@
             "legality": "Legal",
             "equipped": true,
             "accessories": [],
-            "notes": "SR2E Melee Weapons Table p.101: (Str+2)M Stun, Reach 2, Concealability 2, 50¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>3M2 Stun</code>. Stone p.21, +2 Reach.</em></p>"
+            "notes": "SR2E Melee Weapons Table p.101: (Str+2)M Stun, Reach 2, Concealability 2, 50¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>3M2 Stun</code>. Stone p.21, +2 Reach.</em></p>",
+            "citation": {
+              "book": "sr2",
+              "page": "101"
+            }
           }
         },
         {
@@ -10920,7 +11064,11 @@
             "availability": "4/5 days",
             "legality": "Restricted",
             "equipped": true,
-            "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. The Strice Boys p.25 [12 (clip), 1 extra clip, 3M2]. No SR2 Seco entry, so 3+2 = 5M.</em></p>"
+            "notes": "<p><em>Queen Euphoria conversion (core p.283, method B — fold the staging digit). Printed SR1 <code>3M2</code> → <code>5M</code>. The Strice Boys p.25 [12 (clip), 1 extra clip, 3M2]. No SR2 Seco entry, so 3+2 = 5M.</em></p>",
+            "citation": {
+              "book": "qe",
+              "page": "25"
+            }
           }
         },
         {
@@ -10978,7 +11126,11 @@
             "legality": "Legal",
             "equipped": true,
             "accessories": [],
-            "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>"
+            "notes": "SR2E Melee Weapons Table p.101: 6S Stun, Reach 1, Concealability 4, 750¥.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>5L2 Stun + Special</code>. Lone Star p.14, Strice Boys p.25. The printed '+ Special' is a stun effect beyond the damage code and stays a GM note.</em></p>",
+            "citation": {
+              "book": "sr2",
+              "page": "101"
+            }
           }
         },
         {
@@ -11037,7 +11189,11 @@
             "equipped": true,
             "accessories": [],
             "notes": "SR2E p.232. The latest in the venerable Uzi lineage—compact, reliable, and effective in close quarters. BF capable.<p><em>Queen Euphoria conversion (core p.283, method A — substitute the SR2 item). Printed SR1 code: <code>4M3</code>. The Strice Boys p.25.</em></p>",
-            "streetIndex": 0.75
+            "streetIndex": 0.75,
+            "citation": {
+              "book": "sr2",
+              "page": "232"
+            }
           }
         },
         {
@@ -29179,6 +29335,42 @@
           }
         },
         {
+          "_id": "ccb1ba73eba33cf5",
+          "name": "ACT 2 — Deja Vu (p.27)",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>The wake-up.</strong> Run it like the opening call, to the same player. The team celebrated their Act 1 money at a bar run by <strong>Clockwork</strong> (orange spiked hair, a medallion with a tiny vidscreen looping an old ultraviolent film, a Beethoven fan) on something called <em>Rippers</em>. They wake with brutal hangovers in his storage room to a wristphone chirping in the dark.</p> <p><strong>The call.</strong> <strong>Ellery Whitecastle</strong> (smoking jacket, fidgeting with a pipe) is nervous: MegaMedia has learned, through street contacts, that he and the team pulled Euphoria's first disappearance. So far they are being civil. They want the team to meet <strong>Robert Carrone</strong>, her manager, <strong>at the Pacific Towers lobby at eleven this morning</strong>, and they might forgive the whole thing if the team brings information about their former employers. He'll be in touch. Then Clockwork switches on the lights and shows them out the back door of the storeroom.</p> <p><strong>Behind the scenes.</strong> Euphoria has vanished again, and MegaMedia is leaning on Whitecastle hard: it thinks the runners may know who took her this time. Carrone has the job of getting her back and has chosen, for now, to deal with the runners on reasonable terms; he spoke with Euphoria after the first kidnapping and knows they treated her well. <strong>The press does not yet know she is missing.</strong></p> <p><strong>If they don't show.</strong> Whitecastle calls again, urgently. If they still refuse, Carrone sends MegaMedia's Knight Errant guards to collect them, by force if needed. When it's time, go to <strong>Meeting Carrone</strong>.</p> <p><strong>Soundboard:</strong> <em>QE Soundboard — Act 2: Deja Vu</em>.</p>"
+          },
+          "image": {},
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "sort": 0,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.351",
+            "systemId": "sr2e",
+            "systemVersion": "0.1.0",
+            "createdTime": 1784000000000,
+            "modifiedTime": 1784000000000,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        },
+        {
           "_id": "49019635f57590be",
           "name": "ACT 2 — The Twist: Meeting Carrone (p.28–29)",
           "type": "text",
@@ -29188,7 +29380,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><strong>The hire.</strong> Weeks later, <strong>Robert Carrone</strong> — MegaMedia VP and Euphoria's manager — hires the <em>same team</em> to find and recover Euphoria after her <em>second</em> disappearance. The twist: Ludivenko tipped MegaMedia about who pulled the first kidnapping, so Carrone is hiring the very runners who took her before — half to use their knowledge of her, half because he suspects they're involved again.</p> <p><strong>GM notes.</strong> Carrone is calm, ruthless, and watching them. He won't volunteer that he knows about Act 1 unless the players force it; play the tension. He is the paymaster and information broker for the hunt. This time Euphoria was taken for real — by Craft's Hive.</p>"
+            "content": "<p><strong>The meet.</strong> The Pacific Towers guard waves them through and points to the bar, where a tall, lanky redhead in a grey suit (sunglasses pushed up on a hawkish nose) broods over a drink. He offers drinks, then leads them into a small side meeting room, locks the door and switches on a <strong>white noise generator</strong>.</p> <p><strong>What Carrone says</strong> (MegaMedia VP, her manager for years before that, so it's personal): last weekend's kidnapping cost Euphoria a lucrative Strice Foods deal; another big corporation (he won't say which) has now signed her for a new campaign, and she has vanished again, taken from her condo. If she isn't back by the weekend, that contract is void too. He makes it plain MegaMedia knows the team did the first job; their corporate employer has settled up, and so has Whitecastle — he checks his watch and corrects himself: <em>as did your late friend</em>. Find her and the slate is clean.</p> <p><strong>The deal.</strong> <strong>20,000¥ each</strong>, or <strong>half</strong> if she comes back later than <strong>6 A.M. Saturday</strong> (the recording deadline for the new ads). Negotiate as normal: each net success moves it by 1,000¥. He insists on total secrecy (no press, or the sponsor walks) and on <strong>full progress reports every eight hours</strong>, no exceptions. MegaMedia will explain away the dead Knight Errant guards. His thumbprint opens the lobby elevator to her floor; he takes them up. Go to <strong>Missing Again</strong>.</p> <p><strong>Behind the scenes.</strong> The new client is <strong>Ludivenko</strong> (Blue Bacosoy promotions). MegaMedia found out Ludivenko was behind the first job but traded revenge for this contract; Ludivenko handed over Whitecastle's and the runners' names. Carrone had Whitecastle interrogated and killed when it was clear he knew nothing. The runners know nothing about the second abduction either, but while Carrone thinks they might, he wants them working. When they're back on the street, they hear Whitecastle died in a <strong>firebomb</strong> at his home, identified by dental records.</p> <p><strong>If they refuse or attack Carrone</strong>, they face corporate vengeance; the book suggests ways back into the plot (Euphoria escapes with too much knowledge, someone they know is taken as a host, they witness a snatch or become the target).</p> <p><strong>Soundboard:</strong> <em>QE Soundboard — Act 2: Meeting Carrone</em>.</p>"
           },
           "image": {},
           "video": {
@@ -29224,7 +29416,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><strong>Tell it to them straight.</strong> The penthouse is a slaughterhouse. Euphoria's bodyguards have been torn apart in ways nothing Human could manage — chitin gouges, dissolved tissue, the reek of formic acid. The home simsense studio is wrecked.</p> <p><strong>The key clue.</strong> Searching the studio turns up the <strong>simsense recording</strong> Euphoria was making at the moment of the attack (a Perception or Electronics test to notice the rig kept running). Played back, it shows — in first person — something monstrous breaking in, killing the guards, and seizing her. A sharp viewer catches glimpses that point toward an <strong>insect spirit</strong> and, faintly, the Ant motif.</p> <p><strong>GM notes.</strong> This scene sells the horror and hands the players their thread: this was not a normal snatch. Map: <em>Euphoria's Condo</em>.</p>"
+            "content": "<p><strong>Arrival.</strong> The elevator opens on the 21st-floor hallway. The condo door is ajar; a chair and a cup of cold soykaf sit abandoned at the guard post. Everything is very quiet. In the living room, what's left of several Knight Errant guards — shredded, not shot. Map: <em>Euphoria's Condo</em> (area numbers as in To Catch A Star, p.17).</p> <p><strong>What happened.</strong> After her Monday release, Euphoria and Carrone tried to squeeze Burroughs for money anyway and failed (her contract let him withhold pay). On Tuesday a corporate spy told <strong>Burroughs</strong> about the Ludivenko deal; he told <strong>Craft</strong> to get rid of her before she could do it. Craft, dreaming of a Queen, agreed. Tuesday after dark, Soldiers carried Craft and a Worker up the outside of the tower, tore through the greenhouse balcony and made short work of the guards. Euphoria fainted; they carried her and Craft out.</p> <p><strong>Scene of the crime</strong> (p.31):</p> <ul> <li><strong>Entrance Hall (1).</strong> The abandoned guard post; the main door is open.</li> <li><strong>Living Room (3).</strong> All doors open. A large dark stain by the foyer, with shreds of a Knight Errant uniform and an <strong>HK227 with a full clip</strong> (the front guard never fired). Two more guards' remains. A knowledgeable look: every wound is shredding or tearing, no bullets or blades, and whatever did it was enormously strong. Balcony doors shattered, wind whistling in. <strong>Perception (8):</strong> large holes in the ceiling running from the balcony to right above the bloodstain. <strong>Perception (5):</strong> a lump of brown slime near the couch (the Worker drooled raw hive food); anyone who has tasted <strong>Amber Gel</strong> may link it — <strong>Perception (6)</strong> by smell, <strong>(4)</strong> by taste.</li> <li><strong>Recording Studio (4).</strong> The gear is <strong>still switched on</strong>. Replaying needs <strong>Electronics (3)</strong> or <strong>Intelligence (9)</strong>. Headsets hang on the wall, or a datajack can plug straight in. Go to <strong>Private Screening</strong>.</li> <li><strong>Greenhouse Balcony (5).</strong> Freezing, through a big hole in the plastic shell. The front guard's body is hidden among the tropical plants.</li> </ul> <p><strong>Private Screening</strong> (p.32–33). Euphoria was rehearsing <em>Jungle Huntress</em> lines on her wireless Sense Link when they came, so the rig recorded everything. Her deck runs <strong>with the inhibitors and filters cut</strong> (like a BTL player), at full sensitivity, one generation from the original: whoever plays it lives her raw terror, amplified. Tell the player they can stop at any time (switch off, jack out, rip the headset off). Onlookers see the viewer physically re-enact it, walking out of the studio into the living room.</p> <p><strong>The two clues in it:</strong> the blond, unkempt man who seizes her says <strong>Burroughs</strong> told him to take care of her, and that he'll make her his <strong>Queen</strong>; the silent man behind him wears a <strong>\"Garrety's Bar and Grill\"</strong> shirt and has something wrong with his eyes. Also: the sickly sweet smell, the clicking not-human laughter, and the one-armed guard who gets a shot off before something drops on him from above.</p> <p><strong>Handling the chip.</strong> Reinstalling the inhibitors: <strong>Electronics B/R (4)</strong>, base time <strong>four hours</strong>, with tools; after that it's safe. It plays only on her machine unless copied to a simsense or master chip: <strong>Electronics (5)</strong>, base <strong>30 minutes</strong> (she has spare chips).</p> <p><strong>Carrone</strong> answers questions without hurting MegaMedia. He knows <strong>Burroughs</strong> as a Strice Foods executive (they arranged her Amber Gel appearances) and can point them to his office, <strong>tenth floor of Soykyo Office Plaza</strong>. He does <strong>not</strong> recognize Craft from the recording.</p> <p><strong>Next.</strong> Magic can't find her (the Queen shrouds her astral form). Legwork p.56; a decker into Strice Foods: Hacking Strice p.34; <strong>Garrety's Bar and Grill</strong>: Missing Persons p.35; Burroughs: Hey, Vince! p.36. If they miss the recording, Carrone finds it later and tells them they should experience it.</p> <p><strong>Soundboard:</strong> <em>QE Soundboard — Act 2: Missing Again</em> (the full <strong>Private Screening</strong> playback is one clip).</p>"
           },
           "image": {},
           "video": {

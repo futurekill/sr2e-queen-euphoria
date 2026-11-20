@@ -1,6 +1,6 @@
 {
-  "_id": "d9220f96422e4af2",
-  "name": "QE Soundboard — Act 2: The Twist",
+  "_id": "5b5f9cac1b410489",
+  "name": "QE Soundboard — Act 2: The Twist (other clips)",
   "description": "Click a sound to play it for everyone.",
   "mode": -1,
   "channel": "environment",
@@ -9,7 +9,7 @@
   "folder": null,
   "sorting": "m",
   "seed": null,
-  "sort": 400000,
+  "sort": 700000,
   "sounds": [
     {
       "_id": "b5b33c9ba37824bd",
@@ -69,120 +69,6 @@
       }
     },
     {
-      "_id": "a19efa5575ade068",
-      "name": "Carrone: let's not waste time",
-      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-intro.mp3",
-      "description": "[brusque] Let's not waste each other's time. [crisp] Euphoria is missing. [beat] Again. [measured] MegaMedia wants her back — [pause] and I'm told you're discreet.",
-      "repeat": false,
-      "volume": 0.8,
-      "fade": null,
-      "sort": 400000,
-      "channel": "",
-      "playing": false,
-      "pausedTime": null,
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.103.1"
-      }
-    },
-    {
-      "_id": "e0c57cca06208de4",
-      "name": "Carrone: name your price",
-      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-price.mp3",
-      "description": "[cold, precise] Find her. Quietly. [pause] Before the press does. [beat] [smooth] Name your price... [dry] within reason.",
-      "repeat": false,
-      "volume": 0.8,
-      "fade": null,
-      "sort": 500000,
-      "channel": "",
-      "playing": false,
-      "pausedTime": null,
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.103.1"
-      }
-    },
-    {
-      "_id": "d90b618cf5e1c1a6",
-      "name": "Carrone: I know what you did",
-      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-knows.mp3",
-      "description": "[cold, measured] I know exactly who took her the first time. [pause] The only question is whether you're going to be useful to me now.",
-      "repeat": false,
-      "volume": 0.8,
-      "fade": null,
-      "sort": 600000,
-      "channel": "",
-      "playing": false,
-      "pausedTime": null,
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.103.1"
-      }
-    },
-    {
-      "_id": "4a5bc08e3a021eb0",
-      "name": "Carrone: don't disappoint me",
-      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-carrone-threat.mp3",
-      "description": "[pleasantly] MegaMedia has a long memory — and a very large legal department. [beat] Don't disappoint me.",
-      "repeat": false,
-      "volume": 0.8,
-      "fade": null,
-      "sort": 700000,
-      "channel": "",
-      "playing": false,
-      "pausedTime": null,
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.103.1"
-      }
-    },
-    {
-      "_id": "7b8c2a425414bb26",
-      "name": "Read-aloud: the condo",
-      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-read-condo.mp3",
-      "description": "[hushed] The penthouse door is open. Inside, the air is thick with something sharp and chemical... like vinegar left to rot. [pause] The bodyguards are still here. Most of them. [slowly] Whatever did this did not use a gun.",
-      "repeat": false,
-      "volume": 0.8,
-      "fade": null,
-      "sort": 800000,
-      "channel": "",
-      "playing": false,
-      "pausedTime": null,
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.103.1"
-      }
-    },
-    {
-      "_id": "e9a3d70a32e0be61",
-      "name": "Read-aloud: the sim recording",
-      "path": "modules/sr2e-queen-euphoria/assets/audio/a2-read-sim.mp3",
-      "description": "[softly] The playback takes you behind her eyes. Music. A mirror. A smile she's practiced a thousand times. [pause] Then the glass bursts inward — and something with too many limbs fills the frame. [tense] You feel her scream in your own throat.",
-      "repeat": false,
-      "volume": 0.8,
-      "fade": null,
-      "sort": 900000,
-      "channel": "",
-      "playing": false,
-      "pausedTime": null,
-      "flags": {},
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "sr2e",
-        "systemVersion": "0.103.1"
-      }
-    },
-    {
       "_id": "ebed348f60927a22",
       "name": "Burroughs: nothing to do with me",
       "path": "modules/sr2e-queen-euphoria/assets/audio/a2-burroughs-deny.mp3",
@@ -190,7 +76,7 @@
       "repeat": false,
       "volume": 0.8,
       "fade": null,
-      "sort": 1000000,
+      "sort": 400000,
       "channel": "",
       "playing": false,
       "pausedTime": null,
@@ -209,7 +95,7 @@
       "repeat": false,
       "volume": 0.8,
       "fade": null,
-      "sort": 1100000,
+      "sort": 500000,
       "channel": "",
       "playing": false,
       "pausedTime": null,
@@ -228,7 +114,7 @@
       "repeat": false,
       "volume": 0.8,
       "fade": null,
-      "sort": 1200000,
+      "sort": 600000,
       "channel": "",
       "playing": false,
       "pausedTime": null,
@@ -247,7 +133,7 @@
       "repeat": false,
       "volume": 0.8,
       "fade": null,
-      "sort": 1300000,
+      "sort": 700000,
       "channel": "",
       "playing": false,
       "pausedTime": null,
@@ -268,5 +154,5 @@
     "systemId": "sr2e",
     "systemVersion": "0.103.1"
   },
-  "_key": "!playlists!d9220f96422e4af2"
+  "_key": "!playlists!5b5f9cac1b410489"
 }

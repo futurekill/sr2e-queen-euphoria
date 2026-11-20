@@ -1,0 +1,215 @@
+{
+  "_id": "03fc03a7104911f3",
+  "name": "QE Soundboard — Act 2: Deja Vu",
+  "description": "Click a sound to play it for everyone.",
+  "mode": -1,
+  "channel": "environment",
+  "playing": false,
+  "fade": null,
+  "folder": null,
+  "sorting": "m",
+  "seed": null,
+  "sort": 400000,
+  "sounds": [
+    {
+      "_id": "f4e017486949dccc",
+      "name": "SFX: wristphone chirping in the dark",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/dv-sfx-wristphone.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 100000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "c615536627f66e10",
+      "name": "Read-aloud: waking up at Clockwork's",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/dv-read-wake.mp3",
+      "description": "[groggy, low] Something is chirping. [pause] Your skull answers it with a pulse of pure misery. [beat] Dark room. Concrete floor. Crates. A smell of spilled beer and cleaning fluid. [sighs] Last night comes back in pieces... the orange-haired bartender, the little screen on his medallion looping some old ultraviolent film, round after round of something he called Rippers. [pause] [dry] You did celebrate. Thoroughly. [beat] The chirping is your wristphone. Somewhere under you.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 200000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "3e74967721a9a927",
+      "name": "Whitecastle: we have a problem",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/dv-whitecastle-problem.mp3",
+      "description": "[nervous, too quick] Chummer. Good. You're alive. [beat] Listen... [exhales] we have a bit of a problem. [fidgeting] MegaMedia knows. [pause] About Euphoria. The first time. Don't ask me how, street ears, somebody talked... [beat] They know it was us.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 300000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "52be3f14b2a3705f",
+      "name": "Whitecastle: meet Carrone at eleven",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/dv-whitecastle-meet.mp3",
+      "description": "[trying to sound calm] So far they're being... civilized. [beat] They want your team at Pacific Towers. The lobby. Eleven this morning. [pause] A man named Robert Carrone, her manager. [pleading] At least hear what he has to say.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 400000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "fd3dab2210f24462",
+      "name": "Whitecastle: give them the employers",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/dv-whitecastle-deal.mp3",
+      "description": "[lower, conspiratorial] And chummer? [beat] I get the feeling they'd forget the whole thing... if you had something to tell them about the people who hired us. [pause] [quickly] I'll be in touch. Eleven. Don't be late.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 500000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "aba6edd93003602c",
+      "name": "Whitecastle: second call (they didn't show)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/dv-whitecastle-urgent.mp3",
+      "description": "[panicked, hushed] Where are you?! [breathing hard] It's past eleven! [beat] They're not asking nicely anymore, chummer. [desperate] Please. Go and see the man. [pause] Please.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 600000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "338925a1037e60c7",
+      "name": "SFX: lights on, the storeroom door opens",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/dv-sfx-storeroom.mp3",
+      "description": "",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 700000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "e435bc9b85e6548a",
+      "name": "Clockwork: closing time, out you go",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/dv-clockwork-out.mp3",
+      "description": "[cheerfully loud] Rise and shine, my lovelies! [laughs] Sleep well on me crates, did we? [beat] Right. Bar's closed, cleaner's due, and you lot are cluttering up my stock. [mock-polite] Out the back, if you please. Mind the empties.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 800000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "cd7bb85ca3fd7d8d",
+      "name": "Clockwork: the music",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/dv-clockwork-music.mp3",
+      "description": "[delighted, over the music] Hear that? [humming along] The Ninth! [beat] Nothing clears a head like a full orchestra, mate. [laughs] Come back soon. Bring money.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 900000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    },
+    {
+      "_id": "34559eb375b597d5",
+      "name": "Knight Errant: the pickup (they refused)",
+      "path": "modules/sr2e-queen-euphoria/assets/audio/dv-ke-pickup.mp3",
+      "description": "[flat, polite, final] Good morning. MegaMedia would like a word. [beat] You can walk to the car. [pause] Or we can help you.",
+      "repeat": false,
+      "volume": 0.8,
+      "fade": null,
+      "sort": 1000000,
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.103.1"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.103.1"
+  },
+  "_key": "!playlists!03fc03a7104911f3"
+}
